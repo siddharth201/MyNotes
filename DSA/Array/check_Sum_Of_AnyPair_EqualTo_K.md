@@ -1,5 +1,5 @@
 
->  ** Q. Given an array, check if sum of any pair of different elements is equal to k**
+> **Q. Given an array, check if sum of any pair of different elements is equal to k**
 
 **Example**  
 
