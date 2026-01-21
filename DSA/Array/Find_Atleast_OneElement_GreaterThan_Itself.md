@@ -1,5 +1,5 @@
 
- > Q. Given N array elements, count number of elements which have atleast one element greater than itself  
+ > **Q. Given N array elements, count number of elements which have atleast one element greater than itself**  
  
  **Example**  
  
