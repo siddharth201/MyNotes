@@ -57,6 +57,17 @@ func find_Atleast_OneElement_GreaterThan_Itself_Optimize(arr: [Int]) -> Int {
 }
 
 ```
+**Time Complexity**
+
+**Step**                 **TC**
+Find max                  O(n)
+Count max                 O(n)
+Total                     O(n)
+
+
+Space Complexity
+
+O(1) extra space
 ---
 
 **Helper**
@@ -78,7 +89,8 @@ public func test_find_Atleast_OneElement_GreaterThan_Itself(arr: [Int], mode: Mo
 }
 
 ```
-<br />
+---
+
 **How to call**
 ```swift
 
