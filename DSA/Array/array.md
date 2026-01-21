@@ -33,6 +33,17 @@ func find_Atleast_OneElement_GreaterThan_Itself_BruteForce(arr: [Int]) -> Int {
 }
 
 ```
+**Time Complexity**
+
+Worst case: every i scans almost entire array  
+
+Nested loops → O(n²)
+
+
+
+**Space Complexity**
+O(1)  
+
 ---
 
 **Optimize**
@@ -65,9 +76,9 @@ Count max                 O(n)
 Total                     O(n)
 
 
-Space Complexity
+**Space Complexity**
+O(1)
 
-O(1) extra space
 ---
 
 **Helper**
