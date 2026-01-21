@@ -1,6 +1,24 @@
-/**
- Q. Given N array elements, count number of elements which have atleast one element greater than itself
- */
+
+ > Q. Given N array elements, count number of elements which have atleast one element greater than itself  
+ 
+ **Example**  
+ 
+ ```swift
+arr = [3, 1, 2]  
+
+
+3 → ❌ no greater element
+
+1 → ✅ (3 is greater)
+
+2 → ✅ (3 is greater)
+
+✅ Answer = 2  
+```    
+---  
+
+**Solution :**
+
 
 ```swift
 
