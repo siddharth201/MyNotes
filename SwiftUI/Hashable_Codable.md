@@ -102,7 +102,8 @@ Because `Hashable` lets Swift check that `car1` and `car2` have the same “hash
 
 ---  
 
-
+<br/>
+<br/>
 ## Q. Explain **encoding: .utf8** in String(data: jsonData!, encoding: .utf8) and **User_Codable.self** in JSONDecoder().decode(User_Codable.self, from: jsonData!)  
 
 Great question — this touches **two very important Swift concepts** that often feel magical at first:
