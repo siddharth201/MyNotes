@@ -412,16 +412,15 @@ Before mutation:
 
 ---
 
-> ** Q. Explain below topics with proper exapmle which I can run, reproduce and test<br/>
-strong reference<br/>
-Retain Cycle<br/>
-weak reference<br/>
-unowned Reference<br/>
-When to use week and when to use unowned<br/>
-Retain Cycle in Closures - reasoning<br/>
-How [weak self] works to break retai cycle<br/>
-Capture Lists with proper example<br/>
-**
+> **Q. Explain below topics with proper exapmle which I can run, reproduce and test<br/>**
+**strong reference<br/>**
+**Retain Cycle<br/>**
+**weak reference<br/>**
+**unowned Reference<br/>**
+**When to use week and when to use unowned<br/>**
+**Retain Cycle in Closures - reasoning<br/>**
+**How [weak self] works to break retai cycle<br/>**
+**Capture Lists with proper example<br/>**
 
 
 Perfect question 👍
