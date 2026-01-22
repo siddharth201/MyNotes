@@ -244,8 +244,8 @@ class Card {
 > **Q. Is it possible that there are two refernces exist for a value type?**  
 **Ans:**    
 
-**Short answer:** ❌ **No — not in the ARC / ownership sense.**
-But ✅ **yes, in a *copy-on-write* and *shared storage* sense.**
+**Short answer:** ❌ **No — not in the ARC / ownership sense.**<br/>
+But ✅ **yes, in a *copy-on-write* and *shared storage* sense.**<br/>
 This distinction is **very important for interviews and production code.**
 
 Let’s break it down **cleanly and precisely** 👇
