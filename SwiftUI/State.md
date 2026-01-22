@@ -1,8 +1,6 @@
 ## **Explain @State**  
 
 
-# `@State`
-
 ## What is `@State`?
 
 ### One-line definition
