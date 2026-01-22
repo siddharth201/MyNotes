@@ -11,35 +11,41 @@ arr = [1,2,3,4,5], k = 2
 
 ```swift
 func rotateArray(arr: [Int], k: Int) -> [Int] {
-    
-    guard !arr.isEmpty else { return []}
+    guard !arr.isEmpty else { return [] }
     
     var arr = arr
     let n = arr.count
     let k = k % n
-    let partitionPos = n-k
-    reverseArray(left: 0, right: partitionPos-1)
-    reverseArray(left: partitionPos, right: n-1)
-    reverseArray(left: 0, right: n-1)
+    if k == 0 { return arr }
     
-    func reverseArray(left: Int, right: Int) {
-        var i = left
-        var j = right
-        
-        while(i < j) {
-            let temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
-            
-            i += 1
-            j -= 1
-        }
-    }
-    
+    reverse(&arr, 0, n - k - 1)
+    reverse(&arr, n - k, n - 1)
+    reverse(&arr, 0, n - 1)
     
     return arr
 }
-```  
+
+func reverse(_ arr: inout [Int], _ left: Int, _ right: Int) {
+    var i = left
+    var j = right
+    
+    while i < j {
+        arr.swapAt(i, j)
+        i += 1
+        j -= 1
+    }
+}
+```    
+
+**Time Complexity**
+O(n)
+
+(Each element is swapped at most once per reversal)
+
+**Space Complexity**
+O(1) extra space
+
+(Only a few variables used)
 
 **Helper**  
 ```swift
