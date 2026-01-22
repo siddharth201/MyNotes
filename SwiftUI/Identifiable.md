@@ -1,10 +1,11 @@
 > **Explain Identifiable**  
 
-**⭐ One-line memory version**
+**⭐ One-line memory version**  
+
 “Identifiable is a protocol that helps SwiftUI uniquely identify each item in a list.”  
 
 
-**⭐ Best simple version (Layman + accurate)**
+**⭐ Best simple version (Layman + accurate)**<br/>
 “Identifiable is a protocol that tells SwiftUI that each object has a unique id, so it can be safely used in lists.”  
 
 
