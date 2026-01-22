@@ -16,6 +16,12 @@ things like theme color, font size, app settings, or even custom data managers (
 Instead of passing the same object manually through every view, you can inject it once into the environment —
 and access it anywhere using @Environment.
 
+**STEPS**
+Step 1️⃣ Define an EnvironmentKey
+Step 2️⃣ Add it to EnvironmentValues
+Step 3️⃣ Inject it at the top (App level)
+Step 4️⃣ Read it in ANY view
+
 ---
 
 # 🧠 Why does `@Environment` exist?
