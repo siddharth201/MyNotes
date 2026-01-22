@@ -1,5 +1,7 @@
-> **Why NO AppDelegate or SceneDelegate in a new SwiftUI project?**  
 
+> **Q. Why NO AppDelegate or SceneDelegate in a new SwiftUI project?** 
+  
+  
 **Ans:**
 
 # 🍎 Why NO AppDelegate or SceneDelegate in a new SwiftUI project?
