@@ -1,13 +1,13 @@
-//
-//  Untitled.swift
-//  
-//
-//  Created by Siddharth on 22/01/26.
-//
+//<br/>
+//  Untitled.swift<br/>
+//<br/>  
+//<br/>
+//  Created by Siddharth on 22/01/26.<br/>
+//<br/>
 
-/**
- Q. Given N array elements and Q queries on the same array. For each query  calculate sum of elements in a given range [L-R] [L<=R]
- */  
+
+> **Q. Given N array elements and Q queries on the same array. For each query  calculate sum of elements in a given range [L-R]**
+
  
  
 **BruteForce**  
