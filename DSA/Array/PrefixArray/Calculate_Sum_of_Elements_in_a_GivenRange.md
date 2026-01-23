@@ -4,11 +4,11 @@
  **Example**  
  
  ```swift
- **Input**
+ Input
  arr = [1, 2, 3, 4, 5]
  queries = [(0,2), (1,3), (2,4)]  
  
- **Output**
+ Output
 [6, 9, 12]
 ```
 
