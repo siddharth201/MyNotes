@@ -1,7 +1,17 @@
 
 > **Q. Given N array elements and Q queries on the same array. For each query  calculate sum of elements in a given range [L-R]**
 
+ **Example**  
  
+ ```swift
+ **Input**
+ arr = [1, 2, 3, 4, 5]
+ queries = [(0,2), (1,3), (2,4)]  
+ 
+ **Output**
+[6, 9, 12]
+```
+
  
 **BruteForce**  
 ```swift
