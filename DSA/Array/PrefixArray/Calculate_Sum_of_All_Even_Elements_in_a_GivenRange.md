@@ -45,16 +45,16 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
 }
 ```  
 **Time and Space Complexity**
-**Preprocessing**
+**Preprocessing**<br/>
 O(n)
 
-**Each query**
+**Each query**<br/>
 O(1)
 
-**Total**
+**Total**<br/>
 O(n + Q)
 
-**Space**
+**Space**<br/>
 O(n)  
 
 
