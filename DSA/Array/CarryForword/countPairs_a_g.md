@@ -47,7 +47,7 @@ Worst case: nested loops
 
 O(n²)
 
-** Space Complexity**
+**Space Complexity**<br/>
 O(1)  
 
 ---  
@@ -78,6 +78,8 @@ O(n)
 
 **Space Complexity**
 O(1)  
+
+---  
 
 **Optimize (Prefix Sum)**
 ```swift
@@ -112,7 +114,7 @@ O(n)
 
 ---   
 
-**Space and Time Complexity in One go**   
+**Space and Time Complexity in One Go**   
 
 | Approach                 | Time  | Space  |
 | ------------------------ | ----- | ------ |
