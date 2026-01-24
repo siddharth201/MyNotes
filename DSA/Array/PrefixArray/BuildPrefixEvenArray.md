@@ -73,13 +73,16 @@ O(n)
 This is optimal, since output itself is size n.  
 
 **Helper**  
-
+```swift
 public func test_buildPrefixEvenArray(arr: [Int], completion: ([Int]) -> Void) {
     let result = buildPrefixEvenArray(arr: arr)
     completion(result)
-}  
+} 
+``` 
   
-**How To Call**
+**How To Call**  
+```swift
 test_buildPrefixEvenArray(arr: [-1, 5, 4, 6, 8, 9, 11, 0]) { result in
     print(result)
 }
+```
