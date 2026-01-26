@@ -50,18 +50,17 @@ Benefits:
 
 Think Repository when:
 
-✅ You fetch data from API
-✅ You store data in DB
-✅ You might change backend
-✅ You need mock data for testing
+✅ You fetch data from API<br/>
+✅ You store data in DB<br/>
+✅ You might change backend<br/>
+✅ You need mock data for testing<br/>
 
 Shortcut memory:
 
 👉 **If app touches data → Repository**
 
----
+---  
 
----
 
 # ❌ WITHOUT Repository (Bad Design)
 
@@ -94,8 +93,6 @@ class UserViewModel {
 * ViewModel knows API details
 * Cannot switch to database easily
 * Hard to mock
-
----
 
 ---
 
