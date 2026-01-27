@@ -90,9 +90,9 @@ class UserViewModel {
 
 ### Problems
 
-* ViewModel knows API details
-* Cannot switch to database easily
-* Hard to mock
+* ViewModel knows API details<br/>
+* Cannot switch to database easily<br/>
+* Hard to mock<br/>
 
 ---
 
@@ -277,8 +277,8 @@ Not Structural.
 
 Behavioral patterns (Strategy, Observer, Command, etc.) focus on:
 
-👉 How objects **communicate**
-👉 How responsibilities are **distributed**
+👉 How objects **communicate**<br/>
+👉 How responsibilities are **distributed**<br/>
 
 Repository does **not** manage communication or algorithms.
 
@@ -290,8 +290,8 @@ So ❌ Not Behavioral.
 
 Structural patterns (Adapter, Decorator, Facade, Composite, etc.) focus on:
 
-👉 How objects are **composed**
-👉 How classes are **wrapped or connected**
+👉 How objects are **composed**<br/>
+👉 How classes are **wrapped or connected**<br/>
 
 Repository is not mainly about object composition.
 
@@ -303,16 +303,16 @@ So ❌ Not Structural.
 
 Architectural patterns focus on:
 
-👉 Application-level structure
-👉 Layer separation
-👉 Dependency direction
-👉 Overall organization
+👉 Application-level structure<br/>
+👉 Layer separation<br/>
+👉 Dependency direction<br/>
+👉 Overall organization<br/>
 
 Repository:
 
-✔ Defines a data access layer
-✔ Sits between domain and data sources
-✔ Shapes project architecture
+✔ Defines a data access layer<br/>
+✔ Sits between domain and data sources<br/>
+✔ Shapes project architecture<br/>
 
 So ✅ Architectural Pattern.
 
@@ -363,6 +363,327 @@ Say:
 
 > **Repository = Architectural Pattern**
 
+---  
+
+> **Q. I have cross question for repository pattern, so basically repository ia protocol and data sources have to implement and viewmodel have protocol type which we will inject throgh DI**  
+**Ans:**  
+Excellent cross-question 👏 — and you’re **very close already**. Let’s tighten the mental model and correct one small misconception.
+
 ---
+
+# ✅ Correct Mental Model (IMPORTANT)
+
+> **Repository is a protocol.
+> Data sources do NOT implement the repository.
+> Repository IMPLEMENTATION uses data sources.
+> ViewModel depends on repository protocol via DI.**
+
+---
+
+## ❌ Slightly Incorrect Version
+
+> “Repository is protocol and data sources implement it”
+
+This is **not ideal architecture**.
+
+---
+
+## ✅ Correct Architecture
+
+```
+ViewModel
+   ↓
+Repository (protocol)
+   ↓
+RepositoryImpl (class)
+   ↓
+DataSources (API / DB)
+```
+
+---
+
+# 🧠 Who Implements What?
+
+### 1️⃣ Repository Protocol
+
+```swift
+protocol UserRepository {
+    func fetchUsers() async throws -> [User]
+}
+```
+
+---
+
+### 2️⃣ Data Sources
+
+```swift
+class UserAPI {
+    func fetchUsers() async throws -> [User] { }
+}
+
+class UserDatabase {
+    func fetchUsers() async throws -> [User] { }
+}
+```
+
+They are **simple services**.
+
+They do NOT conform to UserRepository.
+
+---
+
+### 3️⃣ Repository Implementation
+
+```swift
+class UserRepositoryImpl: UserRepository {
+
+    let api: UserAPI
+    let db: UserDatabase
+
+    init(api: UserAPI, db: UserDatabase) {
+        self.api = api
+        self.db = db
+    }
+
+    func fetchUsers() async throws -> [User] {
+        do {
+            let users = try await api.fetchUsers()
+            return users
+        } catch {
+            return try await db.fetchUsers()
+        }
+    }
+}
+```
+
+Repository decides **which data source** to use.
+
+---
+
+### 4️⃣ ViewModel
+
+```swift
+class UserViewModel {
+    let repository: UserRepository   // protocol
+
+    init(repository: UserRepository) {
+        self.repository = repository
+    }
+}
+```
+
+---
+
+# 🎯 Why This Separation Matters
+
+If API directly implements Repository:
+
+```
+ViewModel → API
+```
+
+You lose:
+
+❌ Fallback logic
+❌ Combining sources
+❌ Caching
+❌ Flexibility
+
+Repository becomes useless.
+
+---
+
+# 🧠 Correct Responsibility Split
+
+| Layer               | Responsibility      |
+| ------------------- | ------------------- |
+| DataSource          | Fetch raw data      |
+| RepositoryImpl      | Orchestrate sources |
+| Repository Protocol | Contract            |
+| ViewModel           | Consume repository  |
+
+---
+
+# 🎯 Interview-Ready Statement
+
+> “ViewModel depends on a repository protocol. A concrete repository implementation uses one or more data sources like API or database and decides where to fetch data from.”
+
+---
+
+# 🧠 One-Line Memory Hook
+
+> **Repository sits above data sources, not below.**
+
+---
+
+# ⚡ Edge Case
+
+Small apps sometimes skip explicit data source classes:
+
+```
+RepositoryImpl → URLSession
+```
+
+Still valid.
+
+But conceptually:
+
+```
+ViewModel → Repository → DataSource
+```
+
+---
+
+# 🏁 Final Verdict
+
+✅ Repository is protocol
+✅ ViewModel has protocol type
+✅ Injected via DI
+❌ Data sources should NOT implement repository
+
+---  
+
+> **Q. So Network Service manager is a datasource?**  
+**Ans:**  
+Yes ✅ — **exactly**.
+
+> A **Network Service Manager is a Data Source**.
+
+Let’s lock this in properly with a clear mental model.
+
+---
+
+# 🧱 Layer Mapping
+
+```
+ViewModel
+   ↓
+Repository (protocol)
+   ↓
+RepositoryImpl
+   ↓
+NetworkService / DatabaseService   ← Data Sources
+```
+
+So:
+
+👉 `NetworkServiceManager` = **Remote Data Source**
+👉 `DatabaseManager` = **Local Data Source**
+
+---
+
+# 🧠 Why Network Service Is a Data Source
+
+Because its only responsibility is:
+
+✔ Make network request
+✔ Parse response
+✔ Return raw data
+
+It should **NOT**:
+
+❌ Decide fallback
+❌ Cache
+❌ Combine multiple sources
+❌ Apply business rules
+
+Those belong to **Repository**.
+
+---
+
+# ✅ Example
+
+### Network Data Source
+
+```swift
+protocol UserRemoteDataSource {
+    func fetchUsers() async throws -> [User]
+}
+
+class UserAPIService: UserRemoteDataSource {
+    func fetchUsers() async throws -> [User] {
+        // URLSession call
+        return []
+    }
+}
+```
+
+---
+
+### Local Data Source
+
+```swift
+protocol UserLocalDataSource {
+    func fetchUsers() throws -> [User]
+    func saveUsers(_ users: [User])
+}
+```
+
+---
+
+### Repository
+
+```swift
+class UserRepositoryImpl: UserRepository {
+
+    let remote: UserRemoteDataSource
+    let local: UserLocalDataSource
+
+    init(remote: UserRemoteDataSource,
+         local: UserLocalDataSource) {
+        self.remote = remote
+        self.local = local
+    }
+
+    func fetchUsers() async throws -> [User] {
+        do {
+            let users = try await remote.fetchUsers()
+            local.saveUsers(users)
+            return users
+        } catch {
+            return try local.fetchUsers()
+        }
+    }
+}
+```
+
+---
+
+# 🎯 Interview-Ready Answer
+
+> “Yes, network service manager is considered a remote data source. The repository uses it along with other data sources like database or cache and decides where data should come from.”
+
+---
+
+# 🧠 Memory Hook
+
+> **Service Manager = Data Source**
+> **Repository = Coordinator**
+
+---
+
+# ⚡ Small-App Shortcut
+
+Sometimes you’ll see:
+
+```
+Repository → URLSession
+```
+
+Still conceptually:
+
+URLSession is acting as data source.
+
+---
+
+# 🏁 Final Summary
+
+✅ Network manager = Data source<br/>
+✅ Repository sits above it<br/>
+✅ ViewModel never talks to it<br/>
+
+
+
+ 
 
 
