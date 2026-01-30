@@ -1,6 +1,6 @@
 
 
- ## Q. Given an array, find leaders. Leader is defined as if an element is greater than all the elementson the right of it. arr[N-1] will always be a leader  
+ ## Q. Given an array, find leaders. Leader is defined as if an element is greater than all the elements on the right of it. <br/>arr[N-1] will always be a leader  
  
  **Example:**
 ```swift
