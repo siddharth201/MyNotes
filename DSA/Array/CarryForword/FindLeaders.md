@@ -9,6 +9,7 @@
 ```  
 **Solution:**  
 
+```swift
 func findLeaders(arr: [Int]) -> [Int] {
     let n = arr.count
     if n == 0 { return []}
@@ -25,7 +26,9 @@ func findLeaders(arr: [Int]) -> [Int] {
     }
     return result
 }
+```
 
+```swift
 public func testFindLeaders() {
     let arr1 = [16, 17, 4, 3, 5, 2]
     let expected1 = [17, 5, 2]
@@ -36,6 +39,7 @@ public func testFindLeaders() {
     
     // Output: [2, 5, 17]
 }
+```
 
 
 ## Time & Space Complexity
