@@ -50,23 +50,6 @@ Nested loops → O(n²)<br/>
 Overall:<br/>  
 O(n²)<br/>
 
-```swift
-func findMinMax(arr: [Int]) -> (min: Int, max: Int) {
-    var min: Int = arr[0]
-    var max: Int = arr[0]
-    
-    for i in 1..<arr.count {
-        if arr[i] < min {
-            min = arr[i]
-        }
-        if arr[i] > max {
-            max = arr[i]
-        }
-    }
-    
-    return (min, max)
-}
-```
 
 ```swift
 func smallestSubarrayMinMaxOptimize(arr: [Int]) -> Int {
@@ -104,7 +87,27 @@ func smallestSubarrayMinMaxOptimize(arr: [Int]) -> Int {
 O(n)
 
 **Space Complexity**  
-O(1)
+O(1)  
+
+**Helper**  
+  
+```swift
+func findMinMax(arr: [Int]) -> (min: Int, max: Int) {
+    var min: Int = arr[0]
+    var max: Int = arr[0]
+    
+    for i in 1..<arr.count {
+        if arr[i] < min {
+            min = arr[i]
+        }
+        if arr[i] > max {
+            max = arr[i]
+        }
+    }
+    
+    return (min, max)
+}
+```
 
 ```swift
 public func test_smallestSubarrayMinMax() {
