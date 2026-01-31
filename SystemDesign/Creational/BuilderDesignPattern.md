@@ -3,15 +3,7 @@
 
 ## ✅ One-Line Definition (MEMORIZE)
 
-> **Builder Pattern constructs a complex object step by step and allows different representations using the same construction process.**
-
-Simpler:
-
-> **Builder separates object construction from its representation.**
-
-Even simpler:
-
-> **Builder helps create complex objects safely and clearly.**
+> **Builder Pattern is used to construct complex objects step by step and avoid large initializers. It basically lets you set different parts of an object one by one and then create it**
 
 ---
 
