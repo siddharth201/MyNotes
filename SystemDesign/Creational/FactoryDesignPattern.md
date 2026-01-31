@@ -170,13 +170,13 @@ payment.pay(amount: 500)
 
 ---
 
-# 9️⃣ One-Line Interview Answer 💡
+## 9️⃣ One-Line Interview Answer 💡
 
 > “Factory pattern is used when object creation depends on a condition and we want to hide that creation logic behind a common interface.”
 
 ---
 
-# 🔟 Quick Memory Trick 🧠
+## 🔟 Quick Memory Trick 🧠
 
 > **If your code says:**
 > “If this → create A, else → create B”
