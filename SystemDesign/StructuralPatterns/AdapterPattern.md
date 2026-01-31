@@ -41,9 +41,9 @@ class UserAdapter {
 
 **🎯 When to use?**
 
-When integrating legacy code<br/>
-When APIs return incompatible formats<br/>
-When two systems need to talk but don’t match<br/>  
+* When integrating legacy code<br/>
+* When APIs return incompatible formats<br/>
+* When two systems need to talk but don’t match<br/>  
 
 ---  
   
@@ -151,9 +151,9 @@ let bankAPI: BankAPI = YesBankAPIAdapter()
 bankAPI.checkBalance()
 ```
 
-✔ PhonePe code does NOT depend on YesBank directly
-✔ If PhonePe wants to integrate ICICIBank later → create new ICICIAdapter
-✔ No change required in PhonePe code
+✔ PhonePe code does NOT depend on YesBank directly<br/>
+✔ If PhonePe wants to integrate ICICIBank later → create new ICICIAdapter<br/>
+✔ No change required in PhonePe code<br/>
 
 ---
 
@@ -184,9 +184,9 @@ This is exactly how you should explain it in an interview.
 
 Here is a **clean, real-world iOS example** of using:
 
-✔ Adapter Design Pattern
-✔ Dependency Inversion Principle (DIP)
-✔ Clean architecture-friendly approach
+✔ Adapter Design Pattern<br/>
+✔ Dependency Inversion Principle (DIP)<br/>
+✔ Clean architecture-friendly approach<br/>
 
 We will implement:
 
@@ -245,8 +245,8 @@ class URLSessionAdapter: NetworkService {
 }
 ```
 
-✔ This class **implements our interface** (`NetworkService`)
-✔ Internally uses **URLSession**
+✔ This class **implements our interface** (`NetworkService`)<br/>
+✔ Internally uses **URLSession**<br/>
 ✔ If tomorrow we switch to Alamofire → zero changes in the app
 Just create an **AlamofireAdapter**.
 
@@ -286,9 +286,9 @@ let viewModel = UserViewModel(network: URLSessionAdapter())
 viewModel.loadUsers()
 ```
 
-✔ You injected the adapter
-✔ ViewModel has NO idea URLSession exists
-✔ DIP + Adapter + Clean Architecture = perfect design
+✔ You injected the adapter<br/>
+✔ ViewModel has NO idea URLSession exists<br/>
+✔ DIP + Adapter + Clean Architecture = perfect design<br/>
 
 ---
 
@@ -392,9 +392,9 @@ let vm = PaymentViewModel(gateway: RazorPayAdapter())
 vm.makePayment()
 ```
 
-✔ Switch payment provider anytime
-✔ No code changes in ViewModel
-✔ DIP + Adapter perfect combo
+✔ Switch payment provider anytime<br/>
+✔ No code changes in ViewModel<br/>
+✔ DIP + Adapter perfect combo<br/>
 
 ---
 
@@ -560,9 +560,9 @@ class PaymentViewModel {
 }
 ```
 
-✔ DIP (Dependency Inversion Principle) applied
-✔ ViewModel knows NOTHING about RazorPay, Google Pay, or PhonePeSDK
-✔ Purely depends on **protocol**
+✔ DIP (Dependency Inversion Principle) applied<br/>
+✔ ViewModel knows NOTHING about RazorPay, Google Pay, or PhonePeSDK<br/>
+✔ Purely depends on **protocol**<br/>
 
 ---
 
@@ -621,9 +621,9 @@ PhonePe processed ₹500
 | Google Pay | GooglePayAdapter | ❌ No change        |
 | PhonePe    | PhonePeAdapter   | ❌ No change        |
 
-✔ The ViewModel never changes
-✔ No tight coupling to external SDKs
-✔ Clean, testable, scalable architecture
+✔ The ViewModel never changes<br/>
+✔ No tight coupling to external SDKs<br/>
+✔ Clean, testable, scalable architecture<br/>
 
 ---
 
