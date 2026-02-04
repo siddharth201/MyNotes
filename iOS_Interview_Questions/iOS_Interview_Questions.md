@@ -5,8 +5,9 @@
 
 ### Can you explain the iOS Application Lifecycle?
 <details>
-<summary>Answer</summary>
-The iOS app lifecycle is managed by the UIApplication object. The main states are:
+<summary>**Answer**</summary>
+The iOS app lifecycle is managed by the UIApplication object. The main states are:  
+
 
 **1. Not Running:** App is not launched or has been terminated.
 
@@ -16,11 +17,11 @@ The iOS app lifecycle is managed by the UIApplication object. The main states ar
 
 **4. Background:** App is running code in the background but not visible to the user.
 
-**5. Suspended:** App is in memory but not executing code, ready to be resumed quickly.
+**5. Suspended:** App is in memory but not executing code, ready to be resumed quickly.  
 
-###Callbacks in AppDelegate:
+### Callbacks in AppDelegate:
 
-• application(_:didFinishLaunchingWithOptions:) → called when the app launches.
+• `application(_:didFinishLaunchingWithOptions:)` → called when the app launches.
 
 • applicationDidBecomeActive(_:) → app enters foreground.
 
