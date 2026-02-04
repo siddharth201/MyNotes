@@ -151,3 +151,28 @@ This makes your code **safe** because you know the value won’t change accident
   * API keys
 </details>  
 
+### **Q. What are the common data types in Swift?**
+<details>
+<summary>Answer</summary> 
+
+**1. Int →** Whole numbers (10, -5)
+
+**2. Double →** Decimal numbers with precision (3.14, -0.99)
+
+**3. Float →** Decimal with less precision than Double
+
+**4. String →** Text values ("Hello")
+
+**5. Bool →** true or false
+
+**6. Character →** Single letter ("A")
+
+**7. Array →** Ordered list ([1,2,3])
+
+**8. Dictionary →** Key-value pairs (["name": "Anand"])
+
+**9. Set →** Unique unordered values ({1,2,3})
+
+Swift is **type-safe →** Once a variable is declared with a type, you can’t assign a different type.
+</details>  
+
