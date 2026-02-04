@@ -55,5 +55,49 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 `7. viewDidDisappear(_:)` → called when the view has gone offscreen (clean-up tasks).
 
 `8. deinit` → called when the view controller is deallocated (release resources).
-</details>
+</details>  
+
+### Q. What is the difference between CFBundleVersion and CFBundleShortVersionString?
+<details>
+<summary>Answer</summary>
+**CFBundleShortVersionString**
+
+• This is the “marketing version” of your app.
+
+• Usually shown to users in the App Store or app settings.
+
+• Format: "Major.Minor.Patch" (e.g., "1.2.3")
+
+• Purpose: Communicate the app version to users.
+
+**Example in Info.plist:**
+
+```
+<key>CFBundleShortVersionString</key>
+<string>1.2.3</string>
+```
+
+---
+
+**CFBundleVersion**
+
+• This is the “build number” of your app.
+
+• Represents a specific build for internal tracking or deployment.
+
+• Can be any string (usually integer increments: "1", "2", "3").
+
+• Purpose: Track specific builds for testing, CI/CD, or App Store uploads.
+
+**Example in Info.plist:**
+
+```
+<key>CFBundleVersion</key>
+<string>45</string>
+```
+</details>  
+
+
+
+
 
