@@ -101,7 +101,7 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 
 ## **Swift Programming Language**  
 
-### ** What is the difference between var and let in Swift?**
+### **What is the difference between var and let in Swift?**
 <details>
 <summary>Answer</summary>
 In Swift, we use **var** and **let** to store values in memory.
