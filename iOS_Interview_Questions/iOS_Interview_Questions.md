@@ -60,7 +60,7 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 ### Q. What is the difference between CFBundleVersion and CFBundleShortVersionString?
 <details>
 <summary>Answer</summary>
-**CFBundleShortVersionString**
+** CFBundleShortVersionString **
 
 • This is the “marketing version” of your app.
 
