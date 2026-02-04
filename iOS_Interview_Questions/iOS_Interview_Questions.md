@@ -3,9 +3,9 @@
 
 ## iOS Basics
 
-### Can you explain the iOS Application Lifecycle?
+### Q. Can you explain the iOS Application Lifecycle?
 <details>
-<summary>**Answer**</summary>
+<summary> **Answer** </summary>
 The iOS app lifecycle is managed by the UIApplication object. The main states are:  
 
 
@@ -23,14 +23,14 @@ The iOS app lifecycle is managed by the UIApplication object. The main states ar
 
 • `application(_:didFinishLaunchingWithOptions:)` → called when the app launches.
 
-• applicationDidBecomeActive(_:) → app enters foreground.
+• `applicationDidBecomeActive(_:)` → app enters foreground.
 
-• applicationWillResignActive(_:) → app will move to inactive state.
+• `applicationWillResignActive(_:)` → app will move to inactive state.
 
-• applicationDidEnterBackground(_:) → app moved to background.
+• `applicationDidEnterBackground(_:)` → app moved to background.
 
-• applicationWillEnterForeground(_:) → app is about to become active again.
+• `applicationWillEnterForeground(_:)` → app is about to become active again.
 
-• applicationWillTerminate(_:) → app is about to be killed.
+• `applicationWillTerminate(_:)` → app is about to be killed.
 </details>
 
