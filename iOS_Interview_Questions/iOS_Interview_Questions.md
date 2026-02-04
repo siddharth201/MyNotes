@@ -6,7 +6,9 @@
 ### Q. Can you explain the iOS Application Lifecycle?
 <details>
 <summary>Answer</summary>
-The iOS app lifecycle is managed by the UIApplication object. The main states are:
+The iOS app lifecycle is managed by the UIApplication object. The main states are:  
+
+**(NIABS)**
 
 **1. Not Running:** App is not launched or has been terminated.
 
