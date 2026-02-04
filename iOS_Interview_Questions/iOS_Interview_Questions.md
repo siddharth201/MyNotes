@@ -181,8 +181,10 @@ Swift is **type-safe →** Once a variable is declared with a type, you can’t 
 <details>
 <summary>Answer</summary>  
 
-• In Swift, a variable **must always have a value**.
-• But sometimes, a value may be missing (like data from an API or database).
+• In Swift, a variable **must always have a value**.  
+
+• But sometimes, a value may be missing (like data from an API or database).  
+
 • To handle this, Swift uses **Optionals**.
 
 **Optional means:** The variable can hold a value OR **nil**.
