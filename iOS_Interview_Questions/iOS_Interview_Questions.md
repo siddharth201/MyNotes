@@ -232,7 +232,7 @@ if let value = value {
 <details>
 <summary>Answer</summary> 
 
-• A closure is a **block of code** that you can store in a variable, pass as an argument, and call later.
+• A closure is a **block of code** that you can store in a variable, pass as an argument, and call later.  
 • Think of it as a **function without a name (anonymous function).**
 
 **Example:**
@@ -324,7 +324,7 @@ Use case: Simple iteration with cleaner syntax than for-in.
 <details>
 <summary>Answer</summary>   
 
-• An extension in Swift is a way to **add new functionality** to an existing class, struct, enum, or protocol.
+• An extension in Swift is a way to **add new functionality** to an existing class, struct, enum, or protocol.  
 • You can extend both your own types and system types (like String, Int, etc.).
 
 **Why Use Extensions?**
@@ -370,7 +370,7 @@ Here, we added a new property **isPalindrome** to String.
 <details>
 <summary>Answer</summary>   
 
-• A protocol is like a **blueprint** in Swift.
+• A protocol is like a **blueprint** in Swift.  
 • It defines a set of **methods, properties, or requirements** that a class, struct, or enum must follow if it adopts the protocol.
 
 **Why Protocols?**
@@ -411,7 +411,7 @@ myCar.drive()
 <details>
 <summary>Answer</summary> 
 
-• Generics allow you to write **flexible, reusable code**.
+• Generics allow you to write **flexible, reusable code**.  
 • Instead of writing separate functions for Int, String, Double, etc., you write **one generic function**.
 
 **Basic Example without Generics**
