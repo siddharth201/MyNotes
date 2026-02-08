@@ -480,4 +480,233 @@ func decodeJSON<T: Decodable>(_ data: Data, as type: T.Type) -> T? {
 * Reusable → works across many types
 * Type-safe → errors caught at compile time
 * Powerful → used everywhere in Swift (Arrays, Dictionaries, Combine, SwiftUI)
+</details>  
+
+
+### Q. Difference between Value Type and Reference Type in Swift?
+<details>
+<summary>Answer</summary>  
+
+**Value Type:**
+When you assign or pass them, a **copy** of the data is created.
+
+**Reference Type:**
+When you assign or pass them, only a **reference (pointer)** to the same data is shared.
+
+---
+
+### **Examples**
+
+**Value Types →** `struct`, `enum`, `tuple`
+**Reference Types →** `class`, `closure`
+
+---
+
+### **Memory Behavior**
+
+• Value types are stored in **stack memory**.
+• Reference types are stored in **heap memory** (and managed by ARC – Automatic Reference Counting).
+
+---
+
+### **Copying Behavior**
+
+**Value Type:**
+Each variable holds its own copy. Changing one does **not affect** the other.
+
+**Reference Type:**
+Multiple variables can point to the same object. Changing one affects all references.
+
+---
+
+### **Example of Value Type**
+
+```
+struct Point {
+    var x: Int
+    var y: Int
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1   // copy created
+p2.x = 10
+
+print(p1.x)   // 1 (not affected)
+```
+
+---
+
+### **Example of Reference Type**
+
+```
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var person1 = Person(name: "Anand")
+var person2 = person1   // both point to same object
+person2.name = "Gaur"
+
+print(person1.name)   // Gaur (changed!)
+print(person2.name)   // Gaur
+```
+
+---
+
+### **Mutability**
+
+• Value type immutability depends on whether the variable is declared with `let` (constant).
+• Reference type variables declared with `let` → You **can modify properties** inside the object, but you **cannot reassign** it to another object.
+
+---
+
+### **Performance**
+
+• Value types (structs) are generally **faster and lightweight** because they live on the stack.
+• Reference types (classes) are **heavier** due to heap allocation and ARC overhead.
+
+---
+
+### **When to Use?**
+
+**Value Type (structs):**
+Use when you want **independent copies**, immutability, and safer code (preferred in Swift).
+Examples: coordinates, settings, models.
+
+**Reference Type (classes):**
+Use when you want **shared state or inheritance**.
+Examples: UI elements, network managers.
 </details>
+
+### Q. Difference between static and class variable in Swift
+<details>
+<summary>Answer</summary>  
+
+**static variable →**
+Belongs to the type itself, not to any instance.
+Cannot be overridden in subclasses.
+
+**class variable →**
+Also belongs to the type, but **can be overridden by subclasses**.
+
+---
+
+### **Usage Context**
+
+• `static` can be used in **structs, enums, and classes**.
+• `class` can only be used in **classes** (because overriding is only possible in classes).
+
+---
+
+### **Overriding**
+
+• `static` → Cannot be overridden.
+• `class` → Can be overridden in subclasses.
+
+---
+
+### **Example with static**
+
+```
+class Animal {
+    static var species = "Unknown"
+}
+
+class Dog: Animal {
+    // Error: Cannot override static variable
+    // override static var species = "Dog"
+}
+
+print(Animal.species)   // Unknown
+```
+
+---
+
+### **Example with class**
+
+```
+class Animal {
+    class var species: String {
+        return "Unknown"
+    }
+}
+
+class Dog: Animal {
+    override class var species: String {
+        return "Dog"
+    }
+}
+
+print(Animal.species)   // Unknown
+print(Dog.species)      // Dog
+```
+
+---
+
+### **Memory Behavior**
+
+• Both `static` and `class` variables are **type-level** (shared across all instances).
+• Not tied to individual objects.
+
+---
+
+### **When to Use**
+
+• Use **static** when you want a shared constant/utility that should **not be overridden**
+(e.g., helper constants, utility functions).
+
+• Use **class** when you want subclasses to **provide their own implementation**.
+
+---
+
+### **Common Use Cases**
+
+• `static` → Config constants, utility methods, singleton patterns.
+• `class` → Properties like `species` or `typeName` where each subclass should have its own version.
+</details>  
+
+
+### Q11: Explain the use of defer keyword in Swift
+<details>
+<summary>Answer</summary>  
+
+`defer` is used to schedule a block of code that will be executed **just before leaving the current scope** (like when the function ends).
+
+---
+
+### **Purpose**
+
+• Ensures that certain cleanup or finishing tasks are done **no matter how the function exits**
+(normal return or error).
+
+---
+
+### **Execution Order**
+
+• If you have multiple `defer` blocks, they are executed in **reverse order** (last-in, first-out).
+
+---
+
+### **Example**
+
+```
+func testDefer() {
+    defer {
+        print("Cleanup before exit")
+    }
+
+    print("Inside function")
+}
+
+testDefer()
+
+// Output:
+// Inside function
+// Cleanup before exit
+```
+</details>
+
+
