@@ -596,7 +596,7 @@ Also belongs to the type, but **can be overridden by subclasses**.
 
 ### **Usage Context**
 
-• `static` can be used in **structs, enums, and classes**.
+• `static` can be used in **structs, enums, and classes**.  
 • `class` can only be used in **classes** (because overriding is only possible in classes).
 
 ---
@@ -648,7 +648,7 @@ print(Dog.species)      // Dog
 
 ### **Memory Behavior**
 
-• Both `static` and `class` variables are **type-level** (shared across all instances).
+• Both `static` and `class` variables are **type-level** (shared across all instances).  
 • Not tied to individual objects.
 
 ---
@@ -664,12 +664,12 @@ print(Dog.species)      // Dog
 
 ### **Common Use Cases**
 
-• `static` → Config constants, utility methods, singleton patterns.
+• `static` → Config constants, utility methods, singleton patterns.  
 • `class` → Properties like `species` or `typeName` where each subclass should have its own version.
 </details>  
 
 
-### Q11: Explain the use of defer keyword in Swift
+### Q. Explain the use of defer keyword in Swift
 <details>
 <summary>Answer</summary>  
 
