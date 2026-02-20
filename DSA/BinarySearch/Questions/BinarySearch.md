@@ -30,9 +30,10 @@ public func testBinarySearch(_ nums: [Int], _ target: Int, completion: (Int) -> 
 testBinarySearch([1,3,5,7,9,10,11,13,15,17,19,30,35,40], 17) { result in
     print("Result Index: \(result)")
 }
-```  
+```    
 
-###Time & Space Complexity
-Time: O(log n)
+
+### Time & Space Complexity  
+Time: O(log n)  
 Space: O(1)
 
