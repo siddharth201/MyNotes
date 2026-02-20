@@ -1,5 +1,5 @@
 
-> **Q. Given a sorted array of integers. Search for a target value and return its first index, if not present return -1 **  
+> **Q. Given a sorted array of integers. Search for a target value and return its first index, if not present return -1**  
 
 ```swift
 func firstOccurrence_approch1(_ nums: [Int], _ target: Int) -> Int {
