@@ -33,7 +33,7 @@ public func testFrequencyQueries(_ arr: [Int], _ queries: [Int], completion: ([I
 }
 ```
 
-###How to Call
+### How to Call
 ```swift
 testFrequencyQueries([1, 2, 1, 3, 2, 1], [1, 2, 5]) { result in
     print(result)
