@@ -22,7 +22,7 @@ func tripletSum(_ nums: [Int], _ target: Int) -> [[Int]]? {
 }
 ```
 
-**Time Complexity:** `O(n²)  `
+**Time Complexity:** `O(n²)`  
 **Space Complexity:** `O(1)`
   
 ```swift
