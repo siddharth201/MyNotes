@@ -17,7 +17,7 @@ func findPairs(_ arr: [Int], _ k: Int) -> Bool {
 ```  
 ### Complexity
 
-**Time:** `O(n)`
+**Time:** `O(n)`  
 **Space:** `O(n)`  
 
 ### HashMap
@@ -40,7 +40,7 @@ func findPairsHashMap(_ arr: [Int], _ k: Int) -> (Int, Int)? {
 
 ### Complexity
 
-**Time:** `O(n)`
+**Time:** `O(n)`  
 **Space:** `O(n)`   
 
 ```swift
@@ -54,7 +54,8 @@ public func testFindPairsHashMap(_ arr: [Int], _ k: Int, completion: ((Int, Int)
     completion(result_map)
 }
 ```  
-
+  
+**How to Call**
 ```swift  
 testFindPairsHashSet([1,3,5,10,20,23,30], 23) { result in
    print(result)
