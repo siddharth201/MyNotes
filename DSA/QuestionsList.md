@@ -10,5 +10,8 @@
   
 [Q>2 Given a sorted array and an integer k find a pair (i, j) such that A[j]-A[i] = k where j > i](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/FindPairsWithDifference.md)  
 
-[Q>3 Given a sorted array, find three indices i,j,k such that Ai+Aj+Ak = target.](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/TripletSum.md)
+[Q>3 Given a sorted array, find three indices i,j,k such that Ai+Aj+Ak = target.](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/TripletSum.md) 
+
+### HashMaps & HashSets
+[Q>1 Given an array and q queries, return frequency of each element for every given query?](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FrequencyQueries.md)
 
