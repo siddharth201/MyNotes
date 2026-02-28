@@ -5,7 +5,7 @@ Let’s break it properly — interview style.
 
 ---
 
-# 🧠 Step 1: Pattern Recognition
+## 🧠 Step 1: Pattern Recognition
 
 ### Given:
 
@@ -25,7 +25,7 @@ This is **NOT sliding window**.
 
 ---
 
-# 🧩 Why Two Pointers Works Here
+## 🧩 Why Two Pointers Works Here
 
 Because array is sorted:
 
@@ -36,7 +36,7 @@ You adjust intelligently.
 
 ---
 
-# 🔥 Optimal Approach — Two Pointers (O(n))
+## 🔥 Optimal Approach — Two Pointers (O(n))
 
 ### Algorithm
 
@@ -100,7 +100,7 @@ func findPair(_ arr: [Int], _ k: Int) -> (Int, Int)? {
 
 ---
 
-# 🧠 How You Should Think in Interview
+## 🧠 How You Should Think in Interview
 
 Your brain flow:
 
@@ -115,7 +115,7 @@ Because:
 
 ---
 
-# 🆚 Alternative Approaches
+## 🆚 Alternative Approaches
 
 ## 1️⃣ Hashing (Works even if NOT sorted)
 
@@ -151,7 +151,7 @@ Less optimal than two pointers.
 
 ---
 
-# 📌 Pattern Extraction
+## 📌 Pattern Extraction
 
 This problem teaches:
 
@@ -164,7 +164,7 @@ This problem teaches:
 
 ---
 
-# 🚨 Important Variation
+## 🚨 Important Variation
 
 If array NOT sorted:
 → Either sort + two pointers (O(n log n))
@@ -172,7 +172,7 @@ If array NOT sorted:
 
 ---
 
-# 🧠 Very Important Interview Insight
+## 🧠 Very Important Interview Insight
 
 Two pointer works because:
 
@@ -185,7 +185,7 @@ If array was unsorted, this logic breaks.
 
 ---  
 
-## In two pointers how to decide the pointer position is there any mental map for this or some clue?  
+>> Q. In two pointers how to decide the pointer position is there any mental map for this or some clue?  
 This is a **very powerful question** 👏
 Most people memorize two pointers.
 You’re asking how to *decide pointer movement*. That’s advanced thinking.
@@ -194,7 +194,7 @@ Let’s build a mental model.
 
 ---
 
-# 🧠 Core Rule of Two Pointers
+## 🧠 Core Rule of Two Pointers
 
 Two pointers works when:
 
@@ -205,7 +205,7 @@ you can control it.
 
 ---
 
-# 🔥 The Real Mental Map
+## 🔥 The Real Mental Map
 
 ## Step 1: Ask — Is array sorted?
 
@@ -225,7 +225,7 @@ That’s your control lever.
 
 ---
 
-# 🎯 Example: 2 Sum in Sorted Array
+## 🎯 Example: 2 Sum in Sorted Array
 
 We want:
 
@@ -257,7 +257,7 @@ How to decrease sum?
 
 ---
 
-# 🧠 The Decision Formula
+## 🧠 The Decision Formula
 
 For increasing sorted array:
 
@@ -272,7 +272,7 @@ Not magic. Just math direction.
 
 ---
 
-# 🧩 Universal Mental Framework
+## 🧩 Universal Mental Framework
 
 Whenever using two pointers, ask:
 
@@ -284,7 +284,7 @@ If yes → move that pointer.
 
 ---
 
-# 📌 Another Example: Remove Duplicates
+## 📌 Another Example: Remove Duplicates
 
 Array sorted.
 
@@ -309,7 +309,7 @@ Movement rule depends on comparison.
 
 ---
 
-# 🧠 Different Two Pointer Types
+## 🧠 Different Two Pointer Types
 
 There are actually 3 common pointer styles:
 
@@ -360,7 +360,7 @@ This is technically also two pointers.
 
 ---
 
-# 🧠 Visual Mind Map
+## 🧠 Visual Mind Map
 
 ```
 Two Pointers
@@ -381,7 +381,7 @@ Two Pointers
 
 ---
 
-# 🔥 Golden Rule
+## 🔥 Golden Rule
 
 Pointer movement is NOT random.
 
@@ -391,7 +391,7 @@ It always answers this question:
 
 ---
 
-# 🚀 Advanced Insight
+## 🚀 Advanced Insight
 
 Two pointers works because:
 
@@ -408,7 +408,7 @@ Without monotonicity → two pointers fails.
 
 ---  
 
-## In binary search we use while L<=R and in two pointers we use  while L<R how we decide this  
+>> Q.In binary search we use while L<=R and in two pointers we use  while L<R how we decide this  
 
 🔥 Excellent question.
 This is exactly the kind of detail interviewers love.
@@ -427,7 +427,7 @@ Let’s break it clearly.
 
 ---
 
-# 🧠 1️⃣ Binary Search → `while left <= right`
+## 🧠 1️⃣ Binary Search → `while left <= right`
 
 ### Why?
 
@@ -477,7 +477,7 @@ You would exit early and miss checking it.
 
 ---
 
-# 🧠 Binary Search Mental Model
+## 🧠 Binary Search Mental Model
 
 You are shrinking a **search space**.
 
@@ -497,7 +497,7 @@ left <= right
 
 ---
 
-# 🔥 Rule for Binary Search
+## 🔥 Rule for Binary Search
 
 Use:
 
@@ -513,7 +513,7 @@ When:
 
 ---
 
-# 🧠 2️⃣ Two Pointers → `while left < right`
+## 🧠 2️⃣ Two Pointers → `while left < right`
 
 Now let’s understand why different.
 
@@ -555,7 +555,7 @@ while left < right
 
 ---
 
-# 🧠 Two Pointer Mental Model
+## 🧠 Two Pointer Mental Model
 
 You are comparing two different elements.
 
@@ -569,7 +569,7 @@ No valid pair remains.
 
 ---
 
-# 📊 Side-by-Side Summary
+## 📊 Side-by-Side Summary
 
 | Concept                  | Binary Search                  | Two Pointers                |
 | ------------------------ | ------------------------------ | --------------------------- |
@@ -580,7 +580,7 @@ No valid pair remains.
 
 ---
 
-# 🔥 Very Important Insight
+## 🔥 Very Important Insight
 
 Ask yourself:
 
@@ -591,7 +591,7 @@ If NO → `<`
 
 ---
 
-# 🧠 One More Case (Advanced)
+## 🧠 One More Case (Advanced)
 
 Sliding Window also uses:
 
@@ -610,7 +610,7 @@ Different logic again.
 
 ---
 
-# 🚀 Final Mental Shortcut
+## 🚀 Final Mental Shortcut
 
 When writing a loop, ask:
 
