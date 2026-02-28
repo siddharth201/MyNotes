@@ -185,7 +185,7 @@ If array was unsorted, this logic breaks.
 
 ---  
 
->> Q. In two pointers how to decide the pointer position is there any mental map for this or some clue?  
+>> **Q. In two pointers how to decide the pointer position is there any mental map for this or some clue?**  
 This is a **very powerful question** 👏
 Most people memorize two pointers.
 You’re asking how to *decide pointer movement*. That’s advanced thinking.
@@ -408,7 +408,7 @@ Without monotonicity → two pointers fails.
 
 ---  
 
->> Q.In binary search we use while L<=R and in two pointers we use  while L<R how we decide this  
+>> **Q.In binary search we use while L<=R and in two pointers we use  while L<R how we decide this**  
 
 🔥 Excellent question.
 This is exactly the kind of detail interviewers love.
