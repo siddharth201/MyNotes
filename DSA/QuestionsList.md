@@ -8,5 +8,7 @@
 
 [Pattern Recognition and Reasoning](https://github.com/siddharth201/MyNotes/blob/main/DSA/PatternRecognition/TwoPointers1.md)  
   
-[Q>2 Given a sorted array and an integer k find a pair (i, j) such that A[j]-A[i] = k where j > i](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/FindPairsWithDifference.md)
+[Q>2 Given a sorted array and an integer k find a pair (i, j) such that A[j]-A[i] = k where j > i](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/FindPairsWithDifference.md)  
+
+[Q>3 Given a sorted array, find three indices i,j,k such that Ai+Aj+Ak = target.](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/TripletSum.md)
 
