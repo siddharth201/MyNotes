@@ -1,4 +1,4 @@
->> **Given a sorted array and an integer k find a pair (i, j) such that A[j]-A[i] = k  where j>i**  
+> **Given a sorted array and an integer k find a pair (i, j) such that A[j]-A[i] = k  where j>i**  
 
 ```swift
 func findPairWithDifference(_ nums: [Int], _ k: Int) -> (Int, Int)? {
@@ -25,8 +25,9 @@ func findPairWithDifference(_ nums: [Int], _ k: Int) -> (Int, Int)? {
     
     return nil
 }
-```
-###Complexity
+```  
+
+### Complexity
 
 **Time:** `O(n)`  
 **Space:** `O(1)`  
