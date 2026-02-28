@@ -319,7 +319,7 @@ Problem Statement → Pattern Trigger → Template.
 
 ## 25 MIXED QUESTIONS – IDENTIFY ONLY PATTERN
 
-**1. Find longest substring without repeating characters**
+## Q.1. Find longest substring without repeating characters**
 
 Your answer:
 
@@ -330,7 +330,7 @@ But let’s sharpen your reasoning.
 
 ---
 
-## 🧠 Proper Pattern Recognition Thinking
+### 🧠 Proper Pattern Recognition Thinking
 
 When you see:
 
@@ -345,19 +345,19 @@ That triggers:
 
 ---
 
-## 🔥 Why NOT Prefix Sum?
+### 🔥 Why NOT Prefix Sum?
 
 Because this isn’t about sum or range queries.
 
 ---
 
-## 🔥 Why NOT Two Pointers (sorted)?
+### 🔥 Why NOT Two Pointers (sorted)?
 
 Because string is not sorted and order matters.
 
 ---
 
-## 🧠 Final Clean Mental Statement (Interview Style)
+### 🧠 Final Clean Mental Statement (Interview Style)
 
 > This is a contiguous substring optimization problem with a constraint (no repeating characters), so we use a variable-size sliding window with a HashSet to maintain uniqueness.
 
