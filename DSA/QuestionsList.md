@@ -15,4 +15,6 @@
 ### HashMaps & HashSets
 [Q>1 Given an array and q queries, return frequency of each element for every given query?](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FrequencyQueries.md)
 
-[Q>2 Find first non repeating element.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FirstNonRepeating.md)
+[Q>2 Find first non repeating element.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FirstNonRepeating.md)  
+
+[Q>3 Check if there are any duplicate in the array.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FindDuplicates.md)
