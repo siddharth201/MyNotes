@@ -319,7 +319,7 @@ Problem Statement → Pattern Trigger → Template.
 
 ## 25 MIXED QUESTIONS – IDENTIFY ONLY PATTERN
 
-## Q.1. Find longest substring without repeating characters**
+## Q.1 Find longest substring without repeating characters.
 
 Your answer:
 
@@ -369,7 +369,9 @@ That sentence sounds very strong in interviews.
 
 Sliding Window + HashSet
 
----
+---  
+
+## Q.2 Find pair with sum k in sorted array.
 
 
 
