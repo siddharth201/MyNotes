@@ -18,3 +18,5 @@ func printSubarrays(_ arr: [Int], _ s: Int, _ e: Int) {
 public func testPrintSubarrays(_ arr: [Int], _ s: Int, _ e: Int) {
     printSubarrays(arr, s, e)
 }
+
+testPrintSubarrays([1,2,5,6,-1], 2, 3)
