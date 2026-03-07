@@ -20,8 +20,8 @@ func findMaxSumSubArray(arr: [Int]) -> Int {
 ```
 
 **Time and Space Complexity**  
-**Time:** O(n²)  
-**Space:** O(1)
+**Time:** `O(n²)`  
+**Space:** `O(1)`
 
 ```swift
 public func testFindmaxSumSubArray(arr: [Int], completion: (Int)->Void) {
