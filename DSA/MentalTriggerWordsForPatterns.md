@@ -295,13 +295,13 @@ Do I need to try all possibilities?
 
 Before solving ANY array problem, ask:
 
-1️⃣ Is it contiguous? → Sliding Window
-2️⃣ Is it sorted? → Two Pointer / Binary Search
-3️⃣ Need frequency? → HashMap
-4️⃣ Many range sums? → Prefix Sum
-5️⃣ Min/Max possible value? → Binary Search on Answer
-6️⃣ Generate all combinations? → Backtracking
-7️⃣ Optimize locally? → Greedy
+1️⃣ Is it contiguous? → Sliding Window  
+2️⃣ Is it sorted? → Two Pointer / Binary Search  
+3️⃣ Need frequency? → HashMap  
+4️⃣ Many range sums? → Prefix Sum  
+5️⃣ Min/Max possible value? → Binary Search on Answer  
+6️⃣ Generate all combinations? → Backtracking  
+7️⃣ Optimize locally? → Greedy  
 
 ---
 
@@ -371,7 +371,32 @@ Sliding Window + HashSet
 
 ---  
 
-## Q.2 Find pair with sum k in sorted array.
+## Q.2 Given an array check if any subarray has sum k  
+### 🧠 Pattern Recognition Rule
+
+Whenever you see:
+
+subarray sum = k
+subarray sum = 0
+subarray sum divisible by k
+
+Your brain should instantly trigger:
+
+Prefix Sum + HashMap/Set
+
+### Mental Model (Very Important)
+
+Think like this while scanning the array:
+
+prefixSum = sum from start to current index
+
+Now ask:
+
+Did I ever see prefixSum - k before?
+
+If yes:
+
+subarray sum = k
 
 
 
