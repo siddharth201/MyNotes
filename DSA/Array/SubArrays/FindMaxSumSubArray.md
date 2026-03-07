@@ -1,5 +1,6 @@
 > **Given an array, find max sum subarray.** 
 
+```swift
 func findmaxSumSubArray(arr: [Int]) -> Int {
     var maxSum = Int.min
     let n = arr.count
@@ -15,9 +16,14 @@ func findmaxSumSubArray(arr: [Int]) -> Int {
         }
     }
     return maxSum
-}
+} 
+```
 
 public func testFindmaxSumSubArray(arr: [Int], completion: (Int)->Void) {
     let result = findmaxSumSubArray(arr: arr)
     completion(result)
+}  
+
+testFindmaxSumSubArray(arr: [3,4,5,-1]) { result in
+    print(result)
 }
