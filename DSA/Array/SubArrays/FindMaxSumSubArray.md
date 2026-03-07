@@ -19,11 +19,17 @@ func findMaxSumSubArray(arr: [Int]) -> Int {
 } 
 ```
 
+```swift
 public func testFindmaxSumSubArray(arr: [Int], completion: (Int)->Void) {
     let result = findmaxSumSubArray(arr: arr)
     completion(result)
-}  
+} 
+``` 
 
+**How to Test**
+
+```swift
 testFindmaxSumSubArray(arr: [3,4,5,-1]) { result in
     print(result)
 }
+
