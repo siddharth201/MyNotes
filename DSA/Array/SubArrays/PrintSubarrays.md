@@ -15,6 +15,10 @@ func printSubarrays(_ arr: [Int], _ s: Int, _ e: Int) {
     }
 }
 
+**Time & Space Complexity**  
+**Time Complexity:** `O(n³)`
+**Space Complexity** `O(1)`
+
 public func testPrintSubarrays(_ arr: [Int], _ s: Int, _ e: Int) {
     printSubarrays(arr, s, e)
 }
