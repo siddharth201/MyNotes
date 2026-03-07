@@ -16,6 +16,9 @@ func printSumOfAllSubArrays_BruteForce(arr: [Int]) {
         }
     }
 }
+```
+
+
 
 func printSumOfAllSubArrays_PrefixSum(arr: [Int]) {
     let n = arr.count
