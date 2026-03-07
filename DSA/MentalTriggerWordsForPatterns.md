@@ -519,9 +519,235 @@ Immediately ask:
 
 That determines the pattern.
 
+--- 
+
+
+## 🧠 Master Array Pattern Recognition Map
+
+When you see an **array problem**, ask these questions **in order**.
+
+```
+ARRAY PROBLEM
+     |
+     |
+     ├── Is the array sorted?
+     |        |
+     |        ├── YES → Two Pointers / Binary Search
+     |
+     ├── Is it about subarrays (contiguous)?
+     |        |
+     |        ├── Maximum sum → Kadane
+     |        ├── Exact sum = k → Prefix Sum + HashMap
+     |        └── Sum ≤ / ≥ k (positive numbers) → Sliding Window
+     |
+     ├── Do we need frequency / duplicates?
+     |        |
+     |        └── HashMap / HashSet
+     |
+     └── Are we minimizing or maximizing a value?
+              |
+              └── Binary Search on Answer
+```
+
 ---
 
+## 1️⃣ Sliding Window
 
+### Trigger words
+
+* substring
+* subarray
+* longest / smallest
+* window size k
+* at most k
+* at least k
+
+### Example
+
+```
+Longest substring without repeating characters
+```
+
+Technique
+
+```
+expand right
+shrink left
+```
+
+Time
+
+```
+O(n)
+```
+
+---
+
+## 2️⃣ Two Pointers
+
+### Trigger words
+
+* sorted array
+* pair sum
+* triplet sum
+* remove duplicates
+* closest pair
+
+### Example
+
+```
+Find pair with sum k in sorted array
+```
+
+Technique
+
+```
+left++
+right--
+```
+
+---
+
+## 3️⃣ Prefix Sum
+
+### Trigger words
+
+* subarray sum = k
+* subarray sum = 0
+* subarray sum divisible by k
+* range sum queries
+
+### Example
+
+```
+Check if subarray with sum k exists
+```
+
+Key formula
+
+```
+prefix[j] - prefix[i] = k
+```
+
+---
+
+## 4️⃣ Kadane Algorithm
+
+### Trigger words
+
+* maximum subarray
+* maximum contiguous sum
+* best continuous segment
+
+Example
+
+```
+Maximum subarray sum
+```
+
+Core idea
+
+```
+currentSum = max(num, currentSum + num)
+```
+
+---
+
+## 5️⃣ HashMap / HashSet
+
+### Trigger words
+
+* frequency
+* duplicate
+* repeating
+* count
+* anagram
+
+Example
+
+```
+Check duplicates in array
+```
+
+---
+
+## 6️⃣ Binary Search
+
+### Trigger words
+
+* sorted
+* search element
+* first / last occurrence
+* minimum possible
+* maximum possible
+
+Example
+
+```
+Allocate minimum pages
+```
+
+Technique
+
+```
+Binary search on answer
+```
+
+---
+
+## 🧠 Subarray Problem Quick Guide
+
+If you see **SUBARRAY**, immediately ask:
+
+| Condition                  | Pattern          |
+| -------------------------- | ---------------- |
+| maximum sum                | Kadane           |
+| sum = k                    | Prefix Sum       |
+| sum ≤ k (positive numbers) | Sliding Window   |
+| count subarrays            | Prefix + HashMap |
+| print all subarrays        | Nested loops     |
+
+---
+
+## 🧠 Example Pattern Recognition
+
+### Problem
+
+```
+Find longest subarray with sum = k
+```
+
+Brain triggers
+
+```
+subarray
+exact sum
+```
+
+Pattern
+
+```
+Prefix Sum + HashMap
+```
+
+---
+
+## 🧠 Your Current Pattern Progress
+
+You’ve already practiced:
+
+| Problem                          | Pattern        |
+| -------------------------------- | -------------- |
+| Pair sum sorted                  | Two Pointers   |
+| Contains duplicate               | HashSet        |
+| Subarray sum = 0                 | Prefix Sum     |
+| Subarray sum = k                 | Prefix Sum     |
+| Maximum subarray                 | Kadane         |
+| Longest substring without repeat | Sliding Window |
+
+You're covering **the core patterns interviewers test**.
+
+---
 
 
 ## 25 MIXED QUESTIONS – IDENTIFY ONLY PATTERN
