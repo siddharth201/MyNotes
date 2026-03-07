@@ -18,3 +18,7 @@ public func testFindSumOfPossibleSubArrays(arr: [Int], completion: (Int)->Void) 
     let result = findSumOfPossibleSubArrays(arr: arr)
     completion(result)
 }
+
+testFindSumOfPossibleSubArrays(arr: [3,8,2]) { result in
+    print(result)
+}
