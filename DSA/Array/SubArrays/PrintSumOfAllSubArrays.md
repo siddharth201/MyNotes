@@ -21,6 +21,7 @@ func printSumOfAllSubArrays_BruteForce(arr: [Int]) {
 **Time Complexity:** `O(n³)`
 **Space Complexity** `O(1)`
 
+```swift
 func printSumOfAllSubArrays_PrefixSum(arr: [Int]) {
     let n = arr.count
     
@@ -45,6 +46,10 @@ func printSumOfAllSubArrays_PrefixSum(arr: [Int]) {
         }
     }
 }
+```
+
+**Time Complexity:** `O(n³)`
+**Space Complexity** `O(1)`
 
 func printSumOfAllSubArrays_CarryForword(arr: [Int]) {
     let n = arr.count
