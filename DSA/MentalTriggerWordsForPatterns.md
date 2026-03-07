@@ -315,7 +315,214 @@ But building this mental mapping:
 
 Problem Statement → Pattern Trigger → Template.
 
----  
+---    
+
+## Compact cheat sheet for Subarray Problems
+Here is a **compact cheat sheet for Subarray Problems**.
+If you internalize this, you can recognize **~80% of array interview questions** quickly.
+
+---
+
+### 🧠 Subarray Pattern Cheat Sheet
+
+When you see **SUBARRAY** in a problem, ask these questions **in this order**.
+
+---
+
+## 1️⃣ Are numbers ONLY POSITIVE?
+
+If YES → **Sliding Window**
+
+Because sum increases when we expand window.
+
+### Trigger words
+
+* smallest / longest subarray
+* sum ≥ k
+* sum ≤ k
+* product < k
+
+### Example
+
+**Smallest subarray with sum ≥ k**
+
+```
+Sliding Window
+```
+
+Time
+
+```
+O(n)
+```
+
+---
+
+## 2️⃣ Are NEGATIVE numbers present?
+
+Sliding window may fail.
+
+Then check:
+
+### Exact sum problems
+
+```
+Subarray sum = k
+Subarray sum = 0
+Subarray sum divisible by k
+```
+
+👉 Pattern
+
+```
+Prefix Sum + HashMap
+```
+
+---
+
+### Example
+
+```
+[10, 2, -2, -20, 10]
+k = -10
+```
+
+Use
+
+```
+prefixSum - k
+```
+
+---
+
+## 3️⃣ Are we asked for MAXIMUM subarray sum?
+
+👉 Pattern
+
+```
+Kadane's Algorithm
+```
+
+### Example
+
+```
+[-2,1,-3,4,-1,2,1,-5,4]
+```
+
+Max subarray
+
+```
+[4,-1,2,1] = 6
+```
+
+Time
+
+```
+O(n)
+```
+
+---
+
+## 4️⃣ Are we asked to COUNT subarrays?
+
+Look carefully:
+
+### Count subarrays with sum = k
+
+```
+Prefix Sum + HashMap
+```
+
+### Count subarrays with sum ≤ k (positive numbers)
+
+```
+Sliding Window
+```
+
+---
+
+## 5️⃣ Just PRINT all subarrays?
+
+Then simply:
+
+```
+Nested loops
+```
+
+Because total subarrays
+
+```
+n(n+1)/2
+```
+
+---
+
+## 🧠 Quick Decision Tree
+
+```
+Subarray Problem
+       |
+       |
+       ├─ Only positive numbers?
+       |        |
+       |        └─ Sliding Window
+       |
+       ├─ Negative numbers + exact sum?
+       |        |
+       |        └─ Prefix Sum + HashMap
+       |
+       ├─ Maximum sum?
+       |        |
+       |        └─ Kadane
+       |
+       ├─ Count subarrays?
+       |        |
+       |        └─ Prefix Sum + HashMap
+       |
+       └─ Print all subarrays
+                |
+                └─ Nested loops
+```
+
+---
+
+## 📊 Example Mapping
+
+| Problem                             | Pattern          |
+| ----------------------------------- | ---------------- |
+| Longest substring without repeating | Sliding Window   |
+| Subarray sum = k                    | Prefix Sum       |
+| Subarray sum = 0                    | Prefix Sum       |
+| Maximum subarray sum                | Kadane           |
+| Smallest subarray ≥ k               | Sliding Window   |
+| Count subarrays sum = k             | Prefix + HashMap |
+| Print subarrays                     | Nested loops     |
+
+---
+
+## 🧠 Interview Trick
+
+Whenever you see:
+
+```
+SUBARRAY
+```
+
+Immediately ask:
+
+```
+1. Positive numbers only?
+2. Exact sum or inequality?
+3. Max/min?
+4. Counting?
+```
+
+That determines the pattern.
+
+---
+
+
+
 
 ## 25 MIXED QUESTIONS – IDENTIFY ONLY PATTERN
 
