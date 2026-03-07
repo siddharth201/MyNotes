@@ -18,7 +18,8 @@ func printSumOfAllSubArrays_BruteForce(arr: [Int]) {
 }
 ```
 
-
+**Time Complexity:** `O(n³)`
+**Space Complexity** ``
 
 func printSumOfAllSubArrays_PrefixSum(arr: [Int]) {
     let n = arr.count
