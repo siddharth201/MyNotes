@@ -1,7 +1,6 @@
-/**
- * **Given an array print sum of all subarrays individually.**
- */
+> Given an array print sum of all subarrays individually.**
 
+```swift
 func printSumOfAllSubArrays_BruteForce(arr: [Int]) {
     let n = arr.count-1
     
@@ -62,3 +61,5 @@ public func testPrintSumOfAllSubArrays(arr: [Int]) {
     print("\n")
     printSumOfAllSubArrays_CarryForword(arr: arr)
 }
+
+testPrintSumOfAllSubArrays(arr: [3,4,5,-1])
