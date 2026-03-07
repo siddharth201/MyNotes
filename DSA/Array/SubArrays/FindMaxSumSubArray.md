@@ -1,7 +1,7 @@
 > **Given an array, find max sum subarray.** 
 
 ```swift
-func findmaxSumSubArray(arr: [Int]) -> Int {
+func findMaxSumSubArray(arr: [Int]) -> Int {
     var maxSum = Int.min
     let n = arr.count
     
