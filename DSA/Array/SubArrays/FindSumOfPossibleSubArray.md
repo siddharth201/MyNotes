@@ -14,6 +14,10 @@ func findSumOfPossibleSubArrays(arr: [Int]) -> Int {
     return sum
 }
 
+**Time & Space Complexity**
+**Time Complexity:** `O(n)`  
+**Space Complexity** `O(1)`
+
 public func testFindSumOfPossibleSubArrays(arr: [Int], completion: (Int)->Void) {
     let result = findSumOfPossibleSubArrays(arr: arr)
     completion(result)
