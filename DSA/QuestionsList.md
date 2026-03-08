@@ -38,15 +38,15 @@
 [Q>4 Given an array print sum of all subarrays individually.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSumOfAllSubArrays.md)   
 
 ### 2D Array
-[Q>1 Given a matrix print row-wise sum]()  
+[Q>1 Given a matrix print row-wise sum](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>2 ]()  
+[Q>2 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>3 ]()  
+[Q>3 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>4 ]()  
+[Q>4 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>5 ]()
+[Q>5 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)
  
 ### Two Pointers  
 
