@@ -21,6 +21,9 @@
   
 [Q>5 An index is said to be special, if after deleting it, sum of all even index elements == sum of all odd indexes. Calculate number of special index that are there]  
 
+### Carry Forword  
+  
+
 
 ### Two Pointers  
 
