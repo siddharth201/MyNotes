@@ -24,7 +24,7 @@
 ### Carry Forword  
 [Q>1 Count number of pairs i, j such that i<j and si = 'a' & sj = 'g' where s is a character array.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/CarryForword/countPairs_a_g.md)  
 
-[q>2 ]()  
+[q>2  Given an array, find leaders. Leader is defined as if an element is greater than all the elementson the right of it. arr(N-1) will always be a leader]()  
 
 
 ### Two Pointers  
