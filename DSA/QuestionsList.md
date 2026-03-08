@@ -29,7 +29,8 @@
 [Q>3 Given an array find the length of smallest sub-array which contains Min and Max of array](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/CarryForword/SmallestSubarrayMinMax.md)  
 
 ### SubArrays
-[Q>1 Given an array, find max sum subarray]() 
+[Q>1 Given an array, find max sum subarray](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/FindMaxSumSubArray.md)  
+ 
 [Q>2 Find sum of all possible subarray of an array?]()
 [Q>3 Given an array and indices s and e, print all subarrays between s and e.]()
 [Q>4 Given an array print sum of all subarrays individually.]() 
