@@ -1,10 +1,10 @@
 ## DSA Questions  
 
 ### Array
-[Q>1 Given an array, check if sum of any pair of different elements is equal to k](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/check_Sum_Of_AnyPair_EqualTo_K.md)
-[Q>2 Given N array elements, count number of elements which have atleast one element greater than itself](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/Find_Atleast_OneElement_GreaterThan_Itself.md)
-[Q>3 Given an array reverse the element](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/ReverseArray.md)
-[Q>4 Given an array rotate the array k times from right to left](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/RotateArray.md)
+[Q>1 Given an array, check if sum of any pair of different elements is equal to k](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/check_Sum_Of_AnyPair_EqualTo_K.md)  
+[Q>2 Given N array elements, count number of elements which have atleast one element greater than itself](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/Find_Atleast_OneElement_GreaterThan_Itself.md)    
+[Q>3 Given an array reverse the element](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/ReverseArray.md)  
+[Q>4 Given an array rotate the array k times from right to left](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/RotateArray.md)  
 
 ### Two Pointers  
 
