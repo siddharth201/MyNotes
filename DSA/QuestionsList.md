@@ -26,7 +26,7 @@
 
 [Q>2 Given an array, find leaders. Leader is defined as if an element is greater than all the elementson the right of it. arr(N-1) will always be a leader](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/CarryForword/FindLeaders.md)  
 
-[Q>3 ]  
+[Q>3 Given an array find the length of smallest sub-array which contains Min and Max of array]()  
 
 
 ### Two Pointers  
