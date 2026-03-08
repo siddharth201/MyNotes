@@ -86,4 +86,4 @@
 [Q>5 Given an array check if any subarray has sum k.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/CheckSubArrayWithSumK.md)  
 
 ### Linked List
-[Linked List Operations]()
+[Linked List Operations](https://github.com/siddharth201/MyNotes/blob/main/DSA/LinkedList/LinkedList.md)
