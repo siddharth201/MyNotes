@@ -7,7 +7,7 @@
 [Q>4 Given an array rotate the array k times from right to left](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/RotateArray.md)  
 
 ### Prefix Array  
-[Q>1 ]()  
+[Q>1 Given N array elements and Q queries, for each query calculate sum of all even index elements in a given range.]()  
 [Q>2 ]()  
 [Q>3 ]()  
 [Q>4 ]()  
