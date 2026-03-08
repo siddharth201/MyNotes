@@ -127,5 +127,7 @@ let customMatrix = [
 
 ###How to Call
 ```swift
-rowWiseSum(mat: matrix)
+rowWiseSum(mat: matrix)  
+
+columnWiseSum(mat: matrix)
 
