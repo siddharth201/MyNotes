@@ -55,7 +55,7 @@
 
 [Q>3 Given a sorted array of integers. Search for a target value and return its last index, if not present return -1]()  
 
-[Q>4 ]()  
+[Q>4 Find peak element in increasing-decreasing array.]()  
 
 [Q>5 ]()  
 
