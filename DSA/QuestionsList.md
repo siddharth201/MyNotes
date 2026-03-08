@@ -83,4 +83,7 @@
 
 [Q>4 Given N array elements, check if there exist a pair (i, j) such that, arr(i) + arr(j) = k & i != j](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FindPairsHashing.md)  
 
-[Q>5 Given an array check if any subarray has sum k.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/CheckSubArrayWithSumK.md)
+[Q>5 Given an array check if any subarray has sum k.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/CheckSubArrayWithSumK.md)  
+
+### Linked List
+[Linked List Operations]()
