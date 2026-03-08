@@ -33,7 +33,8 @@
  
 [Q>2 Find sum of all possible subarray of an array?](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/FindSumOfPossibleSubArray.md)  
 
-[Q>3 Given an array and indices s and e, print all subarrays between s and e.]()
+[Q>3 Given an array and indices s and e, print all subarrays between s and e.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSubarrays.md)  
+
 [Q>4 Given an array print sum of all subarrays individually.]() 
 
 ### Two Pointers  
