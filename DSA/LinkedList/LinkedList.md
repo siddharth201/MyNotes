@@ -273,7 +273,8 @@ public class LinkedList {
 }
 ```  
 
-//MARK: - 8.Merge two sorted list into a single sorted list
+> Merge two sorted list into a single sorted list
+```swift
 extension LinkedList {
     
     // Prepare First List
@@ -394,25 +395,34 @@ extension LinkedList {
         printCustomList(newHead)
     }
 }
+```
 
-//MARK: - 9.Check if given LinkedList has a cycle
+> Check if given LinkedList has a cycle.
+```swift
 extension LinkedList {
     
 }
+```
 
 
-//MARK: - 10.Given a LinkedList with cycle, find start of cycle
+> Given a LinkedList with cycle, find start of cycle
+```swift
 extension LinkedList {
     
 }
+```
 
-//MARK: - 11. Check if given LinkedList is a palindron
+> Check if given LinkedList is a palindron
+```swift
 extension LinkedList {
     
 }
+```
 
-//MARK: - 12. Find the length of longest odd length palindromic list in the given LinkedList
+> Find the length of longest odd length palindromic list in the given LinkedList
+```swift
 extension LinkedList {
     
 }
+```
 
