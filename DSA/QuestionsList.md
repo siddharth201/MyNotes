@@ -49,7 +49,7 @@
 [Q>5 Given a matrix print transpose matrix](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
 ### Binary Search  
-[Q>1 Given a sorted array and an integer k find a pair (i, j) such that Ai+Aj = k using binary search.]()  
+[Q>1 Given a sorted array and an integer k find a pair (i, j) such that Ai+Aj = k using binary search.](https://github.com/siddharth201/MyNotes/blob/main/DSA/BinarySearch/Questions/BinarySearch.md)  
 
 [Q>2 Given a sorted array of integers. Search for a target value and return its first index, if not present return -1](https://github.com/siddharth201/MyNotes/blob/main/DSA/BinarySearch/Questions/FirstOccurance.md)  
 
