@@ -35,7 +35,18 @@
 
 [Q>3 Given an array and indices s and e, print all subarrays between s and e.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSubarrays.md)  
 
-[Q>4 Given an array print sum of all subarrays individually.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSumOfAllSubArrays.md)  
+[Q>4 Given an array print sum of all subarrays individually.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSumOfAllSubArrays.md)   
+
+### 2D Array
+[Q>1 ]()  
+
+[Q>2 ]()  
+
+[Q>3 ]()  
+
+[Q>4 ]()  
+
+[Q>5 ]()
  
 ### Two Pointers  
 
