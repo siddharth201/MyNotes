@@ -51,7 +51,7 @@
 ### Binary Search  
 [Q>1 Given a sorted array and an integer k find a pair (i, j) such that Ai+Aj = k using binary search.]()  
 
-[Q>2 ]()  
+[Q>2 Given a sorted array of integers. Search for a target value and return its first index, if not present return -1]()  
 
 [Q>3 ]()  
 
