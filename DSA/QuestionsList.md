@@ -46,7 +46,7 @@
 
 [Q>4 Given a matrix print all diagonal matrix from L-R ant Top-Bottom](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>5 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)
+[Q>5 Given a matrix print transpose matrix](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)
  
 ### Two Pointers  
 
