@@ -49,7 +49,7 @@
 [Q>5 Given a matrix print transpose matrix](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
 ### Binary Search  
-[Q>1 ]()  
+[Q>1 Given a sorted array and an integer k find a pair (i, j) such that A[i]+A[j] = k using binary search.]()  
 
 [Q>2 ]()  
 
