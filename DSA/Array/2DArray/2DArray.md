@@ -52,7 +52,8 @@ public func printDiagonal(mat: [[Int]]) {
     }
 }
 ```
-
+> Given a matrix print all diagonal matrix from L-R ant Top-Bottom
+```swift
 public func printAllDiagonal(mat: [[Int]]) {
     if mat.isEmpty { return }
     
@@ -78,7 +79,8 @@ public func printAllDiagonal(mat: [[Int]]) {
         print(" ")
     }
 }
-
+```
+> 
 public func transposeMatrix(mat: [[Int]]) {
     if mat.isEmpty { return }
     var mat = mat
