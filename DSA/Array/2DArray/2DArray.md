@@ -130,5 +130,7 @@ let customMatrix = [
 rowWiseSum(mat: matrix)  
 
 columnWiseSum(mat: matrix)
-columnWiseSum(mat: matrix_column_wise)
+columnWiseSum(mat: matrix_column_wise)  
+
+printDiagonal(mat: matrix)
 
