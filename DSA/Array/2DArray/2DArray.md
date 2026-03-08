@@ -34,7 +34,8 @@ public func columnWiseSum(mat: [[Int]]) {
 }
 ```
 
-> 
+> Given a matrix print diagonal matrix
+```swift
 public func printDiagonal(mat: [[Int]]) {
     if mat.isEmpty { return }
     
@@ -50,6 +51,7 @@ public func printDiagonal(mat: [[Int]]) {
         j-=1
     }
 }
+```
 
 public func printAllDiagonal(mat: [[Int]]) {
     if mat.isEmpty { return }
