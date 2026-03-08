@@ -81,4 +81,6 @@
 
 [Q>3 Check if there are any duplicate in the array.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Hashing/FindDuplicates.md)  
 
-[Q>4 Given N array elements, check if there exist a pair (i, j) such that, arr(i) + arr(j) = k & i != j]
+[Q>4 Given N array elements, check if there exist a pair (i, j) such that, arr(i) + arr(j) = k & i != j]  
+
+[Q>5 Given an array check if any subarray has sum k.]
