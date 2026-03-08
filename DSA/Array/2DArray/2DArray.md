@@ -80,7 +80,8 @@ public func printAllDiagonal(mat: [[Int]]) {
     }
 }
 ```
-> 
+> Given a matrix print transpose matrix
+```swift
 public func transposeMatrix(mat: [[Int]]) {
     if mat.isEmpty { return }
     var mat = mat
@@ -94,4 +95,5 @@ public func transposeMatrix(mat: [[Int]]) {
     }
     print(mat)
 }
+```
 
