@@ -35,8 +35,8 @@
 
 [Q>3 Given an array and indices s and e, print all subarrays between s and e.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSubarrays.md)  
 
-[Q>4 Given an array print sum of all subarrays individually.]() 
-
+[Q>4 Given an array print sum of all subarrays individually.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSumOfAllSubArrays.md)  
+ 
 ### Two Pointers  
 
 [Q>1.1 Given a sorted array and an integer k find a pair (i, j) such that Ai+Aj=k, using Two Pointers ](https://github.com/siddharth201/MyNotes/blob/main/DSA/TwoPointers/FindPairs.md)  
