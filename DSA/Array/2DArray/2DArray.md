@@ -14,7 +14,8 @@ public func rowWiseSum(mat: [[Int]]) {
 }
 ```
 
->
+> Given a matrix print column-wise sum
+```swift
 public func columnWiseSum(mat: [[Int]]) {
     if mat.isEmpty { return  }
     
@@ -31,8 +32,9 @@ public func columnWiseSum(mat: [[Int]]) {
         print(sum)
     }
 }
+```
 
-
+> 
 public func printDiagonal(mat: [[Int]]) {
     if mat.isEmpty { return }
     
