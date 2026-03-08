@@ -1,3 +1,6 @@
+
+> Given a matrix print row-wise sum  
+```swift
 public func rowWiseSum(mat: [[Int]]) {
     if mat.isEmpty { return  }
     
@@ -9,7 +12,9 @@ public func rowWiseSum(mat: [[Int]]) {
         print(sum)
     }
 }
+```
 
+>
 public func columnWiseSum(mat: [[Int]]) {
     if mat.isEmpty { return  }
     
