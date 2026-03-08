@@ -98,6 +98,7 @@ public func transposeMatrix(mat: [[Int]]) {
 ```  
 
 ### Inputs
+```swift
 let matrix = [
     [1, 2, 3],
     [4, 5, 6],
@@ -122,4 +123,9 @@ let customMatrix = [
     [11, 12, 13, 14, 15],
     [16, 17, 18, 19, 20]
 ]
+```
+
+###How to Call
+```swift
+rowWiseSum(mat: matrix)
 
