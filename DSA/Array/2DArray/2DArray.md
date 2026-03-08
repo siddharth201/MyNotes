@@ -132,5 +132,7 @@ rowWiseSum(mat: matrix)
 columnWiseSum(mat: matrix)
 columnWiseSum(mat: matrix_column_wise)  
 
-printDiagonal(mat: matrix)
+printDiagonal(mat: matrix)  
+
+printAllDiagonal(mat: customMatrix)
 
