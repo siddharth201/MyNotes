@@ -49,6 +49,15 @@
 [Q>5 Given a matrix print transpose matrix](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
 ### Binary Search  
+[Q>1 ]()  
+
+[Q>2 ]()  
+
+[Q>3 ]()  
+
+[Q>4 ]()  
+
+[Q>5 ]()  
 
  
 ### Two Pointers  
