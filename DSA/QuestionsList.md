@@ -9,7 +9,7 @@
 ### Prefix Array  
 [Q>1 Given N array elements and Q queries, for each query calculate sum of all even index elements in a given range.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/PrefixArray/Calculate_Sum_of_All_Even_Elements_in_a_GivenRange.md)  
 [Q>2 Given N array elements and Q queries on the same array. For each query calculate sum of elements in a given range [L-R]](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/PrefixArray/Calculate_Sum_of_Elements_in_a_GivenRange.md)  
-[Q>3 Given N array elements, count number of equilibrium index. An index is said to be equilibrium sum of all elements before ith index ==  sum of all elements after ith index]()  
+[Q>3 Given N array elements, count number of equilibrium index. An index is said to be equilibrium sum of all elements before ith index ==  sum of all elements after ith index](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/PrefixArray/CountEquilibriumIndex.md)  
 [Q>4 ]()  
 [Q>5 ]() 
 
