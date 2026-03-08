@@ -40,7 +40,7 @@
 ### 2D Array
 [Q>1 Given a matrix print row-wise sum](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>2 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
+[Q>2 Given a matrix print column-wise sum](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
 [Q>3 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
