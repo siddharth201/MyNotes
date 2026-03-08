@@ -6,7 +6,7 @@
 [Q>3 Given an array reverse the element](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/ReverseArray.md)  
 [Q>4 Given an array rotate the array k times from right to left](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/RotateArray.md)  
 
-### Prefix Sum  
+### Prefix Array  
 
 ### Two Pointers  
 
