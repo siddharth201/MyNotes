@@ -22,14 +22,14 @@ public class LinkedList {
     
     public init() {}
     
-    ### 1. Insert Operations
+    // MARK: - 1. Insert Operations
     
-        ### Insert at Head
+    // MARK: Insert at Head
     public func insertAtHead(_ val: Int) {
         head = Node(nodeVal: val, nextNode: head)
     }
     
-        ### Insert at Position (0-based index)
+    // MARK: Insert at Position (0-based index)
     public func insertAtPosition(_ val: Int, _ pos: Int) {
         if pos < 0 { return }
 
@@ -52,7 +52,7 @@ public class LinkedList {
         temp!.next = Node(nodeVal: val, nextNode: temp!.next)
     }
     
-        ### Insert at Tail
+    // MARK: Insert at Tail
     public func insertAtTail(_ val: Int) {
         let newNode = Node(nodeVal: val)
         
@@ -69,7 +69,7 @@ public class LinkedList {
         temp.next = newNode
     }
     
-    ### Delete Operations
+    // MARK: - 2. Delete Operations
     
     // MARK: Delete Head
     public func deleteHead() {
