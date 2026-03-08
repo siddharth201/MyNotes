@@ -22,7 +22,9 @@
 [Q>5 An index is said to be special, if after deleting it, sum of all even index elements == sum of all odd indexes. Calculate number of special index that are there]  
 
 ### Carry Forword  
-[Q>1 Count number of pairs i, j such that i<j and si = 'a' & sj = 'g' where s is a character array.]  
+[Q>1 Count number of pairs i, j such that i<j and si = 'a' & sj = 'g' where s is a character array.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/CarryForword/countPairs_a_g.md)  
+
+[q>2 ]()  
 
 
 ### Two Pointers  
