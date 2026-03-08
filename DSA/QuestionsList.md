@@ -57,7 +57,7 @@
 
 [Q>4 Find peak element in increasing-decreasing array.]()  
 
-[Q>5 ]()  
+[Q>5 Given a sorted array of integers. Search for a target value and return its index, if not present return -1]()  
 
  
 ### Two Pointers  
