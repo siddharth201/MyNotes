@@ -38,7 +38,7 @@
 [Q>4 Given an array print sum of all subarrays individually.](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/SubArrays/PrintSumOfAllSubArrays.md)   
 
 ### 2D Array
-[Q>1 ]()  
+[Q>1 Given a matrix print row-wise sum]()  
 
 [Q>2 ]()  
 
