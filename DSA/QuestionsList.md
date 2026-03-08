@@ -28,6 +28,11 @@
 
 [Q>3 Given an array find the length of smallest sub-array which contains Min and Max of array](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/CarryForword/SmallestSubarrayMinMax.md)  
 
+### SubArrays
+[Q>1]() 
+[Q>1]()
+[Q>1]()
+[Q>1]() 
 
 ### Two Pointers  
 
