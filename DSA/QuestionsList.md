@@ -31,7 +31,7 @@
 ### SubArrays
 [Q>1 Given an array, find max sum subarray]() 
 [Q>2 Find sum of all possible subarray of an array?]()
-[Q>3 ]()
+[Q>3 Given an array and indices s and e, print all subarrays between s and e.]()
 [Q>4 ]() 
 
 ### Two Pointers  
