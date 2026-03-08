@@ -134,5 +134,8 @@ columnWiseSum(mat: matrix_column_wise)
 
 printDiagonal(mat: matrix)  
 
-printAllDiagonal(mat: customMatrix)
+printAllDiagonal(mat: customMatrix)  
+
+transposeMatrix(mat: matrix1)
+```
 
