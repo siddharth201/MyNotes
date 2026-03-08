@@ -53,7 +53,7 @@
 
 [Q>2 Given a sorted array of integers. Search for a target value and return its first index, if not present return -1]()  
 
-[Q>3 Given a sorted array of integers. Search for a target value and return its last index, if not present return -1]()  
+[Q>3 Given a sorted array of integers. Search for a target value and return its last index, if not present return -1](https://github.com/siddharth201/MyNotes/blob/main/DSA/BinarySearch/Questions/LastOccurence.md)  
 
 [Q>4 Find peak element in increasing-decreasing array.](https://github.com/siddharth201/MyNotes/blob/main/DSA/BinarySearch/Questions/FindPeak.md)  
 
