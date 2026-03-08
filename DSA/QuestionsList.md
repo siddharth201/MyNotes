@@ -42,7 +42,7 @@
 
 [Q>2 Given a matrix print column-wise sum](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
-[Q>3 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
+[Q>3 Given a matrix print diagonal matrix](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
 [Q>4 ](https://github.com/siddharth201/MyNotes/blob/main/DSA/Array/2DArray/2DArray.md)  
 
