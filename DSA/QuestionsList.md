@@ -99,4 +99,8 @@
 
 [Maximum Number of Vowels in Substring of Size K]  
 
-[Find if any subarray of size k has sum S.]
+[Find if any subarray of size k has sum S.]  
+
+[Maximum Element in Every Window]  
+
+
