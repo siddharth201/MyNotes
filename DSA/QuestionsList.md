@@ -97,4 +97,6 @@
 
 [Count Occurrences of Anagrams]  
 
-[Maximum Number of Vowels in Substring of Size K]
+[Maximum Number of Vowels in Substring of Size K]  
+
+[Find if any subarray of size k has sum S.]
