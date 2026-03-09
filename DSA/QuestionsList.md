@@ -89,22 +89,22 @@
 [Linked List Operations](https://github.com/siddharth201/MyNotes/blob/main/DSA/LinkedList/LinkedList.md)  
 
 ### Sliding Window
-[Find maximum sum of subarray of size k]  
+[Q>1 Find maximum sum of subarray of size k]  
 
-[Average of Subarray of Size K]  
+[Q>2 Average of Subarray of Size K]  
 
-[First Negative Number in Every Window of Size K]  
+[Q>3 First Negative Number in Every Window of Size K]  
 
-[Count Occurrences of Anagrams]  
+[Q>4 Count Occurrences of Anagrams]  
 
-[Maximum Number of Vowels in Substring of Size K]  
+[Q>5 Maximum Number of Vowels in Substring of Size K]  
 
-[Find if any subarray of size k has sum S.]  
+[Q>6 Find if any subarray of size k has sum S.]  
 
-[Maximum Element in Every Window]  
+[Q>7 Maximum Element in Every Window]  
 
-[Minimum Sum Subarray of Size K]  
+[Q>8 Minimum Sum Subarray of Size K]  
 
-[Count Distinct Elements in Window]  
+[Q>9 Count Distinct Elements in Window]  
 
-[Find All Subarrays of Size K]
+[Q>10 Find All Subarrays of Size K]
