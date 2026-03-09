@@ -91,4 +91,4 @@
 ### Sliding Window
 [Find maximum sum of subarray of size k]  
 
-[]
+[Average of Subarray of Size K]
