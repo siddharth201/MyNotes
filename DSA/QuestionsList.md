@@ -95,4 +95,6 @@
 
 [First Negative Number in Every Window of Size K]  
 
-[Count Occurrences of Anagrams]
+[Count Occurrences of Anagrams]  
+
+[Maximum Number of Vowels in Substring of Size K]
