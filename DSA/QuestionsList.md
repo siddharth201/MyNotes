@@ -91,4 +91,6 @@
 ### Sliding Window
 [Find maximum sum of subarray of size k]  
 
-[Average of Subarray of Size K]
+[Average of Subarray of Size K]  
+
+[First Negative Number in Every Window of Size K]
