@@ -256,5 +256,307 @@ If YES → Try Sliding Window.
 
 ---
 
+## Sliding-Window Templates — step-by-step, with every variable explained
+
+Nice — this is the exact level of mastery you want. Below I’ll go through the **4 core sliding-window templates** (Fixed, Longest/variable, Count, Monotonic). For each template I’ll:
+
+* Say **when** to use it
+* Show the **canonical code skeleton** (clear, language-agnostic)
+* Explain **every variable** (responsibility / life-cycle)
+* Walk a short **step-by-step trace / intuition**
+* Give a short **Swift** implementation sketch you can paste
+
+Keep this as your pocket reference.
+
+---
+
+## 1) Fixed-Size Window (window size = k)
+
+**When to use**
+
+* Problem explicitly gives `k` (window size).
+* Examples: max sum of size `k`, average of every length-k subarray, max vowels in substring of size `k`.
+
+## Skeleton
+
+```
+var windowValue = initialZero   // e.g. sum, vowelCount, etc.
+for right in 0 ..< n {
+    // expand: include arr[right]
+    update windowValue with arr[right]
+    if right >= k-1 {
+        // window [right-k+1 .. right] is now size k
+        use windowValue to update answer
+        // shrink: remove arr[right-k+1]
+        update windowValue to remove arr[right-k+1]
+    }
+}
+```
+
+## Variables & responsibilities
+
+* `right` — the index we are iterating; new element entering window.
+* `k` — fixed window size (given).
+* `windowValue` — **what we store for the current window** (sum, count of vowels, frequency map, etc.). It is incrementally updated: add when expanding, subtract/remove when shrinking.
+* `answer` (or `maxSum`, `resultList`) — accumulates or stores the output for each valid window.
+* (optional) `left` — not necessary in the canonical fixed pattern, but `left = right - k + 1` conceptually marks the left bound.
+
+## Step-by-step intuition
+
+1. Add element at `right` to `windowValue`.
+2. When `right` has reached index `k-1`, the window is full for the first time. Process it (update answer).
+3. Then remove the element at `right-k+1` (the leftmost) so next iteration the window slides right by one.
+4. Repeat.
+
+## Swift example — max sum of size k
+
+```swift
+func maxSum(_ arr: [Int], _ k: Int) -> Int {
+    guard arr.count >= k else { return 0 }
+    var windowSum = 0
+    var maxSum = Int.min
+
+    for right in 0..<arr.count {
+        windowSum += arr[right]                       // expand
+        if right >= k-1 {
+            maxSum = max(maxSum, windowSum)          // process
+            windowSum -= arr[right - k + 1]          // shrink (remove leftmost)
+        }
+    }
+    return maxSum
+}
+```
+
+---
+
+## 2) Longest Window (variable-size, expand & shrink to satisfy constraint)
+
+**When to use**
+
+* You want a **maximum length** (or minimum length) contiguous window satisfying a constraint.
+* Examples: longest substring without repeating characters, longest with at most K distinct, smallest subarray with sum ≥ target (min length variant uses similar structure but tracks min).
+
+## Skeleton
+
+```
+var left = 0
+for right in 0 ..< n {
+    // expand: incorporate arr[right] into window state
+    update windowState with arr[right]
+    // while window is invalid (violates constraint)
+    while condition_not_valid(windowState) {
+        // shrink: remove arr[left] from windowState
+        update windowState to remove arr[left]
+        left += 1
+    }
+    // now window [left .. right] is valid => update answer (e.g. max length)
+    answer = max(answer, right - left + 1)
+}
+```
+
+## Variables & responsibilities
+
+* `right` — expands the window by adding new elements.
+* `left` — moves forward to shrink the window until it becomes valid.
+* `windowState` — stores the information needed to check constraint (e.g., freq map for distinct count, current sum for sum constraints).
+
+  * **Invariants:** After the `while` loop finishes, `windowState` satisfies the constraint.
+* `condition_not_valid(windowState)` — the predicate that tells you whether to continue shrinking (e.g., `distinct > K`, or `sum > target` depending on problem).
+* `answer` — record the best window size or other metric.
+
+## Step-by-step intuition
+
+1. Move `right` and update state.
+2. If you broke the constraint, move `left` forward and update state until constraint is satisfied again.
+3. Each time the window is valid, update the result (for max length problems commonly `max(ans, right-left+1)`).
+
+## Swift example — longest substring without repeating (chars)
+
+```swift
+func lengthOfLongestSubstring(_ s: String) -> Int {
+    let chars = Array(s)
+    var left = 0
+    var freq = [Character: Int]()
+    var best = 0
+
+    for right in 0..<chars.count {
+        freq[chars[right], default: 0] += 1           // expand
+        while freq[chars[right]]! > 1 {               // invalid: duplicate of this char
+            freq[chars[left]]! -= 1                   // shrink
+            left += 1
+        }
+        best = max(best, right - left + 1)            // valid window
+    }
+    return best
+}
+```
+
+---
+
+## 3) Count Windows (count number of valid subarrays / substrings)
+
+**When to use**
+
+* You must **count** all subarrays/substrings that satisfy some property (usually “at most K” type).
+* Examples: count subarrays with at most K distinct, count substrings with at most K vowels, count subarrays with sum ≤ K when positives only.
+
+This template often uses the trick:
+
+```
+## of valid subarrays ending at right = (right - left + 1)
+```
+
+So we accumulate that.
+
+## Skeleton
+
+```
+var left = 0
+var count = 0
+for right in 0 ..< n {
+    expand windowState with arr[right]
+    while condition_not_valid(windowState) {
+        shrink windowState by removing arr[left]
+        left += 1
+    }
+    // all windows that end at right and start in [left..right] are valid
+    count += (right - left + 1)
+}
+```
+
+## Variables & responsibilities
+
+* `left`, `right` — window bounds.
+* `windowState` — same as before, used to detect validity.
+* `count` — final tally of valid windows.
+* `(right - left + 1)` — number of subarrays ending at `right` whose start index can vary from `left` to `right` (all are valid because windowState for left..right is valid and any shorter prefix will stay valid).
+
+## Step-by-step intuition
+
+1. For each `right`, after shrinking to make window valid, every starting index `s` in `[left..right]` gives a valid subarray `[s..right]`. That’s `right-left+1` new subarrays.
+2. Accumulate into `count`.
+
+## Swift example — count subarrays with at most K distinct
+
+```swift
+func subarraysAtMostKDistinct(_ arr: [Int], _ K: Int) -> Int {
+    var left = 0
+    var freq = [Int: Int]()
+    var count = 0
+
+    for right in 0..<arr.count {
+        freq[arr[right], default: 0] += 1
+        while freq.keys.count > K {
+            freq[arr[left]]! -= 1
+            if freq[arr[left]] == 0 { freq.removeValue(forKey: arr[left]) }
+            left += 1
+        }
+        count += (right - left + 1)
+    }
+    return count
+}
+```
+
+(Count of exactly K distinct = atMost(K) − atMost(K−1).)
+
+---
+
+## 4) Monotonic Window (deque) — get max/min per window
+
+**When to use**
+
+* You need the **max / min** element in every sliding window of size `k`.
+* Examples: Sliding Window Maximum (LeetCode 239).
+
+## Skeleton (indices in deque)
+
+```
+var deque = empty deque   // store indices, monotonic (decreasing for max)
+for right in 0..<n {
+    // remove indices out of this window from front
+    while !deque.isEmpty && deque.first <= right - k { deque.removeFirst() }
+    // maintain monotonic property: remove smaller values from back
+    while !deque.isEmpty && arr[deque.last] < arr[right] { deque.removeLast() }
+    deque.append(right)
+    if right >= k-1 {
+        result.append(arr[deque.first])  // front is max of window
+    }
+}
+```
+
+## Variables & responsibilities
+
+* `deque` — stores indices of elements; maintained so `arr[deque[0]]` is window max.
+
+  * **Invariant 1:** indices in deque are within current window `[right-k+1 .. right]`.
+  * **Invariant 2:** values `arr[deque[i]]` are in **decreasing order** (so front is max).
+* `right` — current end index (expanding).
+* `k` — window size.
+* `result` — list of window maxima.
+
+## Step-by-step intuition
+
+1. Pop elements from front if they left the window (index ≤ right−k).
+2. Pop from back any indices whose value is **less than** `arr[right]` — they’ll never be needed (current is better and newer).
+3. Append `right`.
+4. When window is full, front of deque holds index of max for current window.
+
+## Swift example
+
+```swift
+func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
+    guard !nums.isEmpty && k > 0 else { return [] }
+    var dq = [Int]()   // will store indices
+    var res = [Int]()
+    for i in 0..<nums.count {
+        // remove indices out of window
+        if !dq.isEmpty && dq.first! <= i - k {
+            dq.removeFirst()
+        }
+        // remove smaller values from back
+        while !dq.isEmpty && nums[dq.last!] < nums[i] {
+            dq.removeLast()
+        }
+        dq.append(i)
+        if i >= k - 1 {
+            res.append(nums[dq.first!])
+        }
+    }
+    return res
+}
+```
+
+---
+
+## Quick comparison & when to pick which
+
+* **Fixed window**: if `k` is given. Use the build-first or single-loop template — maintain a simple `windowValue`.
+* **Longest window**: if you want longest/shortest window satisfying a constraint → use expand/shrink with `left` while checking `condition_not_valid`.
+* **Count windows**: if problem asks for number of valid subarrays → use the count template and add `(right-left+1)` each step.
+* **Monotonic window**: if you need per-window max/min → use a deque of indices with monotonic property.
+
+---
+
+## Common variable naming & meanings (cheat list)
+
+* `left, right` — window bounds (inclusive). `right` is usually the loop variable.
+* `windowValue` / `windowSum` / `vowelCount` — the aggregated value for the current window.
+* `windowState` — generic: could be freq map, sum, deque, etc.
+* `freq` / `map` — frequency map for characters/numbers inside window.
+* `deque` — monotonic structure for max/min queries, stores indices.
+* `answer` / `best` / `count` — final results you update inside the loop.
+
+---
+
+## A tiny final mapping you can memorize (5-second test)
+
+* `k present` → Fixed window template
+* `Longest / smallest window` → Longest/variable template
+* `Count windows` → Count template (`count += right-left+1`)
+* `Max/min per window` → Monotonic deque template
+
+---
+
+
 
 
