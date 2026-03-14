@@ -709,6 +709,6 @@ testDefer()
 ```
 </details>  
 
-Q12. Explain Optional Binding (if let and guard let) in Swift.
+### Q. Explain Optional Binding (if let and guard let) in Swift.
 
 
