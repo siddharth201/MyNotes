@@ -707,6 +707,8 @@ testDefer()
 // Inside function
 // Cleanup before exit
 ```
-</details>
+</details>  
+
+Q12. Explain Optional Binding (if let and guard let) in Swift.
 
 
