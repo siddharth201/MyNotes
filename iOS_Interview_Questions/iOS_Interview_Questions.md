@@ -3201,11 +3201,7 @@ enum NetworkError: Error {
 ---
 </details>  
 
-Here is the **text exactly as it appears in the screenshots**:
-
----
-
-## Q47: What are the advantages of Swift's error handling over Objective-C's NSError?
+### Q: What are the advantages of Swift's error handling over Objective-C's NSError?
 
 ### 1. Type Safety
 
