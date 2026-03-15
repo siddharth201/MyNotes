@@ -339,6 +339,16 @@ This makes your code **safe** because you know the value won’t change accident
 Swift is **type-safe →** Once a variable is declared with a type, you can’t assign a different type.
 </details>  
 
+### **Q. Explain `Float` vs `Double` in Swift?**
+<details>
+<summary>Answer</summary>  
+</details>    
+
+### **Q. Explain `String` vs `Character` in Swift?**
+<details>
+<summary>Answer</summary>  
+</details> 
+
 
 ### **Q3: What are optionals in Swift and why do we need them?**
 <details>
