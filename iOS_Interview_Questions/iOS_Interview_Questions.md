@@ -3763,7 +3763,50 @@ Use **weak** or **unowned** references:
 class Person {
     let name: String
 
+    init(name: String) { self.name = name }
+}
+
+var p1: Person? = Person(name: "Anand") // Retain count = 1
 ```
+
+### 2. Retaining (Incrementing Reference Count)
+
+* Every **strong reference** to the object **increments the retain count**.
+
+* Assigning the object to another variable or passing it to a function that holds it strongly will increase the count.
+
+```swift
+var p2 = p1  // Retain count = 2
+```
+
+### 3. Releasing (Decrementing Reference Count)
+
+* When a strong reference goes out of scope or is set to **nil**, **ARC decrements the retain count**.
+
+```swift
+p1 = nil  // Retain count = 1
+```
+
+### 4. Deallocation
+
+* When the retain count reaches **0**, ARC automatically **frees the memory** occupied by the object.
+
+* The **deinit** method is called **just before deallocation**, giving you a chance to clean up resources.
+
+```swift
+p2 = nil  // Retain count = 0 -> deinit called, memory released
+```
+
+### Important Notes
+
+1. **ARC only applies to class instances** (reference types).
+
+2. **Structs and enums** are value types and are copied by default, so ARC doesn’t manage them.
+
+---
+
+If you want, I can also **simplify this ARC concept with a small real-world example and diagram** so it becomes very easy to remember for interviews. 🚀
+
 
 
 
