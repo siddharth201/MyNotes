@@ -2884,7 +2884,92 @@ print(name)  // Output: Anand
 ```
 
 ---  
-</details>
+</details>  
+
+
+### Q41: What is Nil-Coalescing Operator (??) in Swift.
+
+• The **nil-coalescing operator `??`** lets you **provide a default value** for an optional if it happens to be **nil**.
+
+• It’s a shorthand way of writing an **if-else check for nil**.
+
+**Syntax:**
+
+```
+optionalValue ?? defaultValue
+```
+
+• If **optionalValue contains a value** → returns the value.
+
+• If **optionalValue is nil** → returns **defaultValue**.
+
+**Example:**
+
+```
+var name: String? = nil
+let displayName = name ?? "Guest"
+print(displayName) // Output: Guest
+```
+
+**Why Use It?**
+
+1. Provides a **default value** without writing **if let** or **guard let**.
+
+2. Makes code **shorter and cleaner**.
+
+3. Avoids **runtime crashes** when optionals are **nil**.
+
+---
+
+### Q42: What is the try? operator and how is it different from try! in Swift.
+
+#### try?
+
+• Converts a **throwing function into an optional**.
+
+• If the function **succeeds**, you get the result as an optional.
+
+• If the function **throws an error**, you get **nil** instead of a runtime crash.
+
+• **Safe way** to handle errors when you don’t need to differentiate the error type.
+
+**Example:**
+
+```
+enum NetworkError: Error {
+    case noConnection
+}
+
+func fetchData() throws -> String {
+    throw NetworkError.noConnection
+}
+
+// Using try?
+let result = try? fetchData()
+print(result) // Output: nil
+```
+
+---
+
+#### try!
+
+• **Forces the throwing function to succeed.**
+
+• If the function **throws an error**, your app **crashes at runtime**.
+
+• Use it only when you are **sure no error will occur.**
+
+**Example:**
+
+```
+// Using try!
+let result = try! fetchData() // ⚠️ Crashes here
+```
+
+---
+
+Send the **next screenshots** and I’ll continue extracting the text exactly like this.
+
 
 
 
