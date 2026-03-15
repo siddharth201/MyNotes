@@ -3603,6 +3603,8 @@ printIfEqual(a: "Swift", b: "Swift") // Works (String is Equatable)
 </details>  
 
 ### **Q: What are phantom types in Swift?**
+<details>
+<summary>Answer</summary>  
 
 A **phantom type** is a type parameter in a generic that doesn’t actually appear in the data it stores, but it’s still useful because it carries *extra compile-time information*.
 
@@ -3632,9 +3634,10 @@ deletePost(user: admin)
 
 ```
 
-This ensures only admins can perform certain actions—enforced at compile time.
+This ensures only admins can perform certain actions—enforced at compile time.  
+</details>
 
-## **Q54: Explain copy-on-write (COW) optimization in Swift?**
+### **Q: Explain copy-on-write (COW) optimization in Swift?**
 
 * Swift collections like **Array**, **Dictionary**, and **Set** use **Copy-On-Write optimization**.
 * Instead of immediately copying data when you assign one collection to another, Swift **shares the same underlying storage** until one of them is modified.
