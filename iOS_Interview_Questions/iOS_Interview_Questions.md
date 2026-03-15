@@ -1544,7 +1544,7 @@ struct User: Codable {
 ---  
 </details>
 
-# Q20. Difference Between `==` and `===` in Swift
+### Q. Difference Between `==` and `===` in Swift
 
 ## 1. == (Equality Operator)
 
