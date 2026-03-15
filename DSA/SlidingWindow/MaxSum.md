@@ -3,6 +3,7 @@
           </br>     An integer `k`</br></br> 
 Find the **maximum sum of any contiguous subarray of size `k`**.  
 
+```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
     guard arr.count >= k else { return 0}
     var maxSum = Int.min
@@ -18,9 +19,15 @@ func maxSum(_ arr: [Int], _ k: Int) -> Int {
     }
     return maxSum
 }
+```
+
 
 public func testMaxSum(_ arr: [Int], _ k: Int, completion: (Int) -> Void) {
     let result = maxSum(arr, k)
     completion(result)
+}
+
+testMaxSum([2,1,5,1,3,2], 3) { result in
+    print(result)
 } 
 
