@@ -14,7 +14,7 @@ Output:
 
 9
 
-Subarrays of size 3:
+**Subarrays of size 3:**
 
 [2,1,5] → sum = 8
 [1,5,1] → sum = 7
