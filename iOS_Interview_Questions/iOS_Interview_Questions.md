@@ -3803,9 +3803,85 @@ p2 = nil  // Retain count = 0 -> deinit called, memory released
 
 2. **Structs and enums** are value types and are copied by default, so ARC doesn’t manage them.
 
+3. Retain cycles (strong references between objects)
+
+can prevent deallocation → use **weak** or **unowned** to avoid them.
+
 ---
 
-If you want, I can also **simplify this ARC concept with a small real-world example and diagram** so it becomes very easy to remember for interviews. 🚀
+# Q58: How would you debug memory leaks in a Swift application?
+
+## 1. Use Xcode’s Memory Graph
+
+* **Memory Graph Debugger** shows all objects in memory and their references.
+
+* Helps detect **retain cycles** where objects are kept alive unintentionally.
+
+* **How to use:**
+
+  1. Run your app in Xcode.
+  2. Click the **Debug Memory Graph** button in the debug toolbar.
+  3. Look for objects that **should have been deallocated but aren’t**.
+
+---
+
+## 2. Instruments – Leaks & Allocations
+
+* **Instruments** is part of Xcode, used for profiling memory.
+
+* **Steps:**
+
+  1. Product → Profile → Choose **Leaks** template.
+  2. Run your app and interact with it.
+  3. Instruments highlights leaked objects and shows reference paths.
+
+---
+
+## 3. Check Strong References
+
+* Look for objects that **mutually reference each other** (retain cycles).
+
+* **Common culprits:**
+
+  * **Closures capturing `self` strongly**
+  * **Delegate relationships not marked `weak`**
+  * **Parent-child object references in UI**
+
+```swift
+// Example of strong capture in closure
+someAsyncFunction {
+    self.doSomething() // retains self → possible memory leak
+}
+
+// Fix with weak self
+someAsyncFunction { [weak self] in
+    self?.doSomething()
+}
+```
+
+---
+
+## 4. Use `deinit` for Debugging
+
+* Add a **deinit** method in your class to check if objects are being deallocated.
+
+```swift
+deinit {
+    print("\(self) is being deallocated")
+}
+```
+
+If **deinit doesn’t run**, there’s likely a **retain cycle**.
+
+---
+
+## 5. Avoid Common Pitfalls
+
+* Strong references in **closures**, **delegates**, and **parent-child objects**.
+* Use **weak** or **unowned** references where appropriate.
+
+
+
 
 
 
