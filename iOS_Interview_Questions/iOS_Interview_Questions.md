@@ -450,7 +450,7 @@ for char in greeting {
 </details> 
 
 
-### **Q3: What are optionals in Swift and why do we need them?**
+### **Q: What are optionals in Swift and why do we need them?**
 <details>
 <summary>Answer</summary>  
 
