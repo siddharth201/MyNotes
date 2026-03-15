@@ -3959,7 +3959,8 @@ someAsyncFunction { [weak self] in
 </details>  
 
 ### Q: Explain the differences between deep copying and shallow copying in swift?**
-
+<details>
+<summary>Answer</summary>
 **Shallow Copy**
 * A **shallow copy** copies the reference to the object, not the object itself.
 * Both copies point to the same memory.
@@ -4005,7 +4006,8 @@ let person2 = person1.copy() as! Person // Deep copy
 person2.name = "Bob"
 print(person1.name) // Prints "Alice" (original unaffected)
 
-```
+```  
+</details>
 
 
 
