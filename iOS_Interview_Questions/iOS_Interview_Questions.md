@@ -2776,6 +2776,8 @@ let 👍 = "Like"
 </details>
 
 ### Q: What are the different ways to unwrap an optional? Provide code examples.
+<details>
+<summary>Answer</summary>  
 
 An optional (`?`) can hold a value or **nil**.
 
@@ -2881,7 +2883,8 @@ var name: String! = "Anand"
 print(name)  // Output: Anand
 ```
 
----
+---  
+</details>
 
 
 
