@@ -2563,6 +2563,8 @@ let result = add(5, 10)
 </details>
 
 ### Q: What is type aliasing in Swift? Provide an example where it would be useful.
+<details>
+<summary>Answer</summary>  
 
 Type aliasing lets you **create a new name for an existing type.**
 
@@ -2595,7 +2597,8 @@ func fetchData(completion: CompletionHandler) {
 
 Much cleaner.
 
----
+---  
+</details>
 
 # Q38: Explain the concept of type safety in Swift. How does it prevent runtime errors?
 
