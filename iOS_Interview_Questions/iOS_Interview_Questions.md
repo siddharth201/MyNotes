@@ -3199,7 +3199,203 @@ enum NetworkError: Error {
 4. Makes your code **safe, readable, and easy to maintain**.
 
 ---
-</details>
+</details>  
+
+Here is the **text exactly as it appears in the screenshots**:
+
+---
+
+## Q47: What are the advantages of Swift's error handling over Objective-C's NSError?
+
+### 1. Type Safety
+
+• **Swift:** Uses the **Error protocol** and **throw / try** mechanism. The compiler knows exactly which functions can throw errors.
+
+• **Objective-C:** Uses **NSError pointers**, which are **optional and unchecked**. You can forget to check the error, leading to potential runtime issues.
+
+**Example:**
+
+```swift
+// Swift
+func fetchData() throws -> String { ... }
+
+let data = try fetchData() // Compiler ensures handling
+```
+
+---
+
+### 2. Cleaner Syntax
+
+• **Swift:** **do-try-catch** blocks make error handling **structured and readable**.
+
+• **Objective-C:** Requires checking **NSError** after every call, leading to verbose code.
+
+```objc
+NSError *error = nil;
+NSString *data = [obj fetchData:&error];
+if (error) { ... } // Verbose
+```
+
+---
+
+### 3. Compile-Time Checking
+
+• **Swift:** Compiler ensures you **handle or propagate errors**.
+
+• **Objective-C:** No compile-time enforcement. Errors can be ignored, causing potential crashes.
+
+---
+
+### 4. Multiple Specific Error Handling
+
+• **Swift:** You can **catch specific error cases** using enums and pattern matching.
+
+```swift
+do {
+    try fetchData()
+}
+catch NetworkError.noConnection {
+    print("No connection")
+}
+catch NetworkError.timeout {
+    print("Timeout")
+}
+```
+
+• **Objective-C:** **NSError** only gives a code and description; distinguishing between error types requires manual checking.
+
+---
+
+### 5. Propagation Made Easy
+
+• **Swift:** Use **throws** and **rethrows** to propagate errors up the call stack automatically.
+
+• **Objective-C:** Must manually pass **NSError**** parameters through multiple function calls.
+
+---
+
+### 6. Integration with Optionals
+
+• Swift allows converting throwing functions to optionals using **try?**, making optional chaining with errors easy.
+
+```swift
+let data = try? fetchData() // nil if error occurs
+```
+
+---
+
+## Q48: Can you add stored properties in extensions? Why or why not?
+
+**No, you cannot add stored properties in Swift extensions.**
+
+### Why Not:
+
+• Stored properties require **additional memory allocation** in the object.
+
+• Extensions **cannot modify the memory layout** of an existing type.
+
+• Swift needs to know the **exact size of a type at compile time**, and stored properties in extensions would break that.
+
+---
+
+### What You Can Add in Extensions:
+
+• **Computed properties** (getters/setters)
+
+• **Methods** (functions)
+
+• **Initializers** (with some restrictions)
+
+• **Nested types**
+
+• **Conformance to protocols**
+
+---
+
+### Example – Computed Property in Extension:
+
+```swift
+extension String {
+    var reversedText: String {
+        return String(self.reversed())
+    }
+}
+
+print("Swift".reversedText) // Output: "tfiwS"
+```
+
+Here, no memory is added; it just **computes the value when accessed**.
+
+---
+
+### Workarounds if you need stored-like properties:
+
+• Use **Associated Objects** (in classes via Objective-C runtime)
+
+• Store data externally (e.g., in a dictionary)
+
+---
+
+### Key Point for Interviews:
+
+• **Remember:** Stored properties change memory layout → **not allowed in extensions.**
+
+• Always use **computed properties** in extensions.
+
+---
+
+## Q49: What are protocol extensions?
+
+### How are they different from regular extensions?
+
+• In Swift, a **protocol extension** lets you add **default method implementations** and even computed properties to a protocol.
+
+• This means that all types that conform to that protocol **automatically get those default implementations** — unless they choose to override them.
+
+---
+
+### Example:
+
+```swift
+protocol Greetable {
+    func greet()
+}
+
+extension Greetable {
+    func greet() {
+        print("Hello! ")
+    }
+}
+
+struct Person: Greetable {}
+struct Robot: Greetable {}
+
+let p = Person()
+p.greet()  // Prints: Hello!
+
+let r = Robot()
+r.greet()  // Prints: Hello!
+```
+
+Here, neither **Person** nor **Robot** had to implement **greet()**.
+They inherited the default behavior from the **protocol extension**.
+
+---
+
+### Regular Extensions
+
+• A **regular extension** is used to add new functionality to a **specific type** (like `String`, `Int`, `Array`, or your custom structs/classes).
+
+• You can add:
+
+○ New methods
+○ Computed properties
+○ Initializers (in some cases)
+
+---
+
+If you want, I can also **continue extracting the next questions (Q50 onwards)** the same way for your notes.
+
 
 
 
