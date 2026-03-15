@@ -1274,6 +1274,8 @@ Use **unowned** when the object is **guaranteed to outlive the reference**.
 
 
 ### Q. What is the difference between map, compactMap, and flatMap in Swift?
+<details>
+<summary>Answer</summary>  
 
 ## 1. map
 
@@ -1355,8 +1357,11 @@ print(numbers) // [1,2,4]
 ```
 
 ---
+</details>  
 
-# Q17. What is the difference between Synchronous and Asynchronous tasks in Swift?
+### Q. What is the difference between Synchronous and Asynchronous tasks in Swift?  
+<details>
+<summary>Answer</summary>
 
 ## Synchronous
 
@@ -1431,8 +1436,9 @@ Ordering food online. While it’s being prepared, you can do other things.
 * Database operations
 
 ---
+</details>  
 
-# Q18. What are Access Control Levels in Swift?
+### Q. What are Access Control Levels in Swift?
 
 Swift provides **5 levels of access control** to define visibility.
 
