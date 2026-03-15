@@ -2600,7 +2600,9 @@ Much cleaner.
 ---  
 </details>
 
-# Q38: Explain the concept of type safety in Swift. How does it prevent runtime errors?
+### Q: Explain the concept of type safety in Swift. How does it prevent runtime errors?  
+<details>
+<summary>Answer</summary>
 
 Type safety means **every variable, constant, and expression in Swift has a specific type that the compiler checks at compile time.**
 
@@ -2669,9 +2671,10 @@ if let name = userName {
 
 Type safety also extends to generics, ensuring only valid operations are allowed.
 
----
+---  
+</details>
 
-# Q39: What are the rules for variable and constant naming in Swift? What characters are allowed?
+### Q: What are the rules for variable and constant naming in Swift? What characters are allowed?
 
 ### 1. Start with a letter or underscore (_)
 
