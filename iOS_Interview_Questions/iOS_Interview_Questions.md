@@ -1905,7 +1905,9 @@ Output
 </details>  
 
 
-# Q27: What's the purpose of the 'where' clause in Swift?
+### Q27: What's the purpose of the 'where' clause in Swift?  
+<details>
+<summary>Answer</summary>
 
 The **where** clause in Swift is used to **add extra conditions or constraints** in various places like loops, switch cases, generics, and extensions.
 
@@ -1929,9 +1931,10 @@ Here, **where** acts as a filter inside the loop.
 • Helps apply **conditions directly inside syntax** (loop, switch, generics, extensions)
 • Avoids writing extra nested **if** statements
 
----
+---  
+</details>
 
-# Q28: Explain CaseIterable protocol in Swift
+### Q: Explain CaseIterable protocol in Swift
 
 • The **CaseIterable** protocol in Swift is used with **enums** to automatically provide a collection of all cases of that enum.
 
