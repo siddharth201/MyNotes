@@ -3673,6 +3673,8 @@ print("array2:", array2) // [1, 2, 3, 4]
 </details>  
 
 ### Q55: What is ARC in Swift? How does it work?
+<details>
+<summary>Answer</summary>  
 
 ARC stands for **Automatic Reference Counting**.
 It’s Swift’s memory management system that **automatically tracks and manages the memory** used by class instances.
@@ -3713,9 +3715,10 @@ Anand is deallocated
 
 * ARC only applies to **classes** (reference types), not structs or enums (value types).
 * ARC can cause **retain cycles** if two objects hold strong references to each other (solution: use weak or unowned).
+</details>  
 
-**Q56: What are retain cycles?**
-**How do they occur?**
+### Q: What are retain cycles? How do they occur?  
+
 A retain cycle (also called a strong reference cycle) happens when two or more objects keep strong references to each other.
 Because of this, **ARC (Automatic Reference Counting)** can’t free them from memory, even if nothing else in the program is using them.
 This leads to **memory leaks**.
