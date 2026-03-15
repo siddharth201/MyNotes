@@ -60,6 +60,162 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 ### Q. What is the difference between CFBundleVersion and CFBundleShortVersionString?
 <details>
 <summary>Answer</summary> 
+In **SwiftUI**, the lifecycle is slightly different because Apple introduced the **App protocol** (starting iOS 14) instead of relying on **AppDelegate**.
+But internally the **same iOS states still exist** — SwiftUI just exposes them differently using **ScenePhase**.
+
+So the **parallel concept in SwiftUI** is:
+
+* `ScenePhase`
+* `.onChange(of: scenePhase)`
+* `.onAppear`
+* `.onDisappear`
+* optional `UIApplicationDelegateAdaptor` if you still want AppDelegate.
+
+---
+
+## 1. SwiftUI Lifecycle States (Parallel to UIKit)
+
+| UIKit State | SwiftUI Equivalent             | Meaning                              |
+| ----------- | ------------------------------ | ------------------------------------ |
+| Not Running | App not launched               | Same                                 |
+| Inactive    | `.inactive`                    | App temporarily not receiving events |
+| Active      | `.active`                      | App in foreground and interactive    |
+| Background  | `.background`                  | App running in background            |
+| Suspended   | `.background` (system handled) | Not directly observable              |
+
+SwiftUI exposes these through **ScenePhase**.
+
+Example:
+
+```swift
+@Environment(\.scenePhase) private var scenePhase
+```
+
+---
+
+## 2. SwiftUI Equivalent of AppDelegate Callbacks
+
+## UIKit vs SwiftUI Mapping
+
+| UIKit Callback                   | SwiftUI Equivalent                      |
+| -------------------------------- | --------------------------------------- |
+| `didFinishLaunchingWithOptions`  | `init()` of App OR `.task` in root view |
+| `applicationDidBecomeActive`     | `scenePhase == .active`                 |
+| `applicationWillResignActive`    | `scenePhase == .inactive`               |
+| `applicationDidEnterBackground`  | `scenePhase == .background`             |
+| `applicationWillEnterForeground` | `.background → .active` transition      |
+| `applicationWillTerminate`       | Not reliable in SwiftUI (same in UIKit) |
+
+---
+
+## 3. SwiftUI Lifecycle Example
+
+Main App file:
+
+```swift
+@main
+struct MyApp: App {
+
+    @Environment(\.scenePhase) private var scenePhase
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .onChange(of: scenePhase) { newPhase in
+
+            switch newPhase {
+
+            case .active:
+                print("App became active")
+
+            case .inactive:
+                print("App became inactive")
+
+            case .background:
+                print("App moved to background")
+
+            @unknown default:
+                break
+            }
+        }
+    }
+}
+```
+
+---
+
+## 4. Visual Lifecycle Flow in SwiftUI
+
+```
+App Launch
+   ↓
+inactive
+   ↓
+active
+   ↓
+inactive (interruption)
+   ↓
+background
+   ↓
+suspended (system controlled)
+```
+
+---
+
+## 5. When You Still Need AppDelegate in SwiftUI
+
+Some things **still require AppDelegate**, like:
+
+* Push Notifications
+* Background fetch
+* Deep links
+* Firebase setup
+* Third-party SDK initialization
+
+SwiftUI allows this using:
+
+```swift
+@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+```
+
+Example:
+
+```swift
+class AppDelegate: NSObject, UIApplicationDelegate {
+
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
+    ) -> Bool {
+        print("App launched")
+        return true
+    }
+}
+```
+
+---
+
+## 6. Real Interview-Level Answer (Short Version)
+
+If asked in an **iOS interview**:
+
+> In SwiftUI the app lifecycle is managed by the **App protocol** instead of AppDelegate.
+> The lifecycle state is observed using **ScenePhase** (`active`, `inactive`, `background`).
+> We monitor transitions using `.onChange(of: scenePhase)`.
+> For features like push notifications or SDK initialization, we can still integrate UIKit lifecycle using `UIApplicationDelegateAdaptor`.
+
+---
+
+✅ **UIKit → SwiftUI Summary**
+
+```
+AppDelegate        →     ScenePhase
+didFinishLaunching →     App init()
+DidBecomeActive    →     .active
+WillResignActive   →     .inactive
+DidEnterBackground →     .background
+```
 </details> 
 
 ### Q. What is the difference between CFBundleVersion and CFBundleShortVersionString?
