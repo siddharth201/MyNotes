@@ -445,9 +445,7 @@ for char in greeting {
 
 ```
 
----
-
-**Would you like to see how to perform common tasks like checking if a String contains a specific Character or how to join Characters back into a String?**  
+---  
 </details> 
 
 
