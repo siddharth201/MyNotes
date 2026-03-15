@@ -55,14 +55,16 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 `7. viewDidDisappear(_:)` → called when the view has gone offscreen (clean-up tasks).
 
 `8. deinit` → called when the view controller is deallocated (release resources).
-</details>  
+</details> 
 
 ### Q. Explain SwiftUI lifeCycle vs UIKit lifeCycle   
- 
+<details> 
 
 ### Q. What is the difference between CFBundleVersion and CFBundleShortVersionString?
 <details>
-<summary>Answer</summary>  
+<summary>Answer</summary>
+
+</details> 
 
 **CFBundleShortVersionString**  
 
