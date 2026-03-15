@@ -2309,7 +2309,9 @@ DispatchQueue.global().async { [unowned self] in
 ---  
 </details>
 
-# Q33: How does Swift handle error propagation?
+### Q: How does Swift handle error propagation?  
+<details>
+<summary>Answer</summary>  
 
 Swift has a **built-in error handling system** that helps you write safe and clean code when things go wrong (like network failures, invalid inputs, or missing files).
 
@@ -2428,7 +2430,8 @@ func performOperation(_ operation: () throws -> Void) rethrows {
 2. Error bubbles up (`throws`)
 3. Caller decides whether to handle (`do-catch`) or pass it further
 
----
+---  
+</details>
 
 # Q34: What is the purpose of the mutating keyword in Swift?
 
