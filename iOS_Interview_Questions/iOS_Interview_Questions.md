@@ -3718,6 +3718,8 @@ Anand is deallocated
 </details>  
 
 ### Q: What are retain cycles? How do they occur?  
+<details>
+<summary>Answer</summary>  
 
 A retain cycle (also called a strong reference cycle) happens when two or more objects keep strong references to each other.
 Because of this, **ARC (Automatic Reference Counting)** can’t free them from memory, even if nothing else in the program is using them.
@@ -3772,8 +3774,9 @@ Use **weak** or **unowned** references:
 2. Break cycles using **weak** or **unowned**.
 3. Common with **delegates** (should be **weak**) and **closures** (capture **self** weakly).
 4. Always check memory leaks in Instruments $\rightarrow$ Leaks tool.
+</details>  
 
-**Q57: Explain the lifecycle of an object under ARC.**
+### Q: Explain the lifecycle of an object under ARC.**
 
 **1. Creation (Initialization)**
 
