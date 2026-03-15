@@ -60,8 +60,8 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 ### Q. Explain `UIKit` application lifecycle vs `SwiftUI` application lifecycle?
 <details>
 <summary>Answer</summary> 
-In `SwiftUI`, the lifecycle is slightly different because Apple introduced the `App protocol` (starting iOS 14) instead of relying on **AppDelegate**.
-But internally the **same iOS states still exist** — SwiftUI just exposes them differently using **ScenePhase**.
+In `SwiftUI`, the lifecycle is slightly different because Apple introduced the `App protocol` (starting iOS 14) instead of relying on `AppDelegate`.
+But internally the `same iOS states still exist` — SwiftUI just exposes them differently using `ScenePhase`.
 
 So the **parallel concept in SwiftUI** is:
 
