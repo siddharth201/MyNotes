@@ -1679,7 +1679,9 @@ If you try to use `null`, it will cause a compile-time error.
 ---  
 </details>
 
-### Q. Describe the 'fallthrough' keyword in a 'switch' statement
+### Q. Describe the 'fallthrough' keyword in a 'switch' statement  
+<details>
+<summary>Answer</summary>  
 
 In Swift, switch does **not automatically fall through** like C/Java.
 
@@ -1730,9 +1732,12 @@ Use when the **next case should run after the current one**.
 
 The next case executes **without checking its condition**.
 
----
+---  
+</details>
 
-# Q24. Define 'break' and 'continue' statements in loops in Swift
+### Q. Define 'break' and 'continue' statements in loops in Swift  
+<details>
+<summary>Answer</summary>  
 
 ## break
 
@@ -1777,8 +1782,11 @@ for num in numbers {
 ```
 
 ---
+</details>
 
-# Q25. Explain the concept of a half-open range in Swift
+### Q. Explain the concept of a half-open range in Swift  
+<details>
+<summary>Answer</summary>   
 
 A **half-open range** includes the start value but **excludes the end value**.
 
@@ -1829,9 +1837,10 @@ for i in 0..<array.count {
 
 3. Prevents off-by-one errors.
 
----
+---  
+</details>
 
-# Q26. Describe the 'stride' function in Swift
+### Q. Describe the 'stride' function in Swift
 
 The **stride function** generates a sequence of numbers between two values with a custom step size.
 
