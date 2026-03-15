@@ -1177,9 +1177,10 @@ let dog = Animal(name: "Bruno")
 print(dog.description)
 ```
 
----
+---  
+</details>
 
-# Q15. What is the difference between weak, strong, and unowned in Swift?
+### Q. What is the difference between weak, strong, and unowned in Swift?
 
 ---
 
