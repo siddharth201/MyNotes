@@ -3021,7 +3021,9 @@ Cleaner and easier to read.
 ---
 </details>
 
-### Q: What is closure capture in Swift ?
+### Q: What is closure capture in Swift ?  
+<details>
+<summary>Answer</summary>  
 
 • A **closure can “capture” constants and variables** from its surrounding scope.
 
@@ -3071,7 +3073,8 @@ print(myCounter()) // 3
 
 4. Use **[weak self]** or **[unowned self]** for safe memory management.
 
----
+---  
+</details>
 
 ## Q45: What's the difference between @escaping and @nonescaping closures in Swift ?
 
