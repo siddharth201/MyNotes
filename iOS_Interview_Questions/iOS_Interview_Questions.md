@@ -342,6 +342,7 @@ Swift is **type-safe →** Once a variable is declared with a type, you can’t 
 ### **Q. Explain `Float` vs `Double` in Swift?**
 <details>
 <summary>Answer</summary>  
+  
 Think of **Double** and **Float** like two different sizes of containers for decimal numbers. While they both store numbers with fractional parts, the difference lies in their capacity for detail (precision) and how much "space" they take up in your computer's memory.
 
 ### The Breakdown
