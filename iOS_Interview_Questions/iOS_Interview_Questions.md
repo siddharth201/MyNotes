@@ -3467,6 +3467,8 @@ Swift’s **Array** and **Dictionary** are actually **generic types**.
 </details>  
 
 ### **Q: What are type constraints in generics?**
+<details>
+<summary>Answer</summary>  
 
 * Generics allow us to write flexible and reusable functions, classes, or structs.
 * Instead of fixing a type (like `Int` or `String`), we use a placeholder (like `T`) which can work with any type.
@@ -3545,9 +3547,10 @@ func setupView<T: UIView>(_ view: T) {
 
 ```
 
-Works only with UIKit views (`UILabel`, `UIButton`, `UITableView`, etc.).
+Works only with UIKit views (`UILabel`, `UIButton`, `UITableView`, etc.). 
+</details>
 
-## **Q52: What is the where clause in generics? When would you use it?**
+### **Q: What is the where clause in generics? When would you use it?**
 
 * In Swift, the `where` clause is used in **generic code** to add **extra constraints** on types.
 * It allows you to specify that a type must conform to certain protocols, or that two types must be the same, or have a relationship.
