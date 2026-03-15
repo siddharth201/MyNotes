@@ -2975,7 +2975,9 @@ let result = try! fetchData() // ⚠️ Crashes here
 </details>  
 
 
-## Q43: What are trailing closures in Swift ?
+### Q: What are trailing closures in Swift ?  
+<details>
+<summary>Answer</summary>  
 
 • In Swift, if the **last parameter of a function is a closure**, you can **write the closure outside the parentheses**.
 
