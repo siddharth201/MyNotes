@@ -1902,7 +1902,7 @@ Output
 • Useful in animations, layouts, and skipping elements.
 
 ---
-
+</details>
 
   
 
