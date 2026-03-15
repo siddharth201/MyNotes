@@ -2433,7 +2433,9 @@ func performOperation(_ operation: () throws -> Void) rethrows {
 ---  
 </details>
 
-# Q34: What is the purpose of the mutating keyword in Swift?
+### Q: What is the purpose of the mutating keyword in Swift?  
+<details>
+<summary>Answer</summary>  
 
 In Swift, **struct and enum are value types**, which means their properties cannot normally be modified from within their own instance methods.
 
@@ -2460,7 +2462,8 @@ print(counter.value) // Output: 1
 
 Without **mutating**, the compiler will throw an error because `increment()` modifies `value`.
 
----
+---  
+</details>
 
 # Q35: What’s the difference between String and NSString in Swift?
 
