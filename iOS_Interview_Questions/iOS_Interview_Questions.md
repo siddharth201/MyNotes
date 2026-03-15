@@ -2049,7 +2049,9 @@ let c = Circle.unitCircle()
 ---  
 </details>
 
-# Q30. Can all types be marked as final in Swift? If so, what does it mean?
+### Q. Can all types be marked as final in Swift? If so, what does it mean?  
+<details>
+<summary>Answer</summary>  
 
 • Yes, classes can be marked as **final**.
 
@@ -2097,7 +2099,8 @@ It prevents unintended inheritance or method overriding that might cause bugs.
 
 • For **utility or helper classes** that should be used as-is.
 
----
+---  
+</details>
 
 # Q31: What’s the difference between class and struct in Swift?
 
