@@ -3912,6 +3912,8 @@ If **deinit doesn’t run**, there’s likely a **retain cycle**.
 </details>
 
 ### Q: How does ARC affect memory management for class instances?**
+<details>
+<summary>Answer</summary>  
 
 **1. Automatic Memory Management**
 
@@ -3954,8 +3956,9 @@ someAsyncFunction { [weak self] in
 * ARC only manages **class instances** (reference types), not structs or enums.
 * Provides **automatic memory safety** without manual **malloc** / **free**.
 * Helps **prevent dangling pointers** and most memory leaks when used correctly.
+</details>  
 
-**Q60: Explain the differences between deep copying and shallow copying in swift?**
+### Q: Explain the differences between deep copying and shallow copying in swift?**
 
 **Shallow Copy**
 * A **shallow copy** copies the reference to the object, not the object itself.
