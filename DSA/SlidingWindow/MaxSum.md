@@ -19,15 +19,26 @@ func maxSum(_ arr: [Int], _ k: Int) -> Int {
     }
     return maxSum
 }
-```
+```  
 
+### Complexity
 
+| Metric | Value    |
+| ------ | -------- |
+| Time   | **O(n)** |
+| Space  | **O(1)** |  
+
+```swift
 public func testMaxSum(_ arr: [Int], _ k: Int, completion: (Int) -> Void) {
     let result = maxSum(arr, k)
     completion(result)
 }
+```
 
+### How to Call
+```swift
 testMaxSum([2,1,5,1,3,2], 3) { result in
     print(result)
-} 
+}
+``` 
 
