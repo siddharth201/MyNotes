@@ -986,7 +986,7 @@ testDefer()
 <details>
 <summary>Answer</summary>  
 
-  
+●      In Swift, an Optional means a variable may or may not have a value (nil). ●      Optional Binding is a way to safely unwrap an optional and use its value without force unwrapping (!). 1. if let ●      Used when you want to check if an optional has a value, and if yes, use it inside a block.   ●      If the optional is nil, the block is skipped.  
 
 </details>  
 
