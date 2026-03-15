@@ -3837,6 +3837,8 @@ can prevent deallocation → use **weak** or **unowned** to avoid them.
 </details>
 
 ### Q: How would you debug memory leaks in a Swift application?
+<details>
+<summary>Answer</summary>  
 
 ## 1. Use Xcode’s Memory Graph
 
@@ -3906,9 +3908,10 @@ If **deinit doesn’t run**, there’s likely a **retain cycle**.
 
 * Strong references in **closures**, **delegates**, and **parent-child objects**.
 * Use **weak** or **unowned** references where appropriate.
-* Be careful with **global or static references** that can keep objects alive.
+* Be careful with **global or static references** that can keep objects alive.  
+</details>
 
-**Q59: How does ARC affect memory management for class instances?**
+### Q: How does ARC affect memory management for class instances?**
 
 **1. Automatic Memory Management**
 
