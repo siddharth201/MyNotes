@@ -1934,7 +1934,10 @@ Here, **where** acts as a filter inside the loop.
 ---  
 </details>
 
-### Q: Explain CaseIterable protocol in Swift
+### Q: Explain CaseIterable protocol in Swift   
+ 
+<details>
+<summary>Answer</summary>
 
 • The **CaseIterable** protocol in Swift is used with **enums** to automatically provide a collection of all cases of that enum.
 
@@ -1984,7 +1987,8 @@ Example:
 • Writing test cases to cover every enum option.
 • Creating UI menus with all enum values.
 
----
+---  
+</details>
 
 # Q29: What is the difference between self and Self in Swift?
 
