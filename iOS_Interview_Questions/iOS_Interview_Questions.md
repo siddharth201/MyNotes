@@ -3650,7 +3650,20 @@ print("array2:", array2) // [1, 2, 3, 4]
 
 ```
 
-`array1` and `array2` shared the same memory **until** `array2` was mutated. At that moment, Swift duplicated the storage.
+`array1` and `array2` shared the same memory **until** `array2` was mutated. At that moment, Swift duplicated the storage.  
+
+Q55: What is ARC in Swift?
+How does it work?
+
+ARC stands for **Automatic Reference Counting**.
+It’s Swift’s memory management system that **automatically tracks and manages the memory** used by class instances.
+
+Unlike languages where you need to manually free memory (like C/C++), Swift uses ARC to free up memory **when an object is no longer needed**.
+
+**How does it work?**
+
+* Every class instance has a **reference count** (a number).
+* When you create a new reference (variable/constant) to an instance, the count increases.
 
 
 
