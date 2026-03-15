@@ -1095,7 +1095,9 @@ let student = ("Anand", 28, true)
 
 </details>
 
-### Q. What is the difference between Any, AnyObject, and NSObject in Swift?
+### Q. What is the difference between Any, AnyObject, and NSObject in Swift?  
+<details>
+<summary>Answer</summary>  
 
 ---
 
