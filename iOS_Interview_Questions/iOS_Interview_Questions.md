@@ -2674,7 +2674,9 @@ Type safety also extends to generics, ensuring only valid operations are allowed
 ---  
 </details>
 
-### Q: What are the rules for variable and constant naming in Swift? What characters are allowed?
+### Q: What are the rules for variable and constant naming in Swift? What characters are allowed?  
+<details>
+<summary>Answer</summary>
 
 ### 1. Start with a letter or underscore (_)
 
@@ -2770,9 +2772,10 @@ let नमस्ते = "Hello in Hindi"
 let 👍 = "Like"
 ```
 
----
+---  
+</details>
 
-# Q40: What are the different ways to unwrap an optional? Provide code examples.
+### Q: What are the different ways to unwrap an optional? Provide code examples.
 
 An optional (`?`) can hold a value or **nil**.
 
