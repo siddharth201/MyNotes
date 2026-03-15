@@ -1,7 +1,20 @@
 
 > Q. Given:  </br>  An integer array `arr`
           </br>     An integer `k`</br></br> 
-Find the **maximum sum of any contiguous subarray of size `k`**.  
+Find the **maximum sum of any contiguous subarray of size `k`**.   
+
+📌 Example
+arr = [2,1,5,1,3,2]
+k = 3
+
+Subarrays of size 3:
+
+[2,1,5] → sum = 8
+[1,5,1] → sum = 7
+[5,1,3] → sum = 9
+[1,3,2] → sum = 6
+
+Maximum sum: 
 
 ```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
