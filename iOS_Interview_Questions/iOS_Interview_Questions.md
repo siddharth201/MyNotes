@@ -1180,11 +1180,13 @@ print(dog.description)
 ---  
 </details>
 
-### Q. What is the difference between weak, strong, and unowned in Swift?
+### Q. What is the difference between weak, strong, and unowned in Swift?  
+<details>
+<summary>Answer</summary>  
 
 ---
 
-# 1. Strong
+## 1. Strong
 
 • By default, all references in Swift are **strong**.
 
@@ -1211,7 +1213,7 @@ Here, `p1` and `p2` both strongly hold the object, so it won't be deallocated un
 
 ---
 
-# 2. Weak
+## 2. Weak
 
 • A **weak reference does not increase the retain count**.
 
@@ -1240,7 +1242,7 @@ If the `Person` is deallocated, `tenant` will automatically become `nil`.
 
 ---
 
-# 3. Unowned
+## 3. Unowned
 
 • Similar to `weak`, but:
 
@@ -1269,7 +1271,6 @@ Use **unowned** when the object is **guaranteed to outlive the reference**.
 
 ---
 
-If you want, I can also **convert all these screenshots (Q1–Q15) into a single clean interview notes document** that is **much shorter and easier to revise before interviews**.
   
 
 
