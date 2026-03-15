@@ -1904,9 +1904,6 @@ Output
 ---
 </details>  
 
-Below is the **exact text from the screenshots** transcribed so you can copy it directly into your notes.
-
----
 
 # Q27: What's the purpose of the 'where' clause in Swift?
 
@@ -2833,10 +2830,19 @@ var label: String!
 label = "Hello"
 print(label)
 ```
+• Declares an optional that’s assumed to always have a value.
+
+• Can be accessed without unwrapping.
+
+Example:
+
+```swift
+var name: String! = "Anand"
+print(name)  // Output: Anand
+```
 
 ---
 
-If you want, I can also convert these into **clean interview-ready revision notes (1–2 pages)** so you can review **all Swift interview topics quickly before interviews.**
 
 
   
