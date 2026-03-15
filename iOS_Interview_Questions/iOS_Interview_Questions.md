@@ -3958,8 +3958,23 @@ let person2 = person1 // Shallow copy, both refer to same object
 
 ```swift
 class Person: NSCopying {
+    var name: String
+    init(name: String) { self.name = name }
+
+    func copy(with zone: NSZone? = nil) -> Any {
+        return Person(name: name)
+    }
+}
+
+let person1 = Person(name: "Alice")
+let person2 = person1.copy() as! Person // Deep copy
+
+person2.name = "Bob"
+print(person1.name) // Prints "Alice" (original unaffected)
 
 ```
+
+
 
 
 
