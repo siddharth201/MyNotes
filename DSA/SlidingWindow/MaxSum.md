@@ -23,12 +23,9 @@ k = 3
 **Output:**
 ```swift
 9
-```
+```  
 
-
-```
-
- 
+**Solution:**
 
 ```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
