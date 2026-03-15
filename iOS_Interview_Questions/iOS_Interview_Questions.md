@@ -3638,6 +3638,8 @@ This ensures only admins can perform certain actions—enforced at compile time.
 </details>
 
 ### **Q: Explain copy-on-write (COW) optimization in Swift?**
+<details>
+<summary>Answer</summary>  
 
 * Swift collections like **Array**, **Dictionary**, and **Set** use **Copy-On-Write optimization**.
 * Instead of immediately copying data when you assign one collection to another, Swift **shares the same underlying storage** until one of them is modified.
@@ -3667,10 +3669,10 @@ print("array2:", array2) // [1, 2, 3, 4]
 
 ```
 
-`array1` and `array2` shared the same memory **until** `array2` was mutated. At that moment, Swift duplicated the storage.  
+`array1` and `array2` shared the same memory **until** `array2` was mutated. At that moment, Swift duplicated the storage.
+</details>  
 
-Q55: What is ARC in Swift?
-How does it work?
+### Q55: What is ARC in Swift? How does it work?
 
 ARC stands for **Automatic Reference Counting**.
 It’s Swift’s memory management system that **automatically tracks and manages the memory** used by class instances.
