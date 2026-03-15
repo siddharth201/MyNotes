@@ -3928,6 +3928,38 @@ someAsyncFunction { [weak self] in
 **Q60: Explain the differences between deep copying and shallow copying in swift?**
 
 **Shallow Copy**
+* A **shallow copy** copies the reference to the object, not the object itself.
+* Both copies point to the same memory.
+* Changing one copy affects the other.
+* Usually happens with **class instances** (reference types) in Swift.
+
+**Example (Class - Shallow Copy):**
+
+```swift
+class Person {
+    var name: String
+    init(name: String) { self.name = name }
+}
+let person1 = Person(name: "Alice")
+let person2 = person1 // Shallow copy, both refer to same object
+
+```
+
+`person2.name = "Bob"`
+`print(person1.name)` // Prints "Bob" (changed!)
+
+**Deep Copy**
+
+* A **deep copy** creates a **completely independent copy** of the object and its contents.
+* Changes in one copy **do not affect the other**.
+* For classes, you usually implement deep copying manually (e.g., using **NSCopying** or custom initializer).
+
+**Example (Class - Deep Copy):**
+
+```swift
+class Person: NSCopying {
+
+```
 
 
 
