@@ -3663,7 +3663,41 @@ Unlike languages where you need to manually free memory (like C/C++), Swift uses
 **How does it work?**
 
 * Every class instance has a **reference count** (a number).
-* When you create a new reference (variable/constant) to an instance, the count increases.
+* When you create a new reference (variable/constant) to an instance, the count increases.  
+* When a reference goes out of scope (or is set to nil), the count decreases.
+* When the count reaches zero, ARC deallocates the object's memory automatically.
+
+**Example:**
+
+```swift
+class Person {
+    let name: String
+    init(name: String) {
+        self.name = name
+        print("\(name) is initialized")
+    }
+    deinit {
+        print("\(name) is deallocated")
+    }
+}
+var p1: Person? = Person(name: "Anand") // count = 1
+var p2 = p1        // count = 2
+p1 = nil           // count = 1
+p2 = nil           // count = 0 -> deinit called
+// Output
+Anand is initialized
+Anand is deallocated
+
+```
+
+**Important Notes:**
+
+* ARC only applies to **classes** (reference types), not structs or enums (value types).
+* ARC can cause **retain cycles** if two objects hold strong references to each other (solution: use weak or unowned).
+
+**Q56: What are retain cycles?**
+**How do they occur?**
+A retain cycle (also called a strong reference cycle) happens when two or more objects keep strong references to each other.
 
 
 
