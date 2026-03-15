@@ -3738,7 +3738,32 @@ apt = nil
 **Expected:** both should deallocate.
 **Reality:** **retain cycle** $\rightarrow$ neither `deinit` runs, because `Person` and `Apartment` keep each other alive.
 
+**How to Fix Retain Cycles?**
+Use **weak** or **unowned** references:
 
+* **weak** $\rightarrow$ does not increase reference count, can become **nil**.
+* **unowned** $\rightarrow$ does not increase reference count, but assumes reference will never be **nil**.
+
+**Key Points to Remember**
+
+1. Retain cycles = memory leaks due to strong references pointing to each other.
+2. Break cycles using **weak** or **unowned**.
+3. Common with **delegates** (should be **weak**) and **closures** (capture **self** weakly).
+4. Always check memory leaks in Instruments $\rightarrow$ Leaks tool.
+
+**Q57: Explain the lifecycle of an object under ARC.**
+
+**1. Creation (Initialization)**
+
+* When you create a class instance using **init**, ARC allocates memory for it.
+* Its **reference count (retain count)** starts at 1.
+* **deinit** is not called yet; the object is fully alive and usable.
+
+```swift
+class Person {
+    let name: String
+
+```
 
 
 
