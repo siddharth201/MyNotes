@@ -3347,6 +3347,8 @@ Here, no memory is added; it just **computes the value when accessed**.
 </details>
 
 ### Q: What are protocol extensions?
+<details>
+<summary>Answer</summary>  
 
 ### How are they different from regular extensions?
 
@@ -3409,8 +3411,9 @@ print("swift".isPalindrome) // false
 ```
 
 Here, the extension is only for **String**, not for other types.
+</details>
 
-## **Q50: What are generics in Swift? Why are they useful?**
+### **Q: What are generics in Swift? Why are they useful?**
 
 Generics allow you to write flexible and reusable code that can work with **any type**, instead of being limited to one specific type.
 
