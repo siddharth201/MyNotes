@@ -1065,7 +1065,7 @@ greet(user: nil)       // Output: No user found
 ---
 </details>
 
-# Q13. What is a Tuple in Swift?
+### Q. What is a Tuple in Swift?
 
 • A **Tuple** is a way to group **multiple values into a single compound value**.
 
