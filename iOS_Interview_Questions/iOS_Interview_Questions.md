@@ -342,6 +342,39 @@ Swift is **type-safe →** Once a variable is declared with a type, you can’t 
 ### **Q. Explain `Float` vs `Double` in Swift?**
 <details>
 <summary>Answer</summary>  
+Think of **Double** and **Float** like two different sizes of containers for decimal numbers. While they both store numbers with fractional parts, the difference lies in their capacity for detail (precision) and how much "space" they take up in your computer's memory.
+
+### The Breakdown
+
+| Feature | **Float** | **Double** |
+| --- | --- | --- |
+| **Bit Size** | 32-bit | 64-bit |
+| **Precision** | ~6 to 9 decimal digits | ~15 to 17 decimal digits |
+| **Memory Usage** | Smaller (4 bytes) | Larger (8 bytes) |
+| **Swift Default** | No | **Yes** |
+
+---
+
+### 1. The "Precision" Gap
+
+The most significant difference is how many numbers they can accurately track after the decimal point.
+
+* **Float:** Useful when you have thousands of numbers to process and memory is tight (like in some graphics or sensor data), but it starts "rounding off" or losing accuracy much sooner.
+* **Double:** Because it uses twice as many bits, it is far more precise. In modern programming (like Swift or Kotlin), **Double is the preferred default** for almost everything.
+
+### 2. Real-World Example: GPS Coordinates
+
+Imagine you are tracking a location:
+
+* **Using a Float:** Might get you to the right city or neighborhood, but because it lacks precision, the "math" might round off, placing you a block away from where you actually are.
+* **Using a Double:** Can pinpoint your location down to a few millimeters. This is why mapping apps almost exclusively use `Double`.
+
+### 3. When to use which?
+
+* **Use Double:** For almost everything. Money (if not using special Decimal types), coordinates, and scientific calculations. If you type `let pi = 3.14` in Swift, the compiler automatically assumes it’s a **Double**.
+* **Use Float:** Only when specifically required by an API (like some older Graphics frameworks) or if you are working on a high-performance system where saving every byte of memory is a life-or-death situation.
+
+> **Pro-Tip:** Never compare two Floating-point numbers using a strict "equals" ($==$). Because of how they are stored in binary, $0.1 + 0.2$ might actually equal $0.30000000000000004$!  
 </details>    
 
 ### **Q. Explain `String` vs `Character` in Swift?**
