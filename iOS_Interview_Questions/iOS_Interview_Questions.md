@@ -2887,7 +2887,7 @@ print(name)  // Output: Anand
 </details>  
 
 
-### Q41: What is Nil-Coalescing Operator (??) in Swift.
+### Q: What is Nil-Coalescing Operator (??) in Swift.
 <details>
 <summary>Answer</summary>  
 
@@ -2924,7 +2924,9 @@ print(displayName) // Output: Guest
 ---
 </details>
 
-### Q42: What is the try? operator and how is it different from try! in Swift.
+### Q: What is the try? operator and how is it different from try! in Swift.  
+<details>
+<summary>Answer</summary>  
 
 #### try?
 
@@ -2970,8 +2972,7 @@ let result = try! fetchData() // ⚠️ Crashes here
 ```
 
 ---
-
-Send the **next screenshots** and I’ll continue extracting the text exactly like this.
+</details>
 
 
 
