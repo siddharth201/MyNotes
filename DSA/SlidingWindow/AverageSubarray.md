@@ -49,7 +49,7 @@ func averageSubarray(_ arr: [Int], _ k: Int) -> [Double] {
 ```  
 
 **Complexity**
-**Time =** `O(n*k)`
+**Time =** `O(n*k)`  
 **Space =** `O(1)`
 
 ```swift
