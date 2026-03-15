@@ -1544,7 +1544,9 @@ struct User: Codable {
 ---  
 </details>
 
-### Q. Difference Between `==` and `===` in Swift
+### Q. Difference Between `==` and `===` in Swift  
+<details>
+<summary>Answer</summary>
 
 ## 1. == (Equality Operator)
 
@@ -1599,10 +1601,12 @@ if person1 === person3 {
     print("different instances")
 }
 ```
+---   
+</details> 
 
----
-
-# Q21. Explain 'for-in' loop and its usage in Swift
+### Q. Explain 'for-in' loop and its usage in Swift  
+<details>
+<summary>Answer</summary>  
 
 The **for-in loop** is used to iterate over a sequence:
 
@@ -1632,9 +1636,10 @@ for i in 1...3 {
 }
 ```
 
----
+---  
+</details> 
 
-# Q22. What's the difference between nil and null in Swift?
+### Q. What's the difference between nil and null in Swift?
 
 Swift uses **nil**, not null.
 
