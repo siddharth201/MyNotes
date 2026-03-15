@@ -20,7 +20,9 @@ The iOS app lifecycle is managed by the UIApplication object. The main states ar
 
 **5. Suspended:** App is in memory but not executing code, ready to be resumed quickly.  
 
-### Callbacks in AppDelegate:
+### Callbacks in AppDelegate:  
+
+`Fin uses DBA & WRA to Enter Background and Foreground Terminals`
 
 • `application(_:didFinishLaunchingWithOptions:)` → called when the app launches.
 
