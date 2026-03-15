@@ -2888,6 +2888,8 @@ print(name)  // Output: Anand
 
 
 ### Q41: What is Nil-Coalescing Operator (??) in Swift.
+<details>
+<summary>Answer</summary>  
 
 • The **nil-coalescing operator `??`** lets you **provide a default value** for an optional if it happens to be **nil**.
 
@@ -2920,6 +2922,7 @@ print(displayName) // Output: Guest
 3. Avoids **runtime crashes** when optionals are **nil**.
 
 ---
+</details>
 
 ### Q42: What is the try? operator and how is it different from try! in Swift.
 
