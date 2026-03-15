@@ -1270,7 +1270,7 @@ class CreditCard {
 Use **unowned** when the object is **guaranteed to outlive the reference**.
 
 ---
-
+</details>
   
 
 
