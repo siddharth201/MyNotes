@@ -1439,6 +1439,8 @@ Ordering food online. While it’s being prepared, you can do other things.
 </details>  
 
 ### Q. What are Access Control Levels in Swift?
+<details>
+<summary>Answer</summary>  
 
 Swift provides **5 levels of access control** to define visibility.
 
@@ -1508,9 +1510,12 @@ Example:
 
 A private variable inside a class that shouldn’t be accessed outside it.
 
----
+---  
+</details>
 
-# Q19. What is Codable in Swift?
+### Q. What is Codable in Swift?  
+<details>
+<summary>Answer</summary>  
 
 Codable is a special type in Swift that makes it easy to **convert data between Swift objects and external formats** like:
 
@@ -1536,7 +1541,8 @@ struct User: Codable {
 
 **Use Case:** Parsing JSON data from APIs.
 
----
+---  
+</details>
 
 # Q20. Difference Between `==` and `===` in Swift
 
