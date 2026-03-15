@@ -1270,7 +1270,610 @@ class CreditCard {
 Use **unowned** when the object is **guaranteed to outlive the reference**.
 
 ---
-</details>
+</details>  
+
+
+### Q. What is the difference between map, compactMap, and flatMap in Swift?
+
+## 1. map
+
+• **What it does:** Transforms each element in a collection and returns a new collection with the same number of elements.
+
+• **Key point:** Output count = Input count (1-to-1 mapping).
+
+• **Use case:** When you want to apply a transformation but don’t want to remove nil values.
+
+### Example
+
+```
+let numbers = [1, 2, 3, 4]
+let squared = numbers.map { $0 * $0 }
+print(squared) // [1, 4, 9, 16]
+```
+
+### With optionals
+
+```
+let strings = ["1", "2", "three", "4"]
+let mapped = strings.map { Int($0) }
+print(mapped)
+// [Optional(1), Optional(2), nil, Optional(4)]
+```
+
+---
+
+## 2. compactMap
+
+• **What it does:** Similar to map, but automatically removes nil values after transformation.
+
+• **Key point:** Cleans up nil without manual filtering.
+
+• **Use case:** When converting to optionals and you want only valid values.
+
+### Example
+
+```
+let strings = ["1", "2", "three", "4"]
+let compactMapped = strings.compactMap { Int($0) }
+print(compactMapped) // [1, 2, 4]
+```
+
+Notice how nil from "three" is removed.
+
+---
+
+## 3. flatMap
+
+In modern Swift, flatMap is used in **two contexts**.
+
+### (a) Flattening nested collections
+
+• **What it does:** Flattens a collection of collections into a single collection.
+
+### Example
+
+```
+let nested = [[1,2], [3,4], [5,6]]
+let flattened = nested.flatMap { $0 }
+print(flattened) // [1,2,3,4,5,6]
+```
+
+---
+
+### (b) Transforming + Flattening (legacy optional handling)
+
+• Before Swift 4.1, flatMap was used to unwrap optionals.
+
+• Now **compactMap** is preferred, but older code may still use flatMap.
+
+### Example
+
+```
+let strings = ["1","2","three","4"]
+let numbers = strings.compactMap { Int($0) }
+print(numbers) // [1,2,4]
+```
+
+---
+
+# Q17. What is the difference between Synchronous and Asynchronous tasks in Swift?
+
+## Synchronous
+
+• Tasks run **one after another**.
+• The next task starts **only when the current task finishes**.
+
+## Asynchronous
+
+• Tasks can run **in the background**.
+• They don’t wait for the current task to finish.
+
+---
+
+## Blocking
+
+### Synchronous
+
+• Blocks the thread (waits until the task is done).
+
+### Asynchronous
+
+• Does not block the thread (other work can continue).
+
+---
+
+### Example
+
+**Synchronous**
+
+```
+print("Task 1")
+print("Task 2")
+print("Task 3")
+```
+
+**Asynchronous**
+
+```
+DispatchQueue.global().async {
+    print("Background Task")
+}
+
+print("Main Task continues...")
+```
+
+Note: `"Main Task continues..."` may print before `"Background Task"`.
+
+---
+
+## Real-life Example
+
+**Synchronous:**
+Standing in line for a ticket. You must wait until your turn.
+
+**Asynchronous:**
+Ordering food online. While it’s being prepared, you can do other things.
+
+---
+
+## Use Cases
+
+**Synchronous**
+
+• Good for small, quick tasks where order matters.
+
+**Asynchronous**
+
+• Best for time-consuming tasks like:
+
+* API calls
+* Image downloads
+* Database operations
+
+---
+
+# Q18. What are Access Control Levels in Swift?
+
+Swift provides **5 levels of access control** to define visibility.
+
+---
+
+## 1. Open
+
+• Most permissive level.
+• Used only for classes and class members.
+• Accessible inside and outside the module.
+• Can be subclassed and overridden in another module.
+
+Example: `UIView` in UIKit is open.
+
+---
+
+## 2. Public
+
+• Accessible anywhere inside or outside the module.
+
+• But **cannot be subclassed or overridden** outside the module.
+
+• Safer than open.
+
+Example: `String` or `Array`.
+
+---
+
+## 3. Internal (default)
+
+• Accessible only within the same module/project.
+
+• Not visible outside the module.
+
+• Best for most use cases in an app.
+
+Example:
+
+```
+class UserManager {
+}
+```
+
+(Default access level = internal)
+
+---
+
+## 4. Fileprivate
+
+• Accessible only within the **same file**.
+
+• Useful when you want to hide implementation details but share them within the file.
+
+Example: Helper methods used only in that file.
+
+---
+
+## 5. Private
+
+• Strictest level.
+
+• Accessible only within the same **scope (class/struct/extension)**.
+
+• Keeps code highly encapsulated.
+
+Example:
+
+A private variable inside a class that shouldn’t be accessed outside it.
+
+---
+
+# Q19. What is Codable in Swift?
+
+Codable is a special type in Swift that makes it easy to **convert data between Swift objects and external formats** like:
+
+* JSON
+* Plist
+* etc.
+
+It is actually a combination of:
+
+* `Encodable`
+* `Decodable`
+
+---
+
+### Example
+
+```
+struct User: Codable {
+    var id: Int
+    var name: String
+}
+```
+
+**Use Case:** Parsing JSON data from APIs.
+
+---
+
+# Q20. Difference Between `==` and `===` in Swift
+
+## 1. == (Equality Operator)
+
+• Used to **compare values**.
+
+• Checks if the **contents/values** of two variables are the same.
+
+### Example
+
+```
+let a = "Hello"
+let b = "Hello"
+
+if a == b {
+    print("Both have the same value")
+}
+```
+
+---
+
+## 2. === (Identity Operator)
+
+• Used to **compare references**.
+
+• Checks if two variables refer to the **exact same instance in memory**.
+
+• Works only with **class types**.
+
+---
+
+### Example
+
+```
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+let person1 = Person(name: "Anand")
+let person2 = person1
+let person3 = Person(name: "Anand")
+
+if person1 === person2 {
+    print("person1 and person2 refer to the same instance")
+}
+
+if person1 === person3 {
+    print("same instance")
+} else {
+    print("different instances")
+}
+```
+
+---
+
+# Q21. Explain 'for-in' loop and its usage in Swift
+
+The **for-in loop** is used to iterate over a sequence:
+
+* arrays
+* ranges
+* strings
+* dictionaries
+* etc.
+
+It repeats a block of code for each item.
+
+---
+
+## How it works
+
+• Define a variable inside the loop.
+• That variable takes each value from the collection one by one.
+• Loop runs until all values are used.
+
+---
+
+### Example
+
+```
+for i in 1...3 {
+    print("Hello")
+}
+```
+
+---
+
+# Q22. What's the difference between nil and null in Swift?
+
+Swift uses **nil**, not null.
+
+---
+
+## nil
+
+• Represents the **absence of a value**.
+
+• Works with **optionals only**.
+
+Example
+
+```
+var name: String? = nil   // valid
+var age: Int = nil        // error
+```
+
+Only optional types can hold nil.
+
+---
+
+## nil is type-safe
+
+• In Swift, nil is **not just a pointer to nothing**.
+
+• It represents **no value for a specific type**.
+
+---
+
+## null doesn't exist in Swift
+
+If you try to use `null`, it will cause a compile-time error.
+
+---
+
+# Q23. Describe the 'fallthrough' keyword in a 'switch' statement
+
+In Swift, switch does **not automatically fall through** like C/Java.
+
+Once a case matches, the switch ends.
+
+If you want the next case to run as well, use **fallthrough**.
+
+---
+
+### Example
+
+```
+let number = 1
+
+switch number {
+case 1:
+    print("Number is One")
+    fallthrough
+case 2:
+    print("This is case Two")
+    fallthrough
+case 3:
+    print("This is case Three")
+default:
+    print("Default case")
+}
+```
+
+---
+
+## Points to Understand
+
+### 1. Default behavior
+
+After a case executes, switch ends.
+
+No accidental fall-through.
+
+---
+
+### 2. When to use fallthrough
+
+Use when the **next case should run after the current one**.
+
+---
+
+### 3. Condition not checked again
+
+The next case executes **without checking its condition**.
+
+---
+
+# Q24. Define 'break' and 'continue' statements in loops in Swift
+
+## break
+
+• Immediately stops the loop.
+
+• Exits even if iterations are left.
+
+Example
+
+```
+let numbers = [1,2,3,4,5]
+
+for num in numbers {
+    if num == 3 {
+        print("Found 3, stopping the loop!")
+        break
+    }
+    print(num)
+}
+```
+
+---
+
+## continue
+
+• Skips the current iteration.
+
+• Moves to the next iteration of the loop.
+
+Example
+
+```
+let numbers = [1,2,3,4,5]
+
+for num in numbers {
+    if num == 3 {
+        print("Skipping 3")
+        continue
+    }
+    print(num)
+}
+```
+
+---
+
+# Q25. Explain the concept of a half-open range in Swift
+
+A **half-open range** includes the start value but **excludes the end value**.
+
+It uses the operator:
+
+```
+..< 
+```
+
+### Syntax
+
+```
+start..<end
+```
+
+Includes: `start`
+Excludes: `end`
+
+---
+
+### Example
+
+```
+for i in 0..<5 {
+    print(i)
+}
+```
+
+Output
+
+```
+0 1 2 3 4
+```
+
+---
+
+## Why it is useful
+
+1. Common in loops when repeating fixed times.
+
+```
+for i in 0..<array.count {
+    print(array[i])
+}
+```
+
+2. Memory efficient.
+
+3. Prevents off-by-one errors.
+
+---
+
+# Q26. Describe the 'stride' function in Swift
+
+The **stride function** generates a sequence of numbers between two values with a custom step size.
+
+Useful when numbers increase by something other than 1.
+
+Example steps:
+
+* +2
+* +5
+* +0.5
+
+---
+
+## Types of Stride
+
+### 1. stride(from:to:by:)
+
+Creates numbers **up to but not including** the end value.
+
+```
+for number in stride(from: 0, to: 10, by: 2) {
+    print(number)
+}
+```
+
+Output
+
+```
+0 2 4 6 8
+```
+
+---
+
+### 2. stride(from:through:by:)
+
+Creates numbers **including the end value**.
+
+```
+for number in stride(from: 0, through: 10, by: 2) {
+    print(number)
+}
+```
+
+Output
+
+```
+0 2 4 6 8 10
+```
+
+---
+
+## Why use stride?
+
+• More flexible than normal ranges.
+• Lets you control step size.
+• Works with decimals and negative steps.
+• Useful in animations, layouts, and skipping elements.
+
+---
+
+If you want, I can also **convert all Q1–Q26 into a single clean “iOS Swift Interview Revision Sheet” (10-15 pages instead of 60+)** which is **much easier to revise before interviews.**
+
   
 
 
