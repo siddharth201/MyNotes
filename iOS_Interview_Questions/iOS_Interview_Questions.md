@@ -3202,6 +3202,8 @@ enum NetworkError: Error {
 </details>  
 
 ### Q: What are the advantages of Swift's error handling over Objective-C's NSError?
+<details>
+<summary>Answer</summary>  
 
 ### 1. Type Safety
 
@@ -3279,8 +3281,9 @@ let data = try? fetchData() // nil if error occurs
 ```
 
 ---
+</details>
 
-## Q48: Can you add stored properties in extensions? Why or why not?
+### Q48: Can you add stored properties in extensions? Why or why not?
 
 **No, you cannot add stored properties in Swift extensions.**
 
