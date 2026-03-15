@@ -1063,6 +1063,7 @@ greet(user: nil)       // Output: No user found
 • Forces you to handle the `nil` case immediately, keeping the main logic cleaner.
 
 ---
+</details>
 
 # Q13. What is a Tuple in Swift?
 
