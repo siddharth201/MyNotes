@@ -982,18 +982,285 @@ testDefer()
 ```
 </details>  
 
-### Q. Explain Optional Binding (if let and guard let) in Swift.  
-<details>
-<summary>Answer</summary>    
 
-    • In Swift, an Optional means a variable may or may not have a value (nil).  
-    • Optional Binding is a way to safely unwrap an optional and use its value without force unwrapping (!). 
-   
- ### 1. if let
-    • Used when you want to check if an optional has a value, and if yes, use it inside a block.   
-    • If the optional is nil, the block is skipped.  
+### Q. Explain Optional Binding (if let and guard let) in Swift.
 
-</details>  
+• In Swift, an **Optional** means a variable may or may not have a value (`nil`).
+
+• **Optional Binding** is a way to **safely unwrap** an optional and use its value without force unwrapping (`!`).
+
+---
+
+## 1. if let
+
+• Used when you want to check if an optional has a value, and if yes, use it inside a block.
+
+• If the optional is `nil`, the block is skipped.
+
+### Example
+
+```swift
+var name: String? = "Anand"
+
+// Using if let
+if let unwrappedName = name {
+    print("Hello, \(unwrappedName)")
+} else {
+    print("No name found")
+}
+```
+
+### How it works
+
+• If `name` has a value, it gets unwrapped into `unwrappedName`.
+
+• If it's `nil`, the `else` part executes.
+
+---
+
+## 2. guard let
+
+• Used when you want to unwrap early and **exit the function/loop** if the optional is `nil`.
+
+• It helps write **cleaner code** because unwrapped values can be used after the `guard` statement.
+
+### Example
+
+```swift
+func greet(user: String?) {
+    guard let username = user else {
+        print("No user found")
+        return
+    }
+
+    print("Hello, \(username)")
+}
+
+greet(user: "Anand")   // Output: Hello, Anand
+greet(user: nil)       // Output: No user found
+```
+
+### How it works
+
+• If `user` has a value, it gets unwrapped into `username` and continues.
+
+• If `user` is `nil`, it exits early with `return`.
+
+---
+
+## Key Differences (if let vs guard let)
+
+### 1. if let
+
+• Value is only available **inside the if block**.
+• Good for **small checks**.
+
+### 2. guard let
+
+• Value is available **outside the guard block**.
+• Forces you to handle the `nil` case immediately, keeping the main logic cleaner.
+
+---
+
+# Q13. What is a Tuple in Swift?
+
+• A **Tuple** is a way to group **multiple values into a single compound value**.
+
+• The values can be of **different data types** (e.g., Int, String, Bool).
+
+• Tuples are useful when you want to **return multiple values from a function** or temporarily store related values together without creating a struct/class.
+
+### Example
+
+```swift
+let student = ("Anand", 28, true)
+```
+
+---
+
+## When to Use Tuples?
+
+• When you need a **lightweight way to group related values**.
+
+• When returning **multiple values from a function** without making a struct/class.
+
+• For **temporary data grouping** (not long-term storage).
+
+---
+
+# Q14. What is the difference between Any, AnyObject, and NSObject in Swift?
+
+---
+
+## 1. Any
+
+• `Any` can represent **any type in Swift**.
+
+• It can hold values of **structs, enums, classes, functions, tuples**, basically everything.
+
+• Useful when you **don’t know the exact type in advance**.
+
+• But you’ll usually need to **type cast later** to use it safely.
+
+### Example
+
+```swift
+var value: Any = 42        // Int
+value = "Hello Swift"      // String
+value = [1,2,3]            // Array
+```
+
+---
+
+## 2. AnyObject
+
+• `AnyObject` represents **any instance of a class type**.
+
+• It **only works with class objects**, not structs or enums.
+
+• Commonly used when working with **Objective-C APIs** (Foundation, UIKit) that expect objects.
+
+### Example
+
+```swift
+class Person {}
+
+let obj: AnyObject = Person()
+```
+
+This will **not work**:
+
+```swift
+let number: AnyObject = 10   // Error (Int is a struct, not a class)
+```
+
+---
+
+## 3. NSObject
+
+• `NSObject` is a **base class from Objective-C**.
+
+• All classes in **UIKit/AppKit inherit from NSObject**.
+
+• Provides **basic functionality** like:
+
+* comparison
+* description
+* KVO (Key-Value Observing)
+* selectors
+
+• If you want your Swift class to work well with the **Objective-C runtime**, you often inherit from `NSObject`.
+
+### Example
+
+```swift
+import Foundation
+
+class Animal: NSObject {
+    var name: String
+
+    init(name: String) {
+        self.name = name
+    }
+}
+
+let dog = Animal(name: "Bruno")
+print(dog.description)
+```
+
+---
+
+# Q15. What is the difference between weak, strong, and unowned in Swift?
+
+---
+
+# 1. Strong
+
+• By default, all references in Swift are **strong**.
+
+• A strong reference means:
+
+* As long as this reference exists, the object it points to **stays in memory**.
+* The reference **increases the retain count** of the object.
+
+### Example
+
+```swift
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var p1: Person? = Person(name: "Anand")   // Strong reference
+var p2 = p1                               // Another strong reference
+```
+
+Here, `p1` and `p2` both strongly hold the object, so it won't be deallocated until both are set to `nil`.
+
+---
+
+# 2. Weak
+
+• A **weak reference does not increase the retain count**.
+
+• When the object is deallocated, the weak reference is **automatically set to nil**.
+
+• Always declared as `var` (because it can change to nil).
+
+• Useful to **avoid retain cycles** (like in delegate patterns).
+
+### Example
+
+```swift
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+class Apartment {
+    weak var tenant: Person?
+}
+```
+
+If the `Person` is deallocated, `tenant` will automatically become `nil`.
+
+---
+
+# 3. Unowned
+
+• Similar to `weak`, but:
+
+* It **does not increase retain count**.
+* Unlike `weak`, it **does NOT become nil automatically**.
+
+• It assumes the object will **always exist during its lifetime**.
+
+• Declared as `unowned let` or `unowned var`.
+
+• If the object is deallocated and you try to access it, the **app will crash**.
+
+### Example
+
+```swift
+class CreditCard {
+    unowned let owner: Person
+
+    init(owner: Person) {
+        self.owner = owner
+    }
+}
+```
+
+Use **unowned** when the object is **guaranteed to outlive the reference**.
+
+---
+
+If you want, I can also **convert all these screenshots (Q1–Q15) into a single clean interview notes document** that is **much shorter and easier to revise before interviews**.
+  
 
 
 
