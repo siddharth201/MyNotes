@@ -3,9 +3,16 @@
           </br>     An integer `k`</br></br> 
 Find the **maximum sum of any contiguous subarray of size `k`**.   
 
-📌 Example
+**Example**  
+```swift
 arr = [2,1,5,1,3,2]
+```
 k = 3
+9
+
+Output:
+
+9
 
 Subarrays of size 3:
 
