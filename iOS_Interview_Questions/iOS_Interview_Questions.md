@@ -2102,7 +2102,9 @@ It prevents unintended inheritance or method overriding that might cause bugs.
 ---  
 </details>
 
-# Q31: What’s the difference between class and struct in Swift?
+### Q: What’s the difference between class and struct in Swift?
+<details>
+<summary>Answer</summary>  
 
 ### Class → Reference type
 
@@ -2199,9 +2201,10 @@ When you need inheritance, reference sharing, or object identity
 When you need lightweight data containers, immutability, or thread safety
 (e.g., **Models, Coordinates, Dates**).
 
----
+---  
+</details>
 
-# Q32: What are closures, and how do you avoid strong self-capture?
+### Q: What are closures, and how do you avoid strong self-capture?
 
 A **closure** is a self-contained block of code that you can pass around and use in your program.
 
