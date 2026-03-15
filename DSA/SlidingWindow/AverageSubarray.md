@@ -5,5 +5,7 @@ Find the **average of every contiguous subarray of size `k`.**.
 Example  
 
 arr = [1,3,2,6,-1,4,1,8,2]
-k = 5
+k = 5  
+
+Subarrays of size 5:
 
