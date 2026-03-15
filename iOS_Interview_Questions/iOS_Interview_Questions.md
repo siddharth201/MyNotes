@@ -2503,6 +2503,8 @@ let objcString: NSString = "Hello, Objective-C"
 </details>
 
 ### Q: What is type inference in Swift? Give an example.
+<details>
+<summary>Answer</summary>  
 
 Type inference means the **Swift compiler can automatically figure out the type** of a variable or constant based on the value you assign, so you don’t always need to explicitly specify the type.
 
@@ -2557,9 +2559,10 @@ let result = add(5, 10)
 • Still keeps **type safety** (compiler knows exact type)
 • Reduces redundancy
 
----
+---  
+</details>
 
-# Q37: What is type aliasing in Swift? Provide an example where it would be useful.
+### Q: What is type aliasing in Swift? Provide an example where it would be useful.
 
 Type aliasing lets you **create a new name for an existing type.**
 
