@@ -1990,7 +1990,9 @@ Example:
 ---  
 </details>
 
-# Q29: What is the difference between self and Self in Swift?
+### Q: What is the difference between self and Self in Swift?  
+<details>
+<summary>Answer</summary>  
 
 ### self (lowercase s)
 
@@ -2044,7 +2046,8 @@ struct Circle {
 let c = Circle.unitCircle()
 ```
 
----
+---  
+</details>
 
 # Q30. Can all types be marked as final in Swift? If so, what does it mean?
 
