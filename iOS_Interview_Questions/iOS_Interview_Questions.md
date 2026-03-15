@@ -3392,9 +3392,51 @@ They inherited the default behavior from the **protocol extension**.
 ○ Computed properties
 ○ Initializers (in some cases)
 
+**Example:**
+
+```swift
+extension String {
+  var isPalindrome: Bool {
+    return self == String(self.reversed())
+  }
+}
+
+print("madam".isPalindrome) // true
+print("swift".isPalindrome) // false
+
+```
+
+Here, the extension is only for **String**, not for other types.
+
+## **Q50: What are generics in Swift? Why are they useful?**
+
+Generics allow you to write flexible and reusable code that can work with **any type**, instead of being limited to one specific type.
+
+* Think of them like templates.
+* Instead of writing the same function multiple times (once for `Int`, once for `String`, etc.), you write it once using a **placeholder type** (like `T`).
+
+### **Example**
+
+Without generics, you'd have to do this:
+
+```swift
+func swapInts(_ a: inout Int, _ b: inout Int) {
+  let temp = a
+  a = b
+  b = temp
+}
+
+func swapStrings(_ a: inout String, _ b: inout String) {
+  let temp = a
+  a = b
+  b = temp
+}
+
+```
+
 ---
 
-If you want, I can also **continue extracting the next questions (Q50 onwards)** the same way for your notes.
+
 
 
 
