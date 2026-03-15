@@ -3283,7 +3283,9 @@ let data = try? fetchData() // nil if error occurs
 ---
 </details>
 
-### Q48: Can you add stored properties in extensions? Why or why not?
+### Q: Can you add stored properties in extensions? Why or why not?  
+<details>
+<summary>Answer</summary>
 
 **No, you cannot add stored properties in Swift extensions.**
 
@@ -3342,8 +3344,9 @@ Here, no memory is added; it just **computes the value when accessed**.
 • Always use **computed properties** in extensions.
 
 ---
+</details>
 
-## Q49: What are protocol extensions?
+### Q: What are protocol extensions?
 
 ### How are they different from regular extensions?
 
