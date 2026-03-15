@@ -1640,6 +1640,8 @@ for i in 1...3 {
 </details> 
 
 ### Q. What's the difference between nil and null in Swift?
+<details>
+<summary>Answer</summary>  
 
 Swift uses **nil**, not null.
 
@@ -1674,9 +1676,10 @@ Only optional types can hold nil.
 
 If you try to use `null`, it will cause a compile-time error.
 
----
+---  
+</details>
 
-# Q23. Describe the 'fallthrough' keyword in a 'switch' statement
+### Q. Describe the 'fallthrough' keyword in a 'switch' statement
 
 In Swift, switch does **not automatically fall through** like C/Java.
 
