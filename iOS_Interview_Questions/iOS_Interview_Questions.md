@@ -2465,7 +2465,9 @@ Without **mutating**, the compiler will throw an error because `increment()` mod
 ---  
 </details>
 
-# Q35: What’s the difference between String and NSString in Swift?
+### Q: What’s the difference between String and NSString in Swift?
+<details>
+<summary>Answer</summary>  
 
 ### String (Swift)
 
@@ -2497,9 +2499,10 @@ Example:
 let objcString: NSString = "Hello, Objective-C"
 ```
 
----
+---  
+</details>
 
-# Q36: What is type inference in Swift? Give an example.
+### Q: What is type inference in Swift? Give an example.
 
 Type inference means the **Swift compiler can automatically figure out the type** of a variable or constant based on the value you assign, so you don’t always need to explicitly specify the type.
 
