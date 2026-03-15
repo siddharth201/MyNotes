@@ -46,14 +46,22 @@ func averageSubarray(_ arr: [Int], _ k: Int) -> [Double] {
     
     return result
 }
-```
+```  
 
+**Complexity**
+**Time =** `O(n*k)`
+**Space =** `O(1)`
+
+```swift
 public func testAverageSubarray(_ arr: [Int], _ k: Int, completion: ([Double])-> Void) {
     let result = averageSubarray(arr, k)
     completion(result)
 }  
-
+```
+**How to Call**
+```swift
 testAverageSubarray([1,3,2,6,-1,4,1,8,2], 5) { result in
     print(result)
 }
+```
 
