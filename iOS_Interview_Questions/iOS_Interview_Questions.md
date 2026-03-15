@@ -1091,9 +1091,11 @@ let student = ("Anand", 28, true)
 
 • For **temporary data grouping** (not long-term storage).
 
----
+---  
 
-# Q14. What is the difference between Any, AnyObject, and NSObject in Swift?
+</details>
+
+### Q. What is the difference between Any, AnyObject, and NSObject in Swift?
 
 ---
 
