@@ -3076,7 +3076,9 @@ print(myCounter()) // 3
 ---  
 </details>
 
-## Q45: What's the difference between @escaping and @nonescaping closures in Swift ?
+### Q: What's the difference between @escaping and @nonescaping closures in Swift ?  
+<details>
+<summary>Answer</summary>
 
 ### Closure Escaping:
 
@@ -3152,8 +3154,9 @@ Closure is **stored and executed after the function returns → must be marked @
 2. **@nonescaping closures are safe by default.**
 
 ---
+</details>
 
-## Q46: What is the Error protocol?
+### Q: What is the Error protocol?
 
 ### How do you conform to it?
 
