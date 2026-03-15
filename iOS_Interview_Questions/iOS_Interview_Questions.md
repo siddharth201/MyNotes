@@ -3432,9 +3432,225 @@ func swapStrings(_ a: inout String, _ b: inout String) {
   b = temp
 }
 
+``` 
+
+With generics, one function works for all types:
+
+```swift
+func swapValues<T>(_ a: inout T, _ b: inout T) {
+  let temp = a
+  a = b
+  b = temp
+}
+
 ```
 
----
+Here, T is a generic placeholder that will be replaced with the actual type when the function is called.
+
+**Why are Generics Useful?**
+
+* **Reusability** – Write once, use for multiple types.
+* **Type Safety** – Unlike `Any`, generics ensure the type is known at compile time.
+* **Performance** – Generics don’t add runtime overhead because Swift resolves types at compile time.
+* **Cleaner Code** – No need to duplicate functions for each data type.
+
+**Real-world Example**
+
+Swift’s **Array** and **Dictionary** are actually **generic types**.
+
+## **Q51: What are type constraints in generics?**
+
+* Generics allow us to write flexible and reusable functions, classes, or structs.
+* Instead of fixing a type (like `Int` or `String`), we use a placeholder (like `T`) which can work with any type.
+
+**Example without constraints:**
+
+```swift
+func printValue<T>(_ value: T) {
+  print(value)
+}
+
+```
+
+Here, `T` can be **any type** (Int, String, Double, custom class, etc.).
+
+**Why type constraints?**
+
+* Sometimes, we don’t want `T` to be just *any type*.
+* We want to **restrict** it to types that conform to a particular protocol or inherit from a specific class.
+* This restriction is called a **type constraint**.
+
+**How to apply type constraints?**
+
+We use the keyword `:` after the generic type.
+
+* **Protocol constraint** → Conform to a protocol
+* **Class constraint** → Subclass of a class
+
+**Examples of type constraints**
+
+**(A) Constrained to a Protocol**
+
+```swift
+func compareValues<T: Comparable>(_ a: T, _ b: T) {
+  if a > b {
+    print("\(a) is greater")
+  } else {
+    print("\(b) is greater")
+  }
+}
+
+```
+
+* `T: Comparable` means `T` must conform to `Comparable`.
+* Now this function works for `Int`, `Double`, `String` (since they are Comparable), but not for a custom class unless it conforms to `Comparable`.
+
+**(B) Constrained to a Class**
+
+```swift
+class Animal {
+  func speak() {
+    print("Animal sound")
+  }
+}
+func makeItSpeak<T: Animal>(_ creature: T) {
+  creature.speak()
+}
+
+```
+
+* `T: Animal` means the generic type `T` must be `Animal` or its subclass (`Dog`, `Cat`, etc.).
+* If you pass `Int` or `String`, it won’t work.
+
+**Use Cases in Real Projects**
+
+* **Networking:** Restrict a generic function to `Decodable` so only JSON-decodable models can be passed.
+* **Sorting/Filtering:** Restrict to `Comparable` so only comparable values can be sorted.
+* **Reusable UI code:** Restrict to `UIView` so only UI elements can be handled.
+
+**Example:**
+
+```swift
+func setupView<T: UIView>(_ view: T) {
+  view.backgroundColor = .blue
+}
+
+```
+
+Works only with UIKit views (`UILabel`, `UIButton`, `UITableView`, etc.).
+
+## **Q52: What is the where clause in generics? When would you use it?**
+
+* In Swift, the `where` clause is used in **generic code** to add **extra constraints** on types.
+* It allows you to specify that a type must conform to certain protocols, or that two types must be the same, or have a relationship.
+* It gives you **fine-grained control** over generic functions, extensions, and protocols.
+
+**Why do we need it?**
+
+Without constraints, a generic can accept **any type**, which might not be what you want.
+The `where` clause helps to:
+
+* Limit generic types to only certain kinds of types.
+* Make your code **safer and more meaningful**.
+* Provide **special behavior** for types that meet specific conditions.
+
+**Syntax:**
+
+```swift
+func someFunction<T>(value: T) where T: Equatable {
+  print(value == value) // Safe because T conforms to Equatable
+}
+
+```
+
+**Example:**
+
+```swift
+func printIfEqual<T>(a: T, b: T) where T: Equatable {
+  if a == b {
+    print("Both are equal: \(a)")
+  } else {
+    print("Not equal")
+  }
+}
+
+```
+
+```swift
+printIfEqual(a: 10, b: 10) // Works (Int is Equatable)
+printIfEqual(a: "Swift", b: "Swift") // Works (String is Equatable)
+// printIfEqual(a: [1, 2], b: [1, 2]) // Error if array elements not Equatable
+
+```
+
+**Difference from just `:` (direct constraint)**
+
+* Direct constraint: `func doSomething<T: Equatable>(value: T) {}`
+* `where` clause: More flexible, can add **multiple constraints** and **relationships** between types.
+
+## **Q53: What are phantom types in Swift?**
+
+A **phantom type** is a type parameter in a generic that doesn’t actually appear in the data it stores, but it’s still useful because it carries *extra compile-time information*.
+
+Basically, the type exists only for the compiler's benefit (hence the name *phantom*)—to enforce correctness at compile time—without affecting the runtime representation.
+
+**Why Phantom Types Are Useful**
+
+* **Stronger type safety** → They prevent mixing up logically different concepts that are represented with the same underlying type.
+* **Compile-time guarantees** → Bugs get caught early, instead of relying on runtime checks.
+* **Zero runtime cost** → Since phantom types don't add storage, there's no memory or performance penalty.
+
+**Example:**
+
+```swift
+enum Admin {}
+enum Guest {}
+struct User<Role> {
+  let name: String
+}
+func deletePost(user: User<Admin>) {
+  print("\(user.name) can delete the post")
+}
+let guest = User<Guest>(name: "John")
+let admin = User<Admin>(name: "Alice")
+// deletePost(user: guest)  Compile-time error
+deletePost(user: admin)
+
+```
+
+This ensures only admins can perform certain actions—enforced at compile time.
+
+## **Q54: Explain copy-on-write (COW) optimization in Swift?**
+
+* Swift collections like **Array**, **Dictionary**, and **Set** use **Copy-On-Write optimization**.
+* Instead of immediately copying data when you assign one collection to another, Swift **shares the same underlying storage** until one of them is modified.
+* The moment you change one copy, Swift **creates a new independent copy** of the data so that the other one isn’t affected.
+
+This gives you:
+
+* **Performance boost** (no unnecessary copying).
+* **Safety** (mutations won’t affect other variables).
+
+**Example:**
+
+```swift
+var array1 = [1, 2, 3]
+var array2 = array1 // No copy yet, both share the same storage
+
+print("Before change:")
+print("array1:", array1) // [1, 2, 3]
+print("array2:", array2) // [1, 2, 3]
+
+// Modify array2
+array2.append(4) // Now Swift makes a real copy (COW triggered)
+
+print("\nAfter change:")
+print("array1:", array1) // [1, 2, 3]
+print("array2:", array2) // [1, 2, 3, 4]
+
+```
+
+`array1` and `array2` shared the same memory **until** `array2` was mutated. At that moment, Swift duplicated the storage.
 
 
 
