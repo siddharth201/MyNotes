@@ -2204,7 +2204,9 @@ When you need lightweight data containers, immutability, or thread safety
 ---  
 </details>
 
-### Q: What are closures, and how do you avoid strong self-capture?
+### Q: What are closures, and how do you avoid strong self-capture?  
+<details>
+<summary>Answer</summary>
 
 A **closure** is a self-contained block of code that you can pass around and use in your program.
 
@@ -2304,7 +2306,8 @@ DispatchQueue.global().async { [unowned self] in
 }
 ```
 
----
+---  
+</details>
 
 # Q33: How does Swift handle error propagation?
 
