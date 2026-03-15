@@ -15,11 +15,12 @@ Output:
 9
 
 **Subarrays of size 3:**
-
+```swift
 [2,1,5] → sum = 8
 [1,5,1] → sum = 7
 [5,1,3] → sum = 9
 [1,3,2] → sum = 6
+```
 
 Maximum sum: 
 
