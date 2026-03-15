@@ -7,22 +7,28 @@ Find the **maximum sum of any contiguous subarray of size `k`**.
 ```swift
 arr = [2,1,5,1,3,2]
 k = 3
-```
-9
-
-Output:
-
-9
-
+```  
 **Subarrays of size 3:**
 ```swift
 [2,1,5] → sum = 8
 [1,5,1] → sum = 7
 [5,1,3] → sum = 9
-[1,3,2] → sum = 6
+[1,3,2] → sum = 6  
+  
+**Maximum sum:**
+```swift
+9
 ```
 
-Maximum sum: 
+**Output:**
+```swift
+9
+```
+
+
+```
+
+ 
 
 ```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
