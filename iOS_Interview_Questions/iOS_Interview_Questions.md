@@ -63,7 +63,7 @@ A UIViewController manages a screen in an iOS app. The lifecycle methods are:
 In `SwiftUI`, the lifecycle is slightly different because Apple introduced the `App protocol` (starting iOS 14) instead of relying on `AppDelegate`.
 But internally the `same iOS states still exist` — SwiftUI just exposes them differently using `ScenePhase`.
 
-So the **parallel concept in SwiftUI** is:
+So the `parallel concept in SwiftUI` is:
 
 * `ScenePhase`
 * `.onChange(of: scenePhase)`
@@ -83,7 +83,7 @@ So the **parallel concept in SwiftUI** is:
 | Background  | `.background`                  | App running in background            |
 | Suspended   | `.background` (system handled) | Not directly observable              |
 
-SwiftUI exposes these through **ScenePhase**.
+SwiftUI exposes these through `ScenePhase`.
 
 Example:
 
@@ -165,7 +165,7 @@ suspended (system controlled)
 
 ## 5. When You Still Need AppDelegate in SwiftUI
 
-Some things **still require AppDelegate**, like:
+Some things `still require AppDelegate`, like:
 
 * Push Notifications
 * Background fetch
@@ -198,16 +198,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 ## 6. Real Interview-Level Answer (Short Version)
 
-If asked in an **iOS interview**:
+If asked in an `iOS interview`:
 
-> In SwiftUI the app lifecycle is managed by the **App protocol** instead of AppDelegate.
-> The lifecycle state is observed using **ScenePhase** (`active`, `inactive`, `background`).
+> In SwiftUI the app lifecycle is managed by the `App protocol` instead of AppDelegate.
+> The lifecycle state is observed using `ScenePhase` (`active`, `inactive`, `background`).
 > We monitor transitions using `.onChange(of: scenePhase)`.
 > For features like push notifications or SDK initialization, we can still integrate UIKit lifecycle using `UIApplicationDelegateAdaptor`.
 
 ---
 
-✅ **UIKit → SwiftUI Summary**
+✅ `UIKit → SwiftUI Summary`
 
 ```
 AppDelegate        →     ScenePhase
