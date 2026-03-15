@@ -1348,7 +1348,7 @@ print(flattened) // [1,2,3,4,5,6]
 
 • Now **compactMap** is preferred, but older code may still use flatMap.
 
-### Example
+### Example (modern way with compactMap):
 
 ```
 let strings = ["1","2","three","4"]
