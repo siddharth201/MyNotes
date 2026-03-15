@@ -3156,7 +3156,9 @@ Closure is **stored and executed after the function returns → must be marked @
 ---
 </details>
 
-### Q: What is the Error protocol? How do you conform to it?
+### Q: What is the Error protocol? How do you conform to it?  
+<details>
+<summary>Answer</summary>  
 
 • In Swift, the **Error protocol is a marker protocol used to represent error types**.
 
