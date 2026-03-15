@@ -3019,8 +3019,9 @@ greetUser(message: "Hi there!") {
 Cleaner and easier to read.
 
 ---
+</details>
 
-## Q44: What is closure capture in Swift ?
+### Q: What is closure capture in Swift ?
 
 • A **closure can “capture” constants and variables** from its surrounding scope.
 
