@@ -17,5 +17,30 @@ Subarrays of size 5:
 
 Output:  
 
-[2.2, 2.8, 2.4, 3.6, 2.8]
+[2.2, 2.8, 2.4, 3.6, 2.8]  
+
+func averageSubarray(_ arr: [Int], _ k: Int) -> [Double] {
+    guard arr.count >= k else { return [] }
+    
+    var result: [Double] = []
+    var windowSum = 0
+    
+    for right in 0..<arr.count {
+        windowSum += arr[right]
+        
+        if right >= k-1 {
+            let avg = Double(windowSum) / Double(k)
+            result.append(avg)
+            
+            windowSum -= arr[right-k+1]
+        }
+    }
+    
+    return result
+}
+
+public func testAverageSubarray(_ arr: [Int], _ k: Int, completion: ([Double])-> Void) {
+    let result = averageSubarray(arr, k)
+    completion(result)
+}
 
