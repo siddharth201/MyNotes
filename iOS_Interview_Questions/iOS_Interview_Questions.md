@@ -380,7 +380,8 @@ Imagine you are tracking a location:
 
 ### **Q. Explain `String` vs `Character` in Swift?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer</summary>   
+ 
 In Swift, the relationship between a **String** and a **Character** is like the relationship between a necklace and a single bead. One is a collection; the other is a single unit.
 
 ### 1. The Definitions
