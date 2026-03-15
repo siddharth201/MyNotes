@@ -3156,7 +3156,7 @@ Closure is **stored and executed after the function returns → must be marked @
 ---
 </details>
 
-### Q: What is the Error protocol?
+### Q: What is the Error protocol?  
 
 ### How do you conform to it?
 
