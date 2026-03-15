@@ -380,6 +380,74 @@ Imagine you are tracking a location:
 ### **Q. Explain `String` vs `Character` in Swift?**
 <details>
 <summary>Answer</summary>  
+In Swift, the relationship between a **String** and a **Character** is like the relationship between a necklace and a single bead. One is a collection; the other is a single unit.
+
+### 1. The Definitions
+
+* **Character:** A single "extended grapheme cluster." This is a fancy way of saying it’s a single human-readable symbol (like "A", "5", or even an emoji like "🚀").
+* **String:** An ordered collection of Characters. It is a more complex structure that allows for searching, appending, and formatting text.
+
+---
+
+### 2. Key Differences
+
+| Feature | **Character** | **String** |
+| --- | --- | --- |
+| **Capacity** | Exactly **one** symbol | Zero, one, or **millions** of symbols |
+| **Literal Syntax** | `"A"` (Must be explicitly typed) | `"A"` (Default type for quotes) |
+| **Manipulation** | Limited (mostly checking properties) | Powerful (interpolation, uppercase, etc.) |
+| **Memory** | Fixed size for one symbol | Dynamic size |
+
+---
+
+### 3. The "Extended Grapheme Cluster" Magic
+
+Swift is famous for how it handles Unicode. In many older languages, an emoji might be treated as two separate "pieces." In Swift, a **Character** is defined by what a human sees as one character.
+
+* **Example:** The emoji 👨‍👩‍👧‍👦 (Family) is technically made of four separate emojis joined together, but Swift treats it as **one single Character**.
+* **String Length:** If you put that emoji in a String, the `count` is 1.
+
+---
+
+### 4. How to use them in code
+
+By default, Swift assumes any text in double quotes is a **String**. If you want a **Character**, you have to tell the compiler explicitly.
+
+```swift
+// This is automatically a String
+let dog = "Dog" 
+
+// This is also automatically a String, even though it's one letter
+let letterS = "A" 
+
+// You must explicitly define a Character
+let realCharacter: Character = "A" 
+
+// You can't do this (will cause an error):
+// let errorChar: Character = "AB" 
+
+```
+
+### 5. Interaction
+
+You can think of a `String` as an **Array of Characters**. You can loop through a String to pull out each individual Character:
+
+```swift
+let greeting = "Hi!"
+
+for char in greeting {
+    print(char)
+}
+// Prints:
+// H
+// i
+// !
+
+```
+
+---
+
+**Would you like to see how to perform common tasks like checking if a String contains a specific Character or how to join Characters back into a String?**  
 </details> 
 
 
