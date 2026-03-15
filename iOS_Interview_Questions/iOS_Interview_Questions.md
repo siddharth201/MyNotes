@@ -3777,7 +3777,8 @@ Use **weak** or **unowned** references:
 </details>  
 
 ### Q: Explain the lifecycle of an object under ARC.**
-
+<details>
+<summary>Answer</summary>
 **1. Creation (Initialization)**
 
 * When you create a class instance using **init**, ARC allocates memory for it.
@@ -3833,8 +3834,9 @@ p2 = nil  // Retain count = 0 -> deinit called, memory released
 can prevent deallocation → use **weak** or **unowned** to avoid them.
 
 ---
+</details>
 
-# Q58: How would you debug memory leaks in a Swift application?
+### Q: How would you debug memory leaks in a Swift application?
 
 ## 1. Use Xcode’s Memory Graph
 
