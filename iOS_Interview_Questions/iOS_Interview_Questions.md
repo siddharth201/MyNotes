@@ -3414,6 +3414,8 @@ Here, the extension is only for **String**, not for other types.
 </details>
 
 ### **Q: What are generics in Swift? Why are they useful?**
+<details>
+<summary>Answer</summary>  
 
 Generics allow you to write flexible and reusable code that can work with **any type**, instead of being limited to one specific type.
 
@@ -3462,8 +3464,9 @@ Here, T is a generic placeholder that will be replaced with the actual type when
 **Real-world Example**
 
 Swift’s **Array** and **Dictionary** are actually **generic types**.
+</details>  
 
-## **Q51: What are type constraints in generics?**
+### **Q: What are type constraints in generics?**
 
 * Generics allow us to write flexible and reusable functions, classes, or structs.
 * Instead of fixing a type (like `Int` or `String`), we use a placeholder (like `T`) which can work with any type.
