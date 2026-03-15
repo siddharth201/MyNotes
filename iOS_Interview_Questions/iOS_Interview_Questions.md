@@ -3698,6 +3698,47 @@ Anand is deallocated
 **Q56: What are retain cycles?**
 **How do they occur?**
 A retain cycle (also called a strong reference cycle) happens when two or more objects keep strong references to each other.
+Because of this, **ARC (Automatic Reference Counting)** can’t free them from memory, even if nothing else in the program is using them.
+This leads to **memory leaks**.
+
+**How Do Retain Cycles Occur?**
+
+* ARC uses **strong references by default**.
+* If object A strongly holds object B, and object B strongly holds object A $\rightarrow$ both keep each other alive forever.
+* Since neither count goes to zero, their memory is never freed.
+
+**Example of Retain Cycle:**
+
+```swift
+class Person {
+    var name: String
+    var apartment: Apartment?
+    init(name: String) { self.name = name }
+    deinit { print("\(name) is deallocated") }
+}
+
+class Apartment {
+    var unit: String
+    var tenant: Person?
+    init(unit: String) { self.unit = unit }
+    deinit { print("Apartment \(unit) is deallocated") }
+}
+
+var john: Person? = Person(name: "John")
+var apt: Apartment? = Apartment(unit: "4A")
+
+john?.apartment = apt
+apt?.tenant = john
+
+john = nil
+apt = nil
+
+```
+
+**Expected:** both should deallocate.
+**Reality:** **retain cycle** $\rightarrow$ neither `deinit` runs, because `Person` and `Apartment` keep each other alive.
+
+
 
 
 
