@@ -3199,8 +3199,7 @@ enum NetworkError: Error {
 4. Makes your code **safe, readable, and easy to maintain**.
 
 ---
-
-Send the **next screenshots** whenever you're ready.
+</details>
 
 
 
