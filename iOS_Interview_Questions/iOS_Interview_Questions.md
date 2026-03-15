@@ -1841,6 +1841,8 @@ for i in 0..<array.count {
 </details>
 
 ### Q. Describe the 'stride' function in Swift
+<details>
+<summary>Answer</summary>  
 
 The **stride function** generates a sequence of numbers between two values with a custom step size.
 
@@ -1901,7 +1903,6 @@ Output
 
 ---
 
-If you want, I can also **convert all Q1–Q26 into a single clean “iOS Swift Interview Revision Sheet” (10-15 pages instead of 60+)** which is **much easier to revise before interviews.**
 
   
 
