@@ -2972,7 +2972,227 @@ let result = try! fetchData() // ⚠️ Crashes here
 ```
 
 ---
-</details>
+</details>  
+
+
+## Q43: What are trailing closures in Swift ?
+
+• In Swift, if the **last parameter of a function is a closure**, you can **write the closure outside the parentheses**.
+
+• This syntax is called a **trailing closure**.
+
+---
+
+• It makes the code **cleaner and more readable**, especially for long closures.
+
+---
+
+### Regular Closure Syntax:
+
+```swift
+func greetUser(message: String, completion: () -> Void) {
+    print(message)
+    completion()
+}
+
+greetUser(message: "Hello!") {
+    print("Greeting completed.")
+}
+```
+
+Here, the closure **completion is outside the parentheses**, so it’s a **trailing closure**.
+
+---
+
+### Trailing Closure Syntax:
+
+You can write it like this:
+
+```swift
+greetUser(message: "Hi there!") {
+    print("Done greeting!")
+}
+```
+
+Cleaner and easier to read.
+
+---
+
+## Q44: What is closure capture in Swift ?
+
+• A **closure can “capture” constants and variables** from its surrounding scope.
+
+• This means the closure **remembers these values even after the original scope has ended**.
+
+• Captured values are **kept alive by the closure**, which can sometimes lead to **strong reference cycles in classes**.
+
+---
+
+### Example:
+
+```swift
+func makeCounter() -> () -> Int {
+    var count = 0
+
+    let counter: () -> Int = {
+        count += 1
+        return count
+    }
+
+    return counter
+}
+
+let myCounter = makeCounter()
+print(myCounter()) // 1
+print(myCounter()) // 2
+print(myCounter()) // 3
+```
+
+• The closure captures the variable **count** from **makeCounter()**.
+
+---
+
+• Even though **makeCounter() has finished executing**, the closure **remembers count**.
+
+• Each call to **myCounter() increments the captured count**.
+
+---
+
+### Key Points
+
+1. Closures **capture constants and variables** from their surrounding context.
+
+2. Captured values are **kept alive even after the original scope ends**.
+
+3. Be careful with **strong references to self in classes** to avoid memory leaks.
+
+4. Use **[weak self]** or **[unowned self]** for safe memory management.
+
+---
+
+## Q45: What's the difference between @escaping and @nonescaping closures in Swift ?
+
+### Closure Escaping:
+
+• A closure **escapes a function when it is stored or executed after the function returns**.
+
+• Example: storing a closure in a property, passing it to another thread, or async operations.
+
+• **@escaping** tells Swift:
+“This closure may outlive the function, so handle memory safely.”
+
+• By default, closures in Swift are **@nonescaping (they run within the function scope).**
+
+---
+
+### Differences:
+
+| Feature                    | @escaping                                                      | @nonescaping (default)                        |
+| -------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
+| Can outlive the function?  | Yes                                                            | No                                            |
+| Required keyword?          | Yes                                                            | No (default)                                  |
+| Can capture self strongly? | Must handle memory carefully (**[weak self]**)                 | Automatically safe, no strong reference cycle |
+| Typical use case           | Async callbacks, network calls, storing closures in properties | Immediate execution within the function       |
+
+---
+
+### Examples:
+
+**@nonescaping Closure (Default)**
+
+```swift
+func greetUser(closure: () -> Void) {
+    print("Before closure")
+    closure() // Must execute here
+    print("After closure")
+}
+
+greetUser {
+    print("Hello!")
+}
+```
+
+Closure runs **inside the function**, cannot escape.
+
+---
+
+**@escaping Closure**
+
+```swift
+var completionHandlers: [() -> Void] = []
+
+func addCompletionHandler(closure: @escaping () -> Void) {
+    completionHandlers.append(closure) // Stored for later → escapes
+}
+
+// Usage
+addCompletionHandler {
+    print("Task completed!")
+}
+
+// Execute later
+completionHandlers.forEach { $0() }
+```
+
+Closure is **stored and executed after the function returns → must be marked @escaping**.
+
+---
+
+### Important Notes
+
+1. **@escaping closures can capture self strongly**, which may cause memory leaks.
+   Use **[weak self]** or **[unowned self]**.
+
+2. **@nonescaping closures are safe by default.**
+
+---
+
+## Q46: What is the Error protocol?
+
+### How do you conform to it?
+
+• In Swift, the **Error protocol is a marker protocol used to represent error types**.
+
+• Any type (usually **enum or struct**) can conform to it to indicate it can be **thrown in Swift’s error handling system**.
+
+• The protocol itself is **empty—it doesn’t require any methods or properties**.
+
+---
+
+### How to Conform to Error
+
+• Most commonly, we use an **enum to define different kinds of errors**.
+
+• Conforming is as simple as adding **: Error** after the type name.
+
+---
+
+### Example:
+
+```swift
+enum NetworkError: Error {
+    case noConnection
+    case timeout
+    case invalidResponse
+}
+```
+
+---
+
+### Key Points
+
+1. **Error is an empty protocol**; you only need to conform to it.
+
+2. Usually, you define **custom error types using enums**.
+
+3. Used with **throw, try, and catch** for Swift error handling.
+
+4. Makes your code **safe, readable, and easy to maintain**.
+
+---
+
+Send the **next screenshots** whenever you're ready.
+
 
 
 
