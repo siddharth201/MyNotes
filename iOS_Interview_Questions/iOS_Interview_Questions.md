@@ -3551,6 +3551,8 @@ Works only with UIKit views (`UILabel`, `UIButton`, `UITableView`, etc.).
 </details>
 
 ### **Q: What is the where clause in generics? When would you use it?**
+<details>
+<summary>Answer</summary>  
 
 * In Swift, the `where` clause is used in **generic code** to add **extra constraints** on types.
 * It allows you to specify that a type must conform to certain protocols, or that two types must be the same, or have a relationship.
@@ -3598,8 +3600,9 @@ printIfEqual(a: "Swift", b: "Swift") // Works (String is Equatable)
 
 * Direct constraint: `func doSomething<T: Equatable>(value: T) {}`
 * `where` clause: More flexible, can add **multiple constraints** and **relationships** between types.
+</details>  
 
-## **Q53: What are phantom types in Swift?**
+### **Q: What are phantom types in Swift?**
 
 A **phantom type** is a type parameter in a generic that doesn’t actually appear in the data it stores, but it’s still useful because it carries *extra compile-time information*.
 
