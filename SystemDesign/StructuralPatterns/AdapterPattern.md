@@ -1,9 +1,7 @@
 
-# **Adapter Pattern**
+## **Adapter Pattern**
 
-** `Adapter` is a structural design pattern that allows objects with incompatible interfaces to collaborate.**  
-
-** Adapter Pattern helps achieve loose coupling by introducing an abstraction.**  
+** `Adapter` is a structural design pattern that allows objects with incompatible interfaces to collaborate. </br>Adapter Pattern helps achieve loose coupling by introducing an abstraction.**  
 
 ** Our app depends only on our interface, while the Adapter translates calls to the 3rd-party or legacy API.**
 
