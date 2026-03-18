@@ -4,19 +4,13 @@
 
 ### Simple definition
 
-> 
+> **Closures are self-contained blocks of code used as `callbacks` or `asynchronous handlers`. Closures allow us to encapsulate behavior and pass it as a value.**
 
 > **A closure is a self-contained block of code that can be passed around and executed later.**
 
 ### Even simpler
 
 > **Closures are functions without a name.**
-
----
-
-### One-line interview answer
-
-> “Closures allow us to encapsulate behavior and pass it as a value.”
 
 ---
 
