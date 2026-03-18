@@ -4,6 +4,8 @@
 
 ### Simple definition
 
+> 
+
 > **A closure is a self-contained block of code that can be passed around and executed later.**
 
 ### Even simpler
