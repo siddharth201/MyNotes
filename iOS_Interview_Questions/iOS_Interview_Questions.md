@@ -4013,7 +4013,8 @@ print(person1.name) // Prints "Alice" (original unaffected)
 
 **Q1: What are the fundamental secure coding principles for iOS development?**
 <details>
-<summary>Answer</summary> 
+<summary>Answer</summary>  
+ 
 Writing secure iOS apps means protecting **user data**, **preventing attacks**, and **ensuring app integrity**.
 
 **Here are the key principles:**
