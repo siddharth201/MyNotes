@@ -4007,6 +4007,62 @@ person2.name = "Bob"
 print(person1.name) // Prints "Alice" (original unaffected)
 
 ```  
+</details>  
+
+## 15. Application Security in iOS Apps
+
+**Q1: What are the fundamental secure coding principles for iOS development?**
+<details>
+<summary>Answer</summary> 
+Writing secure iOS apps means protecting **user data**, **preventing attacks**, and **ensuring app integrity**.
+
+**Here are the key principles:**
+
+### 1. Input Validation
+* Always **validate user input** before processing.
+* Prevents attacks like **SQL injection**, **command injection**, and **buffer overflows**.
+* Example: Check that email fields contain a valid email format, and text inputs don't exceed expected length.
+
+### 2. Data Encryption
+* Protect sensitive data **at rest** (stored on device) and **in transit** (sent over network).
+* Use **Keychain** for storing passwords or tokens.
+* Use **HTTPS / TLS** for network communication.
+
+### 3. Authentication & Authorization
+* Ensure users are **who they say they are** (authentication).
+* Limit access to **only what the user is allowed** (authorization).
+* Example: Use **OAuth2**, **biometric authentication**, or **App Transport Security (ATS)**.
+
+### 4. Secure Network Communication
+* Always use **HTTPS/TLS**.
+* Enable **App Transport Security (ATS)** to enforce secure connections.
+* Validate **server certificates** to prevent man-in-the-middle attacks.
+
+### 5. Avoid Hardcoding Secrets
+* Never embed **API keys, passwords, or tokens** in your code.
+* Use **Keychain, environment variables, or server-side retrieval**.
+
+### 6. Memory Safety
+* Swift is memory-safe, but avoid:
+    * Retain cycles (use `weak` / `unowned` properly).
+    * Unsafe pointer manipulation unless absolutely necessary.
+
+### 7. Proper Error Handling
+* Don't reveal sensitive info in **error messages** or logs.
+* Example: Avoid logging user passwords or internal server errors.
+
+### 8. Use Latest Security APIs
+* Always use **Apple's recommended APIs** for crypto, authentication, and data protection.
+* Avoid writing your own encryption algorithms.
+
+### 9. Secure Storage
+* Use **Keychain** for credentials.
+* Use **File Protection** for sensitive files (`NSFileProtectionComplete`).
+* Avoid storing sensitive data in **UserDefaults**.
+
+### 10. Minimize App Attack Surface
+* Only enable necessary **capabilities and permissions** (camera, location, contacts).
+* Remove **unused code, debug info, and third-party SDKs** that aren't essential.
 </details>
 
 
