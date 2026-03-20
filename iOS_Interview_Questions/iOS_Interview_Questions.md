@@ -4860,6 +4860,71 @@ Stack → Handles TLS automatically
 * You don’t write TLS code manually
 * You can override via delegate (e.g., pinning)
 
+</details>  
+
+**Q4: What is certificate pinning? What security threats does it prevent?**
+<details>
+<summary>Answer</summary>  
+
+* **Certificate pinning** is a security technique where your app "**pins**" or trusts **only a specific server certificate or public key**.
+* Even if a device trusts other certificates from the system store, your app will **reject connections** unless the server's certificate matches the pinned one.
+* It adds an **extra layer of security** beyond standard SSL/TLS.
+
+**How It Works**
+
+1.  You include the **server's certificate or public key** inside your app.
+2.  When your app connects to the server:
+    * It checks the server's certificate against the **pinned certificate**.
+    * If they match $\rightarrow$ connection allowed.
+    * If they don't match $\rightarrow$ connection rejected.
+
+**Security Threats Certificate Pinning Prevents**
+
+1.  **Man-in-the-Middle (MITM) Attacks**
+    * Even if a rogue certificate is installed on a device, pinning ensures **only the pinned certificate is trusted**.
+2.  **Fake / Compromised Certificate Authorities**
+    * Prevents attackers from issuing certificates from compromised or untrusted CAs.
+3.  **Network Spoofing**
+    * Protects against attackers trying to intercept or redirect traffic on untrusted networks (Wi-Fi, etc.).
+</details>
+
+**Q5: What's the difference between certificate pinning and public key pinning?**    
+<details>
+<summary>Answer</summary>  
+
+Both are techniques to **strengthen SSL/TLS connections**, but they differ in **what exactly is pinned**.
+
+**1. Certificate Pinning**
+* Pins the **entire server certificate** inside your app.
+* Connection is allowed **only if the server presents the exact same certificate** as the pinned one.
+
+**Pros:**
+* Simple to implement.
+* Ensures **exact match** of the certificate.
+
+**Cons:**
+* Less flexible: if the certificate **expires or is renewed**, you must **update the app** with the new certificate.
+* Can break app connections if not updated in time.
+
+**Use Case:**
+* When you control both the server and the app, and you can update certificates along with app releases.
+
+**2. Public Key Pinning**
+* Pins **only the public key** of the server certificate (not the whole certificate).
+* The server can renew the certificate as long as the **public key stays the same**, and the pin remains valid.
+
+**Pros:**
+* More **flexible** than certificate pinning.
+* Reduces the risk of app-breaking during certificate renewal.
+
+**Cons:**
+* Slightly more complex to implement.
+* Still requires careful management if you change keys.
+
+**Use Case:**
+* When you want **long-term stability** while still enforcing security.
+* Common in production apps that need to avoid breaking due to certificate rotation.
+
 </details>
 
 
