@@ -5187,7 +5187,80 @@ func authenticateUser() {
 • Often, both are combined: asymmetric encryption exchanges a symmetric key, then symmetric encryption handles the bulk of the data.
 </details>  
 
+## Q14: What are GDPR and HIPAA? How do they affect iOS app development?
+<details>
+<summary>Answer</summary>  
 
+**GDPR (General Data Protection Regulation)**
+
+• Region: European Union (EU)
+
+• Purpose: Protects personal data of EU citizens.
+
+• Focus: User consent, data transparency, and the right to access or delete personal data.
+
+---
+
+**Key Requirements for iOS Apps:**
+
+1. Explicit user consent before collecting personal data.
+
+2. Right to access / delete data upon user request.
+
+3. Data minimization – only collect what’s necessary.
+
+4. Secure storage & transmission – encrypt sensitive data.
+
+5. Privacy policy – clearly explain what data is collected and why.
+
+---
+
+**Impact on iOS Development:**
+
+• Use secure storage (Keychain, encrypted Core Data).
+
+• Use HTTPS/TLS for network requests.
+
+• Implement consent dialogs and privacy settings.
+
+• Ensure easy data deletion/export if requested.
+
+---
+
+**HIPAA (Health Insurance Portability and Accountability Act)**
+
+• Region: United States
+
+• Purpose: Protects personal health information (PHI).
+
+• Focus: Security, privacy, and confidentiality of medical data.
+
+---
+
+**Key Requirements for iOS Apps:**
+
+1. Data encryption at rest and in transit.
+
+2. Access controls – only authorized personnel can access PHI.
+
+3. Audit logs – track who accessed health data and when.
+
+4. Data integrity – ensure PHI is not altered or destroyed improperly.
+
+5. Business Associate Agreements (BAA) if using third-party services.
+
+---
+
+**Impact on iOS Development:**
+
+• Encrypt health-related data in Keychain or Core Data.
+
+• Implement biometric / strong authentication for accessing sensitive data.
+
+• Use HIPAA-compliant backend services.
+
+• Keep detailed audit logs for sensitive operations.
+</details>
 
 
 
