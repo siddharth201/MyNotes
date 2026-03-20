@@ -1622,8 +1622,8 @@ It repeats a block of code for each item.
 
 ## How it works
 
-• Define a variable inside the loop.
-• That variable takes each value from the collection one by one.
+• Define a variable inside the loop.  
+• That variable takes each value from the collection one by one.  
 • Loop runs until all values are used.
 
 ---
