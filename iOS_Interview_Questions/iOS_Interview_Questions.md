@@ -4279,6 +4279,30 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 ### 10. Minimize App Attack Surface
 * Only enable necessary **capabilities and permissions** (camera, location, contacts).
 * Remove **unused code, debug info, and third-party SDKs** that aren't essential.
+</details>  
+
+**Q2: How do you securely clear sensitive data from memory in Swift?**
+<details>
+<summary>Answer</summary>   
+
+* Sensitive data like **passwords, cryptographic keys, or tokens** can remain in memory after use.
+* If an attacker gains memory access (via debugging, jailbreaking, or a memory dump), they can steal this data.
+* Swift doesn't automatically zero memory for variables, so you need to **actively clear sensitive data**.
+
+### 1. Use **Data** and Zero It After Use
+* For sensitive strings, convert them to **Data** and overwrite the bytes when done.
+
+### 2. Use `withUnsafeMutableBytes` for Direct Memory Access
+* For more control, you can manipulate memory directly.
+
+### 3. Avoid Long-Lived Variables
+* Don't store sensitive data in **global variables or singletons**.
+* Keep data in **local scope** and clear immediately after use.
+
+### 4. Use Keychain for Storage
+* Instead of storing sensitive data in memory for long periods, store it securely in the **Keychain**, which is managed by the OS.
+* Keychain automatically **encrypts data** and ensures **memory-safe access**.
+
 </details>
 
 
