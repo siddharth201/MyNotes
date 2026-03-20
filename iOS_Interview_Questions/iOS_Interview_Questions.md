@@ -4305,7 +4305,51 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 
 </details>  
 
+**Q3: What is SSL/TLS? Why is it important for mobile app security?**
+<details>
+<summary>Answer</summary>  
 
+* **SSL (Secure Sockets Layer)** and **TLS (Transport Layer Security)** are protocols that secure communication over the internet.
+* TLS is the modern version; SSL is mostly outdated.
+* They **encrypt data** between a client (your app) and a server, ensuring:
+    1. **Confidentiality** — data can't be read by attackers.
+    2. **Integrity** — data can't be tampered with during transmission.
+    3. **Authentication** — confirms the server's identity via certificates.
+
+### How SSL/TLS Works
+
+**1. Handshake Phase:**
+* Client and server agree on encryption algorithms.
+* Server presents an **SSL/TLS certificate** issued by a trusted authority.
+* Client verifies the certificate.
+
+**2. Encryption Phase:**
+* A secure session key is generated.
+* All data sent between app and server is **encrypted using this session key**.
+
+**3. Secure Communication:**
+* Even if someone intercepts the network traffic, the data is unreadable.
+
+### Why SSL/TLS is Important for Mobile Apps
+
+**1. Protects Sensitive Data**
+* Login credentials, payment info, personal data remain encrypted.
+
+**2. Prevents Man-in-the-Middle (MITM) Attacks**
+* Attackers can't read or modify traffic between app and server.
+
+**3. Ensures Data Integrity**
+* Detects if data is tampered during transit.
+
+**4. Builds User Trust**
+* HTTPS and certificates indicate your app is secure.
+
+**5. Required by Apple**
+* **App Transport Security (ATS)** enforces TLS for all network requests.  
+
+## Chat-GPT Extension
+
+</details>
 
 
 
