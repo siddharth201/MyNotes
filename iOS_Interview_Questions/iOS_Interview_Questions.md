@@ -2568,7 +2568,7 @@ let result = add(5, 10)
 
 Type aliasing lets you **create a new name for an existing type.**
 
-• It doesn’t create a new type, just gives a **more meaningful name** to an existing one.
+• It doesn’t create a new type, just gives a **more meaningful name** to an existing one.  
 • Think of it as a **shortcut or nickname** for a type that might be too long, complex, or not very descriptive.
 
 ---
