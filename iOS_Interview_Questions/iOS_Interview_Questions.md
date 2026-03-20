@@ -5101,7 +5101,8 @@ func authenticateUser() {
 
 **Q12: What is Jailbreak Detection? Why is it important for app security?**
 <details>
-<summary>Answer</summary>
+<summary>Answer</summary>  
+
 * **Jailbreak detection** is a technique used to determine if an iOS device has been modified to remove Apple's security restrictions.
 * A jailbroken device allows users to install unauthorized apps, modify system files, and **bypass security protections** (like the sandbox).
 
@@ -5114,6 +5115,76 @@ func authenticateUser() {
 * **Check for Cydia:** Look for the presence of the Cydia app or other jailbreak-related files.
 * **Check File Permissions:** Try to write to directories outside the app's sandbox (e.g., `/private`).
 * **Check System Paths:** Look for common jailbreak paths like `/usr/sbin/sshd` or `/bin/bash`.
+</details>
+
+
+## Q13: What are symmetric vs asymmetric encryption? When would you use each?
+<details>
+<summary>Answer</summary>  
+
+**Symmetric Encryption**
+
+• Uses one secret key for both encryption and decryption.
+
+• Both sender and receiver must share the same key securely.
+
+• Fast and efficient for encrypting large amounts of data.
+
+**Example Algorithms:**
+
+• AES (Advanced Encryption Standard)
+
+• DES (Data Encryption Standard)
+
+---
+
+**Use Cases:**
+
+• Encrypting local files or databases.
+
+• Encrypting data in transit when you can securely share a key.
+
+• Fast encryption for large payloads.
+
+---
+
+**Asymmetric Encryption**
+
+• Uses a key pair:
+
+○ Public key → anyone can use it to encrypt data
+
+○ Private key → only the owner can decrypt data
+
+• Slower than symmetric encryption, usually used for small amounts of data like keys or authentication.
+
+---
+
+**Example Algorithms:**
+
+• RSA
+
+• ECC (Elliptic Curve Cryptography)
+
+---
+
+**Use Cases:**
+
+• Exchanging a symmetric key securely (hybrid encryption).
+
+• Digital signatures for authentication and integrity.
+
+• Secure login or token exchange.
+
+---
+
+**Key Points:**
+
+• Use symmetric encryption for data storage and large payloads.
+
+• Use asymmetric encryption for secure key exchange, digital signatures, or small sensitive info.
+
+• Often, both are combined: asymmetric encryption exchanges a symmetric key, then symmetric encryption handles the bulk of the data.
 </details>
 
 
