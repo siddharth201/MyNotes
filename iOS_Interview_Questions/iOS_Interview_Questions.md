@@ -1927,8 +1927,8 @@ Here, **where** acts as a filter inside the loop.
 
 ### Why use where?
 
-• Makes code **more readable and concise**
-• Helps apply **conditions directly inside syntax** (loop, switch, generics, extensions)
+• Makes code **more readable and concise**  
+• Helps apply **conditions directly inside syntax** (loop, switch, generics, extensions)  
 • Avoids writing extra nested **if** statements
 
 ---  
