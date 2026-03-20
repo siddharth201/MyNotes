@@ -5362,7 +5362,9 @@ func authenticateUser() {
 4. Check for ability to open restricted URLs
    • For example, cydia:// scheme.
 
-</details>
+</details>  
+
+
 
 
 
