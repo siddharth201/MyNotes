@@ -1448,10 +1448,10 @@ Swift provides **5 levels of access control** to define visibility.
 
 ## 1. Open
 
-• Most permissive level.
-• Used only for classes and class members.
-• Accessible inside and outside the module.
-• Can be subclassed and overridden in another module.
+• Most permissive level.  
+• Used only for classes and class members.  
+• Accessible inside and outside the module.  
+• Can be subclassed and overridden in another module.  
 
 Example: `UIView` in UIKit is open.
 
