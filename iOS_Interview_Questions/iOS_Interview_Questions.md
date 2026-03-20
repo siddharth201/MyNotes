@@ -2471,11 +2471,11 @@ Without **mutating**, the compiler will throw an error because `increment()` mod
 
 ### String (Swift)
 
-• `String` is a **value type (struct)** in Swift.
-• It is part of the **Swift Standard Library** and is optimized for safety, speed, and Unicode correctness.
-• Since it's a struct, it follows **copy-on-write semantics** (efficient, but each variable has its own copy).
-• It is **bridged automatically to NSString** when needed, so you can pass a Swift String to Objective-C APIs without extra conversion.
-• Preferred in Swift code because it's more modern and Swift-native.
+• `String` is a **value type (struct)** in Swift.  
+• It is part of the **Swift Standard Library** and is optimized for safety, speed, and Unicode correctness.  
+• Since it's a struct, it follows **copy-on-write semantics** (efficient, but each variable has its own copy).  
+• It is **bridged automatically to NSString** when needed, so you can pass a Swift String to Objective-C APIs without extra conversion.  
+• Preferred in Swift code because it's more modern and Swift-native.  
 
 Example:
 
