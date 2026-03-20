@@ -5039,6 +5039,81 @@ The **Keychain** is a secure storage container provided by iOS to store sensitiv
 | **Syncing** | Limited syncing capabilities. | Can be synced across devices via **iCloud Keychain**. |
 | **Data Type** | Best for **settings, flags, or small non-sensitive data**. | Best for **passwords, tokens, and sensitive credentials**. |
 
+</details>  
+
+**Q10: What is Biometric Authentication? How do you implement it in an iOS app?**
+<details>
+<summary>Answer</summary>     
+
+* **Biometric Authentication** allows users to unlock your app or access sensitive data using **FaceID** or **TouchID**.
+* It provides a **seamless user experience** while maintaining high security.
+* In iOS, you use the **LocalAuthentication** framework to implement it.
+
+**How to Implement Biometric Authentication**
+
+**1. Add Privacy Key to `Info.plist`**
+* Add `NSFaceIDUsageDescription` with a reason (e.g., "We use FaceID to securely log you into your account").
+
+**2. Check for Biometric Availability**
+* Use `LAContext` to check if the device supports and has biometrics enabled.
+
+**3. Evaluate Policy**
+* Request authentication from the user.
+
+```swift
+import LocalAuthentication
+
+func authenticateUser() {
+    let context = LAContext()
+    var error: NSError?
+
+    // 1. Check if biometrics are available
+    if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+        let reason = "Log in to your account"
+
+        // 2. Request authentication
+        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+            DispatchQueue.main.async {
+                if success {
+                    print("Authentication Successful!")
+                } else {
+                    print("Authentication Failed")
+                }
+            }
+        }
+    } else {
+        print("Biometrics not available: \(error?.localizedDescription ?? "Unknown error")")
+    }
+}
+```
+</details>
+
+**Q11: What is the difference between `deviceOwnerAuthentication` and `deviceOwnerAuthenticationWithBiometrics`?**
+<details>
+<summary>Answer</summary>     
+
+| Feature | `deviceOwnerAuthenticationWithBiometrics` | `deviceOwnerAuthentication` |
+| :--- | :--- | :--- |
+| **Methods** | Uses **only FaceID or TouchID**. | Uses **Biometrics**; if they fail or are unavailable, falls back to **Device Passcode**. |
+| **Fallback** | No automatic fallback to passcode. You must handle the error. | **Automatic fallback** to the device passcode. |
+| **Use Case** | Best for **high-security** actions where only biometrics are acceptable. | Best for **general app unlocking** or sensitive areas where passcode is a valid backup. |
+</details>
+
+**Q12: What is Jailbreak Detection? Why is it important for app security?**
+<details>
+<summary>Answer</summary>
+* **Jailbreak detection** is a technique used to determine if an iOS device has been modified to remove Apple's security restrictions.
+* A jailbroken device allows users to install unauthorized apps, modify system files, and **bypass security protections** (like the sandbox).
+
+**Why It's Important**
+1.  **Protects Sensitive Data:** Attackers can more easily access your app's local storage and Keychain on a jailbroken device.
+2.  **Prevents Code Injection:** Attackers can use tools like **Cycript** or **Frida** to modify your app's behavior at runtime.
+3.  **Prevents Reverse Engineering:** Makes it harder for attackers to debug and analyze your app's logic.
+
+**How to Detect Jailbreak (Common Checks)**
+* **Check for Cydia:** Look for the presence of the Cydia app or other jailbreak-related files.
+* **Check File Permissions:** Try to write to directories outside the app's sandbox (e.g., `/private`).
+* **Check System Paths:** Look for common jailbreak paths like `/usr/sbin/sshd` or `/bin/bash`.
 </details>
 
 
