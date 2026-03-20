@@ -5364,7 +5364,102 @@ func authenticateUser() {
 
 </details>  
 
+## Q12: What is the Local Authentication framework? How does it work?
+<details>
+<summary>Answer</summary>  
 
+• It’s an Apple framework that allows iOS apps to authenticate users locally using biometrics or device passcode.
+
+• Main goal: securely verify user identity without sending credentials over the network.
+
+**Supported Authentication Methods:**
+
+1. Face ID – facial recognition.
+
+2. Touch ID – fingerprint recognition.
+
+3. Device Passcode – fallback if biometrics fail or aren’t available.
+
+---
+
+**How It Works**
+
+1. App requests authentication from the system using LAContext.
+
+2. System handles biometric or passcode check securely.
+
+3. App receives success/failure result.
+
+4. No sensitive data (biometric info) is shared with the app – Apple keeps it secure in the Secure Enclave.
+
+</details>
+
+Q13: What is OWASP Mobile Top 10? What are the main security risks for mobile apps?
+<details>
+<summary>Answer</summary>  
+
+• OWASP stands for Open Web Application Security Project.
+
+• The Mobile Top 10 is a list of the most critical security risks for mobile apps.
+
+• Helps developers understand and mitigate vulnerabilities in iOS and Android apps.
+
+• Updated periodically to reflect emerging threats.
+
+---
+
+**Main Security Risks for Mobile Apps**
+
+M1 – Improper Platform Usage
+• Misusing platform features like Keychain, Touch ID, or Android intents.
+• Example: Storing sensitive data insecurely.
+
+M2 – Insecure Data Storage
+• Storing sensitive info (passwords, tokens, personal data) without encryption.
+• Example: Plaintext data in UserDefaults or local files.
+
+M3 – Insecure Communication
+• Using HTTP or weak TLS, exposing data in transit.
+• Example: API requests without HTTPS.
+
+M4 – Insecure Authentication
+• Weak login methods, poor session management.
+• Example: Hardcoded credentials, predictable tokens.
+
+M5 – Insufficient Cryptography
+• Using weak encryption or improper key management.
+• Example: Using MD5, SHA1, or storing encryption keys in app bundle.
+
+M6 – Insecure Authorization
+• Improper access control between app users or roles.
+• Example: A user can access another user’s data without proper checks.
+
+M7 – Client Code Quality / Reverse Engineering
+• App can be reverse-engineered to expose secrets.
+• Example: Decompiling IPA to read API keys.
+
+M8 – Code Tampering
+• Modifying app binary or resources to bypass security.
+• Example: Cracked apps, bypassing in-app purchases.
+
+M9 – Improper Session Handling
+• Session tokens not invalidated or exposed.
+• Example: Token remains valid after logout.
+
+M10 – Privacy Issues
+• Collecting or exposing personal data without consent.
+• Example: Tracking location without user permission.
+
+---
+
+**Why it Matters for iOS Apps**
+
+• Helps prevent data breaches and protect user privacy.
+
+• Avoids App Store rejection due to insecure practices.
+
+• Guides developers to implement secure coding patterns, encryption, authentication, and secure communication.
+</details>
 
 
 
