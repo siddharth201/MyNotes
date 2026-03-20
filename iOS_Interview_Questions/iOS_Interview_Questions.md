@@ -4976,6 +4976,69 @@ func urlSession(_ session: URLSession,
 * **Client certificates** for secure APIs.
 * **HTTP Basic or Digest authentication**.
 
+</details>  
+
+**Q8: What is App Transport Security (ATS)? How do you configure it in an iOS app?**
+<details>
+<summary>Answer</summary>   
+
+* **App Transport Security (ATS)** is a security feature introduced by Apple that enforces secure network connections.
+* It ensures that all HTTP requests made by your app use **HTTPS with TLS 1.2 or higher**.
+* ATS is enabled by default for all apps.
+
+
+
+### How ATS Enhances Security
+1.  **Enforces HTTPS:** Blocks all insecure `http://` connections.
+2.  **Strong Cryptography:** Requires TLS version 1.2 or higher and strong ciphers.
+3.  **Forward Secrecy:** Requires Diffie-Hellman ephemeral keys to ensure that even if a private key is compromised, past communications remain secure.
+
+### How to Configure ATS in `Info.plist`
+If your app needs to connect to an insecure server (e.g., during development or for specific third-party services), you can configure ATS exceptions in your `Info.plist` file.
+
+**1. Allow Insecure HTTP Loads (Not Recommended for Production)**
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+```
+
+**2. Adding Exceptions for Specific Domains (Recommended over global allowance)**
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>example.com</key>
+        <dict>
+            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+            <true/>
+            <key>NSIncludesSubdomains</key>
+            <true/>
+        </dict>
+    </dict>
+</dict>
+```
+</details>
+
+**Q9: What is the Keychain? Why should you use it over `UserDefaults` for sensitive data?**
+<details>
+<summary>Answer</summary>   
+
+The **Keychain** is a secure storage container provided by iOS to store sensitive information like **passwords, API tokens, cryptographic keys, and biometrics**.
+
+### Why Use Keychain Over `UserDefaults`?
+
+| Feature | `UserDefaults` | Keychain |
+| :--- | :--- | :--- |
+| **Security** | Stored in a plain **p-list** file (unencrypted). | Data is **encrypted** by the OS. |
+| **Accessibility** | Easily accessible by anyone with access to the device's file system. | Access is restricted to your app (or shared app groups). |
+| **Persistence** | Data is deleted when the app is uninstalled. | Data **persists** even after the app is deleted. |
+| **Syncing** | Limited syncing capabilities. | Can be synced across devices via **iCloud Keychain**. |
+| **Data Type** | Best for **settings, flags, or small non-sensitive data**. | Best for **passwords, tokens, and sensitive credentials**. |
+
 </details>
 
 
