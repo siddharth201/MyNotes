@@ -4226,7 +4226,7 @@ print(person1.name) // Prints "Alice" (original unaffected)
 
 ## 15. Application Security in iOS Apps
 
-**Q1: What are the fundamental secure coding principles for iOS development?**
+### **Q1: What are the fundamental secure coding principles for iOS development?**
 <details>
 <summary>Answer</summary>  
  
@@ -4281,7 +4281,7 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 * Remove **unused code, debug info, and third-party SDKs** that aren't essential.
 </details>  
 
-**Q2: How do you securely clear sensitive data from memory in Swift?**
+### **Q2: How do you securely clear sensitive data from memory in Swift?**
 <details>
 <summary>Answer</summary>   
 
@@ -4305,7 +4305,7 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 
 </details>  
 
-**Q3: What is SSL/TLS? Why is it important for mobile app security?**
+### **Q3: What is SSL/TLS? Why is it important for mobile app security?**
 <details>
 <summary>Answer</summary>  
 
