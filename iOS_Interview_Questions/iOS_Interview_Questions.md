@@ -4606,8 +4606,259 @@ Prevents:
 
 ---
 
-## When you use: URLSession.shared.dataTask(...) 👉 TLS is automatically handled, How?
+## When you use: URLSession.shared.dataTask(...) 👉 TLS is automatically handled, How?  
 
+Great — this is where most people stop at “it’s automatic”, but interviewers love **how it actually happens under the hood** 🔥
+
+---
+
+## 🔹 Short Answer
+
+> `URLSession` uses Apple’s **networking stack (CFNetwork + SecureTransport / Network.framework)**, which automatically performs the **TLS handshake, certificate validation, and encryption** for you.
+
+---
+
+## 🔹 What happens internally when you call
+
+```swift
+URLSession.shared.dataTask(with: request)
+```
+
+---
+
+## 🔹 Step-by-step (under the hood)
+
+```text
+Your App
+   ↓
+URLSession
+   ↓
+CFNetwork / URL Loading System
+   ↓
+TLS Stack (SecureTransport / Network.framework)
+   ↓
+TCP Connection
+   ↓
+Server
+```
+
+---
+
+## 🔐 Full Flow (Detailed)
+
+---
+
+## 🔹 1. URLSession sees HTTPS
+
+```swift
+https://api.example.com
+```
+
+👉 It detects:
+
+* Secure connection required → TLS must be used
+
+---
+
+## 🔹 2. TCP Connection is created
+
+Before TLS:
+
+```text
+Client → Server (TCP handshake)
+```
+
+---
+
+## 🔹 3. TLS Handshake starts automatically
+
+👉 This is handled by Apple’s TLS stack (you don’t write this)
+
+### Internally:
+
+```text
+ClientHello
+ServerHello
+Certificate exchange
+Key exchange
+Session key generation
+```
+
+---
+
+## 🔹 4. Certificate Validation (VERY IMPORTANT)
+
+iOS automatically checks:
+
+* ✅ Certificate is signed by trusted CA
+* ✅ Certificate is not expired
+* ✅ Domain matches (api.example.com)
+* ✅ Certificate chain is valid
+
+👉 If any fail → request is blocked ❌
+
+---
+
+## 🔹 5. Session Keys Created
+
+👉 Both client & server derive:
+
+```text
+Shared symmetric key
+```
+
+---
+
+## 🔹 6. Encrypted Communication Begins
+
+Now:
+
+```text
+Request data → encrypted → sent
+Response data → encrypted → received
+```
+
+---
+
+## 🔹 Where all this logic lives
+
+### Apple frameworks involved:
+
+* `URLSession`
+* `CFNetwork`
+* `Security.framework`
+* `SecureTransport` (older)
+* `Network.framework` (modern)
+
+👉 These handle:
+
+* TLS handshake
+* Encryption/decryption
+* Certificate validation
+
+---
+
+## 🔹 Why you don’t see any of this
+
+Because Apple gives you a **high-level abstraction**
+
+👉 You just write:
+
+```swift
+URLSession.shared.dataTask(...)
+```
+
+👉 System does:
+
+* TLS handshake
+* Encryption
+* Verification
+
+---
+
+## 🔹 When do you get control?
+
+Only when you implement:
+
+## 🔸 URLSessionDelegate
+
+```swift
+class MyDelegate: NSObject, URLSessionDelegate {
+
+    func urlSession(
+        _ session: URLSession,
+        didReceive challenge: URLAuthenticationChallenge,
+        completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void
+    ) {
+
+        // Custom certificate handling
+    }
+}
+```
+
+---
+
+## 🔹 Example: Certificate Pinning
+
+👉 Here you override default TLS validation:
+
+```swift
+if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
+    let serverTrust = challenge.protectionSpace.serverTrust!
+    
+    // Validate certificate manually
+    
+    completionHandler(.useCredential, URLCredential(trust: serverTrust))
+}
+```
+
+---
+
+## 🔹 ATS + TLS together
+
+👉 ATS enforces:
+
+* HTTPS only
+* Strong TLS versions
+
+👉 URLSession executes:
+
+* TLS handshake
+* Encryption
+
+---
+
+## 🔹 Important Insight (Interview Gold)
+
+> “TLS is not implemented in URLSession itself — it is handled by the underlying system frameworks like CFNetwork and Security.framework, which automatically perform handshake, certificate validation, and encryption.”
+
+---
+
+## 🔹 What happens if TLS fails?
+
+Examples:
+
+* Invalid certificate
+* Expired certificate
+* Self-signed (without exception)
+
+👉 Result:
+
+```text
+Request fails with error
+```
+
+---
+
+## 🔹 Real Error Example
+
+```text
+NSURLErrorDomain Code=-1202
+"The certificate for this server is invalid"
+```
+
+---
+
+## 🔹 Mental Model
+
+```text
+You → URLSession
+URLSession → Apple Networking Stack
+Stack → Handles TLS automatically
+```
+
+---
+
+## 🔚 Final Summary
+
+* `URLSession` triggers HTTPS requests
+* Apple’s networking stack:
+
+  * Performs TLS handshake
+  * Validates certificates
+  * Encrypts data
+* You don’t write TLS code manually
+* You can override via delegate (e.g., pinning)
 
 </details>
 
