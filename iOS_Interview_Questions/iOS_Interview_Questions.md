@@ -2555,8 +2555,8 @@ let result = add(5, 10)
 
 ### Why Is It Useful?
 
-• Makes code **shorter and cleaner**
-• Still keeps **type safety** (compiler knows exact type)
+• Makes code **shorter and cleaner**  
+• Still keeps **type safety** (compiler knows exact type)  
 • Reduces redundancy
 
 ---  
