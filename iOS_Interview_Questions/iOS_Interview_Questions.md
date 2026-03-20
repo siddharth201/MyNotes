@@ -4303,7 +4303,9 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 * Instead of storing sensitive data in memory for long periods, store it securely in the **Keychain**, which is managed by the OS.
 * Keychain automatically **encrypts data** and ensures **memory-safe access**.
 
-</details>
+</details>  
+
+
 
 
 
