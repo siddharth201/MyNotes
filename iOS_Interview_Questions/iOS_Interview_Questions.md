@@ -5260,7 +5260,110 @@ func authenticateUser() {
 • Use HIPAA-compliant backend services.
 
 • Keep detailed audit logs for sensitive operations.
+</details>  
+
+## Q15: What is App Transport Security (ATS)? Why was it introduced?
+<details>
+<summary>Answer</summary>  
+
+• ATS is a security feature introduced by Apple in iOS 9 and macOS 10.11.
+
+• It enforces secure network connections (HTTPS/TLS) for apps.
+
+• By default, all HTTP requests must use HTTPS with strong encryption, unless exceptions are explicitly configured.
+
+---
+
+**Why ATS Was Introduced**
+
+1. Improve network security
+   • Prevent apps from sending sensitive data over unencrypted HTTP.
+
+2. Prevent man-in-the-middle (MITM) attacks
+   • Ensures attackers cannot intercept or modify data in transit.
+
+3. Promote modern cryptography
+   • ATS requires TLS 1.2 or higher and strong ciphers.
+
+4. Standardize secure connections across apps
+   • Makes security consistent and easier for developers.
+
+---
+
+**ATS Requirements**
+
+• Use HTTPS (TLS 1.2+).
+
+• Certificates must be valid and trusted.
+
+• Strong ciphers and forward secrecy.
+
+• No weak encryption like RC4 or SHA-1.
+
+---
+
+**Default behavior:**
+
+• If your app tries to connect via HTTP, the connection is blocked unless you add exceptions in your Info.plist.
+
 </details>
+
+## Q15: What is iOS jailbreaking? Why should apps detect jailbroken devices?
+<details>
+<summary>Answer</summary>  
+
+• Jailbreaking is the process of removing Apple’s built-in software restrictions on iOS devices.
+
+• It gives users root access to the file system, allowing installation of unauthorized apps, tweaks, and modifications.
+
+• Jailbreaking bypasses Apple’s security mechanisms, which can compromise device integrity.
+
+---
+
+**How Jailbreaking Works**
+
+• Exploits a vulnerability in iOS to gain elevated privileges.
+
+• Installs package managers (like Cydia) to download apps outside the App Store.
+
+• Modifies system files that are normally protected.
+
+---
+
+**Why Apps Should Detect Jailbroken Devices**
+
+1. Security Risks
+   • Rooted devices can bypass app security controls.
+   • Sensitive data (tokens, passwords, API keys) can be exposed.
+
+2. Prevent Piracy
+   • Jailbreaking allows cracked apps or in-app purchases, impacting revenue.
+
+3. Maintain App Integrity
+   • Some apps (banking, payments, enterprise) require trusted environments.
+   • Detecting jailbreak helps block compromised devices from running the app.
+
+4. Compliance Requirements
+   • Certain financial, health, or enterprise apps must prevent use on jailbroken devices for regulatory reasons.
+
+---
+
+**Common Jailbreak Detection Techniques**
+
+1. Check for known jailbreak files
+   • /Applications/Cydia.app, /bin/bash, etc.
+
+2. Check for write access to system directories
+   • Normally, apps cannot write outside their sandbox.
+
+3. Check for suspicious processes or symlinks
+   • Presence of Cydia, SSH, or modified system files.
+
+4. Check for ability to open restricted URLs
+   • For example, cydia:// scheme.
+
+</details>
+
 
 
 
