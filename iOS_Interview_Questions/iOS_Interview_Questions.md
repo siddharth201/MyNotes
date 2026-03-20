@@ -1905,7 +1905,7 @@ Output
 </details>  
 
 
-### Q27: What's the purpose of the 'where' clause in Swift?  
+### Q: What's the purpose of the 'where' clause in Swift?  
 <details>
 <summary>Answer</summary>
 
