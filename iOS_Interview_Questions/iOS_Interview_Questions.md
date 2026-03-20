@@ -2487,11 +2487,11 @@ var swiftString: String = "Hello, Swift"
 
 ### NSString (Objective-C)
 
-• `NSString` is a **reference type (class)** from the **Foundation framework**.
-• It comes from Objective-C, so it’s older and not as optimized for Swift features.
-• Being a class, it’s stored on the heap and follows **reference semantics** (multiple variables can reference the same object).
-• Still useful if you're working with APIs or libraries written in Objective-C.
-• Has some methods not directly available in Swift’s `String` (though most are bridged).
+• `NSString` is a **reference type (class)** from the **Foundation framework**.  
+• It comes from Objective-C, so it’s older and not as optimized for Swift features.  
+• Being a class, it’s stored on the heap and follows **reference semantics** (multiple variables can reference the same object).  
+• Still useful if you're working with APIs or libraries written in Objective-C.  
+• Has some methods not directly available in Swift’s `String` (though most are bridged).  
 
 Example:
 
