@@ -4862,7 +4862,7 @@ Stack → Handles TLS automatically
 
 </details>  
 
-**Q4: What is certificate pinning? What security threats does it prevent?**
+### **Q4: What is certificate pinning? What security threats does it prevent?**
 <details>
 <summary>Answer</summary>  
 
@@ -4888,7 +4888,7 @@ Stack → Handles TLS automatically
     * Protects against attackers trying to intercept or redirect traffic on untrusted networks (Wi-Fi, etc.).
 </details>
 
-**Q5: What's the difference between certificate pinning and public key pinning?**    
+### **Q5: What's the difference between certificate pinning and public key pinning?**    
 <details>
 <summary>Answer</summary>  
 
@@ -4927,7 +4927,7 @@ Both are techniques to **strengthen SSL/TLS connections**, but they differ in **
 
 </details>
 
-**Q6: When should you implement SSL pinning in your iOS application?**
+### **Q6: When should you implement SSL pinning in your iOS application?**
 <details>
 <summary>Answer</summary>  
 
@@ -4953,7 +4953,7 @@ SSL pinning is **not always necessary**, but it’s critical for apps that handl
 * Apps that can gracefully handle SSL issues with standard ATS protections.
 </details>
 
-**Q7: What is the `URLSessionDelegate` method for handling authentication challenges?**
+### **Q7: What is the `URLSessionDelegate` method for handling authentication challenges?**
 <details>
 <summary>Answer</summary>  
 
@@ -4978,7 +4978,7 @@ func urlSession(_ session: URLSession,
 
 </details>  
 
-**Q8: What is App Transport Security (ATS)? How do you configure it in an iOS app?**
+### **Q8: What is App Transport Security (ATS)? How do you configure it in an iOS app?**
 <details>
 <summary>Answer</summary>   
 
@@ -5023,7 +5023,7 @@ If your app needs to connect to an insecure server (e.g., during development or 
 ```
 </details>
 
-**Q9: What is the Keychain? Why should you use it over `UserDefaults` for sensitive data?**
+### **Q9: What is the Keychain? Why should you use it over `UserDefaults` for sensitive data?**
 <details>
 <summary>Answer</summary>   
 
@@ -5041,7 +5041,7 @@ The **Keychain** is a secure storage container provided by iOS to store sensitiv
 
 </details>  
 
-**Q10: What is Biometric Authentication? How do you implement it in an iOS app?**
+### **Q10: What is Biometric Authentication? How do you implement it in an iOS app?**
 <details>
 <summary>Answer</summary>     
 
@@ -5088,7 +5088,7 @@ func authenticateUser() {
 ```
 </details>
 
-**Q11: What is the difference between `deviceOwnerAuthentication` and `deviceOwnerAuthenticationWithBiometrics`?**
+### **Q11: What is the difference between `deviceOwnerAuthentication` and `deviceOwnerAuthenticationWithBiometrics`?**
 <details>
 <summary>Answer</summary>     
 
