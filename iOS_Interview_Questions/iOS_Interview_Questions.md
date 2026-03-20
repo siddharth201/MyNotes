@@ -1983,8 +1983,8 @@ print(Animal.allCases.count) // 3
 
 Example:
 
-• Showing all options in a dropdown or picker.
-• Writing test cases to cover every enum option.
+• Showing all options in a dropdown or picker.  
+• Writing test cases to cover every enum option.  
 • Creating UI menus with all enum values.
 
 ---  
