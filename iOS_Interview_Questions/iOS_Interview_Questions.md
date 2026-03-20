@@ -4927,6 +4927,57 @@ Both are techniques to **strengthen SSL/TLS connections**, but they differ in **
 
 </details>
 
+**Q6: When should you implement SSL pinning in your iOS application?**
+<details>
+<summary>Answer</summary>  
+
+SSL pinning is **not always necessary**, but it’s critical for apps that handle **sensitive data** or are exposed to **high-security risks**.
+
+**1. Apps Handling Sensitive Data**
+* **Examples:** banking, payment, health, or authentication apps.
+* **Reason:** Protects **login credentials, tokens, financial information** from interception.
+
+**2. Apps Exposed to High MITM Risk**
+* Apps used over **untrusted networks** (public Wi-Fi).
+* SSL pinning prevents attackers from intercepting or modifying network traffic.
+
+**3. Apps with Strict Security Compliance**
+* **Examples:** HIPAA (health), PCI-DSS (payments), or GDPR-sensitive apps.
+* Pinning may be required to **meet regulatory standards**.
+
+**4. Preventing Compromised Certificate Authorities**
+* Even if a **trusted CA is compromised**, pinning ensures your app only trusts the **specific certificate or public key** you pinned.
+
+**5. Use Cases Where Pinning Might Not Be Needed**
+* Public content apps (news, blogs) without sensitive info.
+* Apps that can gracefully handle SSL issues with standard ATS protections.
+</details>
+
+**Q7: What is the `URLSessionDelegate` method for handling authentication challenges?**
+<details>
+<summary>Answer</summary>  
+
+In iOS, when a **network request** encounters an **authentication challenge** (like SSL/TLS certificate verification, HTTP Basic auth, or client certificates), you can handle it using this delegate method:
+
+```swift
+func urlSession(_ session: URLSession, 
+                didReceive challenge: URLAuthenticationChallenge, 
+                completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
+```
+
+**AuthChallengeDisposition Options**
+* **useCredential** $\rightarrow$ Accept the provided credential or create a new one.
+* **performDefaultHandling** $\rightarrow$ Let the system handle the challenge automatically.
+* **cancelAuthenticationChallenge** $\rightarrow$ Cancel the request.
+* **rejectProtectionSpace** $\rightarrow$ Reject the challenge without canceling the entire request.
+
+**When It’s Used**
+* **SSL/TLS certificate validation** (including certificate pinning).
+* **Client certificates** for secure APIs.
+* **HTTP Basic or Digest authentication**.
+
+</details>
+
 
 
 
