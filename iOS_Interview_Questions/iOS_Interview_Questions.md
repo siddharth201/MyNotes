@@ -5099,7 +5099,7 @@ func authenticateUser() {
 | **Use Case** | Best for **high-security** actions where only biometrics are acceptable. | Best for **general app unlocking** or sensitive areas where passcode is a valid backup. |
 </details>
 
-**Q12: What is Jailbreak Detection? Why is it important for app security?**
+### **Q12: What is Jailbreak Detection? Why is it important for app security?**
 <details>
 <summary>Answer</summary>  
 
@@ -5118,7 +5118,7 @@ func authenticateUser() {
 </details>
 
 
-## Q13: What are symmetric vs asymmetric encryption? When would you use each?
+### **Q13: What are symmetric vs asymmetric encryption? When would you use each?**
 <details>
 <summary>Answer</summary>  
 
@@ -5187,7 +5187,7 @@ func authenticateUser() {
 • Often, both are combined: asymmetric encryption exchanges a symmetric key, then symmetric encryption handles the bulk of the data.
 </details>  
 
-## Q14: What are GDPR and HIPAA? How do they affect iOS app development?
+### **Q14: What are GDPR and HIPAA? How do they affect iOS app development?**
 <details>
 <summary>Answer</summary>  
 
@@ -5262,7 +5262,7 @@ func authenticateUser() {
 • Keep detailed audit logs for sensitive operations.
 </details>  
 
-## Q15: What is App Transport Security (ATS)? Why was it introduced?
+### **Q15: What is App Transport Security (ATS)? Why was it introduced?**
 <details>
 <summary>Answer</summary>  
 
@@ -5308,7 +5308,7 @@ func authenticateUser() {
 
 </details>
 
-## Q15: What is iOS jailbreaking? Why should apps detect jailbroken devices?
+### **Q16: What is iOS jailbreaking? Why should apps detect jailbroken devices?**
 <details>
 <summary>Answer</summary>  
 
@@ -5364,7 +5364,7 @@ func authenticateUser() {
 
 </details>  
 
-## Q12: What is the Local Authentication framework? How does it work?
+### **Q17: What is the Local Authentication framework? How does it work?**
 <details>
 <summary>Answer</summary>  
 
@@ -5394,7 +5394,7 @@ func authenticateUser() {
 
 </details>
 
-Q13: What is OWASP Mobile Top 10? What are the main security risks for mobile apps?
+### **Q18: What is OWASP Mobile Top 10? What are the main security risks for mobile apps?**
 <details>
 <summary>Answer</summary>  
 
