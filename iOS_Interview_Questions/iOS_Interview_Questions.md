@@ -5185,7 +5185,9 @@ func authenticateUser() {
 • Use asymmetric encryption for secure key exchange, digital signatures, or small sensitive info.
 
 • Often, both are combined: asymmetric encryption exchanges a symmetric key, then symmetric encryption handles the bulk of the data.
-</details>
+</details>  
+
+
 
 
 
