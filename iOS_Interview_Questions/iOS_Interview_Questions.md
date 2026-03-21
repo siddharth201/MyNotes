@@ -4394,7 +4394,7 @@ self.age = age
 
 3. Ensures **safe and controlled initialization** for classes.
 
-4. You can always write custom initializers for classes.
+4. You can always write **custom initializers** for classes.
 </details>
 
 Q63: What are Subscripts in Swift?
