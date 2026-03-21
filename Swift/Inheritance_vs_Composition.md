@@ -498,6 +498,160 @@ let vm2 = UserViewModel(network: MockNetwork())
 
 
 ## Q. Focuses on what types can do, not what they are?
+Great — this line is **very important in Swift (protocol-oriented programming)**. Let’s break it down simply 👇
+
+---
+
+# 🔹 Statement
+
+👉 **“Focuses on what types can do, not what they are”**
+
+---
+
+# 🔹 What it Means (Simple)
+
+Instead of asking:
+
+❌ *“What is this object?”* (type / class)
+
+We ask:
+
+✅ *“What can this object do?”* (behavior / capability)
+
+---
+
+# 🔹 Example WITHOUT Protocol (Type-focused ❌)
+
+```swift
+struct Dog {
+    func makeSound() {
+        print("Bark")
+    }
+}
+
+struct Cat {
+    func makeSound() {
+        print("Meow")
+    }
+}
+```
+
+👉 Problem:
+
+* Dog ≠ Cat
+* You must treat them separately
+
+---
+
+# 🔹 WITH Protocol (Behavior-focused ✅)
+
+```swift
+protocol SoundMaking {
+    func makeSound()
+}
+```
+
+### Conform types:
+
+```swift
+struct Dog: SoundMaking {
+    func makeSound() {
+        print("Bark")
+    }
+}
+
+struct Cat: SoundMaking {
+    func makeSound() {
+        print("Meow")
+    }
+}
+```
+
+---
+
+# 🔹 Now Use Behavior (Not Type)
+
+```swift
+func playSound(animal: SoundMaking) {
+    animal.makeSound()
+}
+```
+
+### Usage:
+
+```swift
+playSound(animal: Dog())
+playSound(animal: Cat())
+```
+
+---
+
+# 🔥 Key Insight
+
+👉 Function doesn’t care:
+
+* Dog ❓
+* Cat ❓
+
+👉 It only cares:
+
+✅ “Can it make sound?”
+
+---
+
+# 🔹 Real iOS Example
+
+```swift
+protocol NetworkService {
+    func fetch()
+}
+```
+
+Now:
+
+* API service ✅
+* Mock service ✅
+* Offline service ✅
+
+👉 All work if they can **fetch()**
+
+---
+
+# 🔥 Analogy
+
+Think of **remote control**
+
+* TV 📺
+* AC ❄️
+* Fan 🌀
+
+👉 Remote doesn’t care *what device it is*
+👉 Only cares: **“Can it respond to signals?”**
+
+---
+
+# 🔹 Why This Is Powerful
+
+* Flexible code
+* Reusable logic
+* Easy testing
+* Loose coupling
+
+---
+
+# 🔥 One-Line Understanding
+
+👉
+**“Protocols define capabilities, not identity.”**
+
+---
+
+# 🔥 Interview Version
+
+👉
+**“Protocol-oriented design focuses on behavior (what an object can do) rather than its concrete type, enabling flexibility and loose coupling.”**
+
+
 
 
 
