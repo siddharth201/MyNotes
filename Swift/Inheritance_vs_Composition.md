@@ -306,12 +306,6 @@ struct UserViewModel {
 
 ---
 
-If you want next step, I can show you:
-
-* 🔥 Composition using protocols (very important for interviews)
-* 🔥 How DI (Dependency Injection) is based on composition
-* 🔥 Real MVVM architecture example
-
-Just tell me 👍
+## An object has instance of another object, where protocols come in?
 
 
