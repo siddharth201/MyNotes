@@ -3972,9 +3972,9 @@ If you want, I can show you a **real iOS use-case (network layer / API states / 
 
 ### Example:- 
 
-// phantom_types_swift_example.swift
-// A self-contained, runnable Swift example demonstrating phantom types
-// Copy into a Swift Playground or an Xcode macOS/iOS project (or run with `swift` CLI).
+// phantom_types_swift_example.swift  
+// A self-contained, runnable Swift example demonstrating phantom types  
+// Copy into a Swift Playground or an Xcode macOS/iOS project (or run with `swift` CLI).  
 
 import Foundation
 
@@ -4114,10 +4114,10 @@ func demoPaymentFlow() {
 
     let payment = Payment<Created>(amount: 49.99)
 
-    // This is not allowed at compile-time (uncomment to see failure):
-    // payment.complete() // ❌ Can't complete before authenticate
+    // This is not allowed at compile-time (uncomment to see failure):  
+    // payment.complete() // ❌ Can't complete before authenticate  
 
-    // Authenticate then complete
+    // Authenticate then complete  
     let authPayment = payment.authenticate(userToken: "userToken123")
     let completed = authPayment.complete()
     _ = completed
@@ -4130,10 +4130,10 @@ func demoSecureResourceFlow() {
 
     let lockedResource = SecureResource<Locked>(secret: "Top Secret API Key")
 
-    // Not allowed while locked (uncomment to see compile-time error):
-    // lockedResource.read() // ❌ Not available
+    // Not allowed while locked (uncomment to see compile-time error):  
+    // lockedResource.read() // ❌ Not available  
 
-    // Try unlocking without auth
+    // Try unlocking without auth  
     let failUnlock = lockedResource.unlock(withAuth: false)
     print("unlock(withAuth:false) returned: \(String(describing: failUnlock))")
 
@@ -4147,20 +4147,20 @@ func demoSecureResourceFlow() {
 }
 
 // Run demos
-print("Phantom Types Demo - Running examples\n")
-demoSessionFlow()
-demoPaymentFlow()
-demoSecureResourceFlow()
-print("Done")
+print("Phantom Types Demo - Running examples\n")  
+demoSessionFlow()  
+demoPaymentFlow()  
+demoSecureResourceFlow()  
+print("Done")  
 
 // -----------------------------------------------------------------------------
 // Notes:
-// - To see the compile-time safety in action, try uncommenting the commented
-//   lines marked with ❌. The Swift compiler will refuse those operations.
-// - This pattern has zero runtime overhead for the type states — the marker
-//   types (e.g., LoggedIn) do not store data and are erased at runtime.
-// - Use phantom types where order-of-operations or allowed actions should be
-//   enforced by the compiler (network flows, payments, secure access, builders).
+// - To see the compile-time safety in action, try uncommenting the commented  
+//   lines marked with ❌. The Swift compiler will refuse those operations.  
+// - This pattern has zero runtime overhead for the type states — the marker  
+//   types (e.g., LoggedIn) do not store data and are erased at runtime.  
+// - Use phantom types where order-of-operations or allowed actions should be  
+//   enforced by the compiler (network flows, payments, secure access, builders).  
 // -----------------------------------------------------------------------------
 
   
