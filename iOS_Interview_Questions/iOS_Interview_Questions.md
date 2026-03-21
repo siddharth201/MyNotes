@@ -4343,7 +4343,7 @@ print(person1.name) // Prints "Alice" (original unaffected)
 
 • It’s generated only if you don’t define your own initializer.
 
-Example (Struct):
+**Example (Struct):**
 ```swift
 struct Point {
     var x: Int
