@@ -4390,7 +4390,7 @@ self.age = age
 
 1. **Structs →** automatic memberwise initializer is provided.
 
-2. Classes → no automatic memberwise initializer due to inheritance and reference type behavior.
+2. **Classes →** no automatic memberwise initializer due to inheritance and reference type behavior.
 
 3. Ensures safe and controlled initialization for classes.
 
