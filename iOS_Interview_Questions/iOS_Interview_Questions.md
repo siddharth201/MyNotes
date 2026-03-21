@@ -4449,7 +4449,7 @@ Here we created a custom type Matrix and accessed elements like matrix[1,0] usin
 
 ---
 
-Key Points
+**Key Points**
 
 • Subscripts let you write cleaner, array-like syntax.
 
