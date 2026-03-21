@@ -4443,6 +4443,7 @@ var matrix = Matrix(data: [[1, 2], [3, 4]])
 print(matrix[0, 1])  // 2
 matrix[1, 0] = 10
 print(matrix[1, 0])  // 10
+```
 
 Here we created a custom type Matrix and accessed elements like matrix[1,0] using subscript.
 
