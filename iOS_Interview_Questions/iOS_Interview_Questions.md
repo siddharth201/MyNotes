@@ -4106,9 +4106,10 @@ Use **weak** or **unowned** references:
 4. Always check memory leaks in Instruments $\rightarrow$ Leaks tool.
 </details>  
 
-### Q: Explain the lifecycle of an object under ARC.**
+### **Q: Explain the lifecycle of an object under ARC.**
 <details>
-<summary>Answer</summary>
+<summary>Answer</summary>  
+
 **1. Creation (Initialization)**
 
 * When you create a class instance using **init**, ARC allocates memory for it.
