@@ -4246,31 +4246,26 @@ If **deinit doesn’t run**, there’s likely a **retain cycle**.
 <summary>Answer</summary>  
 
 **1. Automatic Memory Management**
-
 * ARC (**Automatic Reference Counting**) automatically **tracks and manages memory** for class instances.
 * Developers **don’t manually free memory**; ARC does it under the hood.
 
 **2. Reference Counting**
-
 * Each class instance has a **reference count** (retain count).
 * **Strong references** increase the count.
 * **Releasing references** (setting to **nil** or going out of scope) decreases the count.
 * When the count reaches **0**, ARC **deallocates the instance** automatically.
 
 **3. Effects on Object Lifetime**
-
 * **Memory is allocated** when the object is created.
 * **Memory is released** automatically when no strong references exist.
 * Ensures objects **live exactly as long as needed**, no sooner or later.
 
 **4. Retain Cycles**
-
 * ARC can't handle **retain cycles** automatically.
 * Strong references between two objects can prevent deallocation $\rightarrow$ **memory leak**.
 * Fix with **weak** or **unowned** references.
 
 **5. Interaction with Closures**
-
 * Closures **capture references to objects** by default.
 * This can increase reference counts and create retain cycles.
 * Use **[weak self]** or **[unowned self]** in closures to avoid leak.
