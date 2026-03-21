@@ -4359,7 +4359,7 @@ Swift automatically creates Point(x:y:) for the struct.
 
 **Why Classes Don’t Have Memberwise Initializers**
 
-• Classes don’t get automatic memberwise initializers in Swift.
+• Classes **don’t get automatic memberwise initializers in Swift.**
 
 • Reason: Inheritance & reference semantics
 
