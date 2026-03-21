@@ -4241,7 +4241,7 @@ If **deinit doesn’t run**, there’s likely a **retain cycle**.
 * Be careful with **global or static references** that can keep objects alive.  
 </details>
 
-### Q: How does ARC affect memory management for class instances?**
+### **Q: How does ARC affect memory management for class instances?**
 <details>
 <summary>Answer</summary>  
 
