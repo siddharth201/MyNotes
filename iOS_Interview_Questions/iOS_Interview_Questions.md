@@ -4111,7 +4111,6 @@ Use **weak** or **unowned** references:
 <summary>Answer</summary>  
 
 **1. Creation (Initialization)**
-
 * When you create a class instance using **init**, ARC allocates memory for it.
 * Its **reference count (retain count)** starts at 1.
 * **deinit** is not called yet; the object is fully alive and usable.
