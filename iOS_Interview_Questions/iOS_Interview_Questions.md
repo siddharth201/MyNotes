@@ -4392,7 +4392,7 @@ self.age = age
 
 2. **Classes →** no automatic memberwise initializer due to inheritance and reference type behavior.
 
-3. Ensures **safe and controlled initialization for classes.
+3. Ensures **safe and controlled initialization** for classes.
 
 4. You can always write custom initializers for classes.
 </details>
