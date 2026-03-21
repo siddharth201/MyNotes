@@ -4411,6 +4411,7 @@ myArray[0]. That works because Array has a subscript defined.
 ---
 
 **Syntax**
+
 ```swift
 subscript(index: Int) -> ElementType {
     get {
