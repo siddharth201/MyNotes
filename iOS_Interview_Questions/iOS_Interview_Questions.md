@@ -4369,8 +4369,9 @@ Swift automatically creates Point(x:y:) for the struct.
 
 ○ Swift forces you to write explicit initializers for clarity and control over initialization.
 
-Example (Class):
+**Example (Class):**
 
+```swift
 class Person {
 var name: String
 var age: Int
