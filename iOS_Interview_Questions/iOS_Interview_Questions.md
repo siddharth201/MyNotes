@@ -4386,9 +4386,9 @@ self.age = age
 }
 ```
 
-Key Points
+### Key Points
 
-1. Structs → automatic memberwise initializer is provided.
+1. **Structs →** automatic memberwise initializer is provided.
 
 2. Classes → no automatic memberwise initializer due to inheritance and reference type behavior.
 
