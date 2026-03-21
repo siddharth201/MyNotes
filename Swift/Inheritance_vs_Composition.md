@@ -172,5 +172,146 @@ Why?
 
 ---
 
+Got it — let’s make **composition super simple** 👇
+
+---
+
+# 🔹 What is Composition (Very Simple)
+
+👉 **Composition = Using one object inside another**
+
+Instead of *becoming* something, you just *use* something.
+
+---
+
+# 🔹 Think Like Real Life
+
+* 🚗 Car **has an** engine
+* 📱 Phone **has a** camera
+* 👨‍💻 App **has a** network service
+
+👉 That’s **composition**
+
+---
+
+# 🔹 Simple Swift Example
+
+```swift
+struct Engine {
+    func start() {
+        print("Engine started")
+    }
+}
+
+struct Car {
+    let engine = Engine()   // Car HAS an Engine
+    
+    func drive() {
+        engine.start()
+        print("Car is moving")
+    }
+}
+```
+
+### Usage:
+
+```swift
+let car = Car()
+car.drive()
+```
+
+---
+
+# 🔹 What’s Happening?
+
+* Car is NOT an Engine ❌
+* Car just USES Engine ✅
+
+👉 That’s composition
+
+---
+
+# 🔹 Compare with Inheritance (Easy Way)
+
+### Inheritance ❌
+
+```swift
+class Engine {
+    func start() {}
+}
+
+class Car: Engine {}   // Car IS an Engine ❌ (wrong in real life)
+```
+
+👉 This doesn’t make sense logically
+
+---
+
+### Composition ✅
+
+```swift
+struct Car {
+    let engine: Engine
+}
+```
+
+👉 This matches real life ✔️
+
+---
+
+# 🔹 Even Simpler Rule
+
+👉 Ask this question:
+
+* If answer is **"is-a" → Inheritance**
+* If answer is **"has-a" → Composition**
+
+---
+
+# 🔹 Why Composition is Better
+
+* More flexible
+* Easy to change parts
+* No tight dependency
+* Works with structs (Swift preferred)
+
+---
+
+# 🔹 Real iOS Example (Super Practical)
+
+```swift
+struct NetworkService {
+    func fetch() {
+        print("API call")
+    }
+}
+
+struct UserViewModel {
+    let network = NetworkService()   // HAS-A
+    
+    func loadUser() {
+        network.fetch()
+    }
+}
+```
+
+👉 ViewModel doesn’t become network
+👉 It just uses it
+
+---
+
+# 🔥 One-Line Understanding
+
+👉 **“Composition means building objects using other objects.”**
+
+---
+
+If you want next step, I can show you:
+
+* 🔥 Composition using protocols (very important for interviews)
+* 🔥 How DI (Dependency Injection) is based on composition
+* 🔥 Real MVVM architecture example
+
+Just tell me 👍
 
 
