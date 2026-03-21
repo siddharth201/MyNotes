@@ -4410,15 +4410,15 @@ myArray[0]. That works because Array has a subscript defined.
 
 ---
 
-Syntax
-
+**Syntax**
+```swift
 subscript(index: Int) -> ElementType {
-get {
-// return value for the given index
-}
-set(newValue) {
-// set value at the given index
-}
+    get {
+        // return value for the given index
+    }
+    set(newValue) {
+        // set value at the given index
+    }
 }
 
 Example:
