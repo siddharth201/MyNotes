@@ -4283,7 +4283,7 @@ someAsyncFunction { [weak self] in
 * Helps **prevent dangling pointers** and most memory leaks when used correctly.
 </details>  
 
-### Q: Explain the differences between deep copying and shallow copying in swift?**
+### Q: **Explain the differences between deep copying and shallow copying in swift?**
 <details>
 <summary>Answer</summary>
 **Shallow Copy**
