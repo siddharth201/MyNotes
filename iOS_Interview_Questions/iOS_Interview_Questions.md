@@ -4397,7 +4397,9 @@ init(name: String, age: Int) {
 4. You can always write **custom initializers** for classes.
 </details>
 
-Q63: What are Subscripts in Swift?
+### Q63: What are Subscripts in Swift?
+<details>
+<summary>Answer</summary>  
 
 A subscript in Swift lets you access elements of a collection, list, or sequence directly using square brackets [].
 
@@ -4455,7 +4457,7 @@ Key Points
 • They can be read-only or read-write.
 
 • Commonly used in collections, dictionaries, strings, or custom data structures.
-  
+</details>  
 
 ## 15. Application Security in iOS Apps
 
