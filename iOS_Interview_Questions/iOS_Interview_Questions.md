@@ -4436,7 +4436,7 @@ struct Matrix {
         set(newValue) {
             data[row][column] = newValue
         }
-}
+    }
 ```
 
 }
