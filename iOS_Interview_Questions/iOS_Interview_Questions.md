@@ -4335,6 +4335,128 @@ print(person1.name) // Prints "Alice" (original unaffected)
 ```  
 </details>  
 
+### **Q62: What is a memberwise initializer and why don’t Swift classes have a memberwise initializer?**
+<details>
+<summary>Answer</summary>
+
+• A memberwise initializer is an initializer automatically provided by Swift for structs, which allows you to set all properties of the struct without writing a custom init.
+
+• It’s generated only if you don’t define your own initializer.
+
+Example (Struct):
+```swift
+struct Point {
+    var x: Int
+    var y: Int
+}
+```
+
+let p = Point(x: 10, y: 20) // Memberwise initializer used
+
+Swift automatically creates Point(x:y:) for the struct.
+
+---
+
+Why Classes Don’t Have Memberwise Initializers
+
+• Classes don’t get automatic memberwise initializers in Swift.
+
+• Reason: Inheritance & reference semantics
+
+○ Classes can inherit from other classes.
+
+○ Automatic memberwise initializer could break initializer inheritance rules.
+
+○ Swift forces you to write explicit initializers for clarity and control over initialization.
+
+Example (Class):
+
+class Person {
+var name: String
+var age: Int
+}
+
+// Cannot do: let p = Person(name: "Alice", age: 25)
+// You must define your own initializer:
+
+init(name: String, age: Int) {
+self.name = name
+self.age = age
+}
+
+---
+
+Key Points
+
+1. Structs → automatic memberwise initializer is provided.
+
+2. Classes → no automatic memberwise initializer due to inheritance and reference type behavior.
+
+3. Ensures safe and controlled initialization for classes.
+
+4. You can always write custom initializers for classes.
+</details>
+
+Q63: What are Subscripts in Swift?
+
+A subscript in Swift lets you access elements of a collection, list, or sequence directly using square brackets [].
+
+• Think of how you access an array element:
+myArray[0]. That works because Array has a subscript defined.
+
+• You can also define your own subscripts in your custom types.
+
+---
+
+Syntax
+
+subscript(index: Int) -> ElementType {
+get {
+// return value for the given index
+}
+set(newValue) {
+// set value at the given index
+}
+}
+
+Example:
+
+struct Matrix {
+var data: [[Int]]
+
+```
+subscript(row: Int, column: Int) -> Int {
+    get {
+        return data[row][column]
+    }
+    set(newValue) {
+        data[row][column] = newValue
+    }
+}
+```
+
+}
+
+var matrix = Matrix(data: [[1, 2], [3, 4]])
+print(matrix[0, 1])  // 2
+matrix[1, 0] = 10
+print(matrix[1, 0])  // 10
+
+Here we created a custom type Matrix and accessed elements like matrix[1,0] using subscript.
+
+---
+
+Key Points
+
+• Subscripts let you write cleaner, array-like syntax.
+
+• They can have multiple parameters.
+
+• They can be read-only or read-write.
+
+• Commonly used in collections, dictionaries, strings, or custom data structures.
+  
+
 ## 15. Application Security in iOS Apps
 
 ### **Q1: What are the fundamental secure coding principles for iOS development?**
