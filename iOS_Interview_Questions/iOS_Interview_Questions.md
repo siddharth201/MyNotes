@@ -4373,16 +4373,16 @@ Swift automatically creates Point(x:y:) for the struct.
 
 ```swift
 class Person {
-var name: String
-var age: Int
+    var name: String
+    var age: Int
 }
 
 // Cannot do: let p = Person(name: "Alice", age: 25)
 // You must define your own initializer:
 
 init(name: String, age: Int) {
-self.name = name
-self.age = age
+    self.name = name
+    self.age = age
 }
 ```
 
