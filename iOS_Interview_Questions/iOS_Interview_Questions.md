@@ -4421,8 +4421,9 @@ subscript(index: Int) -> ElementType {
         // set value at the given index
     }
 }
+```
 
-Example:
+**Example:**
 
 struct Matrix {
 var data: [[Int]]
