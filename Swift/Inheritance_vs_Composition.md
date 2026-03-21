@@ -308,4 +308,195 @@ struct UserViewModel {
 
 ## An object has instance of another object, where protocols come in?
 
+Great question — this is the **exact next level of understanding composition** 👇
+
+---
+
+# 🔹 Step 1: Basic Composition (what you already know)
+
+```swift
+struct Engine {
+    func start() {
+        print("Engine started")
+    }
+}
+
+struct Car {
+    let engine = Engine()   // Car HAS Engine
+}
+```
+
+👉 Problem here:
+
+* Car is **tightly coupled** to `Engine`
+* You **cannot easily change** the engine type
+
+---
+
+# 🔥 Step 2: Where Protocols Come In
+
+👉 Protocols make composition **flexible + replaceable**
+
+Instead of depending on a **concrete type**, depend on a **behavior (protocol)**
+
+---
+
+# 🔹 Example with Protocol
+
+```swift
+protocol Engine {
+    func start()
+}
+```
+
+### Different implementations:
+
+```swift
+struct PetrolEngine: Engine {
+    func start() {
+        print("Petrol engine started")
+    }
+}
+
+struct ElectricEngine: Engine {
+    func start() {
+        print("Electric engine started")
+    }
+}
+```
+
+---
+
+# 🔹 Car uses protocol (not concrete type)
+
+```swift
+struct Car {
+    let engine: Engine   // depends on abstraction
+    
+    func drive() {
+        engine.start()
+        print("Car is moving")
+    }
+}
+```
+
+---
+
+# 🔹 Usage
+
+```swift
+let petrolCar = Car(engine: PetrolEngine())
+petrolCar.drive()
+
+let electricCar = Car(engine: ElectricEngine())
+electricCar.drive()
+```
+
+---
+
+# 🔥 What Just Happened?
+
+👉 Car doesn’t care:
+
+* Petrol engine ❓
+* Electric engine ❓
+* Future engine ❓
+
+👉 It only cares:
+**“Does it follow Engine protocol?”**
+
+---
+
+# 🔥 Why This Is Powerful
+
+### ❌ Without protocol
+
+```swift
+let engine = PetrolEngine()  // fixed
+```
+
+### ✅ With protocol
+
+```swift
+let engine: Engine   // flexible
+```
+
+---
+
+# 🔹 Real iOS Example (VERY IMPORTANT)
+
+```swift
+protocol NetworkService {
+    func fetchData()
+}
+
+struct APINetwork: NetworkService {
+    func fetchData() {
+        print("Real API call")
+    }
+}
+
+struct MockNetwork: NetworkService {
+    func fetchData() {
+        print("Mock data for testing")
+    }
+}
+```
+
+### ViewModel:
+
+```swift
+struct UserViewModel {
+    let network: NetworkService
+    
+    func load() {
+        network.fetchData()
+    }
+}
+```
+
+---
+
+### Usage:
+
+```swift
+// Production
+let vm1 = UserViewModel(network: APINetwork())
+
+// Testing
+let vm2 = UserViewModel(network: MockNetwork())
+```
+
+---
+
+# 🔥 Key Insight
+
+👉 **Composition + Protocol = Loose coupling**
+
+* Swap implementations easily
+* Testable code
+* Scalable architecture
+
+---
+
+# 🔥 Simple Analogy
+
+* 🔌 Socket (protocol)
+* 🔋 Charger (implementation)
+
+👉 Phone doesn’t care which charger
+👉 Only cares: “fits the socket”
+
+---
+
+# 🔥 Interview One-Liner
+
+👉
+**“Protocols make composition powerful by allowing objects to depend on behavior instead of concrete implementations.”**
+
+---
+
+
+
+
 
