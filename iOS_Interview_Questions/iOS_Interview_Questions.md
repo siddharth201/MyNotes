@@ -4348,10 +4348,10 @@ Example (Struct):
 struct Point {
     var x: Int
     var y: Int
-}
-```
+}  
 
 let p = Point(x: 10, y: 20) // Memberwise initializer used
+```
 
 Swift automatically creates Point(x:y:) for the struct.
 
