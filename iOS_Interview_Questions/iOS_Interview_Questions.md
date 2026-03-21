@@ -4437,8 +4437,6 @@ struct Matrix {
             data[row][column] = newValue
         }
     }
-```
-
 }
 
 var matrix = Matrix(data: [[1, 2], [3, 4]])
