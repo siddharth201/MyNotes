@@ -4363,11 +4363,11 @@ Swift automatically creates Point(x:y:) for the struct.
 
 • Reason: **Inheritance & reference semantics**
 
-○ Classes can inherit from other classes.
+    ○ Classes can inherit from other classes.
 
-○ Automatic memberwise initializer could break initializer inheritance rules.
+    ○ Automatic memberwise initializer could break initializer inheritance rules.
 
-○ Swift forces you to write explicit initializers for clarity and control over initialization.
+    ○ Swift forces you to write explicit initializers for clarity and control over initialization.
 
 **Example (Class):**
 
