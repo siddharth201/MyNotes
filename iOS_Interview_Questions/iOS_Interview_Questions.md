@@ -4425,17 +4425,17 @@ subscript(index: Int) -> ElementType {
 
 **Example:**
 
+```swift
 struct Matrix {
-var data: [[Int]]
+    var data: [[Int]]
 
-```
-subscript(row: Int, column: Int) -> Int {
-    get {
-        return data[row][column]
-    }
-    set(newValue) {
-        data[row][column] = newValue
-    }
+    subscript(row: Int, column: Int) -> Int {
+        get {
+            return data[row][column]
+        }
+        set(newValue) {
+            data[row][column] = newValue
+        }
 }
 ```
 
