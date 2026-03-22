@@ -5564,7 +5564,118 @@ myCar.start()
 ```
 
 Protocols are super useful in Swift because they enable polymorphism, code reusability, and protocol-oriented programming (which Swift loves).
-</details>
+</details>  
+
+### **Q15: Why is Swift called a Protocol-Oriented Programming (POP) Language?**
+
+**1. Shift from Class Inheritance to Protocols**
+
+* Traditional OOP (like in Java or Objective-C) is class-based and relies on inheritance.
+* Swift prefers composition over inheritance, encouraging you to build behavior using protocols instead of deep class hierarchies.
+
+---
+
+**2. Protocols Define “What”, Not “How”**
+
+* A protocol declares the required properties or methods.
+* Any type (class, struct, or enum) can adopt a protocol and provide its own implementation.
+* This makes code more flexible and reusable.
+
+---
+
+**3. Value Types + Protocols**
+
+* Swift pushes developers to use structs and enums (value types) instead of always relying on classes (reference types).
+* Protocols let these value types gain functionality similar to inheritance, but without the drawbacks of reference sharing.
+
+---
+
+**4. Protocol Extensions = Reuse Without Inheritance**
+
+* You can add default implementations to a protocol using protocol extensions.
+* This is like giving a “base implementation” that all conforming types can use or override.
+* Example: You don’t need a base class like Animal. You just define a protocol Animal and extend it with common behavior.
+
+---
+
+**5. Multiple Behavior Support (Alternative to Multiple Inheritance)**
+
+* A class/struct/enum can adopt multiple protocols.
+* This solves the problem of multiple inheritance, where a class tries to inherit from two base classes.
+
+---
+
+**Q16: What does it mean for a type to "conform" to a protocol?**
+
+In Swift, when we say a type conforms to a protocol, it means that the type (a class, struct, or enum) agrees to implement all the requirements (properties, methods, or initializers) defined by that protocol.
+
+Think of a protocol as a contract. If a type signs that contract, it must fulfill all the rules written inside it.
+
+**Example:**
+
+```swift
+protocol Drivable {
+    func startEngine()
+    func drive()
+}
+```
+
+```swift
+struct Car: Drivable {
+    func startEngine() {
+        print("Engine started")
+    }
+
+    func drive() {
+        print("Car is moving")
+    }
+}
+```
+
+Here:
+
+* Drivable is a protocol.
+* Car conforms to Drivable by implementing startEngine() and drive().
+
+If Car didn’t implement one of them, the compiler would throw an error because it broke the contract.
+
+---
+
+**Q17: Explain protocol inheritance with an example.**
+
+In Swift, protocols can inherit from one or more other protocols.
+
+This means a protocol can start with the requirements of another protocol and then add more requirements on top of it.
+
+**Example:**
+
+```swift
+protocol Vehicle {
+    var speed: Int { get set }
+    func drive()
+}
+```
+
+```swift
+protocol Electric {
+    var batteryLevel: Int { get set }
+    func charge()
+}
+```
+
+```swift
+// Car protocol inherits from Vehicle and Electric
+protocol ElectricCar: Vehicle, Electric {
+    func autoPilot()
+}
+```
+
+Here’s what’s happening:
+
+1. Vehicle defines basic vehicle properties and methods.
+2. Electric defines properties for electric features.
+3. ElectricCar inherits both, so any type conforming to ElectricCar must satisfy Vehicle + Electric + ElectricCar requirements.
+
 
 
 ## 15. Application Security in iOS Apps
