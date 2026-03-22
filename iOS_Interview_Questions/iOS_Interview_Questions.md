@@ -593,7 +593,7 @@ Use case: Simple iteration with cleaner syntax than for-in.
 </details>  
 
 
-### **Q.7 What are Extensions in Swift?**
+### **Q.8 What are Extensions in Swift?**
 <details>
 <summary>Answer</summary>   
 
@@ -639,7 +639,7 @@ Here, we added a new property **isPalindrome** to String.
 * Helps in protocol-oriented programming
 </details>
 
-### **Q.8 What are Protocols in Swift?**
+### **Q.9 What are Protocols in Swift?**
 <details>
 <summary>Answer</summary>   
 
@@ -680,7 +680,7 @@ myCar.drive()
 ```
 </details>
 
-### **Q.9 What are Generics in Swift and Why are They Useful?**
+### **Q.10 What are Generics in Swift and Why are They Useful?**
 <details>
 <summary>Answer</summary> 
 
@@ -756,7 +756,7 @@ func decodeJSON<T: Decodable>(_ data: Data, as type: T.Type) -> T? {
 </details>  
 
 
-### **Q.10 Difference between Value Type and Reference Type in Swift?**
+### **Q.11 Difference between Value Type and Reference Type in Swift?**
 <details>
 <summary>Answer</summary>  
 
@@ -854,7 +854,7 @@ Use when you want **shared state or inheritance**.
 Examples: UI elements, network managers.
 </details>
 
-### **Q.11 Difference between static and class variable in Swift**
+### **Q.12 Difference between static and class variable in Swift**
 <details>
 <summary>Answer</summary>  
 
@@ -942,7 +942,7 @@ print(Dog.species)      // Dog
 </details>  
 
 
-### **Q.12 Explain the use of defer keyword in Swift**
+### **Q.13 Explain the use of defer keyword in Swift**
 <details>
 <summary>Answer</summary>  
 
@@ -983,7 +983,7 @@ testDefer()
 </details>  
 
 
-### **Q.13 Explain Optional Binding (if let and guard let) in Swift.**  
+### **Q.14 Explain Optional Binding (if let and guard let) in Swift.**  
 <details>
 <summary>Answer</summary>  
 
@@ -1065,7 +1065,7 @@ greet(user: nil)       // Output: No user found
 ---
 </details>
 
-### **Q.14 What is a Tuple in Swift?**  
+### **Q.15 What is a Tuple in Swift?**  
 <details>
 <summary>Answer</summary>  
 
@@ -1095,7 +1095,7 @@ let student = ("Anand", 28, true)
 
 </details>
 
-### **Q.15 What is the difference between Any, AnyObject, and NSObject in Swift?**  
+### **Q.16 What is the difference between Any, AnyObject, and NSObject in Swift?**  
 <details>
 <summary>Answer</summary>  
 
