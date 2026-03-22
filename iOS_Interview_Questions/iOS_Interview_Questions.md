@@ -378,7 +378,7 @@ Imagine you are tracking a location:
 > **Pro-Tip:** Never compare two Floating-point numbers using a strict "equals" ($==$). Because of how they are stored in binary, $0.1 + 0.2$ might actually equal $0.30000000000000004$!  
 </details>    
 
-### **Q. Explain `String` vs `Character` in Swift?**
+### **Q.4 Explain `String` vs `Character` in Swift?**
 <details>
 <summary>Answer</summary>   
  
