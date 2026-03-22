@@ -680,7 +680,7 @@ myCar.drive()
 ```
 </details>
 
-### **Q: What are Generics in Swift and Why are They Useful?**
+### **Q.9 What are Generics in Swift and Why are They Useful?**
 <details>
 <summary>Answer</summary> 
 
@@ -756,7 +756,7 @@ func decodeJSON<T: Decodable>(_ data: Data, as type: T.Type) -> T? {
 </details>  
 
 
-### **Q.5 Difference between Value Type and Reference Type in Swift?**
+### **Q.10 Difference between Value Type and Reference Type in Swift?**
 <details>
 <summary>Answer</summary>  
 
