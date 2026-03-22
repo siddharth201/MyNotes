@@ -4565,12 +4565,13 @@ extension Greetable {
 
 struct Person: Greetable {}
 Person().greet()  // Prints "Hello!"
+```
 
-Even structs and enums can adopt these behaviors — something class-based OOP cannot do as flexibly.
+Even `structs` and `enums can` adopt these behaviors — something class-based OOP cannot do as flexibly.
 
 ---
 
-3. Encourages Composition Over Inheritance
+**3. Encourages Composition Over Inheritance**
 
 • Traditional OOP relies heavily on class hierarchies, which can get rigid and complex.
 
