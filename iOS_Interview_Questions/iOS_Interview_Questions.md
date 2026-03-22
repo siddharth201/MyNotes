@@ -4478,13 +4478,13 @@ Default behavior is provided via protocol extension.
 
 ```swift
 protocol Drivable {
-func drive()
+    func drive()
 }
 
 extension Drivable {
-func drive() {
-print("Driving...")
-}
+    func drive() {
+        print("Driving...")
+    }
 }
 
 struct Car: Drivable {}
@@ -4498,7 +4498,7 @@ Here, Car and Bike both conform to Drivable without sharing a common superclass.
 
 ---
 
-How is POP Different from OOP?
+**How is POP Different from OOP?**
 
 Feature | OOP (Object-Oriented) | POP (Protocol-Oriented)
 Main Focus | Objects and their hierarchy | Protocols and behavior
@@ -4509,7 +4509,7 @@ Default Implementation | Must override or subclass | Provided via protocol exten
 
 ---
 
-Advantages of POP
+**Advantages of POP**
 
 1. Promotes composition over inheritance → less tight coupling.
 
@@ -4523,7 +4523,7 @@ Advantages of POP
 
 ---
 
-When to Use POP
+**When to Use POP**
 
 • When you want shared behavior without creating a deep class hierarchy.
 
@@ -4538,8 +4538,9 @@ When to Use POP
 
 ### **Q2: Why Swift is called a Protocol-Oriented Programming (POP) language**
 <details>
-<summary>Answer</summary>
-1. Protocols Are First-Class Citizens
+<summary>Answer</summary>  
+
+**1. Protocols Are First-Class Citizens**
 
 • In Swift, protocols can define behavior, properties, and requirements.
 
@@ -4551,14 +4552,15 @@ When to Use POP
 
 • This means types get shared behavior automatically without needing inheritance.
 
+```swift
 protocol Greetable {
-func greet()
+    func greet()
 }
 
 extension Greetable {
-func greet() {
-print("Hello!")
-}
+    func greet() {
+        print("Hello!")
+    }
 }
 
 struct Person: Greetable {}
