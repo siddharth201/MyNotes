@@ -5175,8 +5175,8 @@ This gives the flexibility of multiple inheritance **without its problems**.
 </details>  
 
 ### **Q.11: What are property observers? How do willSet and didSet work?**
-
----
+<details>
+<summary>Answer</summary>
 
 Property observers let you run custom code whenever a property’s value changes.
 
@@ -5241,7 +5241,7 @@ counter.count = 10
   `newValue` and `oldValue`.
 
 * Useful for validation, logging, UI updates, etc.
-
+</details>
 
 
 ## 15. Application Security in iOS Apps
