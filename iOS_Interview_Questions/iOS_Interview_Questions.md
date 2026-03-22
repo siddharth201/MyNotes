@@ -5315,7 +5315,9 @@ dog.makeSound() // Woof!
 
 * **Protocols = true abstraction (preferred, safe, Swift-style)**
 * **fatalError approach = fallback for class inheritance scenarios**
-</details>
+</details>  
+
+
 
 
 ## 15. Application Security in iOS Apps
