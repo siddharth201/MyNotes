@@ -854,7 +854,7 @@ Use when you want **shared state or inheritance**.
 Examples: UI elements, network managers.
 </details>
 
-### **Q.6 Difference between static and class variable in Swift**
+### **Q.11 Difference between static and class variable in Swift**
 <details>
 <summary>Answer</summary>  
 
