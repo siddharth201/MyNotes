@@ -5317,6 +5317,7 @@ dog.makeSound() // Woof!
 * **fatalError approach = fallback for class inheritance scenarios**
 </details>  
 
+### **Q.13 Explain method dispatch in Swift. What's the difference between static and dynamic dispatch?**
 
 
 
