@@ -5567,6 +5567,8 @@ Protocols are super useful in Swift because they enable polymorphism, code reusa
 </details>  
 
 ### **Q15: Why is Swift called a Protocol-Oriented Programming (POP) Language?**
+<details>
+<summary>Answer</summary>  
 
 **1. Shift from Class Inheritance to Protocols**
 
@@ -5605,7 +5607,7 @@ Protocols are super useful in Swift because they enable polymorphism, code reusa
 
 ---
 
-**Q16: What does it mean for a type to "conform" to a protocol?**
+### **Q.16: What does it mean for a type to "conform" to a protocol?**
 
 In Swift, when we say a type conforms to a protocol, it means that the type (a class, struct, or enum) agrees to implement all the requirements (properties, methods, or initializers) defined by that protocol.
 
