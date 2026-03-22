@@ -526,7 +526,7 @@ print(greet("Anand"))   // "Hello, Anand"
 4. Higher-Order Functions like map, filter, reduce  
 </details>
 
-### **Q: What are Higher Order Functions in Swift?**
+### **Q. What are Higher Order Functions in Swift?**
 <details>
 <summary>Answer</summary>  
 
