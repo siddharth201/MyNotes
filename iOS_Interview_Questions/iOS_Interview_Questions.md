@@ -942,7 +942,7 @@ print(Dog.species)      // Dog
 </details>  
 
 
-### Q. Explain the use of defer keyword in Swift
+### **Q.12 Explain the use of defer keyword in Swift**
 <details>
 <summary>Answer</summary>  
 
@@ -983,7 +983,7 @@ testDefer()
 </details>  
 
 
-### Q. Explain Optional Binding (if let and guard let) in Swift.  
+### **Q.13 Explain Optional Binding (if let and guard let) in Swift.**  
 <details>
 <summary>Answer</summary>  
 
@@ -1065,7 +1065,7 @@ greet(user: nil)       // Output: No user found
 ---
 </details>
 
-### Q. What is a Tuple in Swift?  
+### **Q.14 What is a Tuple in Swift?**  
 <details>
 <summary>Answer</summary>  
 
