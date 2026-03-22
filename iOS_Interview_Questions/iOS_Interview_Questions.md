@@ -4872,7 +4872,37 @@ Swift has **five levels of access control**:
 * Not even visible to other extensions in the same file unless explicitly declared.
 
 **Use Case:** Variables or methods that are strictly internal to a type.
-</details>
+</details>  
+
+### **Q.6: How do you prevent a class from being inherited in Swift?**
+
+You can prevent a class from being inherited in Swift by marking it with the `final` keyword.
+
+**Example:**
+
+```swift
+final class Animal {
+    func sound() {
+        print("Some sound")
+    }
+}
+
+// This will cause a compiler error
+class Dog: Animal {
+    override func sound() {
+        print("Bark")
+    }
+}
+```
+
+**Why use final ?**
+
+1. **Stops Inheritance** – No other class can subclass it.
+
+2. **Prevents Overriding** – Methods inside a `final` class cannot be overridden.
+
+3. **Performance Optimization** – Since Swift knows the class won’t be subclassed, it can optimize method dispatch calls (direct dispatch instead of dynamic).
+
 
 ## 15. Application Security in iOS Apps
 
