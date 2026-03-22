@@ -4647,8 +4647,6 @@ Classes are **reference types**, so multiple variables can reference the same ob
 
 * Each object has **its own copy of properties**, but shares methods with other instances.
 
-Promotes **code reuse**.
-
 ---
 
 ### 3. Inheritance
@@ -4670,6 +4668,8 @@ let myCar = Car()
 myCar.start() // Inherited
 myCar.honk()  // Own method
 ```
+
+Promotes **code reuse**.
 
 ---
 
