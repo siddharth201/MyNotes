@@ -5321,7 +5321,210 @@ dog.makeSound() // Woof!
 <details>
 <summary>Answer</summary>  
 
+### What is Method Dispatch in Swift?
 
+**Method dispatch** = *How Swift decides which method implementation to call at runtime.*
+
+👉 In simple words:
+When you write:
+
+```swift
+obj.doSomething()
+```
+
+➡️ How does Swift know **which implementation** to execute?
+
+That decision is called **dispatch**.
+
+---
+
+### ⚡ Types of Method Dispatch in Swift
+
+Swift mainly uses **two types**:
+
+### 1. Static Dispatch (Compile-time)
+
+### 2. Dynamic Dispatch (Runtime)
+
+---
+
+### 🧠 1. Static Dispatch
+
+👉 Decision is made at **compile time**
+
+* Faster ✅
+* No runtime lookup
+* Direct function call
+
+### Example:
+
+```swift
+struct Car {
+    func drive() {
+        print("Driving")
+    }
+}
+
+let car = Car()
+car.drive()
+```
+
+### 🔍 What happens?
+
+* Compiler knows exact type (`Car`)
+* Calls method **directly**
+* No ambiguity
+
+---
+
+### 📌 Used in:
+
+* `struct`
+* `enum`
+* `final` classes
+* `private` methods
+* `static` / `final` methods
+
+---
+
+### ⚡ 2. Dynamic Dispatch
+
+👉 Decision is made at **runtime**
+
+* Slightly slower ❗
+* Uses **method lookup (vtable / Objective-C runtime)**
+
+---
+
+### Example:
+
+```swift
+class Animal {
+    func sound() {
+        print("Some sound")
+    }
+}
+
+class Dog: Animal {
+    override func sound() {
+        print("Bark")
+    }
+}
+
+let a: Animal = Dog()
+a.sound()
+```
+
+### 🔍 What happens?
+
+* Compile-time type = `Animal`
+* Runtime type = `Dog`
+* Swift decides at runtime → calls `Dog.sound()`
+
+---
+
+### 📌 Used in:
+
+* `class` methods (when overridden)
+* Protocol methods (with existentials)
+* `@objc dynamic` (Objective-C runtime)
+
+---
+
+### 🔥 Static vs Dynamic Dispatch (Key Differences)
+
+| Feature             | Static Dispatch       | Dynamic Dispatch   |
+| ------------------- | --------------------- | ------------------ |
+| Decision Time       | Compile-time          | Runtime            |
+| Speed               | Faster 🚀             | Slower ⚠️          |
+| Flexibility         | Less                  | More               |
+| Supports overriding | ❌                     | ✅                  |
+| Used in             | Structs, enums, final | Classes, protocols |
+
+---
+
+### 🧠 Important Interview Insight
+
+### 👉 Why does Swift prefer static dispatch?
+
+Because:
+
+* Better performance
+* Safer (no unexpected overrides)
+* Predictable behavior
+
+---
+
+### ⚡ Real-world Example (VERY IMPORTANT)
+
+```swift
+class Vehicle {
+    func start() {
+        print("Vehicle starting")
+    }
+}
+
+class Car: Vehicle {
+    override func start() {
+        print("Car starting")
+    }
+}
+```
+
+👉 This uses **dynamic dispatch** because:
+
+* Method can be overridden
+
+---
+
+### But:
+
+```swift
+final class Vehicle {
+    func start() {
+        print("Vehicle starting")
+    }
+}
+```
+
+👉 Now it uses **static dispatch**
+(because subclassing is not allowed)
+
+---
+
+### 🎯 Bonus: Protocol Dispatch Trick (Interview Trap)
+
+```swift
+protocol P {
+    func greet()
+}
+
+extension P {
+    func greet() {
+        print("Hello from protocol")
+    }
+}
+
+struct Person: P {}
+
+let p: P = Person()
+p.greet()
+```
+
+👉 This uses **static dispatch** (not dynamic!)
+Because it's from **protocol extension**
+
+⚠️ Many people get this wrong in interviews.
+
+---
+
+# ✅ Final Summary
+
+* **Static dispatch**
+  → Compile-time, fast, no overriding
+
+* **Dynamic dispatch**
+  → Runtime, flexible, supports polymorphism
 
 </details>
 
