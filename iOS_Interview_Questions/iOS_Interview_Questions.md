@@ -5049,8 +5049,8 @@ print(MathHelper.square(5)) // 25 (called on type, no object needed)
 </details>  
 
 ### Q.9: What are computed properties vs stored properties?
-
----
+<details>
+<summary>Answer</summary>
 
 ### Stored Properties
 
@@ -5094,7 +5094,8 @@ Here `area` is **calculated**, not stored in memory.
 ---
 
 ## Q10: How does Swift handle multiple inheritance?
-
+<details>
+<summary>Answer</summary>
 ### ❌ Swift does NOT support multiple inheritance for classes
 
 ---
