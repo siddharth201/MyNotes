@@ -4991,7 +4991,60 @@ class Circle: Shape {
 
 print(Circle().name) // Circle (subclass of Shape)
 ```
-</details>
+</details>  
+
+### Q.8: Explain the difference between instance methods and type methods in Swift
+
+Swift methods fall into **two categories**:
+
+---
+
+### 1. Instance Methods
+
+* Belong to a specific **instance (object)** of a class, struct, or enum.
+* Can access and modify the **properties** of that instance.
+* You need to **create an object** to call them.
+
+**Example:**
+
+```swift
+class Car {
+    var speed: Int = 0
+    
+    // Instance method
+    func accelerate() {
+        speed += 10
+        print("Current speed: \(speed)")
+    }
+}
+
+let car1 = Car()
+car1.accelerate() // Works because car1 is an instance
+```
+
+---
+
+### 2. Type Methods
+
+* Belong to the **type itself** (class, struct, or enum), not to a specific object.
+* Declared with the `static` keyword for structs/enums, and `class` keyword for classes (allows overriding).
+* Called directly on the **type**, not on instances.
+* Often used for **utility/helper functions** or shared behavior.
+
+**Example:**
+
+```swift
+struct MathHelper {
+    
+    // Type method
+    static func square(_ number: Int) -> Int {
+        return number * number
+    }
+}
+
+print(MathHelper.square(5)) // 25 (called on type, no object needed)
+```
+
 
 ## 15. Application Security in iOS Apps
 
