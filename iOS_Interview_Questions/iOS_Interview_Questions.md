@@ -314,7 +314,7 @@ This makes your code **safe** because you know the value won’t change accident
   * API keys
 </details>  
 
-### **Q. What are the common data types in Swift?**
+### **Q.2 What are the common data types in Swift?**
 <details>
 <summary>Answer</summary> 
 
