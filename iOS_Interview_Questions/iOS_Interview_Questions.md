@@ -5241,7 +5241,81 @@ counter.count = 10
   `newValue` and `oldValue`.
 
 * Useful for validation, logging, UI updates, etc.
-</details>
+</details>  
+
+### **Q.12: How do you implement abstract methods in Swift since there's no abstract keyword?**
+
+---
+
+Swift doesn’t have the `abstract` keyword like Java or C#.
+But we can still achieve **abstract method-like behavior** using:
+
+* **Protocols (Preferred Way)**
+* **Base class + `fatalError()`**
+
+---
+
+### 1. Using Protocols (Preferred Way)
+
+A protocol defines a requirement without providing implementation.
+Any class/struct that adopts it must implement the method.
+
+```swift id="k8d2m1"
+protocol Shape {
+    func area() -> Double  // abstract-like method
+}
+
+class Circle: Shape {
+    var radius: Double
+    
+    init(radius: Double) {
+        self.radius = radius
+    }
+    
+    func area() -> Double {
+        return 3.14 * radius * radius
+    }
+}
+
+let c = Circle(radius: 5)
+print(c.area()) // 78.5
+```
+
+Here, `Shape` works like an abstract contract.
+
+---
+
+### 2. Using Base Class with `fatalError()`
+
+You can define a method in a base class that forces subclasses to override it.
+
+```swift id="m3x9p2"
+class Animal {
+    func makeSound() {
+        fatalError("Subclasses must override this method")
+    }
+}
+
+class Dog: Animal {
+    override func makeSound() {
+        print("Woof!")
+    }
+}
+
+let dog = Dog()
+dog.makeSound() // Woof!
+```
+
+* `fatalError` ensures that if a subclass forgets to override,
+  the program will crash → making it act like an abstract method.
+
+---
+
+### Key Insight
+
+* **Protocols = true abstraction (preferred, safe, Swift-style)**
+* **fatalError approach = fallback for class inheritance scenarios**
+
 
 
 ## 15. Application Security in iOS Apps
