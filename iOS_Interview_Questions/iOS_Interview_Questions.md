@@ -4745,11 +4745,9 @@ struct Circle: Shape {
 ``` 
 </details>  
 
-### **Q4: What is polymorphism?**  
+### **Q4: What is polymorphism? How is it achieved in Swift?**  
 <details>
 <summary>Answer</summary>  
-
-### How is it achieved in Swift?
 
 Polymorphism means **“many forms”**. It allows one interface to be used for different data types or implementations. In Swift, polymorphism makes code flexible and reusable.
 
