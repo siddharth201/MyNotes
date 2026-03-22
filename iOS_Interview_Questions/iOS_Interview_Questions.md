@@ -5606,8 +5606,11 @@ Protocols are super useful in Swift because they enable polymorphism, code reusa
 * This solves the problem of multiple inheritance, where a class tries to inherit from two base classes.
 
 ---
+</details>
 
 ### **Q.16: What does it mean for a type to "conform" to a protocol?**
+<details>
+<summary>Answer</summary>  
 
 In Swift, when we say a type conforms to a protocol, it means that the type (a class, struct, or enum) agrees to implement all the requirements (properties, methods, or initializers) defined by that protocol.
 
@@ -5642,9 +5645,11 @@ Here:
 If Car didn’t implement one of them, the compiler would throw an error because it broke the contract.
 
 ---
+</details>
 
-**Q17: Explain protocol inheritance with an example.**
-
+### **Q17: Explain protocol inheritance with an example.**
+<details>
+<summary>Answer</summary>
 In Swift, protocols can inherit from one or more other protocols.
 
 This means a protocol can start with the requirements of another protocol and then add more requirements on top of it.
@@ -5677,7 +5682,7 @@ Here’s what’s happening:
 1. Vehicle defines basic vehicle properties and methods.
 2. Electric defines properties for electric features.
 3. ElectricCar inherits both, so any type conforming to ElectricCar must satisfy Vehicle + Electric + ElectricCar requirements.
-
+</details>
 
 
 ## 15. Application Security in iOS Apps
