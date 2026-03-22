@@ -4577,6 +4577,7 @@ Even `structs` and `enums can` adopt these behaviors — something class-based O
 
 • Swift’s POP encourages combining multiple protocols to compose functionality without deep inheritance trees.
 
+```swift
 protocol Drivable { func drive() }
 protocol Flyable { func fly() }
 
@@ -4584,10 +4585,11 @@ struct FlyingCar: Drivable, Flyable {
 func drive() { print("Driving") }
 func fly() { print("Flying") }
 }
+```
 
 ---
 
-4. Works Seamlessly with Value Types
+**4. Works Seamlessly with Value Types**
 
 • Swift is optimized for structs and enums, not just classes.
 
@@ -4595,7 +4597,7 @@ func fly() { print("Flying") }
 
 ---
 
-Key Points:
+**Key Points:**
 
 1. Protocols are central to defining behavior in Swift.
 
