@@ -5172,7 +5172,7 @@ myTesla.autoDrive()  // From SelfDriving
 
 Here, `Tesla` inherits from one class (`Vehicle`) but conforms to multiple protocols (`Electric`, `SelfDriving`).
 This gives the flexibility of multiple inheritance **without its problems**.
-
+</details>
 
 
 ## 15. Application Security in iOS Apps
