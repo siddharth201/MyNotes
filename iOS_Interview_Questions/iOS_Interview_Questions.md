@@ -4608,7 +4608,143 @@ func fly() { print("Flying") }
 3. Multiple protocol conformances allow flexible composition.
 
 4. Works naturally with value types, not just reference types.
+</details>  
+
+### **Q3: What are the main OOP concepts in Swift? Explain each.**
+<details>
+<summary>Answer</summary>  
+
+### 1. Classes
+
+* **Definition:** Blueprints for creating objects (instances) with properties and methods.
+
+**Example:**
+
+```swift
+class Person {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func greet() {
+        print("Hello, \(name)!")
+    }
+}
+
+let p = Person(name: "Anand")
+p.greet() // Hello, Anand!
+```
+
+Classes are **reference types**, so multiple variables can reference the same object.
+
+---
+
+### 2. Objects
+
+* **Definition:** Instances of a class.
+
+* Each object has **its own copy of properties**, but shares methods with other instances.
+
+Promotes **code reuse**.
+
+---
+
+### 3. Inheritance
+
+* **Definition:** Allows a class (subclass) to inherit properties and methods from another class (superclass).
+
+**Example:**
+
+```swift
+class Vehicle {
+    func start() { print("Vehicle started") }
+}
+
+class Car: Vehicle {
+    func honk() { print("Car honks") }
+}
+
+let myCar = Car()
+myCar.start() // Inherited
+myCar.honk()  // Own method
+```
+
+---
+
+### 4. Encapsulation
+
+* **Definition:** Restrict access to properties/methods to protect data.
+
+* Achieved using **access control keywords:** private, fileprivate, internal, public, open.
+
+**Example:**
+
+```swift
+class BankAccount {
+    private var balance: Double = 0
+    
+    func deposit(amount: Double) {
+        balance += amount
+    }
+    
+    func getBalance() -> Double {
+        return balance
+    }
+}
+```
+
+Users **cannot directly modify balance → safer code.**
+
+---
+
+### 5. Polymorphism
+
+* **Definition:** Objects can take many forms.
+
+* Swift supports **method overriding and protocol-based polymorphism.**
+
+**Example:**
+
+```swift
+class Animal {
+    func sound() { print("Some sound") }
+}
+
+class Dog: Animal {
+    override func sound() { print("Bark") }
+}
+
+let a: Animal = Dog()
+a.sound() // Bark (runtime decides which method to call)
+```
+
+---
+
+### 6. Abstraction
+
+* **Definition:** Hide implementation details and expose only essential functionality.
+
+* Achieved using **protocols or abstract base classes (via class + methods that must be overridden).**
+
+**Example with Protocol:**
+
+```swift
+protocol Shape {
+    func area() -> Double
+}
+
+struct Circle: Shape {
+    var radius: Double
+    
+    func area() -> Double {
+        return 3.14 * radius * radius
+    }
+}
+``` 
 </details>
+
 
 ## 15. Application Security in iOS Apps
 
