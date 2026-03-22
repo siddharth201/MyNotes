@@ -4743,7 +4743,83 @@ struct Circle: Shape {
     }
 }
 ``` 
+</details>  
+
+### **Q4: What is polymorphism?**  
+<details>
+<summary>Answer</summary>  
+
+### How is it achieved in Swift?
+
+Polymorphism means **“many forms”**. It allows one interface to be used for different data types or implementations. In Swift, polymorphism makes code flexible and reusable.
+
+There are mainly **two types of polymorphism** in Swift:
+
+---
+
+### 1. Compile-Time Polymorphism (Method Overloading)
+
+* Achieved by having **multiple functions with the same name but different parameters** (number or type).
+
+* Swift doesn’t support operator overloading in the same way as C++, but it does support **custom operator overloading**.
+
+**Example (Method Overloading):**
+
+```swift
+class MathOperations {
+    func add(a: Int, b: Int) -> Int {
+        return a + b
+    }
+
+    func add(a: Double, b: Double) -> Double {
+        return a + b
+    }
+}
+
+let obj = MathOperations()
+print(obj.add(a: 5, b: 3))       // 8 (Int version)
+print(obj.add(a: 2.5, b: 3.5))   // 6.0 (Double version)
+```
+
+---
+
+### 2. Runtime Polymorphism (Method Overriding)
+
+* Achieved using **inheritance + overriding**.
+
+* A subclass can provide its own implementation of a method defined in the superclass.
+
+* Uses the **override** keyword.
+
+**Example (Method Overriding):**
+
+```swift
+class Animal {
+    func sound() {
+        print("Some generic sound")
+    }
+}
+
+class Dog: Animal {
+    override func sound() {
+        print("Bark")
+    }
+}
+
+class Cat: Animal {
+    override func sound() {
+        print("Meow")
+    }
+}
+
+let animals: [Animal] = [Dog(), Cat()]
+for animal in animals {
+    animal.sound()  // Prints "Bark" then "Meow"
+}
+```  
+
 </details>
+
 
 
 ## 15. Application Security in iOS Apps
