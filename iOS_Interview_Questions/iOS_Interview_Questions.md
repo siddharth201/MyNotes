@@ -501,7 +501,7 @@ if let value = value {
 </details>  
 
 
-### **Q: What are closures in Swift?**
+### **Q.6 What are closures in Swift?**
 <details>
 <summary>Answer</summary> 
 
@@ -593,7 +593,7 @@ Use case: Simple iteration with cleaner syntax than for-in.
 </details>  
 
 
-### **Q: What are Extensions in Swift?**
+### **Q.7 What are Extensions in Swift?**
 <details>
 <summary>Answer</summary>   
 
@@ -639,7 +639,7 @@ Here, we added a new property **isPalindrome** to String.
 * Helps in protocol-oriented programming
 </details>
 
-### **Q: What are Protocols in Swift?**
+### **Q.8 What are Protocols in Swift?**
 <details>
 <summary>Answer</summary>   
 
