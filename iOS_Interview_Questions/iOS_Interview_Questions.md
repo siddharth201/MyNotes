@@ -5046,7 +5046,121 @@ struct MathHelper {
 
 print(MathHelper.square(5)) // 25 (called on type, no object needed)
 ```
-</details>
+</details>  
+
+### Q.9: What are computed properties vs stored properties?
+
+---
+
+### Stored Properties
+
+* These actually **store a value in memory**.
+* You declare them with `var` (mutable) or `let` (constant).
+* They belong to an instance of a class or struct.
+
+**Example:**
+
+```swift
+struct Circle {
+    var radius: Double  // stored property
+}
+```
+
+Here `radius` actually holds data.
+
+---
+
+### Computed Properties
+
+* These **don’t store values directly**.
+* Instead, they **calculate (compute) the value every time** you access them.
+* They must be declared with `var` (because their value can change depending on calculation).
+* Can have `get` (read) and optional `set` (write).
+
+**Example:**
+
+```swift
+struct Circle {
+    var radius: Double
+    
+    var area: Double {  // computed property
+        return 3.14 * radius * radius
+    }
+}
+```
+
+Here `area` is **calculated**, not stored in memory.
+
+---
+
+## Q10: How does Swift handle multiple inheritance?
+
+### ❌ Swift does NOT support multiple inheritance for classes
+
+---
+
+### ✅ Alternatives in Swift
+
+#### 1. Single Inheritance
+
+* A class can inherit from only **one superclass**.
+
+#### 2. Protocols
+
+* A class, struct, or enum can conform to **multiple protocols**, which lets you "inherit" behavior from many places.
+
+#### 3. Protocol Extensions
+
+* You can provide **default method implementations** in extensions, so conforming types automatically get them.
+
+#### 4. Composition over Inheritance
+
+* Swift encourages combining protocols to build complex functionality instead of relying on multiple superclasses.
+
+---
+
+### Example
+
+```swift
+// A base class
+class Vehicle {
+    func start() {
+        print("Vehicle started")
+    }
+}
+
+// Protocols
+protocol Electric {
+    func charge()
+}
+
+protocol SelfDriving {
+    func autoDrive()
+}
+
+// A class using single inheritance + multiple protocols
+class Tesla: Vehicle, Electric, SelfDriving {
+    func charge() {
+        print("Charging the battery...")
+    }
+    
+    func autoDrive() {
+        print("Car is driving autonomously...")
+    }
+}
+
+// Usage
+let myTesla = Tesla()
+myTesla.start()      // From Vehicle
+myTesla.charge()     // From Electric
+myTesla.autoDrive()  // From SelfDriving
+```
+
+---
+
+Here, `Tesla` inherits from one class (`Vehicle`) but conforms to multiple protocols (`Electric`, `SelfDriving`).
+This gives the flexibility of multiple inheritance **without its problems**.
+
 
 
 ## 15. Application Security in iOS Apps
