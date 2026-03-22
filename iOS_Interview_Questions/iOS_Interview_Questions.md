@@ -4904,7 +4904,92 @@ class Dog: Animal {
 2. **Prevents Overriding** – Methods inside a `final` class cannot be overridden.
 
 3. **Performance Optimization** – Since Swift knows the class won’t be subclassed, it can optimize method dispatch calls (direct dispatch instead of dynamic).
-</details> 
+</details>   
+
+### Q.7: What is the purpose of super keyword? When do you use it?
+
+The `super` keyword in Swift is used to access methods, properties, and initializers of a parent (super) class from within a subclass.
+It helps you reuse and extend functionality from the base class instead of rewriting everything.
+
+---
+
+### When do you use super ?
+
+#### 1. Calling the superclass initializer
+
+When a subclass needs to call its parent’s designated initializer before or after adding its own setup.
+
+```swift
+class Animal {
+    init() {
+        print("Animal initialized")
+    }
+}
+
+class Dog: Animal {
+    override init() {
+        super.init() // calls Animal's initializer
+        print("Dog initialized")
+    }
+}
+
+let dog = Dog()
+```
+
+```swift
+// Output:
+// Animal initialized
+// Dog initialized
+```
+
+---
+
+#### 2. Overriding methods but still using parent behavior
+
+If you override a method but still want to execute the parent’s logic before/after your custom logic.
+
+```swift
+class Vehicle {
+    func start() {
+        print("Vehicle starting...")
+    }
+}
+
+class Car: Vehicle {
+    override func start() {
+        super.start() // Calls Vehicle's start()
+        print("Car is ready to drive!")
+    }
+}
+
+let car = Car()
+car.start()
+
+// Output:
+// Vehicle starting...
+// Car is ready to drive!
+```
+
+---
+
+#### 3. Accessing overridden properties
+
+You can use `super` to get or set a property from the parent class when you override it.
+
+```swift
+class Shape {
+    var name: String { "Shape" }
+}
+
+class Circle: Shape {
+    override var name: String {
+        "Circle (subclass of \(super.name))"
+    }
+}
+
+print(Circle().name) // Circle (subclass of Shape)
+```
+
 
 ## 15. Application Security in iOS Apps
 
