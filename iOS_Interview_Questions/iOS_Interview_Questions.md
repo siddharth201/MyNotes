@@ -5090,8 +5090,7 @@ struct Circle {
 ```
 
 Here `area` is **calculated**, not stored in memory.
-
----
+</details>
 
 ## Q10: How does Swift handle multiple inheritance?
 <details>
