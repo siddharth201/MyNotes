@@ -4819,6 +4819,8 @@ for animal in animals {
 </details>  
 
 ### **Q.5: What are the different access control levels in Swift? Explain each.**
+<details>
+<summary>Answer</summary>  
 
 In Swift, access control defines how and where your code entities (classes, structs, enums, properties, methods, etc.) can be accessed.
 
@@ -4870,9 +4872,7 @@ Swift has **five levels of access control**:
 * Not even visible to other extensions in the same file unless explicitly declared.
 
 **Use Case:** Variables or methods that are strictly internal to a type.
-
-
-
+</details>
 
 ## 15. Application Security in iOS Apps
 
