@@ -4500,12 +4500,14 @@ Here, Car and Bike both conform to Drivable without sharing a common superclass.
 
 **How is POP Different from OOP?**
 
-Feature | OOP (Object-Oriented) | POP (Protocol-Oriented)
-Main Focus | Objects and their hierarchy | Protocols and behavior
-Code Reuse | Inheritance (classes) | Protocol extensions & composition
-Flexibility | Less flexible with deep inheritance | Highly flexible, can mix behaviors easily
-Type System | Class-based reference types | Works with structs, enums, and classes
-Default Implementation | Must override or subclass | Provided via protocol extensions
+| Feature                    | OOP (Object-Oriented)               | POP (Protocol-Oriented)                   |
+| -------------------------- | ----------------------------------- | ----------------------------------------- |
+| **Main Focus**             | Objects and their hierarchy         | Protocols and behavior                    |
+| **Code Reuse**             | Inheritance (classes)               | Protocol extensions & composition         |
+| **Flexibility**            | Less flexible with deep inheritance | Highly flexible, can mix behaviors easily |
+| **Type System**            | Class-based reference types         | Works with structs, enums, and classes    |
+| **Default Implementation** | Must override or subclass           | Provided via protocol extensions          |
+
 
 ---
 
