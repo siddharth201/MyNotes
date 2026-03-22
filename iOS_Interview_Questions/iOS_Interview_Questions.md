@@ -5101,7 +5101,7 @@ Swift **does not support multiple inheritance** for classes
 
 Instead, Swift provides **protocols** as an alternative to achieve similar behavior.
 
----
+Here's how it works'
 
 ### 1. Why no multiple inheritance?
 
