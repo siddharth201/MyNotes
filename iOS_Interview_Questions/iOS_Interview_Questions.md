@@ -4994,6 +4994,8 @@ print(Circle().name) // Circle (subclass of Shape)
 </details>  
 
 ### Q.8: Explain the difference between instance methods and type methods in Swift
+<details>
+<summary>Answer</summary>  
 
 Swift methods fall into **two categories**:
 
@@ -5044,6 +5046,7 @@ struct MathHelper {
 
 print(MathHelper.square(5)) // 25 (called on type, no object needed)
 ```
+</details>
 
 
 ## 15. Application Security in iOS Apps
