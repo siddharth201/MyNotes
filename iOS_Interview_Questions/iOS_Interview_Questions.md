@@ -4906,7 +4906,7 @@ class Dog: Animal {
 3. **Performance Optimization** – Since Swift knows the class won’t be subclassed, it can optimize method dispatch calls (direct dispatch instead of dynamic).
 </details>   
 
-### Q.7: What is the purpose of super keyword? When do you use it?
+### **Q.7: What is the purpose of super keyword? When do you use it?**
 <details>
 <summary>Answer</summary>  
 
@@ -4993,7 +4993,7 @@ print(Circle().name) // Circle (subclass of Shape)
 ```
 </details>  
 
-### Q.8: Explain the difference between instance methods and type methods in Swift
+### **Q.8: Explain the difference between instance methods and type methods in Swift**
 <details>
 <summary>Answer</summary>  
 
@@ -5048,7 +5048,7 @@ print(MathHelper.square(5)) // 25 (called on type, no object needed)
 ```
 </details>  
 
-### Q.9: What are computed properties vs stored properties?
+### **Q.9: What are computed properties vs stored properties?**
 <details>
 <summary>Answer</summary>
 
@@ -5092,7 +5092,7 @@ struct Circle {
 Here `area` is **calculated**, not stored in memory.
 </details>
 
-## Q10: How does Swift handle multiple inheritance?
+### **Q10: How does Swift handle multiple inheritance?**
 <details>
 <summary>Answer</summary>
 
@@ -5172,7 +5172,76 @@ myTesla.autoDrive()  // From SelfDriving
 
 Here, `Tesla` inherits from one class (`Vehicle`) but conforms to multiple protocols (`Electric`, `SelfDriving`).
 This gives the flexibility of multiple inheritance **without its problems**.
-</details>
+</details>  
+
+### **Q.11: What are property observers? How do willSet and didSet work?**
+
+---
+
+Property observers let you run custom code whenever a property’s value changes.
+
+They work with **stored properties** (except lazy ones) and not directly with computed properties.
+
+---
+
+### Swift gives us two observers:
+
+#### 1. `willSet`
+
+→ called **just before** the value changes.
+
+* You get access to the **new value** (default name = `newValue`).
+
+---
+
+#### 2. `didSet`
+
+→ called **immediately after** the value changes.
+
+* You get access to the **old value** (default name = `oldValue`).
+
+---
+
+### Example:
+
+```swift id="p7n3k1"
+class Counter {
+    var count: Int = 0 {
+        willSet(newCount) {
+            print("About to change count to \(newCount)")
+        }
+        
+        didSet(oldCount) {
+            print("Changed count from \(oldCount) to \(count)")
+        }
+    }
+}
+
+let counter = Counter()
+counter.count = 5
+counter.count = 10
+
+// Output
+// About to change count to 5
+// Changed count from 0 to 5
+// About to change count to 10
+// Changed count from 5 to 10
+```
+
+---
+
+### Key Points
+
+* `willSet` = before the value is set.
+* `didSet` = right after the value is set.
+
+---
+
+* If you don’t provide a custom name (`newCount`, `oldCount`), Swift gives defaults:
+  `newValue` and `oldValue`.
+
+* Useful for validation, logging, UI updates, etc.
+
 
 
 ## 15. Application Security in iOS Apps
