@@ -5526,7 +5526,43 @@ Because it's from **protocol extension**
 * **Dynamic dispatch**
   → Runtime, flexible, supports polymorphism
 
-</details>
+</details>  
+
+###**Q.14: How do you define a protocol in Swift?**
+
+A protocol is like a contract that defines a set of methods, properties, or requirements that a class, struct, or enum must follow if it adopts that protocol.
+
+Think of it as an interface in other languages like Java or C#.
+
+**Syntax:**
+
+```swift
+protocol Vehicle {
+    var numberOfWheels: Int { get }
+    func start()
+}
+```
+
+* numberOfWheels is a read-only property requirement.
+* start() is a method requirement.
+
+**Example:**
+
+```swift
+struct Car: Vehicle {
+    var numberOfWheels: Int = 4
+
+    func start() {
+        print("Car started with \(numberOfWheels) wheels.")
+    }
+}
+
+let myCar = Car()
+myCar.start()
+```
+
+Protocols are super useful in Swift because they enable polymorphism, code reusability, and protocol-oriented programming (which Swift loves).
+
 
 
 ## 15. Application Security in iOS Apps
