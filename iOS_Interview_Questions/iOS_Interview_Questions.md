@@ -5318,7 +5318,12 @@ dog.makeSound() // Woof!
 </details>  
 
 ### **Q.13 Explain method dispatch in Swift. What's the difference between static and dynamic dispatch?**
+<details>
+<summary>Answer</summary>  
 
+
+
+</details>
 
 
 ## 15. Application Security in iOS Apps
