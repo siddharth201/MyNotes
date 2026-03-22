@@ -4907,6 +4907,8 @@ class Dog: Animal {
 </details>   
 
 ### Q.7: What is the purpose of super keyword? When do you use it?
+<details>
+<summary>Answer</summary>  
 
 The `super` keyword in Swift is used to access methods, properties, and initializers of a parent (super) class from within a subclass.
 It helps you reuse and extend functionality from the base class instead of rewriting everything.
@@ -4989,7 +4991,7 @@ class Circle: Shape {
 
 print(Circle().name) // Circle (subclass of Shape)
 ```
-
+</details>
 
 ## 15. Application Security in iOS Apps
 
