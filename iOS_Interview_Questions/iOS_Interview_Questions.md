@@ -5095,9 +5095,21 @@ Here `area` is **calculated**, not stored in memory.
 ## Q10: How does Swift handle multiple inheritance?
 <details>
 <summary>Answer</summary>
-### ❌ Swift does NOT support multiple inheritance for classes
+
+Swift **does not support multiple inheritance** for classes
+(meaning a class cannot inherit from more than one superclass).
+
+Instead, Swift provides **protocols** as an alternative to achieve similar behavior.
 
 ---
+
+### 1. Why no multiple inheritance?
+
+* Multiple inheritance can cause conflicts like the **diamond problem**
+  (ambiguity when two parent classes define the same method/property).
+
+* To keep things simple and safe, Swift avoids it.
+
 
 ### ✅ Alternatives in Swift
 
