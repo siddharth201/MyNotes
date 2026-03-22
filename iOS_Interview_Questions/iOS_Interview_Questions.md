@@ -5244,8 +5244,8 @@ counter.count = 10
 </details>  
 
 ### **Q.12: How do you implement abstract methods in Swift since there's no abstract keyword?**
-
----
+<details>
+<summary>Answer</summary>
 
 Swift doesn’t have the `abstract` keyword like Java or C#.
 But we can still achieve **abstract method-like behavior** using:
@@ -5315,7 +5315,7 @@ dog.makeSound() // Woof!
 
 * **Protocols = true abstraction (preferred, safe, Swift-style)**
 * **fatalError approach = fallback for class inheritance scenarios**
-
+</details>
 
 
 ## 15. Application Security in iOS Apps
