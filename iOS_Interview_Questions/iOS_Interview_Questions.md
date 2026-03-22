@@ -4492,6 +4492,7 @@ struct Bike: Drivable {}
 
 let car = Car()
 car.drive()  // Prints "Driving..."
+```
 
 Here, Car and Bike both conform to Drivable without sharing a common superclass.
 
