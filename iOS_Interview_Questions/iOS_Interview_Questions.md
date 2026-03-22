@@ -4460,7 +4460,147 @@ Here we created a custom type Matrix and accessed elements like matrix[1,0] usin
 • Commonly used in collections, dictionaries, strings, or custom data structures.
 </details>    
 
+## **4. Object-Oriented & Protocol-Oriented Programming**
 
+### **Q1: Explain Protocol-Oriented Programming (POP). How is it different from OOP?**
+<details>
+<summary>Answer</summary>   
+
+**Protocol-Oriented Programming (POP)?**
+
+• POP is a programming paradigm introduced in Swift where protocols are the primary tool for defining interfaces and behavior.
+
+• Focuses on what types can do, not what they are.
+
+• Encourages composition over inheritance, making code more flexible and reusable.
+
+Default behavior is provided via protocol extension.
+
+```swift
+protocol Drivable {
+func drive()
+}
+
+extension Drivable {
+func drive() {
+print("Driving...")
+}
+}
+
+struct Car: Drivable {}
+struct Bike: Drivable {}
+
+let car = Car()
+car.drive()  // Prints "Driving..."
+
+Here, Car and Bike both conform to Drivable without sharing a common superclass.
+
+---
+
+How is POP Different from OOP?
+
+Feature | OOP (Object-Oriented) | POP (Protocol-Oriented)
+Main Focus | Objects and their hierarchy | Protocols and behavior
+Code Reuse | Inheritance (classes) | Protocol extensions & composition
+Flexibility | Less flexible with deep inheritance | Highly flexible, can mix behaviors easily
+Type System | Class-based reference types | Works with structs, enums, and classes
+Default Implementation | Must override or subclass | Provided via protocol extensions
+
+---
+
+Advantages of POP
+
+1. Promotes composition over inheritance → less tight coupling.
+
+2. Works with value types (structs & enums), enabling safer and faster code.
+
+3. Allows default implementations in protocol extensions.
+
+4. Improves testability by decoupling behavior from concrete types.
+
+5. Reduces problems like the diamond inheritance problem in OOP.
+
+---
+
+When to Use POP
+
+• When you want shared behavior without creating a deep class hierarchy.
+
+• For value types (structs/enums).
+
+• When you want to compose multiple behaviors in a type safely.
+
+• This makes protocols the central way to define interfaces and shared behavior.
+
+</details>
+
+
+### **Q2: Why Swift is called a Protocol-Oriented Programming (POP) language**
+<details>
+<summary>Answer</summary>
+1. Protocols Are First-Class Citizens
+
+• In Swift, protocols can define behavior, properties, and requirements.
+
+• Types (structs, classes, enums) can conform to multiple protocols, enabling flexible composition.
+
+2. Default Implementations via Protocol Extensions
+
+• Swift allows protocol extensions to provide default implementations.
+
+• This means types get shared behavior automatically without needing inheritance.
+
+protocol Greetable {
+func greet()
+}
+
+extension Greetable {
+func greet() {
+print("Hello!")
+}
+}
+
+struct Person: Greetable {}
+Person().greet()  // Prints "Hello!"
+
+Even structs and enums can adopt these behaviors — something class-based OOP cannot do as flexibly.
+
+---
+
+3. Encourages Composition Over Inheritance
+
+• Traditional OOP relies heavily on class hierarchies, which can get rigid and complex.
+
+• Swift’s POP encourages combining multiple protocols to compose functionality without deep inheritance trees.
+
+protocol Drivable { func drive() }
+protocol Flyable { func fly() }
+
+struct FlyingCar: Drivable, Flyable {
+func drive() { print("Driving") }
+func fly() { print("Flying") }
+}
+
+---
+
+4. Works Seamlessly with Value Types
+
+• Swift is optimized for structs and enums, not just classes.
+
+• POP allows structs and enums to adopt protocols and get shared behavior, making code safer and more efficient.
+
+---
+
+Key Points:
+
+1. Protocols are central to defining behavior in Swift.
+
+2. Protocol extensions let you reuse code without inheritance.
+
+3. Multiple protocol conformances allow flexible composition.
+
+4. Works naturally with value types, not just reference types.
+</details>
 
 ## 15. Application Security in iOS Apps
 
