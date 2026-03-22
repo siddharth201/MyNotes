@@ -4538,7 +4538,7 @@ Here, Car and Bike both conform to Drivable without sharing a common superclass.
 </details>
 
 
-### **Q2: Why Swift is called a Protocol-Oriented Programming (POP) language**
+### **Q.2: Why Swift is called a Protocol-Oriented Programming (POP) language**
 <details>
 <summary>Answer</summary>  
 
@@ -4610,7 +4610,7 @@ func fly() { print("Flying") }
 4. Works naturally with value types, not just reference types.
 </details>  
 
-### **Q3: What are the main OOP concepts in Swift? Explain each.**
+### **Q.3: What are the main OOP concepts in Swift? Explain each.**
 <details>
 <summary>Answer</summary>  
 
@@ -4745,7 +4745,7 @@ struct Circle: Shape {
 ``` 
 </details>  
 
-### **Q4: What is polymorphism? How is it achieved in Swift?**  
+### **Q.4: What is polymorphism? How is it achieved in Swift?**  
 <details>
 <summary>Answer</summary>  
 
@@ -4816,7 +4816,61 @@ for animal in animals {
 }
 ```  
 
-</details>
+</details>  
+
+### **Q.5: What are the different access control levels in Swift? Explain each.**
+
+In Swift, access control defines how and where your code entities (classes, structs, enums, properties, methods, etc.) can be accessed.
+
+Swift has **five levels of access control**:
+
+---
+
+### 1. open
+
+* **Most permissive** access level.
+* Can be accessed **inside the module and outside the module** (e.g., in frameworks or apps).
+* Classes marked `open` can also be **subclassed and overridden outside** their defining module.
+
+**Use Case:** Frameworks (e.g., UIKit classes like `UIViewController` are open).
+
+---
+
+### 2. public
+
+* Similar to `open` but **less permissive**.
+* Can be accessed **inside and outside the module**, but **cannot be subclassed or overridden outside** the module.
+
+**Use Case:** Exposing API methods in a framework without allowing users to override them.
+
+---
+
+### 3. internal (default)
+
+* Can be accessed **anywhere inside the same module**, but **not outside the module**.
+* Most common access level in app development.
+
+**Use Case:** Internal business logic of an app that doesn’t need to be exposed publicly.
+
+---
+
+### 4. fileprivate
+
+* Restricts access to the **same file only**.
+* Useful when you want to hide implementation details but still share them within a single file.
+
+**Use Case:** Helper functions in the same file that shouldn’t be used elsewhere.
+
+---
+
+### 5. private
+
+* **Most restrictive** access level.
+* Can be accessed only **within the enclosing scope** (class, struct, or extension).
+* Not even visible to other extensions in the same file unless explicitly declared.
+
+**Use Case:** Variables or methods that are strictly internal to a type.
+
 
 
 
