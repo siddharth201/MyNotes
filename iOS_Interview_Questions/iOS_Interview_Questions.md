@@ -5529,6 +5529,8 @@ Because it's from **protocol extension**
 </details>  
 
 ###**Q.14: How do you define a protocol in Swift?**
+<details>
+<summary>Answer</summary>  
 
 A protocol is like a contract that defines a set of methods, properties, or requirements that a class, struct, or enum must follow if it adopts that protocol.
 
@@ -5562,7 +5564,7 @@ myCar.start()
 ```
 
 Protocols are super useful in Swift because they enable polymorphism, code reusability, and protocol-oriented programming (which Swift loves).
-
+</details>
 
 
 ## 15. Application Security in iOS Apps
