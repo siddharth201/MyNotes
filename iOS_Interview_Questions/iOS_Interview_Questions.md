@@ -4875,6 +4875,8 @@ Swift has **five levels of access control**:
 </details>  
 
 ### **Q.6: How do you prevent a class from being inherited in Swift?**
+<details>
+<summary>Answer</summary>  
 
 You can prevent a class from being inherited in Swift by marking it with the `final` keyword.
 
@@ -4902,7 +4904,7 @@ class Dog: Animal {
 2. **Prevents Overriding** – Methods inside a `final` class cannot be overridden.
 
 3. **Performance Optimization** – Since Swift knows the class won’t be subclassed, it can optimize method dispatch calls (direct dispatch instead of dynamic).
-
+</details> 
 
 ## 15. Application Security in iOS Apps
 
