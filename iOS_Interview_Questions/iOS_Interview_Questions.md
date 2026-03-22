@@ -4876,7 +4876,7 @@ Swift has **five levels of access control**:
 
 ### **Q.6: How do you prevent a class from being inherited in Swift?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer</summary>    
 
 You can prevent a class from being inherited in Swift by marking it with the `final` keyword.
 
