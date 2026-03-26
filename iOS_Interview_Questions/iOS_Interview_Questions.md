@@ -6640,7 +6640,67 @@ Here, **T: Shape is a generic constraint.**
 • This means you can use optimizations like **static dispatch (faster than protocol type which uses dynamic dispatch).**
 
 ---
-</details>
+</details>  
+
+### **Q20: What are phantom protocols? Provide a use case.**
+<details>
+<summary>Answer</summary>  
+
+• A **phantom protocol** is a protocol that has **no requirements** (no methods, no properties).
+
+• It exists only as a **marker or tag** to add extra type information at compile time.
+
+• The compiler uses it to enforce **constraints**, even though the protocol itself does nothing.
+
+Think of it as a "label" you attach to a type so you can distinguish between otherwise similar types.
+
+---
+
+### Example:
+
+```swift
+// Define phantom protocols
+protocol AdminRole {}
+protocol UserRole {}
+
+// Base type
+struct Account<Role> {
+    let id: Int
+    let name: String
+}
+
+// Add phantom roles using generics + marker protocols
+typealias AdminAccount = Account<AdminRole>
+typealias UserAccount = Account<UserRole>
+
+// Usage
+let admin = AdminAccount(id: 1, name: "Alice")
+let user = UserAccount(id: 2, name: "Bob")
+
+// Function restricted to Admin only
+func deleteUser(account: AdminAccount) {
+    print("Deleting user by \(account.name)")
+}
+
+deleteUser(account: admin)  // Works
+// deleteUser(account: user) // Compile-time error
+```
+
+---
+
+## Why It’s Useful
+
+1. **Compile-time safety:** You can prevent mixing up similar types.
+
+2. **Express intent:** Makes your code self-documenting (e.g., **AdminAccount vs UserAccount**).
+
+3. **Zero runtime overhead:** Since phantom protocols add no methods or properties, they don’t impact performance.
+
+---
+</details>  
+
+## Q21: What is the Self requirement in
+
 
 ## 15. Application Security in iOS Apps
 
