@@ -7034,6 +7034,8 @@ Both **Dog and Fish can-do swimming**, even though they are not related in the c
 </details>  
 
 ### **Q26: How do you achieve multiple inheritance-like behavior using protocols?**
+<details>
+<summary>Answer</summary>  
 
 Swift **does not allow multiple class inheritance** (a class can inherit from only one base class).
 
@@ -7091,8 +7093,11 @@ Here, **FlyingCar** has both **driving** and **flying** behavior without needing
 • **Composable**: add/remove behaviors easily.
 
 ---
+<details>  
 
 ## Q27: In what scenarios would you prefer composition over inheritance?
+<details>
+<summary>Answer</summary>  
 
 ### Inheritance
 
@@ -7158,7 +7163,7 @@ Instead of inheriting from all of them, it just uses them as parts.
 **FlyBehavior component or conform to a Flyable protocol.**
 
 ---
-
+</details>
 
 ## 15. Application Security in iOS Apps
 
