@@ -5323,7 +5323,19 @@ dog.makeSound() // Woof!
 
 Method dispatch is about **how Swift decides which method to run when you call it.**
 
-It’s essentially the "lookup mechanism" for functions and methods.
+It’s essentially the "lookup mechanism" for functions and methods. 
+
+---  
+
+### Why it matters
+
+It affects:
+
+• Performance 
+• Polymorphism 
+• Behavior in protocols & inheritance  
+
+--- 
 
 Swift supports multiple dispatch mechanisms for performance and flexibility:
 
