@@ -5350,12 +5350,7 @@ Swift supports multiple dispatch mechanisms for performance and flexibility:
 ○ **final** methods/classes (can’t be overridden).  
 ○ **static** methods.  
 ○ **private** methods.  
-○ Functions in value types (structs, enums).  
-
-○ ** struct
-○ ** enum
-○ ** final methods/classes
-○ ** private methods  
+○ Functions in value types (structs, enums).   
 
 **Example:**
 
