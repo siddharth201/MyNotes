@@ -6771,7 +6771,74 @@ In this context, `Self` prevents you from trying to compare a `String` to an `In
 Would you like to see how `Self` works differently when used in a class hierarchy versus a struct?
 </details>  
 
+### **Q22: Swift doesn't have abstract classes. How do protocols serve a similar purpose?**
+<details>
+<summary>Answer</summary>  
 
+Swift doesn’t have **abstract classes** like Java or C#. Instead, **protocols + protocol extensions** cover almost the same ground.
+
+---
+
+### Abstract class role:
+
+• Defines a blueprint (methods/properties) without full implementation.
+• Subclasses must provide implementations.
+
+---
+
+### Protocols in Swift:
+
+• Work as **blueprints** (just like abstract classes).
+• Define methods/properties that conforming types must implement.
+• With **protocol extensions**, you can even give **default implementations**, similar to abstract class methods with partial code.
+
+---
+
+### Example: Abstract class–like behavior with Protocols
+
+```swift
+protocol Animal {
+    var name: String { get }
+    func makeSound()
+}
+
+extension Animal {
+    func describe() {
+        print("This is an animal named \(name).")
+    }
+}
+
+struct Dog: Animal {
+    let name: String
+    func makeSound() {
+        print("Woof!")
+    }
+}
+
+struct Cat: Animal {
+    let name: String
+    func makeSound() {
+        print("Meow!")
+    }
+}
+
+let dog = Dog(name: "Buddy")
+dog.describe()  // Default implementation from protocol extension
+dog.makeSound() // Specific implementation
+```
+
+---
+
+### Here:
+
+• **Animal protocol = abstract class blueprint.**
+• **describe() in extension = default (abstract-like) implementation.**
+• **Dog and Cat = concrete subclasses.**
+
+---
+
+So, protocols + extensions **replace abstract classes in Swift** by giving both **contract + optional shared logic**.
+</details>
 
 ## 15. Application Security in iOS Apps
 
