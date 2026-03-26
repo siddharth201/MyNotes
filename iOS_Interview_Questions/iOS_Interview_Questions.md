@@ -5962,7 +5962,59 @@ Here’s what’s happening:
 1. Vehicle defines basic vehicle properties and methods.
 2. Electric defines properties for electric features.
 3. ElectricCar inherits both, so any type conforming to ElectricCar must satisfy Vehicle + Electric + ElectricCar requirements.
+</details>  
+
+
+### **Q18: What is type erasure in Swift protocols? Why is it needed?**
+<details>
+<summary>Answer</summary>  
+
+In Swift, **protocols with associated types or Self requirements** can’t usually be used as concrete types.
+
+**For example:**
+
+```swift
+protocol DataSource {
+    associatedtype Data
+    func getData() -> Data
+}
+```
+
+If you try:
+
+```swift
+var source: DataSource // Error: Protocol 'DataSource' can only be used as a generic constraint
+```
+
+Swift complains, because it doesn’t know the actual type for **Data**.
+
+---
+
+Type erasure is a technique where you “erase” the specific type information behind a protocol and wrap it into a concrete, generic-independent type.
+
+---
+
+## Why is it Needed?
+
+### 1. Work with heterogeneous collections
+
+You might want to store different conforming types in the same array or variable. Without type erasure, you can’t do that if protocols have associated types.
+
+---
+
+### 2. Hide implementation details
+
+Type erasure lets you expose only the behavior (the protocol) while keeping the underlying type hidden.
+
+---
+
+### 3. Simplify APIs
+
+Instead of forcing users to deal with generics and associated types, you can give them a nice, type-erased wrapper.
+
+---
 </details>
+
 
 
 ## 15. Application Security in iOS Apps
