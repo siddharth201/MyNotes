@@ -7158,6 +7158,93 @@ Instead of inheriting from all of them, it just uses them as parts.
 
 • But if you want Bird to also Fly, instead of inheriting from FlyingAnimal, just add a **FlyBehavior component** or conform to a **Flyable protocol**.
 ---
+</details>  
+
+### **Q28: How does Swift resolve conflicts when a type conforms to multiple protocols with same method signatures?**
+<details>
+<summary>Answer</summary>  
+
+If a type conforms to multiple protocols, and **both protocols define methods with the same signature**, Swift doesn’t allow ambiguous behavior. Instead, it forces you to **provide your own implementation** to resolve the conflict.
+
+---
+
+## How Swift Resolves It
+
+### 1. Explicit Implementation in the Type
+
+• If two protocols declare the same method, you must implement it in the conforming type.
+
+• That implementation satisfies both protocol requirements.
+
+```swift
+protocol A {
+    func greet()
+}
+
+protocol B {
+    func greet()
+}
+
+struct Person: A, B {
+    func greet() {
+        print("Hello from Person")
+    }
+}
+
+let p = Person()
+p.greet() // "Hello from Person"
+```
+
+This works because Person provides a single, unambiguous implementation.
+
+---
+
+### 2. Default Implementations via Protocol Extensions
+
+• If both protocols provide default implementations, Swift won’t guess which one to use.
+
+• You must override in your type to remove ambiguity.
+
+```swift
+protocol A {
+    func greet()
+}
+
+extension A {
+    func greet() { print("Hello from A") }
+}
+
+protocol B {
+    func greet()
+}
+
+extension B {
+    func greet() { print("Hello from B") }
+}
+
+struct Person: A, B {
+    // Must override to resolve conflict
+    func greet() {
+        print("Hello from Person")
+    }
+}
+
+let p = Person()
+p.greet() // "Hello from Person"
+```
+
+---
+
+### 3. Disambiguation at Call Site
+
+• If you want to explicitly call one protocol’s implementation, you can cast the object to that protocol.
+
+```swift
+let person = Person()
+
+(person as A).greet() // Calls A's implementation
+(person as B).greet() // Calls B's implementation
+```
 </details>
 
 ## 15. Application Security in iOS Apps
