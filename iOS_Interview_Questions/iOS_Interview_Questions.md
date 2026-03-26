@@ -7093,7 +7093,7 @@ Here, **FlyingCar** has both **driving** and **flying** behavior without needing
 • **Composable**: add/remove behaviors easily.
 
 ---
-<details>  
+</details>  
 
 ## Q27: In what scenarios would you prefer composition over inheritance?
 <details>
