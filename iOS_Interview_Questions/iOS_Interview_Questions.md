@@ -7245,6 +7245,70 @@ let person = Person()
 (person as A).greet() // Calls A's implementation
 (person as B).greet() // Calls B's implementation
 ```
+</details>  
+
+### **Q29: Explain how protocols enable horizontal code sharing vs vertical inheritance.**
+<details>
+<summary>Answer</summary>  
+
+### Vertical Inheritance (Classes)
+
+• Inheritance creates a hierarchy.
+
+• You start with a base class and then extend downward.
+
+**Example:**
+
+```swift
+class Animal {
+    func eat() { print("Eating...") }
+}
+
+class Dog: Animal {
+    func bark() { print("Barking...") }
+}
+```
+
+Here, Dog gets behavior from above (Animal).
+
+• This is vertical sharing → from parent to child.
+
+---
+
+### Horizontal Sharing (Protocols)
+
+• Protocols allow types that are unrelated in the hierarchy to share behavior.
+
+• Instead of "inheriting from a parent," a type adopts capabilities.
+
+**Example:**
+
+```swift
+protocol Flyable {
+    func fly()
+}
+
+protocol Swimmable {
+    func swim()
+}
+
+class Bird: Flyable {
+    func fly() { print("Bird is flying") }
+}
+
+class Fish: Swimmable {
+    func swim() { print("Fish is swimming") }
+}
+
+class Duck: Flyable, Swimmable {
+    func fly() { print("Duck flying") }
+    func swim() { print("Duck swimming") }
+}
+```
+
+Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilities by conforming to multiple protocols.
+
+• This is horizontal sharing → mix and match abilities across types.
 </details>
 
 ## 15. Application Security in iOS Apps
