@@ -5319,8 +5319,76 @@ dog.makeSound() // Woof!
 
 ### **Q.13 Explain method dispatch in Swift. What's the difference between static and dynamic dispatch?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer</summary>   
 
+Method dispatch is about **how Swift decides which method to run when you call it.**
+
+It’s essentially the "lookup mechanism" for functions and methods.
+
+Swift supports multiple dispatch mechanisms for performance and flexibility:
+
+---
+
+### 1. Static Dispatch
+
+• The method to call is **decided at compile time**.
+
+• Compiler knows exactly which function to run → very fast.
+
+• Happens with:
+
+○ **final** methods/classes (can’t be overridden).
+○ **static** methods.
+○ **private** methods.
+○ Functions in value types (structs, enums).
+
+**Example:**
+
+```swift
+struct Dog {
+    func bark() {
+        print("Woof!")
+    }
+}
+
+let d = Dog()
+d.bark() // Compiler already knows which bark() to call
+```
+
+---
+
+## 2. Dynamic Dispatch
+
+• The method to call is **decided at runtime**.
+
+• Needed when methods can be **overridden in subclasses**.
+
+• Swift uses **v-tables (virtual tables)** for classes to support overriding.
+
+• If you mark a method with **dynamic** (and class must be **@objc**), it uses **Objective-C runtime dispatch (message passing)**.
+
+---
+
+**Example:**
+
+```swift
+class Animal {
+    func speak() {
+        print("Some sound")
+    }
+}
+
+class Dog: Animal {
+    override func speak() {
+        print("Bark!")
+    }
+}
+
+let a: Animal = Dog()
+a.speak() // At runtime, decides to call Dog.speak()
+```
+ 
+## **Chat GPT Explanation**
 ### What is Method Dispatch in Swift?
 
 **Method dispatch** = *How Swift decides which method implementation to call at runtime.*
