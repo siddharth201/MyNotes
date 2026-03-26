@@ -7108,8 +7108,6 @@ Example: Dog inherits from Animal → A dog is an animal.
 
 • Works well if there’s a clear hierarchy and shared behavior.
 
-• Inheritance trees can get messy and hard to maintain.
-
 ---
 
 ### Composition
