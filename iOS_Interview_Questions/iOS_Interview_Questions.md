@@ -7311,7 +7311,7 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 • This is horizontal sharing → mix and match abilities across types.
 </details>  
 
-## 
+## 6. SwiftUI
 
 ## 15. Application Security in iOS Apps
 
