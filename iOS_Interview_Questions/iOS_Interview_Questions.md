@@ -5352,6 +5352,11 @@ Swift supports multiple dispatch mechanisms for performance and flexibility:
 ○ **private** methods.  
 ○ Functions in value types (structs, enums).  
 
+○ ** struct
+○ ** enum
+○ ** final methods/classes
+○ ** private methods  
+
 **Example:**
 
 ```swift
