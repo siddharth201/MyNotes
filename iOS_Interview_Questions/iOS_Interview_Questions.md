@@ -6838,6 +6838,75 @@ dog.makeSound() // Specific implementation
 ---
 
 So, protocols + extensions **replace abstract classes in Swift** by giving both **contract + optional shared logic**.
+</details>  
+
+### **Q23: Can a class inherit from a struct in Swift?**
+<details>
+<summary>Answer</summary>  
+
+No, a class cannot inherit from a struct in Swift.
+
+---
+
+### Why?
+
+• **Structs are value types:** When you assign or pass a struct, Swift copies it.
+
+• **Classes are reference types:** They work with references, not copies.
+
+• **Inheritance only makes sense with reference types,** because subclasses share and extend the same instance behavior.
+
+• **Structs, being value types, don’t have a mechanism to share or override behavior through inheritance.**
+
+---
+
+### Instead of inheritance with structs:
+
+• You can use **protocols** to define common behavior.
+
+• You can use **composition** (structs containing other structs or classes) to reuse functionality.
+
+---
+
+### Example:
+
+```swift
+struct Animal {
+    var name: String
+}
+```
+
+```swift
+// Not allowed
+// class Dog: Animal {} // ERROR: Inheritance from non-protocol type 'Animal'
+
+// Instead, use protocol
+protocol AnimalProtocol {
+    var name: String { get set }
+    func makeSound()
+}
+
+class Dog: AnimalProtocol {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+
+    func makeSound() {
+        print("Woof!")
+    }
+}
+```
+
+---
+
+### Key Point
+
+• Classes can inherit from other classes
+
+• Structs cannot inherit at all
+
+• Protocols are the way to share behavior between structs and classes
 </details>
 
 ## 15. Application Security in iOS Apps
