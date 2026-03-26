@@ -6699,7 +6699,74 @@ deleteUser(account: admin)  // Works
 ---
 </details>  
 
-## Q21: What is the Self requirement in
+## Q21: What is the Self requirement in  
+
+In Swift, the `Self` requirement (with a capital "S") is a dynamic type placeholder used within a protocol to refer to the **specific type that eventually conforms to that protocol.**
+
+Think of it as a way for a protocol to say: *"Whatever class or struct adopts me, I want this method to return or accept that exact same type."*
+
+---
+
+## Why do we need it?
+Without `Self`, protocols are stuck using the protocol name itself as a type. This causes issues because:
+1.  **Type Safety:** You might want a method to return the specific subclass/struct, not just a generic "thing that conforms to the protocol."
+2.  **Chaining:** It allows for "fluent" APIs where methods return the instance itself.
+
+### The Logic of `Self`
+
+
+| Term | Meaning |
+| :--- | :--- |
+| **`self`** (lowercase) | Refers to the specific **instance** (the object itself). |
+| **`Self`** (uppercase) | Refers to the **type** of that instance (the Class or Struct). |
+
+---
+
+## Example: The "Copyable" Protocol
+Imagine you want a protocol that ensures any object can create a duplicate of itself.
+
+### 1. Defining the Protocol
+If we didn't use `Self`, the `copy()` method would have to return the protocol type, which loses all the specific data of the conforming type. By using `Self`, we ensure the return type matches the caller.
+
+```swift
+protocol Copyable {
+    // Self here means: "Return whatever type is implementing this"
+    func copy() -> Self
+}
+```
+
+### 2. Implementing the Protocol
+When a struct or class adopts `Copyable`, Swift replaces `Self` with the name of that type.
+
+```swift
+struct User: Copyable {
+    let name: String
+    
+    // Swift knows 'Self' here must be 'User'
+    func copy() -> User {
+        return User(name: self.name)
+    }
+}
+
+let original = User(name: "Alice")
+let clone = original.copy() // The type of 'clone' is 'User'
+```
+
+---
+
+## Common Use Case: Comparison
+You see `Self` most often in the standard library's `Equatable` protocol. To check if two things are equal, they must be of the same type.
+
+```swift
+protocol Equatable {
+    static func == (lhs: Self, rhs: Self) -> Bool
+}
+```
+In this context, `Self` prevents you from trying to compare a `String` to an `Int`, even though both conform to `Equatable`. It forces the left-hand side ($lhs$) and right-hand side ($rhs$) to be the **exact same type**.
+
+> **Note:** When using `Self` in a **Class**, you often have to mark the class as `final` or use `required` initializers. This is because the compiler needs to be certain that a subclass won't break the type contract defined by `Self`.
+
+Would you like to see how `Self` works differently when used in a class hierarchy versus a struct?
 
 
 ## 15. Application Security in iOS Apps
