@@ -7095,7 +7095,7 @@ Here, **FlyingCar** has both **driving** and **flying** behavior without needing
 ---
 </details>  
 
-## Q27: In what scenarios would you prefer composition over inheritance?
+### Q27: In what scenarios would you prefer composition over inheritance?
 <details>
 <summary>Answer</summary>  
 
