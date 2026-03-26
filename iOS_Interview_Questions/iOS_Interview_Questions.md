@@ -6699,7 +6699,9 @@ deleteUser(account: admin)  // Works
 ---
 </details>  
 
-## Q21: What is the Self requirement in  
+### **Q21: What is the Self requirement in protocols? Explain with an example.**  
+<details>
+<summary>Answer</summary>  
 
 In Swift, the `Self` requirement (with a capital "S") is a dynamic type placeholder used within a protocol to refer to the **specific type that eventually conforms to that protocol.**
 
@@ -6707,7 +6709,7 @@ Think of it as a way for a protocol to say: *"Whatever class or struct adopts me
 
 ---
 
-## Why do we need it?
+### Why do we need it?
 Without `Self`, protocols are stuck using the protocol name itself as a type. This causes issues because:
 1.  **Type Safety:** You might want a method to return the specific subclass/struct, not just a generic "thing that conforms to the protocol."
 2.  **Chaining:** It allows for "fluent" APIs where methods return the instance itself.
@@ -6722,7 +6724,7 @@ Without `Self`, protocols are stuck using the protocol name itself as a type. Th
 
 ---
 
-## Example: The "Copyable" Protocol
+### Example: The "Copyable" Protocol
 Imagine you want a protocol that ensures any object can create a duplicate of itself.
 
 ### 1. Defining the Protocol
@@ -6754,7 +6756,7 @@ let clone = original.copy() // The type of 'clone' is 'User'
 
 ---
 
-## Common Use Case: Comparison
+### Common Use Case: Comparison
 You see `Self` most often in the standard library's `Equatable` protocol. To check if two things are equal, they must be of the same type.
 
 ```swift
@@ -6767,7 +6769,7 @@ In this context, `Self` prevents you from trying to compare a `String` to an `In
 > **Note:** When using `Self` in a **Class**, you often have to mark the class as `final` or use `required` initializers. This is because the compiler needs to be certain that a subclass won't break the type contract defined by `Self`.
 
 Would you like to see how `Self` works differently when used in a class hierarchy versus a struct?
-
+</details>
 
 ## 15. Application Security in iOS Apps
 
