@@ -7309,7 +7309,9 @@ class Duck: Flyable, Swimmable {
 Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilities by conforming to multiple protocols.
 
 • This is horizontal sharing → mix and match abilities across types.
-</details>
+</details>  
+
+## 
 
 ## 15. Application Security in iOS Apps
 
