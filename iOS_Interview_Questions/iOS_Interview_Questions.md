@@ -5602,7 +5602,209 @@ Because it's from **protocol extension**
   → Compile-time, fast, no overriding
 
 * **Dynamic dispatch**
-  → Runtime, flexible, supports polymorphism
+  → Runtime, flexible, supports polymorphism  
+  
+
+## Your Question
+
+```swift
+let a: Animal = Dog()
+```
+
+👉 “Why can’t the compiler see that it’s `Dog()` at compile time?”
+
+---
+
+### Short Answer
+
+> The compiler **CAN see `Dog()`**, but it **intentionally restricts itself to the declared type (`Animal`)** to support **polymorphism and abstraction**.
+
+---
+
+###Let’s break it properly
+
+### 1. Yes — compiler DOES see `Dog()`
+
+At compile time, Swift knows:
+
+```swift
+Dog()
+```
+
+👉 So it knows:
+
+* Object created = `Dog`
+
+---
+
+### 2. But the variable type is declared as `Animal`
+
+```swift
+let a: Animal
+```
+
+👉 This is the key decision point.
+
+---
+
+### Why Swift restricts to `Animal`
+
+Because of **polymorphism**:
+
+👉 The compiler must allow this:
+
+```swift
+func makeAnimal() -> Animal {
+    return Dog()   // or Cat() or Cow()
+}
+```
+
+Now:
+
+```swift
+let a = makeAnimal()
+```
+
+❗ At compile time:
+
+* Compiler does NOT know exact type
+* Could be `Dog`, `Cat`, anything
+
+---
+
+### So Swift enforces a rule
+
+> “Always trust the declared type, not the assigned value”
+
+---
+
+### What compiler does
+
+For:
+
+```swift
+let a: Animal = Dog()
+```
+
+### Compiler thinks:
+
+```text
+"I will treat 'a' as Animal ONLY"
+```
+
+Even though it knows it's Dog **right now**
+
+---
+
+### Why this design? (VERY IMPORTANT)
+
+---
+
+## ✅ 1. Consistency
+
+These should behave the same:
+
+```swift
+let a: Animal = Dog()
+let b: Animal = getAnimal()
+```
+
+👉 If compiler used `Dog` for one and dynamic for another → inconsistent ❌
+
+---
+
+## ✅ 2. Abstraction
+
+You write code like:
+
+```swift
+func process(_ animal: Animal) {
+    animal.sound()
+}
+```
+
+👉 You don’t care if it's Dog/Cat
+
+---
+
+## ✅ 3. Flexibility
+
+You can later change:
+
+```swift
+let a: Animal = Cat()
+```
+
+Without breaking code
+
+---
+
+### Important Insight
+
+👉 Compiler uses **declared type for safety**
+
+👉 Runtime uses **actual type for behavior**
+
+---
+
+### What would happen if compiler used Dog?
+
+Then this would break:
+
+```swift
+func getAnimal() -> Animal {
+    return Dog()
+}
+
+let a = getAnimal()
+```
+
+👉 Compiler cannot assume Dog here
+
+---
+
+### Real Reason (Deep Understanding)
+
+Swift separates:
+
+```text
+Static type system  → compile-time safety
+Dynamic dispatch    → runtime flexibility
+```
+
+---
+
+### Analogy
+
+```text
+Variable type = Job title (Animal)
+Actual object = Person (Dog)
+```
+
+👉 You interact based on job role, not person identity
+
+---
+
+### Key Rule
+
+> Compiler always uses **declared type**, not assigned instance
+
+---
+
+### Interview Answer (Perfect)
+
+> “Even though the compiler sees that a Dog instance is assigned, it uses the declared type Animal for type checking to maintain polymorphism and consistency. The actual method implementation is then resolved at runtime using dynamic dispatch based on the real object type.”
+
+---
+
+### Final Takeaway
+
+```text
+Compiler: "I trust the type you declared"
+Runtime:  "I use the object you created"
+```
+
+
 
 </details>  
 
