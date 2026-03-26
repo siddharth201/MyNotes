@@ -6983,7 +6983,55 @@ print(obj.tag ?? "") // Hello
 ---
 </details>  
 
+### **Q25: What’s the main difference between "is-a" and "can-do" relationships?**
+<details>
+<summary>Answer</summary>  
 
+### 1. "is-a" relationship
+
+• Comes from **inheritance** (class → subclass).
+
+• It means one type **is a specialized version** of another.
+
+Example:
+
+```swift
+class Animal {}
+class Dog: Animal {} // Dog is-an Animal
+```
+
+Here, **Dog is an Animal**.
+
+• Used when you want to model **hierarchies**.
+
+---
+
+### 2. "can-do" relationship
+
+• Comes from **protocol conformance**.
+
+• It means a type **can perform some behavior**, regardless of its hierarchy.
+
+Example:
+
+```swift
+protocol Swimmable {
+    func swim()
+}
+
+class Dog: Swimmable {
+    func swim() { print("Dog swims!") }
+}
+
+struct Fish: Swimmable {
+    func swim() { print("Fish swims!") }
+}
+```
+
+Both **Dog and Fish can-do swimming**, even though they are not related in the class hierarchy.
+
+---
+</details>
 
 ## 15. Application Security in iOS Apps
 
