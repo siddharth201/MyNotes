@@ -6574,7 +6574,9 @@ URLSessionPublisher, Just, Future…
 
 * You can store, pass, and use it normally
 
-</details>
+</details>  
+
+
 
 
 
