@@ -6769,7 +6769,9 @@ In this context, `Self` prevents you from trying to compare a `String` to an `In
 > **Note:** When using `Self` in a **Class**, you often have to mark the class as `final` or use `required` initializers. This is because the compiler needs to be certain that a subclass won't break the type contract defined by `Self`.
 
 Would you like to see how `Self` works differently when used in a class hierarchy versus a struct?
-</details>
+</details>  
+
+
 
 ## 15. Application Security in iOS Apps
 
