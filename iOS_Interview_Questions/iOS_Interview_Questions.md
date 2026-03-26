@@ -7127,6 +7127,8 @@ Instead of inheriting from all of them, it just uses them as parts.
 
 1. **Avoiding deep hierarchies**
 
+• Inheritance trees can get messy and hard to maintain.
+
 ---
 
 2. **Adding or changing behavior without breaking old code**
