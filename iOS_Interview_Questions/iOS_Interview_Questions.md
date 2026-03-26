@@ -7031,7 +7031,134 @@ struct Fish: Swimmable {
 Both **Dog and Fish can-do swimming**, even though they are not related in the class hierarchy.
 
 ---
-</details>
+</details>  
+
+### **Q26: How do you achieve multiple inheritance-like behavior using protocols?**
+
+Swift **does not allow multiple class inheritance** (a class can inherit from only one base class).
+
+But Swift **protocols allow you to compose multiple behaviors together** — this mimics multiple inheritance in a safer, more flexible way.
+
+### How it works
+
+• A class (or struct, or enum) can conform to **multiple protocols**.
+
+• Each protocol defines a piece of behavior.
+
+• Together, they give the type capabilities similar to inheriting from multiple parents.
+
+---
+
+### Example:
+
+```swift
+protocol Drivable {
+    func drive()
+}
+
+protocol Flyable {
+    func fly()
+}
+
+class FlyingCar: Drivable, Flyable {
+    func drive() {
+        print("Driving on the road ")
+    }
+
+    func fly() {
+        print("Flying in the air ✈️")
+    }
+}
+```
+
+```swift
+// Usage:
+let myCar = FlyingCar()
+myCar.drive()  // Driving on the road
+myCar.fly()    // Flying in the air ✈️
+```
+
+Here, **FlyingCar** has both **driving** and **flying** behavior without needing multiple inheritance.
+
+---
+
+### Why protocols are safer than multiple inheritance
+
+• **No diamond problem** (ambiguity when two parents define the same method).
+
+• **Flexible**: works with structs, classes, and enums.
+
+• **Composable**: add/remove behaviors easily.
+
+---
+
+## Q27: In what scenarios would you prefer composition over inheritance?
+
+### Inheritance
+
+• Inheritance creates an **“is-a” relationship**.
+Example: Dog inherits from Animal → A dog is an animal.
+
+• It tightly couples the child class to the parent class.
+
+• Works well if there’s a clear hierarchy and shared behavior.
+
+• Inheritance trees can get messy and hard to maintain.
+
+---
+
+### Composition
+
+• Composition means building complex behavior by combining smaller, independent components.
+
+• It’s more flexible because you can mix and match behaviors without forcing a strict parent-child relationship.
+
+• Example: A Car class can have an Engine, have a GPS, have a MusicSystem.
+Instead of inheriting from all of them, it just uses them as parts.
+
+• Composition keeps things modular.
+
+---
+
+### When to prefer composition over inheritance
+
+1. **Avoiding deep hierarchies**
+
+---
+
+2. **Adding or changing behavior without breaking old code**
+
+• With composition, you just plug in a new component.
+• With inheritance, you might need to refactor the entire hierarchy.
+
+---
+
+3. **When multiple behaviors are needed**
+
+• Swift classes can inherit from only one parent.
+• But with composition, you can combine multiple objects or protocols.
+
+---
+
+4. **To reduce tight coupling**
+
+• Child classes in inheritance are very dependent on parent changes.
+• In composition, components are loosely coupled and easier to swap out.
+
+---
+
+5. **When behavior doesn’t fit into an “is-a” relationship**
+
+• Example: A Bird is an Animal. That’s fine.
+
+• But if you want Bird to also Fly, instead of inheriting from FlyingAnimal, just add a **FlyBehavior component** or conform to a **Flyable protocol**.
+
+---
+
+**FlyBehavior component or conform to a Flyable protocol.**
+
+---
+
 
 ## 15. Application Security in iOS Apps
 
