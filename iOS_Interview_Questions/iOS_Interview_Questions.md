@@ -5331,9 +5331,9 @@ It’s essentially the "lookup mechanism" for functions and methods.
 
 It affects:
 
-• Performance 
-• Polymorphism 
-• Behavior in protocols & inheritance  
+• Performance   
+• Polymorphism   
+• Behavior in protocols & inheritance    
 
 --- 
 
