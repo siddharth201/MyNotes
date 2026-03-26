@@ -5339,8 +5339,6 @@ It affects:
 
 Swift supports multiple dispatch mechanisms for performance and flexibility:
 
----
-
 ### 1. Static Dispatch
 
 • The method to call is **decided at compile time**.
