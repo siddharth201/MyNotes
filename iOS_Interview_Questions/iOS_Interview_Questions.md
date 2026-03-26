@@ -6290,16 +6290,9 @@ private let _method: () -> ReturnType
 
 ---
 
-## 🚀 If you want next level
+## 🚀 More Simpler
 
-I can show:
 
-* 🔥 How `AnyView` is implemented internally
-* 🔥 Advanced type erasure (multiple methods, mutating)
-* 🔥 Performance trade-offs
-* 🔥 Real interview questions on type erasure traps
-
-Just tell me 👍
 
 </details>
 
