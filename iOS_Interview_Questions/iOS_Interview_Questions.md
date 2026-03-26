@@ -6907,6 +6907,80 @@ class Dog: AnimalProtocol {
 • Structs cannot inherit at all
 
 • Protocols are the way to share behavior between structs and classes
+</details>  
+
+### **Q24: Can protocols have stored properties? How do you work around this limitation?**
+<details>
+<summary>Answer</summary>  
+
+No, protocols in Swift cannot have stored properties.
+
+That’s because protocols only define a **blueprint** of functionality, not actual storage. Stored properties need memory allocation, and protocols don’t provide memory—they just define requirements.
+
+---
+
+### 1. Use computed properties in protocols
+
+• You can define a computed property requirement in a protocol, and each conforming type can implement it however they like.
+
+```swift
+protocol Identifiable {
+    var id: String { get }
+}
+
+struct User: Identifiable {
+    var id: String // stored in struct
+}
+```
+
+---
+
+### 2. Use protocol and associated storage in conforming types
+
+• Instead of the protocol itself holding data, each conforming class or struct can define its own stored property.
+
+```swift
+protocol Nameable {
+    var name: String { get set }
+}
+
+struct Person: Nameable {
+    var name: String // stored here
+}
+```
+
+---
+
+### 3. Use Associated Objects in classes (advanced, via Objective-C runtime)
+
+• For reference types (classes), you can attach extra stored data using `objc_setAssociatedObject` and `objc_getAssociatedObject`.
+
+• This is often used when you want to "extend" a class with stored properties but don’t have direct access to modify it.
+
+```swift
+import ObjectiveC
+
+private var key: UInt8 = 0
+
+protocol Taggable {
+    var tag: String? { get set }
+}
+
+extension Taggable where Self: AnyObject {
+    var tag: String? {
+        get { objc_getAssociatedObject(self, &key) as? String }
+        set { objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+    }
+}
+
+class MyClass: Taggable {}
+
+let obj = MyClass()
+obj.tag = "Hello"
+print(obj.tag ?? "") // Hello
+```
+
+---
 </details>
 
 ## 15. Application Security in iOS Apps
