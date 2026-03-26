@@ -6577,8 +6577,70 @@ URLSessionPublisher, Just, Future…
 </details>  
 
 
+### **Q19: Explain the difference between protocol types and generic constraints.**
+<details>
+<summary>Answer</summary>  
 
+### Protocol Types
 
+• When you use a **protocol as a type**, you’re saying:
+“This variable can hold any value that conforms to this protocol.”
+
+**Example:**
+
+```swift
+protocol Shape {
+    func area() -> Double
+}
+```
+
+```swift
+struct Circle: Shape {
+    var radius: Double
+    func area() -> Double { .pi * radius * radius }
+}
+
+struct Square: Shape {
+    var side: Double
+    func area() -> Double { side * side }
+}
+
+// Using protocol type
+let shapes: [Shape] = [Circle(radius: 5), Square(side: 4)]
+for shape in shapes {
+    print(shape.area()) // Works, but only protocol methods are accessible
+}
+```
+
+Here, **shapes is an array of Shape (protocol type).**
+
+We can store any conforming type, but we only access the **common interface (area() in this case).**
+
+---
+
+### Generic Constraints
+
+• With **generics + constraints**, you tell the compiler that your function or type will only work with certain conforming types.
+
+**Example:**
+
+```swift
+func printArea<T: Shape>(_ shape: T) {
+    print(shape.area())
+}
+
+printArea(Circle(radius: 5))
+printArea(Square(side: 4))
+```
+
+Here, **T: Shape is a generic constraint.**
+
+• The compiler knows the exact type (**Circle or Square**) at compile time.
+
+• This means you can use optimizations like **static dispatch (faster than protocol type which uses dynamic dispatch).**
+
+---
+</details>
 
 ## 15. Application Security in iOS Apps
 
