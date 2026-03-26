@@ -7157,11 +7157,6 @@ Instead of inheriting from all of them, it just uses them as parts.
 • Example: A Bird is an Animal. That’s fine.
 
 • But if you want Bird to also Fly, instead of inheriting from FlyingAnimal, just add a **FlyBehavior component** or conform to a **Flyable protocol**.
-
----
-
-**FlyBehavior component or conform to a Flyable protocol.**
-
 ---
 </details>
 
