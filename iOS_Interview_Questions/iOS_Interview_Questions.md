@@ -7119,8 +7119,6 @@ Example: Dog inherits from Animal → A dog is an animal.
 • Example: A Car class can have an Engine, have a GPS, have a MusicSystem.
 Instead of inheriting from all of them, it just uses them as parts.
 
-• Composition keeps things modular.
-
 ---
 
 ### When to prefer composition over inheritance
@@ -7128,6 +7126,8 @@ Instead of inheriting from all of them, it just uses them as parts.
 1. **Avoiding deep hierarchies**
 
 • Inheritance trees can get messy and hard to maintain.
+
+• Composition keeps things modular.
 
 ---
 
