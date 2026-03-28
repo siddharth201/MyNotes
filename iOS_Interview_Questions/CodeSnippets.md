@@ -30,8 +30,9 @@ p2.sayHello()
 <details>
 <summary>Answer</summary>
 ```swift
-Hello from Person
+Hello from Person  
 Hello from Person
 ```
-</details>
+</details>  
+
 **Concept**
