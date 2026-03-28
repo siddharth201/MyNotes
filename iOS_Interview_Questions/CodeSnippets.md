@@ -1,7 +1,7 @@
 
 ### Protocols
 
-**Q.1**
+**Q.1 Protocol Extension Dispatch Trap**
 ```swift
 protocol Test {
     func sayHello()
@@ -40,7 +40,7 @@ Hello from Person
 </details>  
   
 
-**Q.2**  
+**Q.2 Protocol Extension Dispatch Trap**  
 
 ```swift
 protocol Test {
