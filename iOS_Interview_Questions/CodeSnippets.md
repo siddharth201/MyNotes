@@ -27,10 +27,8 @@ p2.sayHello()
 ```
 <details>
 <summary>Output</summary>
-```swift
 Hello from Person  
 Hello from Person
-```
 </details>  
 
 **Concept**
