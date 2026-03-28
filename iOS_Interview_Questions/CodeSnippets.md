@@ -127,6 +127,20 @@ struct IntContainer: Container {
 let c: Container = IntContainer()
 
 ❓ What happens?
+```  
 
+<details>
+<summary>Output</summary>  
+
+```swift  
+
+before swift 5.7 out put: compiler error 
+after swift 5.7 out put: 10  
+
+```   
+ 
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp2.md)  
+
+</details>
    
 
