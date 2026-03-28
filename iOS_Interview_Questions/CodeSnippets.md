@@ -27,7 +27,8 @@ p2.sayHello()
 ```
 <details>
 <summary>Output</summary>
-Hello from Person    
+Hello from Person  
+    
 Hello from Person
 </details>  
 
