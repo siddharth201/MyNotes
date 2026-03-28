@@ -26,10 +26,16 @@ let p2: Test = Person()
 p2.sayHello()
 ```
 <details>
-<summary>Output</summary>
+<summary>Output</summary>  
+
+```swift  
+
 Hello from Person  
     
-Hello from Person
+Hello from Person  
+
+```  
+
 </details>  
 
 **Concept**
