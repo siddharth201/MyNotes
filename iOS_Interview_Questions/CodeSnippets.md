@@ -104,8 +104,7 @@ p.sayHello()
 
 ```swift  
 
-Hello from Person      
-Hello from protocol  
+Default  
 
 ```   
  
