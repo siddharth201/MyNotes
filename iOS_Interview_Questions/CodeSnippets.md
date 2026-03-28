@@ -25,10 +25,8 @@ p1.sayHello()
 let p2: Test = Person()
 p2.sayHello()
 ```
-
-**Output**
 <details>
-<summary>Answer</summary>
+<summary>**Output**</summary>
 ```swift
 Hello from Person  
 Hello from Person
