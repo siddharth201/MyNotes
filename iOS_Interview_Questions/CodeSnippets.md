@@ -1,6 +1,7 @@
 
 ### Protocols
 
+**Q.1**
 ```swift
 protocol Test {
     func sayHello()
@@ -24,3 +25,10 @@ p1.sayHello()
 let p2: Test = Person()
 p2.sayHello()
 ```
+
+**Output**
+```swift
+Hello from Person
+Hello from Person
+```
+**Concept**
