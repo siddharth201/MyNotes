@@ -144,6 +144,24 @@ after swift 5.7 out put: 10
 </details> 
 
 ### Q.5 `any` Keyword (Modern Swift)
+```swift  
 
+let c: any Container
+
+❓ Is this valid?  
+
+```  
+<details>
+<summary>Output</summary>  
+
+```swift  
+
+No Issues  
+
+```   
+ 
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp3.md)  
+
+</details>
    
 
