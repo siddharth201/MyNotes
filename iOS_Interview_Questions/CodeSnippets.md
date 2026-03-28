@@ -139,7 +139,7 @@ after swift 5.7 out put: 10
 
 ```   
  
-[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp2.md)  
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp3.md)  
 
 </details>
    
