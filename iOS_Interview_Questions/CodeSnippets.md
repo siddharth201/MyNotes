@@ -37,4 +37,3 @@ Hello from Person
 
 </details>  
 
-**Concept**
