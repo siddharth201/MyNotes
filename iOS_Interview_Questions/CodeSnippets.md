@@ -80,7 +80,7 @@ Hello from protocol
 </details>   
 
 
-**Q.3 Protocol Extension Dispatch Trap**  
+**Q.3 Protocol Requirement vs Extension**  
 
    
 
