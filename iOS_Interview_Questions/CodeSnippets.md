@@ -30,8 +30,7 @@ p2.sayHello()
 
 ```swift  
 
-Hello from Person  
-    
+Hello from Person      
 Hello from Person  
 
 ```  
