@@ -114,5 +114,16 @@ Default
 
 ### Q.4 Associated Type Problem 
 
+protocol Container {
+    associatedtype Item
+    func get() -> Item
+}
+
+struct IntContainer: Container {
+    func get() -> Int { 10 }
+}
+
+let c: Container = IntContainer()
+
    
 
