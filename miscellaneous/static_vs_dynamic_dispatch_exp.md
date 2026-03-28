@@ -1,7 +1,7 @@
 
 # Version - 1
 
-# 🔹 The Core Reason (in one line)
+## 🔹 The Core Reason (in one line)
 
 > Swift uses **two different dispatch mechanisms**:
 
@@ -10,7 +10,7 @@
 
 ---
 
-# 🔹 Case 1: Method declared in protocol
+## 🔹 Case 1: Method declared in protocol
 
 ```swift
 protocol Test {
@@ -57,7 +57,7 @@ p.sayHello()
 
 ---
 
-# 🔹 Case 2: Method ONLY in extension
+## 🔹 Case 2: Method ONLY in extension
 
 ```swift
 protocol Test {}
@@ -107,7 +107,7 @@ Test.sayHello()
 
 ---
 
-# 🔥 Key Technical Difference
+## 🔥 Key Technical Difference
 
 | Case                 | Stored in witness table? | Dispatch |
 | -------------------- | ------------------------ | -------- |
@@ -116,7 +116,7 @@ Test.sayHello()
 
 ---
 
-# 🔹 Why Swift does this?
+## 🔹 Why Swift does this?
 
 ### 🔸 1. Performance
 
@@ -149,7 +149,7 @@ NOT part of contract
 
 ---
 
-# 🔹 Internal Mental Model
+## 🔹 Internal Mental Model
 
 ---
 
@@ -177,13 +177,13 @@ No runtime lookup
 
 ---
 
-# 🔹 Important Insight (Interview Gold)
+## 🔹 Important Insight (Interview Gold)
 
 > “Only protocol requirements participate in dynamic dispatch via witness tables. Methods defined only in protocol extensions are statically dispatched because they are not part of the protocol’s contract.”
 
 ---
 
-# 🔹 Why your earlier example worked
+## 🔹 Why your earlier example worked
 
 Because:
 
@@ -202,7 +202,7 @@ sayHello → Person.sayHello
 
 ---
 
-# 🔹 Why trap example fails
+## 🔹 Why trap example fails
 
 Because:
 
@@ -220,7 +220,7 @@ No witness table entry ❌
 
 ---
 
-# 🔚 Final Takeaway
+### 🔚 Final Takeaway
 
 ```text
 Protocol requirement → goes into witness table → dynamic dispatch
@@ -229,13 +229,5 @@ Extension only       → no witness table       → static dispatch
 
 ---
 
-# 🚀 If you want next level
-
-I can show:
-
-* 🔥 How this looks in **SIL (Swift Intermediate Language)**
-* 🔥 How compiler optimizes dispatch (devirtualization)
-* 🔥 Real bugs caused by this in production apps
-
-Just say **“show internals”** 😄
+# Version - 2
 
