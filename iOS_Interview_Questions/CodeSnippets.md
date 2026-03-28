@@ -114,6 +114,7 @@ Default
 
 ### Q.4 Associated Type Problem 
 
+```swift
 protocol Container {
     associatedtype Item
     func get() -> Item
@@ -124,6 +125,8 @@ struct IntContainer: Container {
 }
 
 let c: Container = IntContainer()
+
+❓ What happens?
 
    
 
