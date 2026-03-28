@@ -144,5 +144,6 @@ after swift 5.7 out put: 10
 </details> 
 
 ### Q.5 `any` Keyword (Modern Swift)
+
    
 
