@@ -33,7 +33,9 @@ p2.sayHello()
 Hello from Person      
 Hello from Person  
 
-```  
-[Concept]()
+```   
+ 
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/static_vs_dynamic_dispatch_exp.md)  
+
 </details>  
 
