@@ -108,7 +108,7 @@ Default
 
 ```   
  
-[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/static_vs_dynamic_dispatch_exp.md)  
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp2.md)  
 
 </details> 
 
