@@ -229,5 +229,71 @@ Extension only       → no witness table       → static dispatch
 
 ---
 
-# Version - 2
+# Version - 2 
+
+This is a classic Swift interview question that touches on **Protocol Extensions** and **Static vs. Dynamic Dispatch**. 
+
+In your specific code snippet, both calls will print **"Hello from Person"**. Here is the breakdown of why that happens and how changing one small thing can completely flip the result.
+
+---
+
+### Why both print "Hello from Person"
+The behavior depends on whether the method is a **requirement** of the protocol or just an **extension**.
+
+1.  **The Requirement:** You defined `func sayHello()` inside the `protocol Test { ... }` block. This makes it a "requirement."
+2.  **The Witness Table:** Because it’s a requirement, Swift uses **Dynamic Dispatch**. When you call `sayHello()`, Swift looks at the actual type of the object at runtime (which is `Person`) and uses its implementation.
+3.  **The Override:** Since `Person` provides its own version of `sayHello()`, it "fulfills" the requirement, and that version takes precedence over the default implementation provided in the extension.
+
+
+
+---
+
+### The Comparison
+Here is how the two variables behave under the hood:
+
+| Variable | Static Type | Runtime Type | Dispatch Type | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| `p1` | `Person` | `Person` | Direct/Static | **"Hello from Person"** |
+| `p2` | `Test` | `Person` | Dynamic (via Witness Table) | **"Hello from Person"** |
+
+---
+
+### The "Gotcha": Static Dispatch
+The real magic (and confusion) happens if you remove the function declaration from the protocol itself but keep it in the extension. 
+
+**Watch what happens if we change the code to this:**
+
+```swift
+protocol Test {
+    // func sayHello()  <-- REMOVED FROM HERE
+}
+
+extension Test {
+    func sayHello() {
+        print("Hello from protocol")
+    }
+}
+
+struct Person: Test {
+    func sayHello() {
+        print("Hello from Person")
+    }
+}
+
+let p2: Test = Person()
+p2.sayHello() // Output: "Hello from protocol"
+```
+
+**Why did it change?**
+* Because `sayHello()` is no longer in the protocol definition, it is no longer a "requirement."
+* It is now just a **static extension method**. 
+* When you call `p2.sayHello()`, the compiler only knows that `p2` is of type `Test`. Since there is no requirement to look up in a table, it simply calls the implementation it knows for `Test` at compile-time.
+
+---
+
+### Summary
+* **Method in Protocol + Extension:** Acts like a "virtual" method. The implementation in the concrete type (`Person`) always wins.
+* **Method ONLY in Extension:** Acts like a "static" method. The implementation is chosen based on the **variable's type**, not the object's actual type.
+
+Would you like me to show you how this behavior differs when using **Classes** and inheritance instead of Structs?
 
