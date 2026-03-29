@@ -265,7 +265,7 @@ obj.test()
 <details>
 <summary>Output</summary>  
 
-[Concept]()  
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp7.md)  
 
 </details>
 
