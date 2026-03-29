@@ -284,7 +284,7 @@ func test(obj: A & B) {}
 <summary>Output</summary>  
 
 ```swift  
-  
+  Protocol composition
 
 ```   
  
