@@ -214,7 +214,7 @@ struct MyCounter: Counter {
 
 ```   
  
-[Concept]()  
+**Concept-** Reference semantics restriction   
 
 </details>
 
