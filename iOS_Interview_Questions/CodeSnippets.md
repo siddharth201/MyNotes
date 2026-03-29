@@ -216,6 +216,24 @@ struct MyCounter: Counter {
  
 **Concept-** Reference semantics restriction   
 
+</details>  
+
+### Q.
+```swift  
+ 
+
+```  
+
+<details>
+<summary>Output</summary>  
+
+```swift  
+  
+
+```   
+ 
+[Concept]()  
+
 </details>
 
    
