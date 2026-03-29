@@ -193,6 +193,25 @@ struct MyCounter: Counter {
  
 [Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp5.md)  
 
+</details>  
+
+
+### Q.8
+```swift  
+ 
+
+```  
+
+<details>
+<summary>Output</summary>  
+
+```swift  
+  
+
+```   
+ 
+[Concept]()  
+
 </details>
 
    
