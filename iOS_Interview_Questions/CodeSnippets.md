@@ -254,7 +254,11 @@ obj.test()
 
 ### Q. Self Requirement
 ```swift  
- 
+ protocol Clonable {
+    func clone() -> Self
+}
+
+❓ Why is this special?
 
 ```  
 
