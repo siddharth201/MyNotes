@@ -196,7 +196,7 @@ struct MyCounter: Counter {
 </details>  
 
 
-### Q.8
+### Q.7 Protocol + Class Constraint
 ```swift  
  
 
