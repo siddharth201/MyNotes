@@ -210,7 +210,7 @@ struct MyCounter: Counter {
 <summary>Output</summary>  
 
 ```swift  
-  
+  Only class types can conform
 
 ```   
  
