@@ -198,7 +198,9 @@ struct MyCounter: Counter {
 
 ### Q.7 Protocol + Class Constraint
 ```swift  
- 
+ protocol Test: AnyObject {
+    func run()
+}
 
 ```  
 
