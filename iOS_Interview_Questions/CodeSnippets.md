@@ -200,7 +200,10 @@ struct MyCounter: Counter {
 ```swift  
  protocol Test: AnyObject {
     func run()
-}
+}    
+
+**❓ What does this mean?**  
+
 
 ```  
 
