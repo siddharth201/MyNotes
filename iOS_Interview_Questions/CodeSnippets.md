@@ -163,5 +163,37 @@ perfectly valid
 [Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp4.md)  
 
 </details>
+
+### Q.
+```swift  
+protocol Counter {
+    mutating func increment()
+}
+
+struct MyCounter: Counter {
+    var count = 0
+    
+    func increment() {
+        count += 1
+    }
+}  
+
+❓ What happens?  
+
+```  
+
+<details>
+<summary>Output</summary>  
+
+```swift  
+
+perfectly valid  
+
+```   
+ 
+[Concept]()  
+
+</details>
+
    
 
