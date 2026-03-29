@@ -269,7 +269,7 @@ obj.test()
 
 </details>  
 
-### Q.10
+### Q.10 Protocol Composition
 ```swift  
  
 
