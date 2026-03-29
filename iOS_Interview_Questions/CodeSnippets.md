@@ -265,11 +265,6 @@ obj.test()
 <details>
 <summary>Output</summary>  
 
-```swift  
-  
-
-```   
- 
 [Concept]()  
 
 </details>
