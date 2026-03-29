@@ -252,7 +252,7 @@ obj.test()
 
 </details>  
 
-### Q. Self Requirement
+### Q.9 Self Requirement
 ```swift  
  protocol Clonable {
     func clone() -> Self
@@ -266,6 +266,24 @@ obj.test()
 <summary>Output</summary>  
 
 [Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp7.md)  
+
+</details>  
+
+### Q.10
+```swift  
+ 
+
+```  
+
+<details>
+<summary>Output</summary>  
+
+```swift  
+  
+
+```   
+ 
+[Concept]()  
 
 </details>
 
