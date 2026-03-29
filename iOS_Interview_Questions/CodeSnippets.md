@@ -248,7 +248,7 @@ obj.test()
   Class
 ```   
  
-[Concept]()  
+[Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/protocols_snippet_exp6.md)  
 
 </details>
 
