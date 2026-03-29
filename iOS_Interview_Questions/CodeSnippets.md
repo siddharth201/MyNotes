@@ -218,7 +218,7 @@ struct MyCounter: Counter {
 
 </details>  
 
-### Q.Static vs Dynamic Dispatch
+### Q.8 Static vs Dynamic Dispatch
 ```swift  
  protocol A {
     func test()
@@ -252,7 +252,7 @@ obj.test()
 
 </details>  
 
-### Q.
+### Q. Self Requirement
 ```swift  
  
 
