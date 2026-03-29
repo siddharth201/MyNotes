@@ -187,7 +187,7 @@ struct MyCounter: Counter {
 
 ```swift  
 
-perfectly valid  
+❌ Compile error  
 
 ```   
  
