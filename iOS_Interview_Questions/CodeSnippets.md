@@ -220,7 +220,24 @@ struct MyCounter: Counter {
 
 ### Q.Static vs Dynamic Dispatch
 ```swift  
- 
+ protocol A {
+    func test()
+}
+
+extension A {
+    func test() {
+        print("Protocol")
+    }
+}
+
+class B: A {
+    func test() {
+        print("Class")
+    }
+}
+
+let obj: A = B()
+obj.test()
 
 ```  
 
