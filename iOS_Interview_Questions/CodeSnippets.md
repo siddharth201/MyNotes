@@ -204,7 +204,6 @@ struct MyCounter: Counter {
 
 **❓ What does this mean?**  
 
-
 ```  
 
 <details>
