@@ -164,7 +164,7 @@ perfectly valid
 
 </details>
 
-### Q.
+### Q.6 Mutating Keyword
 ```swift  
 protocol Counter {
     mutating func increment()
