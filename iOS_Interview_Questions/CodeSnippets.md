@@ -245,8 +245,7 @@ obj.test()
 <summary>Output</summary>  
 
 ```swift  
-  
-
+  Class
 ```   
  
 [Concept]()  
