@@ -134,7 +134,7 @@ let c: Container = IntContainer()
 
 ```swift  
 
-before swift 5.7 out put: compiler error 
+before swift 5.7 out put: compiler error (Protocol with associatedtype cannot be used as a type) 
 after swift 5.7 out put: 10  
 
 ```   
