@@ -218,7 +218,7 @@ struct MyCounter: Counter {
 
 </details>  
 
-### Q.
+### Q.Static vs Dynamic Dispatch
 ```swift  
  
 
