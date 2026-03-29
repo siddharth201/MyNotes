@@ -271,7 +271,12 @@ obj.test()
 
 ### Q.10 Protocol Composition
 ```swift  
- 
+ protocol A {}
+protocol B {}
+
+func test(obj: A & B) {}
+
+❓ What is this?
 
 ```  
 
