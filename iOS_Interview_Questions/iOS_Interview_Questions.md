@@ -7494,6 +7494,12 @@ Use **reference types (class)** when you want **shared mutable state** (like man
 
 </details>  
 
+### ****  
+<details>
+<summary>Answer</summary>
+
+</details>  
+
 ## 6. SwiftUI  
 
 
