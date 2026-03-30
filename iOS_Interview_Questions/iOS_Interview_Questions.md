@@ -7372,7 +7372,7 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 
 ### **Q31: When would you choose a struct over a class?**  
 <details>
-<summary>Answer</summary>. 
+<summary>Answer</summary> 
 
 Swift gives you both **structs** and **classes**, and the choice depends on what kind of behavior you need. Here’s when you’d pick a **struct over a class**:
 
@@ -7425,7 +7425,7 @@ Use a **class** when you need shared identity, inheritance, or reference semanti
 
 ### **Q32: What is value semantics vs reference semantics?**  
 <details>
-<summary>Answer</summary>. 
+<summary>Answer</summary> 
 
 ### Value Semantics
 
