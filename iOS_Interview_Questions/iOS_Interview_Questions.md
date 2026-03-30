@@ -7362,9 +7362,8 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 
 • **No stored properties** (except indirectly through associated values).  
 
-• No Inheritan
+• No Inheritance
  
-
 </details>  
 
 ## 6. SwiftUI  
