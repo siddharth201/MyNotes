@@ -7587,7 +7587,7 @@ Here every case has a **predefined String value**.
 
 Think of raw values as *labels or IDs* for enum cases, while associated values are *extra info attached at runtime*.
 
-[Additional Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Struct_Class_WhentoUse.md)
+[Additional Concept](https://github.com/siddharth201/MyNotes/blob/main/Swift/AssosiatedValues.md)
 </details> 
 
 ## 6. SwiftUI  
