@@ -7423,9 +7423,74 @@ Use a **class** when you need shared identity, inheritance, or reference semanti
 
 </details>  
 
-### ****  
+### **Q32: What is value semantics vs reference semantics?**  
 <details>
 <summary>Answer</summary>. 
+
+### Value Semantics
+
+• **Definition:** When you assign or pass a value, a **copy** of it is made.
+
+• **Types in Swift:** struct, enum, tuple.
+
+• **Behavior:**
+o Each variable holds its **own independent copy**.
+o Changing one does **not affect others**.
+
+**Example:**
+
+```swift
+struct Point {
+    var x: Int
+    var y: Int
+}
+
+var p1 = Point(x: 0, y: 0)
+var p2 = p1  // Copy is made
+
+p2.x = 10
+print(p1.x) // 0 (unchanged)
+print(p2.x) // 10 (changed)
+```
+
+---
+
+### Reference Semantics
+
+• **Definition:** When you assign or pass a value, only a **reference (pointer)** is shared.
+
+• **Types in Swift:** class.
+
+• **Behavior:**
+o Multiple variables can point to the **same instance**.
+o Changing one affects all references.
+
+**Example:**
+
+```swift
+class Point {
+    var x: Int
+    var y: Int
+
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+}
+
+var p1 = Point(x: 0, y: 0)
+var p2 = p1  // Both refer to the same object
+
+p2.x = 10
+print(p1.x) // 10 (changed too, since same instance)
+print(p2.x) // 10
+```
+
+---
+
+Use **value types (struct/enum)** when you want **independent copies** (safe, predictable).
+
+Use **reference types (class)** when you want **shared mutable state** (like managing a shared resource).
 
 </details>  
 
