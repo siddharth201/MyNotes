@@ -7523,7 +7523,13 @@ print(p2.x) // 99
 
 p1 and p2 are independent.
 
-</details>  
+</details>   
+
+### ****  
+<details>
+<summary>Answer</summary>
+
+</details> 
 
 ## 6. SwiftUI  
 
