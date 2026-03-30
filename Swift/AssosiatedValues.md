@@ -226,5 +226,150 @@ Enum = case + data
 
 # Q: Give one example which I can run and test. incluse if let, guard and switch all  
 
+Perfect — here’s a **complete runnable Swift example** that covers:
+
+✅ enum with associated values
+✅ `switch`
+✅ `if case`
+✅ `guard case`
+
+---
+
+## 🚀 Full Example (Copy–Paste & Run)
+
+```swift
+import Foundation
+
+// MARK: - Enum with Associated Values
+enum APIResponse {
+    case success(data: String)
+    case failure(code: Int, message: String)
+}
+
+// MARK: - Function using SWITCH
+func handleWithSwitch(_ response: APIResponse) {
+    print("---- SWITCH ----")
+    
+    switch response {
+    case .success(let data):
+        print("Success with data:", data)
+        
+    case .failure(let code, let message):
+        print("Failure with code:", code, "message:", message)
+    }
+}
+
+// MARK: - Function using IF CASE
+func handleWithIfCase(_ response: APIResponse) {
+    print("---- IF CASE ----")
+    
+    if case .success(let data) = response {
+        print("Success:", data)
+    } else if case .failure(let code, let message) = response {
+        print("Failure:", code, message)
+    }
+}
+
+// MARK: - Function using GUARD CASE
+func handleWithGuardCase(_ response: APIResponse) {
+    print("---- GUARD CASE ----")
+    
+    guard case .success(let data) = response else {
+        print("Not a success response")
+        return
+    }
+    
+    print("Success (guard):", data)
+}
+
+// MARK: - Test Data
+
+let successResponse = APIResponse.success(data: "User fetched successfully")
+let failureResponse = APIResponse.failure(code: 404, message: "Not Found")
+
+// MARK: - Run Examples
+
+print("\n=== Testing SUCCESS ===")
+handleWithSwitch(successResponse)
+handleWithIfCase(successResponse)
+handleWithGuardCase(successResponse)
+
+print("\n=== Testing FAILURE ===")
+handleWithSwitch(failureResponse)
+handleWithIfCase(failureResponse)
+handleWithGuardCase(failureResponse)
+```
+
+---
+
+## 🔹 Expected Output
+
+```text
+=== Testing SUCCESS ===
+---- SWITCH ----
+Success with data: User fetched successfully
+---- IF CASE ----
+Success: User fetched successfully
+---- GUARD CASE ----
+Success (guard): User fetched successfully
+
+=== Testing FAILURE ===
+---- SWITCH ----
+Failure with code: 404 message: Not Found
+---- IF CASE ----
+Failure: 404 Not Found
+---- GUARD CASE ----
+Not a success response
+```
+
+---
+
+## 🔥 What you just learned
+
+---
+
+### 🔹 `switch` → full handling (most common)
+
+```swift
+switch response { ... }
+```
+
+👉 Best for:
+
+* Handling ALL cases
+
+---
+
+### 🔹 `if case` → quick check
+
+```swift
+if case .success(let data) = response
+```
+
+👉 Best for:
+
+* One condition
+
+---
+
+### 🔹 `guard case` → early exit
+
+```swift
+guard case .success(let data) = response else { return }
+```
+
+👉 Best for:
+
+* Clean flow (very common in production)
+
+---
+
+## 🔥 Interview Tip
+
+> “I use `switch` for exhaustive handling, `if case` for quick checks, and `guard case` for early exits to keep code clean.”
+
+---
+
+# Q. 
 
 
