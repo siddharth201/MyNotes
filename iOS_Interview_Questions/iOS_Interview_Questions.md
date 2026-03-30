@@ -7365,7 +7365,8 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 • No Inheritan
  
  ### Additional Concept
- [Memory Allocation in Struct and Class](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/static_vs_dynamic_dispatch_exp.md)
+ [Memory Allocation in Struct and Class](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/static_vs_dynamic_dispatch_exp.md)  
+ 
  [class Supports deinitializers but not struct and enums why?](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeInitForClasses.md)
 </details>  
 
