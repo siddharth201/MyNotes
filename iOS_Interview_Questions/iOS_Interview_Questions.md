@@ -7419,7 +7419,7 @@ Use a **struct** when you’re modeling “things” like a coordinate, a date, 
 Use a **class** when you need shared identity, inheritance, or reference semantics—like a view controller, network manager, or database connection.  
 
 ## Additional Concept
-[]()
+[choose a struct over a class]()
 
 </details>  
 
