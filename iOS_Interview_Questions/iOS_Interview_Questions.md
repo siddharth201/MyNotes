@@ -7525,10 +7525,69 @@ p1 and p2 are independent.
 
 </details>   
 
-### ****  
+### **Q34: What are associated values in enums? How are they different from raw values?**  
 <details>
-<summary>Answer</summary>
+<summary>Answer</summary>  
 
+• Associated values let you **attach extra information** to each enum case.
+
+• Each case can carry **different types and different amounts of data**.
+
+• They are defined when you **create an instance** of the enum, not when you declare it.
+
+**Example:**
+
+```swift
+enum NetworkResponse {
+    case success(data: String)
+    case failure(errorCode: Int, message: String)
+}
+
+let response1 = NetworkResponse.success(data: "User data loaded")
+let response2 = NetworkResponse.failure(errorCode: 404, message: "Not Found")
+```
+
+Here,
+• success carries a String
+• failure carries an Int + String
+
+---
+
+## Raw Values in Enums
+
+• Raw values are **constant default values** assigned to enum cases.
+
+• They must all be of the **same type (String, Int, etc.)**.
+
+• Defined at **declaration time**, not per instance.
+
+**Example:**
+
+```swift
+enum Direction: String {
+    case north = "N"
+    case south = "S"
+    case east = "E"
+    case west = "W"
+}
+
+let dir = Direction.north
+print(dir.rawValue) // "N"
+```
+
+Here every case has a **predefined String value**.
+
+---
+
+## Key Difference
+
+• **Associated values:** dynamic, can vary per instance, each case can hold different data.
+
+• **Raw values:** static, predefined, same type for all cases, fixed at declaration.
+
+Think of raw values as *labels or IDs* for enum cases, while associated values are *extra info attached at runtime*.
+
+[Additional Concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Struct_Class_WhentoUse.md)
 </details> 
 
 ## 6. SwiftUI  
