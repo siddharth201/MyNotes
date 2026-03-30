@@ -7364,7 +7364,8 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 
 • No Inheritan
  
- 
+ ### Additional Concept
+ ["Memory Allocation"](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/static_vs_dynamic_dispatch_exp.md)
 </details>  
 
 ## 6. SwiftUI  
