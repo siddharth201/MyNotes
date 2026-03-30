@@ -7370,6 +7370,12 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
  [class Supports deinitializers but not struct and enums why?](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeInitForClasses.md)
 </details>  
 
+### ****  
+<details>
+<summary>Answer</summary>. 
+
+</details>  
+
 ## 6. SwiftUI  
 
 
