@@ -7423,6 +7423,12 @@ Use a **class** when you need shared identity, inheritance, or reference semanti
 
 </details>  
 
+### ****  
+<details>
+<summary>Answer</summary>. 
+
+</details>  
+
 ## 6. SwiftUI  
 
 
