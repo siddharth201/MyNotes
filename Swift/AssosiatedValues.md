@@ -370,6 +370,8 @@ guard case .success(let data) = response else { return }
 
 ---
 
-# Q. 
+# Q. Suppose on home page we are showing grocery , electronics, medicines and there can be new type from api which we don't know how to handle this?  
+
+
 
 
