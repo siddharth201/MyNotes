@@ -7312,7 +7312,7 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 • This is horizontal sharing → mix and match abilities across types.
 </details>  
 
-### ****  
+### **Q30: What are the main differences between struct, class, and enum in Swift?**  
 <details>
 <summary>Answer</summary>. 
 
