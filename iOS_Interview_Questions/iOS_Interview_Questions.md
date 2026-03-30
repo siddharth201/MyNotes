@@ -7494,9 +7494,34 @@ Use **reference types (class)** when you want **shared mutable state** (like man
 
 </details>  
 
-### ****  
+### **Q33: What are the default behaviors of struct vs class regarding copying?**  
 <details>
 <summary>Answer</summary>
+
+### Struct (Value Type)
+
+• **Default behavior:** When you assign a struct to a new variable or pass it to a function, a **copy is made**.
+
+• Each variable has its **own independent copy** of the data.
+
+• Modifying one copy does **not affect** the other.
+
+**Example:**
+
+```swift
+struct Point {
+    var x: Int
+    var y: Int
+}
+
+var p1 = Point(x: 10, y: 20)
+var p2 = p1  // copy created
+p2.x = 99
+print(p1.x) // 10
+print(p2.x) // 99
+```
+
+p1 and p2 are independent.
 
 </details>  
 
