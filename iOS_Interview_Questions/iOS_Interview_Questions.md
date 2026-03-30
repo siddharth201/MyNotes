@@ -7312,6 +7312,12 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 • This is horizontal sharing → mix and match abilities across types.
 </details>  
 
+### ****  
+<details>
+<summary>Answer</summary>. 
+
+</details>  
+
 ## 6. SwiftUI  
 
 
