@@ -7314,7 +7314,54 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 
 ### **Q30: What are the main differences between struct, class, and enum in Swift?**  
 <details>
-<summary>Answer</summary>. 
+<summary>Answer</summary>  
+
+### Struct
+
+• **Value type** → Copied when passed around.
+
+• Stored in the **stack** (in most cases, though the compiler may optimize).
+
+• Supports **properties, methods, initializers, subscripts, and extensions**.
+
+• Can conform to **protocols**.
+
+• **No inheritance** (but protocol adoption works).
+
+• Used for **lightweight models** (e.g., CGPoint, CGSize, User models).
+
+---
+
+### Class
+
+• **Reference type** → Passed around by reference.
+
+• Stored in the **heap**.
+
+• Supports **properties, methods, initializers, subscripts, and extensions**.
+
+• Can conform to **protocols**.
+
+• Supports **inheritance** → subclassing, overriding.
+
+• Supports **deinitializers** (not available in structs/enums).
+
+• Needed when you want **shared mutable state**.
+
+---
+
+### Enum
+
+• **Value type** → Like struct, copied on assignment.
+
+• Defines a **finite set of cases** (with or without associated values).
+
+• Great for **state modeling** (.loading, .success(data), .failure(error)).
+
+• Can have **methods, computed properties, extensions, and protocol conformance**.
+
+• **No stored properties** (except indirectly through associated values).
+ 
 
 </details>  
 
