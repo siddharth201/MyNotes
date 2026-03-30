@@ -224,5 +224,7 @@ Enum = case + data
 
 ---
 
-# Q: 
+# Q: Give one example which I can run and test. incluse if let, guard and switch all  
+
+
 
