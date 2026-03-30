@@ -7360,7 +7360,9 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
 
 • Can have **methods, computed properties, extensions, and protocol conformance**.
 
-• **No stored properties** (except indirectly through associated values).
+• **No stored properties** (except indirectly through associated values).  
+
+• No Inheritan
  
 
 </details>  
