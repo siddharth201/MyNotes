@@ -372,6 +372,207 @@ guard case .success(let data) = response else { return }
 
 # Q. Suppose on home page we are showing grocery , electronics, medicines and there can be new type from api which we don't know how to handle this?  
 
+Excellent question — this is **real-world design thinking** 🔥
+Let’s solve it properly (this is interview-level thinking).
+
+---
+
+## 🔹 Your Problem
+
+You have categories:
+
+```text
+grocery, electronics, medicines
+```
+
+👉 But API may send:
+
+```text
+"fashion", "toys", "cars" (unknown in advance)
+```
+
+---
+
+## 🔴 Problem with simple enum
+
+```swift
+enum Category {
+    case grocery
+    case electronics
+    case medicines
+}
+```
+
+👉 This will **break** if API sends new value ❌
+
+---
+
+## 🔹 Solution: YES — use associated value ✅
+
+---
+
+## ✅ Correct Design (Best Practice)
+
+```swift
+enum Category {
+    case grocery
+    case electronics
+    case medicines
+    case other(String) // 👈 dynamic support
+}
+```
+
+---
+
+## 🔹 Parsing API response
+
+```swift
+func parseCategory(_ value: String) -> Category {
+    switch value.lowercased() {
+    case "grocery":
+        return .grocery
+    case "electronics":
+        return .electronics
+    case "medicines":
+        return .medicines
+    default:
+        return .other(value) // 👈 unknown case handled
+    }
+}
+```
+
+---
+
+## 🔹 Usage
+
+```swift
+let apiValue = "fashion"
+let category = parseCategory(apiValue)
+```
+
+---
+
+## 🔹 Handling it
+
+```swift
+switch category {
+case .grocery:
+    print("Show grocery UI")
+
+case .electronics:
+    print("Show electronics UI")
+
+case .medicines:
+    print("Show medicines UI")
+
+case .other(let type):
+    print("Handle dynamically:", type)
+}
+```
+
+---
+
+## 🔥 This is EXACTLY where associated values shine
+
+👉 You:
+
+* Keep known cases strongly typed ✅
+* Still handle unknown cases dynamically ✅
+
+---
+
+## 🔹 Real-world benefit
+
+```text
+Known categories → specific UI
+Unknown category → fallback UI
+```
+
+---
+
+## 🔹 Even Better (Production-level)
+
+```swift
+enum Category {
+    case grocery
+    case electronics
+    case medicines
+    case other(raw: String)
+}
+```
+
+---
+
+## 🔹 UI Handling Example
+
+```swift
+func renderUI(for category: Category) {
+    switch category {
+    case .grocery:
+        print("🥦 Grocery UI")
+        
+    case .electronics:
+        print("📱 Electronics UI")
+        
+    case .medicines:
+        print("💊 Medicines UI")
+        
+    case .other(let value):
+        print("📦 Generic UI for:", value)
+    }
+}
+```
+
+---
+
+## 🔥 Key Insight (Interview Gold)
+
+> “Enums are closed sets, but we can use associated values like `.other(String)` to safely handle unknown or future cases coming from APIs.”
+
+---
+
+## 🔹 Why this is better than String
+
+---
+
+### ❌ Bad approach
+
+```swift
+var category: String
+```
+
+👉 Problems:
+
+* No type safety
+* Typos possible
+* No control
+
+---
+
+### ✅ Enum + associated value
+
+👉 Benefits:
+
+* Type-safe
+* Future-proof
+* Clean handling
+
+---
+
+## 🔚 Final Takeaway
+
+```text
+Enum = known cases
+Associated value = unknown/dynamic support
+```
+
+---
+
+## 🚀 Interview Answer (Perfect)
+
+> “Yes, associated values are the correct way to handle dynamic or unknown cases in enums. I would define known categories as enum cases and add a fallback case like `.other(String)` to safely handle new values from the API while maintaining type safety.”
+
+
 
 
 
