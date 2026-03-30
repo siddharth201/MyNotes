@@ -7370,9 +7370,56 @@ Bird, Fish, and Duck are unrelated types, but Duck horizontally shares capabilit
  [class Supports deinitializers but not struct and enums why?](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeInitForClasses.md)
 </details>  
 
-### ****  
+### **Q31: When would you choose a struct over a class?**  
 <details>
 <summary>Answer</summary>. 
+
+Swift gives you both **structs** and **classes**, and the choice depends on what kind of behavior you need. Here’s when you’d pick a **struct over a class**:
+
+### 1. Value Semantics (Copy Instead of Share)
+
+• If you want each instance to have its own independent copy of data.
+
+• **Example:** Point(x: 5, y: 10) → if you copy it, changes won’t affect the original.
+
+• Good for modeling small, simple data.
+
+---
+
+### 2. Simpler, Lightweight Models
+
+• When you’re representing simple, immutable data models like coordinates, ranges, or settings.
+
+• **Example:** struct User { let id: Int; let name: String }
+
+---
+
+### 3. No Need for Inheritance
+
+• If you don’t need polymorphism or subclassing, structs are usually better.
+
+• Protocols give you flexibility without requiring inheritance.
+
+---
+
+### 4. Thread-Safety (Immutability Friendly)
+
+• Since structs are copied, they’re safer in multithreaded environments compared to shared mutable classes.
+
+---
+
+### 5. Performance
+
+• Structs are stack-allocated (most of the time), so they’re often faster and use less memory than heap-allocated classes.
+
+---
+
+Use a **struct** when you’re modeling “things” like a coordinate, a date, a user profile, or a settings configuration.
+
+Use a **class** when you need shared identity, inheritance, or reference semantics—like a view controller, network manager, or database connection.  
+
+## Additional Concept
+[]()
 
 </details>  
 
