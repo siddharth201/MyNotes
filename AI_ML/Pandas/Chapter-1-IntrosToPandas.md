@@ -22,7 +22,7 @@
 **💡 Importance:**
  * Fundamental building blocks for all Pandas operations.  
  * Enable labeled indexing, which makes data more meaningful and readable.  
- * 
+ * Used throughout data pipelines: loading, cleaning, analyzing, and visualizing data.
 
 
 
