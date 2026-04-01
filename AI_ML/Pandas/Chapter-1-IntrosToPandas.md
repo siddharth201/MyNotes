@@ -12,14 +12,14 @@
  
  
 ## Pandas: DataFrame and Series
-📌 Description:
-Series: A 1D labeled array capable of holding any data type (like a column in Excel).
+**📌 Description:**  
+
+ * Series: A 1D labeled array capable of holding any data type (like a column in Excel).  
+ 
+ * DataFrame: A 2D table with labeled rows and columns (like a spreadsheet or SQL table).
 
 
-DataFrame: A 2D table with labeled rows and columns (like a spreadsheet or SQL table).
-
-
-💡 Importance:
+**💡 Importance:**
 Fundamental building blocks for all Pandas operations.
 
 
