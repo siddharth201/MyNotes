@@ -21,7 +21,8 @@
 
 **💡 Importance:**
  * Fundamental building blocks for all Pandas operations.  
- * Enable labeled indexing, which makes data more meaningful and readable.
+ * Enable labeled indexing, which makes data more meaningful and readable.  
+ * 
 
 
 
