@@ -8,7 +8,23 @@
    
  * Backbone of most data science and machine learning workflows.  
  
- * Handles structured data from various sources (CSV, Excel, SQL, JSON, etc.) efficiently.
+ * Handles structured data from various sources (CSV, Excel, SQL, JSON, etc.) efficiently.  
+ 
+ 
+## Pandas: DataFrame and Series
+📌 Description:
+Series: A 1D labeled array capable of holding any data type (like a column in Excel).
+
+
+DataFrame: A 2D table with labeled rows and columns (like a spreadsheet or SQL table).
+
+
+💡 Importance:
+Fundamental building blocks for all Pandas operations.
+
+
+Enable labeled indexing, which makes data more meaningful and readable.
+
 
 
 ---
