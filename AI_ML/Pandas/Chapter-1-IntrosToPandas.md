@@ -1,6 +1,6 @@
 
 ## 1. Introduction to Pandas
-**📌 Description:**
+**📌 Description:**  
  Pandas is a Python library built for data manipulation and analysis. It provides two primary data structures: **Series (1D)** and **DataFrame (2D)**, which allow for fast, flexible, and expressive data handling.  
  
 **💡 Importance:**
