@@ -664,7 +664,12 @@ func getElements() async -> [Int] {
 
 ---  
 
-# Q. 
+# Q. but sync also have below signature
+```swift
+ public func sync(execute block: () -> Void)
+```  
+
+
 
 
 
