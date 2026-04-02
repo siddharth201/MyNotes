@@ -32,7 +32,8 @@ Automatically picks:
 * which core  
 * when to run  
 * when to pause  
-* based on QoS  
+* based on QoS
+  
 You NEVER manage threads yourself.
 
 
