@@ -75,13 +75,13 @@ queue.sync {
     // current thread waits
 }
 
-Meaning:
+**Meaning:**
 * Current thread stops
 * Task executes
 * After completion → current thread continues
 
 
-✔ async (Non-Blocking)
+**✔ async (Non-Blocking)**
 
 queue.async {
     // caller does NOT wait
