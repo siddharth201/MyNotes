@@ -103,12 +103,12 @@ queue.async {
 }
 ```
 
-task is enqueued for asynchronous execution”, current thread continues instantly.
+task is enqueued for asynchronous execution, current thread continues instantly.
 
-####⭐ 7. Sync/Async with Serial Queue
+###⭐ 7. Sync/Async with Serial Queue
 
 
-**Case 1: Serial Queue + Sync → sequential & blocking**
+**Case 1: Serial Queue + Sync → sequential & blocking**  
 **Case 2: Serial Queue + Async → sequential & non-blocking**
 
 
