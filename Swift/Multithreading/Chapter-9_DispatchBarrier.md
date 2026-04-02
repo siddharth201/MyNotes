@@ -163,6 +163,168 @@ queue.async(flags: .barrier) {
 
 ---
 
-# Q. Give example of Caching system whic I can run and check  
+# Q. Give example of Caching system whic I can run and check
+  
+Perfect — let’s build a **real, runnable caching system using Dispatch Barrier** that you can test in a Playground or app 👇
+
+---
+
+## 🚀 Thread-Safe Cache Using Dispatch Barrier
+
+## ✅ Features:
+
+* Multiple **reads happen in parallel**
+* **Writes are exclusive**
+* No race conditions
+
+---
+
+## 🧩 Implementation
+
+```swift id="9z9k4o"
+final class ImageCache {
+    
+    private var cache: [String: String] = [:] // Simulating image with String
+    private let queue = DispatchQueue(label: "com.cache.concurrent", attributes: .concurrent)
+    
+    // MARK: - Read (Parallel)
+    func get(key: String) -> String? {
+        return queue.sync {
+            print("🔍 Reading key: \(key)")
+            return cache[key]
+        }
+    }
+    
+    // MARK: - Write (Exclusive)
+    func set(key: String, value: String) {
+        queue.async(flags: .barrier) {
+            print("✍️ Writing key: \(key)")
+            self.cache[key] = value
+        }
+    }
+}
+```
+
+---
+
+## 🧪 Test It (Important)
+
+```swift id="yxkz7x"
+let cache = ImageCache()
+let globalQueue = DispatchQueue.global(qos: .userInitiated)
+
+// Simulate multiple writes
+for i in 1...5 {
+    globalQueue.async {
+        cache.set(key: "img\(i)", value: "image_data_\(i)")
+    }
+}
+
+// Simulate multiple reads
+for i in 1...5 {
+    globalQueue.async {
+        if let value = cache.get(key: "img\(i)") {
+            print("✅ Got value: \(value)")
+        } else {
+            print("❌ No value for img\(i)")
+        }
+    }
+}
+```
+
+---
+
+## 🔍 What You Will Observe
+
+Output will look like (order may vary):
+
+```text id="n9rxli"
+✍️ Writing key: img1
+✍️ Writing key: img2
+🔍 Reading key: img1
+🔍 Reading key: img2
+✅ Got value: image_data_1
+...
+```
+
+---
+
+## 🧠 What’s Happening Internally
+
+### Without barrier ❌
+
+* Multiple writes → crash / inconsistent data
+
+### With barrier ✅
+
+```text id="4xg2p7"
+Read Read Read (parallel)
+---- WRITE (exclusive) ----
+Read Read
+```
+
+---
+
+## ⚠️ Important Observation
+
+Some reads may print:
+
+```text id="3o6xxz"
+❌ No value for img3
+```
+
+👉 Why?
+
+* Reads may happen **before write finishes**
+
+---
+
+## ✅ Fix (Optional – if you want consistency)
+
+Use `DispatchGroup` to wait for writes:
+
+```swift id="z52s0x"
+let group = DispatchGroup()
+
+for i in 1...5 {
+    group.enter()
+    globalQueue.async {
+        cache.set(key: "img\(i)", value: "image_data_\(i)")
+        group.leave()
+    }
+}
+
+group.notify(queue: .main) {
+    for i in 1...5 {
+        print(cache.get(key: "img\(i)") ?? "nil")
+    }
+}
+```
+
+---
+
+## 🔥 Interview Explanation (Use This)
+
+> “In a caching system, reads are frequent and can happen concurrently, but writes must be exclusive. Dispatch barrier ensures that writes don’t conflict while allowing multiple reads for better performance.”
+
+---
+
+## 🚀 Bonus (Production Tip)
+
+In real apps:
+
+* Replace `String` with `UIImage`
+* Add **LRU eviction**
+* Use **NSCache** if simple caching is enough
+
+---
+
+## 🧠 Key Takeaways
+
+* Use **concurrent queue + barrier**
+* Reads → `sync`
+* Writes → `async(flags: .barrier)`
+* Barrier = **perfect for cache systems**
+
 
 
