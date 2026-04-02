@@ -68,11 +68,12 @@ let concurrentQueue = DispatchQueue(label: "com.demo.concurrent", attributes: .c
 DispatchQueue.main.async { ... }
 ```  
 
-**✔ Global Queue (System-provided concurrent queues)**
-DispatchQueue.global(qos: .userInitiated).async { ... }
+**✔ Global Queue (System-provided concurrent queues)**  
+```swift
+DispatchQueue.global(qos: .userInitiated).async { ... }  
+```
 
-
-####⭐ 6. Sync vs Async
+###⭐ 6. Sync vs Async
 
 **✔ sync → waits
 ✔ async → doesn’t wait**
