@@ -11,8 +11,8 @@ Imagine a restaurant kitchen:
 * There are different lines of work:
     * Making sandwiches
     * Baking pizza
-    * Washing dishes
-You simply give tasks to the manager → he decides which worker does what, and when.
+    * Washing dishes  
+You simply give tasks to the manager → he decides which worker does what, and when.  
 This manager is GCD.
 
 #### 2. How GCD Works: -
