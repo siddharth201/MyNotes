@@ -165,7 +165,7 @@ queue.async(flags: .barrier) {
 
 ---
 
-# Q. Give example of Caching system whic I can run and check
+# Q. Give example of Caching system which I can run and check
   
 Perfect — let’s build a **real, runnable caching system using Dispatch Barrier** that you can test in a Playground or app 👇
 
@@ -326,7 +326,11 @@ In real apps:
 * Use **concurrent queue + barrier**
 * Reads → `sync`
 * Writes → `async(flags: .barrier)`
-* Barrier = **perfect for cache systems**
+* Barrier = **perfect for cache systems**  
+
+---  
+
+# Q.
 
 
 
