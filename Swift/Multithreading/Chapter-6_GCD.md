@@ -12,6 +12,7 @@ Imagine a restaurant kitchen:
     * Making sandwiches
     * Baking pizza
     * Washing dishes  
+    
 You simply give tasks to the manager → he decides which worker does what, and when.  
 This manager is GCD.
 
