@@ -515,12 +515,156 @@ If interviewer pushes deeper:
 
 ---
 
-# Q. why?
+## Q. why?
 ```swift
 queue.async {
     return array // ❌ not possible
 }
 ```  
+
+Great — this is a **core concept of async in Swift** and interviewers love this question 🔥
+
+---
+
+## 🚀 Why This Doesn’t Work
+
+```swift
+queue.async {
+    return array // ❌ Error
+}
+```
+
+---
+
+## 🔴 Reason: `async` closure is **non-returning (Void)**
+
+The signature of `async` is:
+
+```swift
+DispatchQueue.async(execute: @escaping () -> Void)
+```
+
+👉 That means:
+
+* Closure **must return `Void`**
+* You **cannot return a value**
+
+---
+
+## 🧠 Think of It Like This
+
+### 🔹 `sync` = “Give me result now”
+
+```swift
+let result = queue.sync {
+    return array
+}
+```
+
+👉 Caller **waits** and gets value ✅
+
+---
+
+### 🔹 `async` = “Do it later”
+
+```swift
+queue.async {
+    // work happens later
+}
+```
+
+👉 Caller **does NOT wait**
+👉 So **where will the return value go?** ❌
+
+---
+
+## ⚡ Key Problem
+
+When you write:
+
+```swift
+queue.async {
+    return array
+}
+```
+
+👉 Even if it were allowed:
+
+* The block runs **later**
+* The function calling this has already finished
+
+➡️ So the return value is **lost**
+
+---
+
+## ✅ Correct Ways to Get Value from async
+
+## 1. Using Completion Handler
+
+```swift
+func getElements(completion: @escaping ([Int]) -> Void) {
+    queue.async {
+        completion(self.array)
+    }
+}
+```
+
+Usage:
+
+```swift
+getElements { result in
+    print(result)
+}
+```
+
+---
+
+## 2. Using `sync` (what we used earlier)
+
+```swift
+func getElements() -> [Int] {
+    return queue.sync {
+        return array
+    }
+}
+```
+
+---
+
+## 3. Using Modern Swift (`async/await`) ✅
+
+```swift
+func getElements() async -> [Int] {
+    return await withCheckedContinuation { continuation in
+        queue.async {
+            continuation.resume(returning: self.array)
+        }
+    }
+}
+```
+
+---
+
+## 🎯 Interview Explanation (Simple & Strong)
+
+> “`DispatchQueue.async` takes a closure that returns Void, so it cannot return a value. Since the work is executed asynchronously, there’s no way to return the result directly to the caller. Instead, we use completion handlers or async/await.”
+
+---
+
+## 🧠 Key Takeaways
+
+* `async` → **fire and forget**
+* `sync` → **wait and return**
+* `async` cannot return values ❌
+* Use:
+
+  * completion handler
+  * async/await
+  * or sync (carefully)
+
+---  
+
+# Q. 
 
 
 
