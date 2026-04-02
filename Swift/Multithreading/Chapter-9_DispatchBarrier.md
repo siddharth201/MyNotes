@@ -669,6 +669,158 @@ func getElements() async -> [Int] {
  public func sync(execute block: () -> Void)
 ```  
 
+Excellent observation 👏 — this is where most people get confused.
+
+Yes, you’re right that one of the overloads of `sync` looks like:
+
+```swift
+public func sync(execute block: () -> Void)
+```
+
+So the natural question is:
+
+> “If `sync` also takes a `Void` closure, how can it return a value?”
+
+---
+
+# 🚀 The Real Answer: **There are TWO versions of `sync`**
+
+### ✅ 1. Void version (what you saw)
+
+```swift
+queue.sync {
+    print("Do something")
+}
+```
+
+👉 This returns **Void**
+
+---
+
+### ✅ 2. Generic version (this is the important one)
+
+```swift
+public func sync<T>(execute block: () -> T) -> T
+```
+
+👉 This version:
+
+* Accepts a closure that returns **any type `T`**
+* Returns that value back to caller
+
+---
+
+# 🔥 This is what we actually use
+
+```swift
+let result = queue.sync {
+    return array
+}
+```
+
+👉 Behind the scenes:
+
+* Compiler uses:
+  `sync<T>(execute: () -> T) -> T`
+
+---
+
+# 🧠 Why `async` doesn’t have this?
+
+Because `async` is defined as:
+
+```swift
+func async(execute work: @escaping () -> Void)
+```
+
+👉 Only **Void closure allowed**
+👉 No generic return version exists
+
+---
+
+# ⚡ Core Difference (VERY IMPORTANT)
+
+| Feature           | `sync`                  | `async`      |
+| ----------------- | ----------------------- | ------------ |
+| Execution         | Immediate               | Later        |
+| Waits?            | ✅ Yes                   | ❌ No         |
+| Can return value? | ✅ Yes (generic version) | ❌ No         |
+| Closure type      | `() -> T`               | `() -> Void` |
+
+---
+
+# 🎯 Why `sync` Can Return Value
+
+Because:
+
+* Caller **waits** until block finishes
+* So returning value is possible
+
+```swift
+let value = queue.sync {
+    return 10
+}
+```
+
+👉 Execution flow:
+
+```text
+Call sync → run block → get result → return
+```
+
+---
+
+# ❌ Why `async` Cannot Return Value
+
+Because:
+
+* Work runs **later**
+* Caller already moved ahead
+
+```swift
+queue.async {
+    return 10 // ❌ meaningless
+}
+```
+
+👉 Execution flow:
+
+```text
+Call async → schedule work → return immediately
+                     ↓
+              block runs later
+```
+
+👉 No one is waiting → return value is useless
+
+---
+
+# 🧠 Simple Analogy
+
+* `sync` = “Go get me coffee and come back” ☕
+* `async` = “Go get coffee whenever, I’m leaving” 🚶‍♂️
+
+👉 If you return coffee in async… no one is there to receive it 😄
+
+---
+
+# 💬 Perfect Interview Answer
+
+> “DispatchQueue.sync has a generic overload that allows returning a value because the caller waits for execution. DispatchQueue.async only accepts a Void closure since it executes later and cannot return a value to the caller.”
+
+---
+
+# 🔥 Pro Tip (Bonus Insight)
+
+If interviewer pushes:
+
+👉 You can say:
+
+* “Return values in async are handled via completion handlers or async/await”
+* “sync is blocking, so it enables direct return”
+
+---
+
 
 
 
