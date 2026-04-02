@@ -7,7 +7,7 @@
 ---  
 
 ## Note:
-It does **NOT:
+It does **NOT:**
 * create threads
 * run tasks
 * synchronize shared memory
