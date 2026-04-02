@@ -105,7 +105,7 @@ queue.async {
 
 task is enqueued for asynchronous execution, current thread continues instantly.
 
-###⭐ 7. Sync/Async with Serial Queue
+### ⭐ 7. Sync/Async with Serial Queue
 
 
 **Case 1: Serial Queue + Sync → sequential & blocking**  
