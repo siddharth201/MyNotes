@@ -190,5 +190,197 @@ func search(text: String) {
 ---
 
 
-# Q. In debounce example u have not returned or is cancelled. If this manual we should check it or im wrong. Explain cancel under the hood
+# Q. In debounce example u have not returned or is cancelled. If this manual we should check it or im wrong. Explain cancel under the hood  
+
+Great catch 👍 — this is **exactly the level of confusion interviewers expect you to resolve clearly**.
+
+You are **NOT wrong**.
+Let’s break it down **step-by-step**, very precisely.
+
+---
+
+## 1️⃣ Your Core Doubt (Rephrased)
+
+> “In the debounce example, we didn’t check `isCancelled` or return early.
+> If cancellation is manual, shouldn’t we always check it?”
+
+**Short answer:**
+➡️ **In debounce, cancellation works differently depending on *when* you cancel.**
+➡️ That’s why the example still works **without `isCancelled` checks**.
+
+Now let’s explain **why**, by going under the hood.
+
+---
+
+## 2️⃣ What `cancel()` REALLY Does (Under the Hood)
+
+When you call:
+
+```swift
+workItem.cancel()
+```
+
+### Internally, GCD does ONLY this:
+
+```text
+✔ Sets an internal boolean flag: isCancelled = true
+❌ Does NOT stop a running thread
+❌ Does NOT interrupt execution
+❌ Does NOT rewind execution
+```
+
+That’s it.
+
+So conceptually:
+
+```swift
+workItem.isCancelled == true
+```
+
+Nothing more.
+
+---
+
+## 3️⃣ Two Different Cancellation Scenarios (IMPORTANT)
+
+### 🔹 Case 1: Cancel BEFORE execution starts (Debounce case)
+
+```swift
+DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: workItem)
+workItem.cancel() // called before deadline
+```
+
+### What happens internally?
+
+* The work item is **still sitting in the queue**
+* GCD sees:
+
+  ```swift
+  if workItem.isCancelled {
+      skip execution
+  }
+  ```
+* **The block never runs**
+* So you don’t need to check `isCancelled` inside
+
+📌 **This is why debounce works without checks**
+
+---
+
+## 🔹 Case 2: Cancel AFTER execution has started
+
+```swift
+DispatchQueue.global().async(execute: workItem)
+workItem.cancel() // too late
+```
+
+### What happens?
+
+* The block is **already executing**
+* GCD **cannot stop a running thread**
+* Your code WILL continue unless **you check manually**
+
+✅ **Here you MUST check `isCancelled`**
+
+---
+
+## 4️⃣ Why Debounce Example Works WITHOUT `isCancelled`
+
+Let’s revisit the debounce:
+
+```swift
+var workItem: DispatchWorkItem?
+
+func search(text: String) {
+    workItem?.cancel()
+
+    let newWorkItem = DispatchWorkItem {
+        print("Searching:", text)
+    }
+
+    workItem = newWorkItem
+    DispatchQueue.main.asyncAfter(
+        deadline: .now() + 0.5,
+        execute: newWorkItem
+    )
+}
+```
+
+### Timeline
+
+1. User types “s”
+2. WorkItem A scheduled
+3. User types “sw”
+4. WorkItem A → **cancelled before execution**
+5. WorkItem B scheduled
+6. Only **latest work item runs**
+
+📌 Since cancelled items **never execute**, no internal check is required.
+
+---
+
+## 5️⃣ When You MUST Check `isCancelled`
+
+### ❌ Incorrect assumption:
+
+> “Cancel always stops execution”
+
+### ✅ Correct rule:
+
+> **If the work item has already started → you must check manually**
+
+### Example: Long task
+
+```swift
+let workItem = DispatchWorkItem {
+    for i in 1...5 {
+        if workItem.isCancelled {
+            print("Cancelled midway")
+            return
+        }
+        sleep(1)
+        print("Step \(i)")
+    }
+}
+```
+
+📌 Interview phrase:
+
+> `DispatchWorkItem` cancellation is **cooperative**, not preemptive.
+
+---
+
+## 6️⃣ One-Line Mental Model (Very Important)
+
+Think of `cancel()` like this:
+
+> 🧠 **“Please don’t start if you haven’t yet.
+> If you already started, I’ll cooperate and exit myself.”**
+
+---
+
+## 7️⃣ Compare with Swift Concurrency (For Interviews)
+
+| Feature             | DispatchWorkItem | Task                               |
+| ------------------- | ---------------- | ---------------------------------- |
+| Cancellation        | Flag-based       | Structured                         |
+| Stops running code  | ❌ No             | ❌ No (throws)                      |
+| Needs manual checks | ✅ Yes            | ✅ Yes (`Task.checkCancellation()`) |
+| Queue-based         | Yes              | No                                 |
+
+📌 Interview-ready line:
+
+> Cancellation in GCD and Swift Concurrency is **never forceful**, always **cooperative**.
+
+---
+
+## 8️⃣ Final Interview Answer (Perfect)
+
+> **`DispatchWorkItem.cancel()` only sets a cancellation flag.
+> If the work item hasn’t started yet, GCD skips execution automatically.
+> If it’s already running, the developer must manually check `isCancelled` and exit early.
+> That’s why debounce examples work without checks — cancellation happens before execution.**
+
+
+
 
