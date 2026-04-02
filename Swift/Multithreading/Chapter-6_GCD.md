@@ -52,7 +52,10 @@ Special serial queue that runs on main thread → UI updates.
 ### ⭐ 4. Creating Queues
 
 **✔ Serial Queue:** (One task runs → next waits.)
+  
+```swift
 let serialQueue = DispatchQueue(label: "com.demo.serial")
+```  
 
 **✔ Concurrent Queue** (Multiple tasks run in parallel.)
 let concurrentQueue = DispatchQueue(label: "com.demo.concurrent",
