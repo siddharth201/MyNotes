@@ -73,7 +73,7 @@ DispatchQueue.main.async { ... }
 DispatchQueue.global(qos: .userInitiated).async { ... }  
 ```
 
-###⭐ 6. Sync vs Async
+### ⭐ 6. Sync vs Async  
 
 **✔ sync → waits **   
 **✔ async → doesn’t wait**
