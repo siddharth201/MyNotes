@@ -381,6 +381,8 @@ A semaphore with value 0 is used for signaling and synchronization, while a sema
 7️⃣ Mental model to never forget 🧠
 * 0 → 🚫 nobody allowed, wait for signal
 * 1 → 🔐 one at a time (lock)
-* N → 🚦 N at a time (throttling)
+* N → 🚦 N at a time (throttling)  
+
+---
 
 
