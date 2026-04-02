@@ -379,7 +379,12 @@ Think of `cancel()` like this:
 > **`DispatchWorkItem.cancel()` only sets a cancellation flag.
 > If the work item hasn’t started yet, GCD skips execution automatically.
 > If it’s already running, the developer must manually check `isCancelled` and exit early.
-> That’s why debounce examples work without checks — cancellation happens before execution.**
+> That’s why debounce examples work without checks — cancellation happens before execution.**  
+
+---  
+
+# Example
+
 
 
 
