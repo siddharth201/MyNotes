@@ -124,9 +124,9 @@ queue.async { print("C") }
 
 ```
 
-#### ⭐ 8. Sync/Async with Concurrent Queue
+### ⭐ 8. Sync/Async with Concurrent Queue
 
-Case 1: Concurrent + Async → parallel execution
+**Case 1:** Concurrent + Async → parallel execution
 
 ```swift
 let queue = DispatchQueue(label: "concurrent", attributes: .concurrent)
