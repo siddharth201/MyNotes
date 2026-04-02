@@ -192,5 +192,7 @@ Calling wait() blocks the calling thread.
 That’s why:  
 * Never call wait() on main thread  
 * Can cause deadlocks  
-* Can freeze UI  
+* Can freeze UI    
+
+
 
