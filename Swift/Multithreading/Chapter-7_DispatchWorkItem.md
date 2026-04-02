@@ -385,6 +385,10 @@ Think of `cancel()` like this:
 
 # Example
 
+```swift
+var workItem: DispatchWorkItem?  
+
+
 
 
 
