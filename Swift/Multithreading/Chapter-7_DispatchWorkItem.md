@@ -160,10 +160,10 @@ func search(text: String) {
 
 ## ❌ Where You Should AVOID It
 
-🚫 Long-running tasks → use **OperationQueue**
-🚫 Complex dependencies → use **Operation**
-🚫 Swift Concurrency code → prefer **`Task` / `Task.cancel()`**
-🚫 Fire-and-forget tasks → simple `queue.async {}` is enough
+🚫 Long-running tasks → use **OperationQueue**  
+🚫 Complex dependencies → use **Operation**  
+🚫 Swift Concurrency code → prefer **`Task` / `Task.cancel()`**  
+🚫 Fire-and-forget tasks → simple `queue.async {}` is enough  
 
 ---
 
