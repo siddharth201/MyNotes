@@ -9,18 +9,27 @@ Unlike barriers (queue-specific), semaphores work across any threads, making the
 
 ## Example: Limiting Concurrent Downloads
 ```swift
-let semaphore = DispatchSemaphore(value: 2)  // Max 2 concurrent tasks
-let queue = DispatchQueue.global(qos: .userInitiated)
-
-for url in ["url1", "url2", "url3", "url4"] {
-    queue.async {
-        semaphore.wait()  // Acquire permit
-        print("Fetching \(url)")
-        // Simulate network call
-        Thread.sleep(forTimeInterval: 1)
-        print("Done \(url)")
-        semaphore.signal()  // Release permit
+    func regulateAccess() {
+        let queue = DispatchQueue.global(qos: .utility)
+        let semaphore = DispatchSemaphore(value: 2) // allow only 2 tasks at a time
+        
+        let urls = ["url1", "url2", "url3", "url4", "url5"]
+        
+        for url in urls {
+            queue.async {
+                
+                semaphore.wait() // 🔒 acquire permit
+                
+                print("Start \(url)")
+                
+                // Simulate API call
+                sleep(2)
+                
+                print("End \(url)")
+                
+                semaphore.signal() // 🔓 release permit
+            }
+        }
     }
-}
 ```
 This ensures only 2 downloads run simultaneously, throttling resource use while allowing parallelism. Output shows staggered execution. [devindeep](https://devindeep.com/dispatch-semaphore-examples-in-swift/)
