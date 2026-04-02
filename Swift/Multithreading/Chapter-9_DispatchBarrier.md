@@ -515,6 +515,15 @@ If interviewer pushes deeper:
 
 ---
 
+# Q. why?
+```swift
+queue.async {
+    return array // ❌ not possible
+}
+```  
+
+
+
 
 
 
