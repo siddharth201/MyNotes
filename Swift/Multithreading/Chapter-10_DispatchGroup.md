@@ -12,7 +12,7 @@ It does **NOT:**
 * run tasks  
 * synchronize shared memory  
 
-It only counts: enter → leave.
+It only **counts**: enter → leave.
 
 Interview-Friendly Explanation
 DispatchGroup lets you run multiple asynchronous tasks in parallel and get notified when all of them are finished. 
