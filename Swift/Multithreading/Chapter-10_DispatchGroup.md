@@ -14,7 +14,7 @@ It does **NOT:**
 
 It only **counts**: enter → leave.
 
-Interview-Friendly Explanation
+## Interview-Friendly Explanation
 DispatchGroup lets you run multiple asynchronous tasks in parallel and get notified when all of them are finished. 
 
 It's used for coordinating parallel API calls, image processing, or merging results. 
