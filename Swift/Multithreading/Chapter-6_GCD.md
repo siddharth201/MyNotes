@@ -57,9 +57,12 @@ Special serial queue that runs on main thread → UI updates.
 let serialQueue = DispatchQueue(label: "com.demo.serial")
 ```  
 
-**✔ Concurrent Queue** (Multiple tasks run in parallel.)
-let concurrentQueue = DispatchQueue(label: "com.demo.concurrent",
-                                    attributes: .concurrent)
+**✔ Concurrent Queue** (Multiple tasks run in parallel.)  
+
+```swift
+let concurrentQueue = DispatchQueue(label: "com.demo.concurrent", attributes: .concurrent)
+```
+                                    
 **✔ Main Queue**
 DispatchQueue.main.async { ... }
 
