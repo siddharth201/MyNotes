@@ -194,5 +194,93 @@ That’s why:
 * Can cause deadlocks  
 * Can freeze UI    
 
+---  
+
+# Q. wait and signal both should not be call from main thread?  
+
+Great question — this is one of those subtle but very important rules that interviewers love.
+Let’s answer it precisely, without confusion.
+
+Short, correct answer
+❌ wait() should NOT be called on the main thread ✅ signal() CAN be called on the main thread
+They are not equal in terms of danger.
+
+Why this difference exists (key idea)
+🔴 wait() → BLOCKS the calling thread
+🟢 signal() → DOES NOT block
+This single fact explains everything.
+
+1️⃣ Why wait() is dangerous on the main thread
+semaphore.wait()
+What it does:
+* If semaphore count is 0
+* The calling thread blocks
+* It sleeps until someone calls signal()
+If this is the main thread:
+* UI freezes ❌
+* RunLoop stops ❌
+* signal() may never run ❌
+* Deadlock risk ❌
+Interview one-liner (memorize)
+Calling wait() on the main thread can block the UI and cause deadlocks.
+
+2️⃣ Why signal() is SAFE on the main thread
+semaphore.signal()
+What it does:
+* Increments the semaphore count
+* Wakes one waiting thread (if any)
+* Returns immediately
+* Does NOT block
+So on the main thread:
+* UI stays responsive ✅
+* No deadlock by itself ✅
+Very common real-world pattern
+DispatchQueue.global().async {
+    semaphore.wait()
+    // background work
+}
+
+DispatchQueue.main.async {
+    semaphore.signal()   // ✅ perfectly safe
+}
+
+3️⃣ Correct usage pattern (THIS IS THE GOLD STANDARD)
+✅ Background thread waits
+✅ Any thread (including main) signals
+DispatchQueue.global().async {
+    semaphore.wait()        // blocks background thread
+    print("Doing work")
+}
+
+DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    semaphore.signal()      // releases background thread
+}
+
+4️⃣ When signal() on main thread becomes dangerous (rare case)
+signal() itself is safe, BUT:
+❌ If signal() is supposed to be called after some main-thread work, ❌ and the main thread is already blocked by wait()
+→ deadlock.
+Example (❌ DEADLOCK)
+let semaphore = DispatchSemaphore(value: 0)
+
+DispatchQueue.main.async {
+    semaphore.wait()   // blocks main thread ❌
+}
+
+DispatchQueue.main.async {
+    semaphore.signal() // never runs ❌
+}
+So the rule is really about who waits, not who signals.
+
+5️⃣ Interview-quality rule (best phrasing)
+wait() should never be called on the main thread because it blocks execution. signal() is non-blocking and can safely be called from the main thread.
+This is 100% correct.
+
+6️⃣ Summary table (lock this in)
+Operation    Blocks?    Safe on Main Thread?
+wait()    ✅ Yes    ❌ No
+signal()    ❌ No    ✅ Yes
+7️⃣ One-line mental model 🧠
+Waiting blocks. Signaling releases. Blocking the main thread is always dangerous.
 
 
