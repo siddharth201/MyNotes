@@ -281,6 +281,106 @@ Operation    Blocks?    Safe on Main Thread?
 wait()    ✅ Yes    ❌ No
 signal()    ❌ No    ✅ Yes
 7️⃣ One-line mental model 🧠
-Waiting blocks. Signaling releases. Blocking the main thread is always dangerous.
+Waiting blocks. Signaling releases. Blocking the main thread is always dangerous.  
+
+# Q. let semaphore = DispatchSemaphore(value: 0) vs let semaphore = DispatchSemaphore(value: 1) This is a core semaphore concept and very commonly asked in interviews. Let’s explain it clearly, comparatively, and intuitively so it sticks forever.
+
+🔑 Core idea first (1 line)
+The initial value of a semaphore defines how many threads are allowed to proceed immediately.
+Everything else flows from this.
+
+1️⃣ DispatchSemaphore(value: 0) — “Closed gate”
+What it means
+* Initial count = 0
+* No thread is allowed to pass
+* Everyone who calls wait() will block
+* Someone must call signal() first
+Mental model
+🚪 Gate is locked Someone must open it before anyone can enter
+
+Typical use cases
+* Convert async → sync
+* “Wait until something finishes”
+* One-time event signaling
+
+Example (classic async → sync)
+let semaphore = DispatchSemaphore(value: 0)
+
+DispatchQueue.global().async {
+    sleep(2)
+    print("Async work done")
+    semaphore.signal()   // 🔓 opens the gate
+}
+
+print("Waiting...")
+semaphore.wait()         // ⛔ blocks
+print("Continued after signal")
+Output
+Waiting...
+Async work done
+Continued after signal
+Interview explanation
+A semaphore with value 0 blocks all waiters until a signal occurs. It’s used for event-style synchronization.
+
+2️⃣ DispatchSemaphore(value: 1) — “Single-pass gate” (Binary Semaphore)
+What it means
+* Initial count = 1
+* One thread can enter immediately
+* Additional threads will block
+* Acts like a lock / mutex
+Mental model
+🚪 Gate has one ticket One person enters, others wait
+
+Typical use cases
+* Protect shared resource
+* Ensure mutual exclusion
+* Lock replacement (legacy code)
+
+Example (protect shared data)
+let semaphore = DispatchSemaphore(value: 1)
+var counter = 0
+
+DispatchQueue.concurrentPerform(iterations: 3) { _ in
+    semaphore.wait()     // 🔐 lock
+    counter += 1
+    print(counter)
+    semaphore.signal()   // 🔓 unlock
+}
+Output (order may vary)
+1
+2
+3
+Interview explanation
+A semaphore with value 1 behaves like a mutex, allowing only one thread to access a critical section at a time.
+
+3️⃣ Side-by-side comparison (IMPORTANT)
+Aspect    value: 0    value: 1
+Initial state    Locked    One allowed
+First wait()    Blocks    Proceeds
+Acts like    Event    Lock / Mutex
+Typical usage    Async → sync    Protect shared resource
+Threads allowed    0 initially    1
+Risk on main thread    ❌ very high    ❌ still high
+4️⃣ General rule (extends beyond 0 and 1)
+DispatchSemaphore(value: N)
+Allows N threads to enter simultaneously.
+Example:
+* value: 3 → max 3 concurrent downloads
+* value: 5 → max 5 tasks running
+
+5️⃣ Interview “why” question (VERY COMMON)
+❓ Why not always use value: 1?
+Because:
+* Sometimes you want event signaling (value: 0)
+* Sometimes you want concurrency limiting (value > 1)
+* Semaphores are more flexible than locks
+
+6️⃣ One-line interview-ready summary (MEMORIZE)
+A semaphore with value 0 is used for signaling and synchronization, while a semaphore with value 1 behaves like a mutex, allowing only one thread to access a critical section.
+
+7️⃣ Mental model to never forget 🧠
+* 0 → 🚫 nobody allowed, wait for signal
+* 1 → 🔐 one at a time (lock)
+* N → 🚦 N at a time (throttling)
 
 
