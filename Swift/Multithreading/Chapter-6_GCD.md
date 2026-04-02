@@ -1,6 +1,6 @@
 ## Chapter -6 GCD(Grand Central Dispatch)
 
-###🎯 Part 1 — WHAT IS GCD?
+### 🎯 Part 1 — WHAT IS GCD?
 
 👉 GCD = A system that manages tasks and threads for you.
 
