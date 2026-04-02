@@ -1,7 +1,9 @@
 
 ## 🚀 What is Dispatch Barrier?
 
-> A **barrier** ensures that a block executes **exclusively** on a concurrent queue.
+> A **barrier** ensures that a block executes **exclusively** on a concurrent queue.  
+ 
+Dispatch barrier is a temporary stop sign on a concurrent queue that lets one task run alone to safely modify shared data.
 
 👉 Meaning:
 
