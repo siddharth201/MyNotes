@@ -386,9 +386,22 @@ Think of `cancel()` like this:
 # Example
 
 ```swift
-var workItem: DispatchWorkItem?  
+    var workItem: DispatchWorkItem?  
 
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //=====================
+        //MARK: - Multithreading (DispatchWorkItem)
+        workItem = DispatchWorkItem { [weak self] in
+            self?.heavyWork()
+        }
+        
+        DispatchQueue.global().async(execute: workItem!)
+        print("Normal Work")
+        workItem?.cancel()
+        //=====================
+    }
 
 
 
