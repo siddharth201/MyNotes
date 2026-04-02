@@ -2,7 +2,7 @@
 
 ### 🎯 Part 1 — WHAT IS GCD?
 
-👉 GCD = GCD stands for Grand Central Dispatch that manages tasks and threads for us and help achive multithreading.
+👉 GCD = GCD stands for Grand Central Dispatch. It is a low leve API that manages tasks and threads for us and help achive multithreading.
 
 #### ⭐ 1. Layman Explanation (Simple)
 Imagine a restaurant kitchen:
