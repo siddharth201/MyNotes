@@ -75,16 +75,18 @@ DispatchQueue.global(qos: .userInitiated).async { ... }
 
 ###⭐ 6. Sync vs Async
 
-**✔ sync → waits
-✔ async → doesn’t wait**
+**✔ sync → waits **   
+**✔ async → doesn’t wait**
 
-Example: 
+Example:   
 **❗ sync (Blocking)**
 
+```swift
 queue.sync {
     // runs immediately
     // current thread waits
 }
+```
 
 **Meaning:**
 * Current thread stops
@@ -94,10 +96,12 @@ queue.sync {
 
 **✔ async (Non-Blocking)**
 
-queue.async {
-    // caller does NOT wait
-    // work is enqueued and will execute later on a queue-managed thread
+```swift
+queue.async {  
+    // caller does NOT wait  
+    // work is enqueued and will execute later on a queue-managed thread  
 }
+```
 
 task is enqueued for asynchronous execution”, current thread continues instantly.
 
