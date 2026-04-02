@@ -23,10 +23,10 @@ DispatchQueue.global().async {
 ```
 
 You **cannot**:
-❌ Cancel it
-❌ Know when it finished
-❌ Reuse it
-❌ Add notifications
+❌ Cancel it   
+❌ Know when it finished  
+❌ Reuse it  
+❌ Add notifications  
 
 **DispatchWorkItem solves this.**
 
