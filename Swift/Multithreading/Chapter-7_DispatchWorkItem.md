@@ -420,8 +420,10 @@ Think of `cancel()` like this:
         print("heavyWork completed")
     }
     
-    ** Output **  
-    
+    ** Output **   
+     
+    Normal Work
+    heavyWork was stopped mid-way!
 
 ```
 
