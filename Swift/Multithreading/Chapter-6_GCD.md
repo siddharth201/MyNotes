@@ -18,7 +18,7 @@ This manager is GCD.
 
 #### 2. How GCD Works: -
 
-GCD provides:
+GCD provides: (QTpTs)
 
 **✔ 1. Queues**
 Where tasks are added.
