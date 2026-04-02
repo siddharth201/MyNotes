@@ -205,7 +205,7 @@ Let’s break it down **step-by-step**, very precisely.
 > If cancellation is manual, shouldn’t we always check it?”
 
 **Short answer:**
-➡️ **In debounce, cancellation works differently depending on *when* you cancel.**
+➡️ **In debounce, cancellation works differently depending on *when* you cancel.**  
 ➡️ That’s why the example still works **without `isCancelled` checks**.
 
 Now let’s explain **why**, by going under the hood.
