@@ -185,8 +185,10 @@ func search(text: String) {
 
 ## 🧠 One-Line Interview Summary
 
-> **DispatchWorkItem is used when you need control over a GCD task — like cancellation, delay, notification, or debouncing — without the overhead of OperationQueue.**
+> **DispatchWorkItem is used when you need control over a GCD task — like cancellation, delay, notification, or debouncing — without the overhead of OperationQueue.**  
+
+---
 
 
-# Q. 
+# Q. In debounce example u have not returned or is cancelled. If this manual we should check it or im wrong. Explain cancel under the hood
 
