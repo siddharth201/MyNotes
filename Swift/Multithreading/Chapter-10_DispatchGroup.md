@@ -14,10 +14,10 @@ It does **NOT:**
 
 It only **counts**: enter → leave.
 
-## Interview-Friendly Explanation
-DispatchGroup lets you run multiple asynchronous tasks in parallel and get notified when all of them are finished. 
+## Interview-Friendly Explanation  
+DispatchGroup lets you run multiple asynchronous tasks in parallel and get notified when all of them are finished.   
 
-It's used for coordinating parallel API calls, image processing, or merging results. 
+It's used for coordinating parallel API calls, image processing, or merging results.   
 
 We can use enter/leave or queue.async, and notify is used to perform a final operation on completion.
 
