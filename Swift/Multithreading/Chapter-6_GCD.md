@@ -49,7 +49,7 @@ Executes tasks in parallel (multiple tasks at once).
 Special serial queue that runs on main thread → UI updates.
 
 
-#### ⭐ 4. Creating Queues
+### ⭐ 4. Creating Queues
 
 **✔ Serial Queue:** (One task runs → next waits.)
 let serialQueue = DispatchQueue(label: "com.demo.serial")
