@@ -135,6 +135,10 @@ queue.async { print("1") }
 queue.async { print("2") }
 queue.async { print("3") }
 
-Output order: non-deterministic Could be 1-3-2 or 3-1-2 etc.
+**Output order:**  
+  
+    non-deterministic  
+    Could be 1-3-2 or 3-1-2 etc.  
+
 Tasks run concurrently.
 ```
