@@ -401,7 +401,29 @@ Think of `cancel()` like this:
         print("Normal Work")
         workItem?.cancel()
         //=====================
+    }  
+    
+    func heavyWork() {
+        
+        // Simulating a long task with a loop 
+        for i in 1...3 {
+            // Check IF we were cancelled during the work
+            if workItem?.isCancelled == true {
+                print("heavyWork was stopped mid-way!")
+                return
+            }
+            
+            sleep(3) // Simulate 1 second of work
+            print("Working... \(i)")
+        }
+        
+        print("heavyWork completed")
     }
+    
+    ** Output **  
+    
+
+```
 
 
 
