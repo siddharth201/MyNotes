@@ -90,14 +90,15 @@ queue.async {
 
 task is enqueued for asynchronous execution”, current thread continues instantly.
 
-⭐ 7. Sync/Async with Serial Queue
+####⭐ 7. Sync/Async with Serial Queue
 
 
-Case 1: Serial Queue + Sync → sequential & blocking
-Case 2: Serial Queue + Async → sequential & non-blocking
+**Case 1: Serial Queue + Sync → sequential & blocking**
+**Case 2: Serial Queue + Async → sequential & non-blocking**
 
 
-Example:
+**Example:**
+```swift
 let queue = DispatchQueue(label: "serial")
 
 queue.async { print("A") }
@@ -105,12 +106,13 @@ queue.async { print("B") }
 queue.async { print("C") }
 
 Output: Always A B C (order preserved).
+```
 
-
-⭐ 8. Sync/Async with Concurrent Queue
+#### ⭐ 8. Sync/Async with Concurrent Queue
 
 Case 1: Concurrent + Async → parallel execution
 
+```swift
 let queue = DispatchQueue(label: "concurrent", attributes: .concurrent)
 
 queue.async { print("1") }
@@ -119,3 +121,4 @@ queue.async { print("3") }
 
 Output order: non-deterministic Could be 1-3-2 or 3-1-2 etc.
 Tasks run concurrently.
+```
