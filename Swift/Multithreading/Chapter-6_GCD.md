@@ -16,7 +16,7 @@ Imagine a restaurant kitchen:
 You simply give tasks to the manager → he decides which worker does what, and when.  
 This manager is GCD.
 
-#### 2. How GCD Works: -
+### 2. How GCD Works: -
 
 GCD provides: (QTpTs)
 
@@ -38,7 +38,7 @@ You NEVER manage threads yourself.
 
 
 
-#### ⭐ 3. Types of Dispatch Queues
+### ⭐ 3. Types of Dispatch Queues
 **A. Serial Queue**  
 Executes tasks one at a time, in order.
 
