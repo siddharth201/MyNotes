@@ -190,7 +190,7 @@ func search(text: String) {
 ---
 
 
-# Q. In debounce example u have not returned or is cancelled. If this manual we should check it or im wrong. Explain cancel under the hood  
+# Q. In the debounce example, we didn’t check isCancelled or return early.If cancellation is manual, shouldn’t we always check it?. Explain cancel under the hood  
 
 Great catch 👍 — this is **exactly the level of confusion interviewers expect you to resolve clearly**.
 
