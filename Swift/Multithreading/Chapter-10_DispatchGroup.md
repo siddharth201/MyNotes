@@ -4,7 +4,21 @@
 
 > DispatchGroup lets multiple tasks run concurrently and notifies you when ALL tasks are done..
 
----
+---  
+
+## Note:
+It does NOT:
+* create threads
+* run tasks
+* synchronize shared memory
+It only counts: enter → leave.
+
+Interview-Friendly Explanation
+DispatchGroup lets you run multiple asynchronous tasks in parallel and get notified when all of them are finished. 
+
+It's used for coordinating parallel API calls, image processing, or merging results. 
+
+We can use enter/leave or queue.async, and notify is used to perform a final operation on completion.
 
 ## 🧠 Why Do We Use It?
 
