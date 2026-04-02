@@ -7,10 +7,11 @@
 ---  
 
 ## Note:
-It does **NOT:**
-* create threads
-* run tasks
-* synchronize shared memory
+It does **NOT:**  
+* create threads  
+* run tasks  
+* synchronize shared memory  
+
 It only counts: enter → leave.
 
 Interview-Friendly Explanation
