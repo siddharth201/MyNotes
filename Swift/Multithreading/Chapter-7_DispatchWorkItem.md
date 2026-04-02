@@ -150,11 +150,11 @@ func search(text: String) {
 
 ## ✅ Where You SHOULD Use DispatchWorkItem
 
-✔ Cancelable async tasks
-✔ Delayed execution with cancellation
-✔ Debouncing / throttling
-✔ Task completion notifications
-✔ One-off background tasks with control
+✔ Cancelable async tasks  
+✔ Delayed execution with cancellation  
+✔ Debouncing / throttling  
+✔ Task completion notifications  
+✔ One-off background tasks with control  
 
 ---
 
