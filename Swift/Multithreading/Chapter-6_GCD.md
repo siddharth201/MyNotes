@@ -63,8 +63,10 @@ let serialQueue = DispatchQueue(label: "com.demo.serial")
 let concurrentQueue = DispatchQueue(label: "com.demo.concurrent", attributes: .concurrent)
 ```
                                     
-**✔ Main Queue**
+**✔ Main Queue**  
+```swift
 DispatchQueue.main.async { ... }
+```  
 
 **✔ Global Queue (System-provided concurrent queues)**
 DispatchQueue.global(qos: .userInitiated).async { ... }
