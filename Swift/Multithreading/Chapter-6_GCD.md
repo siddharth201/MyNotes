@@ -119,8 +119,9 @@ let queue = DispatchQueue(label: "serial")
 queue.async { print("A") }
 queue.async { print("B") }
 queue.async { print("C") }
+  
+**Output:** Always A B C (order preserved).  
 
-Output: Always A B C (order preserved).
 ```
 
 #### ⭐ 8. Sync/Async with Concurrent Queue
