@@ -383,6 +383,16 @@ A semaphore with value 0 is used for signaling and synchronization, while a sema
 * 1 → 🔐 one at a time (lock)
 * N → 🚦 N at a time (throttling)  
 
----
+---  
+
+⭐ 10. Common Pitfalls (Very Important)
+❌ 1. Calling wait() without signal()
+→ Deadlock
+❌ 2. Calling signal() too many times
+→ Counter becomes wrong → unexpected behavior
+❌ 3. Using semaphore on main thread
+→ UI freeze
+❌ 4. Using semaphore when actor or barrier is better
+Actors are safer for read/write state.
 
 
