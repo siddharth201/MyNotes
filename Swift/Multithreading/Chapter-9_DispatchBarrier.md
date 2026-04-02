@@ -330,7 +330,26 @@ In real apps:
 
 ---  
 
-# Q.
+# Q. Here for read queue.sync and for write queue.async why?
+```swift
+    // Read (multiple allowed)
+    func getElements() -> [Int] {
+        return queue.sync {
+            print("Reading array")
+            return array
+        }
+    }
+    
+    // Write (exclusive)
+    func add(_ element: Int) {
+        queue.async(flags: .barrier) {
+            print("Writing \(element)")
+            self.array.append(element)
+        }
+    }
+```
+
+
 
 
 
