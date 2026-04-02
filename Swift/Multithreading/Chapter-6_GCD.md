@@ -42,10 +42,10 @@ You NEVER manage threads yourself.
 **A. Serial Queue**  
 Executes tasks one at a time, in order.
 
-**B. Concurrent Queue**
+**B. Concurrent Queue**  
 Executes tasks in parallel (multiple tasks at once).  
 
-**C. Main Queue**
+**C. Main Queue**  
 Special serial queue that runs on main thread → UI updates.
 
 
