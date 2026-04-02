@@ -186,3 +186,11 @@ If interviewer asks **real use case**, say:
 
 ---
 
+### One dangerous rule (VERY IMPORTANT)  
+Calling wait() blocks the calling thread.
+
+That’s why:  
+* Never call wait() on main thread  
+* Can cause deadlocks  
+* Can freeze UI  
+
