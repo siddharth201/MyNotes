@@ -120,7 +120,7 @@ queue.async { print("A") }
 queue.async { print("B") }
 queue.async { print("C") }
   
-**Output:** Always A B C (order preserved).  
+Output: Always A B C (order preserved).  
 
 ```
 
@@ -135,8 +135,7 @@ queue.async { print("1") }
 queue.async { print("2") }
 queue.async { print("3") }
 
-**Output order:**  
-  
+Output order:  
     non-deterministic  
     Could be 1-3-2 or 3-1-2 etc.  
 
