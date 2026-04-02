@@ -2,7 +2,7 @@
 
 ## 🚀 What is DispatchGroup?
 
-> A **DispatchGroup** lets you track a group of async tasks and get notified when **all tasks are finished**.
+> DispatchGroup lets multiple tasks run concurrently and notifies you when ALL tasks are done..
 
 ---
 
