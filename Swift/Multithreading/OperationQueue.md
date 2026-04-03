@@ -5,20 +5,20 @@
 
 ---
 
-# 🧠 Think of It Like This
+## 🧠 Think of It Like This
 
 * `DispatchQueue` → low-level (manual control)
 * `OperationQueue` → high-level (more features, easier management)
 
 ---
 
-# 🎯 Interview Definition
+## 🎯 Interview Definition
 
 > “OperationQueue is a queue that manages the execution of Operation objects, allowing control over concurrency, dependencies, and task cancellation.”
 
 ---
 
-# 🔹 Core Components
+## 🔹 Core Components
 
 ## 1. `Operation` (Task)
 
@@ -40,7 +40,7 @@
 
 ---
 
-# ✅ Basic Example (BlockOperation)
+## ✅ Basic Example (BlockOperation)
 
 ```swift
 let queue = OperationQueue()
@@ -61,7 +61,7 @@ queue.addOperation(op2)
 
 ---
 
-# 🔥 Control Concurrency (Very Important)
+## 🔥 Control Concurrency (Very Important)
 
 ```swift
 let queue = OperationQueue()
@@ -73,7 +73,7 @@ queue.maxConcurrentOperationCount = 2
 
 ---
 
-# 🔗 Dependencies (Powerful Feature)
+## 🔗 Dependencies (Powerful Feature)
 
 ```swift
 let queue = OperationQueue()
@@ -110,7 +110,7 @@ Update UI
 
 ---
 
-# 🚀 Real Example (API Calls with Limit)
+## 🚀 Real Example (API Calls with Limit)
 
 ```swift
 let queue = OperationQueue()
@@ -129,7 +129,7 @@ for i in 1...5 {
 
 ---
 
-# ❌ Cancellation Support
+## ❌ Cancellation Support
 
 ```swift
 let op = BlockOperation {
@@ -152,7 +152,7 @@ if op.isCancelled {
 
 ---
 
-# ⚖️ OperationQueue vs GCD
+## ⚖️ OperationQueue vs GCD
 
 | Feature             | OperationQueue | GCD          |
 | ------------------- | -------------- | ------------ |
@@ -164,7 +164,7 @@ if op.isCancelled {
 
 ---
 
-# 🧠 When to Use OperationQueue
+## 🧠 When to Use OperationQueue
 
 Use it when:
 
@@ -174,20 +174,20 @@ Use it when:
 
 ---
 
-# ⚠️ When NOT to Use
+## ⚠️ When NOT to Use
 
 * Simple async work → use GCD
 * Modern Swift → prefer `async/await`
 
 ---
 
-# 💬 Perfect Interview Answer
+### 💬 Perfect Interview Answer
 
 > “OperationQueue is a higher-level abstraction over GCD that allows us to manage tasks using Operation objects, with features like dependencies, cancellation, and concurrency control.”
 
 ---
 
-# 🧠 Key Takeaways
+## 🧠 Key Takeaways
 
 * `Operation` = task
 * `OperationQueue` = executes tasks
@@ -199,18 +199,12 @@ Use it when:
 
 ---
 
-# 🚀 Pro Tip (Modern Swift)
+## 🚀 Pro Tip (Modern Swift)
 
 Today:
 
 * `OperationQueue` → still used in legacy / UIKit apps
 * Modern → `Task`, `TaskGroup`, `async/await`
 
----
 
-If you want next:
-
-* 🔥 Custom `Operation` subclass (very important interview question)
-* 🔥 OperationQueue vs DispatchGroup vs Semaphore
-* 🔥 Convert OperationQueue example into async/await
 
