@@ -210,5 +210,185 @@ Today:
 
 # Q. Explain `waitUntilFinished`  
 
+Great — this is a **small API but very important conceptually** (interviewers love it) 🔥
+
+---
+
+## 🚀 Method Signature
+
+```swift
+queue.addOperations([op1, op2, op3], waitUntilFinished: Bool)
+```
+
+👉 Adds multiple operations to the queue
+👉 Optionally **blocks the current thread until all finish**
+
+---
+
+## 🧠 What `waitUntilFinished` Means
+
+## 🔹 `false` (Non-blocking ✅)
+
+```swift
+queue.addOperations([op1, op2, op3], waitUntilFinished: false)
+
+print("Next line executes immediately")
+```
+
+### 👉 Behavior:
+
+* Operations run in background
+* Current thread continues immediately
+
+### 🔍 Output (example):
+
+```text
+Next line executes immediately
+Task 1
+Task 2
+Task 3
+```
+
+---
+
+## 🔹 `true` (Blocking ⚠️)
+
+```swift
+queue.addOperations([op1, op2, op3], waitUntilFinished: true)
+
+print("This runs after all tasks finish")
+```
+
+### 👉 Behavior:
+
+* Current thread **waits**
+* Execution pauses until all operations complete
+
+### 🔍 Output:
+
+```text
+Task 1
+Task 2
+Task 3
+This runs after all tasks finish
+```
+
+---
+
+## ⚠️ Important Rule
+
+> ❌ Never use `waitUntilFinished: true` on the **main thread**
+
+👉 It will:
+
+* Freeze UI 🧊
+* Cause bad user experience
+
+---
+
+## 🔥 Example (Runnable)
+
+```swift
+let queue = OperationQueue()
+
+let op1 = BlockOperation {
+    print("Task 1 started")
+    sleep(2)
+    print("Task 1 finished")
+}
+
+let op2 = BlockOperation {
+    print("Task 2 started")
+    sleep(1)
+    print("Task 2 finished")
+}
+
+queue.addOperations([op1, op2], waitUntilFinished: false)
+
+print("Main thread continues...")
+```
+
+---
+
+## 🔄 Same Example with `true`
+
+```swift
+queue.addOperations([op1, op2], waitUntilFinished: true)
+
+print("All tasks completed")
+```
+
+---
+
+## 🧠 Key Difference
+
+| Feature   | `waitUntilFinished: false` | `true`    |
+| --------- | -------------------------- | --------- |
+| Blocking  | ❌ No                       | ✅ Yes     |
+| UI safe   | ✅ Yes                      | ❌ No      |
+| Execution | Async                      | Sync-like |
+
+---
+
+## 🎯 When to Use
+
+## ✅ Use `false` (most common)
+
+* Normal async tasks
+* UI apps
+* Network calls
+
+---
+
+## ⚠️ Use `true` (rare)
+
+* Background thread
+* Testing / debugging
+* Sequential batch processing
+
+---
+
+## 🔥 Alternative (Better Than Blocking)
+
+Instead of:
+
+```swift
+waitUntilFinished: true
+```
+
+👉 Use:
+
+```swift
+queue.addOperations([op1, op2], waitUntilFinished: false)
+
+let completionOp = BlockOperation {
+    print("All done")
+}
+
+completionOp.addDependency(op1)
+completionOp.addDependency(op2)
+
+queue.addOperation(completionOp)
+```
+
+👉 Non-blocking + clean ✅
+
+---
+
+## 💬 Perfect Interview Answer
+
+> “addOperations allows adding multiple operations to a queue at once. The waitUntilFinished parameter determines whether the current thread should block until all operations complete. It should generally be false to avoid blocking, especially on the main thread.”
+
+---
+
+## 🧠 Key Takeaways
+
+* `addOperations` = batch add
+* `waitUntilFinished: true` = blocking
+* Prefer **non-blocking + dependencies**
+
+---
+
+# Q. 
 
 
