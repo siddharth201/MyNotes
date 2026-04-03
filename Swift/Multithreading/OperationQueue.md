@@ -389,6 +389,8 @@ queue.addOperation(completionOp)
 
 ---
 
-# Q. 
+# Q. Explain addOperations() vs addOperation {}  
+
+
 
 
