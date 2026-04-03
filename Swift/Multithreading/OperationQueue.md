@@ -206,5 +206,9 @@ Today:
 * `OperationQueue` → still used in legacy / UIKit apps
 * Modern → `Task`, `TaskGroup`, `async/await`
 
+---  
+
+# Q. Explain `waitUntilFinished`  
+
 
 
