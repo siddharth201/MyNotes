@@ -391,6 +391,172 @@ queue.addOperation(completionOp)
 
 # Q. Explain addOperations() vs addOperation {}  
 
+Great question — this confusion is very common because the names look similar but mean **different things**.
+
+---
+
+## 🚀 First, the Truth
+
+There is **NO API like this**:
+
+```swift
+queue.addOperations {
+    // ❌ not valid
+}
+```
+
+👉 So when people say **`addOperations {}`**, they usually mean:
+
+### 👉 `addOperation {}` (singular)
+
+---
+
+## 🧠 Correct APIs
+
+## ✅ 1. `addOperation(_:)` (singular)
+
+```swift
+queue.addOperation {
+    print("Task running")
+}
+```
+
+👉 This:
+
+* Accepts a **closure**
+* Internally creates a `BlockOperation`
+* Adds it to queue
+
+---
+
+## ✅ 2. `addOperations(_:waitUntilFinished:)` (plural)
+
+```swift
+queue.addOperations([op1, op2], waitUntilFinished: false)
+```
+
+👉 This:
+
+* Accepts **array of Operation objects**
+* Gives option to **block or not**
+
+---
+
+## 🔥 Key Difference
+
+| Feature         | `addOperation {}`             | `addOperations([...])`        |
+| --------------- | ----------------------------- | ----------------------------- |
+| Input           | Closure                       | Array of `Operation`          |
+| Creation        | Auto creates `BlockOperation` | You create operations         |
+| Use case        | Simple tasks                  | Multiple/pre-configured tasks |
+| Blocking option | ❌ No                          | ✅ Yes (`waitUntilFinished`)   |
+
+---
+
+## ✅ Example Comparison
+
+## 🔹 Using `addOperation {}`
+
+```swift
+let queue = OperationQueue()
+
+queue.addOperation {
+    print("Task 1")
+}
+
+queue.addOperation {
+    print("Task 2")
+}
+```
+
+👉 Simple and clean
+
+---
+
+## 🔹 Using `addOperations`
+
+```swift
+let queue = OperationQueue()
+
+let op1 = BlockOperation {
+    print("Task 1")
+}
+
+let op2 = BlockOperation {
+    print("Task 2")
+}
+
+queue.addOperations([op1, op2], waitUntilFinished: false)
+```
+
+👉 More control (dependencies, reuse)
+
+---
+
+## 🔗 When `addOperations` is Useful
+
+### ✔️ Dependencies
+
+```swift
+op2.addDependency(op1)
+```
+
+### ✔️ Reuse operations
+
+### ✔️ Batch execution
+
+### ✔️ Blocking option
+
+---
+
+## ❌ Common Mistake
+
+```swift
+queue.addOperations {
+    print("Task") // ❌ wrong API
+}
+```
+
+👉 Should be:
+
+```swift
+queue.addOperation {
+    print("Task")
+}
+```
+
+---
+
+## 🎯 Interview Answer
+
+> “`addOperation` is used to add a single task using a closure, while `addOperations` is used to add multiple Operation objects at once and optionally wait for their completion.”
+
+---
+
+## 🧠 Pro Tip
+
+If interviewer asks:
+
+> Which one do you use?
+
+👉 Answer:
+
+* Simple tasks → `addOperation`
+* Complex workflows (dependencies, batching) → `addOperations`
+
+---
+
+## 🚀 Bonus Insight
+
+```swift
+queue.addOperation {
+    // internally becomes:
+    BlockOperation { ... }
+}
+```
+
+---
+
 
 
 
