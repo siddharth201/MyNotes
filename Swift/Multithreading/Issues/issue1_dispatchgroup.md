@@ -1,7 +1,4 @@
-Great idea — this is exactly how you build strong fundamentals 💯
-Here’s a **clean, reusable note** you can keep for interviews or revision:
 
----
 
 ## 🧩 Problem Statement
 
@@ -154,11 +151,4 @@ actor ResultStore {
 
 ---
 
----
-
-If you want, I can also:
-
-* Turn this into a **PDF cheat sheet**
-* Add **deadlock + semaphore notes** in same format
-* Create a **full concurrency revision notebook** for interviews
 
