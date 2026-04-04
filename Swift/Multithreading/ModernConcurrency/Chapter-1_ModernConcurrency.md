@@ -584,6 +584,10 @@ Step 2
 await ≠ wait
 await = pause task + free thread + resume later
 ```
+---  
+
+# Q. Explain `auto-cancel if parent ends`  
+
 
 
 
