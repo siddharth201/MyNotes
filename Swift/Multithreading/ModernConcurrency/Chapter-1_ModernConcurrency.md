@@ -1030,7 +1030,196 @@ Tasks must cooperate to stop
 
 # Q. What will be fix?  
 
+Great — now you’re asking the **right engineering question** 🔥
+👉 *“Auto-cancel ho raha hai — toh correct fix kya hai?”*
 
+---
+
+## 🚨 Problem Recap
+
+You wrote something like:
+
+```swift
+async let a = fetchData(1)
+async let b = fetchData(2)
+
+return // ❌ parent exits early
+```
+
+👉 Result:
+
+* Child tasks get **auto-cancelled**
+* Work remains incomplete ❌
+
+---
+
+## ✅ FIX = Depends on your intention
+
+There are **3 correct fixes**, based on what you actually want 👇
+
+---
+
+## 🟢 ✅ Fix 1: WAIT for tasks (Most Common)
+
+👉 If you **need results**, you must `await`
+
+```swift id="fix1"
+func parentTask() async {
+    async let a = fetchData(1)
+    async let b = fetchData(2)
+    
+    let results = await [a, b] // ✅ wait for completion
+    
+    print("✅ Done:", results)
+}
+```
+
+---
+
+## 🧠 Why this works
+
+```text
+Parent waits → children finish → no cancellation
+```
+
+👉 This is the **correct pattern in 90% cases**
+
+---
+
+## 🟡 ✅ Fix 2: Use `Task` (If you DON’T want cancellation)
+
+👉 If you want tasks to **continue even if parent ends**
+
+```swift id="fix2"
+func parentTask() {
+    Task {
+        await fetchData(1)
+    }
+    
+    Task {
+        await fetchData(2)
+    }
+    
+    print("Parent finished")
+}
+```
+
+---
+
+## 🧠 Behavior
+
+```text
+Parent ends
+↓
+Tasks continue running independently
+```
+
+👉 No auto-cancel ✅
+
+---
+
+## ⚠️ Use carefully
+
+* No lifecycle control
+* Can create “orphan tasks”
+
+---
+
+## 🔵 ✅ Fix 3: Use TaskGroup (Best for control)
+
+```swift id="fix3"
+func parentTask() async {
+    await withTaskGroup(of: String.self) { group in
+        
+        for i in 1...2 {
+            group.addTask {
+                await fetchData(i)
+            }
+        }
+        
+        // Collect results (important)
+        for await result in group {
+            print(result)
+        }
+    }
+}
+```
+
+---
+
+## 🧠 Why better?
+
+* Structured
+* Safe
+* No accidental cancellation
+* Scalable
+
+---
+
+## 🚫 ❌ WRONG FIX (Common mistake)
+
+```swift id="wrong1"
+async let a = fetchData(1)
+async let b = fetchData(2)
+
+// ❌ forgetting await
+```
+
+👉 Leads to:
+
+* Auto cancellation
+* Compiler warning
+
+---
+
+## 🔥 BONUS FIX (If parent exits early intentionally)
+
+👉 Handle cancellation properly:
+
+```swift id="fix4"
+func fetchData(_ id: Int) async {
+    for i in 1...5 {
+        try? Task.checkCancellation() // ✅ throws if cancelled
+        
+        print("Task \(id) step \(i)")
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+    }
+}
+```
+
+---
+
+## ⚖️ When to Use What
+
+| Situation                | Fix                          |
+| ------------------------ | ---------------------------- |
+| Need result              | ✅ `await`                    |
+| Fire & forget            | ✅ `Task {}`                  |
+| Parallel structured work | ✅ `TaskGroup`                |
+| Handle cancellation      | ✅ `Task.checkCancellation()` |
+
+---
+
+## 🎯 Final Mental Model
+
+```text
+async let = child tied to parent
+↓
+Parent exits → child cancels
+
+Fix:
+- await → keep alive
+- Task → detach
+- TaskGroup → manage properly
+```
+
+---
+
+## 💬 Interview Answer
+
+> “If async let tasks are getting cancelled due to early parent exit, the fix is to explicitly await their results. If independent execution is needed, we should use unstructured tasks like Task {}. For scalable structured concurrency, TaskGroup is preferred.”
+
+---
 
 
 
