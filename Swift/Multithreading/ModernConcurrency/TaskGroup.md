@@ -3,7 +3,7 @@ It’s the **structured replacement of DispatchGroup**, but much more powerful.
 
 ---
 
-# 🚀 1️⃣ What is `TaskGroup`?
+## 🚀 1️⃣ What is `TaskGroup`?
 
 ## 🧠 Definition
 
@@ -19,7 +19,7 @@ TaskGroup = structured parallel execution + result handling
 
 ---
 
-# 🚀 2️⃣ Basic Example (Runnable)
+## 🚀 2️⃣ Basic Example (Runnable)
 
 ```swift id="tg1"
 import Foundation
@@ -51,7 +51,7 @@ func taskGroupExample() async {
 
 ---
 
-# 🧠 What’s happening?
+## 🧠 What’s happening?
 
 ```text
 Group starts
@@ -65,7 +65,7 @@ Results are collected one-by-one
 
 ---
 
-# 🚀 3️⃣ How It Works Internally
+## 🚀 3️⃣ How It Works Internally
 
 ---
 
@@ -88,7 +88,7 @@ All tasks finish → group ends
 
 ---
 
-# 🚀 4️⃣ Important Features
+## 🚀 4️⃣ Important Features
 
 ---
 
@@ -169,7 +169,7 @@ func throwingExample() async throws {
 
 ---
 
-# 🚀 6️⃣ TaskGroup vs async let
+## 🚀 6️⃣ TaskGroup vs async let
 
 ---
 
@@ -193,12 +193,12 @@ for i in 1...N {
 }
 ```
 
-✔ Dynamic tasks
+✔ Dynamic tasks  
 ✔ More control
 
 ---
 
-# ⚖️ Comparison
+## ⚖️ Comparison
 
 | Feature          | async let | TaskGroup |
 | ---------------- | --------- | --------- |
@@ -208,7 +208,7 @@ for i in 1...N {
 
 ---
 
-# 🚀 7️⃣ Real Production Example
+## 🚀 7️⃣ Real Production Example
 
 ---
 
@@ -239,7 +239,7 @@ func fetchAll() async -> [String] {
 
 ---
 
-# 🚀 8️⃣ Limiting Concurrency (Advanced)
+## 🚀 8️⃣ Limiting Concurrency (Advanced)
 
 ---
 
@@ -267,7 +267,7 @@ func limitedTasks() async {
 
 ---
 
-# 🚀 9️⃣ Cancellation Behavior
+## 🚀 9️⃣ Cancellation Behavior
 
 ---
 
@@ -284,7 +284,7 @@ group.addTask {
 
 ---
 
-# 🚀 🔟 TaskGroup vs DispatchGroup
+## 🚀 🔟 TaskGroup vs DispatchGroup
 
 ---
 
@@ -313,7 +313,7 @@ group.addTask { ... }
 
 ---
 
-# 🧠 Final Mental Model
+## 🧠 Final Mental Model
 
 ```text
 TaskGroup = parent manages multiple child tasks safely
@@ -321,13 +321,13 @@ TaskGroup = parent manages multiple child tasks safely
 
 ---
 
-# 🎯 Interview Answer
+## 🎯 Interview Answer
 
 > “TaskGroup is a structured concurrency construct that allows running multiple asynchronous tasks in parallel while safely managing their lifecycle, collecting results, and handling cancellation automatically.”
 
 ---
 
-# 🔥 Common Mistakes
+## 🔥 Common Mistakes
 
 * ❌ Forgetting `for await`
 * ❌ Not handling errors in throwing group
@@ -341,7 +341,7 @@ Great — let’s break this **one line deeply** so you *fully understand what�
 
 ---
 
-# 🚀 The Line
+## 🚀 The Line
 
 ```swift
 await withTaskGroup(of: String.self) { group in
@@ -349,13 +349,13 @@ await withTaskGroup(of: String.self) { group in
 
 ---
 
-# 🧠 High-Level Meaning
+## 🧠 High-Level Meaning
 
 > “Create a group of parallel tasks that return `String`, run them, and wait for all of them to complete.”
 
 ---
 
-# 🔍 Let’s Break It Piece by Piece
+## 🔍 Let’s Break It Piece by Piece
 
 ---
 
@@ -431,7 +431,7 @@ group.addTask { ... }
 
 ---
 
-# 🧠 Full Mental Model
+## 🧠 Full Mental Model
 
 ```text
 withTaskGroup
@@ -451,7 +451,7 @@ Group ends
 
 ---
 
-# 🧪 Complete Example
+## 🧪 Complete Example
 
 ```swift
 func example() async {
@@ -474,7 +474,7 @@ func example() async {
 
 ---
 
-# 🔍 Execution Flow
+## 🔍 Execution Flow
 
 ```text
 Start group
@@ -493,7 +493,7 @@ Group finishes
 
 ---
 
-# ⚡ Important Behavior
+## ⚡ Important Behavior
 
 ---
 
@@ -533,7 +533,7 @@ for await result in group
 
 ---
 
-# ⚠️ Important Rules
+## ⚠️ Important Rules
 
 ---
 
@@ -558,7 +558,7 @@ for await result in group
 
 ---
 
-# 🔥 Equivalent in GCD (for understanding)
+## 🔥 Equivalent in GCD (for understanding)
 
 ```swift
 let group = DispatchGroup()
@@ -575,7 +575,7 @@ BUT:
 
 ---
 
-# 🧠 Simple Analogy
+## 🧠 Simple Analogy
 
 👨‍🏫 Teacher + Students
 
@@ -587,13 +587,13 @@ for await = teacher collecting results
 
 ---
 
-# 🎯 Interview Answer
+## 🎯 Interview Answer
 
 > “withTaskGroup creates a structured group of concurrent tasks where each task returns a specified type. It allows us to run tasks in parallel, collect their results as they complete, and ensures all tasks finish before exiting the scope.”
 
 ---
 
-# 🧠 Final Mental Model
+## 🧠 Final Mental Model
 
 ```text
 await withTaskGroup
