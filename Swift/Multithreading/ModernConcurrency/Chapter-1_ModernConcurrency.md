@@ -1219,7 +1219,11 @@ Fix:
 
 > “If async let tasks are getting cancelled due to early parent exit, the fix is to explicitly await their results. If independent execution is needed, we should use unstructured tasks like Task {}. For scalable structured concurrency, TaskGroup is preferred.”
 
----
+--- 
+
+# Q. What is the meaning of structured in case of async let and in task  
+
+
 
 
 
