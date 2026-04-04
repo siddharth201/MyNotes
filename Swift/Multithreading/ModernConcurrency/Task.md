@@ -59,9 +59,9 @@ Task = lightweight async job managed by Swift runtime
 async let a = fetchData()
 ```
 
-✔ Tied to parent
-✔ Auto-cancel
-✔ Scoped
+✔ Tied to parent  
+✔ Auto-cancel  
+✔ Scoped  
 
 ---
 
@@ -73,9 +73,9 @@ Task {
 }
 ```
 
-✔ Runs independently
-❌ Not tied to parent
-⚠️ You must manage lifecycle
+✔ Runs independently  
+❌ Not tied to parent  
+⚠️ You must manage lifecycle  
 
 ---
 
@@ -87,9 +87,9 @@ Task.detached {
 }
 ```
 
-❗ Fully independent
-❗ No context inheritance
-❗ Advanced use only
+❗ Fully independent  
+❗ No context inheritance  
+❗ Advanced use only  
 
 ---
 
