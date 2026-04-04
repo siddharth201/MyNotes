@@ -588,6 +588,222 @@ await = pause task + free thread + resume later
 
 # Q. Explain `auto-cancel if parent ends`  
 
+Great — this is one of the **most important (and most misunderstood)** parts of modern concurrency 🔥
+
+---
+
+## 🚀 What does “auto-cancel if parent ends” mean?
+
+## 🧠 Simple Definition
+
+> In **structured concurrency**, child tasks are tied to their parent.
+> If the **parent task finishes or is cancelled**, all its child tasks are **automatically cancelled**.
+
+---
+
+## 🎯 Where does this apply?
+
+✅ Applies to:
+
+* `async let`
+* `TaskGroup`
+
+❌ Does NOT apply to:
+
+* `Task {}` (unstructured)
+* `Task.detached`
+
+---
+
+## 🧪 Example 1: `async let` Auto Cancellation
+
+```swift id="pxo5bz"
+func example() async {
+    async let a = fetchData(1)
+    async let b = fetchData(2)
+    
+    print("Parent finishing early")
+    return
+}
+```
+
+---
+
+## 🔍 What happens?
+
+```text id="rknpj3"
+Parent starts
+↓
+Child tasks (a, b) start
+↓
+Parent returns early
+↓
+❌ a and b are automatically cancelled
+```
+
+👉 You didn’t call `cancel()` manually
+👉 Swift does it for you
+
+---
+
+## 🧪 Example 2: `TaskGroup`
+
+```swift id="y37sba"
+func groupExample() async {
+    await withTaskGroup(of: Void.self) { group in
+        
+        group.addTask {
+            print("Task 1")
+            try? await Task.sleep(nanoseconds: 3_000_000_000)
+        }
+        
+        group.addTask {
+            print("Task 2")
+            try? await Task.sleep(nanoseconds: 5_000_000_000)
+        }
+        
+        print("Parent done early")
+        return
+    }
+}
+```
+
+---
+
+## 🔍 Behavior
+
+```text id="5yjpqo"
+Group starts
+↓
+Tasks start
+↓
+Parent exits scope
+↓
+❌ All child tasks cancelled automatically
+```
+
+---
+
+## ⚠️ Important: Cancellation is Cooperative
+
+Even though auto-cancel happens:
+
+👉 Tasks must **check cancellation**
+
+```swift id="u2xb96"
+if Task.isCancelled {
+    return
+}
+```
+
+or
+
+```swift id="12zqhd"
+try Task.checkCancellation()
+```
+
+---
+
+## 🚀 Why Swift Does This
+
+## 🧠 Problem in GCD
+
+```text id="w09c8n"
+Parent finishes ❌
+Child tasks still running ❌
+Memory leaks ❌
+Unexpected behavior ❌
+```
+
+---
+
+## ✅ Swift Solution
+
+```text id="j9sq7w"
+Parent controls children ✅
+No orphan tasks ✅
+Safe lifecycle ✅
+```
+
+---
+
+## 🧠 Mental Model
+
+```text id="c8gmpb"
+Parent Task
+   ↓
+Child Tasks (async let / group)
+
+If parent dies → children die
+```
+
+---
+
+## 🔥 Real-Life Analogy
+
+👨‍🏫 Teacher (parent) + Students (tasks)
+
+* Class ends → students leave automatically
+* No student continues randomly
+
+---
+
+## ⚠️ Important Difference
+
+## ❌ Unstructured Task (NO auto cancel)
+
+```swift id="q0zwfa"
+Task {
+    await fetchData()
+}
+```
+
+👉 This task:
+
+* Runs independently
+* Will NOT cancel automatically
+
+---
+
+## ✅ Structured Task (auto cancel)
+
+```swift id="p7v2t0"
+async let a = fetchData()
+```
+
+👉 This:
+
+* Is tied to parent
+* Auto cancels
+
+---
+
+## ⚖️ Summary Table
+
+| Feature        | async let / TaskGroup | Task {} |
+| -------------- | --------------------- | ------- |
+| Structured     | ✅                     | ❌       |
+| Auto cancel    | ✅                     | ❌       |
+| Lifecycle tied | ✅                     | ❌       |
+
+---
+
+## 🎯 Interview Answer
+
+> “In structured concurrency, child tasks created using async let or TaskGroup are automatically cancelled when the parent task finishes or is cancelled. This prevents orphan tasks and ensures predictable lifecycle management.”
+
+---
+
+## 🧠 Final Mental Model
+
+```text id="swu1gx"
+Structured concurrency = parent owns children
+Parent ends → children auto-cancel
+```
+
+---
+
+# Q. 
 
 
 
