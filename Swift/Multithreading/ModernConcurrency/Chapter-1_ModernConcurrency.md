@@ -805,6 +805,230 @@ Parent ends → children auto-cancel
 
 # Q. Can you give a proper example which I can run and check  
 
+Perfect — let’s build a **clean, runnable example** where you can actually **see auto-cancellation happening** 👇
+
+👉 You can paste this directly into a **Playground** or app.
+
+---
+
+## 🧪 ✅ Example: `async let` Auto-Cancellation
+
+```swift id="auto1"
+import Foundation
+import PlaygroundSupport
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+func fetchData(_ id: Int) async {
+    print("🔵 Start Task \(id)")
+    
+    for i in 1...5 {
+        // Check for cancellation
+        if Task.isCancelled {
+            print("❌ Task \(id) cancelled")
+            return
+        }
+        
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        print("Task \(id) step \(i)")
+    }
+    
+    print("🟢 Task \(id) completed")
+}
+
+// MARK: - Parent Task
+func parentTask() async {
+    print("\n🚀 Parent started\n")
+    
+    async let a = fetchData(1)
+    async let b = fetchData(2)
+    
+    // Parent exits early (IMPORTANT)
+    try? await Task.sleep(nanoseconds: 2_000_000_000)
+    
+    print("\n⚠️ Parent finishing early\n")
+    
+    return   // 👈 This triggers auto-cancel
+}
+
+// Run
+Task {
+    await parentTask()
+}
+```
+
+---
+
+## 🔍 What You’ll See (Expected Output)
+
+```text id="auto2"
+🚀 Parent started
+
+🔵 Start Task 1
+🔵 Start Task 2
+
+Task 1 step 1
+Task 2 step 1
+Task 1 step 2
+Task 2 step 2
+
+⚠️ Parent finishing early
+
+❌ Task 1 cancelled
+❌ Task 2 cancelled
+```
+
+---
+
+## 🧠 What Just Happened?
+
+```text id="auto3"
+Parent started
+↓
+Child tasks (1 & 2) started
+↓
+Parent exits early
+↓
+Swift automatically cancels child tasks
+↓
+Tasks detect cancellation → stop execution
+```
+
+---
+
+## 🚨 Important Observation
+
+👉 If you REMOVE this check:
+
+```swift id="auto4"
+if Task.isCancelled { return }
+```
+
+### Then:
+
+* Tasks will **continue running** ❌
+* Even though they are “cancelled”
+
+👉 Because:
+
+> Cancellation is **cooperative**, not forceful
+
+---
+
+## 🧪 🔥 Example 2: TaskGroup Auto-Cancellation
+
+```swift id="auto5"
+func groupExample() async {
+    print("\n🚀 TaskGroup started\n")
+    
+    await withTaskGroup(of: Void.self) { group in
+        
+        for i in 1...2 {
+            group.addTask {
+                print("🔵 Task \(i) started")
+                
+                for j in 1...5 {
+                    if Task.isCancelled {
+                        print("❌ Task \(i) cancelled")
+                        return
+                    }
+                    
+                    try? await Task.sleep(nanoseconds: 1_000_000_000)
+                    print("Task \(i) step \(j)")
+                }
+            }
+        }
+        
+        // Parent exits early
+        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        print("\n⚠️ Group exiting early\n")
+        
+        return
+    }
+}
+
+// Run
+Task {
+    await groupExample()
+}
+```
+
+---
+
+## 🔍 Output Behavior
+
+```text id="auto6"
+🚀 TaskGroup started
+
+🔵 Task 1 started
+🔵 Task 2 started
+
+Task 1 step 1
+Task 2 step 1
+Task 1 step 2
+Task 2 step 2
+
+⚠️ Group exiting early
+
+❌ Task 1 cancelled
+❌ Task 2 cancelled
+```
+
+---
+
+## 🔥 Key Learning
+
+### ✅ What Swift Guarantees:
+
+* Child tasks get **cancel signal automatically**
+
+### ❗ What YOU must do:
+
+* Check `Task.isCancelled`
+* Exit early
+
+---
+
+## ⚖️ Compare with GCD (Important Insight)
+
+## ❌ GCD version
+
+```swift id="auto7"
+DispatchQueue.global().async {
+    // No automatic cancellation
+}
+```
+
+👉 Even if parent ends:
+
+* Task continues ❌
+* No lifecycle control ❌
+
+---
+
+## 🧠 Final Mental Model
+
+```text id="auto8"
+async let / TaskGroup
+   ↓
+Parent owns children
+   ↓
+Parent ends
+   ↓
+Children auto-cancel
+   ↓
+Tasks must cooperate to stop
+```
+
+---
+
+## 🎯 Interview Line
+
+> “In structured concurrency, child tasks created using async let or TaskGroup are automatically cancelled when the parent scope exits. However, cancellation is cooperative, so tasks must check Task.isCancelled to stop execution.”
+
+---
+
+# Q. 
 
 
 
