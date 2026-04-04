@@ -256,9 +256,9 @@ do {
 async let a = fetch()
 ```
 
-✔ Structured
-✔ Must await
-✔ Auto cancel
+✔ Structured  
+✔ Must await  
+✔ Auto cancel  
 
 ---
 
@@ -270,8 +270,8 @@ Task {
 }
 ```
 
-✔ Independent
-✔ No auto cancel
+✔ Independent  
+✔ No auto cancel  
 
 ---
 
