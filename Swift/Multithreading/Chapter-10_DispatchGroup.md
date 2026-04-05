@@ -416,6 +416,10 @@ extension ViewController {
 asynchronousTask4 start
 asynchronousTask5 start
 asynchronousTask6 start
+asynchronousTask4 completed
+asynchronousTask6 completed
+asynchronousTask5 completed
+All Tasks Completed
 ```
 
 
