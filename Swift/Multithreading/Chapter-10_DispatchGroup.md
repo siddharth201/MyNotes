@@ -285,7 +285,7 @@ DispatchGroup is like a counter:
 
 ---  
 
-## Example  
+## Example: (Enter-Leave) 
 
 ```swift
 extension ViewController {
@@ -354,6 +354,65 @@ asynchronousTask1 completed
 asynchronousTask3 completed
 asynchronousTask2 completed
 All Tasks Completed
+```  
+
+## Example: (queue.async)
+
+```swift
+extension ViewController {
+    
+    //MARK: queue.async
+    func testDispatchGroupQueueAsync() {
+        let group = DispatchGroup()
+        
+        asynchronousTask4(group: group) { result in
+            print(result)
+        }
+        
+        asynchronousTask5(group: group) { result in
+            print(result)
+        }
+        
+        asynchronousTask6(group: group) { result in
+            print(result)
+        }
+        
+        group.notify(queue: .main) {
+            print("All Tasks Completed")
+        }
+    }
+    
+    func asynchronousTask4(group: DispatchGroup?, completion: @escaping (String)->Void) {
+        print("asynchronousTask4 start")
+        
+        DispatchQueue.global().async(group: group) {
+            sleep(3)
+            completion("asynchronousTask4 completed")
+        }
+    }
+    
+    func asynchronousTask5(group: DispatchGroup?, completion: @escaping (String)->Void) {
+        print("asynchronousTask5 start")
+        
+        DispatchQueue.global().async(group: group) {
+            sleep(7)
+            completion("asynchronousTask5 completed")
+        }
+    }
+    
+    func asynchronousTask6(group: DispatchGroup?, completion: @escaping (String)->Void) {
+        print("asynchronousTask6 start")
+        
+        DispatchQueue.global().async(group: group) {
+            sleep(5)
+            completion("asynchronousTask6 completed")
+        }
+    }
+}
+```  
+
+### Output:  
+```swift
 ```
 
 
