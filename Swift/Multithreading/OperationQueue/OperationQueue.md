@@ -1145,6 +1145,175 @@ dataQueue.addOperations([fetch, parse, save, notifyUI], waitUntilFinished: false
 
 # Q. Does OperationQueue have some notify machenism?  
 
+Great question — this comes up a lot in interviews 🔥
+
+---
+
+## 🚀 Short Answer
+
+> ❌ `OperationQueue` does **NOT** have a direct `notify` API like `DispatchGroup`
+> ✅ But you can achieve the same behavior using:
+
+* Dependencies (`BlockOperation`)
+* KVO (`operationCount`)
+* `waitUntilFinished` (blocking)
+
+---
+
+## 🧠 Mental Model
+
+```text
+DispatchGroup.notify → built-in completion hook
+OperationQueue      → use dependencies instead
+```
+
+---
+
+## ✅ 1️⃣ Recommended Way (BEST): Completion Operation
+
+👉 This is the **OperationQueue equivalent of notify**
+
+---
+
+## Example
+
+```swift id="opnotify1"
+let queue = OperationQueue()
+
+let op1 = BlockOperation {
+    print("Task 1")
+}
+
+let op2 = BlockOperation {
+    print("Task 2")
+}
+
+let completionOp = BlockOperation {
+    print("🎉 All tasks finished")
+}
+
+// Make completion depend on others
+completionOp.addDependency(op1)
+completionOp.addDependency(op2)
+
+queue.addOperations([op1, op2, completionOp], waitUntilFinished: false)
+```
+
+---
+
+## 🔍 Output
+
+```text
+Task 1
+Task 2
+🎉 All tasks finished
+```
+
+---
+
+## 🧠 Why this works
+
+```text
+completionOp waits for op1 + op2
+↓
+Runs only after all complete
+```
+
+👉 Exactly like `DispatchGroup.notify` ✅
+
+---
+
+## ✅ 2️⃣ Using `addBarrierBlock` (Less Known 🔥)
+
+```swift id="opnotify2"
+let queue = OperationQueue()
+
+queue.addOperation {
+    print("Task 1")
+}
+
+queue.addOperation {
+    print("Task 2")
+}
+
+queue.addBarrierBlock {
+    print("🎉 All tasks finished")
+}
+```
+
+---
+
+## 🧠 Behavior
+
+```text
+Barrier waits for all previous operations
+↓
+Executes exclusively
+```
+
+👉 Works like notify (but only for that queue)
+
+---
+
+## ⚠️ Important
+
+* Works only for operations **already added before barrier**
+* Doesn’t track future operations
+
+---
+
+## ⚠️ 3️⃣ `waitUntilFinished` (Blocking ❌)
+
+```swift id="opnotify3"
+queue.addOperations([op1, op2], waitUntilFinished: true)
+print("Done")
+```
+
+👉 Blocks thread ❌
+👉 Not recommended for UI
+
+---
+
+## ⚠️ 4️⃣ KVO on `operationCount` (Advanced / Rare)
+
+```swift id="opnotify4"
+queue.addObserver(self, forKeyPath: "operationCount", options: .new, context: nil)
+```
+
+👉 When `operationCount == 0` → all done
+
+❌ Complex
+❌ Rarely used today
+
+---
+
+## ⚖️ Comparison with DispatchGroup
+
+| Feature              | DispatchGroup | OperationQueue       |
+| -------------------- | ------------- | -------------------- |
+| notify API           | ✅ Yes         | ❌ No                 |
+| Equivalent           | notify()      | completion operation |
+| Blocking wait        | wait()        | waitUntilFinished    |
+| Better for workflows | ❌             | ✅                    |
+
+---
+
+## 🎯 Interview Answer
+
+> “OperationQueue doesn’t have a direct notify method like DispatchGroup, but we can achieve the same behavior by adding a completion BlockOperation that depends on all other operations, or by using addBarrierBlock.”
+
+---
+
+## 🧠 Final Mental Model
+
+```text
+DispatchGroup.notify → built-in
+OperationQueue       → dependency-based notify
+```
+
+---
+
+
 
 
 
