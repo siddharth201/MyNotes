@@ -1,4 +1,4 @@
-> Given an array, print **start and end indices** of all subarrays of size `k`  
+> Q. Given an array, print **start and end indices** of all subarrays of size `k`  
 
 ### Example:  
 ```swift
@@ -34,7 +34,7 @@ func printIndicesOfSubArrays(array arr: [Int], size k: Int) {
     }
 }
 ``` 
-### Complexity
+#### Complexity
 ```swift
 Time = O(n*k)  
 Space = O(1)
@@ -55,7 +55,7 @@ func printIndicesOfSubArrays(array arr: [Int], size k: Int) {
 }
 ```  
 
-### Complexity
+#### Complexity
 ```swift
 Time = O(n)  
 Space = O(1)
@@ -80,7 +80,7 @@ func printSubarrayIndices(_ arr: [Int], _ k: Int) {
 }
 ```   
 
-### Complexity
+#### Complexity
 ```swift
 Time = O(n)  
 Space = O(1)
