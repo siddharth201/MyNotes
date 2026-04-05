@@ -107,4 +107,6 @@
 
 [Q>9 Count Distinct Elements in Window]  
 
-[Q>10 Find All Subarrays of Size K]
+[Q>10 Find All Subarrays of Size K]  
+
+[Q>11 Given an array, print start and end indices of all subarrays of size k]()
