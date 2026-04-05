@@ -144,5 +144,11 @@ class ServiceManager {
 
 Output:  
 
+Calling API: 9
+Calling API: 3
+Calling API: 6
+API Finishes: 3
+API Finishes: 6
+API Finishes: 9
 ```
 
