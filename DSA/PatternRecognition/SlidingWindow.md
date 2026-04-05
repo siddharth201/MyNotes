@@ -555,7 +555,9 @@ func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
 * `Count windows` → Count template (`count += right-left+1`)
 * `Max/min per window` → Monotonic deque template
 
----
+---  
+
+
 
 
 
