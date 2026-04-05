@@ -1141,7 +1141,11 @@ dataQueue.addOperations([fetch, parse, save, notifyUI], waitUntilFinished: false
 ---
 
 ### 🚀 Final One-Line Summary (Memorize)
-> **OperationQueue is best used when tasks are stateful, cancellable, and interdependent, such as image loading pipelines or multi-step data processing workflows.**
+> **OperationQueue is best used when tasks are stateful, cancellable, and interdependent, such as image loading pipelines or multi-step data processing workflows.**  
+
+# Q. Does OperationQueue have some notify machenism?  
+
+
 
 
 
