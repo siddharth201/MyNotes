@@ -746,7 +746,237 @@ Fixed Window = grow → exact size → process → shrink
 ---
 
 # Can you explain same template with below example.
-#Given an array print the start and end indeces of all subarray of size k
+#Given an array print the start and end indeces of all subarray of size k  
+
+Perfect 👌 this is the **best way to solidify sliding window** — apply same template to different problems.
+
+Let’s use your **left–right fixed window template** and apply it step by step.
+
+---
+
+# 🧠 Problem
+
+> Given an array, print **start and end indices** of all subarrays of size `k`
+
+Example:
+
+```
+arr = [1,2,3,4,5]
+k = 3
+```
+
+Output:
+
+```
+(0,2)
+(1,3)
+(2,4)
+```
+
+---
+
+# 🧠 Template We Will Use
+
+```swift
+var left = 0
+
+for right in 0..<arr.count {
+    
+    // expand
+    
+    if right - left + 1 == k {
+        // process window
+        
+        // shrink
+        left += 1
+    }
+}
+```
+
+---
+
+# 🧠 What Changes in This Problem?
+
+We don’t need:
+
+* sum ❌
+* frequency ❌
+
+We only need:
+
+```text
+window boundaries → (left, right)
+```
+
+So **windowValue is not needed here**.
+
+---
+
+# 🧠 Step-by-Step Execution
+
+Array:
+
+```
+[1,2,3,4,5]
+k = 3
+```
+
+---
+
+### Iteration 1
+
+```
+right = 0
+window = [1]
+size = 1 ❌
+```
+
+---
+
+### Iteration 2
+
+```
+right = 1
+window = [1,2]
+size = 2 ❌
+```
+
+---
+
+### Iteration 3
+
+```
+right = 2
+window = [1,2,3]
+size = 3 ✅
+```
+
+👉 Process:
+
+```
+print (left=0, right=2)
+```
+
+👉 Shrink:
+
+```
+left = 1
+```
+
+---
+
+### Iteration 4
+
+```
+right = 3
+window = [2,3,4]
+size = 3 ✅
+```
+
+👉 Output:
+
+```
+(1,3)
+```
+
+👉 Shrink:
+
+```
+left = 2
+```
+
+---
+
+### Iteration 5
+
+```
+right = 4
+window = [3,4,5]
+size = 3 ✅
+```
+
+👉 Output:
+
+```
+(2,4)
+```
+
+---
+
+# 💻 Swift Code
+
+```swift
+func printSubarrayIndices(_ arr: [Int], _ k: Int) {
+    
+    var left = 0
+    
+    for right in 0..<arr.count {
+        
+        // expand happens automatically by moving right
+        
+        if right - left + 1 == k {
+            print("(\(left), \(right))")
+            
+            // shrink
+            left += 1
+        }
+    }
+}
+```
+
+---
+
+# 🧠 Key Insight
+
+Here:
+
+| Variable    | Meaning               |
+| ----------- | --------------------- |
+| left        | start index of window |
+| right       | end index of window   |
+| window size | `right - left + 1`    |
+
+---
+
+# 🧠 Mental Model
+
+```text
+Window = [left ...... right]
+
+Grow → until size = k  
+Process → print indices  
+Shrink → move left
+```
+
+---
+
+# 🔥 Important Realization
+
+Same template works for:
+
+| Problem        | What changes          |
+| -------------- | --------------------- |
+| Max sum        | maintain sum          |
+| Count distinct | maintain hashmap      |
+| Max element    | maintain deque        |
+| Print indices  | just use left & right |
+
+---
+
+# 🧠 Pattern Mastery Insight
+
+Sliding window is NOT about sum.
+
+It is about:
+
+```text
+Maintaining a moving window
+```
+
+What you store inside window changes per problem.
+
+---
+
 
 
 
