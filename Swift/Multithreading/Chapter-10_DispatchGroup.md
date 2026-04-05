@@ -413,6 +413,9 @@ extension ViewController {
 
 ### Output:  
 ```swift
+asynchronousTask4 start
+asynchronousTask5 start
+asynchronousTask6 start
 ```
 
 
