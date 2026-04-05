@@ -281,7 +281,80 @@ For task dependency chains — use async/await instead.
 DispatchGroup is like a counter:
 * enter → +1
 * leave → -1
-* when count reaches zero → notify fires
+* when count reaches zero → notify fires  
+
+---  
+
+## Example  
+
+```swift
+extension ViewController {
+    
+    func testDispatchGroup() {
+        let group = DispatchGroup()
+        
+        group.enter()
+        asynchronousTask1 { result in
+            print(result)
+            group.leave()
+        }
+        
+        group.enter()
+        asynchronousTask2 { result in
+            print(result)
+            group.leave()
+        }
+        
+        group.enter()
+        asynchronousTask3 { result in
+            print(result)
+            group.leave()
+        }
+        
+        group.notify(queue: .main) {
+            print("All Tasks Completed")
+        }
+    }
+    
+    //Asynchronous Task-1
+    func asynchronousTask1(completion: @escaping (String)->Void) {
+        print("asynchronousTask1 start")
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 3 ) {
+            completion("asynchronousTask1 completed")
+        }
+    }
+    
+    //Asynchronous Task-2
+    func asynchronousTask2(completion: @escaping (String)->Void) {
+        print("asynchronousTask2 start")
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 7 ) {
+            completion("asynchronousTask2 completed")
+        }
+    }
+    
+    //Asynchronous Task-3
+    func asynchronousTask3(completion: @escaping (String)->Void) {
+        print("asynchronousTask3 start")
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 5 ) {
+            completion("asynchronousTask3 completed")
+        }
+    }
+}  
+```  
+
+### Output
+```swift
+asynchronousTask1 start
+asynchronousTask2 start
+asynchronousTask3 start
+asynchronousTask1 completed
+asynchronousTask3 completed
+asynchronousTask2 completed
+All Tasks Completed
+```
 
 
 
