@@ -42,9 +42,9 @@ func maxSum(_ arr: [Int], _ k: Int) -> Int {
         if right-left+1 == k {
             maxSum = max(maxSum, windowSum) //process
             
+            // Shrink
             windowSum -= arr[left]
-            
-            left += 1 // Shrink
+            left += 1 
         }
     }
     return maxSum
