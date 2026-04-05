@@ -557,6 +557,7 @@ func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
 
 ---  
 
+# Q. can you explain each template step by step and also about variable taken there resposibilty and purpose etc?
 
 
 
