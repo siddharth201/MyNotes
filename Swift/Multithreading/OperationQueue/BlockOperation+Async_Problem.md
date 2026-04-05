@@ -115,5 +115,34 @@ queue.addOperation(AsyncOperation())
 
 ## Example: Below code seems ok and giving correct output still it have problem. How?  
 
+```swift
+extension ViewController {
+    
+    func call_Multiple_APIs_Using_OperationQueue() {
+        let queue = OperationQueue()
+        for i in stride(from: 3, through: 9, by: 3) {
+            queue.addOperation {
+                ServiceManager.shared.callAPI(id: i) { result in
+                    print(result)
+                }
+            }
+        }
+    }
+}
 
+class ServiceManager {
+    
+    static let shared = ServiceManager()
+    private init() {}
+    
+    func callAPI(id: Int, completion: @escaping (String)->Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + Double(id)) {
+            completion("Data \(id)")
+        }
+    }
+}
+
+Output:  
+
+```
 
