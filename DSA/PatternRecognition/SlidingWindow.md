@@ -557,7 +557,9 @@ func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
 
 ---  
 
-# Q. For the fixed size window can you provide Skeleton more easy way also taking start/left and end/right both instead of only right?
+# Q. For the fixed size window can you provide Skeleton more easy way also taking start/left and end/right both instead of only right?  
+
+
 
 
 
