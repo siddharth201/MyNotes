@@ -31,15 +31,20 @@ k = 3
 ```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
     guard arr.count >= k else { return 0}
+    
     var maxSum = Int.min
     var windowSum = 0
+    var left = 0
     
-    for right in 0..<arr.count-1 {
+    for right in 0..<arr.count {
         windowSum = windowSum + arr[right] //expand
         
-        if right >= k-1 {
+        if right-left+1 == k {
             maxSum = max(maxSum, windowSum) //process
-            windowSum = windowSum - arr[right - k + 1]
+            
+            windowSum -= arr[left]
+            
+            left += 1 // Shrink
         }
     }
     return maxSum
