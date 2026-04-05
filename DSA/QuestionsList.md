@@ -89,7 +89,7 @@
 [Linked List Operations](https://github.com/siddharth201/MyNotes/blob/main/DSA/LinkedList/LinkedList.md)  
 
 ### Sliding Window
-[Q>1 Find maximum sum of subarray of size k]  
+[Q>1 Find maximum sum of subarray of size k](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/MaxSum.md)  
 
 [Q>2 Average of Subarray of Size K]  
 
