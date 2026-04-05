@@ -557,7 +557,7 @@ func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
 
 ---  
 
-# Q. can you explain each template step by step and also about variable taken there resposibilty and purpose etc?
+# Q. For the fixed size window can you provide Skeleton more easy way also taking start/left and end/right both instead of only right?
 
 
 
