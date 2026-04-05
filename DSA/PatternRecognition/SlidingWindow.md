@@ -559,6 +559,193 @@ func slidingWindowMax(_ nums: [Int], _ k: Int) -> [Int] {
 
 # Q. For the fixed size window can you provide Skeleton more easy way also taking start/left and end/right both instead of only right?  
 
+Yes 👍 this is a very good refinement.
+Using **both `left` and `right` pointers** makes the logic more intuitive (especially when you move to variable window later).
+
+Let’s rewrite **Fixed Sliding Window** in the cleanest possible way.
+
+---
+
+# 🧠 Fixed Window (Left–Right Version)
+
+## 🔁 Easy Skeleton (Most Intuitive)
+
+```swift
+var left = 0
+var windowValue = 0   // sum / count / etc.
+
+for right in 0..<arr.count {
+    
+    // 1️⃣ Expand window
+    windowValue += arr[right]
+    
+    // 2️⃣ Check if window size reached k
+    if right - left + 1 == k {
+        
+        // 3️⃣ Process window
+        // e.g. maxSum = max(maxSum, windowValue)
+        
+        // 4️⃣ Shrink window
+        windowValue -= arr[left]
+        left += 1
+    }
+}
+```
+
+---
+
+# 🧠 What Each Variable Means
+
+### `left`
+
+* Start of window
+* Moves forward when window slides
+
+---
+
+### `right`
+
+* End of window
+* Always moves forward
+
+---
+
+### `windowValue`
+
+* Represents **current window state**
+* Could be:
+
+  * sum
+  * count
+  * frequency map
+  * deque (for max/min problems)
+
+---
+
+### `right - left + 1`
+
+* Current window size
+
+---
+
+# 🧠 Mental Model (Super Important)
+
+Think:
+
+```text
+[left ........ right]
+```
+
+Steps:
+
+```
+1. Add arr[right] → expand
+2. If size == k → process
+3. Remove arr[left] → shrink
+4. Move left
+```
+
+---
+
+# 🔍 Example Walkthrough
+
+Array:
+
+```
+[2,1,5,1,3,2]
+k = 3
+```
+
+### Step-by-step
+
+```
+right=0 → [2]           size=1
+right=1 → [2,1]         size=2
+right=2 → [2,1,5]       size=3 ✅ process
+
+remove 2 → [1,5]
+
+right=3 → [1,5,1]       size=3 ✅
+remove 1 → [5,1]
+
+right=4 → [5,1,3]       size=3 ✅
+remove 5 → [1,3]
+```
+
+---
+
+# 💻 Full Example (Max Sum)
+
+```swift
+func maxSum(_ arr: [Int], _ k: Int) -> Int {
+    var left = 0
+    var windowSum = 0
+    var maxSum = Int.min
+    
+    for right in 0..<arr.count {
+        
+        windowSum += arr[right]
+        
+        if right - left + 1 == k {
+            maxSum = max(maxSum, windowSum)
+            
+            windowSum -= arr[left]
+            left += 1
+        }
+    }
+    
+    return maxSum
+}
+```
+
+---
+
+# 🧠 Why This Version Is Better
+
+Compared to earlier template:
+
+```swift
+if i >= k-1
+```
+
+This one is better because:
+
+* Uses **explicit window size**
+* Easier to visualize
+* Same structure as variable window
+* Easier transition to advanced problems
+
+---
+
+# 🧠 Pattern Upgrade (Very Important)
+
+You can now generalize:
+
+### Fixed window:
+
+```text
+if window size == k → process
+```
+
+### Variable window:
+
+```text
+while window invalid → shrink
+```
+
+Same structure, only condition changes.
+
+---
+
+# 🔥 Final Mental Shortcut
+
+```
+Fixed Window = grow → exact size → process → shrink
+```
+
+---
+
+## Example
 
 
 
