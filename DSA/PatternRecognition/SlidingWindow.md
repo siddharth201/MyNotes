@@ -745,7 +745,8 @@ Fixed Window = grow → exact size → process → shrink
 
 ---
 
-## Example
+# Can you explain same template with below example.
+#Given an array print the start and end indeces of all subarray of size k
 
 
 
