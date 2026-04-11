@@ -65,5 +65,11 @@ func maxSumDistinctSubArray(_ nums: [Int], _ k: Int) -> Int {
 | Time   | **O(n)** |
 | Space  | **O(1)** |   
 
-
+### How To Call
+```swift
+public func test_maxSumDistinctSubArray(_ arr: [Int], _ k: Int, completion: (Int)->Void) {
+    let result = maxSumDistinctSubArray(arr, k)
+    completion(result)
+}
+```
 
