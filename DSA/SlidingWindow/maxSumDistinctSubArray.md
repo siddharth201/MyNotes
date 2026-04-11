@@ -12,5 +12,7 @@ k = 3
 [5,4,2] → distinct ✅ sum = 11
 [4,2,9] → distinct ✅ sum = 15
 [2,9,9] → NOT distinct ❌
-[9,9,9] → NOT distinct ❌
-```
+[9,9,9] → NOT distinct ❌  
+```  
+
+#### Answer:
