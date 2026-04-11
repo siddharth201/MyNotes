@@ -91,24 +91,24 @@
 ### Sliding Window
 [Q>1 Find maximum sum of subarray of size k](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/MaxSum.md)  
 
-[Q>2 Given an array, find the maximum sum of a subarray of size k such that all elements in the subarray are distinct.]()  
+[Q>2 Given an array, find the maximum sum of a subarray of size k such that all elements in the subarray are distinct.](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/maxSumDistinctSubArray.md)  
 
-[Q>2 Average of Subarray of Size K]  
+[Q>3 Average of Subarray of Size K]  
 
-[Q>3 First Negative Number in Every Window of Size K]  
+[Q>4 First Negative Number in Every Window of Size K]  
 
-[Q>4 Count Occurrences of Anagrams]  
+[Q>5 Count Occurrences of Anagrams]  
 
-[Q>5 Maximum Number of Vowels in Substring of Size K]  
+[Q>6 Maximum Number of Vowels in Substring of Size K]  
 
-[Q>6 Find if any subarray of size k has sum S.]  
+[Q>7 Find if any subarray of size k has sum S.]  
 
-[Q>7 Maximum Element in Every Window]  
+[Q>8 Maximum Element in Every Window]  
 
-[Q>8 Minimum Sum Subarray of Size K]  
+[Q>9 Minimum Sum Subarray of Size K]  
 
-[Q>9 Count Distinct Elements in Window]  
+[Q>10 Count Distinct Elements in Window]  
 
-[Q>10 Find All Subarrays of Size K]  
+[Q>11 Find All Subarrays of Size K]  
 
-[Q>11 Given an array, print start and end indices of all subarrays of size k](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/PrintSubArrayIndices.md)
+[Q>12 Given an array, print start and end indices of all subarrays of size k](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/PrintSubArrayIndices.md)
