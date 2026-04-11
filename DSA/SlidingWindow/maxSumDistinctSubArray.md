@@ -70,6 +70,10 @@ func maxSumDistinctSubArray(_ nums: [Int], _ k: Int) -> Int {
 public func test_maxSumDistinctSubArray(_ arr: [Int], _ k: Int, completion: (Int)->Void) {
     let result = maxSumDistinctSubArray(arr, k)
     completion(result)
+}  
+
+test_maxSumDistinctSubArray([1, 5, 4, 2, 9, 9, 9], 3) { result in
+    print(result)
 }
 ```
 
