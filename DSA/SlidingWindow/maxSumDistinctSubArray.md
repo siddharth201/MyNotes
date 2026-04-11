@@ -57,5 +57,13 @@ func maxSumDistinctSubArray(_ nums: [Int], _ k: Int) -> Int {
     
     return maxSum
 }
-```
+```  
+### Complexity
+
+| Metric | Value    |
+| ------ | -------- |
+| Time   | **O(n)** |
+| Space  | **O(1)** |   
+
+
 
