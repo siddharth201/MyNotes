@@ -23,5 +23,39 @@ k = 3
 ### Solution:
 
 ```swift
+func maxSumDistinctSubArray(_ nums: [Int], _ k: Int) -> Int {
+    guard nums.count >= k else { return 0 }
+    
+    var maxSum = 0
+    var windowSum = 0
+    var left = 0
+    var freq = [Int: Int]()
+    
+    for right in 0..<nums.count {
+        windowSum += nums[right]
+        freq[nums[right], default: 0] += 1
+        
+        if right - left + 1 == k {
+            
+            if freq.count == k {
+                maxSum = max(maxSum, windowSum)
+            }
+            
+            // remove left element
+            let leftVal = nums[left]
+            windowSum -= leftVal
+            
+            freq[leftVal]! -= 1
+            if freq[leftVal] == 0 {
+                freq.removeValue(forKey: leftVal)
+            }
+            
+            left += 1
+ 
+        }
+    }
+    
+    return maxSum
+}
 ```
 
