@@ -26,7 +26,7 @@ k = 3
 9
 ```  
 
-**Solution:**
+**Solution:1**
 
 ```swift
 func maxSum(_ arr: [Int], _ k: Int) -> Int {
@@ -58,10 +58,49 @@ func maxSum(_ arr: [Int], _ k: Int) -> Int {
 | Time   | **O(n)** |
 | Space  | **O(1)** |  
 
+**Solution:2**    
+
+```swift
+func buildPrefixArr(_ arr: [Int]) -> [Int] {
+    var prefix = [0]
+    
+    for num in arr {
+        prefix.append(prefix.last! + num)
+    }
+    
+    return prefix
+}
+
+func maxSum_Prefix(_ arr: [Int], _ k: Int) -> Int {
+    let prefix = buildPrefixArr(arr)
+    var maxSum = Int.min
+    
+    for i in 0...arr.count - k {
+        let sum = prefix[i + k] - prefix[i]
+        maxSum = max(maxSum, sum)
+    }
+    
+    return maxSum
+}
+```  
+
+### Complexity
+
+| Metric | Value    |
+| ------ | -------- |
+| Time   | **O(n)** |
+| Space  | **O(1)** |  
+
 ```swift
 public func testMaxSum(_ arr: [Int], _ k: Int, completion: (Int) -> Void) {
+    print("=== SlidingWindow ===")
     let result = maxSum(arr, k)
-    completion(result)
+    print(result)
+    //completion(result)
+    
+    print("=== Prifix Sum ===")
+    let result1 = maxSum_Prefix(arr, k)
+    print(result1)
 }
 ```
 
