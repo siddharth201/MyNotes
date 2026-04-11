@@ -4,4 +4,6 @@
 ```swift
 arr = [1,5,4,2,9,9,9]
 k = 3
-```
+```  
+
+#### All subarrays of size 3:
