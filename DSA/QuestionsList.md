@@ -91,6 +91,8 @@
 ### Sliding Window
 [Q>1 Find maximum sum of subarray of size k](https://github.com/siddharth201/MyNotes/blob/main/DSA/SlidingWindow/MaxSum.md)  
 
+[Q>2 Given an array, find the maximum sum of a subarray of size k such that all elements in the subarray are distinct.]()  
+
 [Q>2 Average of Subarray of Size K]  
 
 [Q>3 First Negative Number in Every Window of Size K]  
