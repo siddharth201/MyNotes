@@ -6,8 +6,7 @@ Instead of writing exact rules for a computer to follow, you give the computer a
 
 ### KEY POINTS
 > ML learns from **history and patterns** — not rules written by hand.
-Bank loan example: C1 earns more BUT has fraud history → the pattern in past data
-changes the decision completely.
+Bank loan example: C1 earns more BUT has fraud history → the **pattern in past data** changes the decision completely.
 Salary prediction: 1yr=₹10k, 2yr=₹20k, 3yr=₹30k → 6yr=₹60k. A human spots this from 3
 rows. A machine spots it across 10 million rows.
 The machine is not smarter than you. It's just faster
