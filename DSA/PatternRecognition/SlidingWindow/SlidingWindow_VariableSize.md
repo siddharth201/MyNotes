@@ -188,17 +188,4 @@ for right in 0..<n {
 Expand → Fix → Use
 ```
 
----
-
-# 🚀 Quick Test
-
-Which pattern will you use here:
-
-```text
-Find longest subarray with sum ≤ k (positive numbers)
-```
-
-And what will be the `invalid condition`?
-
-Try answering 😄
 
