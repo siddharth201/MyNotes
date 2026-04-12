@@ -2,7 +2,15 @@ At its core, **Machine Learning (ML)** is a subfield of artificial intelligence 
 
 Instead of writing exact rules for a computer to follow, you give the computer a lot of examples, and it figures out the rules on its own.  
 
-> **In one line:** Machine Learning is teaching a computer to find patterns in data — the same way your brain learns from experience — but at a scale no human can match.
+> **In one line:** Machine Learning is teaching a computer to find patterns in data — the same way your brain learns from experience — but at a scale no human can match.  
+
+### KEY POINTS
+> ML learns from history and patterns — not rules written by hand.
+Bank loan example: C1 earns more BUT has fraud history → the pattern in past data
+changes the decision completely.
+Salary prediction: 1yr=₹10k, 2yr=₹20k, 3yr=₹30k → 6yr=₹60k. A human spots this from 3
+rows. A machine spots it across 10 million rows.
+The machine is not smarter than you. It's just faster
 
 ### The Paradigm Shift: Traditional vs. ML
 
