@@ -5,7 +5,7 @@ Instead of writing exact rules for a computer to follow, you give the computer a
 > **In one line:** Machine Learning is teaching a computer to find patterns in data — the same way your brain learns from experience — but at a scale no human can match.  
 
 ### KEY POINTS
-> ML learns from history and patterns — not rules written by hand.
+> ML learns from **history and patterns** — not rules written by hand.
 Bank loan example: C1 earns more BUT has fraud history → the pattern in past data
 changes the decision completely.
 Salary prediction: 1yr=₹10k, 2yr=₹20k, 3yr=₹30k → 6yr=₹60k. A human spots this from 3
