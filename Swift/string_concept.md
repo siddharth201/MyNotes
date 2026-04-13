@@ -81,6 +81,7 @@ for (i, char) in text.enumerated() where i >= 3 {
 }
 
 
-## How to convert st
+## How to convert string in array?
+
 
 
