@@ -52,4 +52,44 @@ millions of rows of order data first.
  
 EDA is the human intelligence that makes machine intelligence possible.  
 
-> **Note:** Without EDA you are just teaching a very fast machine to be wrong at scale. 
+> **Note:** Without EDA you are just teaching a very fast machine to be wrong at scale.  
+
+## What is `target pregnancy prediction case from year 2012`  
+
+Yes, you are thinking of the legendary **Target pregnancy prediction case** from 2012. It is one of the most famous (and infamous) examples of how Exploratory Data Analysis (EDA) and predictive modeling can uncover deeply personal secrets before people even share them with their own families.
+
+The story was famously broken by Charles Duhigg in *The New York Times Magazine* and has since become a standard case study in data science and ethics classes. 
+
+Here is exactly how data analysis led to the unexpected congratulations:
+
+### The Data Mining Strategy
+Target’s marketing department realized that expecting parents are the holy grail of retail. If a store can win a customer's loyalty during pregnancy, they will likely buy everything from diapers to groceries there for years. 
+
+To find these customers early, Target assigned a statistician named Andrew Pole to analyze their massive database of shopper habits. Through EDA, Pole looked at the historical purchasing data of women who had registered for baby showers at Target. 
+
+He discovered distinct patterns. For example, he noticed that women in their second trimester bought unusually large quantities of:
+* Unscented lotion
+* Mineral supplements (like calcium, magnesium, and zinc)
+* Extra-large bags of cotton balls
+* Hand sanitizers and washcloths
+
+By tracking about 25 specific products, Target was able to assign every shopper a "pregnancy prediction score" and even estimate their due date to within a small window.
+
+### The Incident
+Based on these algorithms, Target began mailing out coupons for baby items (like cribs, maternity clothing, and diapers) to women who scored high on the prediction model.
+
+One batch of these coupons arrived in the mail addressed to a high school girl in Minnesota. 
+
+Her father intercepted the mail. Furious, he marched into his local Target and demanded to see the manager, reportedly saying: *"My daughter got this in the mail! She’s still in high school, and you’re sending her coupons for baby clothes and cribs? Are you trying to encourage her to get pregnant?"*
+
+The manager, who had no idea what the corporate data analytics team was doing, apologized profusely. 
+
+### The Aftermath
+A few days later, the manager called the father to apologize again. However, the father's tone had completely changed. 
+
+He told the manager: *"I had a talk with my daughter. It turns out there’s been some activities in my house I haven’t been completely aware of. She’s due in August. I owe you an apology."*
+
+Target's data analysis had accurately figured out the teenager was pregnant based purely on her changing shopping habits, before she had even told her father.
+
+### The Lesson for Data Scientists
+This story perfectly illustrates the sheer power of EDA and predictive modeling. It showed the world that data points that seem random or boring on their own (like buying unscented lotion) can tell a highly sensitive story when aggregated and analyzed. It also sparked a massive global conversation about data privacy and the ethical boundaries of machine learning, forcing companies to be much more subtle about how they use customer data. 
