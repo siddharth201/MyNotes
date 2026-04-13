@@ -33,7 +33,7 @@ By the end of the EDA phase, you should have a clean dataset and a deep, intuiti
 
 
 ##  What is EDA? (Exploratory Data Analysis)
-In one line: EDA is the process of understanding your data before feeding it to a
+**In one line:** EDA is the process of understanding your data before feeding it to a
 machine — so the machine doesn't learn the wrong things and embarrass you in
 production.
 THE MOVIE ANALOGY
