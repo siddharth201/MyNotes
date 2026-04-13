@@ -33,23 +33,18 @@ By the end of the EDA phase, you should have a clean dataset and a deep, intuiti
 
 
 ##  What is EDA? (Exploratory Data Analysis)
-**In one line:** EDA is the process of understanding your data before feeding it to a
-machine — so the machine doesn't learn the wrong things and embarrass you in
-production.
-THE MOVIE ANALOGY
-Before watching a movie, you check the rating, the cast, the genre, the runtime. You
-don't decide based on one thing. That's EDA. You explore every angle before
-committing. Companies do this with data before making crore-level decisions.
-THE CLASSIC TRAP
-If your dataset has a "Serial Number" column that goes 1, 2, 3... and salary also
-increases — the machine will think serial number causes salary. It will present this
-confidently with charts and graphs. It will be spectacularly wrong. Your job as a data
+**In one line:** EDA is the process of understanding your data before feeding it to a machine — so the machine doesn't learn the wrong things and embarrass you in production.  
+
+### THE MOVIE ANALOGY
+Before watching a movie, you check the rating, the cast, the genre, the runtime. You don't decide based on one thing. That's EDA. You explore every angle before committing. Companies do this with data before making crore-level decisions.
+
+### THE CLASSIC TRAP
+If your dataset has a "Serial Number" column that goes 1, 2, 3... and salary also increases — the machine will think serial number causes salary. It will present this confidently with charts and graphs. It will be spectacularly wrong. Your job as a data
 analyst: catch this before it reaches the machine.
 
-WHY EDA EXISTS
-Machines are fast but not smart about context. Humans are slow but have common
-sense.
-Real data is messy — "10k" cannot be added to "20k" as text. It needs to be cleaned.
+## WHY EDA EXISTS
+Machines are fast but not smart about context. Humans are slow but have common sense.  
+Real data is messy — "10k" cannot be added to "20k" as text. It needs to be cleaned.  
 Zomato's "Pure Veg Mode" was not a gut feeling — it came from analysts studying
-millions of rows of order data first.
+millions of rows of order data first.  
 EDA is the human intelligence that makes machine intelligence possible.
