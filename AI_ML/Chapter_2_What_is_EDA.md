@@ -43,8 +43,11 @@ If your dataset has a "Serial Number" column that goes 1, 2, 3... and salary als
 analyst: catch this before it reaches the machine.
 
 ## WHY EDA EXISTS
-Machines are fast but not smart about context. Humans are slow but have common sense.  
+Machines are fast but not smart about context. Humans are slow but have common sense.   
+ 
 Real data is messy — "10k" cannot be added to "20k" as text. It needs to be cleaned.  
+  
 Zomato's "Pure Veg Mode" was not a gut feeling — it came from analysts studying
-millions of rows of order data first.  
+millions of rows of order data first.   
+ 
 EDA is the human intelligence that makes machine intelligence possible.
