@@ -52,4 +52,4 @@ millions of rows of order data first.
  
 EDA is the human intelligence that makes machine intelligence possible.  
 
-> **Note:** Without EDA  
+> **Note:** Without EDA you are just teaching a very fast machine 
