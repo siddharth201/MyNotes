@@ -44,5 +44,5 @@ for (index, char) in zip(greeting.indices, greeting) {
 | zip() | String.Index | Most efficient way to get both the index and character. |
 
 
-## Q. Now suppose I want to loop from index 3 to
+## Q. Now suppose I want to loop from index 3 to end?
 
