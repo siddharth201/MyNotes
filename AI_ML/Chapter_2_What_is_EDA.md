@@ -31,3 +31,17 @@ Data scientists usually perform EDA using programming languages like Python (wit
 
 By the end of the EDA phase, you should have a clean dataset and a deep, intuitive understanding of your data's story, which makes the actual machine learning phase significantly more successful.
 
+
+02 What is EDA? (Exploratory Data Analysis)
+In one line: EDA is the process of understanding your data before feeding it to a
+machine — so the machine doesn't learn the wrong things and embarrass you in
+production.
+THE MOVIE ANALOGY
+Before watching a movie, you check the rating, the cast, the genre, the runtime. You
+don't decide based on one thing. That's EDA. You explore every angle before
+committing. Companies do this with data before making crore-level decisions.
+THE CLASSIC TRAP
+If your dataset has a "Serial Number" column that goes 1, 2, 3... and salary also
+increases — the machine will think serial number causes salary. It will present this
+confidently with charts and graphs. It will be spectacularly wrong. Your job as a data
+analyst: catch this before it reaches the machine.
