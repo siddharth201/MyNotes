@@ -50,4 +50,6 @@ Real data is messy — "10k" cannot be added to "20k" as text. It needs to be cl
 Zomato's "Pure Veg Mode" was not a gut feeling — it came from analysts studying
 millions of rows of order data first.   
  
-EDA is the human intelligence that makes machine intelligence possible.
+EDA is the human intelligence that makes machine intelligence possible.  
+
+> **Note:** Without EDA  
