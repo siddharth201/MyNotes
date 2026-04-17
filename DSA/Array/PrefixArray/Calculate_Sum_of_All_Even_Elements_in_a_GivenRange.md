@@ -140,9 +140,15 @@ func buildEvenPrefix(arr: [Int]) -> [Int] {
 ### Helper  
  
 ```swift
-public func test_evenPrefix(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
-    let result = evenPrefix(prefix: buildEvenPrefixSum(arr: arr), queries: queries)
-    completion(result)
+public func test_rangeSumAllEvenIndex(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
+    //Approch-1
+    let result1 = rangeSumAllEvenIndex(prefix: buildEvenPrefixSum(arr: arr), queries: queries)
+    print("Approch-1 result: \(result1)")
+    
+    //Approch-2
+    let result2 = evenPrefix(prefix: buildEvenPrefix(arr: arr), queries: queries)
+    print("Approch-2 result: \(result2)")
+    //completion(result)
 }
 ```  
 
