@@ -90,7 +90,7 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
 
 **Preprocessing:** O(n)  
 
-**Each query:** O(1)
+**Each query:** O(Q)
 
 **Total:** O(n + Q)
 
