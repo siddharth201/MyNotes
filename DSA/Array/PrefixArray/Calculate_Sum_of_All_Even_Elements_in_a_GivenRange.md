@@ -42,7 +42,7 @@ index 4 → 6
 ### Solution  
 
 ```swift
-func rangeSumAllEvenIndex(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
+func evenPrefix(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
     var result: [Int] = []
     
     for (l, r) in queries {
@@ -101,8 +101,8 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
 ### Helper  
  
 ```swift
-public func test_rangeSumAllEvenIndex(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
-    let result = rangeSumAllEvenIndex(prefix: buildEvenPrefixSum(arr: arr), queries: queries)
+public func test_evenPrefix(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
+    let result = evenPrefix(prefix: buildEvenPrefixSum(arr: arr), queries: queries)
     completion(result)
 }
 ```  
