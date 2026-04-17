@@ -40,7 +40,8 @@ index 4 → 6
 ```  
 
 ### Solution  
-
+  
+#### Approch-1
 ```swift
 func evenPrefix(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
     var result: [Int] = []
@@ -85,6 +86,44 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
     return prefixEvenSum
 }
 ```  
+
+#### Approch-2  
+
+```swift
+func evenPrefix(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
+
+    var result:[Int] = []
+    
+    for (l, r) in queries {
+        guard l >= 0, r < prefix.count, l <= r else {
+            result.append(0)
+            continue
+        }
+        
+        let sum = prefix[r+1] - prefix[l]
+        
+        result.append(sum)
+    }
+    
+    return result
+}
+```
+
+```swift
+func buildEvenPrefix(arr: [Int]) -> [Int] {
+    
+    guard !arr.isEmpty else { return [] }
+    
+    var pea = [0]
+    
+    for i in 0..<arr.count {
+        let val = (i % 2 == 0) ? arr[i] : 0
+        pea.append(pea.last! + val)
+    }
+    
+    return pea
+} 
+``` 
   
 ### Time and Space Complexity 
 
