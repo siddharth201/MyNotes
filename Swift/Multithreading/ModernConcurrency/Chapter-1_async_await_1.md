@@ -88,4 +88,4 @@ Task {
 2.  **Order of Keywords:** The order is always `func name() async throws -> ReturnType`.
 3.  **Testing:** XCTest supports `async` test methods, so you no longer need to use `XCTestExpectation` for simple async checks.
 
-Are you moving an existing project from completion handlers to `async/await`, or are you starting a fresh implementation?
+
