@@ -1,6 +1,44 @@
 
 > **Given an array and Q queries [L, R], return the sum of elements at EVEN INDICES within each range.**  
 
+### Example
+```swift
+arr = [2, 5, 1, 3, 6]
+index:  0  1  2  3  4
+```
+
+#### Even indices:  
+
+```swift
+0, 2, 4 → values = 2, 1, 6
+```
+
+### Example Query  
+
+```swift
+Query: [1, 4]
+```
+
+#### Subarray:  
+
+```swift
+[5, 1, 3, 6]
+ index: 1  2  3  4
+ ```
+
+#### Even indices inside range:  
+
+```swift
+index 2 → 1
+index 4 → 6
+```
+
+#### Answer:  
+
+```swift
+1 + 6 = 7
+```  
+
 **Solution**
 ```swift
 func rangeSumAllEvenIndex(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
