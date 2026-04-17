@@ -96,7 +96,8 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
 
 **Space:** O(n)  
 
-
+  
+  
 **Helper**  
 ```swift
 public func test_rangeSumAllEvenIndex(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
