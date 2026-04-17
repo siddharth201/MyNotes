@@ -39,7 +39,8 @@ index 4 → 6
 1 + 6 = 7
 ```  
 
-**Solution**
+### Solution  
+
 ```swift
 func rangeSumAllEvenIndex(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
     var result: [Int] = []
