@@ -98,7 +98,8 @@ func buildEvenPrefixSum(arr: [Int]) -> [Int] {
 
   
   
-**Helper**  
+### Helper  
+ 
 ```swift
 public func test_rangeSumAllEvenIndex(arr: [Int],queries: [(Int, Int)], completion: (([Int]) -> Void)) {
     let result = rangeSumAllEvenIndex(prefix: buildEvenPrefixSum(arr: arr), queries: queries)
@@ -106,7 +107,7 @@ public func test_rangeSumAllEvenIndex(arr: [Int],queries: [(Int, Int)], completi
 }
 ```  
 
-**How To Call**
+### How To Call
 ```swift
 test_rangeSumAllEvenIndex(arr: [2, 3, 4, -1, -2, 6], queries: [(0,2), (1,5)]) { result in
     print(result)
