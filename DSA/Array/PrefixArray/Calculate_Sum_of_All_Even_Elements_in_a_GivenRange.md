@@ -63,7 +63,9 @@ func rangeSumAllEvenIndex(prefix: [Int],queries: [(Int, Int)]) -> [Int] {
     
     return result
 }
+```  
 
+```swift
 func buildEvenPrefixSum(arr: [Int]) -> [Int] {
     
     guard !arr.isEmpty else { return [] }
