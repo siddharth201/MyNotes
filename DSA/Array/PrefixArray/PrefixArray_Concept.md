@@ -341,5 +341,278 @@ Start with:
 ---
 
 
-## Q. How to think about map /set in below?
+## Q. How to think about map /set in below?  
+
+This is one of the **most important pattern jumps** in DSA 👍 — once you get this, a *lot* of problems become easy.
+
+You’re asking:
+
+> ❓ *How do I know when to use Map / Set with prefix sum?*
+
+Let’s build this from first principles.
+
+---
+
+## 🧠 Step 1: Start From Prefix Idea
+
+We know:
+
+```text
+prefix[j] - prefix[i] = sum(i+1 → j)
+```
+
+---
+
+### 🎯 If we want:
+
+```text
+subarray sum = k
+```
+
+Then:
+
+```text
+prefix[j] - prefix[i] = k
+```
+
+Rearrange:
+
+```text
+prefix[i] = prefix[j] - k
+```
+
+---
+
+## 🔥 THIS is the key insight
+
+```text
+At index j,
+we need to know:
+Have we seen prefix[j] - k before?
+```
+
+---
+
+## 🧠 Step 2: Why Map / Set?
+
+Now ask:
+
+```text
+How do I quickly check if something was seen before?
+```
+
+👉 Answer:
+
+## ✅ HashMap / HashSet
+
+---
+
+## 🧠 Step 3: Pattern Breakdown
+
+---
+
+## ✅ Case 1: Subarray Sum = K (Existence)
+
+### Goal:
+
+```text
+Does any subarray exist with sum k?
+```
+
+### Thinking:
+
+```text
+At index j:
+check if (prefixSum - k) already exists
+```
+
+👉 We only care:
+
+```text
+exists or not
+```
+
+---
+
+### So we use:
+
+## 👉 HashSet
+
+---
+
+### 💻 Mental Code
+
+```text
+if set.contains(prefix - k) → found
+```
+
+---
+
+---
+
+## ✅ Case 2: Count Subarrays with Sum = K
+
+### Goal:
+
+```text
+How many subarrays have sum k?
+```
+
+---
+
+### Thinking:
+
+```text
+How many times have we seen (prefix - k)?
+```
+
+---
+
+👉 Not just existence — we need count
+
+---
+
+### So we use:
+
+# 👉 HashMap (frequency)
+
+---
+
+### 💻 Mental Code
+
+```text
+count += freq[prefix - k]
+```
+
+---
+
+---
+
+## ✅ Case 3: Subarray Sum = 0
+
+### Goal:
+
+```text
+prefix[j] - prefix[i] = 0
+```
+
+So:
+
+```text
+prefix[j] == prefix[i]
+```
+
+---
+
+### Thinking:
+
+```text
+Have I seen this prefix before?
+```
+
+---
+
+👉 So:
+
+## 👉 HashSet
+
+---
+
+---
+
+## 🧠 Summary Table
+
+| Problem                   | What you check     | Data Structure |
+| ------------------------- | ------------------ | -------------- |
+| Subarray sum = k (exists) | prefix - k exists? | Set            |
+| Count subarrays sum = k   | how many prefix-k  | Map            |
+| Subarray sum = 0          | duplicate prefix   | Set            |
+
+---
+
+## 🧠 Pattern Recognition Shortcut
+
+When you see:
+
+```text
+subarray sum = k
+```
+
+Your brain should do:
+
+```text
+prefix[j] - prefix[i] = k
+→ prefix[i] = prefix[j] - k
+→ need lookup
+```
+
+👉 Use Hash
+
+---
+
+## 🧠 Real-World Analogy
+
+---
+
+### 💰 Bank Transactions
+
+Transactions:
+
+```text
+[+100, -50, +30, -80, +20]
+```
+
+---
+
+### Prefix = balance
+
+```text
+[100, 50, 80, 0, 20]
+```
+
+---
+
+### Case: Subarray sum = 0
+
+```text
+prefix repeats → balance same
+```
+
+👉 Means:
+
+```text
+transactions in between cancel out
+```
+
+---
+
+### Case: Sum = k
+
+```text
+Have I ever had balance (current - k)?
+```
+
+👉 That segment sums to k
+
+---
+
+## 🧠 Mental Model (Super Important)
+
+```text
+Prefix = history
+Map/Set = memory of past
+```
+
+---
+
+## 🔥 One-Line Rule
+
+```text
+If problem says "subarray sum = k"
+→ Think prefix
+→ Then think lookup (map/set)
+```
+
+
+
  
