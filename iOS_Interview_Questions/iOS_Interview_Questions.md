@@ -7784,7 +7784,9 @@ Use it when:
 
 * You have **large data**
 * You want **value semantics**
-* But copying eagerly is **too expensive**
+* But copying eagerly is **too expensive**  
+
+[Additional Concept](https://github.com/siddharth201/MyNotes/blob/main/Swift/AssosiatedValues.md)
  
 </details> 
 
