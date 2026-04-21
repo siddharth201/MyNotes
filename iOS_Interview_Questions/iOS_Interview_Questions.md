@@ -3,7 +3,7 @@
 
 
 <details>
-<summary><<b style="color: red;">iOS Basics</b></summary> 
+<summary><b style="color: red;">iOS Basics</b></summary> 
 
 ### Q. Can you explain the iOS Application Lifecycle?
 <details>
