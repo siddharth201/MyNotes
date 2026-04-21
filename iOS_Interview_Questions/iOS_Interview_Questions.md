@@ -4466,7 +4466,7 @@ Here we created a custom type Matrix and accessed elements like matrix[1,0] usin
 </details> 
 
 <details>
-<summary><strong>4. Object-Oriented & Protocol-Oriented Programming</strong></summary>  
+<summary>$\color{red}{\huge{\textbf{4. Object-Oriented & Protocol-Oriented Programming</strong></summary>  
 
 ### **Q1: Explain Protocol-Oriented Programming (POP). How is it different from OOP?**
 <details>
