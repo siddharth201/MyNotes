@@ -7624,6 +7624,11 @@ However, Swift uses **copy-on-write (COW)** optimization for collections (`Array
 * For **performance-critical large data models**, classes might be more efficient.
 
 * For **safety, immutability, and simpler reasoning**, structs are often preferred (with COW helping reduce overhead).
+</details>  
+
+### **Q35: What are associated values in enums? How are they different from raw values?**  
+<details>
+<summary>Answer</summary> 
 </details> 
 
 </details>   
