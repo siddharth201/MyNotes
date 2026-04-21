@@ -1,7 +1,9 @@
 
 # iOS Questions Answers  
 
-## iOS Basics
+
+<details>
+<summary><strong>iOS Basics</strong></summary> 
 
 ### Q. Can you explain the iOS Application Lifecycle?
 <details>
