@@ -7600,6 +7600,30 @@ Think of raw values as *labels or IDs* for enum cases, while associated values a
 #### **Q35: What happens to performance when you pass large structs vs classes as parameters?**  
 <details>
 <summary>Answer</summary> 
+
+#### Structs (Value Types)
+
+* When you pass a struct to a function, it’s **copied** because structs have **value semantics**.
+
+* For **small structs** (like `Point(x: Int, y: Int)`), the copy cost is negligible.
+
+* For **large structs** (imagine one holding big arrays, strings, or dozens of properties), copying can be **expensive** because each pass duplicates data in memory.
+
+However, Swift uses **copy-on-write (COW)** optimization for collections (`Array`, `Dictionary`, `String`). That means the actual data isn’t copied until you modify it, making struct usage efficient in most cases.
+
+#### Classes (Reference Types)
+
+* When you pass a class instance, only the **reference (pointer)** is passed, not the whole object.
+
+* This makes it **cheap to pass around**, even if the object itself holds a lot of data.
+
+* But because many references can point to the same object, you must be careful with **mutations** (side effects).
+
+#### Performance Considerations
+
+* For **performance-critical large data models**, classes might be more efficient.
+
+* For **safety, immutability, and simpler reasoning**, structs are often preferred (with COW helping reduce overhead).
 </details> 
 
 </details>   
