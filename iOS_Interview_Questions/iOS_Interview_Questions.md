@@ -1,6 +1,7 @@
 
 # iOS Questions Answers 
 
+<details>
 <summary>$\color{red}{\huge{\textbf{iOS Basics}}}$</summary> 
 
 ### Q. Can you explain the iOS Application Lifecycle?
