@@ -7595,6 +7595,9 @@ Think of raw values as *labels or IDs* for enum cases, while associated values a
 
 ## 15. Application Security in iOS Apps
 
+<details>
+<summary>15. Application Security in iOS Apps</summary>
+
 ### **Q1: What are the fundamental secure coding principles for iOS development?**
 <details>
 <summary>Answer</summary>  
@@ -8830,6 +8833,7 @@ M10 – Privacy Issues
 • Guides developers to implement secure coding patterns, encryption, authentication, and secure communication.
 </details>
 
+</details>
 
 
 
