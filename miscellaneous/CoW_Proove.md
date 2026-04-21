@@ -338,7 +338,32 @@ b.box.value = 999
 
 > **COW is not a property of structs—it’s a design pattern implemented using reference storage + uniqueness checks.**
 
+## Q. Proof Using Memory Behavior?
 
+🔥 Proof Using Memory Behavior
+
+Let’s remove Array (which hides the truth)
+
+### ❌ Pure struct (no COW anywhere)
+```swift
+struct PlainData {
+    var a: Int
+    var b: Int
+}
+
+var p1 = PlainData(a: 10, b: 20)
+var p2 = p1   // FULL copy happens here
+
+p2.a = 100
+
+print(p1.a) // 10
+print(p2.a) // 100
+```
+
+👉 This proves:
+
+Copy happens immediately at assignment
+No sharing → no COW
 
   
 
