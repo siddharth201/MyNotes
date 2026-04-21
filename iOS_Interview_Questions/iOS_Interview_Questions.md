@@ -7597,6 +7597,11 @@ Think of raw values as *labels or IDs* for enum cases, while associated values a
 [Additional Concept](https://github.com/siddharth201/MyNotes/blob/main/Swift/AssosiatedValues.md)
 </details>  
 
+### **Q35: What are associated values in enums? How are they different from raw values?**  
+<details>
+<summary>Answer</summary> 
+</details> 
+
 </details>   
 
  
