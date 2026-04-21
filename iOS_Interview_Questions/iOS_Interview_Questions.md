@@ -2,10 +2,6 @@
 # iOS Questions Answers  
 
 <details>
-<summary><strong>$\color{red}{\textbf{15. Application Security in iOS Apps}}$<strong></summary>
-</details>
-
-<details>
 <summary>$\color{red}{\textbf{15. Application Security in iOS Apps}}$</summary>
 </details>
 <details>
