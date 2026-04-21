@@ -7629,6 +7629,166 @@ However, Swift uses **copy-on-write (COW)** optimization for collections (`Array
 ### **Q36: How do you implement custom copy-on-write behavior for your structs?**  
 <details>
 <summary>Answer</summary>  
+Great question—this is exactly where Swift’s value semantics get interesting.
+
+### 🔑 Core Idea
+
+Custom **Copy-On-Write (COW)** means:
+
+> Multiple structs can *share the same storage* until one of them mutates → then a copy is made.
+
+Swift gives you a built-in tool for this:
+
+```swift
+isKnownUniquelyReferenced(_:)
+```
+
+---
+
+## ✅ Step-by-Step Implementation
+
+### 1. Create a reference storage (class)
+
+This holds the actual data.
+
+```swift
+final class Storage {
+    var data: [Int]
+
+    init(data: [Int]) {
+        self.data = data
+    }
+}
+```
+
+---
+
+### 2. Wrap it inside a struct
+
+This struct provides value semantics.
+
+```swift
+struct MyArray {
+    private var storage: Storage
+
+    init(_ data: [Int]) {
+        self.storage = Storage(data: data)
+    }
+}
+```
+
+---
+
+### 3. Ensure uniqueness before mutation
+
+This is the heart of COW.
+
+```swift
+extension MyArray {
+    
+    private mutating func ensureUnique() {
+        if !isKnownUniquelyReferenced(&storage) {
+            storage = Storage(data: storage.data)
+        }
+    }
+}
+```
+
+---
+
+### 4. Mutate safely
+
+Call `ensureUnique()` before modifying.
+
+```swift
+extension MyArray {
+    
+    mutating func append(_ value: Int) {
+        ensureUnique()
+        storage.data.append(value)
+    }
+}
+```
+
+---
+
+### 5. Read access (no copy needed)
+
+```swift
+extension MyArray {
+    
+    var elements: [Int] {
+        return storage.data
+    }
+}
+```
+
+---
+
+## 🧠 How It Works
+
+```swift
+var a = MyArray([1, 2, 3])
+var b = a   // same storage (no copy yet)
+
+b.append(4) // triggers copy
+
+print(a.elements) // [1, 2, 3]
+print(b.elements) // [1, 2, 3, 4]
+```
+
+* Before mutation → **shared storage**
+* On mutation → **copy happens only if needed**
+
+---
+
+## ⚠️ Important Rules
+
+### 1. Storage must be a class
+
+Because `isKnownUniquelyReferenced` only works with reference types.
+
+---
+
+### 2. Always call `ensureUnique()` before mutation
+
+If you forget → you break value semantics (bug ⚠️)
+
+---
+
+### 3. Mark method `mutating`
+
+Because struct needs to modify itself.
+
+---
+
+### 4. Use `final class`
+
+Improves performance + guarantees behavior.
+
+---
+
+## 🚀 Real-world Examples
+
+Swift uses this pattern internally in:
+
+* `Array`
+* `Dictionary`
+* `String`
+
+---
+
+## 💡 When to Use Custom COW
+
+Use it when:
+
+* You have **large data**
+* You want **value semantics**
+* But copying eagerly is **too expensive**
+
+---
+
+If you want, I can show you a **production-grade COW wrapper (generic + thread-safe)** or how to integrate this into your Clean Architecture setup.
  
 </details> 
 
