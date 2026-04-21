@@ -7594,7 +7594,7 @@ Think of raw values as *labels or IDs* for enum cases, while associated values a
 
 
 <details>
-<summary>**15. Application Security in iOS Apps**</summary>
+<summary><b>15. Application Security in iOS Apps</b></summary>
 
 ### **Q1: What are the fundamental secure coding principles for iOS development?**
 <details>
