@@ -260,10 +260,12 @@ DidEnterBackground →     .background
 <key>CFBundleVersion</key>
 <string>45</string>
 ```
-</details>  
+</details> 
 
-
-## **Swift Programming Language**  
+</details> 
+  
+<details>
+<summary><strong>Swift Programming Language</strong></summary>
 
 ### **Q.1 What is the difference between var and let in Swift?**
 <details>
