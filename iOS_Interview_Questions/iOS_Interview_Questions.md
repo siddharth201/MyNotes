@@ -4461,7 +4461,8 @@ Here we created a custom type Matrix and accessed elements like matrix[1,0] usin
 • Commonly used in collections, dictionaries, strings, or custom data structures.
 </details>    
 
-## **4. Object-Oriented & Protocol-Oriented Programming**
+<details>
+<summary><strong>4. Object-Oriented & Protocol-Oriented Programming</strong></summary>  
 
 ### **Q1: Explain Protocol-Oriented Programming (POP). How is it different from OOP?**
 <details>
