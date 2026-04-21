@@ -3,7 +3,10 @@
 
 
 <details>
-<summary><strong>iOS Basics</strong></summary> 
+<summary><strong>iOS Basics</strong></summary>
+<span style="color: #e76f51; font-weight: bold; font-size: 1.1em;">
+    15. Application Security in iOS Apps
+  </span> 
 
 ### Q. Can you explain the iOS Application Lifecycle?
 <details>
