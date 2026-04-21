@@ -7645,9 +7645,9 @@ isKnownUniquelyReferenced(_:)
 
 ---
 
-## ✅ Step-by-Step Implementation
+###Step-by-Step Implementation
 
-### 1. Create a reference storage (class)
+#### 1. Create a reference storage (class)
 
 This holds the actual data.
 
@@ -7663,7 +7663,7 @@ final class Storage {
 
 ---
 
-### 2. Wrap it inside a struct
+#### 2. Wrap it inside a struct
 
 This struct provides value semantics.
 
@@ -7679,7 +7679,7 @@ struct MyArray {
 
 ---
 
-### 3. Ensure uniqueness before mutation
+#### 3. Ensure uniqueness before mutation
 
 This is the heart of COW.
 
@@ -7696,7 +7696,7 @@ extension MyArray {
 
 ---
 
-### 4. Mutate safely
+#### 4. Mutate safely
 
 Call `ensureUnique()` before modifying.
 
@@ -7712,7 +7712,7 @@ extension MyArray {
 
 ---
 
-### 5. Read access (no copy needed)
+#### 5. Read access (no copy needed)
 
 ```swift
 extension MyArray {
@@ -7725,7 +7725,7 @@ extension MyArray {
 
 ---
 
-## 🧠 How It Works
+###  How It Works
 
 ```swift
 var a = MyArray([1, 2, 3])
@@ -7742,33 +7742,33 @@ print(b.elements) // [1, 2, 3, 4]
 
 ---
 
-## ⚠️ Important Rules
+### ⚠️ Important Rules
 
-### 1. Storage must be a class
+#### 1. Storage must be a class
 
 Because `isKnownUniquelyReferenced` only works with reference types.
 
 ---
 
-### 2. Always call `ensureUnique()` before mutation
+#### 2. Always call `ensureUnique()` before mutation
 
 If you forget → you break value semantics (bug ⚠️)
 
 ---
 
-### 3. Mark method `mutating`
+#### 3. Mark method `mutating`
 
 Because struct needs to modify itself.
 
 ---
 
-### 4. Use `final class`
+#### 4. Use `final class`
 
 Improves performance + guarantees behavior.
 
 ---
 
-## 🚀 Real-world Examples
+### Real-world Examples
 
 Swift uses this pattern internally in:
 
@@ -7778,17 +7778,13 @@ Swift uses this pattern internally in:
 
 ---
 
-## 💡 When to Use Custom COW
+###  When to Use Custom COW
 
 Use it when:
 
 * You have **large data**
 * You want **value semantics**
 * But copying eagerly is **too expensive**
-
----
-
-If you want, I can show you a **production-grade COW wrapper (generic + thread-safe)** or how to integrate this into your Clean Architecture setup.
  
 </details> 
 
