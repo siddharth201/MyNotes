@@ -1,7 +1,5 @@
 
-# iOS Questions Answers
-
-<summary>$\color{red}{\huge{\textbf{15. Application Security in iOS Apps}}}$</summary>  
+# iOS Questions Answers 
 
 <summary>$\color{red}{\huge{\textbf{iOS Basics}}}$</summary> 
 
