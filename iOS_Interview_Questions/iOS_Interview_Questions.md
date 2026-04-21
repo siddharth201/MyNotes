@@ -3,11 +3,7 @@
 
 <summary>$\color{red}{\huge{\textbf{15. Application Security in iOS Apps}}}$</summary>  
 
-<details>
-<summary>$\color{red}{\textbf{15. Application Security in iOS Apps}}$</summary>
-</details>
-<details>
-<summary><strong>iOS Basics</strong></summary> 
+<summary>$\color{red}{\huge{\textbf{iOS Basics}}}$</summary> 
 
 ### Q. Can you explain the iOS Application Lifecycle?
 <details>
