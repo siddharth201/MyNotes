@@ -362,8 +362,8 @@ print(p2.a) // 100
 
 👉 This proves:
 
-Copy happens immediately at assignment
-No sharing → no COW
+* Copy happens immediately at assignment
+* No sharing → no COW
 
   
 
