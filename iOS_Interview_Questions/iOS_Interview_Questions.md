@@ -265,7 +265,7 @@ DidEnterBackground →     .background
 </details> 
   
 <details>
-<summary>$\color{red}{\huge{\textbf{Swift Programming Language</strong></summary>
+<summary>$\color{red}{\huge{\textbf{Swift Programming Language}}}$</summary>
 
 ### **Q.1 What is the difference between var and let in Swift?**
 <details>
