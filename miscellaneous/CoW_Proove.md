@@ -124,7 +124,7 @@ func testReferenceLeak() {
 > “Swift structs give value semantics, but not deep copies—Copy-On-Write is an optimization, not a guarantee.”
 
 
-## Q. 
+## Q. How to detect COW in runtime?
   
 
 
