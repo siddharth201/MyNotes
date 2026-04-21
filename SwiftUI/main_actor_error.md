@@ -303,19 +303,5 @@ You now understand:
 
 👉 This is **senior-level Swift knowledge**
 
----
 
-# 👉 Next Step
-
-Now you're fully ready for:
-
-**“Step 3 – CacheRepository implementation”**
-
-This is where:
-
-* TTL logic
-* cache + network coordination
-* real intelligence
-
-comes in 🔥
 
