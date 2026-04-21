@@ -8,7 +8,7 @@ I’ll give you a **practical debugging mental model**, not just theory.
 
 You saw errors like:
 
-> ❌ *“Main actor-isolated conformance of 'CacheKey' to 'Hashable'…”*
+> ❌ *“Main actor-isolated conformance of 'CacheKey' to 'Hashable' cannot be used in actor-isolated context; this is an error in the Swift 6 language mode”*
 > ❌ *“cannot be used in actor-isolated context”*
 
 ---
