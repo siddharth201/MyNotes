@@ -95,4 +95,42 @@ try! myAccount.withdraw(amount: 10)
 
 ## Q. What is the role of Error protocol in above example. What if we not use this and keep example same?  
 
+That is a fantastic question. Because the `Error` protocol in Swift doesn't force you to implement any specific methods or variables, it can seem like it isn't actually doing anything. 
 
+Here is exactly what the `Error` protocol does and what would happen if you removed it.
+
+### 1. The Role of the `Error` Protocol
+In Swift, the `Error` protocol is what is known as a **marker protocol**. It is completely empty. 
+
+Its only job is to act as a definitive tag for the Swift compiler. When you add `: Error` to your enum (or struct, or class), you are making a strict contract with the compiler: *"I intend to use this specific type to represent failure states that can be thrown."*
+
+It exists strictly for **type safety**. It prevents you from accidentally throwing random data types (like an `Int` or a `String`) as errors, which keeps your error handling predictable and structured.
+
+### 2. What happens if you don't use it?
+If you keep the exact same example but remove `: Error` from the enum declaration, **your code will refuse to compile.** Here is what your code would look like:
+
+```swift
+// We removed ': Error'
+enum BankError { 
+    case insufficientFunds(amountNeeded: Double)
+    case negativeWithdrawal
+    case accountLocked
+}
+
+class BankAccount {
+    // ...
+    func withdraw(amount: Double) throws {
+        if isLocked {
+            // COMPILER ERROR HAPPENS HERE
+            throw BankError.accountLocked 
+        }
+        // ...
+    }
+}
+```
+
+If you try to build this, Xcode (and the Swift compiler) will immediately throw a red error flag with this exact message:
+
+> 🛑 `Thrown expression type 'BankError' does not conform to 'Error'`
+
+**The Bottom Line:** The `throw` keyword in Swift has a hardcoded rule: whatever comes immediately after the word `throw` **must** conform to the `Error` protocol. If it doesn't, Swift will not let your app run.
