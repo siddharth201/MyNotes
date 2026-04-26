@@ -93,4 +93,6 @@ This completely disables error propagation. You use this *only* when you are 100
 try! myAccount.withdraw(amount: 10) 
 ```  
 
-## Q. 
+## Q. What is the role of Error protocol in above example. What if we not use this and keep example same?  
+
+
