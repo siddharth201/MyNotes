@@ -103,4 +103,4 @@ separator = "-" * 20
 print(separator) # Output: --------------------
 ```  
 
-## Q. 
+## Q. Is everything in python is a class ?
