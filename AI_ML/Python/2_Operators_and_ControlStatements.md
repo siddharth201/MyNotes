@@ -153,4 +153,31 @@ user_age: int = 30
 
 **Summary:** Most of the time you type a `:`, you should immediately hit `Enter` and press `Tab` (or 4 spaces) to indent your next line of code!  
 
-## Q. If we have multiple condition, we need not an else after elif unlike swift
+## Q. If we have multiple condition, we need not an else after elif unlike swift  
+
+You nailed it! That is exactly right. 
+
+In Python, the `else` block is completely **optional**. You can have an `if` statement followed by as many `elif` statements as you want, and you are under no obligation to cap it off with an `else`.
+
+If none of the `if` or `elif` conditions evaluate to `True`, Python simply shrugs, skips the entire block, and moves on to the next line of code.
+
+Here is an example:
+
+```python
+network_ping = 150
+
+if network_ping < 50:
+    print("Connection is excellent.")
+elif network_ping < 100:
+    print("Connection is good.")
+elif network_ping < 200:
+    print("Connection is fair.")
+
+# If ping was 500, nothing would print above, and the program would just continue here.
+print("Network test complete.")
+```
+
+### A Quick Note on Swift
+Just to clarify the Swift comparison: while Swift is generally much stricter than Python (for instance, Swift forces you to be exhaustive when using `switch` statements), standard `if` / `else if` chains in Swift actually **don't** require a final `else` either! 
+
+However, your intuition is completely right—Python is designed to be highly flexible and will never force you to write "catch-all" logic unless your specific application requires it.
