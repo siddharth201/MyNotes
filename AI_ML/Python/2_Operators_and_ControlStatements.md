@@ -151,4 +151,6 @@ Remember when we compared Python variables to Swift's `let` and `var`? If you wa
 user_age: int = 30
 ```
 
-**Summary:** Most of the time you type a `:`, you should immediately hit `Enter` and press `Tab` (or 4 spaces) to indent your next line of code!
+**Summary:** Most of the time you type a `:`, you should immediately hit `Enter` and press `Tab` (or 4 spaces) to indent your next line of code!  
+
+## Q. If we have multiple condition, we need not an else after elif unlike swift
