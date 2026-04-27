@@ -1,4 +1,4 @@
-Here is a breakdown of these core Python concepts. You have actually already used a few of these in our previous exercises, but seeing them formally defined will help solidify your understanding.
+Here is a breakdown of these core Python concepts.
 
 ### 1. Primitive Data Types
 These are the most basic, fundamental types of data built into Python. Think of them as the raw materials you use to build your application logic or analyze a dataset.
