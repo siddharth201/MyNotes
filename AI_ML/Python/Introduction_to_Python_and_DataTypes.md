@@ -104,3 +104,47 @@ print(separator) # Output: --------------------
 ```  
 
 ## Q. Is everything in python is a class ?
+Yes, you have hit on one of the most fundamental design principles of the language: **in Python, absolutely everything is an object, and every object is an instance of a class.**
+
+In some programming languages (like Java or C++), there is a strict separation between "objects" (complex data structures) and "primitives" (simple, raw data values like integers or characters that are not objects). 
+
+Python does not make this distinction. Every single piece of data you interact with is a fully-fledged object built from a class.
+
+Here is what that actually means in practice:
+
+### 1. Numbers and Strings are Objects
+When you type `A = 50`, you aren't just storing raw binary data in memory. You are actually creating an instance of the `int` (integer) class. Because it is a class, it comes with built-in methods (hidden functions) attached to it.
+
+You can prove this using Python's built-in `type()` function:
+
+```python
+number = 50
+text = "Hello"
+
+print(type(number))  # Output: <class 'int'>
+print(type(text))    # Output: <class 'str'>
+```
+
+### 2. Even Functions are Objects
+This is a mind-bending concept if you are coming from certain other languages. In Python, functions are "first-class citizens." Because a function is just an instance of a class, you can treat it like any other variable: you can pass a function into another function, or store a function inside a list.
+
+```python
+def say_hello():
+    print("Hi!")
+
+# Proving the function is a class instance!
+print(type(say_hello)) # Output: <class 'function'>
+```
+
+### 3. Even Classes are Objects!
+To go one level deeper, the classes you write are themselves instances of a higher-level "meta-class" called `type`. Python creates class objects in memory the moment it reads your code.
+
+### Why does this matter to you?
+Because everything is an object, everything has built-in features you can use. For example, because a string is an object, you don't have to write custom code to make it uppercase; the String class already has a method for that attached to it:
+
+```python
+name = "veeram"
+
+# We use the dot (.) to access the 'upper' method that belongs to the string class
+print(name.upper()) # Output: VEERAM
+```
