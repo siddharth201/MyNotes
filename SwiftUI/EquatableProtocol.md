@@ -1,3 +1,5 @@
+> Explain Equatable protocol with small example in swift
+
 Understanding the `Equatable` protocol is a huge step in mastering Swift. It is one of the most common and essential protocols you will use.
 
 Here is a clear breakdown of what it is, why it matters, and how to implement it.
