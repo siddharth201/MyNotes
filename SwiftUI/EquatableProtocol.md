@@ -77,4 +77,67 @@ let userDatabase = [user1, User(id: "999", displayName: "Bob", isOnline: true)]
 if userDatabase.contains(user1) {
     print("User is already in the database!")
 }
+```  
+
+## Q.   
+
+Yes, it absolutely works with reference types (`class`), but there is one major catch you need to be aware of. 
+
+Unlike structs, **Swift does not provide automatic synthesis for classes.** Even if every property inside your class is a basic Swift type (like `String` or `Int`), you *must* write the `static func ==` manually. 
+
+Apple designed it this way because classes support inheritance (subclassing), which makes automatic equality checks much more dangerous and unpredictable. Swift forces you to be explicit about what makes two classes "equal."
+
+Here is how you do it, followed by a very common interview question related to this exact topic.
+
+### 1. Implementing Equatable on a Class
+You do this the exact same way as the "Manual Way" for structs. 
+
+```swift
+class Employee: Equatable {
+    let id: Int
+    var name: String
+    
+    init(id: Int, name: String) {
+        self.id = id
+        self.name = name
+    }
+    
+    // You MUST write this. If you delete this function, the code won't compile.
+    static func == (lhs: Employee, rhs: Employee) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
+let emp1 = Employee(id: 1, name: "Alice")
+let emp2 = Employee(id: 1, name: "Alice")
+
+print(emp1 == emp2) // Prints: true
 ```
+
+---
+
+### 2. The Interview Question: Equality (`==`) vs. Identity (`===`)
+Because classes are reference types (meaning they point to a specific spot in your phone's RAM), interviewers love to ask about the difference between `==` and `===`.
+
+* **`==` (Equality):** Evaluates "Do these two objects hold the same *data*?" (This is what `Equatable` powers).
+* **`===` (Identity):** Evaluates "Are these two variables pointing to the *exact same physical instance* in memory?" 
+
+Here is what that looks like in practice:
+
+```swift
+let clone1 = Employee(id: 99, name: "Clone")
+let clone2 = Employee(id: 99, name: "Clone")
+
+let clone3 = clone1 // clone3 is just pointing to clone1's memory space
+
+// Equality (==)
+print(clone1 == clone2) // TRUE: Their data matches (id is 99).
+
+// Identity (===)
+print(clone1 === clone2) // FALSE: They are two separate objects in memory.
+print(clone1 === clone3) // TRUE: They point to the exact same object in memory.
+```
+
+If you change `clone3.name = "New Name"`, `clone1.name` also changes because they are the same object. `clone2` remains unaffected.
+
+Since we are on the topic of passing data around (value vs. reference types), how comfortable are you with the concept of memory leaks and `weak` vs. `strong` references in Swift?
