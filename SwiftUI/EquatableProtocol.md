@@ -1,6 +1,6 @@
 ## Explain Equatable protocol with small example in swift    
 
-> "In Swift, Equatable is a standard library protocol that allows instances of a type to be compared for value equality using the == operator. Conforming to it tells the compiler exactly what constitutes two objects being 'the same,' which inherently unlocks powerful collection methods like .contains() and .firstIndex(of:)." 
+> Definition: "In Swift, `Equatable` is a standard library protocol that allows instances of a type to be compared for value equality using the == operator. Conforming to it tells the compiler exactly what constitutes two objects being 'the same,' which inherently unlocks powerful collection methods like .contains() and .firstIndex(of:)." 
 
 Understanding the `Equatable` protocol is a huge step in mastering Swift. It is one of the most common and essential protocols you will use.
 
