@@ -81,7 +81,7 @@ if userDatabase.contains(user1) {
 }
 ```  
 
-## Q.   
+## Q. Is this work with reference type(class) as well ?   
 
 Yes, it absolutely works with reference types (`class`), but there is one major catch you need to be aware of. 
 
