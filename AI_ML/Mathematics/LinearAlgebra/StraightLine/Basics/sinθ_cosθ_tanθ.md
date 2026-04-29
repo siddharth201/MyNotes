@@ -17,6 +17,9 @@ Take a right triangle with angle θ.
 
 Then:
 
+$$\sin\theta=\frac{opposite}{hypotenuse}$$
+
+
 \sin\theta=\frac{opposite}{hypotenuse}
 
 \cos\theta=\frac{adjacent}{hypotenuse}
