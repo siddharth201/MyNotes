@@ -1,5 +1,5 @@
 
-## Q. Just curious about sin, cos and tan and there behaviour so that I can understant m = tanθ is correct choice
+## Q. Just curious about sinθ, cosθ and tanθ and there behaviour so that I can understant m = tanθ is correct choice
 
 Excellent curiosity. This is the *right* way to learn math: understand behavior, not memorize formulas.
 
@@ -140,7 +140,7 @@ Notice tan directly measures steepness.
 
 ## 7. Why tan Becomes Infinite at 90°
 
-\tan\theta=\frac{sin\theta}{cos\theta}
+$\tan\theta=\frac{sin\theta}{cos\theta}$
 
 At 90°:
 
@@ -205,7 +205,7 @@ Because a line’s identity is its steepness.
 
 And only tan directly expresses:
 
-\text{steepness}=\frac{vertical\ change}{horizontal\ change}
+$\text{steepness}=\frac{vertical\ change}{horizontal\ change}$
 
 ---
 
