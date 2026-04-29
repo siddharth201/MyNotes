@@ -86,7 +86,7 @@ tan removes hypotenuse and directly compares vertical to horizontal.
 
 Starts at 1, decreases to 0.
 
-\cos 0^\circ=1,\quad \cos90^\circ=0
+$\cos 0^\circ=1,\quad \cos90^\circ=0$
 
 Meaning:
 
