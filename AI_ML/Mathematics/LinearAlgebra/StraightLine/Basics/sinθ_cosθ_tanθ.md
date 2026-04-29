@@ -22,9 +22,9 @@ $$\sin\theta=\frac{opposite}{hypotenuse}$$
 
 \sin\theta=\frac{opposite}{hypotenuse}
 
-$\cos\theta=\frac{adjacent}{hypotenuse}
+$$\cos\theta=\frac{adjacent}{hypotenuse}
 
-$\tan\theta=\frac{opposite}{adjacent}
+$$\tan\theta=\frac{opposite}{adjacent}
 
 ---
 
