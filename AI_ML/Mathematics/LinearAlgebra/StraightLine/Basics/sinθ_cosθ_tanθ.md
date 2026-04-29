@@ -25,17 +25,17 @@ Then:
 
 ---
 
-# 2. Real Meaning of Each Ratio
+## 2. Real Meaning of Each Ratio
 
-## sin θ → vertical share
+### sin θ → vertical share
 
 How much “upward component” exists.
 
-## cos θ → horizontal share
+### cos θ → horizontal share
 
 How much “forward component” exists.
 
-## tan θ → steepness
+### tan θ → steepness
 
 How much rise happens for each horizontal move.
 
@@ -43,7 +43,7 @@ That last one is exactly slope.
 
 ---
 
-# 3. Why tan Matches Straight Line Slope
+## 3. Why tan Matches Straight Line Slope
 
 Slope means:
 
@@ -66,7 +66,7 @@ Perfect match.
 
 ---
 
-# 4. Why sin / cos Are Wrong for Slope
+## 4. Why sin / cos Are Wrong for Slope
 
 Because they compare to hypotenuse, not horizontal run.
 
@@ -80,9 +80,9 @@ tan removes hypotenuse and directly compares vertical to horizontal.
 
 ---
 
-# 5. Behavior from 0° to 90°
+## 5. Behavior from 0° to 90°
 
-## cos θ
+### cos θ
 
 Starts at 1, decreases to 0.
 
@@ -95,7 +95,7 @@ Meaning:
 
 ---
 
-## sin θ
+### sin θ
 
 Starts at 0, increases to 1.
 
@@ -108,7 +108,7 @@ Meaning:
 
 ---
 
-## tan θ
+### tan θ
 
 Starts at 0, grows to ∞.
 
@@ -125,7 +125,7 @@ That’s the strongest proof tan is correct.
 
 ---
 
-# 6. Visual Interpretation
+## 6. Visual Interpretation
 
 | Angle | sin   | cos  | tan   | Meaning    |
 | ----- | ----- | ---- | ----- | ---------- |
@@ -138,7 +138,7 @@ Notice tan directly measures steepness.
 
 ---
 
-# 7. Why tan Becomes Infinite at 90°
+## 7. Why tan Becomes Infinite at 90°
 
 \tan\theta=\frac{sin\theta}{cos\theta}
 
@@ -153,11 +153,11 @@ That matches vertical line slope.
 
 ---
 
-# 8. Why Engineers Love sin/cos Too
+## 8. Why Engineers Love sin/cos Too
 
 Even though tan gives slope:
 
-## sin & cos are used for components:
+### sin & cos are used for components:
 
 Force at angle θ:
 
@@ -174,7 +174,7 @@ Used in:
 
 ---
 
-# 9. Deep Intuition
+## 9. Deep Intuition
 
 Imagine climbing a hill.
 
@@ -186,7 +186,7 @@ Steepness = slope.
 
 ---
 
-# 10. AI / ML Link
+## 10. AI / ML Link
 
 In ML geometry:
 
@@ -199,7 +199,7 @@ Cosine similarity is huge in embeddings.
 
 ---
 
-# 11. Ultimate Reason m = tanθ
+## 11. Ultimate Reason m = tanθ
 
 Because a line’s identity is its steepness.
 
@@ -209,11 +209,6 @@ And only tan directly expresses:
 
 ---
 
-# 12. If You Want Real Mastery Next
 
-Best next topic:
 
-**Unit Circle explained so sin cos tan become unforgettable**
-
-Just say **unit circle**
 
