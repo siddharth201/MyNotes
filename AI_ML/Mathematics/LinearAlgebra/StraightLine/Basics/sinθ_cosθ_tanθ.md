@@ -210,6 +210,8 @@ $\text{steepness}=\frac{vertical\ change}{horizontal\ change}$
 ---  
 
 
+## Gemini Response
+
 That is a brilliant connection to make. Understanding *why* $m = \tan(\theta)$ bridges the gap between geometry (shapes and angles) and algebra (equations and lines), which is incredibly useful in machine learning.
 
 To see why the slope is exactly the tangent of the angle, we have to look at how trigonometry defines these functions using a right-angled triangle. 
@@ -243,18 +245,7 @@ This means the tangent of the angle $\theta$ is literally just calculating the s
 *   If the angle gets steeper (e.g., $45^\circ$), the rise equals the run. $\tan(45^\circ) = 1$, so the slope is $1$.
 *   If the angle gets perfectly vertical ($90^\circ$), the run is zero. Dividing by zero is mathematically impossible, which is why $\tan(90^\circ)$ approaches infinity!
 
-To help you visualize this behavior, I have built an interactive tool below. Move the slider to change the angle $\theta$ and watch how the Rise ($\sin$), Run ($\cos$), and the resulting Slope ($\tan$) react.
 
-<GenerateWidget height="600px" component_placeholder_id="im_86a0c9f0ffc83f91">
-```json
-{
-  "widgetSpec": {
-    "height": "600px",
-    "prompt": "Objective: Create an interactive visualization of a right triangle on a Cartesian plane to demonstrate why the slope of a line equals tan(theta). Data State: Initial angle theta = 45 degrees. Strategy: Standard Layout. Inputs: One range slider for 'Angle theta (degrees)' ranging from 0 to 89 with step 1, starting at 45. Behavior: Draw a 2D coordinate system with x and y axes. Draw a line segment starting from the origin (0,0) representing the hypotenuse (e.g., length 10) at angle theta to the positive x-axis. Form a right triangle by dropping a vertical line from the end of the segment to the x-axis. Label the vertical side as 'Rise = Opposite'. Label the horizontal side as 'Run = Adjacent'. Dynamically calculate and display the real-time mathematical values of sin(theta), cos(theta), and tan(theta) based on the slider input. Display a clear, updating formula text element: 'Slope (m) = Rise / Run = tan(theta) = [current_tan_value]'. As the user adjusts the angle slider, the drawn triangle and all numerical text values must update smoothly in real-time."
-  }
-}
-```
-</GenerateWidget>
 
 
 
