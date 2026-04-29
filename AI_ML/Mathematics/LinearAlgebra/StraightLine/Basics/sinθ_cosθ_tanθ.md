@@ -60,7 +60,7 @@ If triangle is drawn on line:
 
 So:
 
-m=\tan\theta
+$m=\tan\theta$
 
 Perfect match.
 
