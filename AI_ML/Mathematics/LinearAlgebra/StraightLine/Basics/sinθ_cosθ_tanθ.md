@@ -1,3 +1,6 @@
+
+## Q. Just curious about sin, cos and tan and there behaviour so that I can understant m = tan is correct choice
+
 Excellent curiosity. This is the *right* way to learn math: understand behavior, not memorize formulas.
 
 If you truly understand **sin, cos, tan**, then slope, vectors, waves, rotations, calculus, and ML geometry become easier.
