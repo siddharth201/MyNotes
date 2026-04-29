@@ -99,7 +99,7 @@ Meaning:
 
 Starts at 0, increases to 1.
 
-\sin0^\circ=0,\quad \sin90^\circ=1
+$\sin0^\circ=0,\quad \sin90^\circ=1$
 
 Meaning:
 
@@ -112,7 +112,7 @@ Meaning:
 
 Starts at 0, grows to ∞.
 
-\tan0^\circ=0,\quad \tan90^\circ=\infty
+$\tan0^\circ=0,\quad \tan90^\circ=\infty$
 
 Meaning:
 
