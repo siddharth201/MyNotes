@@ -47,11 +47,11 @@ That last one is exactly slope.
 
 Slope means:
 
-m=\frac{rise}{run}=\frac{\Delta y}{\Delta x}
+$m=\frac{rise}{run}=\frac{\Delta y}{\Delta x}$
 
 But:
 
-\tan\theta=\frac{opposite}{adjacent}
+$\tan\theta=\frac{opposite}{adjacent}$
 
 If triangle is drawn on line:
 
