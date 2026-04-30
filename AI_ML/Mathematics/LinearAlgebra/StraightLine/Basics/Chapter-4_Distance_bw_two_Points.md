@@ -41,3 +41,6 @@ Let $P_1$ have coordinates $(x_1, y_1)$ and $P_2$ have coordinates $(x_2, y_2)$.
     \[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
 
 This is the **distance formula**. It tells us that the distance between any two points $(x_1, y_1)$ and $(x_2, y_2)$ in a Cartesian plane is the square root of the sum of the squares of the differences in their coordinates.
+  
+
+## Q. 
