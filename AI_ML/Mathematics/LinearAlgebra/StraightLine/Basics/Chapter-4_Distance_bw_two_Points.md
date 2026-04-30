@@ -84,7 +84,7 @@ Let $P_1$ be at $(x_1, y_1)$ and $P_2$ be at $(x_2, y_2)$.
     *   The vertical leg of the triangle is the distance between $P_2$ and $P_3$ along the y-axis. Its length is the difference between their y-coordinates: $|y_2 - y_1|$.
 
 3.  **Apply the Pythagorean Theorem:**
-    *   Let the horizontal leg be '$a$' and the vertical leg be '$b$'.
+    *   Let the horizontal leg be $'a'$ and the vertical leg be '$b$'.
     *   Let the distance between $P_1$ and $P_2$ (the hypotenuse) be '$d$'.
     *   According to the Pythagorean theorem: $a^2 + b^2 = d^2$.
 
