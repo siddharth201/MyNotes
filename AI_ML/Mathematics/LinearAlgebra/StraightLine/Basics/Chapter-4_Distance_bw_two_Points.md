@@ -103,3 +103,7 @@ Let $P_1$ be at $(x_1, y_1)$ and $P_2$ be at $(x_2, y_2)$.
 This formula is exactly the distance formula we use, and it's directly derived from the Pythagorean theorem by seeing the distance between two points as the hypotenuse of a carefully constructed right-angled triangle!  
 
 ## Q. Does hypotenuse exist in only right angle triangle?
+
+Yes, that's correct. The **hypotenuse** is a term that exists **only** in **right-angled triangles**.
+
+It specifically refers to the side that is opposite the right angle (the 90-degree angle) and is always the longest side of that triangle. In any other type of triangle (like acute or obtuse triangles, which do not have a 90-degree angle), there is no hypotenuse.
