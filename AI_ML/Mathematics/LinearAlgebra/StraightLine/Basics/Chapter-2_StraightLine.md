@@ -335,7 +335,12 @@ That path forms:
 
 $y=mx+c$
 
----
+---  
+
+# ============
+## Math-GPT Response
+
+
 
 
 
