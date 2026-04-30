@@ -303,7 +303,7 @@ Because:
 
 
 
-**===============================================**
+**===============================================**  
 **Gemini Response**
 
 Understanding the Core Data stack is the absolute most important step in mastering this framework. If you understand how these pieces fit together, debugging and architecting your app becomes a breeze. 
