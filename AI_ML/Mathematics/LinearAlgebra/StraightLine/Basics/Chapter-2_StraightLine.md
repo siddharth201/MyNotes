@@ -77,10 +77,6 @@ This is a beautiful mathematical proof of why a straight line is "linear." The d
 Yes — this is exactly the right question.
 Most people **memorize**
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=mx+c"}}
-
-$genui{"math_block_widget_always_prefetch_v2":{"content":"y=mx+c"}}$
-
 but don’t understand **where it came from**.
 
 If you understand this deeply, coordinate geometry, calculus, regression, and ML become much easier.
