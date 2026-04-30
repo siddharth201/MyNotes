@@ -198,7 +198,9 @@ Why linear regression is called linear?
 Answer:
 Because output is linear combination of inputs and parameters.
 
----
+---  
+
+
 
 
 
