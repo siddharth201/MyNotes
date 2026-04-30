@@ -32,14 +32,13 @@ Let $P_1$ have coordinates $(x_1, y_1)$ and $P_2$ have coordinates $(x_2, y_2)$.
     *   $c = d$ (the distance between $P_1$ and $P_2$)
 
     So, we have:</br>
-    $\[ d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2 \]$
-    $d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2$
+    $$d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2$$
 
     Since squaring a number always results in a non-negative value, we can remove the absolute value signs:</br>
-    $\[ d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \]$
+    $$d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$
 
-4.  **Solve for the Distance (d):** To find the distance $d$, we take the square root of both sides:
-    $\[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]$
+4.  **Solve for the Distance (d):** To find the distance $d$, we take the square root of both sides:</br>
+    $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
 This is the **distance formula**. It tells us that the distance between any two points $(x_1, y_1)$ and $(x_2, y_2)$ in a Cartesian plane is the square root of the sum of the squares of the differences in their coordinates.
   
