@@ -275,7 +275,7 @@ Because many real systems behave approximately linearly:
 
 # 10. In Machine Learning
 
-$genui{"math_block_widget_always_prefetch_v2":{"content":"y=wx+b"}}$
+$y=wx+b$
 
 Same formula:
 
