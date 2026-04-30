@@ -22,7 +22,7 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 
     
 
-##================
+# ================
 ## Chat-GPT Response
 
 Straight lines are **extremely important** in Machine Learning because many models begin with a line.
