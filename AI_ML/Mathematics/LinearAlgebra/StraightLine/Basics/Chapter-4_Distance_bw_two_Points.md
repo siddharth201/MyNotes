@@ -102,4 +102,4 @@ Let $P_1$ be at $(x_1, y_1)$ and $P_2$ be at $(x_2, y_2)$.
 
 This formula is exactly the distance formula we use, and it's directly derived from the Pythagorean theorem by seeing the distance between two points as the hypotenuse of a carefully constructed right-angled triangle!  
 
-## Q. 
+## Q. Does hypotenuse exist in only right angle triangle?
