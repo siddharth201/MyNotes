@@ -33,6 +33,7 @@ Let $P_1$ have coordinates $(x_1, y_1)$ and $P_2$ have coordinates $(x_2, y_2)$.
 
     So, we have:</br>
     $\[ d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2 \]$
+    $d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2$
 
     Since squaring a number always results in a non-negative value, we can remove the absolute value signs:</br>
     $\[ d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \]$
