@@ -32,10 +32,10 @@ Let $P_1$ have coordinates $(x_1, y_1)$ and $P_2$ have coordinates $(x_2, y_2)$.
     *   $c = d$ (the distance between $P_1$ and $P_2$)
 
     So, we have:
-    \[ d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2 \]
+    $\[ d^2 = (|x_2 - x_1|)^2 + (|y_2 - y_1|)^2 \]$
 
     Since squaring a number always results in a non-negative value, we can remove the absolute value signs:
-    \[ d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \]
+    $\[ d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \]$
 
 4.  **Solve for the Distance (d):** To find the distance $d$, we take the square root of both sides:
     \[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
