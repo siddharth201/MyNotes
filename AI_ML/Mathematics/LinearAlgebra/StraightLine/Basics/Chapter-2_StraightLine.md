@@ -79,6 +79,8 @@ Most people **memorize**
 
 but don’t understand **where it came from**.
 
+$y = mx + c$
+
 If you understand this deeply, coordinate geometry, calculus, regression, and ML become much easier.
 
 ---
@@ -97,7 +99,7 @@ That “constant rate of change” creates a line.
 
 # 2. Meaning of Variables
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=mx+c"}}
+$y = mx + c$
 
 Where:
 
@@ -135,7 +137,7 @@ So:
 
 Thus:
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=3x+2"}}
+$y = 3x + 2$
 
 ---
 
@@ -145,17 +147,17 @@ Start with idea:
 
 Slope = change in y / change in x
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"m=\frac{y_2-y_1}{x_2-x_1}"}}
+$m=\frac{y_2-y_1}{x_2-x_1}$
 
 Take one fixed point on line: ((x_1,y_1))
 
 Then any other point ((x,y)) on same line must satisfy same slope:
 
-m=\frac{y-y_1}{x-x_1}
+$m=\frac{y-y_1}{x-x_1}$
 
 Multiply:
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y-y_1=m(x-x_1)"}}
+$y-y_1=m(x-x_1)$
 
 This is called **point-slope form**.
 
@@ -170,7 +172,7 @@ y-c=m(x-0)
 
 So:
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=mx+c"}}
+$y=mx+c$
 
 That is how formula is born.
 
@@ -189,15 +191,15 @@ Then:
 
 So:
 
-\tan\theta=\frac{\text{opposite}}{\text{adjacent}}=\frac{\Delta y}{\Delta x}
+$\tan\theta=\frac{\text{opposite}}{\text{adjacent}}=\frac{\Delta y}{\Delta x}$
 
 But slope is:
 
-m=\frac{\Delta y}{\Delta x}
+$m=\frac{\Delta y}{\Delta x}$
 
 Hence:
 
-m=\tan\theta
+$m=\tan\theta$
 
 ---
 
@@ -207,19 +209,19 @@ Because:
 
 ### sin θ
 
-\sin\theta=\frac{\Delta y}{\text{hypotenuse}}
+$\sin\theta=\frac{\Delta y}{\text{hypotenuse}}$
 
 Depends on hypotenuse length, not pure rise/run.
 
 ### cos θ
 
-\cos\theta=\frac{\Delta x}{\text{hypotenuse}}
+$\cos\theta=\frac{\Delta x}{\text{hypotenuse}}$
 
 Again depends on triangle size.
 
 ### But tan θ gives:
 
-rise / run = vertical change / horizontal change
+$rise / run = vertical change / horizontal change$
 
 Exactly what slope means.
 
@@ -231,7 +233,7 @@ So geometry naturally selects tangent.
 
 For every pair of points on line:
 
-\frac{\Delta y}{\Delta x}=\text{constant}
+$\frac{\Delta y}{\Delta x}=\text{constant}$
 
 That constant is m.
 
@@ -273,7 +275,7 @@ Because many real systems behave approximately linearly:
 
 # 10. In Machine Learning
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=wx+b"}}
+$genui{"math_block_widget_always_prefetch_v2":{"content":"y=wx+b"}}$
 
 Same formula:
 
@@ -304,7 +306,7 @@ Usually yes, but mathematically no. It’s just coordinate variable.
 
 Yes.
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=-2x+3"}}
+$y=-2x+3$
 
 Line falls as x increases.
 
@@ -331,16 +333,9 @@ Starting height = c.
 
 That path forms:
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"y=mx+c"}}
+$y=mx+c$
 
 ---
 
-# 14. If You Want Next Deep Topic
 
-Best continuation:
-
-**Why derivative of straight line is slope m**
-(critical for calculus + ML gradient descent)
-
-Just say **next derivative**
 
