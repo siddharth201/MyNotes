@@ -43,7 +43,7 @@ Let $P_1$ have coordinates $(x_1, y_1)$ and $P_2$ have coordinates $(x_2, y_2)$.
 This is the **distance formula**. It tells us that the distance between any two points $(x_1, y_1)$ and $(x_2, y_2)$ in a Cartesian plane is the square root of the sum of the squares of the differences in their coordinates.
   
 
-## Q.   
+## Q. How to you think we should use Pythagorean theorem for this and what is hypotenuse in general, how to understand this?  
 
 Let's break down the Pythagorean theorem and how it helps us find the distance between two points.
 
@@ -100,4 +100,6 @@ Let $P_1$ be at $(x_1, y_1)$ and $P_2$ be at $(x_2, y_2)$.
 
     $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
-This formula is exactly the distance formula we use, and it's directly derived from the Pythagorean theorem by seeing the distance between two points as the hypotenuse of a carefully constructed right-angled triangle!
+This formula is exactly the distance formula we use, and it's directly derived from the Pythagorean theorem by seeing the distance between two points as the hypotenuse of a carefully constructed right-angled triangle!  
+
+## Q. 
