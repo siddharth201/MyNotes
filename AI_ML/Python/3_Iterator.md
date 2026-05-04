@@ -135,7 +135,7 @@ for item in dataset:
 
 ---  
 
-## Explain `yield`  
+## Q. Explain `yield`  
 
 It is completely normal to need a second pass at `yield`. For most beginners, it is the biggest "mind-bender" in Python because it completely changes how we are taught functions are supposed to work.
 
