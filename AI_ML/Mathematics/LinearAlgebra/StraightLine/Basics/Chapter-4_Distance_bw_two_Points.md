@@ -59,7 +59,7 @@ Imagine a triangle with corners labeled A, B, and C, where angle C is the right 
 
 ### The Pythagorean Theorem
 
-The Pythagorean theorem states a relationship between the lengths of the sides of a right-angled triangle. If we call the lengths of the two shorter sides (the ones that form the right angle) $a$ and '$b$', and the length of the hypotenuse '$c$', then the theorem says:
+The Pythagorean theorem states a relationship between the lengths of the sides of a right-angled triangle. If we call the lengths of the two shorter sides (the ones that form the right angle) $'a'$ and $'b'$, and the length of the hypotenuse $'c'$, then the theorem says:
 
 $a^2 + b^2 = c^2$
 
