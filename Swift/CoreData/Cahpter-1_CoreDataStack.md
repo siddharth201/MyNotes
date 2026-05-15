@@ -405,5 +405,6 @@ With this setup, you have successfully initialized the entire Core Data architec
 Now that the stack is built, would you like to see how to actually write the code to create a new `Task` and save it into this database?
 
 
-
+## Mind Map
+![CoreData Stack](https://example.com)
 
