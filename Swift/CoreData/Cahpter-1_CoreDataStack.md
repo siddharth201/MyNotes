@@ -406,5 +406,5 @@ Now that the stack is built, would you like to see how to actually write the cod
 
 
 ## Mind Map
-![CoreData Stack](https://example.com)
+![CoreData Stack](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/CoreDataStackMindMap.png)
 
