@@ -100,8 +100,6 @@ This is your **workspace / working memory**.
 
 ## 🔹 5. NSManagedObject (Data Object)
 
-Already covered, but quick recap:
-
 ### Layman:
 
 One **row of data as Swift object**
