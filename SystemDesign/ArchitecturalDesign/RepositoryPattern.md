@@ -1238,7 +1238,9 @@ Belongs in Repository.
 
 ## Mind Map
 
-https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/RepositoryPatternMindMap.png
+![Repository Pattern](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/RepositoryPatternMindMap.png)
+
+
 
 
 
