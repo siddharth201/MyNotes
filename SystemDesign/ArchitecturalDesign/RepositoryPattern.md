@@ -1233,7 +1233,12 @@ Belongs in Repository.
 ✅ Repository orchestrates
 ✅ ViewModel consumes repository
 
----
+---  
+
+
+## Mind Map
+
+https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/RepositoryPatternMindMap.png
 
 
 
