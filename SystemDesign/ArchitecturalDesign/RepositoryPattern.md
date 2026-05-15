@@ -200,11 +200,11 @@ No other code changes 👏
 
 # 🔥 Why This Is Production-Grade
 
-✔ ViewModel unaware of API / DB
-✔ Easy to swap data source
-✔ Easy to mock
-✔ Clean architecture
-✔ Follows SOLID
+✔ ViewModel unaware of API / DB  
+✔ Easy to swap data source  
+✔ Easy to mock   
+✔ Clean architecture  
+✔ Follows SOLID  
 
 ---
 
