@@ -539,6 +539,6 @@ This is inspired from functional programming.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_raw_value_type.md)  
 
 ## Q. Can Enum Functions / Computed Properties Be Accessed Directly?
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_access_methos_computedproperties.md)
 
 
