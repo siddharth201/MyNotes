@@ -536,6 +536,8 @@ This is inspired from functional programming.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_mutual_exclusive_case.md)  
 
 ## Q. Why Do We Write `enum Weekday: Int`?
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_raw_value_type.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_raw_value_type.md)  
+
+## Q. Can Enum Functions / Computed Properties Be Accessed Directly?
 
 
