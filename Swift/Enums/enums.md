@@ -455,166 +455,13 @@ Use enum when:
 
 ---
 
-# Most Asked Code Snippet Questions
+## Most Asked Code Snippet Questions
+["Enums Code Snippet"]()
 
-# Question 1
 
-```swift
-enum Status {
-    case success
-    case failure
-}
+## Advanced Interview Question
 
-let status = Status.success
-```
-
-Q:
-What is the type of `status`?
-
-Answer:
-
-```swift
-Status
-```
-
----
-
-# Question 2
-
-```swift
-enum Direction: Int {
-    case north = 1
-    case south
-    case east
-}
-```
-
-Q:
-Value of `Direction.east.rawValue`?
-
-Answer:
-
-```swift
-3
-```
-
----
-
-# Question 3
-
-```swift
-enum Result {
-    case success(String)
-    case failure(String)
-}
-
-let value = Result.success("Hello")
-```
-
-Q:
-How to extract `"Hello"`?
-
-Answer:
-
-```swift
-switch value {
-case .success(let message):
-    print(message)
-
-case .failure:
-    break
-}
-```
-
----
-
-# Question 4
-
-```swift
-enum Test {
-    case a
-    case b
-}
-```
-
-Q:
-Will this compile?
-
-```swift
-switch Test.a {
-case .a:
-    print("A")
-}
-```
-
-Answer:
-❌ No
-
-Because `.b` not handled.
-
----
-
-# Question 5
-
-```swift
-enum APIState {
-    case loading
-    case success(data: String)
-}
-```
-
-Q:
-What is this called?
-
-Answer:
-Enum with associated values.
-
----
-
-# Question 6
-
-```swift
-enum Weekday: String {
-    case monday
-}
-```
-
-Q:
-Value of:
-
-```swift
-Weekday.monday.rawValue
-```
-
-Answer:
-
-```swift
-"monday"
-```
-
----
-
-# Question 7
-
-```swift
-enum Number {
-    case integer(Int)
-    case decimal(Double)
-}
-```
-
-Q:
-Can enum cases store different data types?
-
-✅ Yes
-
-Using associated values.
-
----
-
-# Advanced Interview Question
-
-# Why SwiftUI Uses Enum Heavily?
+## Why SwiftUI Uses Enum Heavily?
 
 Because UI is state-driven.
 
@@ -630,7 +477,7 @@ Enums model state safely.
 
 ---
 
-# Most Important Real-World Pattern
+## Most Important Real-World Pattern
 
 ```swift
 enum UIState<T> {
@@ -652,7 +499,7 @@ Used in:
 
 ---
 
-# Senior-Level Understanding
+## Senior-Level Understanding
 
 Enums are essentially:
 
