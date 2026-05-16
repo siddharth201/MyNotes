@@ -1,4 +1,4 @@
-# Why Do We Write `enum Weekday: Int`?
+## Why Do We Write `enum Weekday: Int`?
 
 ```swift
 enum Weekday: Int {
@@ -14,13 +14,13 @@ The `: Int` means:
 
 ---
 
-# Interview-Friendly Definition
+## Interview-Friendly Definition
 
 > When we specify a type after an enum (`: Int`, `: String`, etc.), we are telling Swift that each enum case should have a raw value of that type.
 
 ---
 
-# What Are Raw Values?
+## What Are Raw Values?
 
 Raw values are:
 
@@ -45,7 +45,7 @@ These are raw values.
 
 ---
 
-# Without Raw Value Type
+## Without Raw Value Type
 
 ```swift
 enum Direction {
@@ -70,7 +70,7 @@ Because raw values don't exist.
 
 ---
 
-# When We Use `: Int`
+## When We Use `: Int`
 
 Use when:
 
@@ -81,7 +81,7 @@ Use when:
 
 ---
 
-# Example — Days
+## Example — Days
 
 ```swift
 enum Weekday: Int {
@@ -107,7 +107,7 @@ Swift auto increments integer raw values.
 
 ---
 
-# When We Use `: String`
+## When We Use `: String`
 
 Use when:
 
@@ -118,7 +118,7 @@ Use when:
 
 ---
 
-# Example
+## Example
 
 ```swift
 enum HTTPMethod: String {
@@ -141,7 +141,7 @@ GET
 
 ---
 
-# Commonly Used Raw Value Types
+## Commonly Used Raw Value Types
 
 | Type        | Use Case                    |
 | ----------- | --------------------------- |
@@ -152,7 +152,7 @@ GET
 
 ---
 
-# Very Important Concept
+## Very Important Concept
 
 This:
 
@@ -170,7 +170,7 @@ It means:
 
 ---
 
-# Visual Understanding
+## Visual Understanding
 
 ```swift
 enum Weekday: Int {
@@ -188,7 +188,7 @@ tuesday -> 2
 
 ---
 
-# Auto Assignment Behavior
+## Auto Assignment Behavior
 
 ## Int
 
@@ -228,7 +228,7 @@ south -> "south"
 
 ---
 
-# Accessing Raw Value
+## Accessing Raw Value
 
 ```swift
 print(Direction.north.rawValue)
@@ -236,7 +236,7 @@ print(Direction.north.rawValue)
 
 ---
 
-# Creating Enum from Raw Value
+## Creating Enum from Raw Value
 
 VERY IMPORTANT.
 
@@ -263,7 +263,7 @@ Optional(success)
 
 ---
 
-# Why Optional?
+## Why Optional?
 
 Because value may not exist.
 
@@ -283,9 +283,9 @@ nil
 
 ---
 
-# Real Production Examples
+## Real Production Examples
 
-# 1. HTTP Status Codes
+### 1. HTTP Status Codes
 
 ```swift
 enum HTTPStatus: Int {
@@ -297,7 +297,7 @@ enum HTTPStatus: Int {
 
 ---
 
-# 2. API Methods
+### 2. API Methods
 
 ```swift
 enum HTTPMethod: String {
@@ -308,7 +308,7 @@ enum HTTPMethod: String {
 
 ---
 
-# 3. App Environment
+### 3. App Environment
 
 ```swift
 enum Environment: String {
@@ -320,11 +320,11 @@ enum Environment: String {
 
 ---
 
-# IMPORTANT INTERVIEW QUESTION
+## IMPORTANT INTERVIEW QUESTION
 
-# Raw Value vs Associated Value
+## Raw Value vs Associated Value
 
-## Raw Value
+### Raw Value
 
 Fixed.
 
@@ -338,7 +338,7 @@ Always same.
 
 ---
 
-## Associated Value
+### Associated Value
 
 Dynamic.
 
@@ -352,7 +352,7 @@ Can change every time.
 
 ---
 
-# Can We Use Both Together?
+## Can We Use Both Together?
 
 ❌ No
 
@@ -365,7 +365,7 @@ in same enum.
 
 ---
 
-# Example Invalid Enum
+## Example Invalid Enum
 
 ```swift
 enum Test: Int {
@@ -377,9 +377,9 @@ enum Test: Int {
 
 ---
 
-# Another Important Question
+## Another Important Question
 
-# Is Raw Value Stored in Memory?
+## Is Raw Value Stored in Memory?
 
 Yes, but:
 
@@ -388,7 +388,7 @@ Yes, but:
 
 ---
 
-# When NOT to Use Raw Values
+## When NOT to Use Raw Values
 
 If values change dynamically:
 
@@ -412,7 +412,7 @@ enum Response {
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 enum X: Int
@@ -424,9 +424,9 @@ Means:
 
 ---
 
-# Quick Practice
+## Quick Practice
 
-# Example 1
+### Example 1
 
 ```swift
 enum Priority: Int {
@@ -448,7 +448,7 @@ Answer:
 
 ---
 
-# Example 2
+### Example 2
 
 ```swift
 enum Fruit: String {
@@ -467,7 +467,7 @@ apple
 
 ---
 
-# Final Summary
+## Final Summary
 
 Use raw value types when:
 
