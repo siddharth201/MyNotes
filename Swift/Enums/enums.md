@@ -532,5 +532,7 @@ This is inspired from functional programming.
 
 ---
 
-## Q. `mutually exclusive cases` means?
+## Q. `mutually exclusive cases` means?  
+
+
 
