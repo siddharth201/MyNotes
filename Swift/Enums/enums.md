@@ -533,6 +533,6 @@ This is inspired from functional programming.
 ---
 
 ## Q. `mutually exclusive cases` means?  
-
+[mutually exclusive cases concept]()
 
 
