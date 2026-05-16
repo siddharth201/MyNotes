@@ -533,6 +533,8 @@ This is inspired from functional programming.
 ---
 
 ## Q. `mutually exclusive cases` means?  
-[mutually exclusive cases concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_mutual_exclusive_case.md)
+[mutually exclusive cases concept](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_mutual_exclusive_case.md)  
+
+## 
 
 
