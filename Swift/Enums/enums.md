@@ -23,6 +23,23 @@ Examples:
 
 ---
 
+## Final Mental Model
+
+Think of enum as:
+
+> “A type that can exist in ONLY ONE valid state at a time.”
+
+Examples:
+
+* User is either logged in OR logged out
+* Payment is either pending OR success OR failed
+* Direction is north OR south OR east OR west
+
+Not all together simultaneously.
+
+That’s why enums are incredibly powerful for app state management in Swift and SwiftUI.
+
+
 ## Basic Enum Syntax
 
 ```swift
@@ -515,33 +532,4 @@ This is inspired from functional programming.
 
 ---
 
-# Practice Exercises
-
-Try these yourself:
-
-1. Create enum for traffic light
-2. Create enum for API result
-3. Create enum for bank transaction
-4. Create enum for app screens
-5. Create enum with methods
-6. Create enum with raw values
-7. Create recursive enum
-
----
-
-# Final Mental Model
-
-Think of enum as:
-
-> “A type that can exist in ONLY ONE valid state at a time.”
-
-Examples:
-
-* User is either logged in OR logged out
-* Payment is either pending OR success OR failed
-* Direction is north OR south OR east OR west
-
-Not all together simultaneously.
-
-That’s why enums are incredibly powerful for app state management in Swift and SwiftUI.
 
