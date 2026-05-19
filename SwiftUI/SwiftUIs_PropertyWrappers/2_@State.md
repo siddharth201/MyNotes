@@ -4,15 +4,6 @@ In **SwiftUI**, `@State` is a **property wrapper** used to store **mutable state
 
 ### What that means
 
-SwiftUI views are **value types (structs)** and get recreated frequently. Because of that, you can’t just store changing data in a normal variable — it would reset every time the view redraws.
-
-`@State` solves this by:
-
-* Letting SwiftUI **store the value separately from the view struct**
-* Automatically **re-rendering the view when the value changes**
-
----  
-
 > **Note:** SwiftUI uses the @State property wrapper to allow us to modify values inside a struct, which would normally not be allowed because structs are value types. <br/>When we put @State before a property, we effectively move its storage out from our struct and into shared storage managed by SwiftUI. This means SwiftUI can destroy and recreate our struct whenever needed (and this can happen a lot!), without losing the state it was storing.
 
 ### Simple example
