@@ -345,5 +345,10 @@ When button is tapped:
 
 * `username` changes
 * `@Published` emits update
-* SwiftUI refreshes body automatically
+* SwiftUI refreshes body automatically  
+
+
+>**Important:** You should use @StateObject only once per object, which should be in whichever view is responsible for creating the object. All other views that share your object should use @ObservedObject.  
+
+
 
