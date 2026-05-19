@@ -1,3 +1,5 @@
+
+What is @State?
 In **SwiftUI**, `@State` is a **property wrapper** used to store **mutable state that belongs to a view**.
 
 ### What that means
