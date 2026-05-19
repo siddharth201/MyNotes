@@ -350,5 +350,274 @@ When button is tapped:
 
 >**Important:** You should use @StateObject only once per object, which should be in whichever view is responsible for creating the object. All other views that share your object should use @ObservedObject.  
 
+Yes — this is one of the **most important rules** in SwiftUI data flow.
+
+In **SwiftUI**:
+
+> `@StateObject` should be used exactly once for a given object instance — in the view that CREATES and OWNS that object.
+
+All other views that receive that same object should use:
+
+```swift id="zot83n"
+@ObservedObject
+```
+
+---
+
+## Why?
+
+Because `@StateObject` means:
+
+> “SwiftUI, please create and preserve this object for this view.”
+
+If multiple views use `@StateObject` for the same conceptual data, you can accidentally create:
+
+* multiple object instances
+* duplicated state
+* inconsistent UI
+* lifecycle bugs
+
+---
+
+## Correct Mental Model
+
+### ONE owner
+
+```text id="om5c3x"
+@StateObject
+```
+
+### MANY observers
+
+```text id="r6e6v4"
+@ObservedObject
+```
+
+---
+
+## Correct Example
+
+---
+
+## Step 1 — Observable Object
+
+```swift id="6x71wo"
+import SwiftUI
+
+class CounterViewModel: ObservableObject {
+
+    @Published var count = 0
+
+    func increment() {
+        count += 1
+    }
+}
+```
+
+---
+
+## Step 2 — Parent OWNS object
+
+```swift id="rqyn7u"
+struct ParentView: View {
+
+    @StateObject private var viewModel = CounterViewModel()
+
+    var body: some View {
+
+        ChildView(viewModel: viewModel)
+    }
+}
+```
+
+Here:
+
+* Parent creates object
+* Parent owns lifecycle
+* Parent uses `@StateObject`
+
+---
+
+## Step 3 — Child OBSERVES object
+
+```swift id="7kvl6r"
+struct ChildView: View {
+
+    @ObservedObject var viewModel: CounterViewModel
+
+    var body: some View {
+
+        VStack {
+
+            Text("Count: \(viewModel.count)")
+
+            Button("Increment") {
+                viewModel.increment()
+            }
+        }
+    }
+}
+```
+
+Child does NOT own object.
+
+It only watches it.
+
+So:
+
+* use `@ObservedObject`
+
+---
+
+## What Happens Internally
+
+### `@StateObject`
+
+SwiftUI:
+
+* creates object once
+* stores it persistently
+* preserves lifecycle
+
+---
+
+### `@ObservedObject`
+
+SwiftUI:
+
+* does NOT create object
+* only subscribes to updates
+* expects object to come from elsewhere
+
+---
+
+## Common Beginner Mistake
+
+BAD:
+
+```swift id="azkq1m"
+struct ChildView: View {
+
+    @StateObject var viewModel = CounterViewModel()
+}
+```
+
+Now BOTH parent and child create their own objects.
+
+Result:
+
+* different counts
+* unsynced UI
+* unexpected behavior
+
+---
+
+## Visual Ownership Diagram
+
+```text id="g45w9y"
+ParentView
+    └── @StateObject (OWNER)
+            ↓
+      ChildView
+            └── @ObservedObject (OBSERVER)
+```
+
+---
+
+## Think Like This
+
+### `@StateObject`
+
+> “I create and own this object.”
+
+---
+
+### `@ObservedObject`
+
+> “Someone else owns this object; I just observe it.”
+
+---
+
+## Another Important Detail
+
+Suppose parent reloads:
+
+```swift id="vthk7m"
+ParentView recreated
+```
+
+Because parent uses:
+
+```swift id="ql1ksg"
+@StateObject
+```
+
+the object survives.
+
+Children reconnect automatically.
+
+That is the magic of `@StateObject`.
+
+---
+
+## Interview Gold Line
+
+A very strong interview explanation:
+
+> `@StateObject` manages the lifecycle and persistence of an `ObservableObject`, while `@ObservedObject` only subscribes to an already existing object.
+
+---
+
+## Quick Rule to Remember
+
+### Create?
+
+Use:
+
+```swift id="5fz5j8"
+@StateObject
+```
+
+### Receive?
+
+Use:
+
+```swift id="txo4x8"
+@ObservedObject
+```
+
+---
+
+## Real-Life Analogy
+
+Imagine a company:
+
+### CEO creates project
+
+```text id="lr5lvi"
+@StateObject
+```
+
+### Employees monitor/use project
+
+```text id="drq24o"
+@ObservedObject
+```
+
+Employees should NOT create duplicate projects.
+
+Only observe/use existing one.
+
+---
+
+## Most Asked Interview Question
+
+### Q:
+
+Why should `@StateObject` only be used once?
+
+### A:
+
+Because it establishes ownership and lifecycle management for the observable object. Multiple `@StateObject`s can create multiple instances and inconsistent state. Shared objects should be passed down and observed using `@ObservedObject`.
 
 
