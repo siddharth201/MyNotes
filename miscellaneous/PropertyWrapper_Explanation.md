@@ -534,4 +534,4 @@ Output:
 
 ## Q. In `init(wrappedValue: Int, min: Int, max: Int)` parameter name should be always wrappedValue or it is just a placeholder?  
 
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/PropertyWrapper_Explanation2.md)
