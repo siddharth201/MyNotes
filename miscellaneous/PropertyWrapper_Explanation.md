@@ -21,11 +21,11 @@ the wrapper automatically changes it to:
 
 ---
 
-# Step-by-Step Explanation
+## Step-by-Step Explanation
 
 ---
 
-# 1. Property Wrapper Declaration
+## 1. Property Wrapper Declaration
 
 ```swift
 @propertyWrapper
@@ -40,7 +40,7 @@ So `Clamped` becomes reusable behavior.
 
 ---
 
-# 2. Stored Properties Inside Wrapper
+## 2. Stored Properties Inside Wrapper
 
 ```swift
 private var value: Int
@@ -52,7 +52,7 @@ These are internal properties of the wrapper.
 
 ---
 
-## `value`
+### `value`
 
 ```swift
 private var value: Int
@@ -64,7 +64,7 @@ It is `private` because users should not directly modify it.
 
 ---
 
-## `min` and `max`
+### `min` and `max`
 
 ```swift
 let min: Int
@@ -88,7 +88,7 @@ max = 5
 
 ---
 
-# 3. wrappedValue
+## 3. wrappedValue
 
 This is the MOST IMPORTANT part.
 
@@ -102,7 +102,7 @@ Swift uses this property as the actual value users interact with.
 
 ---
 
-# Getter
+## Getter
 
 ```swift
 get { value }
@@ -128,7 +128,7 @@ value
 
 ---
 
-# Setter
+## Setter
 
 ```swift
 set {
@@ -154,7 +154,7 @@ Now look carefully:
 
 ---
 
-# Core Clamping Logic
+## Core Clamping Logic
 
 ```swift
 Swift.min(max, newValue)
@@ -204,7 +204,7 @@ Final stored value:
 
 ---
 
-# Visual Flow
+## Visual Flow
 
 If user sets:
 
@@ -242,7 +242,7 @@ value = 5
 
 ---
 
-# 4. Initializer
+## 4. Initializer
 
 ```swift
 init(wrappedValue: Int, min: Int, max: Int)
@@ -267,7 +267,7 @@ _rating = Clamped(
 
 ---
 
-# Inside Initializer
+## Inside Initializer
 
 ```swift
 self.min = min
@@ -278,7 +278,7 @@ Stores allowed range.
 
 ---
 
-# Initial Value Also Gets Clamped
+## Initial Value Also Gets Clamped
 
 ```swift
 self.value = Swift.max(min, Swift.min(max, wrappedValue))
@@ -305,7 +305,7 @@ automatically.
 
 ---
 
-# Usage
+## Usage
 
 ```swift
 struct Product {
@@ -317,7 +317,7 @@ struct Product {
 
 ---
 
-# What Swift Generates Internally
+## What Swift Generates Internally
 
 Swift approximately converts this into:
 
@@ -341,7 +341,7 @@ This is the MOST IMPORTANT thing to understand about property wrappers.
 
 ---
 
-# Testing
+## Testing
 
 ```swift
 var p = Product()
@@ -353,9 +353,9 @@ print(p.rating)
 
 ---
 
-# What Happens Internally
+## What Happens Internally
 
-## Assignment
+### Assignment
 
 ```swift
 p.rating = 10
@@ -371,7 +371,7 @@ which clamps value to `5`.
 
 ---
 
-## Reading
+### Reading
 
 ```swift
 print(p.rating)
@@ -391,7 +391,7 @@ returns:
 
 ---
 
-# Output
+## Output
 
 ```swift
 5
@@ -399,11 +399,11 @@ returns:
 
 ---
 
-# More Examples
+## More Examples
 
 ---
 
-# Example 1 — Below Minimum
+## Example 1 — Below Minimum
 
 ```swift
 p.rating = -20
@@ -425,7 +425,7 @@ Output:
 
 ---
 
-# Example 2 — Inside Range
+## Example 2 — Inside Range
 
 ```swift
 p.rating = 4
@@ -446,7 +446,7 @@ Output:
 
 ---
 
-# Why This Is Powerful
+## Why This Is Powerful
 
 Without property wrappers, you'd repeatedly write validation logic everywhere:
 
@@ -460,7 +460,7 @@ Property wrappers centralize that logic once and reuse it everywhere.
 
 ---
 
-# Real-World Uses of This Pattern
+## Real-World Uses of This Pattern
 
 This pattern is VERY common in app development.
 
@@ -477,7 +477,7 @@ Examples:
 
 ---
 
-# Full Runnable Example
+## Full Runnable Example
 
 ```swift
 @propertyWrapper
@@ -532,4 +532,6 @@ Output:
 ```
 
 
-## Q. 
+## Q. In `init(wrappedValue: Int, min: Int, max: Int)` parameter name should be always wrappedValue or it is just a placeholder?  
+
+[Answer]()
