@@ -205,7 +205,7 @@ This WILL NOT trigger automatic UI refresh.
 
 ---
 
-# Advanced Concept
+## Advanced Concept
 
 `@Published` belongs to the **Combine** framework.
 
@@ -221,7 +221,7 @@ SwiftUI subscribes to those publishers internally.
 
 ---
 
-# Important Caveat
+## Important Caveat
 
 `@Published` only detects assignment changes.
 
@@ -244,21 +244,21 @@ UI may NOT refresh unless:
 
 ---
 
-# Most Asked Interview Questions
+## Most Asked Interview Questions
 
-## 1. What is `@Published`?
+### 1. What is `@Published`?
 
 A property wrapper that notifies observers when a property changes.
 
 ---
 
-## 2. Where can `@Published` be used?
+### 2. Where can `@Published` be used?
 
 Inside classes conforming to `ObservableObject`.
 
 ---
 
-## 3. Does `@Published` work in structs?
+### 3. Does `@Published` work in structs?
 
 No.
 
@@ -266,19 +266,19 @@ Because `ObservableObject` is class-oriented.
 
 ---
 
-## 4. What happens when a `@Published` property changes?
+### 4. What happens when a `@Published` property changes?
 
 It emits change notifications causing observing SwiftUI views to refresh.
 
 ---
 
-## 5. Is `@Published` part of SwiftUI?
+### 5. Is `@Published` part of SwiftUI?
 
 Technically it comes from Combine, though heavily used by SwiftUI.
 
 ---
 
-# Complete Working Example
+## Complete Working Example
 
 ```swift id="6od8vt"
 import SwiftUI
