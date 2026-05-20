@@ -541,6 +541,6 @@ This is inspired from functional programming.
 ## Q. Can Enum Functions / Computed Properties Be Accessed Directly?
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_access_methos_computedproperties.md)  
 
-## Q. 
+## Q. Swift can automatically synthesize Equatable conformance for many enums.?
 
 
