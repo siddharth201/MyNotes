@@ -5,7 +5,9 @@ In **SwiftUI**, `@Published` is a property wrapper used inside an `ObservableObj
 
 It is the mechanism that connects your data model to the UI update system.
 
----
+---  
+
+> **`@Published` is one of the most useful property wrappers in SwiftUI, allowing us to create observable objects that automatically announce when changes occur. SwiftUI will automatically monitor for such changes, and re-invoke the body property of any views that rely on the data. <br/>In practical terms, that means whenever an object with a property marked @Published is changed, all views using that object will be reloaded to reflect those changes.**
 
 ## Basic Example
 
