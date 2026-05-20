@@ -259,7 +259,7 @@ Output:
 5
 ```  
 
-[Explaination]()
+[Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/PropertyWrapper_Explanation.md)
 
 ---
 
