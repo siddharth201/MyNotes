@@ -384,7 +384,7 @@ Yes, but UI updates only when the reference changes, not internal properties.
 
 
 ## @State MindMap
-![]
+![@State MindMap](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/CoreDataStackMindMap.png)
 
 
 
