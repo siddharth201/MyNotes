@@ -7,7 +7,7 @@ It is the mechanism that connects your data model to the UI update system.
 
 ---
 
-# Basic Example
+## Basic Example
 
 ```swift id="kg4nfg"
 import SwiftUI
@@ -30,7 +30,7 @@ Whenever `count` changes:
 
 ---
 
-# Using It in a View
+## Using It in a View
 
 ```swift id="9pdq7v"
 struct ContentView: View {
@@ -60,7 +60,7 @@ When button is tapped:
 
 ---
 
-# Why `@Published` Is Needed
+## Why `@Published` Is Needed
 
 Without `@Published`:
 
@@ -83,7 +83,7 @@ Because SwiftUI does not know the property changed.
 
 ---
 
-# What `@Published` Actually Does
+## What `@Published` Actually Does
 
 When you write:
 
@@ -105,7 +105,7 @@ SwiftUI listens to that publisher.
 
 ---
 
-# Important Relationship
+## Important Relationship
 
 ```text id="8rz53z"
 @Published
@@ -121,7 +121,7 @@ All of these work together.
 
 ---
 
-# Important Rule
+## Important Rule
 
 `@Published` ONLY works inside classes that conform to:
 
@@ -140,7 +140,7 @@ class UserSettings: ObservableObject {
 
 ---
 
-# Internal Flow
+## Internal Flow
 
 When this happens:
 
@@ -156,9 +156,9 @@ Swift does:
 
 ---
 
-# Real Mental Model
+## Real Mental Model
 
-## `@Published`
+### `@Published`
 
 Means:
 
@@ -166,7 +166,7 @@ Means:
 
 ---
 
-# Difference Between `@State` and `@Published`
+## Difference Between `@State` and `@Published`
 
 | `@State`                 | `@Published`                     |
 | ------------------------ | -------------------------------- |
@@ -177,7 +177,7 @@ Means:
 
 ---
 
-# Example With Multiple Properties
+## Example With Multiple Properties
 
 ```swift id="i0n71g"
 class ProfileViewModel: ObservableObject {
@@ -192,7 +192,7 @@ Any property change updates observing views.
 
 ---
 
-# Without `@Published`
+## Without `@Published`
 
 ```swift id="7lcvlq"
 class ProfileViewModel: ObservableObject {
