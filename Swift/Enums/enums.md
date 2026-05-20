@@ -1,6 +1,6 @@
 ## Enums in Swift 
 
-> An enum in Swift is a type that defines a group of related values in a type-safe way. Unlike traditional enums, Swift enums can also store associated values, have methods, computed properties, and conform to protocols.
+> An enum in Swift is a type that defines a group of related values in a type-safe way. Swift enums can also store associated values, have methods, computed properties, and conform to protocols.
 
 ---
 
