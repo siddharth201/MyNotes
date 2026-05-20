@@ -380,7 +380,10 @@ To preserve single ownership and proper SwiftUI data flow.
 
 ## 6. Can `@State` store classes?
 
-Yes, but UI updates only when the reference changes, not internal properties.
+Yes, but UI updates only when the reference changes, not internal properties.  
+
+
+## Sate
 
 
 
