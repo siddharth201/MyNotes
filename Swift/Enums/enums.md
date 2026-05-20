@@ -530,7 +530,10 @@ Meaning:
 
 This is inspired from functional programming.
 
----
+---  
+
+## 
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_examples.md)
 
 ## Q. `mutually exclusive cases` means?  
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_mutual_exclusive_case.md)  
