@@ -348,7 +348,7 @@ When button is tapped:
 * SwiftUI refreshes body automatically  
 
 
->**Important:** You should use @StateObject only once per object, which should be in whichever view is responsible for creating the object. All other views that share your object should use @ObservedObject.  
+>**Important Rule:** You should use @StateObject only once per object, which should be in whichever view is responsible for creating the object. All other views that share your object should use @ObservedObject.  
 
 Yes — this is one of the **most important rules** in SwiftUI data flow.
 
