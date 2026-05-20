@@ -383,7 +383,8 @@ To preserve single ownership and proper SwiftUI data flow.
 Yes, but UI updates only when the reference changes, not internal properties.  
 
 
-## Sate
+## @State MindMap
+
 
 
 
