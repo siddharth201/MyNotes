@@ -1,7 +1,5 @@
 
 ### Protocols
-<details>
-<summary>Protocols</summary>
 **Q.1 Protocol Extension Dispatch Trap**
 ```swift
 protocol Test {
@@ -293,7 +291,6 @@ func test(obj: A & B) {}
 
 </details>  
 
-</details>
 
    
 
