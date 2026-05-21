@@ -390,5 +390,4 @@ Runtime crash.
 
 That summarizes SwiftUI observable data flow very well.
 
-hello world!
 
