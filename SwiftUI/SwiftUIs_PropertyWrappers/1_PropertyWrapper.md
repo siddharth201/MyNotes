@@ -671,5 +671,13 @@ Think:
 
 means:
 
-> “Intercept every read/write of this property.”
+> “Intercept every read/write of this property.”  
+
+## Property Wrapper MindMap
+![Property Wrapper MindMap](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/PropertyWrapper_1.png)   
+
+ 
+
+## Property Wrapper Visualize
+![Property Wrapper]()
 
