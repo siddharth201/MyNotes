@@ -1070,6 +1070,7 @@ That is the entire base layer of bit manipulation.
 
 ---  
 
+## Bit Manipulation MindMap
 ![Bit Manipulation Mind Map](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/BitManipulation.png ) 
 
 [Bit Manipulation Visualize](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/Bitwise_Mastery_Visualized.pdf)  
