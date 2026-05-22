@@ -679,5 +679,5 @@ means:
  
 
 ## Property Wrapper Visualize
-![Property Wrapper]()
+![Property Wrapper](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/propertyWrapper_2.png)
 
