@@ -1070,7 +1070,7 @@ That is the entire base layer of bit manipulation.
 
 ---  
 
-![]()
+![Bit Manipulation Mind Map]()https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/BitManipulation.png
 
 
 
