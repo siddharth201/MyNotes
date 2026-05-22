@@ -18,9 +18,9 @@ Swift has built-in support for writing `asynchronous` and `parallel code` in a s
 
 To indicate that a function or method is asynchronous, you write the async keyword in its declaration after its parameters, similar to how you use throws to mark a throwing function. If the function or method returns a value, you write async before the return arrow (->). For example, here’s how you might fetch the names of photos in a gallery:  
 
-`Swift
+```swift
 func listPhotos(inGallery name: String) async -> [String] {
     let result = // ... some asynchronous networking code ...
     return result
 }
-`
+```
