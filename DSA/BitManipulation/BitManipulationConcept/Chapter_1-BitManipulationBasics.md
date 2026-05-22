@@ -1078,7 +1078,11 @@ That is the entire base layer of bit manipulation.
 
 <audio controls>
   <source src="https://archive.org/details/20260522_20260522_0422" type="audio/mp4">
-</audio>
+</audio>  
+
+
+<iframe src="https://archive.org/details/20260522_20260522_0422" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
 
 
 
