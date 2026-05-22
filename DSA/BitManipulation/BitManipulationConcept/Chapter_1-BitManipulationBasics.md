@@ -1074,7 +1074,11 @@ That is the entire base layer of bit manipulation.
 
 [Bit Manipulation Visualize](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/Bitwise_Mastery_Visualized.pdf)  
 
-![Bit Manipulation Podcast](https://archive.org/details/20260522_20260522_0422)
+[Bit Manipulation Podcast](https://archive.org/details/20260522_20260522_0422)
+
+<audio controls>
+  <source src="https://archive.org/details/20260522_20260522_0422" type="audio/mpeg">
+</audio>
 
 
 
