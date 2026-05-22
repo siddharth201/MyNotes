@@ -27,4 +27,6 @@ func listPhotos(inGallery name: String) async -> [String] {
 
 For a function or method that’s both asynchronous and throwing, you write async before throws.  
   
+When calling an asynchronous method, execution suspends until that method returns. You write await in front of the call to mark the possible suspension point. This is like writing try when calling a throwing function, to mark the possible change to the program’s flow if there’s an error. Inside an asynchronous method, the flow of execution can be suspended only when you call another asynchronous method — suspension is never implicit or preemptive — which means every possible suspension point is marked with await. Marking all of the possible suspension points in your code helps make concurrent code easier to read and understand.
 
+For example, the code below fetches the names of all the pictures in a gallery and then shows the first picture:
