@@ -1068,7 +1068,9 @@ After this foundation, you should be able to:
 
 That is the entire base layer of bit manipulation.
 
----
+---  
+
+
 
 
 
