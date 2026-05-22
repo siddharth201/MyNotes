@@ -53,4 +53,12 @@ To understand the concurrent nature of the example above, here’s one possible 
 
 5. The next await marks the call to the downloadPhoto(named:) function. This code pauses execution again until that function returns, giving other concurrent code an opportunity to run.
 
-6. After downloadPhoto(named:) returns, its return value is assigned to photo and then passed as an argument when calling show(_:).
+6. After downloadPhoto(named:) returns, its return value is assigned to photo and then passed as an argument when calling show(_:).  
+
+The possible suspension points in your code marked with await indicate that the current piece of code might pause execution while waiting for the asynchronous function or method to return. This is also called yielding the thread because, behind the scenes, Swift suspends the execution of your code on the current thread and runs some other code on that thread instead. Because code with await needs to be able to suspend execution, only certain places in your program can call asynchronous functions or methods:
+
+* Code in the body of an asynchronous function, method, or property.
+
+* Code in the static main() method of a structure, class, or enumeration that’s marked with @main.
+
+* Code in an unstructured child task
