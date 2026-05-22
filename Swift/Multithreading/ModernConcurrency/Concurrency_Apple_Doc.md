@@ -63,4 +63,11 @@ The possible suspension points in your code marked with await indicate that the 
 
 * Code in an unstructured child task  
 
-The Task.sleep(for:tolerance:clock:) method is useful when writing simple code to learn how concurrency works. This method suspends the current task for at least the given amount of time. Here’s a version of the listPhotos(inGallery:) function that uses sleep(for:tolerance:clock:) to simulate waiting for a network operation:
+The Task.sleep(for:tolerance:clock:) method is useful when writing simple code to learn how concurrency works. This method suspends the current task for at least the given amount of time. Here’s a version of the listPhotos(inGallery:) function that uses sleep(for:tolerance:clock:) to simulate waiting for a network operation:  
+
+```swift
+func listPhotos(inGallery name: String) async throws -> [String] {
+    try await Task.sleep(for: .seconds(2))
+    return ["IMG001", "IMG99", "IMG0404"]
+}
+```
