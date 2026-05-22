@@ -372,7 +372,7 @@ Settings.isLoggedIn = true
 
 Automatically stores in UserDefaults.  
 
-##Explaination:
+## Explaination:
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/PropertyWrapper_UserDefaults_Explanation.md)
 
 ---
