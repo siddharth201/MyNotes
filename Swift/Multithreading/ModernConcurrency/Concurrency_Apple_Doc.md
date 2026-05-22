@@ -23,4 +23,8 @@ func listPhotos(inGallery name: String) async -> [String] {
     let result = // ... some asynchronous networking code ...
     return result
 }
-```
+```  
+
+For a function or method that’s both asynchronous and throwing, you write async before throws.  
+  
+
