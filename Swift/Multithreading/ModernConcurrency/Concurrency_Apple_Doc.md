@@ -76,4 +76,8 @@ The version of listPhotos(inGallery:) in the code above is both asynchronous and
 
 ```swift
 let photos = try await listPhotos(inGallery: "A Rainy Weekend")
-```
+```  
+
+Asynchronous functions have some similarities to throwing functions: When you define an asynchronous or throwing function, you mark it with async or throws, and you mark calls to that function with await or try. An asynchronous function can call another asynchronous function, just like a throwing function can call another throwing function.
+
+However, there’s a very important difference. You can wrap throwing code in a do-catch block to handle errors, or use Result to store the error for code elsewhere to handle it. These approaches let you call throwing functions from nonthrowing code. For example:
