@@ -51,6 +51,6 @@ To understand the concurrent nature of the example above, here’s one possible 
 
 4. The lines that define sortedNames and name are regular, synchronous code. Because nothing is marked await on these lines, there aren’t any possible suspension points.
 
-The next await marks the call to the downloadPhoto(named:) function. This code pauses execution again until that function returns, giving other concurrent code an opportunity to run.
+5. The next await marks the call to the downloadPhoto(named:) function. This code pauses execution again until that function returns, giving other concurrent code an opportunity to run.
 
-After downloadPhoto(named:) returns, its return value is assigned to photo and then passed as an argument when calling show(_:).
+6. After downloadPhoto(named:) returns, its return value is assigned to photo and then passed as an argument when calling show(_:).
