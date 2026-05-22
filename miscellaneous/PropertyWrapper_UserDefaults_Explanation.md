@@ -500,5 +500,7 @@ false
 true
 ```  
 
-## Q. 
+## Q. in this example we have not use `init(wrappedValue: )` why?  
+
+[Answer]()
 
