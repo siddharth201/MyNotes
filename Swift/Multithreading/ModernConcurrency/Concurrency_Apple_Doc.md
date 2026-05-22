@@ -72,4 +72,8 @@ func listPhotos(inGallery name: String) async throws -> [String] {
 }
 ```  
 
-The version of listPhotos(inGallery:) in the code above is both asynchronous and throwing, because the call to Task.sleep(until:tolerance:clock:) can throw an error. When you call this version of listPhotos(inGallery:), you write both try and await:
+The version of listPhotos(inGallery:) in the code above is both asynchronous and throwing, because the call to Task.sleep(until:tolerance:clock:) can throw an error. When you call this version of listPhotos(inGallery:), you write both try and await:  
+
+```swift
+let photos = try await listPhotos(inGallery: "A Rainy Weekend")
+```
