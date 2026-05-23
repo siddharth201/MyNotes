@@ -329,5 +329,11 @@ UI updates generally require published changes.
 @ObservedObject = WATCHER
 ```
 
-That single line explains most SwiftUI data flow.
+That single line explains most SwiftUI data flow.  
+
+
+## Q. @StateObject create memory outside of struct, do ObservedObject also create memory in same way?  
+
+[Answer]()  
+
 
