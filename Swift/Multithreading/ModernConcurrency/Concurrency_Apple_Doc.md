@@ -131,6 +131,6 @@ Here’s how you can think about the differences between these two approaches:
 
 * Both await and async-let allow other code to run while they’re suspended.
 
-In both cases, you mark the possible suspension point with await to indicate that execution will pause, if needed, until an asynchronous function has returned.
+* In both cases, you mark the possible suspension point with await to indicate that execution will pause, if needed, until an asynchronous function has returned.
 
 You can also mix both of these approaches in the same code.
