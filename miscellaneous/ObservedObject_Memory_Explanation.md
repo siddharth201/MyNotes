@@ -268,5 +268,6 @@ No storage allocation.
 That single distinction explains almost everything.  
 
 
-## Q. 
+## Q. What if `@ObservedObject var vm = ViewModel()` ?  
+[Answer]() 
 
