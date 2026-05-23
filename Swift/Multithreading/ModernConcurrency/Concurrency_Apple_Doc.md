@@ -119,4 +119,18 @@ async let thirdPhoto = downloadPhoto(named: photoNames[2])
 
 let photos = await [firstPhoto, secondPhoto, thirdPhoto]
 show(photos)
-```
+```  
+
+In this example, all three calls to downloadPhoto(named:) start without waiting for the previous one to complete. If there are enough system resources available, they can run at the same time. None of these function calls are marked with await because the code doesn’t suspend to wait for the function’s result. Instead, execution continues until the line where photos is defined — at that point, the program needs the results from these asynchronous calls, so you write await to pause execution until all three photos finish downloading.
+
+Here’s how you can think about the differences between these two approaches:
+
+Call asynchronous functions with await when the code on the following lines depends on that function’s result. This creates work that is carried out sequentially.
+
+Call asynchronous functions with async-let when you don’t need the result until later in your code. This creates work that can be carried out in parallel.
+
+Both await and async-let allow other code to run while they’re suspended.
+
+In both cases, you mark the possible suspension point with await to indicate that execution will pause, if needed, until an asynchronous function has returned.
+
+You can also mix both of these approaches in the same code.
