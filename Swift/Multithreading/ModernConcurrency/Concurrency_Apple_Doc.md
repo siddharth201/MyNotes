@@ -95,4 +95,14 @@ In contrast, there’s no safe way to wrap asynchronous code so you can call it 
 
 ## Calling Asynchronous Functions in Parallel  
 
-Calling an asynchronous function with await runs only one piece of code at a time. While the asynchronous code is running, the caller waits for that code to finish before moving on to run the next line of code. For example, to fetch the first three photos from a gallery, you could await three calls to the downloadPhoto(named:) function as follows:
+Calling an asynchronous function with await runs only one piece of code at a time. While the asynchronous code is running, the caller waits for that code to finish before moving on to run the next line of code. For example, to fetch the first three photos from a gallery, you could await three calls to the downloadPhoto(named:) function as follows:  
+
+```swift
+let firstPhoto = await downloadPhoto(named: photoNames[0])
+let secondPhoto = await downloadPhoto(named: photoNames[1])
+let thirdPhoto = await downloadPhoto(named: photoNames[2])
+
+
+let photos = [firstPhoto, secondPhoto, thirdPhoto]
+show(photos)
+```
