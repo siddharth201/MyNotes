@@ -1,11 +1,11 @@
 
-## Why Enums Cannot Have Stored Properties in Swift
+# Why Enums Cannot Have Stored Properties in Swift
 
 This is a very important Swift design concept.
 
 ---
 
-# Short Answer
+## Short Answer
 
 Enums cannot have stored properties because:
 
@@ -15,7 +15,7 @@ Stored properties would force all enum cases to carry the same stored data, whic
 
 ---
 
-# First Understand Enum Nature
+## First Understand Enum Nature
 
 Enums model:
 
@@ -41,7 +41,7 @@ Never both.
 
 ---
 
-# Now Imagine Stored Properties Were Allowed
+## Now Imagine Stored Properties Were Allowed
 
 Suppose Swift allowed this:
 
@@ -65,7 +65,7 @@ This creates design ambiguity.
 
 ---
 
-# Core Problem
+## Core Problem
 
 Enums are optimized to store:
 
@@ -79,7 +79,7 @@ That breaks enum’s lightweight state-modeling design.
 
 ---
 
-# Memory Visualization
+## Memory Visualization
 
 Current enum:
 
@@ -100,7 +100,7 @@ Very compact.
 
 ---
 
-# If Stored Properties Existed
+## If Stored Properties Existed
 
 ```swift id="owu9mg"
 enum TrafficLight {
@@ -124,7 +124,7 @@ Swift designers avoided this.
 
 ---
 
-# Bigger Problem — Different Cases Need Different Data
+## Bigger Problem — Different Cases Need Different Data
 
 Example:
 
@@ -150,7 +150,7 @@ Makes no logical sense.
 
 ---
 
-# Swift Solution → Associated Values
+## Swift Solution → Associated Values
 
 Instead of stored properties,
 Swift gives enums:
@@ -159,7 +159,7 @@ Swift gives enums:
 
 ---
 
-# Correct Swift Design
+## Correct Swift Design
 
 ```swift id="mpj5i9"
 enum Payment {
@@ -178,7 +178,7 @@ Efficient and logical.
 
 ---
 
-# THIS is Why Associated Values Exist
+## THIS is Why Associated Values Exist
 
 Associated values are:
 
@@ -194,13 +194,13 @@ Enums are intentionally designed around:
 
 ---
 
-# Interview-Friendly Definition
+## Interview-Friendly Definition
 
 > Swift enums cannot have stored properties because enum cases represent mutually exclusive states with potentially different memory requirements. Instead, Swift uses associated values to store data specific to individual cases.
 
 ---
 
-# Computed Properties Are Allowed
+## Computed Properties Are Allowed
 
 Because:
 
@@ -209,7 +209,7 @@ Because:
 
 ---
 
-# Example
+## Example
 
 ```swift id="ln9v6o"
 enum Planet {
@@ -238,7 +238,7 @@ So Swift allows it.
 
 ---
 
-# Why Struct Can Have Stored Properties
+## Why Struct Can Have Stored Properties
 
 Struct represents:
 
@@ -262,7 +262,7 @@ So stored properties make sense.
 
 ---
 
-# But Enum Represents State
+## But Enum Represents State
 
 Example:
 
@@ -281,7 +281,7 @@ Different design purpose.
 
 ---
 
-# Advanced Compiler Perspective
+## Advanced Compiler Perspective
 
 Internally, Swift enums are implemented similar to:
 
@@ -300,7 +300,7 @@ Allowing arbitrary stored properties complicates:
 
 ---
 
-# Another Important Reason
+## Another Important Reason
 
 Enums try to make:
 
@@ -321,7 +321,7 @@ Each case stores only meaningful data.
 
 ---
 
-# What If You Need Shared Stored Data?
+## What If You Need Shared Stored Data?
 
 Use:
 
@@ -331,7 +331,7 @@ Use:
 
 ---
 
-# Example
+## Example
 
 ```swift id="zwavk8"
 enum LoginState {
@@ -350,9 +350,9 @@ This is proper architecture.
 
 ---
 
-# Important Interview Question
+## Important Interview Question
 
-# Why associated values are better than stored properties in enums?
+## Why associated values are better than stored properties in enums?
 
 Because:
 
@@ -363,7 +363,7 @@ Because:
 
 ---
 
-# Final Mental Model
+## Final Mental Model
 
 Struct/Class:
 
