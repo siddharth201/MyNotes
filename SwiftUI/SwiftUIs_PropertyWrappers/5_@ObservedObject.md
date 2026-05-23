@@ -334,6 +334,6 @@ That single line explains most SwiftUI data flow.
 
 ## Q. @StateObject create memory outside of struct, do ObservedObject also create memory in same way?  
 
-[Answer]()  
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ObservedObject_Memory_Explanation.md)  
 
 
