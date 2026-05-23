@@ -545,6 +545,9 @@ This is inspired from functional programming.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_access_methos_computedproperties.md)  
 
 ## Q. Swift can automatically synthesize Equatable conformance for many enums.?
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_with_equatable.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_with_equatable.md)  
+
+## Q. Why enum can't have stored property?  
+[Answer]()
 
 
