@@ -269,5 +269,5 @@ That single distinction explains almost everything.
 
 
 ## Q. What if `@ObservedObject var vm = ViewModel()` ?  
-[Answer]() 
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ObservedObject_Memory_Explanation1.md) 
 
