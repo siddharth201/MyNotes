@@ -548,6 +548,6 @@ This is inspired from functional programming.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/enum_with_equatable.md)  
 
 ## Q. Why enum can't have stored property?  
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Enum_Why_not_Stored_Properties.md)
 
 
