@@ -16,4 +16,4 @@ try await Task.sleep(for: .seconds(3), tolerance: .seconds(1))
 
 Swift's Task.sleep() method automatically checks for cancellation, meaning that if you cancel a sleeping task it will be woken and throw a CancellationError for you to catch.
 
-Tip: Unlike making a thread sleep, Task.sleep() does not block the underlying thread, allowing it pick up work from elsewhere if needed.
+**Tip:** Unlike making a thread sleep, Task.sleep() does not block the underlying thread, allowing it pick up work from elsewhere if needed.
