@@ -53,7 +53,7 @@ Let’s unpick the key parts:
 
 2. Tasks don’t always need to return a value, but when they do Swift can often figure it out automatically. If you have something more complex, you might need to declare it explicitly. For example, we might have used () -> [NewsItem] in to say that our task returns an array of NewsItem.
 
-3. As soon as you create the task it will start running – there’s no start() method or similar.
+3. As soon as you create the task it will start running – there’s no **`start()`** method or similar.
 
 4. The entire task is run concurrently with your other code, which means it might be able to run in parallel too. In our case, that means fetching and decoding the data happens inside the task, which keeps our main fetchUpdates() function free.
 
