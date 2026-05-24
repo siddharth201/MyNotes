@@ -49,8 +49,8 @@ await fetchUpdates()
 
 Let’s unpick the key parts:
 
-Creating and running a task is done by using its initializer, passing in the work you want to do.
-Tasks don’t always need to return a value, but when they do Swift can often figure it out automatically. If you have something more complex, you might need to declare it explicitly. For example, we might have used () -> [NewsItem] in to say that our task returns an array of NewsItem.
+1. Creating and running a task is done by using its initializer, passing in the work you want to do.
+2. Tasks don’t always need to return a value, but when they do Swift can often figure it out automatically. If you have something more complex, you might need to declare it explicitly. For example, we might have used () -> [NewsItem] in to say that our task returns an array of NewsItem.
 As soon as you create the task it will start running – there’s no start() method or similar.
 The entire task is run concurrently with your other code, which means it might be able to run in parallel too. In our case, that means fetching and decoding the data happens inside the task, which keeps our main fetchUpdates() function free.
 If you want to read the return value of a task, you need to access its value property using await. In our case our task could also throw errors because we’re accessing the network, so we need to use try as well.
