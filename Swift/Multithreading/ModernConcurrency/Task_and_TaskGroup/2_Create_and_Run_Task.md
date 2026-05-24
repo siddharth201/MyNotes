@@ -65,6 +65,54 @@ Both tasks in that example returned a value, but that’s not a requirement – 
 
 To demonstrate this, we could make a small SwiftUI program to fetch a user’s inbox when a button is pressed. Button actions are not async functions, so we need to launch a new task inside the action. The task can call async functions, but in this instance we don’t actually care about the result so we’re not going to store the task – the function it calls will handle updating our SwiftUI view.
 
-Here’s the code:
+Here’s the code:  
+
+```swift
+struct Message: Decodable, Identifiable {
+    let id: Int
+    var from: String
+    var text: String
+}
+
+struct ContentView: View {
+    @State private var messages = [Message]()
+
+    var body: some View {
+        NavigationStack {
+            Group {
+                if messages.isEmpty {
+                    Button("Load Messages") {
+                        Task {
+                            await loadMessages()
+                        }
+                    }
+                } else {
+                    List(messages) { message in
+                        VStack(alignment: .leading) {
+                            Text(message.from)
+                                .font(.headline)
+
+                            Text(message.text)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Inbox")
+        }
+    }
+
+    func loadMessages() async {
+        do {
+            let url = URL(string: "https://hws.dev/messages.json")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            messages = try JSONDecoder().decode([Message].self, from: data)
+        } catch {
+            messages = [
+                Message(id: 0, from: "Failed to load inbox.", text: "Please try again later.")
+            ]
+        }
+    }
+}
+```
 
 
