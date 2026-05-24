@@ -1,4 +1,4 @@
-Swift’s **`Task`** struct has a static **`sleep()`** method that will cause the current task to be suspended for a set period of time. You need to call **`Task.sleep()`** using await as it will cause the task to be suspended, and you also need to use try because sleep() will wake and throw an error if the task is cancelled.
+Swift’s **`Task`** struct has a static **`sleep()`** method that will cause the current task to be suspended for a set period of time. You need to call **`Task.sleep()`** using **`await`** as it will cause the task to be suspended, and you also need to use try because sleep() will wake and throw an error if the task is cancelled.
 
 For example, this will make the current task sleep for at least 3 seconds:
 
