@@ -10,4 +10,6 @@ Calling Task.sleep() will make the current task sleep for at least the amount of
 
 If you're happy to add a little extra drift, you can add a tolerance parameter that allows the task to sleep for longer if needed. So, this might sleep for three seconds up to a total of four seconds:
 
+```swift
 try await Task.sleep(for: .seconds(3), tolerance: .seconds(1))
+```
