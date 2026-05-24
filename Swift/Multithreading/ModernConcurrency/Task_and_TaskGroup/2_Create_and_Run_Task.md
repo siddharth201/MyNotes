@@ -129,7 +129,7 @@ Let's break it down:
 
 * We create the task on the main thread, and the code we're running belongs to our SwiftUI view, so it will also run on the main thread.  
 
-Inside loadMessages() we use await to load our URL data, but that will run on its own networking thread to avoid making our UI freeze. When it resumes, our code will return to the main thread.
+* Inside loadMessages() we use await to load our URL data, but that will run on its own networking thread to avoid making our UI freeze. When it resumes, our code will return to the main thread.
 Finally, the messages property uses the @State property wrapper, which will automatically update its value on the main thread no matter where we change it from.
 Best of all, we don’t have to care about this – we don’t need to know how the system is balancing the threads, or even that the threads exist, because Swift and SwiftUI take care of that for us. In fact, the concept of tasks is so thoroughly baked into SwiftUI that there’s a dedicated task() modifier that makes them even easier to use.
 
