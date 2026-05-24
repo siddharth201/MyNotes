@@ -117,9 +117,11 @@ struct ContentView: View {
 
 Even though that code isn’t so different from the previous example, I still want to pick out a few things:
 
-Creating the new task is what allows us to start calling an async function even though the button’s action is a synchronous function.
-The lifetime of the task is not bound by the button’s action closure. So, even though the closure will finish immediately, the task it created will carry on running to completion.
-We aren’t trying to read a return value from the task, or storing it anywhere. This task doesn’t actually return anything, and doesn’t need to.  
+1. Creating the new task is what allows us to start calling an async function even though the button’s action is a synchronous function.  
+
+2. The lifetime of the task is not bound by the button’s action closure. So, even though the closure will finish immediately, the task it created will carry on running to completion.  
+
+3. We aren’t trying to read a return value from the task, or storing it anywhere. This task doesn’t actually return anything, and doesn’t need to.  
 
 Between **`Task`**, **`async/await`**, and **`SwiftUI`** a lot of work is happening on our behalf. Remember, when we use await we’re signaling a potential suspension point, which means the task might sleep for a while based on the work that's happening.
 
