@@ -4,4 +4,10 @@ For example, this will make the current task sleep for at least 3 seconds:
 
 ```swift
 try await Task.sleep(for: .seconds(3))
-```
+``` 
+
+Calling Task.sleep() will make the current task sleep for at least the amount of time you ask, not exactly the time you ask. There is a little drift involved because the system might be busy doing other work when the sleep ends, but you are at least guaranteed it won’t end before your time has elapsed.
+
+If you're happy to add a little extra drift, you can add a tolerance parameter that allows the task to sleep for longer if needed. So, this might sleep for three seconds up to a total of four seconds:
+
+try await Task.sleep(for: .seconds(3), tolerance: .seconds(1))
