@@ -2,7 +2,7 @@
 ## “What is an actor in Swift?”
 
 
-# Short Interview Answer (Best version)
+## Short Interview Answer (Best version)
 
 You can say:
 
