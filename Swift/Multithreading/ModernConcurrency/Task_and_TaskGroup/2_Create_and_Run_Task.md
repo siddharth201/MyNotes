@@ -59,6 +59,12 @@ Let’s unpick the key parts:
 
 5. If you want to read the return value of a task, you need to access its **`value`** property using **`await`**. In our case our task could also throw errors because we’re accessing the network, so we need to use try as well.
 
-6. Once you’ve copied out the value from your task you can use that normally without needing **`await`** or **`try`** again, although subsequent accesses to the task itself – e.g. **`newsTask.value`** – will need **`try await`** because Swift can’t statically determine that the value is already present. 
+6. Once you’ve copied out the value from your task you can use that normally without needing **`await`** or **`try`** again, although subsequent accesses to the task itself – e.g. **`newsTask.value`** – will need **`try await`** because Swift can’t statically determine that the value is already present.   
+
+Both tasks in that example returned a value, but that’s not a requirement – the “fire and forget” approach allows us to create a task without storing it, and Swift will ensure it runs until completion correctly.
+
+To demonstrate this, we could make a small SwiftUI program to fetch a user’s inbox when a button is pressed. Button actions are not async functions, so we need to launch a new task inside the action. The task can call async functions, but in this instance we don’t actually care about the result so we’re not going to store the task – the function it calls will handle updating our SwiftUI view.
+
+Here’s the code:
 
 
