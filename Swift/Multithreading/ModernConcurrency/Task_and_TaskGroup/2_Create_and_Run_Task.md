@@ -57,7 +57,8 @@ Let’s unpick the key parts:
 
 4. The entire task is run concurrently with your other code, which means it might be able to run in parallel too. In our case, that means fetching and decoding the data happens inside the task, which keeps our main fetchUpdates() function free.
 
-5. If you want to read the return value of a task, you need to access its value property using await. In our case our task could also throw errors because we’re accessing the network, so we need to use try as well.
+5. If you want to read the return value of a task, you need to access its **`value`** property using **`await`**. In our case our task could also throw errors because we’re accessing the network, so we need to use try as well.
+
 Once you’ve copied out the value from your task you can use that normally without needing await or try again, although subsequent accesses to the task itself – e.g. newsTask.value – will need try await because Swift can’t statically determine that the value is already present. 
 
 
