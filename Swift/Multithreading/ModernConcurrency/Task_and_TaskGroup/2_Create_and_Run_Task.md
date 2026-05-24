@@ -119,6 +119,16 @@ Even though that code isn’t so different from the previous example, I still wa
 
 Creating the new task is what allows us to start calling an async function even though the button’s action is a synchronous function.
 The lifetime of the task is not bound by the button’s action closure. So, even though the closure will finish immediately, the task it created will carry on running to completion.
-We aren’t trying to read a return value from the task, or storing it anywhere. This task doesn’t actually return anything, and doesn’t need to.
+We aren’t trying to read a return value from the task, or storing it anywhere. This task doesn’t actually return anything, and doesn’t need to.  
+
+Between Task, async/await, and SwiftUI a lot of work is happening on our behalf. Remember, when we use await we’re signaling a potential suspension point, which means the task might sleep for a while based on the work that's happening.
+
+Let's break it down:
+
+All UI work runs on the main thread, so the button’s action closure will fire on the main thread.
+We create the task on the main thread, and the code we're running belongs to our SwiftUI view, so it will also run on the main thread.
+Inside loadMessages() we use await to load our URL data, but that will run on its own networking thread to avoid making our UI freeze. When it resumes, our code will return to the main thread.
+Finally, the messages property uses the @State property wrapper, which will automatically update its value on the main thread no matter where we change it from.
+Best of all, we don’t have to care about this – we don’t need to know how the system is balancing the threads, or even that the threads exist, because Swift and SwiftUI take care of that for us. In fact, the concept of tasks is so thoroughly baked into SwiftUI that there’s a dedicated task() modifier that makes them even easier to use.
 
 
