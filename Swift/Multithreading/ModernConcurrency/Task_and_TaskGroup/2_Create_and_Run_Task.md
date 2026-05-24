@@ -59,6 +59,6 @@ Let’s unpick the key parts:
 
 5. If you want to read the return value of a task, you need to access its **`value`** property using **`await`**. In our case our task could also throw errors because we’re accessing the network, so we need to use try as well.
 
-6. Once you’ve copied out the value from your task you can use that normally without needing **`await`** or **`try`** again, although subsequent accesses to the task itself – e.g. newsTask.value – will need try await because Swift can’t statically determine that the value is already present. 
+6. Once you’ve copied out the value from your task you can use that normally without needing **`await`** or **`try`** again, although subsequent accesses to the task itself – e.g. **`newsTask.value`** – will need try await because Swift can’t statically determine that the value is already present. 
 
 
