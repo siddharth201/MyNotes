@@ -35,7 +35,8 @@ The Strategy pattern relies on three main elements:
     
     
 ## Class Diagram
-
+![Class Diagram]()
+[Explanation]()
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
