@@ -18,7 +18,11 @@ Examples include **`Google Maps navigation modes`** and **`payment methods`**.
 ---  
 
 ## The Core Components
-The Strategy pattern relies on three main elements:
+The Strategy pattern relies on three main elements:  
+
+Strategy (Interface/Protocol): This is common to all supported algorithms. It declares a method that the context uses to execute a strategy.
+Concrete Strategies: These are the actual classes that implement the different variations of the algorithm.
+Context: This is the class that maintains a reference to one of the strategy objects. It doesn't know how the strategy is implemented; it just calls the method exposed by the strategy interface.
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
