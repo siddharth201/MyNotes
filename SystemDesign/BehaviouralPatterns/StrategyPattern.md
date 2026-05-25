@@ -1,5 +1,5 @@
 
-# 🧠 STRATEGY PATTERN
+## 🧠 STRATEGY PATTERN
 
 The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allows you to define a **`family of algorithms`**, **`encapsulate each one in a separate class`**, and **`make them interchangeable`**.   
  
@@ -15,7 +15,10 @@ Examples include **`Google Maps navigation modes`** and **`payment methods`**.
 
 > **Strategy Pattern is used when the same task can be done in multiple ways, and we want to choose the way at runtime without changing existing code.**
 
----
+---  
+
+## The Core Components
+The Strategy pattern relies on three main elements:
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
