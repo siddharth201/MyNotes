@@ -7,7 +7,7 @@ The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allo
   
 * Promotes flexibility by reducing complex conditional logic and making code easier to maintain.
 
-We usually combine Strategy with Factory — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
+We usually **`combine Strategy with Factory`** — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
 
 Examples include **`Google Maps navigation modes`** and **`payment methods`**.
 
