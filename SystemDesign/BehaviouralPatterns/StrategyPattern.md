@@ -26,7 +26,12 @@ The Strategy pattern relies on three main elements:
 
 2. **Concrete Strategies:** These are the actual classes that implement the different variations of the algorithm.  
 
-3. **Context:** This is the class that maintains a reference to one of the strategy objects. It doesn't know how the strategy is implemented; it just calls the method exposed by the strategy interface.
+3. **Context:** This is the class that maintains a reference to one of the strategy objects. It doesn't know how the strategy is implemented; it just calls the method exposed by the strategy interface.  
+
+4. **Client:** Responsible for selecting and configuring the appropriate strategy for the context.
+
+Decides which strategy to use based on the problem.
+Passes the chosen strategy to the context for execution.
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
