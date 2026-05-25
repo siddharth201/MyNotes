@@ -31,7 +31,11 @@ The Strategy pattern relies on three main elements:
 4. **Client:** Responsible for selecting and configuring the appropriate strategy for the context.  
 
     * Decides which strategy to use based on the problem.  
-    * Passes the chosen strategy to the context for execution.
+    * Passes the chosen strategy to the context for execution.  
+    
+    
+## Class Diagram
+
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
