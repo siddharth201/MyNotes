@@ -38,7 +38,9 @@ The Strategy pattern relies on three main elements:
     
 ## Class Diagram
 ![Class Diagram](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/ChatGPT%20Image%20May%2025%2C%202026%2C%2003_16_50%20PM.png)
-[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/StrategyDesignPattern_Class_Diagram.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/StrategyDesignPattern_Class_Diagram.md)  
+
+---
 
 ## 🗺️ EXAMPLE 1: GOOGLE MAPS NAVIGATION (RUNNABLE)
 
