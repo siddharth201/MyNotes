@@ -33,6 +33,8 @@ The Strategy pattern relies on three main elements:
     * Decides which strategy to use based on the problem.  
     * Passes the chosen strategy to the context for execution.  
     
+---
+    
     
 ## Class Diagram
 ![Class Diagram](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/ChatGPT%20Image%20May%2025%2C%202026%2C%2003_16_50%20PM.png)
