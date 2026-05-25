@@ -289,10 +289,8 @@ This combo:
 
 ---
 
-# Q. So can we say if we have to achive same thing but we have many ways to do than we will use strategy patterns, I need a simple definition as above definitions seems bit more technical and difficult to understand, also let me know how I should I start thinking that for a given scenario I should use strategy pattern , with same example of payment and navigation without using strategy pattern and than same implementation with strategy.  
-
-
-
+## Q. If we have to achieve the same thing but we have many ways to do it, then we will use Strategy pattern?. 
+[Answer]() 
 
 ## Q. WHEN and WHERE to introduce Factory in Strategy (step number)?
 [Answer]()
