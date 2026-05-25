@@ -290,7 +290,7 @@ This combo:
 ---
 
 ## Q. If we have to achieve the same thing but we have many ways to do it, then we will use Strategy pattern?. 
-[Answer]() 
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/StrategyDesignPattern_Followup1.md) 
 
 ## Q. WHEN and WHERE to introduce Factory in Strategy (step number)?
 [Answer]()
