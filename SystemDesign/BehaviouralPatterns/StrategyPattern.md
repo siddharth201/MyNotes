@@ -11,7 +11,7 @@ We usually **`combine Strategy with Factory`** — Factory decides which strateg
 
 Examples include **`Google Maps navigation modes`** and **`payment methods`**.  
 
-### Simple & Perfect Definition (Use this in interview)
+#### Simple & Perfect Definition (Use this in interview)
 
 > **Strategy Pattern is used when the same task can be done in multiple ways, and we want to choose the way at runtime without changing existing code.**
 
