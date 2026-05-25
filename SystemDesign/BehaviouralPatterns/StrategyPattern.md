@@ -1,7 +1,9 @@
 
-# 🧠 STRATEGY PATTERN (1-line refresher)
+# 🧠 STRATEGY PATTERN
 
-> **Strategy Pattern lets you choose one algorithm from a family of algorithms at runtime, without changing the code that uses it.**
+> **Strategy Pattern defines multiple algorithms and makes them interchangeable at runtime.
+> In my projects, I usually combine Strategy with Factory — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
+> Examples include Google Maps navigation modes and payment methods.**
 
 ✔ It is a **Behavioral Design Pattern**
 ✔ Factory is often used to **select the strategy**
@@ -249,14 +251,6 @@ This combo:
 * Follows Open/Closed Principle
 * Is very testable
 * Is industry standard
-
----
-
-## 🎤 PERFECT INTERVIEW ANSWER (MEMORIZE)
-
-> **Strategy Pattern defines multiple algorithms and makes them interchangeable at runtime.
-> In my projects, I usually combine Strategy with Factory — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
-> Examples include Google Maps navigation modes and payment methods.**
 
 ---
 
