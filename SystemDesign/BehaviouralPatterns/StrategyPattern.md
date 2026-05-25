@@ -1,7 +1,7 @@
 
 # 🧠 STRATEGY PATTERN
 
-> **Strategy Pattern defines multiple algorithms and makes them interchangeable at runtime.
+> **Strategy Design Pattern is a Behavioral Design Pattern defines multiple algorithms and makes them interchangeable at runtime.
 > We usually combine Strategy with Factory — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
 > Examples include Google Maps navigation modes and payment methods.**
 
