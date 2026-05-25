@@ -13,7 +13,7 @@ Examples include **`Google Maps navigation modes`** and **`payment methods`**.
 
 ### Simple & Perfect Definition (Use this in interview)
 
-> **Strategy Pattern is used when we want to do the same task, but there are multiple ways to do it, and we want to choose one way at runtime.**
+> **Strategy Pattern is used when the same task can be done in multiple ways, and we want to choose the way at runtime without changing existing code.**
 
 ---
 
