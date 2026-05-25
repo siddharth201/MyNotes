@@ -582,7 +582,8 @@ strategy.doWork()
 ---
 
 
-# Q. for with strategy examples add factory methods as well and the step number where i should introduce it?
+## Q. WHEN and WHERE to introduce Factory in Strategy (step number)?
+[Answer]()
 
 
 
