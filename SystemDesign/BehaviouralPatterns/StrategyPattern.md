@@ -1,7 +1,7 @@
 
 # 🧠 STRATEGY PATTERN
 
-The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allows you to define a **`family of algorithms`**, encapsulate each one in a separate class, and make them interchangeable.   
+The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allows you to define a **`family of algorithms`**, **`encapsulate each one in a separate class`**, and **`make them interchangeable`**.   
  
 * Encapsulates different algorithms into separate strategy classes, allowing dynamic selection or switching at runtime.  
   
