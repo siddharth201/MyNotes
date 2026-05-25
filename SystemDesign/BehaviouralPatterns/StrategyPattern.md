@@ -5,7 +5,7 @@
 > We usually combine Strategy with Factory — Factory decides which strategy to create based on runtime input, and the context uses it without knowing the implementation.
 > Examples include Google Maps navigation modes and payment methods.**
 
-✔ It is a **Behavioral Design Pattern**
+✔ It is a **Behavioral Design Pattern**  
 ✔ Factory is often used to **select the strategy**
 
 ---
