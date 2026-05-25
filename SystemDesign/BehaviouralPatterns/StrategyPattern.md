@@ -293,7 +293,7 @@ This combo:
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/StrategyDesignPattern_Followup1.md) 
 
 ## Q. WHEN and WHERE to introduce Factory in Strategy (step number)?
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/StrategyDesignPattern_Followup2.md)
 
 
 
