@@ -20,7 +20,7 @@ Examples include **`Google Maps navigation modes`** and **`payment methods`**.
 ## The Core Components
 The Strategy pattern relies on three main elements:  
 
-[Core Components](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/StrategyDesignPattern.png)    
+![Core Components](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/StrategyDesignPattern.png)    
 
 1. **Strategy (Interface/Protocol):** This is common to all supported algorithms. It declares a method that the context uses to execute a strategy.  
 
