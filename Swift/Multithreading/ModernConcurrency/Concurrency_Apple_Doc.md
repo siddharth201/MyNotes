@@ -127,9 +127,9 @@ In this example, all three calls to downloadPhoto(named:) start without waiting 
 
 Here’s how you can think about the differences between these two approaches:
 
-* **Call asynchronous functions with await** when the code on the following lines depends on that function’s result. This creates work that is carried out sequentially.
+* Call **asynchronous functions with await** when the code on the following lines depends on that function’s result. This creates work that is carried out sequentially.
 
-* **`Call asynchronous functions with async-let`** when you don’t need the result until later in your code. This creates work that can be carried out in parallel.
+* Call **asynchronous functions with async-let** when you don’t need the result until later in your code. This creates work that can be carried out in parallel.
 
 * Both await and async-let allow other code to run while they’re suspended.
 
