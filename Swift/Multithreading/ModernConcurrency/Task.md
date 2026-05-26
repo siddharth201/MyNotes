@@ -15,7 +15,7 @@ I’ll cover:
 
 ## 🧠 Definition
 
-> A `Task` represents a **unit of asynchronous work** that runs concurrently.
+> “A Task in Swift concurrency represents a unit of asynchronous work that runs concurrently. It supports suspension using await, cooperative cancellation, priority-based scheduling, and structured or unstructured execution depending on how it is created.”
 
 ---
 
@@ -384,12 +384,6 @@ await = suspend
 cancel = cooperative stop
 priority = scheduling hint
 ```
-
----
-
-## 🎯 Interview Answer
-
-> “A Task in Swift concurrency represents a unit of asynchronous work that runs concurrently. It supports suspension using await, cooperative cancellation, priority-based scheduling, and structured or unstructured execution depending on how it is created.”
 
 ---
 
