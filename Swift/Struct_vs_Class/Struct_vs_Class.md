@@ -677,5 +677,8 @@ That answer sounds very strong in interviews.
 | deinit                |            No |            Yes |
 | Safer for concurrency |           Yes |      Less safe |
 
----
+---  
+
+
+## Q. 
 
