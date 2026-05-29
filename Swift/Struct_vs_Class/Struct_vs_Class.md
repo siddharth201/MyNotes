@@ -688,4 +688,6 @@ That answer sounds very strong in interviews.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Memberwise_Init_in_Struct.md)  
 
 ## Q. Explain Mutating in struct and class?  
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Mutating.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Mutating.md)  
+
+## Q. 
