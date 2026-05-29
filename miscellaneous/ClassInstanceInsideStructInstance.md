@@ -116,7 +116,7 @@ So both see update.
 
 ---
 
-# Important interview line
+## Important interview line
 
 > Struct copy is shallow when it contains reference types.
 
@@ -128,7 +128,7 @@ but inner class reference still points to same object.
 
 ---
 
-# Example
+## Example
 
 Change `name`
 
@@ -157,7 +157,7 @@ affects both.
 
 ---
 
-# 2. Struct inside Class
+## 2. Struct inside Class
 
 Now reverse.
 
@@ -251,11 +251,11 @@ So modifying it affects both references.
 
 ---
 
-# Key difference
+## Key difference
 
 ---
 
-## Struct contains Class
+### Struct contains Class
 
 ```text
 Struct copied
@@ -264,7 +264,7 @@ Class reference shared
 
 ---
 
-## Class contains Struct
+### Class contains Struct
 
 ```text
 Class shared
@@ -273,11 +273,11 @@ Struct stored inside shared object
 
 ---
 
-# Very common confusion example
+## Very common confusion example
 
 ---
 
-## Struct with class property
+### Struct with class property
 
 ```swift id="cs10"
 class Box {
@@ -322,7 +322,7 @@ Because same `Box`.
 
 ---
 
-# Another example
+## Another example
 
 Class with struct:
 
@@ -367,13 +367,13 @@ Because `s1` and `s2` reference same Shape object.
 
 ---
 
-# Deep Copy vs Shallow Copy
+## Deep Copy vs Shallow Copy
 
 Important interview term:
 
 ---
 
-## Struct + only value properties
+### Struct + only value properties
 
 Deep independent copy.
 
@@ -394,7 +394,7 @@ reference inside reused
 
 ---
 
-# Interview answer
+## Interview answer
 
 If interviewer asks:
 
@@ -416,9 +416,9 @@ Good answer:
 
 ---
 
-# Easy memory trick
+## Easy memory trick
 
-## Struct → Class
+### Struct → Class
 
 ```text
 copy wrapper
@@ -436,7 +436,7 @@ share contained value
 
 ---
 
-# One-line summary
+## One-line summary
 
 > A struct copies its values, but if one of those values is a class reference, the reference is copied.
 >
