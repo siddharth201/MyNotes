@@ -697,4 +697,7 @@ That answer sounds very strong in interviews.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/HeapForClass.md)  
 
 ##
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeinitForStruct.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeinitForStruct.md)  
+
+## Why Struct don’t use ARC?
+[Answer]()
