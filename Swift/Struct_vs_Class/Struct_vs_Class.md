@@ -548,10 +548,10 @@ Move to class only if needed.
 
 Use struct when:
 
-✅ model data
-✅ independent values
-✅ no shared ownership
-✅ immutable data preferred
+✅ model data  
+✅ independent values  
+✅ no shared ownership  
+✅ immutable data preferred  
 
 Examples:
 
@@ -573,11 +573,11 @@ Configuration
 
 Use class when:
 
-✅ shared mutable state needed
-✅ object identity matters
-✅ lifecycle matters
-✅ inheritance needed
-✅ deinit needed
+✅ shared mutable state needed  
+✅ object identity matters  
+✅ lifecycle matters  
+✅ inheritance needed  
+✅ deinit needed  
 
 Examples:
 
