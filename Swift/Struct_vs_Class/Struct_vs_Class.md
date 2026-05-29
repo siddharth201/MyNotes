@@ -705,4 +705,6 @@ That answer sounds very strong in interviews.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/CoW.md)  
 
 ## Q. Explain DeepCopy vs ShallowCopy?
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeepCopy_ShalowCopy.md)  
+
+## Q. 
