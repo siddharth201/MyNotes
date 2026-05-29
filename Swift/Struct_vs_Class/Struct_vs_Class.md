@@ -3,11 +3,11 @@
 
 Both **class** and **struct** can:
 
-✅ store properties
-✅ have methods
-✅ have initializers
-✅ conform to protocols
-✅ use extensions
+✅ store properties  
+✅ have methods  
+✅ have initializers  
+✅ conform to protocols  
+✅ use extensions  
 
 At first they look similar.
 
