@@ -176,24 +176,9 @@ One shared object.
 
 ---
 
-## Interview Question:
+## 3. Mutability Difference
 
-### Why heap for class?
-
-Because classes support:
-
-* shared ownership
-* inheritance
-* ARC
-* dynamic lifetime
-
-Heap memory allows object to live beyond local scope.
-
----
-
-# 3. Mutability Difference
-
-## Struct
+### Struct
 
 ```swift
 struct User {
@@ -225,7 +210,7 @@ Because whole value is constant.
 
 ---
 
-## Class
+### Class
 
 ```swift
 class User {
@@ -252,7 +237,7 @@ Because `let` makes reference constant, not object.
 
 ---
 
-# Easy way to remember
+### Easy way to remember
 
 For class:
 
@@ -269,7 +254,7 @@ let → whole value constant
 
 ---
 
-# 4. Identity
+## 4. Identity
 
 Struct has **no identity**
 
@@ -325,7 +310,7 @@ checks reference identity
 
 ---
 
-# 5. Inheritance
+## 5. Inheritance
 
 Struct ❌ does NOT support inheritance
 
@@ -375,7 +360,7 @@ struct Dog: Animal
 
 ---
 
-# 6. ARC (Automatic Reference Counting)
+## 6. ARC (Automatic Reference Counting)
 
 Classes use ARC.
 
@@ -405,7 +390,7 @@ Because it’s copied by value.
 
 ---
 
-# 7. Deinitializer
+## 7. Deinitializer
 
 Only class can have:
 
@@ -432,7 +417,7 @@ Struct cannot.
 
 ---
 
-# 8. Thread Safety
+## 8. Thread Safety
 
 Struct is safer by default.
 
@@ -465,7 +450,7 @@ Possible:
 
 ---
 
-# 9. Performance
+## 9. Performance
 
 People often ask:
 
@@ -514,7 +499,7 @@ Class often better.
 
 ---
 
-# 10. Initializer Difference
+## 10. Initializer Difference
 
 Struct gets memberwise initializer automatically.
 
@@ -549,7 +534,7 @@ init(name: String, age: Int) {
 
 ---
 
-# Apple's recommendation
+## Apple's recommendation
 
 Apple generally recommends:
 
@@ -559,7 +544,7 @@ Move to class only if needed.
 
 ---
 
-# When to use Struct
+## When to use Struct
 
 Use struct when:
 
@@ -584,7 +569,7 @@ Configuration
 
 ---
 
-# When to use Class
+## When to use Class
 
 Use class when:
 
@@ -607,9 +592,9 @@ DatabaseService
 
 ---
 
-# Real App Example
+## Real App Example
 
-## Struct
+### Struct
 
 ```swift
 struct Product {
@@ -623,7 +608,7 @@ Every product is just data.
 
 ---
 
-## Class
+### Class
 
 ```swift
 final class CartManager {
@@ -650,9 +635,9 @@ All need same shared instance.
 
 ---
 
-# Most common interview question
+## Most common interview question
 
-## "Struct or Class—which do you prefer?"
+### "Struct or Class—which do you prefer?"
 
 Good answer:
 
@@ -664,7 +649,7 @@ That answer sounds very strong in interviews.
 
 ---
 
-# One-line memory trick
+## One-line memory trick
 
 ## Struct
 
@@ -678,7 +663,7 @@ That answer sounds very strong in interviews.
 
 ---
 
-# Quick Summary Table
+## Quick Summary Table
 
 | Feature               |        Struct |          Class |
 | --------------------- | ------------: | -------------: |
@@ -693,6 +678,4 @@ That answer sounds very strong in interviews.
 | Safer for concurrency |           Yes |      Less safe |
 
 ---
-
-One especially tricky topic here is **copy-on-write** (`Array`, `Dictionary`, `String`)—they’re structs but don’t always copy immediately. That often comes up in senior iOS interviews too.
 
