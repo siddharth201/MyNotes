@@ -708,4 +708,4 @@ That answer sounds very strong in interviews.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeepCopy_ShalowCopy.md)  
 
 ## Q. Explain Class instance inside struct and struct inside class.
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ClassInstanceInsideStructInstance.md)
