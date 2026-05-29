@@ -696,8 +696,8 @@ That answer sounds very strong in interviews.
 ## Q. Why heap for class?
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/HeapForClass.md)  
 
-##
+## Q. Why Struct don’t have deinit?
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeinitForStruct.md)  
 
-## Why Struct don’t use ARC?
+## Q. Why Struct don’t use ARC?
 [Answer]()
