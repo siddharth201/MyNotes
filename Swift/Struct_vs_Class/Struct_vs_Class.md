@@ -681,4 +681,5 @@ That answer sounds very strong in interviews.
 
 
 ## Q. Explain  default values in `class` and `struct`?
+[Answer]()
 
