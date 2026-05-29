@@ -707,4 +707,5 @@ That answer sounds very strong in interviews.
 ## Q. Explain DeepCopy vs ShallowCopy?
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeepCopy_ShalowCopy.md)  
 
-## Q. 
+## Q. Explain Class instance inside struct and struct inside class.
+[Answer]()
