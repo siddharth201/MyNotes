@@ -694,4 +694,7 @@ That answer sounds very strong in interviews.
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/RefrenceToObject.md)  
 
 ## Q. Why heap for class?
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/HeapForClass.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/HeapForClass.md)  
+
+##
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DeinitForStruct.md)
