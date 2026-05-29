@@ -681,7 +681,7 @@ That answer sounds very strong in interviews.
 
 
 ## Q. Explain  default values in `class` and `struct`?
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/DefaultValues_in_Struc_Class.md)
   
   
 ## Q. Why struct loses memberwise initializer when you write custom init()  
