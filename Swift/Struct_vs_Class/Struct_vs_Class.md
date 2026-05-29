@@ -702,4 +702,7 @@ That answer sounds very strong in interviews.
 ## Q. Why Struct don’t use ARC?
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Struct_ARC.md)  
 ## Q. Explain Copy-on-Write (CoW)?
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/CoW.md)
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/CoW.md)  
+
+## Q. Explain DeepCopy vs ShallowCopy?
+[Answer]()
