@@ -680,5 +680,5 @@ That answer sounds very strong in interviews.
 ---  
 
 
-## Q. 
+## Q. Explain  default values in `class` and `struct`?
 
