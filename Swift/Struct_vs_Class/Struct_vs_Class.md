@@ -693,4 +693,5 @@ That answer sounds very strong in interviews.
 ## Q. Class stores `reference to object`, what this means?  
 [Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/RefrenceToObject.md)  
 
-## Q. 
+## Q. Why heap for class?
+[Answer]()
