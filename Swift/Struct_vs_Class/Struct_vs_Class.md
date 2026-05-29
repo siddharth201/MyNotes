@@ -685,4 +685,4 @@ That answer sounds very strong in interviews.
   
   
 ## Q. Why struct loses memberwise initializer when you write custom init()  
-[Answer]()
+[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Memberwise_Init_in_Struct.md)
