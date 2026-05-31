@@ -1,4 +1,4 @@
 
 [Q. How to create **`React-Native`** project?](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./Create_React_Native_Project.md)  
 
-[Q. What is `npm` and relation with `npx`?]()
+[Q. What is `npm` and relation with `npx`?](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./npx_vs_npm.md)
