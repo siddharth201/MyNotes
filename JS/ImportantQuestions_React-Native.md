@@ -3,4 +3,4 @@
 
 [Q. What is **`npm`** and relation with **`npx`**?](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./npx_vs_npm.md)  
 
-[Q. Explain React-Native project structure]()
+[Q. Explain React-Native project structure](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./Project_Structure.md)
