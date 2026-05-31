@@ -5,4 +5,4 @@
 
 [Q. Explain React-Native project structure](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./Project_Structure.md)  
 
-[Q. Starter Project Explaination]()
+[Q. Starter Project Explaination](https://github.com/siddharth201/MyNotes/blob/main/JS/Misc./Starter_Project_Explain.md)
