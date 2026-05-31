@@ -35,7 +35,7 @@ The react-native package itself handled project creation.
 
 Now the React Native team moved that responsibility to a separate CLI package:
 
-React Native Community CLI
+**`React Native Community CLI`**
 
 So:
 
