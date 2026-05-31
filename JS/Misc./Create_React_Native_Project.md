@@ -39,5 +39,7 @@ Now the React Native team moved that responsibility to a separate CLI package:
 
 So:
 
+```text
 react-native   → framework/runtime
 @react-native-community/cli → project generator / CLI
+```
