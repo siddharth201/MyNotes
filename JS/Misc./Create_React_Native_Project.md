@@ -16,4 +16,6 @@ brew install node
 ### Before
 ```text
 npx react-native init MyFirstApp
-```
+```  
+
+### Current
