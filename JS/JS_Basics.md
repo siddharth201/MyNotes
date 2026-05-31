@@ -1,13 +1,13 @@
 
 ## Check if Node is installed  
  
-    ```swift
+    ```js
     node -v  —> [v26.0.0]
     npm -v —> [11.12.1]. 
     ```
   
   
 ## If not installed
-    ```swift
+    ```js
     brew install node. 
     ```
