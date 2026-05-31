@@ -19,3 +19,6 @@ npx react-native init MyFirstApp
 ```  
 
 ### Current
+```text
+npx @react-native-community/cli init MyFirstApp
+```
