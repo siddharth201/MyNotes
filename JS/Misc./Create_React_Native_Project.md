@@ -42,4 +42,27 @@ So:
 ```text
 react-native   → framework/runtime
 @react-native-community/cli → project generator / CLI
+```  
+
+## What to run on your Mac
+
+From your terminal:
+
+```text
+npx @react-native-community/cli init MyFirstApp
+```
+
+Then:
+```text
+cd MyFirstApp
+```
+
+Start Metro:
+```text
+npx react-native start
+```  
+
+Open iOS simulator:
+```text
+npx react-native run-ios
 ```
