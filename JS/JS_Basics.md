@@ -11,28 +11,6 @@ npm -v —> [11.12.1]
 ```text
 brew install node. 
 ```
-    
-Perfect—this is exactly the right next step.
-
-For a React Native interview, you usually don’t need deep JavaScript knowledge like frontend web specialists, but you should be comfortable with the basics because React Native is built on it.
-
-I’ll explain **JavaScript basics first**, then **TypeScript basics**, with small examples.
-
----
-
-# JavaScript Basics
-
-JavaScript
-
-JavaScript is the language React Native runs on.
-
-Think:
-
-```text
-React Native UI = React + JavaScript
-```
-
----
 
 # 1. Variables
 
