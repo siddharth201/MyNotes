@@ -47,9 +47,8 @@ struct ContentView: View {
 ### Why this works:
 
 * **`List(users, id: \.self)`**: This tells the List to loop through the `users` array. The `id: \.self` part is crucial—it tells SwiftUI to use the actual string values ("Sid", "Jyoti", etc.) to tell the rows apart.
-* **`{ user in Text(user) }`**: This closure runs for every item in the array, taking the current string (named `user`) and generating a `Text` view for it.
+* **`{ user in Text(user) }`**: This closure runs for every item in the array, taking the current string (named `user`) and generating a `Text` view for it.  
 
----
 
 ### Bonus: If you *did* want to enable row selection
 
@@ -106,9 +105,8 @@ This is where `id: \.self` comes in.
 * **`\` (Backslash):** In Swift, a backslash indicates a **KeyPath**. A KeyPath is essentially a map that points to a specific property of an object. For example, if a user had a name, the KeyPath would be `\.name`.
 * **`.self`:** This is a special property in Swift that refers to the *entire object or value itself*.
 
-So, when you write `id: \.self`, you are telling SwiftUI: **"Don't look for a separate ID number. The string's value *is* its unique identifier."** SwiftUI will use the literal text "Sid" as the fingerprint for Sid's row, and "Jyoti" as the fingerprint for Jyoti's row.
+So, when you write `id: \.self`, you are telling SwiftUI: **"Don't look for a separate ID number. The string's value *is* its unique identifier."** SwiftUI will use the literal text "Sid" as the fingerprint for Sid's row, and "Jyoti" as the fingerprint for Jyoti's row.  
 
----
 
 ### The Danger: Duplicates
 
