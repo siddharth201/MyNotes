@@ -1041,4 +1041,8 @@ This is exactly how data is prepared for many ML algorithms.
 10. Transpose
 11. Random Number Generation
 
-If you master these 11 topics, you'll be ready to move to **Pandas**, **Matplotlib**, and then **Scikit-Learn**, where you'll build your first Machine Learning model.
+If you master these 11 topics, you'll be ready to move to **Pandas**, **Matplotlib**, and then **Scikit-Learn**, where you'll build your first Machine Learning model.  
+
+---  
+
+## Q. 
