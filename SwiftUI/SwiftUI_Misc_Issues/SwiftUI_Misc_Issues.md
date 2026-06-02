@@ -84,7 +84,7 @@ struct ContentView: View {
 
 ```  
 
-#### Q. Explain **`id: \.self`** more  
+### Q. Explain **`id: \.self`** more  
 It is completely normal to be confused by `id: \.self`. It looks a bit like a typo the first time you see it!
 
 To understand it, we need to look at **how SwiftUI thinks** and **what Swift KeyPaths are**.
