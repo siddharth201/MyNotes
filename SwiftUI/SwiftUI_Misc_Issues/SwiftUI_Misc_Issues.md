@@ -84,7 +84,8 @@ struct ContentView: View {
 
 ```  
 
-#### Q.  
+#### Q. Explain **`id: \.self`** more  
+[Explanation]()
 
 
 </details>
