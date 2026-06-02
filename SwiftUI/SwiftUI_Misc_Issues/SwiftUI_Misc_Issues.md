@@ -10,8 +10,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            List(selection: $users) {
-                
+            List() {
+                // ???
             }
         }
         .padding()
