@@ -174,3 +174,8 @@ struct UserListView: View {
 > **Pro Tip:** In a real production app, use a **Dependency Injection (DI) Container** or a simple `AppDIContainer` class to initialize and "wire up" these layers at the start of the app. This prevents the View from knowing how to construct the Use Case or Repository.
 
 Would you like to see how to implement Unit Tests for the Use Case we just created?
+
+
+## Clean Architecture Blueprint
+
+![Clean Architecture Blueprint]()
