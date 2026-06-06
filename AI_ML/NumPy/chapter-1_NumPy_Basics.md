@@ -304,7 +304,7 @@ Output:
  [0. 0. 1.]]
 ```  
 
-[**Detail Explaination**]()
+[**Detail Explaination**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/IdentityMatrix.md)
 
 ---
 
