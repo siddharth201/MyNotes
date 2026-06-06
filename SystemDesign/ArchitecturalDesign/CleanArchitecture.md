@@ -1207,7 +1207,9 @@ Your brain works even if you change clothes or car.
 * Outside = UI, DB, Network
 * Domain imports nothing from outside
 
----
+---  
+
+
 
 
 
