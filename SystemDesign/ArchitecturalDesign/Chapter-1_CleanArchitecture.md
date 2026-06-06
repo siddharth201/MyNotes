@@ -178,4 +178,4 @@ Would you like to see how to implement Unit Tests for the Use Case we just creat
 
 ## Clean Architecture Blueprint
 
-
+![Clean Architecture Blueprint](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/Clean_Architecture_Blueprint.jpg)
