@@ -304,7 +304,7 @@ Output:
  [0. 0. 1.]]
 ```  
 
-[**Explaination**]()
+[**Detail Explaination**]()
 
 ---
 
