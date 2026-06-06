@@ -11,7 +11,7 @@ An **Identity Matrix** is a square matrix where:
 
 For a 3×3 matrix:
 
-I_3 = \begin{bmatrix}1&0&0\0&1&0\0&0&1\end{bmatrix}
+$I_3 = \begin{bmatrix}1&0&0\0&1&0\0&0&1\end{bmatrix}$
 
 Example:
 
