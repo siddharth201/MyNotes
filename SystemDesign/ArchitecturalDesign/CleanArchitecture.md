@@ -1209,7 +1209,9 @@ Your brain works even if you change clothes or car.
 
 ---  
 
+## Clean Architecture Blueprint
 
+![Clean Architecture Blueprint](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Images/Clean_Architecture_Blueprint.pdf)
 
 
 
