@@ -1052,5 +1052,8 @@ If you master these 11 topics, you'll be ready to move to **Pandas**, **Matplotl
 ---  
 
 ## Q. Why numpy operations are faster than Python?
-[Answer](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Numpy_Faster_than_python.md)
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Numpy_Faster_than_python.md)  
+
+## Q. Explain np.any(), np.all(), np.where()
+[**Answer**]()
 
