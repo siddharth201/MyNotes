@@ -267,7 +267,7 @@ A × A⁻¹ = I
 
 A famous formula in ML:
 
-(X^TX + \lambda I)^{-1}X^Ty
+$$(X^TX + \lambda I)^{-1}X^Ty$$
 
 Notice:
 
