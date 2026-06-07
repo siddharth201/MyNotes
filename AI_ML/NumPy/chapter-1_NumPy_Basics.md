@@ -1058,4 +1058,5 @@ If you master these 11 topics, you'll be ready to move to **Pandas**, **Matplotl
 [**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/NumPy/any_where_all.md)  
 
 ## Q. Explain column_stack()
+[**Answer**]()
 
