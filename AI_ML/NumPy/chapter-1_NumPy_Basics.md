@@ -486,7 +486,7 @@ Output:
  [7 8]]
 ```  
 
-[Detail Explanation]()
+[Detail Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/NumPy/Slicing.md)
 
 ---
 
