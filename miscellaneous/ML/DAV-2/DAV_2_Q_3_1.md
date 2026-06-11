@@ -139,4 +139,12 @@ For a matrix `A`:
 This pattern comes up frequently in interviews and NumPy exercises.
 
 
-## 
+## Q.Explain 
+```text
+result = arr.T[:, ::-1]
+and
+result = arr[::-1].T
+```  
+
+[**Answer**]()
+
