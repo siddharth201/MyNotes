@@ -143,7 +143,8 @@ Given a 1D array, return the first and last elements from the array.
 A 1D numpy array
 ```  
 
-#### 
+#### Output Format:  
+
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
