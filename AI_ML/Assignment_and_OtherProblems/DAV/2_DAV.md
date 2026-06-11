@@ -81,11 +81,9 @@ Which options correctly answer questions a and b?
 
 ### Q3. Rotate the array  
 
-Problem Statement:
+#### Problem Statement:
 
 Given an array in form of a matrix of size (n, n), rotate the matrix clockwise by 90º.
-
-Input Format: (NOTE : No need to take the input explicitly, the input-handling code is already in place.)
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
