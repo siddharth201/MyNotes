@@ -1,5 +1,4 @@
 
-## Q. Just curious about sinθ, cosθ and tanθ and there behaviour so that I can understant m = tanθ is correct choice
 
 Excellent curiosity. This is the *right* way to learn math: understand behavior, not memorize formulas.
 
