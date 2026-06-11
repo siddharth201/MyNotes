@@ -113,13 +113,13 @@ A 2d numpy array
 <summary>$\color{black}{\huge{\textbf{Solution:}}}$</summary>  
 
 ```text
-  
+ import numpy as np
+def rotate_img(mat):
+    b = mat.T[:,::-1]
+    return b
 ```   
-   
 
 <details>
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
 
 [**Explanation**]()
 </details>  
