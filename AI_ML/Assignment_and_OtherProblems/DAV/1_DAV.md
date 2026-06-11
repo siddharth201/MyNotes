@@ -248,7 +248,7 @@ def update_height(height, delta):
 
 ---   
 
-### Q
+### Q2. NumPy Output
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
