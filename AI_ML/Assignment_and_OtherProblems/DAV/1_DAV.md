@@ -134,7 +134,7 @@ arr = np.array([10, 20, 30, 40, 50])
 ---  
 
 
-### Q
+### Q4. Index of Pokédex
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
