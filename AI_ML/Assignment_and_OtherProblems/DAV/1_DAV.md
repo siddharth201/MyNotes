@@ -33,4 +33,6 @@ x[1:-1,1:-1] = 0
 </detail>  
 
 
-### Q.2 Inter dimension
+### Q.2 Inter dimension  
+
+### Given a 3D array of shape (2, 3, 3)
