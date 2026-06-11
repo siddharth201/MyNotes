@@ -209,7 +209,7 @@ def update_height(height,delta):
    return new_height 
 ```text  
 
-
+#### (B) Python operation
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
