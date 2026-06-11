@@ -21,5 +21,7 @@ x[1:-1,1:-1] = 0
 
 <details>
 <summary>**Answer**</summary>
+1. All the elements except those at the border are equated to zero.
 
+[**Explanation**]()
 </detail>
