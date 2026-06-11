@@ -35,7 +35,7 @@ arr1 > arr2
   1. For block 'a', answer is 'Ram'.  
   3. For block 'b', answer is array([False, False, False]).
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-2/DAV_2_Q_1.md)
 </details>  
 
 </details>
