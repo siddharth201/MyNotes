@@ -179,7 +179,19 @@ def get_elements(arr):
 
 ---  
 
-### Q5. Vectorization
+### Q5. Vectorization  
+
+### Gunjan is working on a swap of drones that can perform light shows.
+
+### For that, she is maintaining a list of the height of each drone and is updating that for each step.  
+
+### Height = [h1,h2,h3………hn] # height of each drone  
+
+### Delta_h = [d1,d2,d3……dn] # change in height of each drone
+
+### For each second she updates the Height array by adding the corresponding change to the height.
+
+### For that, she tried out 2 methods as listed below. Help her in arranging them in ascending order of time. 
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
