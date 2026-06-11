@@ -1,5 +1,5 @@
 
-### Q
+### Q1. Comparing in numpy
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
