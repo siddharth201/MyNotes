@@ -96,7 +96,7 @@ array([[0, 1, 2],
 
 ---  
 
-### Q
+### Q3. Cast a type
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
