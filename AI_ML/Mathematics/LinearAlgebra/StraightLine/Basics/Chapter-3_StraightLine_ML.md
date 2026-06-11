@@ -20,6 +20,10 @@ Here is the breakdown of what each piece means in an AI context:
 ### The Goal of Machine Learning
 When an AI "learns" a linear regression model, it is simply looking at a bunch of data points and automatically adjusting the **Weight ($w$)** and **Bias ($b$)** until the straight line fits as closely as possible through the middle of the data. 
 
+---  
+
+Q. Explain ₹Straight Line₹ in other words.
+[**Answer**]()  
 
 
 
