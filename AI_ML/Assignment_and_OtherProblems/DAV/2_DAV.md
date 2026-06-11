@@ -120,11 +120,8 @@ def rotate_img(mat):
     return b
 ```   
 
-<details>
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-2/DAV_2_Q_3_1.md)
-</details>  
-
+ 
 </details>
 
 ---  
