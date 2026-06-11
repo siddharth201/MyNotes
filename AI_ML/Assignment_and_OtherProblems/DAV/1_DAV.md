@@ -179,7 +179,7 @@ def get_elements(arr):
 
 ---  
 
-### Q
+### Q5. Vectorization
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
