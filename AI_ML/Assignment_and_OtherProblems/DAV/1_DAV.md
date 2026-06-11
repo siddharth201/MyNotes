@@ -21,7 +21,7 @@ x[1:-1,1:-1] = 0
 4. All the elements in the first and last rows are equated to zero.  
 ```   
    
-</detail>  
+</details>  
 
 
 <details>
@@ -30,7 +30,7 @@ x[1:-1,1:-1] = 0
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
-</detail>  
+</details>  
 
 
 ### Q.2 Inter dimension  
@@ -77,7 +77,7 @@ array([[0, 1, 2],
 
 ```   
    
-</detail>  
+</details>  
 
 
 <details>
@@ -88,5 +88,5 @@ array([[0, 1, 2],
        [12, 13, 14], 
        [15, 16, 17]])
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_2.md)
-</detail>            
+</details>            
 
