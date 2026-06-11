@@ -191,7 +191,22 @@ def get_elements(arr):
 
 ### For each second she updates the Height array by adding the corresponding change to the height.
 
-### For that, she tried out 2 methods as listed below. Help her in arranging them in ascending order of time. 
+### For that, she tried out 2 methods as listed below. Help her in arranging them in ascending order of time.  
+
+#### (A) Numpy operator
+
+```text
+import numpy as np
+
+def update_height(height,delta):
+
+   height = np.array(height)
+
+   delta = np.array(delta)
+
+   new_height = height+delta 
+
+   return new_height 
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
