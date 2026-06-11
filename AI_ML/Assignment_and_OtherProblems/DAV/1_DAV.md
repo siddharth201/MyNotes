@@ -19,4 +19,7 @@ x[1:-1,1:-1] = 0
 4. All the elements in the first and last rows are equated to zero.  
 ```  
 
+<details>
+<summary>**Answer**</summary>
 
+</detail>
