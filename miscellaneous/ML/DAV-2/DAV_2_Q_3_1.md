@@ -146,5 +146,5 @@ and
 result = arr[::-1].T
 ```  
 
-[**Answer**]()
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-2/DAV_2_Q_3_2.md)
 
