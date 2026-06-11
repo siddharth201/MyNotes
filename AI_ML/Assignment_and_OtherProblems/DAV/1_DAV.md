@@ -281,7 +281,7 @@ d. 5
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   b. 8
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_6.md)
 </details>  
 
 </details>
