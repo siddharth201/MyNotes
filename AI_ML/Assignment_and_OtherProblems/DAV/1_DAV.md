@@ -155,10 +155,11 @@ A tuple (first_element, last_element)
 
 #### Sample Output:  
 ```text
+(0, 5)
 ```
   
 <details>
-<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+<summary>$\color{black}{\huge{\textbf{Solution:}}}$</summary>  
 
 ```text
   
