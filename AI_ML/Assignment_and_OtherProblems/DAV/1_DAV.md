@@ -31,8 +31,11 @@ x[1:-1,1:-1] = 0
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
 </details>  
-
-
+  
+  
+---
+  
+  
 ### Q.2 Inter dimension  
 
 ### Given a 3D array of shape (2, 3, 3)  
