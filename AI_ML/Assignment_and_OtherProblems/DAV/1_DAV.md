@@ -267,13 +267,19 @@ print(B[1, 2])
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-  
+a. 6
+
+b. 8
+
+c. 2
+
+d. 5
 ```   
    
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+  b. 8
 
 [**Explanation**]()
 </details>  
