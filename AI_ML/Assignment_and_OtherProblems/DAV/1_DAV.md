@@ -80,8 +80,6 @@ array([[0, 1, 2],
 
 ```   
    
-</details>  
-
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
@@ -91,5 +89,7 @@ array([[0, 1, 2],
        [12, 13, 14], 
        [15, 16, 17]])
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_2.md)
-</details>            
+</details>  
+
+</details>             
 
