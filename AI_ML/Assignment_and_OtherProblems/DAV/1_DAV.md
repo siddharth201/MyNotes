@@ -21,8 +21,6 @@ x[1:-1,1:-1] = 0
 4. All the elements in the first and last rows are equated to zero.  
 ```   
    
-</details>  
-
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
@@ -30,6 +28,8 @@ x[1:-1,1:-1] = 0
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
+</details>  
+
 </details>  
   
   
