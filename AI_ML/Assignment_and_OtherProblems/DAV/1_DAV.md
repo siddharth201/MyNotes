@@ -126,7 +126,7 @@ arr = np.array([10, 20, 30, 40, 50])
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   3. arr.astype('float64')
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_3.md)
 </details>  
 
 </details>
