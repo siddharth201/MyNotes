@@ -148,7 +148,8 @@ A 1D numpy array
 A tuple (first_element, last_element)
 ```  
 
-
+#### Sample Input:  
+```
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
