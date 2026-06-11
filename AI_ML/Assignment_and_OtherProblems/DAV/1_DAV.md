@@ -209,7 +209,19 @@ def update_height(height,delta):
    return new_height 
 ```text  
 
-#### (B) Python operation
+#### (B) Python operation  
+
+```text  
+def update_height(height, delta):
+
+    new_height=[]
+
+    for i in range(len(height)):
+
+        new_height.append(height[i]+delta[i])
+
+    return new_height  
+```
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
