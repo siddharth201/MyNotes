@@ -207,7 +207,7 @@ def update_height(height,delta):
    new_height = height+delta 
 
    return new_height 
-```text  
+```  
 
 #### (B) Python operation  
 
