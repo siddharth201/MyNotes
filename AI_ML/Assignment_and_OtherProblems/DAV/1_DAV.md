@@ -111,13 +111,13 @@ arr = np.array([10, 20, 30, 40, 50])
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text  
-float(arr)
+1. float(arr)
 
-arr.to_float()
+2. arr.to_float()
 
-arr.astype('float64')
+3. arr.astype('float64')
 
-type(arr, dtype='float64')
+4. type(arr, dtype='float64')
   
 ```   
    
