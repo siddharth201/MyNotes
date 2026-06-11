@@ -96,7 +96,16 @@ array([[0, 1, 2],
 
 ---  
 
-### Q3. Cast a type
+### Q3. Cast a type  
+
+### Raghu has created a numpy array arr using the following code:
+
+```text
+import numpy as np
+arr = np.array([10, 20, 30, 40, 50])
+```  
+
+### He wants to change the data type from integer to float.Which of the following is the correct approach to do so?
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
