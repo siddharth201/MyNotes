@@ -259,7 +259,9 @@ A = np.array([[1, 2, 3],
               [7, 8, 9]])  
 B = A.T  
 print(B[1, 2])
-What will be the output?
+```   
+
+### What will be the output?
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
