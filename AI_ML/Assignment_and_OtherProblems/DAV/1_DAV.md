@@ -227,7 +227,13 @@ def update_height(height, delta):
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-  
+1. A < B
+
+2. B < A
+
+3. B = A
+
+4. Can't compare
 ```   
    
 
