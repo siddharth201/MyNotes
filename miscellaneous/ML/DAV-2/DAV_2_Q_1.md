@@ -32,7 +32,8 @@ arr1 > arr2
    
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+  1. For block 'a', answer is 'Ram'.  
+  3. For block 'b', answer is array([False, False, False]).
 
 [**Explanation**]()
 </details>  
