@@ -87,6 +87,6 @@ array([[0, 1, 2],
     array([[ 9, 10, 11], 
        [12, 13, 14], 
        [15, 16, 17]])
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_2.md)
 </detail>            
 
