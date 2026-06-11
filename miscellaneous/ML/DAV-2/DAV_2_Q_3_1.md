@@ -138,3 +138,5 @@ For a matrix `A`:
 
 This pattern comes up frequently in interviews and NumPy exercises.
 
+
+## 
