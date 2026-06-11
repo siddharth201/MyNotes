@@ -137,7 +137,8 @@ arr = np.array([10, 20, 30, 40, 50])
 ### Q4. Index of Pokédex  
 
 ### Problem Statement: 
-Given a 1D array, return the first and last elements from the array.
+Given a 1D array, return the first and last elements from the array.  
+#### Input Format: 
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
