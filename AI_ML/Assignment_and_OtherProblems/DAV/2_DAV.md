@@ -79,7 +79,7 @@ Which options correctly answer questions a and b?
 
 ---   
 
-### Q
+### Q3. Rotate the array
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
