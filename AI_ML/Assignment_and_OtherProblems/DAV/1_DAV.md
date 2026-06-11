@@ -149,11 +149,13 @@ A tuple (first_element, last_element)
 ```  
 
 #### Sample Input:  
-```
+```text
 [0, 1, 2, 3, 4, 5]
 ```  
 
-#### 
+#### Sample Output:  
+```text
+```
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
