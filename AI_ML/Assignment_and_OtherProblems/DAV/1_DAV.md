@@ -162,15 +162,17 @@ A tuple (first_element, last_element)
 <summary>$\color{black}{\huge{\textbf{Solution:}}}$</summary>  
 
 ```text
-  
-```   
-   
+  import numpy as np
 
-<details>
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+def get_elements(arr):
+    
+    first_element = arr[0]
+    
+    last_element = arr[-1]
+    
+    return (first_element, last_element)
+```     
 
-[**Explanation**]()
 </details>  
 
 </details>
