@@ -124,7 +124,7 @@ arr = np.array([10, 20, 30, 40, 50])
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+  3. arr.astype('float64')
 
 [**Explanation**]()
 </details>  
