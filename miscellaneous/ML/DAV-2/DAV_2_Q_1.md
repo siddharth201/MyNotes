@@ -18,13 +18,18 @@ arr1 > arr2
 #### Choose the options which are answers to questions a and b.
   
 <details>
-<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary> 
 
 ```text
-  
+1. For block 'a', answer is 'Ram'.
+
+2. For block 'a', answer is 'Raghavendra'.
+
+3. For block 'b', answer is array([False, False, False]).
+
+4. For block 'b', answer is False. 
 ```   
    
-
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   
