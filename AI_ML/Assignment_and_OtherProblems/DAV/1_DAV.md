@@ -47,5 +47,21 @@ array([[[ 0, 1, 2],
          [15, 16, 17]]])  
 ```  
 
-### What will be the output of arr[1, :, :] ?            
+### What will be the output of arr[1, :, :] ?  
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+
+```   
+   
+</detail>  
+
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+   
+[**Explanation**]()
+</detail>            
 
