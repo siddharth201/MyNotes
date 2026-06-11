@@ -27,6 +27,10 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 ### Q. Explain `Straight Line` in other words.  
 [**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/StraightLine1.md)  
 
+### Q. Explain sinθ, cosθ and tanθ and there behaviour so that I can understant m = tanθ is correct choice.  
+[**Answer**]()  
+ 
+
 
 
 
