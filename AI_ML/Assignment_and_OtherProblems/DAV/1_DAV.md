@@ -110,7 +110,14 @@ arr = np.array([10, 20, 30, 40, 50])
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
+```text  
+float(arr)
+
+arr.to_float()
+
+arr.astype('float64')
+
+type(arr, dtype='float64')
   
 ```   
    
