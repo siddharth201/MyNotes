@@ -24,5 +24,5 @@ x[1:-1,1:-1] = 0
 1. All the elements except those at the border are equated to zero.  
   
   
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
 </detail>
