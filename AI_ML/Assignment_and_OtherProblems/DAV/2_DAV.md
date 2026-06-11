@@ -43,7 +43,7 @@ arr1 > arr2
 ---  
   
   
-### Q
+### Q2. Even and odd
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
