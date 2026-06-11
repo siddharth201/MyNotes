@@ -86,24 +86,31 @@ Which options correctly answer questions a and b?
 Given an array in form of a matrix of size (n, n), rotate the matrix clockwise by 90º.
   
 ####input Format:
+```text
 A 2d numpy array  
+```  
 
-Output Format:
-
+#### Output Format:
+```text
 A 2d numpy array
-Sample Input:
+```  
 
+####Sample Input:
+```text
 [[1 2 3] 
  [4 5 6]
- [7 8 9]]
-Sample Output:
+ [7 8 9]]  
+```  
 
+#### Sample Output:
+```text
 [[7 4 1]
  [8 5 2]
  [9 6 3]]
-  
+```  
+
 <details>
-<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+<summary>$\color{black}{\huge{\textbf{Solution:}}}$</summary>  
 
 ```text
   
