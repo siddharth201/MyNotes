@@ -139,6 +139,11 @@ arr = np.array([10, 20, 30, 40, 50])
 ### Problem Statement: 
 Given a 1D array, return the first and last elements from the array.  
 #### Input Format: 
+```text
+A 1D numpy array
+```  
+
+#### 
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
