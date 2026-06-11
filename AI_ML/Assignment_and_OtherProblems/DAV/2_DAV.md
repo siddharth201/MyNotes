@@ -72,6 +72,7 @@ Which options correctly answer questions a and b?
   1. For question 'a', the answer is np.arange(22,71,2)  
   4. For question 'b', the answer is np.arange(21, 72, 2)
 
+[**Explanation**]()
 </details>  
 
 </details>
