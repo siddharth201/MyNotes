@@ -121,7 +121,7 @@ def rotate_img(mat):
 
 <details>
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-2/DAV_2_Q_3_1.md)
 </details>  
 
 </details>
