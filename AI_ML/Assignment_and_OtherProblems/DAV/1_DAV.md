@@ -30,4 +30,7 @@ x[1:-1,1:-1] = 0
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
-</detail>
+</detail>  
+
+
+### Q.2 Inter dimension
