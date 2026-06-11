@@ -150,6 +150,10 @@ A tuple (first_element, last_element)
 
 #### Sample Input:  
 ```
+[0, 1, 2, 3, 4, 5]
+```  
+
+#### 
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
