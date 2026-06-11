@@ -248,7 +248,7 @@ def update_height(height, delta):
 
 ---   
 
-### Q2. NumPy Output  
+### Q6. NumPy Output  
 
 ### Consider the following NumPy matrix:
 
