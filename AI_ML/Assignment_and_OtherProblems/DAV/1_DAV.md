@@ -144,6 +144,10 @@ A 1D numpy array
 ```  
 
 #### Output Format:  
+```text
+A tuple (first_element, last_element)
+```  
+
 
   
 <details>
