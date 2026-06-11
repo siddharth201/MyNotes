@@ -44,6 +44,12 @@ arr1 > arr2
   
   
 ### Q2. Even and odd
+
+**a.** Write the code using np.arange() to get all even numbers between 21 and 70, (70 inclusive)
+
+**b.** Write the code using np.arange() to get all odd numbers between 20 and 71. (71 inclusive)
+
+Which options correctly answer questions a and b?
   
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
