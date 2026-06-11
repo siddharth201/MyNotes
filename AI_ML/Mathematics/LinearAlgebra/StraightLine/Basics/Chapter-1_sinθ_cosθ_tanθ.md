@@ -208,7 +208,7 @@ And only tan directly expresses:
 $\text{steepness}=\frac{vertical\ change}{horizontal\ change}$
 
 ---  
-
+	
 
 
 
