@@ -52,7 +52,28 @@ array([[[ 0, 1, 2],
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
+```text  
+A.
+
+array([[ 3, 4, 5], 
+       [12, 13, 14]])
+
+B.
+
+array([[ 9, 10, 11], 
+       [12, 13, 14], 
+       [15, 16, 17]])
+
+C.
+
+array([[ 1, 4, 7], 
+       [10, 13, 16]])
+
+D.
+
+array([[0, 1, 2], 
+       [3, 4, 5], 
+       [6, 7, 8]])
 
 ```   
    
