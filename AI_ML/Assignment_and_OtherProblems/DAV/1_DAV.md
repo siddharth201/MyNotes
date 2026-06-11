@@ -239,7 +239,7 @@ def update_height(height, delta):
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+  1. A < B
 
 [**Explanation**]()
 </details>  
