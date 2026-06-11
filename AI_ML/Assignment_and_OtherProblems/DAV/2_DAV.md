@@ -83,9 +83,11 @@ Which options correctly answer questions a and b?
 
 #### Problem Statement:
 
-Given an array in form of a matrix of size (n, n), rotate the matrix clockwise by 90º.  
+Given an array in form of a matrix of size (n, n), rotate the matrix clockwise by 90º.
+  
+####input Format:
+A 2d numpy array  
 
-A 2d numpy array
 Output Format:
 
 A 2d numpy array
