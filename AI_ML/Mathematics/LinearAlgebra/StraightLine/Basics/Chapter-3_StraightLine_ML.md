@@ -28,7 +28,8 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/StraightLine1.md)  
 
 ### Q. Explain sinθ, cosθ and tanθ and there behaviour so that I can understant m = tanθ is correct choice.  
-[**Answer**]()  
+[**Answer (Gemini)**]()  
+[**Answer (Chat-GPT)**]() 
  
 
 
