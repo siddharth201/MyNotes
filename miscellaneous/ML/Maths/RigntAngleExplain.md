@@ -14,7 +14,7 @@ Here is a clear diagram showing exactly how the sides are named relative to the 
   
 #### When we map this directly to our $y=mx+c$ graph:  
 
-* The Opposite side is the vertical change up the Y-axis (the "Rise").
-* The Adjacent side is the horizontal change along the X-axis (the "Run").  
+* The **Opposite** side is the vertical change up the Y-axis (the "Rise").
+* The **Adjacent** side is the horizontal change along the X-axis (the "Run").  
 
 This visual makes it clear why tan(θ) (Opposite / Adjacent) perfectly represents the Slope (Rise / Run)!
