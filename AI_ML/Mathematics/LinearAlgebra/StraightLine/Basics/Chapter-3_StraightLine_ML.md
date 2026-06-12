@@ -30,7 +30,7 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 -->  
   
 ### Q.can you share an image in which you mention which is opposite and which is adjacent?  
-[**Answer**]()  
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/RigntAngleExplain.md)  
   
 ### Q. Explain sinθ, cosθ and tanθ and there behaviour so that I can understant m = tanθ is correct choice.  
 [**Answer (Gemini)**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/WhyTan.md)    
