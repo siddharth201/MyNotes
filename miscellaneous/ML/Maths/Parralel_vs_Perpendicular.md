@@ -15,32 +15,14 @@ So their slopes are equal.
 
 ## Condition
 
+```text
 m1.m2 = -1  
 
 or  
 
-m2 = -1
-    ​
+m2 = -1/m2
+```    ​
 
-
----
-
-## Example
-
-Line 1:
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"y = 2x + 1"}}
-
-Line 2:
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"y = 2x - 5"}}
-
-Both have slope = 2 → **parallel**
-
-Only difference:
-
-* Intercept changes → line shifts up/down
-* Direction stays same
 
 ---
 
