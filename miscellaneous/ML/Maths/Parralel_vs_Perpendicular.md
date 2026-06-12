@@ -156,15 +156,5 @@ In higher dimensions:
 
 That directly connects to ML math.
 
----
 
-# If you want next step:
-
-Best continuation:
-
-👉 **Distance between point and line (used in SVM & optimization)**
-or
-👉 **Dot product (very important for ML)**
-
-Just tell me which direction you want.
 
