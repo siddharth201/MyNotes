@@ -55,25 +55,7 @@ OR
 
 $m_2 = -\frac{1}{m_1}$
 
----
-
-## Example
-
-Line 1:
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"y = 2x + 1"}}
-
-Slope = 2
-
-Perpendicular slope:
-
-m = -\frac{1}{2}
-
-So perpendicular line:
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"y = -\frac{1}{2}x + c"}}
-
----
+---  
 
 # 3. Why Negative Reciprocal?
 
