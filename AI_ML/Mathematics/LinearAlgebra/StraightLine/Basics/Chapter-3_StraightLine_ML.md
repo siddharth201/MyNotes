@@ -31,7 +31,7 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer (Gemini)**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/WhyTan.md)    
 [**Answer (Chat-GPT)**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Chapter-1_sin%CE%B8_cos%CE%B8_tan%CE%B8.md)  
 
-### Q.  
+### Q. Explain distance between two pints? 
  
 
 
