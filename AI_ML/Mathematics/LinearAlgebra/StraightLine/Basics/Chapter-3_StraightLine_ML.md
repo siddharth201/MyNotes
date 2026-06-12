@@ -43,8 +43,8 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Parralel_vs_Perpendicular.md)  
 
 ### Q. If θ is 90 than we will not able to use `y =mx+c`, than we have to use `ax+by+c = 0` or `w1x+w2y+w0 = 0`. Explain this  
-[**Answer (Gemini)**]()
-[**Answer (Chat-GPT)**]()
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/StraightLine_Other_Eqin_GPT.md)
+
  
 
 
