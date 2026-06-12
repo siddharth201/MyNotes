@@ -7,7 +7,8 @@ Here is a clear diagram showing exactly how the sides are named relative to the 
 
 **Opposite:** Imagine you are standing in the corner where the angle θ is. The side directly across the triangle from you, the one you are looking at, is the "Opposite" side.  
 
-**Adjacent:** The word adjacent literally means "next to." This is the side that forms the base of the angle θ. It touches the angle but is not the longest diagonal side.
+**Adjacent:** The word adjacent literally means "next to." This is the side that forms the base of the angle θ. It touches the angle but is not the longest diagonal side.  
+
 Hypotenuse: This is always the longest side of the triangle, and it is always positioned directly across from the 90 
 ∘
   right angle.
