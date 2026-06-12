@@ -15,6 +15,10 @@ So their slopes are equal.
 
 ## Condition
 
+m1.m2 = -1  
+
+or  
+
 
     ​
 
