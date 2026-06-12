@@ -207,6 +207,9 @@ And only tan directly expresses:
 $\text{steepness}=\frac{vertical\ change}{horizontal\ change}$
 
 ---  
+
+### Q. What is rise/run?  
+[**Answer**]()  
 	
 
 
