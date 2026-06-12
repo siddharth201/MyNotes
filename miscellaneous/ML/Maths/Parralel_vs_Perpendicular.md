@@ -15,7 +15,9 @@ So their slopes are equal.
 
 ## Condition
 
-m_1 = m_2
+
+    ​
+
 
 ---
 
