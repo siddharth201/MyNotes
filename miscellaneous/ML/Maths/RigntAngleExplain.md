@@ -1,6 +1,6 @@
 Here is a clear diagram showing exactly how the sides are named relative to the angle θ (theta).  
 
-![Image]()
+![Image](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/1.Images/Screenshot%202026-06-12%20at%203.41.26%E2%80%AFPM.png)
 
 right triangle opposite adjacent theta diagram
 To remember the sides easily:
