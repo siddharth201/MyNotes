@@ -25,7 +25,7 @@ $$y = mx$$
 If $m = 2$, then for every $1$ step right, we go $2$ steps up. 
 
 **Step C: Shifting the line (Translation)**
-What if our relationship doesn't start at zero? For instance, what if a taxi charges a flat fee of $\$5$ just to get in, plus $\$2$ per mile ($x$)? 
+What if our relationship doesn't start at zero? For instance, what if a taxi charges a flat fee of $5₹$ just to get in, plus $2₹$ per mile ($x$)? 
 
 We need to shift our line $y = mx$ vertically by adding a constant starting value. We add $c$ to the equation to account for this vertical shift:
 $$y = mx + c$$
