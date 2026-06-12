@@ -49,11 +49,11 @@ Two lines are **perpendicular** if they:
 
 ## Condition
 
-m_1 \cdot m_2 = -1
+$m_1 \cdot m_2 = -1$
 
 OR
 
-m_2 = -\frac{1}{m_1}
+$m_2 = -\frac{1}{m_1}$
 
 ---
 
