@@ -40,7 +40,7 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Chapter-4_Distance_bw_two_Points.md)  
 
 ### Q. Explain Parallel and perpendicular lines?  
-[**Answer**]()
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Parralel_vs_Perpendicular.md)
  
 
 
