@@ -15,10 +15,14 @@ So their slopes are equal.
 
 ## Condition
 
-```text
+```swift
 m1.m2 = -1  
 
-```    ​
+or  
+
+m2 = -1/m2  
+```
+    ​
 
 
 ---
