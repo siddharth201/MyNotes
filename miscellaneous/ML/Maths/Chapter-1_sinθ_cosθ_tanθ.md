@@ -209,7 +209,7 @@ $\text{steepness}=\frac{vertical\ change}{horizontal\ change}$
 ---  
 
 ### Q. What is rise/run?  
-[**Answer**]()  
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/rise_run.md)  
 	
 
 
