@@ -61,17 +61,17 @@ $m_2 = -\frac{1}{m_1}$
 
 Let’s connect to angle:
 
-Slope = tanθ
+Slope = $tanθ$
 
 For perpendicular lines:
 
 Angle difference = 90°
 
-\tan(\theta + 90^\circ) = -\frac{1}{\tan\theta}
+$\tan(\theta + 90^\circ) = -\frac{1}{\tan\theta}$
 
 So:
 
-m_2 = -\frac{1}{m_1}
+$m_2 = -\frac{1}{m_1}$
 
 That’s where the rule comes from—not magic.
 
