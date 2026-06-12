@@ -37,7 +37,10 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer (Chat-GPT)**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Chapter-1_sin%CE%B8_cos%CE%B8_tan%CE%B8.md)  
 
 ### Q. Explain distance between two points on a Cartesian plane?   
-[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Chapter-4_Distance_bw_two_Points.md)
+[**Answer**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Chapter-4_Distance_bw_two_Points.md)  
+
+### Q. Explain Parallel and perpendicular lines?  
+[**Answer**]()
  
 
 
