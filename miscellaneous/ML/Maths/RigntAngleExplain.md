@@ -12,9 +12,9 @@ Here is a clear diagram showing exactly how the sides are named relative to the 
 **Hypotenuse:** This is always the longest side of the triangle, and it is always positioned directly across from the 90∘
   right angle.  
   
-#### When we map this directly to our y=mx+c graph:  
+#### When we map this directly to our $y=mx+c$ graph:  
 
-The Opposite side is the vertical change up the Y-axis (the "Rise").
-The Adjacent side is the horizontal change along the X-axis (the "Run").  
+* The Opposite side is the vertical change up the Y-axis (the "Rise").
+* The Adjacent side is the horizontal change along the X-axis (the "Run").  
 
 This visual makes it clear why tan(θ) (Opposite / Adjacent) perfectly represents the Slope (Rise / Run)!
