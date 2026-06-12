@@ -18,10 +18,6 @@ So their slopes are equal.
 ```text
 m1.m2 = -1  
 
-or  
-
-m2 = -1/m2  
-
 ```    ​
 
 
