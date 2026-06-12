@@ -47,7 +47,7 @@ When an AI "learns" a linear regression model, it is simply looking at a bunch o
 [**Answer (Chat-GPT)**](https://chatgpt.com/s/t_6a2be9bba99081918e62de6124ba1079)  
 
 ### What is Weight and Bias in ML wrt to straight line?  
-[**Answer (Gemini)**]()
+[**Answer (Gemini)**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Weight_Bias.md)
 [**Answer**](https://chatgpt.com/s/t_6a2beacd1950819182b9d2eab21b0e5e)
 
 
