@@ -9,9 +9,9 @@ Here is a clear diagram showing exactly how the sides are named relative to the 
 
 **Adjacent:** The word adjacent literally means "next to." This is the side that forms the base of the angle θ. It touches the angle but is not the longest diagonal side.  
 
-Hypotenuse: This is always the longest side of the triangle, and it is always positioned directly across from the 90 
-∘
-  right angle.
+**Hypotenuse:** This is always the longest side of the triangle, and it is always positioned directly across from the 90∘
+  right angle.  
+  
 When we map this directly to our y=mx+c graph:
 The Opposite side is the vertical change up the Y-axis (the "Rise").
 The Adjacent side is the horizontal change along the X-axis (the "Run").
