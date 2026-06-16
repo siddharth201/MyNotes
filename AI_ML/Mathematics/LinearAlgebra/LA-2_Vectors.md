@@ -58,15 +58,15 @@ The arrow—not just the endpoint—is the vector.
 
 For a 2D vector
 
-[
+$[
 \mathbf{v} = (x,y)
-]
+]$
 
 its length is found using the Pythagorean theorem:
 
-[
+$[
 |\mathbf{v}|=\sqrt{x^2+y^2}
-]
+]$
 
 Example:
 
