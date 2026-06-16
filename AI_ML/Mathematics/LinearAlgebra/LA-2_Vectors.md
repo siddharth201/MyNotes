@@ -99,17 +99,17 @@ Suppose we describe a house by three features:
 
 Instead of storing them separately, we combine them into one vector:
 
-[
+$[
 \boxed{\mathbf{x}=(1500,;3,;10)}
-]
+]$
 
 This single vector represents one training example.
 
 Another house:
 
-[
+$[
 \mathbf{x}=(2200,;4,;5)
-]
+]$
 
 Every row in your dataset is essentially a vector.
 
@@ -126,9 +126,9 @@ Consider a tiny grayscale image:
 
 It can be flattened into the vector:
 
-[
+$[
 (100,;120,;80,;60)
-]
+]$
 
 A real (224\times224) RGB image contains:
 
