@@ -32,7 +32,8 @@ To a physicist or mathematician, a vector is an arrow pointing in space. It has 
 
 ### Connecting it to our Straight Line  
 
-Remember our general equation: w1*x + w2*y + w0 = 0 ?
+Remember our general equation: $w1*x + w2*y + w0 = 0$ ?  
+
 In Machine Learning, we group the weights into a Weight Vector and the inputs into a Feature Vector:
 W = [w1, w2] <-- The Weight Vector
 X = [x, y] <-- The Feature Vector (Input Data)
