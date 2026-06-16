@@ -99,9 +99,9 @@ Suppose we describe a house by three features:
 
 Instead of storing them separately, we combine them into one vector:
 
-$[
+$$[
 \boxed{\mathbf{x}=(1500,;3,;10)}
-]$
+]$$
 
 This single vector represents one training example.
 
