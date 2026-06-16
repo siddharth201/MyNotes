@@ -25,8 +25,9 @@ house_vector = [2500, 3, 15]
 
 #### 2. The Geometric View (An Arrow)
 To a physicist or mathematician, a vector is an arrow pointing in space. It has two strict properties:
-Magnitude: The physical length of the arrow (how big the numbers are).
-Direction: Where the arrow is pointing (the angle).
+Magnitude: The physical length of the arrow (how big the numbers are).  
+
+* **Direction:** Where the arrow is pointing (the angle).
 Connecting it to our Straight Line
 Remember our general equation: w1*x + w2*y + w0 = 0 ?
 In Machine Learning, we group the weights into a Weight Vector and the inputs into a Feature Vector:
