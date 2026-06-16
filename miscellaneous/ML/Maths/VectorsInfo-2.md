@@ -3,9 +3,7 @@ In standard math, we deal with single numbers (like x=5 or y=10). In Machine Lea
 
 
 Why is this shift to Vectors so important?
-Dimensionality: A house doesn't just have an area (x). It has an area (x1
-​    
- ), a number of bedrooms (x 
+Dimensionality: A house doesn't just have an area (x). It has an area $(x1)$, a number of bedrooms (x 
 2
 ​    
  ), an age (x 
