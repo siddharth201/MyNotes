@@ -11,7 +11,7 @@ In standard math, we deal with single numbers (like x=5 or y=10). In Machine Lea
 ### What is a Vector?
 The fundamental building block of Machine Learning data.
 
-The Two Faces of a Vector
+### The Two Faces of a Vector
 
 1. The Computer Science View (A List)
 To a programmer or an AI, a vector is simply a 1-dimensional array of numbers. It is a way to organize related data into a single package.
