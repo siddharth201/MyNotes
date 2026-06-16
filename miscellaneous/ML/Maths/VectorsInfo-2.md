@@ -16,10 +16,14 @@ The fundamental building block of Machine Learning data.
 #### 1. The Computer Science View (A List)
 To a programmer or an AI, a vector is simply a 1-dimensional array of numbers. It is a way to organize related data into a single package.  
 
+```text
 # A vector representing a house:
 house_vector = [2500, 3, 15]
 # [Square_Feet, Bedrooms, Age_in_Years]
-2. The Geometric View (An Arrow)
+```  
+  
+
+#### 2. The Geometric View (An Arrow)
 To a physicist or mathematician, a vector is an arrow pointing in space. It has two strict properties:
 Magnitude: The physical length of the arrow (how big the numbers are).
 Direction: Where the arrow is pointing (the angle).
