@@ -34,7 +34,11 @@ To a physicist or mathematician, a vector is an arrow pointing in space. It has 
 
 Remember our general equation: $w1*x + w2*y + w0 = 0$ ?  
 
-In Machine Learning, we group the weights into a Weight Vector and the inputs into a Feature Vector:
+In Machine Learning, we group the weights into a **Weight Vector** and the inputs into a **Feature Vector**:  
+
+```text
 W = [w1, w2] <-- The Weight Vector
-X = [x, y] <-- The Feature Vector (Input Data)
+X = [x, y] <-- The Feature Vector (Input Data)  
+```  
+
 By turning these variables into vectors, the computer can process thousands of inputs instantly using Matrix Math, rather than calculating them one by one.
