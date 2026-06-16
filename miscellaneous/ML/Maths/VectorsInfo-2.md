@@ -1,7 +1,9 @@
 
+In standard math, we deal with single numbers (like x=5 or y=10). In Machine Learning, dealing with one number at a time is far too slow and limited. We need a way to package multiple numbers together and mathematically operate on them all at once. That is what a vector is.
+
+
 Why is this shift to Vectors so important?
-Dimensionality: A house doesn't just have an area (x). It has an area (x 
-1
+Dimensionality: A house doesn't just have an area (x). It has an area (x1
 ​    
  ), a number of bedrooms (x 
 2
