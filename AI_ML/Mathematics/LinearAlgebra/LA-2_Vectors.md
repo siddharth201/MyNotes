@@ -219,4 +219,5 @@ A **vector** is an ordered collection of numbers that represents **both magnitud
 ---  
 
 ### Additional Info
-
+[Info-1]()
+[Info-2]()
