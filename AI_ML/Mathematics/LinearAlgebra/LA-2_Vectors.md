@@ -182,25 +182,6 @@ The arrow from ((0,0)) to ((4,1)) is the vector.
 
 ---
 
-# 8. A beautiful connection to trigonometry
-
-Suppose a vector has:
-
-* Length (r)
-* Angle $(\theta)$ with the x-axis
-
-Its horizontal and vertical components are:
-
-$genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_X"}}$
-
-and
-
-$genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_Y"}}$
-
-This is exactly why **sine and cosine** are so important in geometry, physics, and AI.
-
----
-
 # 9. Intuition for AI/ML
 
 Think of a vector as a **profile** or **list of measurements**.
