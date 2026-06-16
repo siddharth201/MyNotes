@@ -191,11 +191,11 @@ Suppose a vector has:
 
 Its horizontal and vertical components are:
 
-genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_X"}}
+$genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_X"}}$
 
 and
 
-genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_Y"}}
+$genui{"trigonometry_learning_block":{"type_id":"TRIG_COMPONENT_Y"}}$
 
 This is exactly why **sine and cosine** are so important in geometry, physics, and AI.
 
@@ -219,5 +219,6 @@ A **vector** is an ordered collection of numbers that represents **both magnitud
 ---  
 
 ### Additional Info
-[Info-1](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/VectorsInfo-1.md)
+[Info-1](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/VectorsInfo-1.md)  
+
 [Info-2](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/VectorsInfo-2.md)
