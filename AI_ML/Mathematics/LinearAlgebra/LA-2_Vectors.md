@@ -182,7 +182,7 @@ The arrow from ((0,0)) to ((4,1)) is the vector.
 
 ---
 
-# 9. Intuition for AI/ML
+# 8. Intuition for AI/ML
 
 Think of a vector as a **profile** or **list of measurements**.
 
