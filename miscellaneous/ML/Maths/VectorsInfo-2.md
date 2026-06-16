@@ -21,3 +21,8 @@ To a physicist or mathematician, a vector is an arrow pointing in space. It has 
 Magnitude: The physical length of the arrow (how big the numbers are).
 Direction: Where the arrow is pointing (the angle).
 Connecting it to our Straight Line
+Remember our general equation: w1*x + w2*y + w0 = 0 ?
+In Machine Learning, we group the weights into a Weight Vector and the inputs into a Feature Vector:
+W = [w1, w2] <-- The Weight Vector
+X = [x, y] <-- The Feature Vector (Input Data)
+By turning these variables into vectors, the computer can process thousands of inputs instantly using Matrix Math, rather than calculating them one by one.
