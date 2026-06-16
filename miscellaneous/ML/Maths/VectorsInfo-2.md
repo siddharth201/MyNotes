@@ -13,8 +13,9 @@ The fundamental building block of Machine Learning data.
 
 ### The Two Faces of a Vector
 
-1. The Computer Science View (A List)
-To a programmer or an AI, a vector is simply a 1-dimensional array of numbers. It is a way to organize related data into a single package.
+#### 1. The Computer Science View (A List)
+To a programmer or an AI, a vector is simply a 1-dimensional array of numbers. It is a way to organize related data into a single package.  
+
 # A vector representing a house:
 house_vector = [2500, 3, 15]
 # [Square_Feet, Bedrooms, Age_in_Years]
