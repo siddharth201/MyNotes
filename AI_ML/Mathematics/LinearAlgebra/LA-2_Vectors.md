@@ -215,4 +215,8 @@ In modern AI, almost everything—text, images, audio, and users—is represente
 ## Key takeaway
 
 A **vector** is an ordered collection of numbers that represents **both magnitude and direction** geometrically, and **features or data** computationally. In machine learning, each data point is typically treated as a vector, and learning consists of finding the right **weight vector** to make accurate predictions.
+  
+---  
+
+### Additional Info
 
