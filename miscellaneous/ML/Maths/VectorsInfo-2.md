@@ -7,8 +7,10 @@ In standard math, we deal with single numbers (like x=5 or y=10). In Machine Lea
 
 **Operations:** Once your data is in a vector, you can do magical things. For example, if you have a vector representing "King" and a vector representing "Woman", you can add and subtract them. $[King] - [Man] + [Woman]$ in a well-trained AI will actually equal the vector for $[Queen]!$  
 
-What is a Vector?
+
+### What is a Vector?
 The fundamental building block of Machine Learning data.
+
 The Two Faces of a Vector
 
 1. The Computer Science View (A List)
