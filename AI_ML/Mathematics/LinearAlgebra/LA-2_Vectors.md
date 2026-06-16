@@ -72,15 +72,15 @@ Example:
 
 For
 
-[
+$[
 \mathbf{v}=(3,4)
-]
+]$
 
 the magnitude is
 
-[
+$[
 |\mathbf{v}|=\sqrt{3^2+4^2}=\sqrt{9+16}=5.
-]
+]$
 
 So this vector has:
 
