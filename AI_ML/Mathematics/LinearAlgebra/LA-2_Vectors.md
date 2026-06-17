@@ -122,11 +122,11 @@ Consider a tiny grayscale image:
 
 It can be flattened into the vector:
 
-$(100,120,80,60)$
+$$(100,120,80,60)$$
 
 A real $(224\times224)$ RGB image contains:
 
-$224 \times 224 \times 3 = 150,528$
+$$224 \times 224 \times 3 = 150,528$$
 
 numbers, so it is a **150,528-dimensional vector**.
 
