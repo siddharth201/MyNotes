@@ -122,9 +122,7 @@ Consider a tiny grayscale image:
 
 It can be flattened into the vector:
 
-$[
-(100,;120,;80,;60)
-]$
+$(100,120,80,60)$
 
 A real $(224\times224)$ RGB image contains:
 
