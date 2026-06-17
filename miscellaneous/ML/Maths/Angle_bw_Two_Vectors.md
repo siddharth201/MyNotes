@@ -1,14 +1,14 @@
 Your notes are covering one of the most important concepts in ML:
 
-The angle between two vectors tells us how similar their directions are.
+>> **The angle between two vectors tells us how similar their directions are.**
 
 This idea directly leads to:
 
-Dot Product
-Cosine Similarity
-Embeddings
-Recommendation Systems
-Transformers
+* Dot Product
+* Cosine Similarity
+* Embeddings
+* Recommendation Systems
+* Transformers
  
 
 # Angle Between Two Vectors
@@ -678,7 +678,7 @@ Cosine Similarity
 
 to compare vectors.  
 
-Mental Model  
+## Mental Model  
 
 Angle Between Vectors
 
@@ -696,4 +696,7 @@ Embeddings
 
         ↓
 
-Search, Recommendations, LLMs
+Search, Recommendations, LLMs  
+
+
+This topic is the bridge from Linear Algebra → Embeddings → Transformers → ChatGPT. The next natural topic is Projection of a Vector onto Another Vector, because the dot product is actually measuring a projection.
