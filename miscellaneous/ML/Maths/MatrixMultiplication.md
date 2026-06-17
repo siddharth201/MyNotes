@@ -18,6 +18,7 @@ A neuron in a neural network computes:
 y = Wx + b
 
 where:
+
 - W = Weight Matrix
 - x = Input Vector
 - b = Bias Vector
@@ -33,6 +34,7 @@ A matrix is a rectangular arrangement of numbers.
 Example:
 
 A =
+
 [
   [1, 2],
   [3, 4]
@@ -54,12 +56,14 @@ Dimension:
 Suppose:
 
 A =
+
 [
   [1, 2],
   [3, 4]
 ]
 
 B =
+
 [
   [5, 6],
   [7, 8]
@@ -77,37 +81,42 @@ Row of A × Column of B
 
 # 3. The Golden Rule
 
-For multiplication:
+Suppose:
 
-A(m × n)
+A is an (m × n) matrix
 
-B(n × p)
+B is an (n × p) matrix
 
-The inner dimensions must match.
+Then:
+
+AB is possible only if:
+
+Number of columns in A
+=
+Number of rows in B
+
+Result dimension:
+
+(m × p)
 
 Example:
 
-2 × 3  ×  3 × 4
+(2 × 3) × (3 × 4)
 
 Valid
 
 Result:
 
-2 × 4
-
-Rule:
-
-(Number of columns in first matrix)
-=
-(Number of rows in second matrix)
+(2 × 4)
 
 ---
 
 # 4. Why This Rule Exists
 
-Suppose:
+Consider:
 
 A =
+
 [
   [1, 2, 3]
 ]
@@ -117,6 +126,7 @@ Dimension:
 1 × 3
 
 B =
+
 [
   [4],
   [5],
@@ -127,67 +137,83 @@ Dimension:
 
 3 × 1
 
-To multiply:
+The multiplication requires:
 
-(1×3) × (3×1)
+Row of A:
 
-The 3's match.
+[1, 2, 3]
 
-We can compute:
+Column of B:
 
-1×4 + 2×5 + 3×6
+[
+  [4],
+  [5],
+  [6]
+]
 
-Result:
+Multiply corresponding elements:
 
-32
+(1×4) + (2×5) + (3×6)
+
+= 4 + 10 + 18
+
+= 32
+
+Notice:
+
+3 numbers in row
+=
+3 numbers in column
+
+That's why the inner dimensions must match.
 
 ---
 
 # 5. Row × Column Rule
 
-Each element of the result matrix is:
+Every element in the result matrix is calculated by:
 
-(Row from first matrix)
-
-dot
-
-(Column from second matrix)
+Row of First Matrix
+⋅
+Column of Second Matrix
 
 Mathematically:
 
-(AB)ᵢⱼ = Σ aᵢₖ bₖⱼ
+(AB)ij = Σ(aik × bkj)
 
 Think:
 
 Result Cell
 =
 (Row of A)
-·
+⋅
 (Column of B)
 
 ---
 
-# 6. Example 1 (2×2 Multiplication)
+# 6. Example: 2×2 Matrix Multiplication
 
 A =
+
 [
   [1, 2],
   [3, 4]
 ]
 
 B =
+
 [
   [5, 6],
   [7, 8]
 ]
 
-Find C = AB
+Find:
+
+C = AB
 
 ---
 
-## First Cell
-
-Row1 × Col1
+## First Element (Row1 × Col1)
 
 (1×5) + (2×7)
 
@@ -197,9 +223,7 @@ Row1 × Col1
 
 ---
 
-## Second Cell
-
-Row1 × Col2
+## Second Element (Row1 × Col2)
 
 (1×6) + (2×8)
 
@@ -209,9 +233,7 @@ Row1 × Col2
 
 ---
 
-## Third Cell
-
-Row2 × Col1
+## Third Element (Row2 × Col1)
 
 (3×5) + (4×7)
 
@@ -221,9 +243,7 @@ Row2 × Col1
 
 ---
 
-## Fourth Cell
-
-Row2 × Col2
+## Fourth Element (Row2 × Col2)
 
 (3×6) + (4×8)
 
@@ -235,7 +255,8 @@ Row2 × Col2
 
 Result:
 
-C =
+AB =
+
 [
   [19, 22],
   [43, 50]
@@ -245,30 +266,35 @@ C =
 
 # 7. Visual Memory Trick
 
-Matrix multiplication:
-
-Rows → Columns
-
-Never:
-
-Rows → Rows
-
-Never:
-
-Columns → Columns
-
-Always:
+Matrix multiplication always means:
 
 Row × Column
 
+Never:
+
+Row × Row
+
+Never:
+
+Column × Column
+
+Always remember:
+
+→ Row of First Matrix
+
+×
+
+↓ Column of Second Matrix
+
 ---
 
-# 8. Example 2
+# 8. Example: 2×3 × 3×2
 
 A =
+
 [
- [1,2,3],
- [4,5,6]
+  [1, 2, 3],
+  [4, 5, 6]
 ]
 
 Dimension:
@@ -276,10 +302,11 @@ Dimension:
 2 × 3
 
 B =
+
 [
- [7,8],
- [9,10],
- [11,12]
+  [7, 8],
+  [9, 10],
+  [11, 12]
 ]
 
 Dimension:
@@ -296,113 +323,118 @@ Result dimension:
 
 ---
 
-First Element:
+Element (1,1)
 
-(1×7)+(2×9)+(3×11)
+(1×7) + (2×9) + (3×11)
 
 = 58
 
-Second Element:
+Element (1,2)
 
-(1×8)+(2×10)+(3×12)
+(1×8) + (2×10) + (3×12)
 
 = 64
 
-Third Element:
+Element (2,1)
 
-(4×7)+(5×9)+(6×11)
+(4×7) + (5×9) + (6×11)
 
 = 139
 
-Fourth Element:
+Element (2,2)
 
-(4×8)+(5×10)+(6×12)
+(4×8) + (5×10) + (6×12)
 
 = 154
 
+---
+
 Result:
 
+AB =
+
 [
- [58,64],
- [139,154]
+  [58, 64],
+  [139, 154]
 ]
 
 ---
 
 # 9. Matrix Multiplication is NOT Commutative
 
-Normal numbers:
+For normal numbers:
 
 2 × 3 = 3 × 2
 
-Matrixes:
+For matrices:
 
 AB ≠ BA
 
-Usually:
-
-AB != BA
-
-This is extremely important.
+in general.
 
 ---
 
-# Example
+Example:
 
 A =
+
 [
- [1,2]
+  [1, 2]
 ]
 
 Dimension:
 
-1×2
+1 × 2
 
 B =
+
 [
- [3],
- [4]
+  [3],
+  [4]
 ]
 
 Dimension:
 
-2×1
+2 × 1
 
-AB:
+AB =
 
-=
-[11]
-
-Dimension:
-
-1×1
-
-But
-
-BA:
-
-=
 [
- [3,6],
- [4,8]
+  [11]
 ]
 
 Dimension:
 
-2×2
+1 × 1
 
-Completely different.
+But:
+
+BA =
+
+[
+  [3, 6],
+  [4, 8]
+]
+
+Dimension:
+
+2 × 2
+
+Clearly:
+
+AB ≠ BA
 
 ---
 
 # 10. Identity Matrix
 
-Similar to number 1.
+Identity Matrix is the matrix version of number 1.
 
 I =
+
 [
- [1,0],
- [0,1]
+  [1, 0],
+  [0, 1]
 ]
 
 Property:
@@ -411,50 +443,47 @@ AI = IA = A
 
 Example:
 
+A =
+
 [
- [1,2],
- [3,4]
+  [1, 2],
+  [3, 4]
 ]
 
-×
+Then:
+
+AI =
 
 [
- [1,0],
- [0,1]
-]
-
-=
-
-[
- [1,2],
- [3,4]
+  [1, 2],
+  [3, 4]
 ]
 
 ---
 
-# 11. Matrix Multiplication in ML
+# 11. Matrix Multiplication in Machine Learning
 
-Suppose:
+Suppose a student has:
 
-Student Features:
+Study Hours = 5
+
+Sleep Hours = 7
+
+Input Vector:
 
 x =
-[
- [Study Hours],
- [Sleep Hours]
-]
 
-=
 [
- [5],
- [7]
+  [5],
+  [7]
 ]
 
 Weights:
 
 W =
+
 [
- [2,3]
+  [2, 3]
 ]
 
 Prediction:
@@ -463,76 +492,84 @@ y = Wx
 
 =
 
-(2×5)+(3×7)
+(2×5) + (3×7)
 
 =
 
 31
 
-This is exactly how a neuron computes output.
-
 ---
 
 # 12. Neural Network Connection
 
-Neuron:
+A neuron computes:
 
 y = Wx + b
 
-where:
-
-W = Weight Matrix
-
-x = Input Vector
-
-b = Bias
-
-Example:
+Suppose:
 
 W =
+
 [
- [0.2, 0.8]
+  [0.2, 0.8]
 ]
 
 x =
+
 [
- [10],
- [20]
+  [10],
+  [20]
 ]
 
-Output:
+Then:
 
-(0.2×10)+(0.8×20)
+Wx
 
-= 18
+=
 
-Then bias is added.
+(0.2×10) + (0.8×20)
+
+=
+
+2 + 16
+
+=
+
+18
+
+Add bias:
+
+y = 18 + b
+
+This is the fundamental computation behind every neuron in a neural network.
 
 ---
 
-# 13. Interview Questions
+# Interview Questions
 
-Q. When can two matrices be multiplied?
+### Q1. When can two matrices be multiplied?
 
 Answer:
 
-Number of columns in first matrix must equal number of rows in second matrix.
+Number of columns in the first matrix must equal the number of rows in the second matrix.
 
 ---
 
-Q. What will be the dimension of the result?
+### Q2. What is the dimension of the result?
 
-Answer:
+If:
 
-(m × n) × (n × p)
+A = (m × n)
 
-Result:
+B = (n × p)
 
-(m × p)
+Then:
+
+AB = (m × p)
 
 ---
 
-Q. Is matrix multiplication commutative?
+### Q3. Is Matrix Multiplication Commutative?
 
 Answer:
 
@@ -550,9 +587,9 @@ AB ≠ BA
 
 2. Rule:
 
-Columns of first matrix = Rows of second matrix
+Columns of First Matrix = Rows of Second Matrix
 
-3. Result size:
+3. Result dimension:
 
 (m × n) × (n × p)
 
@@ -560,7 +597,7 @@ Columns of first matrix = Rows of second matrix
 
 4. Every element is:
 
-(Row of A) · (Column of B)
+(Row of A) ⋅ (Column of B)
 
 5. Matrix multiplication is NOT commutative.
 
@@ -569,3 +606,5 @@ Columns of first matrix = Rows of second matrix
 y = Wx + b
 
 which is matrix multiplication followed by bias addition.
+
+7. Matrix multiplication is one of the most important operations in AI, ML, and Deep Learning.
