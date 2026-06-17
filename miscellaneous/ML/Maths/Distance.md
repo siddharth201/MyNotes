@@ -11,28 +11,16 @@ In mathematics, a **Norm** is just a function that calculates the "size" or "len
 
 There isn't just one way to measure length. We use different "Norms" depending on the problem.  
 
-A. Euclidean Magnitude (L2 Norm)
-This is the standard, everyday "length" of an arrow. It is derived directly from the Pythagorean theorem (a 
-2
- +b 
-2
- =c 
-2
- ).
-Formula: ∣∣v∣∣ 
-2
-​    
- = 
-x 
-2
- +y 
-2
+### A. Euclidean Magnitude ($L2$ Norm)  
+
+This is the standard, everyday "length" of an arrow. It is derived directly from the Pythagorean theorem $(a2+b2=c2)$.  
+
+* **Formula:** $∣∣v∣∣2 = x2 + y2$
  
 
-​    
- 
-Intuition: If you take a tape measure and stretch it directly from the origin (0,0) to the tip of your vector, this is the number you get. It calculates the shortest, straight-line distance.
-In ML: It heavily penalizes large numbers because it squares the values.
+* **Intuition:** If you take a tape measure and stretch it directly from the origin $(0,0)$ to the tip of your vector, this is the number you get. It calculates the shortest, straight-line distance.  
+
+* In ML: It heavily penalizes large numbers because it squares the values.
 B. Manhattan Magnitude (L 
 1
 ​    
