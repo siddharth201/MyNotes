@@ -676,4 +676,6 @@ Cosine Similarity
 (||x|| ||y||)
 ```
 
-to compare vectors.
+to compare vectors.  
+
+Mental Model
