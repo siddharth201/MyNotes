@@ -255,12 +255,12 @@ Distance(A, B) = ||A - B||
 
 Everything in this chapter revolves around this idea.
 
-Distance between points
-    ↓
-Difference Vector
-    ↓
-Magnitude
-    ↓
+Distance between points  
+    ↓  
+Difference Vector  
+    ↓  
+Magnitude  
+    ↓  
 Norm
 
 Understanding this relationship is fundamental for:
