@@ -699,4 +699,4 @@ Embeddings
 Search, Recommendations, LLMs  
 
 
-This topic is the bridge from **Linear Algebra → Embeddings → Transformers → ChatGPT**. The next natural topic is Projection of a Vector onto Another Vector, because the dot product is actually measuring a projection.
+This topic is the bridge from **Linear Algebra → Embeddings → Transformers → ChatGPT**. The next natural topic is **Projection of a Vector onto Another Vector, because the dot product is actually measuring a projection.
