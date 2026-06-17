@@ -153,9 +153,7 @@ A point and a vector are closely related.
 
 The point
 
-$[
-(4,1)
-]$
+$(4,1)$
 
 can also be viewed as the vector that starts at the origin and ends at ((4,1)).
 
