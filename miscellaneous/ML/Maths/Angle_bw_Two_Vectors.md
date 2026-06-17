@@ -1,6 +1,6 @@
 Your notes are covering one of the most important concepts in ML:
 
->> **The angle between two vectors tells us how similar their directions are.**
+> **The angle between two vectors tells us how similar their directions are.**
 
 This idea directly leads to:
 
