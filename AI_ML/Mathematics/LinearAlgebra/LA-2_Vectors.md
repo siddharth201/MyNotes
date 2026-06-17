@@ -130,6 +130,8 @@ $[
 224\times224\times3 = 150,!528
 ]$
 
+$$224 \times 224 \times 3 = 150,528$$
+
 numbers, so it is a **150,528-dimensional vector**.
 
 ---
