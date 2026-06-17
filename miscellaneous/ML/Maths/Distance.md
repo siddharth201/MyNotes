@@ -20,12 +20,11 @@ This is the standard, everyday "length" of an arrow. It is derived directly from
 
 * **Intuition:** If you take a tape measure and stretch it directly from the origin $(0,0)$ to the tip of your vector, this is the number you get. It calculates the shortest, straight-line distance.  
 
-* In ML: It heavily penalizes large numbers because it squares the values.
-B. Manhattan Magnitude (L 
-1
-​    
-  Norm)
-Imagine the grid of the vector canvas is a city map with buildings, like Manhattan in New York. You cannot fly in a straight diagonal line; you must walk along the horizontal and vertical streets.
+* **In ML:** It heavily penalizes large numbers because it squares the values.  
+
+### B. Manhattan Magnitude ($L 1$ Norm)
+Imagine the grid of the vector canvas is a city map with buildings, like Manhattan in New York. You cannot fly in a straight diagonal line; you must walk along the horizontal and vertical streets.  
+
 Formula: ∣∣v∣∣ 
 1
 ​    
