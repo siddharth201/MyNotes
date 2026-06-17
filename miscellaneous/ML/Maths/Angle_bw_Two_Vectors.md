@@ -1,21 +1,31 @@
-Your notes are covering one of the most important concepts in ML:
-
-> **The angle between two vectors tells us how similar their directions are.**
-
-This idea directly leads to:
-
-* Dot Product
-* Cosine Similarity
-* Embeddings
-* Recommendation Systems
-* Transformers
- 
-
 # Angle Between Two Vectors
 
-## Why Do We Care About Angle?
+## Introduction
 
-Suppose we have two vectors:
+The angle between two vectors tells us how similar their directions are.
+
+```text
+Smaller Angle  → More Similar Direction
+
+90°            → Perpendicular
+
+180°           → Opposite Direction
+```
+
+This concept is extremely important in:
+
+- Machine Learning
+- Deep Learning
+- Embeddings
+- Recommendation Systems
+- Search Engines
+- ChatGPT / LLMs
+
+---
+
+# Geometric View
+
+Consider two vectors:
 
 ```text
 x =
@@ -31,119 +41,80 @@ y =
 ]
 ```
 
-The angle between them tells us:
-
-```text
-How similar their directions are.
-```
-
-Important:
-
-```text
-Small Angle
-→ Similar Direction
-
-90°
-→ Unrelated
-
-180°
-→ Opposite Direction
-```
-
----
-
-# Geometric Picture
-
-Suppose:
-
-```text
-x =
-[
-  [1],
-  [0]
-]
-```
-
-and
-
-```text
-y =
-[
-  [2],
-  [2]
-]
-```
-
 Visual:
 
 ```text
-          y(2,2)
-            ↗
-           /
-          /
+           y
+          ↗
          /
---------/----------→ x
-      θ
-```  
+        /
+       / θ
+      /
+-----/--------------→ x
+```
 
-The angle θ measures how far apart the directions are.
+The angle between the vectors is θ.
 
 ---
 
-# Dot Product Formula
+# Relationship Between Dot Product and Angle
 
-We know:
-
-```text
-x · y
-
-=
-x₁y₁ + x₂y₂ + ... + xₙyₙ
-```
-
-But geometrically:
+The most important formula is:
 
 ```text
-x · y = ||x|| ||y|| cos(θ)
+xᵀy = ||x|| ||y|| cos(θ)
 ```
 
 where:
 
 ```text
-||x|| = magnitude of x
+xᵀy   = Dot Product
 
-||y|| = magnitude of y
+||x|| = Magnitude of Vector x
 
-θ = angle between vectors
+||y|| = Magnitude of Vector y
+
+θ     = Angle Between Vectors
 ```
-
-This is one of the most important formulas in Linear Algebra.
 
 ---
 
-# Finding the Angle
+# Formula to Find Angle
 
-Rearrange:
+Rearranging:
 
 ```text
-cos(θ) = (x · y) / (||x|| ||y||)  
+cos(θ)
 
+=
+
+(xᵀy)
+
+/
+
+(||x|| ||y||)
 ```
 
 Therefore:
 
 ```text
-θ = cos⁻¹((x · y) / (||x|| ||y||))  
+θ
 
+=
+
+cos⁻¹
+(
+(xᵀy)
+/
+(||x|| ||y||)
+)
 ```
-
-This is the standard formula.
 
 ---
 
 # Example 1
 
-Suppose:
+Given:
 
 ```text
 x =
@@ -161,16 +132,23 @@ y =
 
 ---
 
-## Step 1: Dot Product
+## Step 1: Compute Dot Product
 
 ```text
-x · y = (2×1) + (2×0) = 2  
+xᵀy
 
+=
+
+(2 × 1) + (2 × 0)
+
+=
+
+2
 ```
 
 ---
 
-## Step 2: Magnitudes
+## Step 2: Compute Magnitudes
 
 Magnitude of x:
 
@@ -206,7 +184,7 @@ Magnitude of y:
 
 ---
 
-## Step 3: Calculate cos(θ)
+## Step 3: Compute Cosine
 
 ```text
 cos(θ)
@@ -214,7 +192,9 @@ cos(θ)
 =
 
 2
+
 /
+
 (2√2 × 1)
 
 =
@@ -224,7 +204,7 @@ cos(θ)
 
 ---
 
-## Step 4: Find θ
+## Step 4: Find Angle
 
 ```text
 θ
@@ -241,16 +221,14 @@ cos⁻¹(1/√2)
 Result:
 
 ```text
-Angle = 45°
+Angle Between Vectors = 45°
 ```
-
-This matches your notes.
 
 ---
 
 # Example 2: Perpendicular Vectors
 
-Suppose:
+Given:
 
 ```text
 x =
@@ -266,16 +244,14 @@ y =
 ]
 ```
 
----
-
-## Dot Product
+Dot Product:
 
 ```text
-x · y
+xᵀy
 
 =
 
-(0×1) + (1×0)
+(0 × 1) + (1 × 0)
 
 =
 
@@ -299,79 +275,52 @@ Thus:
 
 =
 
-cos⁻¹(0)
-
-=
-
 90°
 ```
 
 Result:
 
 ```text
-Vectors are perpendicular.
+Vectors are Perpendicular
 ```
-
----
-
-# Important Observation
-
-If:
-
-```text
-x · y = 0
-```
-
-Then:
-
-```text
-θ = 90°
-```
-
-This means:
-
-```text
-Vectors are orthogonal
-(perpendicular)
-```
-
-Very important in ML.
 
 ---
 
 # Understanding Cosine Values
 
-We know:
+Important fact:
 
 ```text
 -1 ≤ cos(θ) ≤ 1
 ```
 
-Therefore:
+This means:
 
 ```text
--1 ≤
+-1
 
-(x · y)
+≤
+
+(xᵀy)
+
 /
+
 (||x|| ||y||)
 
-≤ 1
-```
+≤
 
-This explains the note in your screenshot.
+1
+```
 
 ---
 
-# Interpretation of Cos(θ)
+# Interpretation of Angle
 
-## Case 1
+## Case 1: Same Direction
 
 ```text
 θ = 0°
 ```
-
-Then:
 
 ```text
 cos(θ) = 1
@@ -380,20 +329,26 @@ cos(θ) = 1
 Meaning:
 
 ```text
-Same direction
+Maximum Similarity
 ```
 
-Maximum similarity.
+Example:
+
+```text
+[1, 1]
+
+and
+
+[2, 2]
+```
 
 ---
 
-## Case 2
+## Case 2: Acute Angle
 
 ```text
 0° < θ < 90°
 ```
-
-Then:
 
 ```text
 cos(θ) > 0
@@ -402,20 +357,16 @@ cos(θ) > 0
 Meaning:
 
 ```text
-Generally pointing in the same direction.
+Vectors generally point in the same direction.
 ```
-
-Positive similarity.
 
 ---
 
-## Case 3
+## Case 3: Perpendicular
 
 ```text
 θ = 90°
 ```
-
-Then:
 
 ```text
 cos(θ) = 0
@@ -424,20 +375,24 @@ cos(θ) = 0
 Meaning:
 
 ```text
-No directional relationship.
+No Directional Similarity
 ```
 
-Orthogonal.
+Important:
+
+```text
+xᵀy = 0
+```
+
+implies vectors are orthogonal.
 
 ---
 
-## Case 4
+## Case 4: Obtuse Angle
 
 ```text
 90° < θ < 180°
 ```
-
-Then:
 
 ```text
 cos(θ) < 0
@@ -446,20 +401,16 @@ cos(θ) < 0
 Meaning:
 
 ```text
-Opposite tendency.
+Vectors point in opposite tendencies.
 ```
-
-Negative similarity.
 
 ---
 
-## Case 5
+## Case 5: Opposite Direction
 
 ```text
 θ = 180°
 ```
-
-Then:
 
 ```text
 cos(θ) = -1
@@ -468,7 +419,7 @@ cos(θ) = -1
 Meaning:
 
 ```text
-Exactly opposite directions.
+Completely Opposite Directions
 ```
 
 ---
@@ -482,77 +433,96 @@ Cosine Similarity
 
 =
 
-(x · y)
+(xᵀy)
 
 /
+
 (||x|| ||y||)
 ```
 
 Notice:
 
 ```text
-Cosine Similarity
-
-=
-
-cos(θ)
+Cosine Similarity = cos(θ)
 ```
 
-So ML doesn't actually compute θ.
-
-It directly uses cos(θ).
+Instead of computing θ, ML algorithms directly use cos(θ).
 
 ---
 
-# Why ML Uses Cosine Similarity
+# Why Cosine Similarity is Useful
 
 Suppose:
 
 ```text
 Document A
+
 =
 [100, 5, 2]
 
 Document B
+
 =
 [200, 10, 4]
 ```
 
-Lengths differ greatly.
+Magnitudes are different.
 
-But direction is almost identical.
+However:
 
-Cosine similarity focuses on:
+```text
+Direction is almost identical.
+```
+
+Cosine Similarity captures:
 
 ```text
 Direction
 
-not
+NOT
 
 Magnitude
 ```
-
-This is extremely useful in:
-
-- NLP
-- Search Engines
-- Recommendation Systems
-- Embeddings
-- LLMs
 
 ---
 
 # Applications in Machine Learning
 
-## Embeddings
+## Word Embeddings
 
-ChatGPT converts text into vectors.
+```text
+King
 
-Similarity between vectors:
+Queen
+
+Man
+
+Woman
+```
+
+are represented as vectors.
+
+Similarity is measured using:
 
 ```text
 Cosine Similarity
 ```
+
+---
+
+## Search Engines
+
+Compare:
+
+```text
+Query Vector
+
+and
+
+Document Vector
+```
+
+using angle.
 
 ---
 
@@ -565,44 +535,28 @@ User Vector
 
 and
 
-Movie Vector
+Movie/Product Vector
 ```
 
-using angle.
-
 ---
 
-## Search Engines
+## ChatGPT / LLMs
 
-Query vector
-
-vs
-
-Document vector
-
----
-
-## Clustering
-
-Find similar data points.
-
----
-
-# Key Takeaways
-
-1. Angle measures similarity of directions.
-
-2. Dot Product Formula:
+Embeddings are compared using:
 
 ```text
-x · y
-
-=
-
-||x|| ||y|| cos(θ)
+Cosine Similarity
 ```
 
-3. Angle Formula:
+to find semantic similarity.
+
+---
+
+# Interview Questions
+
+### Q1. How do you find angle between two vectors?
+
+Answer:
 
 ```text
 θ
@@ -611,16 +565,56 @@ x · y
 
 cos⁻¹
 (
-(x · y)
+(xᵀy)
 /
 (||x|| ||y||)
 )
 ```
 
+---
+
+### Q2. What does xᵀy = 0 mean?
+
+Answer:
+
+```text
+Vectors are orthogonal
+(perpendicular)
+```
+
+---
+
+### Q3. What does cosine similarity measure?
+
+Answer:
+
+```text
+Directional Similarity
+between vectors.
+```
+
+---
+
+# Key Takeaways
+
+1. Angle measures directional similarity.
+
+2. Fundamental Formula:
+
+```text
+xᵀy = ||x|| ||y|| cos(θ)
+```
+
+3. Angle Formula:
+
+```text
+θ = cos⁻¹( (xᵀy) / (||x|| ||y||) )
+```
+
 4. If:
 
 ```text
-x · y = 0
+xᵀy = 0
 ```
 
 then vectors are perpendicular.
@@ -641,39 +635,20 @@ cos(θ) = -1
 
 vectors point in opposite directions.
 
-7. Modern AI systems heavily use:
+7. Cosine Similarity is one of the most important similarity measures used in AI and Machine Learning.
+
+---
+
+# Mental Model
 
 ```text
-Cosine Similarity
-
-=
-
-(x · y)
-/
-(||x|| ||y||)
-```
-
-to compare vectors.  
-
-## Mental Model  
-
 Angle Between Vectors
-
-        ↓
-
-Measures Similarity
-
-        ↓
-
-Cosine Similarity
-
-        ↓
-
-Embeddings
-
-        ↓
-
-Search, Recommendations, LLMs  
-
-
-This topic is the bridge from **Linear Algebra → Embeddings → Transformers → ChatGPT**. The next natural topic is **Projection of a Vector onto Another Vector**, because the dot product is actually measuring a projection.
+          ↓
+ Direction Similarity
+          ↓
+ Cosine Similarity
+          ↓
+ Embeddings
+          ↓
+ Search / Recommendations / LLMs
+```
