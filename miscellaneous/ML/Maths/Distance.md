@@ -1,15 +1,17 @@
 
 Now that you understand vectors as points or arrows in space, the very next question a Machine Learning model asks is: "How big are these vectors, and how far apart are they?"  
 
-In Machine Learning, **Distance = Difference**. If you map two users as vectors based on their movie preferences, finding the "distance" between those vectors tells the AI exactly how similar or different those users are.
-Let's break down how we measure this, starting with a single vector and then comparing two.
-1. Vector Norms (The Math Word for "Magnitude")
-In mathematics, a Norm is just a function that calculates the "size" or "length" of a vector. You can think of it as the Magnitude. We denote the norm of a vector v with double bars: ∣∣v∣∣.
-There isn't just one way to measure length. We use different "Norms" depending on the problem.
-A. Euclidean Magnitude (L 
-2
-​    
-  Norm)
+In Machine Learning, **Distance = Difference**. If you map two users as vectors based on their movie preferences, finding the "distance" between those vectors tells the AI exactly how similar or different those users are.  
+
+Let's break down how we measure this, starting with a single vector and then comparing two.  
+
+### 1. Vector Norms (The Math Word for "Magnitude")  
+
+In mathematics, a **Norm** is just a function that calculates the "size" or "length" of a vector. You can think of it as the Magnitude. We denote the norm of a vector v with double bars: $∣∣v∣∣$.  
+
+There isn't just one way to measure length. We use different "Norms" depending on the problem.  
+
+A. Euclidean Magnitude (L2 Norm)
 This is the standard, everyday "length" of an arrow. It is derived directly from the Pythagorean theorem (a 
 2
  +b 
