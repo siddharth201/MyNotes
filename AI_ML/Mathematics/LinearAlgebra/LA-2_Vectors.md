@@ -168,7 +168,7 @@ y
     0 1 2 3 4
 ```
 
-The arrow from ((0,0)) to ((4,1)) is the vector.
+The arrow from $(0,0)$ to $(4,1)$ is the vector.
 
 ---
 
