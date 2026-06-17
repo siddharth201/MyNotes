@@ -1,6 +1,6 @@
 
 
-
+![VectorsImage]()
 
 
 This is actually a **very good set of notes**. Let me explain each part and connect it to Machine Learning.
