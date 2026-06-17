@@ -17,3 +17,5 @@
 
 ### Projection of Vector
 [Projection of Vector](https://chatgpt.com/s/t_6a327ad2ebd4819182f039164eeb0138)
+
+[CheetSheet](https://chatgpt.com/s/t_6a327c12e7d08191a6154994bad1e20f)
