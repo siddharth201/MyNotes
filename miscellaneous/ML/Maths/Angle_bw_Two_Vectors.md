@@ -130,14 +130,8 @@ This is one of the most important formulas in Linear Algebra.
 Rearrange:
 
 ```text
-cos(θ)
+cos(θ) = (x · y) / (||x|| ||y||)  
 
-=
-
-(x · y)
-
-/
-(||x|| ||y||)
 ```
 
 Therefore:
