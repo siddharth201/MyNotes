@@ -104,11 +104,7 @@ x₁y₁ + x₂y₂ + ... + xₙyₙ
 But geometrically:
 
 ```text
-x · y
-
-=
-
-||x|| ||y|| cos(θ)
+x · y = ||x|| ||y|| cos(θ)
 ```
 
 where:
@@ -137,16 +133,8 @@ cos(θ) = (x · y) / (||x|| ||y||)
 Therefore:
 
 ```text
-θ
+θ = cos⁻¹((x · y) / (||x|| ||y||))  
 
-=
-
-cos⁻¹
-(
-(x · y)
-/
-(||x|| ||y||)
-)
 ```
 
 This is the standard formula.
@@ -176,15 +164,8 @@ y =
 ## Step 1: Dot Product
 
 ```text
-x · y
+x · y = (2×1) + (2×0) = 2  
 
-=
-
-(2×1) + (2×0)
-
-=
-
-2
 ```
 
 ---
