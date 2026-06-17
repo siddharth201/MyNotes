@@ -3,4 +3,7 @@
 [Vectors](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/LA-2_Vectors.md)
 
 ### Distance  
-[Distance](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Distance.md)
+[Distance](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Distance.md)  
+
+### Angle between Vectors
+[Angle between Vectors]
