@@ -1,6 +1,6 @@
 
 
-![VectorsImage]()
+![VectorsImage](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/1.Images/Screenshot%202026-06-17%20at%209.46.43%E2%80%AFAM.png)
 
 
 This is actually a **very good set of notes**. Let me explain each part and connect it to Machine Learning.
