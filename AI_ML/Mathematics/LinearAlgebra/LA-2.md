@@ -6,4 +6,4 @@
 [Distance](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Distance.md)  
 
 ### Angle between Vectors
-[Angle between Vectors]
+[Angle between Vectors](https://chatgpt.com/s/t_6a3277646d308191b39892a2a1b15c3f)
