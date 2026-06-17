@@ -18,19 +18,17 @@ For example, an arrow from the origin to the point ((2,3)):
 * **Magnitude** = how long the arrow is.
 * **Direction** = where the arrow points.
 
-For the vector ((2,3)), its length is
+For the vector $(2,3)$, its length is
 
-[
-\sqrt{2^2+3^2}=\sqrt{13}.
-]
+$\sqrt{2^2+3^2}=\sqrt{13}.$
 
 The direction is the angle the arrow makes with the x-axis.
 
 ---
 
-## 2. The point ((2,3))
+## 2. The point $(2,3)$
 
-The picture shows an arrow from the origin ((0,0)) to the point ((2,3)).
+The picture shows an arrow from the origin $(0,0)$ to the point $(2,3)$.
 
 ```text
 y
@@ -44,28 +42,28 @@ y
 
 This arrow is the vector
 
-[
+$
 \boxed{\begin{bmatrix}2\3\end{bmatrix}}
-]
+$
 
-or simply ((2,3)).
+or simply $(2,3)$.
 
 ---
 
-## 3. Why is it also written as (2\hat{i}+3\hat{j})?
+## 3. Why is it also written as $(2\hat{i}+3\hat{j})$?
 
 The notes show
 
-[
+$
 2\hat{i}+3\hat{j}.
-]
+$
 
 Here:
 
-* (\hat{i}) is the **unit vector** in the x-direction:
-  [
+* $(\hat{i})$ is the **unit vector** in the x-direction:
+  $
   \hat{i}=(1,0)
-  ]
+  $
 
 * (\hat{j}) is the **unit vector** in the y-direction:
   [
