@@ -127,7 +127,7 @@ $(100,120,80,60)$
 A real $(224\times224)$ RGB image contains:
 
 $
-224\times224\times3 = 150,!528
+(224\times224\times3 = 150,!528)
 $
 
 numbers, so it is a **150,528-dimensional vector**.
