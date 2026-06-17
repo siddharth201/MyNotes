@@ -9,4 +9,7 @@
 [Matrix Multiplication](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/MatrixMultiplication.md) 
 
 ### Angle between Vectors
-[Angle between Vectors](https://chatgpt.com/s/t_6a3277646d308191b39892a2a1b15c3f)
+[Angle between Vectors](https://chatgpt.com/s/t_6a3277646d308191b39892a2a1b15c3f) 
+
+### Projection of Vector
+[Projection of Vector]()
