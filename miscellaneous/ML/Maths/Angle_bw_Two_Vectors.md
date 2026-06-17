@@ -76,6 +76,7 @@ y =
 
 Visual:
 
+```text
           y(2,2)
             ↗
            /
@@ -83,6 +84,7 @@ Visual:
          /
 --------/----------→ x
       θ
+```  
 
 The angle θ measures how far apart the directions are.
 
