@@ -1,6 +1,3 @@
-
-
-```markdown
 # Matrix Multiplication
 
 ## Why Matrix Multiplication Matters in ML
@@ -572,21 +569,3 @@ Columns of first matrix = Rows of second matrix
 y = Wx + b
 
 which is matrix multiplication followed by bias addition.
-```
-
-### Mental Model for ML
-
-Think of matrix multiplication as:
-
-```text
-Input Features
-      ↓
- Weight Matrix
-      ↓
-Weighted Combination
-      ↓
-Prediction
-```
-
-Every neuron, layer, attention mechanism, and transformer block is essentially performing matrix multiplications at scale.
-
