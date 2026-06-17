@@ -144,8 +144,8 @@ The model is
 
 Here:
 
-* $((x_1,x_2,x_3))$ is the **feature vector**
-* $((w_1,w_2,w_3))$ is the **weight vector**
+* $(x_1,x_2,x_3)$ is the **feature vector**
+* $(w_1,w_2,w_3)$ is the **weight vector**
 
 The model combines these vectors to make a prediction.
 
