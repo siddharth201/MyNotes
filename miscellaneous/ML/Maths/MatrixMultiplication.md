@@ -15,7 +15,9 @@ Almost every ML model uses it:
 
 A neuron in a neural network computes:
 
+```text
 y = Wx + b
+```
 
 where:
 
@@ -33,12 +35,13 @@ A matrix is a rectangular arrangement of numbers.
 
 Example:
 
+```text
 A =
-
 [
   [1, 2],
   [3, 4]
 ]
+```
 
 This matrix has:
 
@@ -47,7 +50,9 @@ This matrix has:
 
 Dimension:
 
+```text
 2 × 2
+```
 
 ---
 
@@ -55,27 +60,31 @@ Dimension:
 
 Suppose:
 
+```text
 A =
-
 [
   [1, 2],
   [3, 4]
 ]
 
 B =
-
 [
   [5, 6],
   [7, 8]
 ]
+```
 
 Then:
 
+```text
 C = AB
+```
 
 To compute each element of C:
 
+```text
 Row of A × Column of B
+```
 
 ---
 
@@ -83,31 +92,43 @@ Row of A × Column of B
 
 Suppose:
 
-A is an (m × n) matrix
+```text
+A is (m × n)
 
-B is an (n × p) matrix
+B is (n × p)
+```
 
-Then:
+Multiplication is possible only when:
 
-AB is possible only if:
-
+```text
 Number of columns in A
 =
 Number of rows in B
+```
 
 Result dimension:
 
+```text
 (m × p)
+```
 
 Example:
 
+```text
 (2 × 3) × (3 × 4)
+```
 
-Valid
+Valid because:
+
+```text
+3 = 3
+```
 
 Result:
 
+```text
 (2 × 4)
+```
 
 ---
 
@@ -115,152 +136,171 @@ Result:
 
 Consider:
 
+```text
 A =
-
 [
   [1, 2, 3]
 ]
+```
 
 Dimension:
 
+```text
 1 × 3
+```
 
+and
+
+```text
 B =
-
 [
   [4],
   [5],
   [6]
 ]
+```
 
 Dimension:
 
+```text
 3 × 1
+```
 
-The multiplication requires:
+To multiply:
 
-Row of A:
-
+```text
 [1, 2, 3]
 
-Column of B:
+×
 
 [
   [4],
   [5],
   [6]
 ]
+```
 
-Multiply corresponding elements:
+We compute:
 
+```text
 (1×4) + (2×5) + (3×6)
 
 = 4 + 10 + 18
 
 = 32
+```
 
 Notice:
 
-3 numbers in row
+```text
+3 elements in row
 =
-3 numbers in column
+3 elements in column
+```
 
-That's why the inner dimensions must match.
+That is why inner dimensions must match.
 
 ---
 
 # 5. Row × Column Rule
 
-Every element in the result matrix is calculated by:
+Every element in the result matrix is calculated as:
 
-Row of First Matrix
+```text
+(Row of First Matrix)
 ⋅
-Column of Second Matrix
+(Column of Second Matrix)
+```
 
-Mathematically:
+Formula:
 
+```text
 (AB)ij = Σ(aik × bkj)
+```
 
 Think:
 
+```text
 Result Cell
 =
 (Row of A)
 ⋅
 (Column of B)
+```
 
 ---
 
 # 6. Example: 2×2 Matrix Multiplication
 
+```text
 A =
-
 [
   [1, 2],
   [3, 4]
 ]
 
 B =
-
 [
   [5, 6],
   [7, 8]
 ]
+```
 
 Find:
 
-C = AB
+```text
+AB
+```
 
----
+### Element (1,1)
 
-## First Element (Row1 × Col1)
-
+```text
 (1×5) + (2×7)
 
 = 5 + 14
 
 = 19
+```
 
----
+### Element (1,2)
 
-## Second Element (Row1 × Col2)
-
+```text
 (1×6) + (2×8)
 
 = 6 + 16
 
 = 22
+```
 
----
+### Element (2,1)
 
-## Third Element (Row2 × Col1)
-
+```text
 (3×5) + (4×7)
 
 = 15 + 28
 
 = 43
+```
 
----
+### Element (2,2)
 
-## Fourth Element (Row2 × Col2)
-
+```text
 (3×6) + (4×8)
 
 = 18 + 32
 
 = 50
-
----
+```
 
 Result:
 
+```text
 AB =
-
 [
   [19, 22],
   [43, 50]
 ]
+```
 
 ---
 
@@ -268,235 +308,290 @@ AB =
 
 Matrix multiplication always means:
 
+```text
 Row × Column
+```
 
 Never:
 
+```text
 Row × Row
+```
 
 Never:
 
+```text
 Column × Column
+```
 
-Always remember:
+Always:
 
+```text
 → Row of First Matrix
 
 ×
 
 ↓ Column of Second Matrix
+```
 
 ---
 
 # 8. Example: 2×3 × 3×2
 
+```text
 A =
-
 [
   [1, 2, 3],
   [4, 5, 6]
 ]
+```
 
 Dimension:
 
+```text
 2 × 3
+```
 
+```text
 B =
-
 [
   [7, 8],
   [9, 10],
   [11, 12]
 ]
+```
 
 Dimension:
 
+```text
 3 × 2
+```
 
 Valid because:
 
+```text
 3 = 3
+```
 
 Result dimension:
 
+```text
 2 × 2
+```
 
----
+### Element (1,1)
 
-Element (1,1)
-
+```text
 (1×7) + (2×9) + (3×11)
 
 = 58
+```
 
-Element (1,2)
+### Element (1,2)
 
+```text
 (1×8) + (2×10) + (3×12)
 
 = 64
+```
 
-Element (2,1)
+### Element (2,1)
 
+```text
 (4×7) + (5×9) + (6×11)
 
 = 139
+```
 
-Element (2,2)
+### Element (2,2)
 
+```text
 (4×8) + (5×10) + (6×12)
 
 = 154
-
----
+```
 
 Result:
 
+```text
 AB =
-
 [
   [58, 64],
   [139, 154]
 ]
+```
 
 ---
 
 # 9. Matrix Multiplication is NOT Commutative
 
-For normal numbers:
+For numbers:
 
+```text
 2 × 3 = 3 × 2
+```
 
 For matrices:
 
+```text
 AB ≠ BA
+```
 
 in general.
 
----
-
 Example:
 
+```text
 A =
-
 [
   [1, 2]
 ]
+```
 
 Dimension:
 
+```text
 1 × 2
+```
 
+```text
 B =
-
 [
   [3],
   [4]
 ]
+```
 
 Dimension:
 
+```text
 2 × 1
+```
 
+Then:
+
+```text
 AB =
-
 [
   [11]
 ]
+```
 
 Dimension:
 
+```text
 1 × 1
+```
 
 But:
 
+```text
 BA =
-
 [
   [3, 6],
   [4, 8]
 ]
+```
 
 Dimension:
 
+```text
 2 × 2
+```
 
 Clearly:
 
+```text
 AB ≠ BA
+```
 
 ---
 
 # 10. Identity Matrix
 
-Identity Matrix is the matrix version of number 1.
+Identity matrix is the matrix equivalent of number 1.
 
+```text
 I =
-
 [
   [1, 0],
   [0, 1]
 ]
+```
 
 Property:
 
+```text
 AI = IA = A
+```
 
 Example:
 
+```text
 A =
-
 [
   [1, 2],
   [3, 4]
 ]
+```
 
 Then:
 
+```text
 AI =
-
 [
   [1, 2],
   [3, 4]
 ]
+```
 
 ---
 
 # 11. Matrix Multiplication in Machine Learning
 
-Suppose a student has:
+Suppose:
+
+```text
+Input Features:
 
 Study Hours = 5
-
 Sleep Hours = 7
+```
 
-Input Vector:
+Input vector:
 
+```text
 x =
-
 [
   [5],
   [7]
 ]
+```
 
 Weights:
 
+```text
 W =
-
 [
   [2, 3]
 ]
+```
 
 Prediction:
 
+```text
 y = Wx
+```
 
-=
+Calculation:
 
+```text
 (2×5) + (3×7)
 
-=
+= 10 + 21
 
-31
+= 31
+```
 
 ---
 
@@ -504,42 +599,42 @@ y = Wx
 
 A neuron computes:
 
+```text
 y = Wx + b
+```
 
 Suppose:
 
+```text
 W =
-
 [
   [0.2, 0.8]
 ]
 
 x =
-
 [
   [10],
   [20]
 ]
+```
 
 Then:
 
+```text
 Wx
 
-=
+= (0.2×10) + (0.8×20)
 
-(0.2×10) + (0.8×20)
+= 2 + 16
 
-=
-
-2 + 16
-
-=
-
-18
+= 18
+```
 
 Add bias:
 
+```text
 y = 18 + b
+```
 
 This is the fundamental computation behind every neuron in a neural network.
 
@@ -551,7 +646,11 @@ This is the fundamental computation behind every neuron in a neural network.
 
 Answer:
 
-Number of columns in the first matrix must equal the number of rows in the second matrix.
+```text
+Number of columns in first matrix
+=
+Number of rows in second matrix
+```
 
 ---
 
@@ -559,13 +658,17 @@ Number of columns in the first matrix must equal the number of rows in the secon
 
 If:
 
+```text
 A = (m × n)
 
 B = (n × p)
+```
 
 Then:
 
+```text
 AB = (m × p)
+```
 
 ---
 
@@ -573,11 +676,13 @@ AB = (m × p)
 
 Answer:
 
+```text
 No.
 
 Generally:
 
 AB ≠ BA
+```
 
 ---
 
@@ -587,24 +692,48 @@ AB ≠ BA
 
 2. Rule:
 
-Columns of First Matrix = Rows of Second Matrix
+```text
+Columns of First Matrix
+=
+Rows of Second Matrix
+```
 
-3. Result dimension:
+3. Result size:
 
+```text
 (m × n) × (n × p)
 
 → (m × p)
+```
 
 4. Every element is:
 
-(Row of A) ⋅ (Column of B)
+```text
+(Row of A)
+⋅
+(Column of B)
+```
 
 5. Matrix multiplication is NOT commutative.
 
 6. Neural Networks fundamentally perform:
 
+```text
 y = Wx + b
-
-which is matrix multiplication followed by bias addition.
+```
 
 7. Matrix multiplication is one of the most important operations in AI, ML, and Deep Learning.
+
+---
+
+# Mental Model
+
+```text
+Input Features
+      ↓
+ Weight Matrix
+      ↓
+Weighted Combination
+      ↓
+Prediction
+```
