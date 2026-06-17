@@ -65,4 +65,9 @@ Remember our weights ($w_1, w_2$, etc.)? In deep learning, an AI might assign a 
 **Summary Checklist:**
 
 * **Euclidean ($L_2$):** Straight lines, squares the differences, sensitive to huge outliers, used to shrink weights smoothly.
-* **Manhattan ($L_1$):** Grid paths, absolute differences, ignores huge outliers, used to force useless weights to zero.
+* **Manhattan ($L_1$):** Grid paths, absolute differences, ignores huge outliers, used to force useless weights to zero.  
+
+---  
+
+### More Info  
+[GPT]()
