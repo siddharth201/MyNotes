@@ -194,5 +194,5 @@ A **vector** is an ordered collection of numbers that represents **both magnitud
 
 [Info-2](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/VectorsInfo-2.md)  
 
-![VectorsInfo]()
+![VectorsInfo](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/1.Images/Screenshot%202026-06-17%20at%209.46.43%E2%80%AFAM.png)
 [Info-3](https://chatgpt.com/s/t_6a32217e4bec819182ee47258e3b939a)
