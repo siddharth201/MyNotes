@@ -678,4 +678,22 @@ Cosine Similarity
 
 to compare vectors.  
 
-Mental Model
+Mental Model  
+
+Angle Between Vectors
+
+        ↓
+
+Measures Similarity
+
+        ↓
+
+Cosine Similarity
+
+        ↓
+
+Embeddings
+
+        ↓
+
+Search, Recommendations, LLMs
