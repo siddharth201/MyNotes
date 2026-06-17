@@ -70,4 +70,4 @@ Remember our weights ($w_1, w_2$, etc.)? In deep learning, an AI might assign a 
 ---  
 
 ### More Info  
-[GPT]()
+[GPT](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/Distance_GPT.md)
