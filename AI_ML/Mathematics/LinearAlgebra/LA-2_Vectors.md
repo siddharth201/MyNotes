@@ -103,11 +103,9 @@ $$\boxed{\mathbf{x} = (1500, 3, 10)}$$
 
 This single vector represents one training example.
 
-Another house:
+Another house:  
 
-$[
-\mathbf{x}=(2200,;4,;5)
-]$
+$$\boxed{\mathbf{x} = (2200, 4, 5)}$$
 
 Every row in your dataset is essentially a vector.
 
