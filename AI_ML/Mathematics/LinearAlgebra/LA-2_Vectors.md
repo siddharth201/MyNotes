@@ -103,7 +103,7 @@ $[
 \boxed{\mathbf{x}=(1500,;3,;10)}
 ]$
 
-$[\boxed{\mathbf{x}=(1500,;3,;10)}]$
+$$[\boxed{\mathbf{x}=(1500,;3,;10)}]$$
 
 This single vector represents one training example.
 
