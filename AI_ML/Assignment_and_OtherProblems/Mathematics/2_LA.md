@@ -103,7 +103,7 @@ def solve(coordinates):
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   1. dimension = 3 x 1 , $D^T$ = [[1],[5],[2]] 
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q_2.md)
 </details>  
 
 </details>
