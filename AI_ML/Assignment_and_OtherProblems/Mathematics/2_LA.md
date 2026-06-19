@@ -242,13 +242,13 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
- 1.  $45^\circ$. 
+ 1.  $45^\circ$ 
  
- 2.  $30^\circ$.  
+ 2.  $30^\circ$  
  
- 3.  $60^\circ$.  
+ 3.  $60^\circ$ 
  
- 4.  $0^\circ$. 
+ 4.  $0^\circ$ 
    
    
 <details>
