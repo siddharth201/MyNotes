@@ -219,7 +219,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 ```text
 1. $z ∈ R^d$  
 
-2. $z ∈ R^d$  
+2. $z ∈ R^2d$  
 
 3. $z ∈ R^d$  
 
