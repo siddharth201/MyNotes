@@ -223,7 +223,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 3. $z ∈ R^1$  
 
-4. $z ∈ R^d$  
+4. $z ∈ R^2$  
 ```   
    
 
