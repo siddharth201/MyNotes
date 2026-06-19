@@ -108,4 +108,6 @@ def solve(coordinates):
 
 </details>
 
---- 
+---  
+
+### Q.3  
