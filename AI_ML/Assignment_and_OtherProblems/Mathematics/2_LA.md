@@ -213,4 +213,21 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 ### Q.3 Given two d-dimensional vectors $x ∈ R^d$ and $y ∈ R^d$ , we perform a dot product operation on these two vectors $z= x.y$ 
 ### What will be the dimension for the resultant output?  
 
- 
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+  
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+  
+
+[**Explanation**]()
+</details>  
+
+</details>
+
+---  
