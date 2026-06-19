@@ -126,4 +126,10 @@ def angleBtnTwoVectors(vl, v2):
         return "Error"
     else : 
         return math.acos(dotProduct(v1, v2) / (magnitude(v1) * magnitude (v2)))
-``` 
+```   
+
+What should be the code in the missing places i.e. marked with (i) and (ii) to compute the angle correctly?
+
+**Note:** Here v1 and v2 are lists.  
+
+
