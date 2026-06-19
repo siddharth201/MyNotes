@@ -83,10 +83,9 @@ def solve(coordinates):
 
 ---  
 
-### Q.2 Given a matrix, D = of dimension 1 x 3.
+### Q.2 Given a matrix, D = [[1, 5, 2]]of dimension 1 x 3.
 
-Suppose we take the transpose of it, i.e. D 
-T
+Suppose we take the transpose of it, i.e. $D T$
   ,now what will be the resultant matrix and dimension of D 
 T
  ? 
