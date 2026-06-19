@@ -184,7 +184,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---  
 
-### Q.6 Given a row vector w = [4,2,3]. What is the magnitude of this vector w ? 
+### Q.5 Given a row vector w = [4,2,3]. What is the magnitude of this vector w ? 
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
@@ -210,7 +210,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---   
 
-### Q.7 Given two d-dimensional vectors $x ∈ R^d$ and $y ∈ R^d$ , we perform a dot product operation on these two vectors $z= x.y$ 
+### Q.6 Given two d-dimensional vectors $x ∈ R^d$ and $y ∈ R^d$ , we perform a dot product operation on these two vectors $z= x.y$ 
 ### What will be the dimension for the resultant output?  
 
 <details>
@@ -235,4 +235,6 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 </details>
 
----  
+---   
+
+ 
