@@ -89,19 +89,19 @@ def solve(coordinates):
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-dimension = 3 x 1 , $D^T$ = [[1],[5],[2]]   
+1. dimension = 3 x 1 , $D^T$ = [[1],[5],[2]]   
 
-dimension = 3 x 1 , $D^T$ = [[2],[5],[1]]   
+2. dimension = 3 x 1 , $D^T$ = [[2],[5],[1]]   
 
-dimension = 1 x 3 , $D^T$ = [1,5,2]  
+3. dimension = 1 x 3 , $D^T$ = [1,5,2]  
  
-dimension = 1 x 3 , $D^T$ = [2,5,1]  
+4. dimension = 1 x 3 , $D^T$ = [2,5,1]  
 ```   
    
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+  1. dimension = 3 x 1 , $D^T$ = [[1],[5],[2]] 
 
 [**Explanation**]()
 </details>  
