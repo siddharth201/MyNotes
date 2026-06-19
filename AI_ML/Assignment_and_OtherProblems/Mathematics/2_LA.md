@@ -244,6 +244,12 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ```text
  1.  $45^\circ$. 
+ 
+ 2.  $45^\circ$.  
+ 
+ 3.  $45^\circ$.  
+ 
+ 4.  $45^\circ$. 
 ```   
    
 
