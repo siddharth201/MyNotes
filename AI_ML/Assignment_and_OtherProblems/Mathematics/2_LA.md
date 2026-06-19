@@ -111,4 +111,19 @@ def solve(coordinates):
 ---  
 
 ### Q.3 The incomplete code snippet given below will be used to find out the angle between two vectors.  
- 
+
+```text
+import math
+
+def dotProduct(vl, v2):
+    return sum ((a*b) for a, b in zip(v1, v2))
+
+def magnitude(v):
+    return ______(dotProduct(v, v))            #---(i)
+
+def angleBtnTwoVectors(vl, v2):
+    if ______:                                #---(ii)
+        return "Error"
+    else : 
+        return math.acos(dotProduct(v1, v2) / (magnitude(v1) * magnitude (v2)))
+``` 
