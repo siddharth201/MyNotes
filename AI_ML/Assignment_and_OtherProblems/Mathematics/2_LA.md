@@ -217,13 +217,13 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. $y ∈ R^d$  
+1. $z ∈ R^d$  
 
-2. $y ∈ R^d$  
+2. $z ∈ R^d$  
 
-3. $y ∈ R^d$  
+3. $z ∈ R^d$  
 
-4. $y ∈ R^d$  
+4. $z ∈ R^d$  
 ```   
    
 
