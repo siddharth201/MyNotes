@@ -178,7 +178,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 4. π/3   
 
-[**Explanation-1**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q.4.md)
+[**Explanation-1**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q.4.md)  
 [**Explanation-2**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q.4_1.md)
 </details>  
 
