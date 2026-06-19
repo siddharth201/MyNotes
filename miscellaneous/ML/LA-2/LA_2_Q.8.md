@@ -20,7 +20,6 @@ $2p = -50$
 $p = \frac{-50}{2}$
 $p = -25$
 
-Let's confirm this with a Python calculation.
 
 
 
