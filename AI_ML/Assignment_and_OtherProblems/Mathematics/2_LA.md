@@ -274,7 +274,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
  
  3. 10  
  
- 4.  
+ 4. None of the above 
 ```   
    
 
