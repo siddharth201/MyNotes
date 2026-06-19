@@ -76,7 +76,7 @@ def solve(coordinates):
     return (round(slope, 1), round(intercept, 1))
 ```  
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q_1.md)
 </details>  
 
 </details>
