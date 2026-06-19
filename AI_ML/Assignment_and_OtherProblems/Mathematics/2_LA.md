@@ -247,9 +247,9 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
  
  2.  $30^\circ$.  
  
- 3.  $45^\circ$.  
+ 3.  $60^\circ$.  
  
- 4.  $45^\circ$. 
+ 4.  $0^\circ$. 
 ```   
    
 
