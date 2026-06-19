@@ -261,3 +261,5 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 </details>
 
 ---  
+
+### What is the value of p such that the vectors $a=[2,6,8]$ and $b=[p,3,4]$ are perpendicular to each other ?  
