@@ -136,13 +136,13 @@ What should be the code in the missing places i.e. marked with (i) and (ii) to c
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-(i) => math.log , (ii) => len(v1) == len(v2)
+a.  (i) => math.log , (ii) => len(v1) == len(v2)
 
-(i) => math.sqrt , (ii) => len(v1) == len(v2)
+b.  (i) => math.sqrt , (ii) => len(v1) == len(v2)
 
-(i) => math.log , (ii) => len(v1) != len(v2)
+c.  (i) => math.log , (ii) => len(v1) != len(v2)
 
-(i) => math.sqrt , (ii) => len(v1) != len(v2)
+d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
   
 ```   
    
