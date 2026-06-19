@@ -262,4 +262,23 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---  
 
-### What is the value of p such that the vectors $a=[2,6,8]$ and $b=[p,3,4]$ are perpendicular to each other ?  
+### What is the value of p such that the vectors $a=[2,6,8]$ and $b=[p,3,4]$ are perpendicular to each other ?   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+  
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+  
+
+[**Explanation**]()
+</details>  
+
+</details>
+
+---  
