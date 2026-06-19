@@ -216,7 +216,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
+
 1. $z ∈ R^d$  
 
 2. $z ∈ R^2d$  
@@ -224,9 +224,8 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 3. $z ∈ R^1$  
 
 4. $z ∈ R^2$  
-```   
    
-
+   
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   
