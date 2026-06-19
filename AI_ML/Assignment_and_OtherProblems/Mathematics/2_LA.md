@@ -110,4 +110,5 @@ def solve(coordinates):
 
 ---  
 
-### Q.3  
+### Q.3 The incomplete code snippet given below will be used to find out the angle between two vectors.  
+ 
