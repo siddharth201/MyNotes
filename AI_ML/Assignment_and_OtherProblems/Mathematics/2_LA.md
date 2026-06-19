@@ -88,7 +88,7 @@ def solve(coordinates):
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
+
 1. dimension = 3 x 1 , $D^T$ = [[1],[5],[2]]   
 
 2. dimension = 3 x 1 , $D^T$ = [[2],[5],[1]]   
@@ -96,7 +96,7 @@ def solve(coordinates):
 3. dimension = 1 x 3 , $D^T$ = [1,5,2]  
  
 4. dimension = 1 x 3 , $D^T$ = [2,5,1]  
-```   
+  
    
 
 <details>
