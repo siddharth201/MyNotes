@@ -155,4 +155,6 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 </details>
 
---- 
+---   
+
+### Q.4 Let a and b be two unit vectors. If the vectors c = a + 2b and d = 5a − 4b are perpendicular to each other, then the angle (in radians) between a and b is :
