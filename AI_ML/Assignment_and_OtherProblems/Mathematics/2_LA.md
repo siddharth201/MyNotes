@@ -43,15 +43,9 @@ else:
 ```  
 
 <details>
-<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
+<summary>$\color{black}{\huge{\textbf{Solution}}}$</summary>
   
-```   
-   
-
-<details>
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   
 
 [**Explanation**]()
