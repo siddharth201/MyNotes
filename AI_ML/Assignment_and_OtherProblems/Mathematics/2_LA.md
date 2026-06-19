@@ -228,7 +228,8 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
    
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
+
+ 3. $z ∈ R^1$  
 
 [**Explanation**]()
 </details>  
