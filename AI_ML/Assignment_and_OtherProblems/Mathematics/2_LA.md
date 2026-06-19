@@ -196,10 +196,9 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 3.  6  
 
-4.   
+4. None of the above  
 ```   
    
-
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
   
