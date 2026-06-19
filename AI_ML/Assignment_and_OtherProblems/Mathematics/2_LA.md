@@ -231,7 +231,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
  3. $z ∈ R^1$  
 
-[**Explanation**]()
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-2/LA_2_Q.6.md)
 </details>  
 
 </details>
