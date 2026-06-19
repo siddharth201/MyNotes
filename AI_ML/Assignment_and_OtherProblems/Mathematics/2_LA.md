@@ -189,15 +189,13 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
-```text
 1.  $$\sqrt{29}$$  
 
 2.  $$\sqrt{9}$$  
 
 3.  6  
 
-4. None of the above  
-```   
+4. None of the above    
    
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
