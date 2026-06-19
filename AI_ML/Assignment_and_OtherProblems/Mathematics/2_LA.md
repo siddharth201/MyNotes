@@ -132,4 +132,21 @@ What should be the code in the missing places i.e. marked with (i) and (ii) to c
 
 **Note:** Here v1 and v2 are lists.  
 
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
+```text
+  
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+  
+
+[**Explanation**]()
+</details>  
+
+</details>
+
+--- 
