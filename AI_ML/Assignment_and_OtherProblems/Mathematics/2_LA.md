@@ -93,7 +93,7 @@ dimension = 3 x 1 , $D^T$ = [[1],[5],[2]]
 
 dimension = 3 x 1 , $D^T$ = [[2],[5],[1]]   
 
-dimension = 1 x 3 , $D^T$ = [[1],[5],[2]]  
+dimension = 1 x 3 , $D^T$ = [1,5,2]  
  
 dimension = 1 x 3 , $D^T$ = [[1],[5],[2]] 
 ```   
