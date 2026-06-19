@@ -89,7 +89,10 @@ def solve(coordinates):
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-  
+dimension = 3 x 1 , 
+dimension = 3 x 1 , 
+dimension = 1 x 3 , 
+dimension = 1 x 3 , 
 ```   
    
 
