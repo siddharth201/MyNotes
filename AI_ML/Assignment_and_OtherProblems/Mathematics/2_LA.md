@@ -282,8 +282,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-  
-
+ 2. -25
 [**Explanation**]()
 </details>  
 
