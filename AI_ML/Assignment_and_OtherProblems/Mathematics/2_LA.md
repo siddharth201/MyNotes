@@ -182,4 +182,6 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 </details>
 
---- 
+---  
+
+### Q.6 Given a row vector w = [4,2,3]. What is the magnitude of this vector w ? 
