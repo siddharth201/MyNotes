@@ -237,7 +237,7 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---   
 
-### What is the angle(in degrees) between two vectors $a$ and $b$ with magnitudes 1 and 2 respectively and when $a.b$=1 ?  
+### Q.7 What is the angle(in degrees) between two vectors $a$ and $b$ with magnitudes 1 and 2 respectively and when $a.b$=1 ?  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
