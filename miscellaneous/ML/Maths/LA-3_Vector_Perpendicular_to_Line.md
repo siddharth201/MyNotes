@@ -60,7 +60,7 @@ Expand:
 
 $$w^T x_2 - w^T x_1 = 0$$
 
-Factor out (w^T):
+Factor out $(w^T)$:
 
 $$w^T(x_2-x_1)=0$$
 
