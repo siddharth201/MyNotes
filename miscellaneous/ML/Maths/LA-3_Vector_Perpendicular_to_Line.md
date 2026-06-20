@@ -64,7 +64,7 @@ Factor out (w^T):
 
 $$w^T(x_2-x_1)=0$$
 
-# Step 3: Interpret (x_2 - x_1)
+# Step 3: Interpret $(x_2 - x_1)$
 
 The vector
 
