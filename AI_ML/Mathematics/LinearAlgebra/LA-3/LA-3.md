@@ -18,4 +18,4 @@ Given a line (or hyperplane)
 
 $w^Tx + w0 =0$
 
-prove that the vector $$ is perpendicular (normal) to the line.
+prove that the vector $w$ is perpendicular (normal) to the line.
