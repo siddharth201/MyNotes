@@ -14,3 +14,13 @@
 
 
 ### 
+Given a line (or hyperplane)
+
+$wT
+x+w
+0
+    ​
+
+=0$
+
+prove that the vector w is perpendicular (normal) to the line.
