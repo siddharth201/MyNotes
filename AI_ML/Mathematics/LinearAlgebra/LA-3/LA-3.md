@@ -13,7 +13,7 @@
 ---  
 
 
-### 
+### Proove
 Given a line (or hyperplane)
 
 $w^Tx + w0 =0$
