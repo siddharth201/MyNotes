@@ -14,9 +14,7 @@ Let's derive it slowly.
 
 Given a line (or hyperplane)
 
-[
-w^T x + w_0 = 0
-]
+$w^T x + w_0 = 0$
 
 prove that the vector **w** is perpendicular (normal) to the line.
 
