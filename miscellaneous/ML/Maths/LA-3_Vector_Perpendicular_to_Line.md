@@ -53,33 +53,16 @@ Let's call them:
 
 Subtract (1) from (2):
 
-[
-(w^T x_2 + w_0)
----------------
 
-# (w^T x_1 + w_0)
-
-0
-]
+$$(w^T x_2 + w_0) - (w^T x_1 + w_0) = 0$$
 
 Expand:
 
-[
-w^T x_2
--------
-
-# w^T x_1
-
-0
-]
+$$w^T x_2 - w^T x_1 = 0$$
 
 Factor out (w^T):
 
-[
-w^T(x_2-x_1)=0
-]
-
----
+$$w^T(x_2-x_1)=0$$
 
 # Step 3: Interpret (x_2 - x_1)
 
