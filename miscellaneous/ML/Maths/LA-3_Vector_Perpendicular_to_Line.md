@@ -186,15 +186,11 @@ the angle between them is:
 
 In Machine Learning, a decision boundary is:
 
-[
-w^T x + b = 0
-]
+$$w^T x + b = 0$$
 
 The vector:
 
-[
-w
-]
+$$w$$
 
 always points **perpendicular to the decision boundary**.
 
@@ -208,35 +204,23 @@ This is why:
 
 For any hyperplane:
 
-[
-w^T x + b = 0
-]
+$$w^T x + b = 0$$
 
 **The coefficient vector (w) is always perpendicular (normal) to the hyperplane.**
 
 The proof is simply:
 
-[
-w^T x_1 + b = 0
-]
+$$w^T x_1 + b = 0$$
 
-[
-w^T x_2 + b = 0
-]
+$$w^T x_2 + b = 0$$
 
 Subtract:
 
-[
-w^T(x_2-x_1)=0
-]
+$$w^T(x_2-x_1)=0$$
 
-[
-w \cdot AB = 0
-]
+$$w \cdot AB = 0$$
 
-[
-\boxed{w \perp AB}
-]
+$$\boxed{w \perp AB}$$
 
-and since (AB) is any direction on the line, (w) is perpendicular to the entire line.
+and since $(AB)$ is any direction on the line, $(w)$ is perpendicular to the entire line.
 
