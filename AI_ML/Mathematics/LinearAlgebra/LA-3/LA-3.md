@@ -16,10 +16,6 @@
 ### 
 Given a line (or hyperplane)
 
-$w^Tx + w
-0
-    ​
-
-=0$
+$w^Tx + w0 =0$
 
 prove that the vector w is perpendicular (normal) to the line.
