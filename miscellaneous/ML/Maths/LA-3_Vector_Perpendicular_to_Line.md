@@ -33,15 +33,11 @@ Both lie on the line.
 
 Therefore both satisfy:
 
-[
-w^T x_1 + w_0 = 0
-]
+$$w^T x_1 + w_0 = 0$$
 
 and
 
-[
-w^T x_2 + w_0 = 0
-]
+$$w^T x_2 + w_0 = 0$$
 
 Let's call them:
 
