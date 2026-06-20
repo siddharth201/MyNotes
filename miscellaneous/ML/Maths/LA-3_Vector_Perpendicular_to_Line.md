@@ -68,22 +68,17 @@ $$w^T(x_2-x_1)=0$$
 
 The vector
 
-x_2-x_1
-]
+$$x_2-x_1$$
 
 is simply the vector from point A to point B.
 
 We write:
 
-[
-AB = x_2-x_1
-]
+$$AB = x_2-x_1$$
 
 Therefore:
 
-[
-w^T AB = 0
-]
+$$w^T AB = 0$$
 
 ---
 
