@@ -98,42 +98,27 @@ $$w^T AB = w \cdot AB = 0$$
 
 For two vectors:
 
-[
-a\cdot b
-========
-
-|a||b|\cos\theta
-]
+$$a\cdot b = |a||b|\cos\theta$$
 
 If:
 
-[
-a\cdot b=0
-]
+$$a\cdot b=0$$
 
 then
 
-[
-|a||b|\cos\theta = 0
-]
+$$|a||b|\cos\theta = 0$$
 
 Assuming neither vector is zero:
 
-[
-\cos\theta = 0
-]
+$$\cos\theta = 0$$
 
 Therefore:
 
-[
-\theta = 90^\circ
-]
+$$\theta = 90^\circ$$
 
 or
 
-[
-\theta = \frac{\pi}{2}
-]
+$$\theta = \frac{\pi}{2}$$
 
 ---
 
@@ -141,17 +126,13 @@ or
 
 Since
 
-[
-w\cdot AB = 0
-]
+$$w\cdot AB = 0$$
 
 the vector (w) is perpendicular to the direction vector (AB).
 
 Since (AB) lies along the line,
 
-[
-\boxed{w \perp (w^T x + w_0 = 0)}
-]
+$$\boxed{w \perp (w^T x + w_0 = 0)}$$
 
 Thus **w is the normal vector of the line/hyperplane.**
 
