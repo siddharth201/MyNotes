@@ -16,7 +16,7 @@
 ### 
 Given a line (or hyperplane)
 
-$w^Tx+w
+$w^Tx + w
 0
     ​
 
