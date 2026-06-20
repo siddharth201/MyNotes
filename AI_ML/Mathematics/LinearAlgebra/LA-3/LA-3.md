@@ -16,7 +16,7 @@
 ### 
 Given a line (or hyperplane)
 
-$wT
+$w^T
 x+w
 0
     ​
