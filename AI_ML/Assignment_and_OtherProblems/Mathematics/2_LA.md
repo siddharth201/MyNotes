@@ -291,5 +291,5 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---  
 
-### Consider two vectors x = [2, 3] and 
+### Consider two vectors x = [2, 3] and y = [3, -2]
   
