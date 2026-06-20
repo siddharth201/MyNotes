@@ -293,5 +293,15 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ### Consider two vectors x = [2, 3] and y = [3, -2].
 ### What is the dot product?
-### What is the angle between them?
+### What is the angle between them?  
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Solution:}}}$</summary>  
+
+[**Explanation**]()
+</details>  
+
+</details>
+
+--- 
   
