@@ -8,4 +8,8 @@
 [Explaination](https://chatgpt.com/s/t_6a362a74f2d8819195d4f49e5b720ddb)  
 
 ### Example of `Triangle Law of Vector Addition` and `Position Vector` 
-[[Explaination]](https://chatgpt.com/s/t_6a362b60c4b08191a534a9a4a87eed4c)
+[[Explaination]](https://chatgpt.com/s/t_6a362b60c4b08191a534a9a4a87eed4c)  
+
+---  
+
+
