@@ -291,4 +291,4 @@ d.  (i) => math.sqrt , (ii) => len(v1) != len(v2)
 
 ---  
 
-### Consider two vectors x = []  
+### Consider two vectors x =   
