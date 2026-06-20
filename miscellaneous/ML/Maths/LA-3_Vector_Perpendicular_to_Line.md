@@ -86,20 +86,11 @@ $$w^T AB = 0$$
 
 Remember:
 
-[
-a^Tb = a\cdot b
-]
+$$a^Tb = a\cdot b$$
 
 So:
 
-[
-w^T AB
-======
-
-# w \cdot AB
-
-0
-]
+$$w^T AB = w \cdot AB = 0$$
 
 ---
 
