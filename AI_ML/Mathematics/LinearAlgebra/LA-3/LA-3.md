@@ -1,2 +1,3 @@
 
-### The Triangle Law of Vector Addition
+
+[**Triangle Law of Vector Addition**]()
