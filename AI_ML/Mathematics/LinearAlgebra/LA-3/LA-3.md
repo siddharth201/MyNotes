@@ -5,3 +5,4 @@
 [**Explanation-2**](https://chatgpt.com/s/t_6a3628063ec88191be6b261c03e09267)  
 
 ### Position Vector
+[Explaination](https://chatgpt.com/s/t_6a362a74f2d8819195d4f49e5b720ddb)
