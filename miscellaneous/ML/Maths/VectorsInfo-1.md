@@ -36,6 +36,9 @@ If we use coordinates, and East is the positive x-direction and North is the pos
     *   This means you are 5 meters east and 3 meters north of your starting point.
     *   The magnitude of your total displacement is $\sqrt{5^2 + 3^2} = \sqrt{25 + 9} = \sqrt{34}$ meters.
     *   The direction can be described by the angle $\theta = \arctan(3/5)$ north of east.
+$$
+\theta = \arctan\left(\frac{3}{5}\right)
+$$
 
 #### 2. Velocity
 
