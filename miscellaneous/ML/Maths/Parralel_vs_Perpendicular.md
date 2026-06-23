@@ -66,7 +66,7 @@ These are parallel lines.
 
 ## 2. Perpendicular Lines
 
-Two lines are perpendicular when they intersect at $(90^\circ)$.
+Two lines are perpendicular when they intersect at $90^\circ$.
 
 ### Slope Rule
 
