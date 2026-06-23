@@ -35,7 +35,7 @@ If we use coordinates, and East is the positive x-direction and North is the pos
 *   Your total displacement from the start is the sum of these vectors: $\mathbf{v}_{total} = \mathbf{v}_1 + \mathbf{v}_2 = (5, 0) + (0, 3) = (5, 3)$.
     *   This means you are 5 meters east and 3 meters north of your starting point.
     *   The magnitude of your total displacement is $\sqrt{5^2 + 3^2} = \sqrt{25 + 9} = \sqrt{34}$ meters.
-    *   The direction can be described by the angle $\theta = \arctan(3/5)$ north of east.  
+    *   The direction can be described by the angle -
     
 $$
 \theta = \arctan\left(\frac{3}{5}\right)
