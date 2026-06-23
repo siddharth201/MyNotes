@@ -13,7 +13,7 @@
 [Matrix Multiplication](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/MatrixMultiplication.md)  
 
 ### Dot Product
-[Dot Product]() 
+[Dot Product](https://chatgpt.com/s/t_6a3ab4edb64081918d4fbc336c7eea50) 
 
 ### Angle between Vectors
 [Angle between Vectors](https://chatgpt.com/s/t_6a3277646d308191b39892a2a1b15c3f) 
