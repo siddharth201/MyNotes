@@ -41,7 +41,7 @@ $$
 \theta = \arctan\left(\frac{3}{5}\right)
 $$
 
-θ=tan−1(53​)
+[**Explanation of Example**](https://chatgpt.com/s/t_6a3aa069fe4c81919f11a523793275af)
 
 #### 2. Velocity
 
