@@ -118,8 +118,7 @@ Contours are circles.
 
 Gradient:
 
-$$\nabla L =
-\left(
+$$\nabla L =\left(
 \frac{\partial L}{\partial x},
 \frac{\partial L}{\partial y}
 \right)=(2x,2y)$$
