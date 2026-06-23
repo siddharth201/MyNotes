@@ -56,21 +56,21 @@ The arrow—not just the endpoint—is the vector.
 
 For a 2D vector
 
-$\mathbf{v} = (x,y)$
+$$\mathbf{v} = (x,y)$$
 
 its length is found using the Pythagorean theorem:
 
-$|\mathbf{v}|=\sqrt{x^2+y^2}$
+$$|\mathbf{v}|=\sqrt{x^2+y^2}$$
 
 Example:
 
 For
 
-$\mathbf{v}=(3,4)$
+$$\mathbf{v}=(3,4)$$
 
 the magnitude is
 
-$|\mathbf{v}|=\sqrt{3^2+4^2}=\sqrt{9+16}=5.$
+$$|\mathbf{v}|=\sqrt{3^2+4^2}=\sqrt{9+16}=5.$$
 
 So this vector has:
 
