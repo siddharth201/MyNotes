@@ -118,14 +118,11 @@ Contours are circles.
 
 Gradient:
 
-$$
-\nabla L =
+$$\nabla L =
 \left(
 \frac{\partial L}{\partial x},
 \frac{\partial L}{\partial y}
-\right)=
-(2x,2y)
-$
+\right)=(2x,2y)$$
 
 The gradient is always **perpendicular** to the contour.
 
