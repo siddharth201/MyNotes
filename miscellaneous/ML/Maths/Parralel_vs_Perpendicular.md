@@ -90,25 +90,17 @@ Therefore they are perpendicular.
 
 Two vectors are perpendicular when their **dot product is zero**.
 
-$
-\vec a \cdot \vec b = 0
-$
+$$\vec a \cdot \vec b = 0$$
 
 ### Example
 
-$
-\vec a=(2,1)
-$
+$$\vec a=(2,1)$$
 
-$
-\vec b=(1,-2)
-$
+$$\vec b=(1,-2)$$
 
 Dot product:
 
-$
-(2)(1)+(1)(-2)=0
-$
+$$(2)(1)+(1)(-2)=0$$
 
 Hence they are perpendicular.
 
