@@ -149,26 +149,17 @@ $$w^Tx+b=0$$
 
 The vector
 
-$w=
-\begin{bmatrix}
-w_1\
-w_2
-\end{bmatrix}
-$
+$$w=\begin{bmatrix}w_1\w_2\end{bmatrix}$$
 
 is **perpendicular** to the line.
 
 ### Example
 
-$
-2x+y-3=0
-$
+$$2x+y-3=0$$
 
 Weight vector:
 
-$
-w=(2,1)
-$
+$$w=(2,1)$$
 
 The vector $(2,1)$ is normal (perpendicular) to the line.
 
@@ -185,8 +176,8 @@ This concept is heavily used in:
 
 | Concept               | Condition                          |
 | --------------------- | ---------------------------------- |
-| Parallel Lines        | (m_1=m_2)                          |
-| Perpendicular Lines   | (m_1m_2=-1)                        |
+| Parallel Lines        | $(m_1=m_2)$                          |
+| Perpendicular Lines   | $(m_1m_2=-1)$                        |
 | Parallel Vectors      | One is scalar multiple of other    |
 | Perpendicular Vectors | Dot Product = 0                    |
 | Decision Boundaries   | Same (w), different (b) ⇒ Parallel |
@@ -197,24 +188,18 @@ This concept is heavily used in:
 
 Given the decision boundary:
 
-$
-3x_1+4x_2-10=0
-$
+$$3x_1+4x_2-10=0$$
 
 What vector is perpendicular to the boundary?
 
 Answer:
 
-$
-w=(3,4)
-$
+$$w=(3,4)$$
 
 because for any boundary
 
-$
-w^Tx+b=0
-$
+$$w^Tx+b=0$$
 
-the weight vector (w) is always normal (perpendicular) to the boundary.
+the weight vector $(w)$ is always normal (perpendicular) to the boundary.
 
 This single idea is one of the most important geometric concepts behind Logistic Regression and SVMs.
