@@ -1,3 +1,7 @@
+
+[Chat-GPT Response](https://chatgpt.com/s/t_6a3a6afa01048191ae626d8c443da117)
+
+
 In Machine Learning (especially Linear Algebra for ML), **parallel lines** and **perpendicular lines** are important because they help us understand vectors, decision boundaries, gradients, and optimization.
 
 ## 1. Parallel Lines
