@@ -40,6 +40,9 @@ If we use coordinates, and East is the positive x-direction and North is the pos
 $$
 \theta = \arctan\left(\frac{3}{5}\right)
 $$
+$$
+\theta = \tan^{-1}\left(\frac{3}{5}\right)
+$$
 
 [**Explanation of Example**](https://chatgpt.com/s/t_6a3aa069fe4c81919f11a523793275af)
 
