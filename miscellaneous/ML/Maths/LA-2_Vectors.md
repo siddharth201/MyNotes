@@ -34,12 +34,6 @@ Suppose you start at the origin $(0,0)$ and move:
 
 The vector is written as:
 
-$\boxed{\mathbf{v} = (3,2)}$
-
-$$
-\boxed{\mathbf{v} = (3,2)}
-$$
-
 $$\boxed{\mathbf{v} = (3,2)}$$
 
 You can think of it as an **arrow** from the origin to the point ((3,2)).
