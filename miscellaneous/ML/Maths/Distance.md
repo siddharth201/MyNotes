@@ -51,7 +51,9 @@ Why do we need two different ways to measure distance? It completely changes how
 
 #### Use Case 1: Finding "Similar" Data (Clustering & KNN)
 
-Algorithms like **K-Nearest Neighbors (KNN)** or **K-Means Clustering** look at a new piece of data and say, *"What is closest to me?"* * **When to use Euclidean:** This is the default. If you are plotting physical coordinates or general data where straight-line proximity means similarity, use Euclidean.
+Algorithms like **K-Nearest Neighbors (KNN)** or **K-Means Clustering** look at a new piece of data and say, *"What is closest to me?"*   
+
+* **When to use Euclidean:** This is the default. If you are plotting physical coordinates or general data where straight-line proximity means similarity, use Euclidean.
 
 * **When to use Manhattan:** If your data has massive **Outliers** (e.g., most houses cost $200k, but one costs $50 million). Because Euclidean *squares* the differences, that $50 million house will mathematically warp the whole model. Manhattan just takes the absolute difference, making it **robust to outliers**. It is also frequently used in very high-dimensional data (like text analysis) because Euclidean distance starts to break down mathematically when you have thousands of dimensions (a phenomenon known as the *Curse of Dimensionality*).
 
