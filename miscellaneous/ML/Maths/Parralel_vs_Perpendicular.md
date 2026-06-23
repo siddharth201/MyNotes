@@ -145,14 +145,11 @@ Gradient is normal (90°) to the contour.
 
 For a line (decision boundary):
 
-$
-w^Tx+b=0
-$
+$$w^Tx+b=0$$
 
 The vector
 
-$
-w=
+$w=
 \begin{bmatrix}
 w_1\
 w_2
