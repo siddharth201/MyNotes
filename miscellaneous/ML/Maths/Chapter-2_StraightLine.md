@@ -151,7 +151,7 @@ $m=\frac{y_2-y_1}{x_2-x_1}$
 
 Take one fixed point on line: $(x_1,y_1)$
 
-Then any other point ((x,y)) on same line must satisfy same slope:
+Then any other point $(x,y)$ on same line must satisfy same slope:
 
 $m=\frac{y-y_1}{x-x_1}$
 
