@@ -27,16 +27,14 @@ For instance:
 
 # 2. A vector on a coordinate plane
 
-Suppose you start at the origin ((0,0)) and move:
+Suppose you start at the origin $(0,0)$ and move:
 
 * 3 units to the right
 * 2 units up
 
 The vector is written as:
 
-[
-\boxed{\mathbf{v} = (3,,2)}
-]
+$\boxed{\mathbf{v} = (3,,2)}$
 
 You can think of it as an **arrow** from the origin to the point ((3,2)).
 
