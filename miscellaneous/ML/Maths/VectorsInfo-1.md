@@ -41,6 +41,8 @@ $$
 \theta = \arctan\left(\frac{3}{5}\right)
 $$
 
+θ=tan−1(53​)
+
 #### 2. Velocity
 
 When a car moves, its velocity is a vector.
