@@ -112,9 +112,7 @@ Hence they are perpendicular.
 
 Suppose loss function:
 
-$
-L(x,y)=x^2+y^2
-$
+$$L(x,y)=x^2+y^2$$
 
 Contours are circles.
 
