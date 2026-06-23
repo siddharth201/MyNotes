@@ -40,7 +40,7 @@ If Norms measure the size of *one* vector from the origin, **Distance** measures
 
 #### B. Manhattan Distance
 
-* **Formula:** $d = |x_2 - x_1| + |y_2 - y_1|$
+* **Formula:** $$d = |x_2 - x_1| + |y_2 - y_1|$$
 * **The Path:** The path you take if you are forced to move strictly horizontally and vertically to get from point A to point B.
 
 ---
