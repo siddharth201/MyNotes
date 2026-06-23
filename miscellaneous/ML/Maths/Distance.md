@@ -35,7 +35,7 @@ If Norms measure the size of *one* vector from the origin, **Distance** measures
 
 #### A. Euclidean Distance
 
-* **Formula:** $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+* **Formula:** $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 * **The Path:** The exact, straight-line path between point A and point B ("as the crow flies").
 
 #### B. Manhattan Distance
