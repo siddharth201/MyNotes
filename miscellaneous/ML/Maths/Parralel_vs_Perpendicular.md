@@ -6,19 +6,19 @@ Two lines are parallel if they have the **same direction**.
 
 ### Equation Form
 
-$y = mx + c$
+$$y = mx + c$$
 
 Two lines are parallel when:
 
-$m_1 = m_2$
+$$m_1 = m_2$$
 
 where $(m)$ is the slope.
 
 ### Example
 
-$y = 2x + 1$
+$$y = 2x + 1$$
 
-$y = 2x - 5$
+$$y = 2x - 5$$
 
 Both have slope (2), so they are parallel.
 
@@ -26,13 +26,13 @@ Both have slope (2), so they are parallel.
 
 Suppose:
 
-$\vec{v_1} = (2,4)$
+$$\vec{v_1} = (2,4)$$
 
-$\vec{v_2} = (1,2)$
+$$\vec{v_2} = (1,2)$$
 
 Since
 
-$\vec{v_1} = 2\vec{v_2}$
+$$\vec{v_1} = 2\vec{v_2}$$
 
 they point in exactly the same direction.
 
