@@ -31,7 +31,7 @@ Imagine the grid of the vector canvas is a city map with buildings, like Manhatt
 
 ### 2. Distance Formulas (Comparing Two Vectors)
 
-If Norms measure the size of *one* vector from the origin, **Distance** measures the gap between *two* vectors (e.g., Vector A at $(x_1, y_1)$ and Vector B at $(x_2, y_2)$). Mathematically, the distance is just the Norm of the difference between the two vectors: $||A - B||$.
+If Norms measure the size of *one* vector from the origin, **Distance** measures the gap between *two* vectors (e.g., Vector A at $(x_1, y_1)$ and Vector B at $(x_2, y_2)$. Mathematically, the distance is just the Norm of the difference between the two vectors: $||A - B||$.
 
 #### A. Euclidean Distance
 
