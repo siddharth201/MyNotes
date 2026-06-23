@@ -44,31 +44,21 @@ Hence they are **parallel vectors**.
 
 Consider a linear classifier:
 
-$
-w_1x_1 + w_2x_2 + b = 0
-$
+$$w_1x_1 + w_2x_2 + b = 0$$
 
 If we change only (b):
 
-$
-w_1x_1 + w_2x_2 + b_1 = 0
-$
+$$w_1x_1 + w_2x_2 + b_1 = 0$$
 
-$
-w_1x_1 + w_2x_2 + b_2 = 0
-$
+$$w_1x_1 + w_2x_2 + b_2 = 0$$
 
 The decision boundaries are **parallel** because the weight vector (w) remains the same.
 
 Example:
 
-$
-x+y-2=0
-$
+$$x+y-2=0$$
 
-$
-x+y-5=0
-$
+$$x+y-5=0$$
 
 These are parallel lines.
 
@@ -80,25 +70,17 @@ Two lines are perpendicular when they intersect at (90^\circ).
 
 ### Slope Rule
 
-$
-m_1m_2=-1
-$
+$$m_1m_2=-1$$
 
 ### Example
 
-$
-y=2x+1
-$
+$$y=2x+1$$
 
-$
-y=-\frac12 x+3
-$
+$$y=-\frac12 x+3$$
 
 Check:
 
-$
-2 \times \left(-\frac12\right)=-1
-$
+$$2 \times \left(-\frac12\right)=-1$$
 
 Therefore they are perpendicular.
 
