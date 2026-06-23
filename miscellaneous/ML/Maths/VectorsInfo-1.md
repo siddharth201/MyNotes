@@ -38,9 +38,6 @@ If we use coordinates, and East is the positive x-direction and North is the pos
     *   The direction can be described by the angle -
     
 $$
-\theta = \arctan\left(\frac{3}{5}\right)
-$$
-$$
 \theta = \tan^{-1}\left(\frac{3}{5}\right)
 $$
 
