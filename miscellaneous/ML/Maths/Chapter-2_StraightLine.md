@@ -168,7 +168,7 @@ Now if point chosen is where line cuts y-axis:
 
 Then:
 
-y-c=m(x-0)
+$y-c = m(x-0)$
 
 So:
 
