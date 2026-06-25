@@ -21,5 +21,5 @@
 
 ---  
 
-### Distance between a `point` and and a line  
+### Distance between a `point` and and a line (Hyperplane)  
 [Explaination](https://chatgpt.com/s/t_6a3d2b5845608191a54b6317f6a4f02f)
