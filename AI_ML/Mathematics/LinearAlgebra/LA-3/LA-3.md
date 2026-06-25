@@ -24,4 +24,5 @@
 ### Distance between a `point` and and a line (Hyperplane)  
 [Explaination](https://chatgpt.com/s/t_6a3d2b5845608191a54b6317f6a4f02f)  
 
-### Perpendicular Distance of the Origin from the Hyperplane 
+### Perpendicular Distance of the Origin from the Hyperplane
+[Explaination](https://chatgpt.com/s/t_6a3d2e3caf3c81919b45d8ba2337f092) 
