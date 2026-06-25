@@ -4,6 +4,7 @@
 ### How to Define Clean Architecture in an Interview
 
 <details>
+
 A concise interview answer:
 
 > Clean Architecture is a software architecture pattern proposed by Robert C. Martin that separates an application into independent layers with clear responsibilities. The goal is to make the application maintainable, testable, scalable, and independent of frameworks, UI, databases, and external services.
@@ -13,6 +14,8 @@ A concise interview answer:
 > **Dependencies always point inward toward the business logic.**
 >
 > Outer layers can depend on inner layers, but inner layers never depend on outer layers.
+
+</details>
 
 ---
 
