@@ -48,4 +48,6 @@ These are the "policy." They must be **pure**.
 | **Data** | API Calls, Caching, DB persistence | Knows the **Domain** (to implement its interfaces). |
 | **Presentation** | UI, ViewModels, Presenters | Knows the **Domain** (to trigger Use Cases). |
 
-This structure ensures that if you decide to swap your database from **CoreData** to **Realm**, or your UI from **UIKit** to **SwiftUI**, you won't have to change a single line of code in your **Domain** layer.
+This structure ensures that if you decide to swap your database from **CoreData** to **Realm**, or your UI from **UIKit** to **SwiftUI**, you won't have to change a single line of code in your **Domain** layer.  
+
+[Explaination]()
