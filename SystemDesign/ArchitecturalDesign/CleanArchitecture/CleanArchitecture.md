@@ -275,7 +275,9 @@ or
 Entity
   ↓
 URLSession
-```
+```  
+
+[Explaination](https://github.com/siddharth201/MyNotes/blob/main/SystemDesign/ArchitecturalDesign/Chapter-2_UDD.md)
 
 </details>  
 
