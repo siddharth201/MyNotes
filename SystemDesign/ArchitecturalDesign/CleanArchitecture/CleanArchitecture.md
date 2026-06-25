@@ -59,8 +59,10 @@ Each layer has one responsibility.
 </details>
 
 ---
+  
 
-# The Three Main Layers
+<details> 
+<summary>$\color{blue}{\huge{\textbf{The Three Main Layers}}}$</summary>
 
 ```text
 ┌──────────────────────┐
