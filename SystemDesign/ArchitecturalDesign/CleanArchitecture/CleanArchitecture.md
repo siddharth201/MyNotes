@@ -237,7 +237,9 @@ Firebase
 
 ---
 
-# Dependency Rule
+
+<details> 
+<summary>$\color{blue}{\huge{\textbf{Dependency Rule}}}$</summary>  
 
 Most important interview point.
 
@@ -274,6 +276,8 @@ Entity
   ↓
 URLSession
 ```
+
+</details>  
 
 ---
 
