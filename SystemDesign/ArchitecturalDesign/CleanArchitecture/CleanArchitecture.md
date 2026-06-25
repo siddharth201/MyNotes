@@ -281,7 +281,8 @@ URLSession
 
 ---
 
-# Complete Example
+<details> 
+<summary>$\color{blue}{\huge{\textbf{Complete Example}}}$</summary> 
 
 Let's build:
 
@@ -599,5 +600,5 @@ ProductView
 
 > In Clean Architecture, I separate the app into Presentation, Domain, and Data layers. Presentation contains SwiftUI Views and ViewModels, Domain contains Entities, Use Cases, and Repository Protocols, while Data contains API services, database implementations, DTOs, and Repository implementations. The Dependency Rule ensures dependencies point inward toward the Domain layer. This makes the application highly testable, maintainable, and allows us to swap implementations such as APIs or databases without affecting business logic.
 
-If you're comfortable with this foundation, the next step is understanding **why Repository Protocol lives in Domain, Repository Implementation lives in Data, and why DTO and Entity must be separate**, because that's where most interviewers start asking deeper questions.
+</details>
 
