@@ -1,7 +1,7 @@
 
+## Clean Architecture 
 
-
-# How to Define Clean Architecture in an Interview
+### How to Define Clean Architecture in an Interview
 
 A concise interview answer:
 
