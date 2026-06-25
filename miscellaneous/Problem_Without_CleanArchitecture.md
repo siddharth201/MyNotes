@@ -425,5 +425,5 @@ Each layer has a clear role.
 ---
   
   
-[**real SwiftUI “messy app vs clean app” side-by-side code example**]()
+[**real SwiftUI “messy app vs clean app” side-by-side code example**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem_Without_CleanArchitecture_details.md)
 
