@@ -424,5 +424,5 @@ Each layer has a clear role.
 
 ---
 
-I can next show this with a **real SwiftUI “messy app vs clean app” side-by-side code example** so you can literally see the difference line by line.
+[**real SwiftUI “messy app vs clean app” side-by-side code example**]()
 
