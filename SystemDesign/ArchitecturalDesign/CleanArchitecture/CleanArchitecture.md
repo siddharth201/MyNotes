@@ -1,5 +1,5 @@
 
-## Clean Architecture 
+# Clean Architecture 
 
 <details>
 <summary>$\color{blue}{\huge{\textbf{How to Define Clean Architecture in an Interview}}}$</summary>  
