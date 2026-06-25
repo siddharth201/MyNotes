@@ -22,7 +22,7 @@ A concise interview answer:
 <summary>$\color{blue}{\huge{\textbf{Why Do We Need Clean Architecture?}}}$</summary>  
 
 
-Without it:
+#### Without it:
 
 ```text
 View
@@ -43,7 +43,7 @@ Problems:
 
 ---
 
-With Clean Architecture:
+#### With Clean Architecture:
 
 ```text
 Presentation
