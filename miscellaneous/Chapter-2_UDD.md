@@ -50,4 +50,4 @@ These are the "policy." They must be **pure**.
 
 This structure ensures that if you decide to swap your database from **CoreData** to **Realm**, or your UI from **UIKit** to **SwiftUI**, you won't have to change a single line of code in your **Domain** layer.  
 
-[Explaination]()
+[Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Clean_Architecture_Dependency_Rule_Explain.md)
