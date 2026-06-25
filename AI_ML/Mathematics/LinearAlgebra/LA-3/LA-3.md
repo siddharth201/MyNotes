@@ -17,4 +17,9 @@
 ### $w^Tx + w0 =0$
 ### prove that the vector $w$ is perpendicular (normal) to the line.  
 
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/LA-3_Vector_Perpendicular_to_Line.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/LA-3_Vector_Perpendicular_to_Line.md)  
+
+---  
+
+### 
+[Explaination](https://chatgpt.com/s/t_6a3d2b5845608191a54b6317f6a4f02f)
