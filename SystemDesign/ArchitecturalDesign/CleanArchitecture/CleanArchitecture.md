@@ -60,7 +60,6 @@ Each layer has one responsibility.
 
 ---
   
-
 <details> 
 <summary>$\color{blue}{\huge{\textbf{The Three Main Layers}}}$</summary>
 
@@ -234,6 +233,7 @@ URLSession
 CoreData
 Firebase
 ```
+</details>  
 
 ---
 
