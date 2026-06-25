@@ -41,7 +41,7 @@ Problems:
 * Difficult to change UI
 * Business logic scattered everywhere
   
-[**Detail Explaination**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem_Without_CleanArchitecture.md)
+[Detail Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem_Without_CleanArchitecture.md)
 ---
 
 #### With Clean Architecture:
