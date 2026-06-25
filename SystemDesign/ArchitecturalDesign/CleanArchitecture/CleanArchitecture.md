@@ -42,6 +42,7 @@ Problems:
 * Business logic scattered everywhere
   
 [Detail Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem_Without_CleanArchitecture.md)
+[Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem_Without_CleanArchitecture.md)
 ---
 
 #### With Clean Architecture:
