@@ -18,7 +18,9 @@ A concise interview answer:
 
 ---
 
-# Why Do We Need Clean Architecture?
+<details> 
+<summary>$\color{blue}{\huge{\textbf{Why Do We Need Clean Architecture?}}}$</summary>  
+
 
 Without it:
 
@@ -51,7 +53,9 @@ Domain
 Data
 ```
 
-Each layer has one responsibility.
+Each layer has one responsibility.  
+
+</details>
 
 ---
 
