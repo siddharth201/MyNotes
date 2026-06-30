@@ -54,6 +54,10 @@
 
 **"बार-बार मत ढूँढो... एक बार याद रखो।"**
 
+Hashing is not about storing data.
+
+It is about avoiding repeated searching.
+
 यही Hashing की सबसे बड़ी philosophy है।
 
 इस वीडियो में हम कोई coding शुरू नहीं करेंगे।
