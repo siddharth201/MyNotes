@@ -24,6 +24,10 @@
 
 **"क्या इस array में कोई duplicate element मौजूद है?"**
 
+Example
+
+1 4 7 3 5 4
+
 ज़्यादातर beginners क्या करते हैं?
 
 हर element के लिए पूरी array दोबारा search करते हैं।
