@@ -2,7 +2,7 @@
 
 Hello Friends!
 
-आज हम DSA के सबसे powerful concepts में से एक—Hashing—को गहराई से समझने वाले हैं।
+आज हम DSA के सबसे powerful concepts में से एक—Hashing—को समझने वाले हैं।
 
 लेकिन इस वीडियो में हम इसकी definition से शुरुआत नहीं करेंगे...
 
