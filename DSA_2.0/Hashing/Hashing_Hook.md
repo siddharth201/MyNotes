@@ -20,20 +20,25 @@
 
 जब भी हमें किसी element को ढूँढना होता है, हम उसे बार-बार search करना शुरू कर देते हैं।
 
-मान लीजिए किसी interview में आपको एक array दी जाती है।
+मान लीजिए किसी interview में आपको एक array दी जाती है और interviewer पूछता है—
 
-अब interviewer पूछता है—
+**"क्या इस array में कोई duplicate element मौजूद है?"**
 
-**"क्या इसमें duplicate element है?"
+ज़्यादातर beginners क्या करते हैं?
 
-अगर हर element के लिए आप पूरी array दोबारा search करेंगे...
+हर element के लिए पूरी array दोबारा search करते हैं।
 
-तो आपकी algorithm O(n²) बन जाएगी।
+पहले element के लिए search...
 
-यानी जितना data बढ़ेगा, उतनी तेजी से आपका solution slow होता जाएगा।
+फिर दूसरे के लिए...
+
+फिर तीसरे के लिए...
+
+और यही process बार-बार चलता रहता है।
+
+यानी हम बार-बार वही काम दोहरा रहे हैं।
 
 यही repeated searching हमारी algorithm को slow बना देती है।
-
 
 लेकिन एक मिनट...
 
