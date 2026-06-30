@@ -24,7 +24,7 @@
 
 अब interviewer पूछता है—
 
-**"क्या इसमें duplicate element है?"**
+**"क्या इसमें duplicate element है?"
 
 अगर हर element के लिए आप पूरी array दोबारा search करेंगे...
 
