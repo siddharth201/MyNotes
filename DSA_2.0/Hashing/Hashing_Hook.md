@@ -81,6 +81,12 @@
 
 **बल्कि बार-बार होने वाली searching को avoid करना है।**
 
+```text
+Hashing is not about storing data. 
+
+It is about avoiding repeated searching.
+```
+
 यही Hashing की सबसे बड़ी philosophy है।
 
 इस वीडियो में हम code नहीं लिखेंगे...
