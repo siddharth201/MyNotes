@@ -1,4 +1,11 @@
 
+### Q. Team ID, App ID, and Bundle Identifier ?
+<details>
+<summary>Answer</summary> 
+
+
+</details>
+
 ### Q. How we create certificate and provisional profiles?
 <details>
 <summary>Answer</summary>  
