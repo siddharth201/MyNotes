@@ -1,7 +1,7 @@
 
-### Q. Can you explain the iOS Application Lifecycle?
+### Q. Can you explain how to upload build on Appstore or testflight?
 <details>
-<summary>Protocols Code Snippet</summary>  
+<summary>Answer</summary>  
 
 [Protocols](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ProtocolsCodeSnippets.md)
 </details>
