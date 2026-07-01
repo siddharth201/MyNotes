@@ -155,164 +155,10 @@ Usually, **Automatically Manage Signing** is enabled.
 
 In larger organizations, signing may be managed manually.
 
----
+--- 
 
-# Step 5. Increase Version and Build Number
 
-Example:
-
-```
-Version : 2.5.0
-
-Build : 143
-```
-
-The version is customer-facing.
-
-The build number uniquely identifies each uploaded build.
-
----
-
-# Step 6. Archive
-
-Select:
-
-```
-Generic iOS Device
-```
-
-Then:
-
-```
-Product
-
-↓
-
-Archive
-```
-
-Xcode compiles the Release build and signs it using the selected Distribution Certificate and Provisioning Profile.
-
----
-
-# Step 7. Validate Archive
-
-Validation checks:
-
-* Bundle Identifier
-* Signing
-* Certificates
-* Provisioning Profiles
-* Capabilities
-* App icons
-* Entitlements
-
-This step helps catch configuration issues before upload.
-
----
-
-# Step 8. Upload to App Store Connect
-
-Choose:
-
-```
-Distribute App
-
-↓
-
-App Store Connect
-
-↓
-
-Upload
-```
-
-Xcode uploads:
-
-* IPA
-* dSYM files
-* App metadata required for processing
-
----
-
-# Step 9. Apple Processing
-
-Apple verifies:
-
-* Code signature
-* Security
-* Binary integrity
-* Compliance checks
-
-If everything is valid, the build appears in TestFlight.
-
----
-
-# Step 10. TestFlight
-
-First:
-
-Internal Testing
-
-Then:
-
-External Testing (requires Beta App Review)
-
-QA verifies the build before release.
-
----
-
-# Step 11. Submit for App Review
-
-Create a new App Store version.
-
-Attach the uploaded build.
-
-Add:
-
-* Release notes
-* Screenshots
-* Privacy information
-
-Submit for review.
-
----
-
-# Step 12. Release
-
-After approval:
-
-* Manual release
-* Automatic release
-* Scheduled release
-
----
-
-# One Question Interviewers Love
-
-**Q. What is the difference between a Certificate and a Provisioning Profile?**
-
-A concise answer:
-
-| Certificate                                             | Provisioning Profile                                                                                          |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Identifies the developer or organization.               | Defines which app can run, on which devices (if applicable), and with which certificate.                      |
-| Used for code signing.                                  | Links the App ID, certificate, team, and distribution method.                                                 |
-| Created once and reused until it expires or is revoked. | Created for a specific purpose (Development, App Store, Ad Hoc, Enterprise) and can be regenerated as needed. |
-
-A simple analogy is:
-
-* **Certificate = Passport** (proves *who you are*).
-* **Provisioning Profile = Visa** (defines *where and under what conditions you're allowed to go*).
-
----
-
-## What distinguishes a senior-level answer?
-
-Many candidates start with "Product → Archive." A stronger answer starts **before Xcode** by explaining that an app cannot even be archived for distribution until the correct **App ID, Distribution Certificate, and App Store Provisioning Profile** are in place. Then they describe how the signed archive is uploaded, processed, tested through TestFlight, and finally released to the App Store. This demonstrates an understanding of the complete release pipeline rather than just the upload steps.
-
-
-# Step 1. Prepare the App
+### Step 5. Prepare the App
 
 Before creating a release build, I ensure:
 
@@ -332,7 +178,7 @@ Build : 156
 
 ---
 
-# Step 2. Select Generic iPhone Device
+### Step 6. Select Generic iPhone Device
 
 In Xcode,
 
@@ -356,7 +202,7 @@ Not Simulator.
 
 ---
 
-# Step 3. Archive the App
+### Step 7. Archive the App
 
 Xcode compiles the application.
 
@@ -370,7 +216,7 @@ Now we have an archive.
 
 ---
 
-# Step 4. Validate Archive
+### Step 8. Validate Archive
 
 Inside Organizer
 
@@ -394,7 +240,7 @@ Proceed to upload.
 
 ---
 
-# Step 5. Upload to App Store Connect
+### Step 9. Upload to App Store Connect
 
 Click
 
@@ -434,7 +280,7 @@ Sometimes longer.
 
 ---
 
-# Step 6. Processing on App Store Connect
+### Step 10. Processing on App Store Connect
 
 Open
 
@@ -468,7 +314,7 @@ Ready to Test
 
 ---
 
-# Step 7. Internal Testing
+### Step 11. Internal Testing
 
 Internal testers
 
@@ -482,7 +328,7 @@ Usually QA team tests here.
 
 ---
 
-# Step 8. External Testing
+### Step 12. External Testing
 
 If external testers are required
 
@@ -502,7 +348,7 @@ External testers receive invitation.
 
 ---
 
-# Step 9. Release to App Store
+### Step 13. Release to App Store
 
 When QA approves
 
@@ -533,7 +379,7 @@ Attach uploaded build.
 
 ---
 
-# Step 10. Submit for Review
+### Step 13. Submit for Review
 
 Press
 
@@ -563,11 +409,11 @@ Ready for Sale
 
 ---
 
-# Step 11. Release Strategy
+### Step 14. Release Strategy
 
 There are three options
 
-### Manual Release
+#### Manual Release
 
 Developer presses
 
@@ -577,19 +423,19 @@ Release This Version
 
 ---
 
-### Automatic Release
+#### Automatic Release
 
 Apple releases automatically after approval.
 
 ---
 
-### Scheduled Release
+#### Scheduled Release
 
 Release on a specific date.
 
 ---
 
-# If Using Fastlane (CI/CD)
+## If Using Fastlane (CI/CD)
 
 Many companies automate this process.
 
@@ -641,7 +487,7 @@ Common tools:
 
 ---
 
-# Diagram
+## Diagram
 
 ```
 Code Complete
