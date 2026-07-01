@@ -12,7 +12,7 @@
 
 ---
 
-### Step 1. Create an App ID
+## Step 1. Create an App ID
 
 Everything starts with an App ID.
 
@@ -37,7 +37,7 @@ Without an App ID, Apple doesn't know which application you're trying to sign.
 
 ---
 
-### Step 2. Create Certificates
+## Step 2. Create Certificates
 
 A certificate answers the question:
 
@@ -82,7 +82,7 @@ Think of the certificate as a **digital passport** for the developer.
 
 ---
 
-### Step 3. Create Provisioning Profile
+## Step 3. Create Provisioning Profile
 
 This is one of the most common interview topics.
 
@@ -136,7 +136,7 @@ Used by organizations enrolled in the Apple Enterprise Program for internal app 
 
 ---
 
-### Step 4. Configure Signing in Xcode
+## Step 4. Configure Signing in Xcode
 
 Inside the project:
 
@@ -158,7 +158,7 @@ In larger organizations, signing may be managed manually.
 --- 
 
 
-### Step 5. Prepare the App
+## Step 5. Prepare the App
 
 Before creating a release build, I ensure:
 
@@ -178,7 +178,7 @@ Build : 156
 
 ---
 
-### Step 6. Select Generic iPhone Device
+## Step 6. Select Generic iPhone Device
 
 In Xcode,
 
@@ -202,7 +202,7 @@ Not Simulator.
 
 ---
 
-### Step 7. Archive the App
+## Step 7. Archive the App
 
 Xcode compiles the application.
 
@@ -216,7 +216,7 @@ Now we have an archive.
 
 ---
 
-### Step 8. Validate Archive
+## Step 8. Validate Archive
 
 Inside Organizer
 
@@ -240,7 +240,7 @@ Proceed to upload.
 
 ---
 
-### Step 9. Upload to App Store Connect
+## Step 9. Upload to App Store Connect
 
 Click
 
@@ -280,7 +280,7 @@ Sometimes longer.
 
 ---
 
-### Step 10. Processing on App Store Connect
+## Step 10. Processing on App Store Connect
 
 Open
 
@@ -314,7 +314,7 @@ Ready to Test
 
 ---
 
-### Step 11. Internal Testing
+## Step 11. Internal Testing
 
 Internal testers
 
@@ -328,7 +328,7 @@ Usually QA team tests here.
 
 ---
 
-### Step 12. External Testing
+## Step 12. External Testing
 
 If external testers are required
 
@@ -348,7 +348,7 @@ External testers receive invitation.
 
 ---
 
-### Step 13. Release to App Store
+## Step 13. Release to App Store
 
 When QA approves
 
@@ -379,7 +379,7 @@ Attach uploaded build.
 
 ---
 
-### Step 13. Submit for Review
+## Step 13. Submit for Review
 
 Press
 
@@ -409,7 +409,7 @@ Ready for Sale
 
 ---
 
-### Step 14. Release Strategy
+## Step 14. Release Strategy
 
 There are three options
 
