@@ -3,6 +3,194 @@
 <details>
 <summary>Answer</summary> 
 
+This is another common interview question. Many candidates confuse **Team ID**, **App ID**, and **Bundle Identifier**. Understanding the relationship between them is more important than memorizing definitions.
+
+---
+
+# Team ID
+
+**Definition:**
+
+A **Team ID** is a unique identifier assigned by Apple to your Apple Developer account (individual or organization).
+
+Example:
+
+```text
+ABCD1234XY
+```
+
+Every certificate, provisioning profile, and app created under your developer account belongs to this Team ID.
+
+Think of it as the **identity of the developer or company**.
+
+Example:
+
+```text
+OpenAI Pvt Ltd
+Team ID = ABCD1234XY
+```
+
+All apps published by this company use the same Team ID.
+
+---
+
+# App ID
+
+An **App ID** uniquely identifies an application within your Team.
+
+An App ID consists of:
+
+```text
+Team ID + Bundle Identifier
+```
+
+For example:
+
+```text
+Team ID
+ABCD1234XY
+
+Bundle Identifier
+com.company.shoppingapp
+```
+
+Apple internally treats the App ID as:
+
+```text
+ABCD1234XY.com.company.shoppingapp
+```
+
+Although in the Developer Portal you usually create only the Bundle Identifier, the complete App ID is the combination of the Team ID and Bundle Identifier.
+
+---
+
+# Bundle Identifier
+
+This is what you write in Xcode.
+
+Example:
+
+```text
+com.company.shoppingapp
+```
+
+It must be unique within your Team.
+
+Xcode automatically combines it with the selected Team ID.
+
+---
+
+# Relationship
+
+```text
+           Apple Developer Account
+                    │
+                    ▼
+               Team ID
+          (ABCD1234XY)
+                    │
+                    ▼
+        Bundle Identifier
+    (com.company.shoppingapp)
+                    │
+                    ▼
+               App ID
+ABCD1234XY.com.company.shoppingapp
+```
+
+---
+
+# Why is Team ID Important?
+
+The Team ID is used to:
+
+* Identify the organization or developer
+* Generate certificates
+* Create provisioning profiles
+* Sign applications
+* Associate apps with the correct Apple Developer account
+
+Without selecting the correct Team, Xcode cannot sign your application.
+
+---
+
+# Why is App ID Important?
+
+The App ID:
+
+* Uniquely identifies the app
+* Stores enabled capabilities
+* Is used when creating provisioning profiles
+* Is referenced during code signing
+
+For example, Push Notifications are enabled for an App ID, not just a Bundle Identifier.
+
+---
+
+# Interview Example
+
+Suppose your company is **ABC Technologies**.
+
+```text
+Team ID
+QWERTY1234
+
+Bundle Identifier
+com.abctech.expensemanager
+
+App ID
+QWERTY1234.com.abctech.expensemanager
+```
+
+---
+
+# One Interview Question
+
+**Q: Can two companies have the same Bundle Identifier?**
+
+**Answer:**
+
+Yes, because the complete App ID includes the Team ID.
+
+Example:
+
+Company A
+
+```text
+Team ID
+AAAA1111AA
+
+Bundle ID
+com.demo.app
+```
+
+Company B
+
+```text
+Team ID
+BBBB2222BB
+
+Bundle ID
+com.demo.app
+```
+
+Apple sees them as:
+
+```text
+AAAA1111AA.com.demo.app
+
+BBBB2222BB.com.demo.app
+```
+
+These are different App IDs, so they do not conflict.
+
+> **Note:** Within a single Team, the Bundle Identifier must still be unique.
+
+---
+
+# Interview-Ready Answer
+
+> **Team ID** identifies the Apple Developer account or organization and is assigned by Apple. **Bundle Identifier** identifies an app within that team and is configured in Xcode. Together, the Team ID and Bundle Identifier form the **App ID**, which Apple uses to uniquely identify the application for code signing, provisioning profiles, capabilities, and App Store distribution.
 
 </details>
 
