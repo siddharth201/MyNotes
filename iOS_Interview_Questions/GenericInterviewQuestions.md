@@ -7,7 +7,7 @@ This is another common interview question. Many candidates confuse **Team ID**, 
 
 ---
 
-# Team ID
+## Team ID
 
 **Definition:**
 
@@ -34,7 +34,7 @@ All apps published by this company use the same Team ID.
 
 ---
 
-# App ID
+## App ID
 
 An **App ID** uniquely identifies an application within your Team.
 
@@ -64,7 +64,7 @@ Although in the Developer Portal you usually create only the Bundle Identifier, 
 
 ---
 
-# Bundle Identifier
+## Bundle Identifier
 
 This is what you write in Xcode.
 
@@ -80,7 +80,7 @@ Xcode automatically combines it with the selected Team ID.
 
 ---
 
-# Relationship
+## Relationship
 
 ```text
            Apple Developer Account
@@ -100,7 +100,7 @@ ABCD1234XY.com.company.shoppingapp
 
 ---
 
-# Why is Team ID Important?
+## Why is Team ID Important?
 
 The Team ID is used to:
 
@@ -114,7 +114,7 @@ Without selecting the correct Team, Xcode cannot sign your application.
 
 ---
 
-# Why is App ID Important?
+## Why is App ID Important?
 
 The App ID:
 
@@ -127,7 +127,7 @@ For example, Push Notifications are enabled for an App ID, not just a Bundle Ide
 
 ---
 
-# Interview Example
+## Interview Example
 
 Suppose your company is **ABC Technologies**.
 
@@ -144,7 +144,7 @@ QWERTY1234.com.abctech.expensemanager
 
 ---
 
-# One Interview Question
+## One Interview Question
 
 **Q: Can two companies have the same Bundle Identifier?**
 
@@ -188,7 +188,7 @@ These are different App IDs, so they do not conflict.
 
 ---
 
-# Interview-Ready Answer
+## Interview-Ready Answer
 
 > **Team ID** identifies the Apple Developer account or organization and is assigned by Apple. **Bundle Identifier** identifies an app within that team and is configured in Xcode. Together, the Team ID and Bundle Identifier form the **App ID**, which Apple uses to uniquely identify the application for code signing, provisioning profiles, capabilities, and App Store distribution.
 
