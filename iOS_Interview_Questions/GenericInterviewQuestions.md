@@ -1,5 +1,5 @@
 
-### Q. Team ID, App ID, and Bundle Identifier ?
+### Q. Explain Team ID, App ID, and Bundle Identifier ?
 <details>
 <summary>Answer</summary> 
 
