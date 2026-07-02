@@ -7,15 +7,6 @@
 
 # Product 1
 
-# 📘 MASTER NOTES
-
-These are for **you**.
-
-These are NOT YouTube notes.
-
-Think of these as your textbook.
-
----
 
 # Chapter Objective
 
