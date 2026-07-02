@@ -829,34 +829,4 @@ Then Chapter 3 teaches us:
 
 ---
 
-# 💡 My recommendation for this chapter
-
-I would **not** record this as a single 25-minute video.
-
-Instead, split it into **two YouTube videos**:
-
-### 🎥 Video 3A – How Hashing Works
-
-* Hotel analogy
-* Address finding
-* Hash function
-* Hash value
-* Buckets
-* Modulo
-* Swift `Dictionary`
-
-### 🎥 Video 3B – Why Hashing Is Fast
-
-* Search flow
-* Time complexity
-* Space-time trade-off
-* `Hashable`
-* Lead into collisions
-
-This has two advantages:
-
-1. **Better retention:** Each video focuses on one core idea and is easier to follow.
-2. **Natural progression:** End Video 3A with the question, *"What happens if two keys map to the same bucket?"* That creates curiosity and gives viewers a strong reason to watch the next video on collisions.
-
-This is exactly the kind of chapter where visuals and storytelling will make a bigger impact than code. Once viewers truly understand the internals, every Hashing interview problem becomes much easier to reason about.
 
