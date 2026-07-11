@@ -1,6 +1,6 @@
 <details>
 <summary>Pattern 1 – Visited Elements</summary>
-[Details]()
+[Explaination]()
 <summary>Examples</summary>
-[Details]()
+[Pattern: Visited Elements]()
 </details>
