@@ -1,3 +1,4 @@
 <details>
-<summary></summary>
+<summary>Pattern 1 – Visited Elements</summary>
+[]
 </details>
