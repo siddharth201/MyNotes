@@ -6,7 +6,9 @@
 <details>
 <summary>Examples</summary>
 
-[Problem 1 – Contains Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-1_Contains_Duplicate.md)
+[Problem 1 – Contains Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-1_Contains_Duplicate.md)  
+
+[Problem 2 – First Duplicate]()
 </details>
 
 </details>
