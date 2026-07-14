@@ -15,6 +15,8 @@
 [Problem 4 – Find All Duplicates in an Array](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/4.FindAllDuplicatesinanArray.md)
 </details>  
 
+</details>
+
 <details>
 <summary>$\color{red}{\huge{\textbf{Pattern 2 — Frequency Counting}}}$</summary>
 
@@ -23,8 +25,6 @@
 <details>
 <summary>Examples</summary>
 [Problem 1]
-</details>
-
 </details>
 
 </details>
