@@ -8,7 +8,9 @@
 
 [Problem 1 – Contains Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-1_Contains_Duplicate.md)  
 
-[Problem 2 – First Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-2_First_Duplicate.md)
+[Problem 2 – First Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-2_First_Duplicate.md)  
+
+[Problem 3 – Contains Duplicate II]()
 </details>
 
 </details>
