@@ -10,7 +10,7 @@
 
 [Problem 2 – First Duplicate](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-2_First_Duplicate.md)  
 
-[Problem 3 – Contains Duplicate II]()
+[Problem 3 – Contains Duplicate II](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-3%E2%80%93Contains_Duplicate-II.md)
 </details>
 
 </details>
