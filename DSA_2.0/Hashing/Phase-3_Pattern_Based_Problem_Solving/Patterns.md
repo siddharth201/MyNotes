@@ -20,7 +20,7 @@
 <details>
 <summary>$\color{red}{\huge{\textbf{Pattern 2 — Frequency Counting}}}$</summary>
 
-[Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Pattern_1%E2%80%93VisitedElements.md)
+[Explaination](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Pattern-2%E2%80%94Frequency_Counting_Explanation.md)
 
 <details>
 <summary>Examples</summary>
