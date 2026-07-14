@@ -16,7 +16,7 @@
 </details>  
 
 <details>
-<summary>$\color{red}{\huge{\textbf{Pattern 1 – Visited Elements}}}$</summary>
+<summary>$\color{red}{\huge{\textbf{Pattern 2 — Frequency Counting}}}$</summary>
 </details>
 
 </details>
