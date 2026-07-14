@@ -12,7 +12,7 @@
 
 [Problem 3 – Contains Duplicate II](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-3%E2%80%93Contains_Duplicate-II.md)  
 
-[Problem 4 – Find All Duplicates in an Array]()
+[Problem 4 – Find All Duplicates in an Array](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/4.FindAllDuplicatesinanArray.md)
 </details>
 
 </details>
