@@ -5,7 +5,7 @@ Just like we built the Visited Pattern:
 * Foundation → Contains Duplicate
 * Interview → Contains Duplicate II
 
-We'll do the same here.
+We'll do the same here. 
 
 * Foundation → Character Frequency ✅
 * Interview → **LeetCode 242 – Valid Anagram**
