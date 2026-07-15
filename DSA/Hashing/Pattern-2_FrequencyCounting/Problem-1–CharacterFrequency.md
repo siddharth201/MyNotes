@@ -66,8 +66,9 @@ func frequencyCount(_ str: String) {
     var frequencies = [Character: Int]()
     
     for char in str {
-        if frequencies[char] != nil {
-            frequencies[char] = frequencies[char]! + 1
+        
+        if let count = frequencies[char] {
+            frequencies[char] = count + 1
         } else {
             frequencies[char] = 1
         }
