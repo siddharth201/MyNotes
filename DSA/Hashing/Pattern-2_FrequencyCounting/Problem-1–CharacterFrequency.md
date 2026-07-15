@@ -58,7 +58,38 @@ Space: O(k)
 where `k` is the number of unique characters.
 ```  
 
-#### Optimize - 1
+---  
+
+### Optimize
+```swift
+func frequencyCount(_ str: String) {
+    var frequencies = [Character: Int]()
+    
+    for char in str {
+        if frequencies[char] != nil {
+            frequencies[char] = frequencies[char]! + 1
+        } else {
+            frequencies[char] = 1
+        }
+    }
+    
+    for (char, count) in frequencies {
+        print("Character \(char) -> \(count)")
+    }
+} 
+``` 
+
+### Complexity
+
+```swift
+**Time:** `O(n)`
+
+**Space:** `O(k)`
+```
+
+---  
+
+#### Better - Optimize 
 
 ```swift
 func characterFrequency(_ str: String) -> [Character: Int] {
@@ -83,4 +114,4 @@ func characterFrequency(_ str: String) -> [Character: Int] {
 **Space:** `O(k)`
 ```  
 
-#### Optimize - 2
+
