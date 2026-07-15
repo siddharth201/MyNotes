@@ -24,7 +24,8 @@
 
 <details>
 <summary>Examples</summary>
-[Problem 1 – Character Frequency]
+
+[Problem 1 – Character Frequency]()
 </details>
 
 </details>
