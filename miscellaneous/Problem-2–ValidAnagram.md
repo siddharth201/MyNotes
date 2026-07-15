@@ -263,21 +263,46 @@ return false.
 ## Brute Force Algorithm
 
 ```text
-IF lengths are different
+FUNCTION IsAnagramBruteForce(string1, string2)
 
-    return false
+    IF length of string1 is NOT EQUAL to length of string2 THEN
+        RETURN False
+    END IF
 
-FOR every unique character in s
+    CREATE an empty Set called 'processedCharacters'
 
-    Count occurrences in s
+    FOR EACH character IN string1
 
-    Count occurrences in t
+        IF character is already in 'processedCharacters' THEN
+            CONTINUE to the next character
+        END IF
 
-    IF counts differ
+        SET countInString1 = 0
+        SET countInString2 = 0
 
-        return false
+        FOR EACH currentCharacter IN string1
+            IF currentCharacter is equal to character THEN
+                INCREMENT countInString1 by 1
+            END IF
+        END FOR
 
-return true
+        FOR EACH currentCharacter IN string2
+            IF currentCharacter is equal to character THEN
+                INCREMENT countInString2 by 1
+            END IF
+        END FOR
+
+        IF countInString1 is NOT EQUAL to countInString2 THEN
+            RETURN False
+        END IF
+
+        ADD character to 'processedCharacters'
+
+    END FOR
+
+    RETURN True
+
+END FUNCTION
 ```
 
 ---
