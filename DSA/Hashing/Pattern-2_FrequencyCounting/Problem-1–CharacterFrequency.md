@@ -60,7 +60,7 @@ where `k` is the number of unique characters.
 
 ---  
 
-### Optimize
+#### Optimize
 ```swift
 func frequencyCount(_ str: String) -> [Character: Int] {
     var frequencies = [Character: Int]()
@@ -78,7 +78,7 @@ func frequencyCount(_ str: String) -> [Character: Int] {
 } 
 ``` 
 
-### Complexity
+#### Complexity
 
 ```swift
 **Time:** `O(n)`
@@ -105,7 +105,7 @@ func characterFrequency(_ str: String) -> [Character: Int] {
 }
 ```  
 
-### Complexity
+#### Complexity
 
 ```swift
 **Time:** `O(n)`
