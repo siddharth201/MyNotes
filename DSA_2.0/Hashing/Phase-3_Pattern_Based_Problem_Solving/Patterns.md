@@ -25,7 +25,7 @@
 <details>
 <summary>Examples</summary>
 
-[Problem 1 – Character Frequency]()
+[Problem 1 – Character Frequency](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-1%E2%80%93CharacterFrequency.md)
 </details>
 
 </details>
