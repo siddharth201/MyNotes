@@ -81,9 +81,9 @@ func frequencyCount(_ str: String) -> [Character: Int] {
 #### Complexity
 
 ```swift
-**Time:** `O(n)`
+Time: `O(n)`
 
-**Space:** `O(k)`
+Space: `O(k)`
 ```
 
 ---  
@@ -108,9 +108,9 @@ func characterFrequency(_ str: String) -> [Character: Int] {
 #### Complexity
 
 ```swift
-**Time:** `O(n)`
+Time: `O(n)`
 
-**Space:** `O(k)`
+Space: `O(k)`
 ```  
 
 
