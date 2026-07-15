@@ -56,4 +56,6 @@ Time: `O(n²)`
 Space: O(k)
 
 where `k` is the number of unique characters.
-```
+```  
+
+#### Optimize - 1
