@@ -73,4 +73,14 @@ func characterFrequency(_ str: String) -> [Character: Int] {
 
     return frequency
 }
-```
+```  
+
+### Complexity
+
+```swift
+**Time:** `O(n)`
+
+**Space:** `O(k)`
+```  
+
+#### Optimize - 2
