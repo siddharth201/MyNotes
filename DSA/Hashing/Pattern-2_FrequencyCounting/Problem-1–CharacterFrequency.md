@@ -59,3 +59,18 @@ where `k` is the number of unique characters.
 ```  
 
 #### Optimize - 1
+
+```swift
+func characterFrequency(_ str: String) -> [Character: Int] {
+
+    var frequency: [Character: Int] = [:]
+
+    for ch in str {
+
+        frequency[ch, default: 0] += 1
+
+    }
+
+    return frequency
+}
+```
