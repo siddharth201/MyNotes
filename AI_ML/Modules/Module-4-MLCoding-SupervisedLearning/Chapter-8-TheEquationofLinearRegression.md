@@ -869,15 +869,7 @@ Now
 
 the equation becomes
 
-$$\hat y = w_1x_1 +
-w_2x_2
-+
-w_3x_3
-+
-w_4x_4
-+
-b
-]
+$$\hat y = w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b$$
 
 Every feature gets its own weight.
 
