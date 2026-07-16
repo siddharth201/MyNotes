@@ -735,9 +735,7 @@ Suppose
 
 Model says
 
-[
-\hat y = 2x+5
-]
+$$\hat y = 2x+5$$
 
 House Area
 
