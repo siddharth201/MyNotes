@@ -346,9 +346,7 @@ Think of noise as everything that affects the target but is **not captured by ou
 
 Mathematically, we often write:
 
-[
-y = wx + b + \epsilon
-]
+$$y = wx + b + \epsilon$$
 
 where:
 
