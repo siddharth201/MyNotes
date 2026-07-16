@@ -993,9 +993,7 @@ That chapter naturally leads into **Loss Functions**, **Mean Squared Error (MSE)
 
 ### Linear Regression Equation
 
-[
-\boxed{\hat y = wx + b}
-]
+$$\boxed{\hat y = wx + b}$$
 
 ### Meaning of Symbols
 
