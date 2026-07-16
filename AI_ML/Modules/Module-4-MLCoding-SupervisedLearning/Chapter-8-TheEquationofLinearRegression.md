@@ -9,6 +9,7 @@ If I had to choose **the single most important equation in introductory Machine 
 $$[\boxed{\hat{y} = wx + b}]$$
 $$\boxed{\hat{y} = wx + b}$$
 $$\begin{array}{|c|} \hline \hat{y} = wx + b \\ \hline \end{array}$$
+$$\fbox{$\hat{y} = wx + b$}$$
 
 
 Almost every future algorithm can be seen as an extension of this equation.
