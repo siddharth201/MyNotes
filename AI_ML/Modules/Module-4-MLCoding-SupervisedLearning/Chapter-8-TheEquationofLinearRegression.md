@@ -620,9 +620,7 @@ Bias represents that starting point.
 
 The widget above represents the equation:
 
-[
-y = mx + c
-]
+$$y = mx + c$$
 
 In ML terminology:
 
