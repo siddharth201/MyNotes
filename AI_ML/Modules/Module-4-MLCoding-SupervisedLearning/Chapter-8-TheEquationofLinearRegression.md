@@ -6,7 +6,7 @@ Everything until now was preparation.
 
 If I had to choose **the single most important equation in introductory Machine Learning**, it would be:
 
-$[\boxed{\hat{y} = wx + b}]
+$$[\boxed{\hat{y} = wx + b}]$$
 
 Almost every future algorithm can be seen as an extension of this equation.
 
