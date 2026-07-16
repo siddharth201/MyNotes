@@ -869,12 +869,7 @@ Now
 
 the equation becomes
 
-[
-\hat y
-======
-
-w_1x_1
-+
+$$\hat y = w_1x_1 +
 w_2x_2
 +
 w_3x_3
