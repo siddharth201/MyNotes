@@ -40,9 +40,7 @@ After completing this chapter you should be able to answer
 
 ✅ Why is the equation
 
-[
-\hat{y}=wx+b
-]
+$$\hat{y}=wx+b$$
 
 used?
 
