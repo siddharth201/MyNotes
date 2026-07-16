@@ -425,7 +425,7 @@ Predictions are individual points computed from that model.
 ### Connected to Previous Chapters
 
 * **Chapter 7:** Introduced regression as predicting continuous values.
-* **Chapter 8:** Introduced the equation (\hat{y}=wx+b).
+* **Chapter 8:** Introduced the equation $(\hat{y}=wx+b)$.
 
 This chapter answers **why that equation represents the relationship** instead of simply storing the data.
 
