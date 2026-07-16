@@ -351,7 +351,7 @@ $$y = wx + b + \epsilon$$
 where:
 
 * (wx+b) is the predictable part.
-* (\epsilon) (epsilon) is the random noise.
+* $(\epsilon)$ (epsilon) is the random noise.
 
 Don't worry about this equation yet; we'll revisit it later.
 
