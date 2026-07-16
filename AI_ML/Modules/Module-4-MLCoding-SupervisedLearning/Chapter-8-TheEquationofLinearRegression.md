@@ -960,9 +960,7 @@ Real-world data contains noise.
 
 This chapter gives us the mathematical form of that relationship:
 
-[
-\hat y = wx + b
-]
+$$\hat y = wx + b$$
 
 ---
 
