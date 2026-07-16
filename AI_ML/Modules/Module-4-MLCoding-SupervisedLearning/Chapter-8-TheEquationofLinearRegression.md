@@ -526,9 +526,7 @@ The model effectively ignores it.
 
 If
 
-[
-w=5
-]
+$$w=5$$
 
 then
 
