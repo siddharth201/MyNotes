@@ -83,9 +83,7 @@ A straight line.
 
 Long before Machine Learning, mathematicians had already been using the equation of a line:
 
-[
-y = mx + c
-]
+$$y = mx + c$$
 
 Machine Learning borrowed this idea.
 
