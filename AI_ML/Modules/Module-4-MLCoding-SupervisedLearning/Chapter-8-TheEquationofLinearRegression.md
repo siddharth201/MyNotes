@@ -207,15 +207,11 @@ Same idea.
 
 Never confuse
 
-[
-y
-]
+$$y$$
 
 with
 
-[
-\hat y
-]
+$$\hat y$$
 
 One is
 
@@ -243,9 +239,7 @@ Finally
 
 we write
 
-[
-\boxed{\hat{y}=wx+b}
-]
+$$\boxed{\hat{y}=wx+b}$$
 
 This equation is called
 
