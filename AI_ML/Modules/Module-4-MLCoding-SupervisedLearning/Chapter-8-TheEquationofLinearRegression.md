@@ -147,9 +147,7 @@ we use two different symbols.
 
 ## Actual Value
 
-[
-y
-]
+$$y$$
 
 Means
 
@@ -163,9 +161,7 @@ Correct Answer.
 
 ## Predicted Value
 
-[
-\hat{y}
-]
+$$\hat{y}$$
 
 Read as
 
