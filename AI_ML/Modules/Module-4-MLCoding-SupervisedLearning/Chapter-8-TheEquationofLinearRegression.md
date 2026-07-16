@@ -95,15 +95,11 @@ Machine Learning borrowed this idea.
 
 In school we learned
 
-[
-y = mx + c
-]
+$$y = mx + c$$
 
 Machine Learning says
 
-[
-\hat{y}=wx+b
-]
+$$\hat{y}=wx+b$$
 
 Question:
 
