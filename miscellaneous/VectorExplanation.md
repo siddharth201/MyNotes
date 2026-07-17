@@ -94,6 +94,9 @@ Direction tells you where that magnitude is pointing. [12]
 ## Why Mass is Different
 Mass is a scalar, not a vector. A scalar is just a single number with no direction at all. If an object weighs 50 kilograms, it weighs 50 kilograms no matter which way it is moving or pointing. It has no direction. [18, 19, 20, 21, 22] 
 
+---  
+
+### Q. Why a Grid is not a vector?
  
 
 
