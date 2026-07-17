@@ -89,3 +89,21 @@ The real objective is
 Regression is a supervised learning technique used to predict **continuous numerical values.**
 
 ### What ML Does
+
+Machine
+
+looks at
+
+Historical Data
+
+↓
+
+Discovers Pattern
+
+↓
+
+Predicts
+
+Future Values
+
+This is the essence of supervised learning.
