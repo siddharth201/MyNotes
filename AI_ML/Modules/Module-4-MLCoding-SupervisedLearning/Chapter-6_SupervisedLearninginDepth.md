@@ -1222,8 +1222,8 @@ This is where the mathematics of Machine Learning truly begins.
 * **y** = Target vector
 * **n** = Number of samples
 * **d** = Number of features
-* **Shape(X)** = (n \times d)
-* **Shape(y)** = (n \times 1)
+* **Shape(X)** = $(n \times d)$
+* **Shape(y)** = $(n \times 1)$
 
 ### Dataset Splits
 
@@ -1233,9 +1233,7 @@ This is where the mathematics of Machine Learning truly begins.
 
 ### Golden Formula
 
-[
-\boxed{f(X)=y}
-]
+$$\boxed{f(X)=y}$$
 
 Every supervised learning algorithm, from Linear Regression to deep neural networks, is ultimately trying to learn this mapping.
 
