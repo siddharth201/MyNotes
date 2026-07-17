@@ -15,7 +15,7 @@ y =
 
 Notice Only one column. Therefore Vector. 
 
-My Question: Expalin Notice Only one column. Therefore Vector 
+My Question: Expalin - `Notice Only one column. Therefore Vector` 
 
 ### Answer
 
