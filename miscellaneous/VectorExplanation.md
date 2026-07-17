@@ -44,6 +44,32 @@ In predictive modeling, $y$ usually represents your "target" or the labels you w
 
 ### Q. I am using python and still i am not sure why one column makes it a vector  
 
+### Answer
+
+To understand why one column makes it a vector in Python, it helps to look at how computer memory and mathematics define shapes.
+In Python's NumPy or Pandas libraries, data structures are defined by their axes (dimensions).
+## The Difference in Python Shapes
+Think of dimensions as directions you can move inside the data:
+
+* 1D Vector (1 Dimension): A simple list. You can only move along one axis (downwards).
+* 2D Matrix (2 Dimensions): A grid or table. You can move down (rows) and across (columns). [1, 2] 
+
+When you have a dataset with multiple columns, Python views it as a 2D grid. But when you isolate just one column, you lose the horizontal dimension entirely. There is no "across" anymore. You can only move in one direction: straight down.
+Because it only has one directional axis of data, Python and mathematicians classify it as a 1D entity—which is the definition of a vector. [3, 4] 
+## How Python Sees It (Code Example)
+If you load your data into Python using NumPy, the library explicitly uses "shapes" to tell you if something is a vector or a matrix: [5] 
+
+```text
+import numpy as np
+# A Matrix (Grid: 3 rows, 2 columns)matrix = np.array([[6, 1], , 
+                   [11, 3]])
+print(matrix.shape)  # Outputs: (3, 2) -> 2D Grid
+# A Column Vector (1 Column)vector = np.array([[6], , 
+                   [11]])
+print(vector.shape)  # Outputs: (3, 1) -> 1 Column means it is a Vector
+
+When Python prints (3, 1), it means "3 rows and exactly 1 column." That 1 is the giveaway. It proves the data has no width, making it a linear vector of targets. [6] 
+
 
 
 
