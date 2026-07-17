@@ -108,3 +108,59 @@ Space: O(k)
 ```
 
 #### Optimize
+```swift
+func isAnagram(_ s: String, _ t: String) -> Bool {
+
+    if s.count != t.count {
+        return false
+    }
+
+    var freqS: [Character: Int] = [:]
+    var freqT: [Character: Int] = [:]
+
+    for ch in s {
+        freqS[ch, default: 0] += 1
+    }
+
+    for ch in t {
+        freqT[ch, default: 0] += 1
+    }
+
+    return freqS == freqT
+}
+```
+
+#### Complexity
+```swift
+Time: O(n)
+Space: O(k) 
+```  
+
+#### Optimize Improved
+```swift
+func isAnagram(_ s: String, _ t: String) -> Bool {
+
+    if s.count != t.count {
+        return false
+    }
+
+    var freqS: [Character: Int] = [:]
+    var freqT: [Character: Int] = [:]
+
+    for ch in s {
+        freqS[ch, default: 0] += 1
+    }
+
+    for ch in t {
+        freqT[ch, default: 0] += 1
+    }
+
+    return freqS == freqT
+}
+```
+
+#### Complexity
+```swift
+Time: O(n)
+Space: O(k) 
+```
