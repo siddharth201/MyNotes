@@ -1,9 +1,9 @@
 
 > Q y Vector 
 
->Targets 
-6 
-8 
+Targets   
+6  
+8   
 11 
 
 Written as
