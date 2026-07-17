@@ -42,6 +42,8 @@ In predictive modeling, $y$ usually represents your "target" or the labels you w
 
 ---  
 
-### Q. 
+### Q. I am using python and still i am not sure why one column makes it a vector  
+
+
 
 
