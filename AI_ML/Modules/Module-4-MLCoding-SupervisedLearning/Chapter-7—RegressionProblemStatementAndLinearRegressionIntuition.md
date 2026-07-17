@@ -665,9 +665,7 @@ Eventually
 
 we'll write
 
-[
-\hat{y}=wx+b
-]
+$$\hat{y}=wx+b$$
 
 Don't worry about the symbols yet.
 
