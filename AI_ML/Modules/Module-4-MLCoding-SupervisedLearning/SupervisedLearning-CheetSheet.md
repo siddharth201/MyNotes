@@ -36,4 +36,14 @@ Target is
 ### One column is Vector how?
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/VectorExplanation.md)  
 
-### Validation Dataset
+### Validation Dataset  
+
+Many real projects split data into three parts:
+
+```swift
+Training
+
+Validation
+
+Testing
+```
