@@ -97,6 +97,30 @@ Mass is a scalar, not a vector. A scalar is just a single number with no directi
 ---  
 
 ### Q. Why a Grid is not a vector?
+
+### Answer:
+
+A grid (or matrix) is not a vector because it contains multiple independent directions and arrows grouped together, rather than a single path. [1, 2] 
+Here is exactly why a grid loses the single "magnitude and direction" definition of a vector.
+## 1. A Grid Contains Multiple Directions
+A vector is a single column because it represents a single set of coordinates for one arrow. [3, 4] 
+If you add columns to create a grid, every new column introduces a completely new, independent arrow pointing in a different direction. For example, look at this 3 × 2 grid:
+$$\text{Grid} = \begin{bmatrix} 3 & 1 \\ 4 & 2 \\ 5 & 6 \end{bmatrix}$$ 
+
+* Column 1 $\begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}$ is an arrow pointing in Direction A.
+* Column 2 $\begin{bmatrix} 1 \\ 2 \\ 6 \end{bmatrix}$ is an arrow pointing in Direction B.
+
+Because a grid holds multiple different directions at once, you can no longer say the grid itself has "a" single direction or "a" single magnitude. It is a collection of vectors.
+## 2. A Vector is 1D; A Grid is 2D
+Think of a vector as a one-way street. You can only move forward or backward along that list of numbers.
+A grid is a two-dimensional surface. To find a number in a grid, you cannot just look down; you have to look down and across. Because it has both width and height, it forms a coordinate system (a space) where vectors live, rather than being a single vector itself. [5] 
+## Summary
+
+* Vector (One Column): One arrow. It has one specific magnitude and one specific direction.
+* Grid (Multiple Columns): A container of multiple arrows, each pointing in different directions. [6, 7, 8, 9] 
+
+
+
  
 
 
