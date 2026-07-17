@@ -5,6 +5,7 @@
 ---  
 
 ### Dataset
+A Dataset is
 > An organized collection of observations used for learning patterns.
 
 ---  
