@@ -18,4 +18,10 @@ A Sample is
 
 ### Feature
 A Feature is
-> An input variable describing one characteristic of a sample.
+> An input variable describing one characteristic of a sample.  
+
+Notice
+
+Features describe
+
+the object.
