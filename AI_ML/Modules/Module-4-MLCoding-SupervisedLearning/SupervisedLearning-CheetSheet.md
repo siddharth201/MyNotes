@@ -32,3 +32,6 @@ the object.
 
 Target is
 > The value we want the model to predict.
+
+### One column is Vector how?
+[Explanation]()
