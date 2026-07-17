@@ -36,6 +36,8 @@ Target is
 ### One column is Vector how?
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/VectorExplanation.md)  
 
+---  
+
 ### Validation Dataset  
 
 Many real projects split data into three parts:
@@ -46,7 +48,9 @@ Training
 Validation
 
 Testing
-```  
+```   
+
+---
 
 ### Chapter Summary (Revision Notes)
 
@@ -61,6 +65,8 @@ Testing
 | Independent Variable                     | Input feature                 |
 | Dependent Variable                       | Target that depends on inputs |
 
+---
+
 ### Standard ML Notation
 
 * **X** = Feature matrix
@@ -69,3 +75,5 @@ Testing
 * **d** = Number of features
 * **Shape(X)** = $(n \times d)$
 * **Shape(y)** = $(n \times 1)$
+
+---
