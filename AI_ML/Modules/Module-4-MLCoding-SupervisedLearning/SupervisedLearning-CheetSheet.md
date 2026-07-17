@@ -46,4 +46,26 @@ Training
 Validation
 
 Testing
-```
+```  
+
+### Chapter Summary (Revision Notes)
+
+### Core Terminology
+
+| Term                                     | Meaning                       |
+| ---------------------------------------- | ----------------------------- |
+| Dataset                                  | Collection of samples         |
+| Sample / Observation / Instance / Record | One row in the dataset        |
+| Feature                                  | Input variable (column)       |
+| Label / Target                           | Output variable to predict    |
+| Independent Variable                     | Input feature                 |
+| Dependent Variable                       | Target that depends on inputs |
+
+### Standard ML Notation
+
+* **X** = Feature matrix
+* **y** = Target vector
+* **n** = Number of samples
+* **d** = Number of features
+* **Shape(X)** = $(n \times d)$
+* **Shape(y)** = $(n \times 1)$
