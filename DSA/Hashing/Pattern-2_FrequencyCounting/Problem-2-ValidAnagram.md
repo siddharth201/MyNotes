@@ -4,13 +4,19 @@
 
 ### Example 1:
 
-
+```swift
 Input: s = "anagram", t = "nagaram"
-
+ 
 Output: true
+```  
 
-Example 2:
-
+### Example 2:
+```swift
 Input: s = "rat", t = "car"
 
 Output: false
+```  
+
+### Solution  
+
+#### Brute Force
