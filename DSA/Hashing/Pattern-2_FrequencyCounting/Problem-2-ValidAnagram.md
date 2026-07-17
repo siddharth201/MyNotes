@@ -58,7 +58,8 @@ Time: O(n²)
 Space: O(k) 
 ```
 
-#### Brute Force Improved  
+#### Brute Force Improved 
+[Explanation]()  
 
 ```swift
 func validAnagramBruteForce(_ s: String, _ t: String) -> Bool {
