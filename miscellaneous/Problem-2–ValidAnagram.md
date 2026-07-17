@@ -645,25 +645,41 @@ only **one map**.
 ## Optimal Algorithm (Method 2)
 
 ```text
-IF lengths are different
+FUNCTION IsAnagram(string1, string2)
 
-    return false
+    IF length of string1 is NOT EQUAL to length of string2 THEN
+        RETURN False
+    END IF
 
-Build Frequency Map from first string
+    CREATE an empty Dictionary called 'frequencyMap'
 
-Traverse second string
+    FOR EACH character IN string1
 
-Decrease count
+        IF character already exists in 'frequencyMap' THEN
+            INCREMENT its count by 1
+        ELSE
+            ADD character with count = 1
+        END IF
 
-If any count becomes negative
+    END FOR
 
-    return false
+    FOR EACH character IN string2
 
-At the end
+        IF character does NOT exist in 'frequencyMap' THEN
+            RETURN False
+        END IF
 
-All counts should become zero
+        DECREMENT the count of that character by 1
 
-Return true
+        IF the count becomes LESS THAN 0 THEN
+            RETURN False
+        END IF
+
+    END FOR
+
+    RETURN True
+
+END FUNCTION
 ```
 
 Notice
