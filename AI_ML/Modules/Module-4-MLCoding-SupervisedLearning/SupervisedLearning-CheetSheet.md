@@ -52,7 +52,6 @@ Testing
 
 ---
 
-### Chapter Summary (Revision Notes)
 
 ### Core Terminology
 
