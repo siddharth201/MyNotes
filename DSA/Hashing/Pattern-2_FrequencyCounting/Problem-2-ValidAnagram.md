@@ -59,7 +59,7 @@ Space: O(k)
 ```
 
 #### Brute Force Improved 
-[Explanation]()  
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-2%E2%80%93ValidAnagram_Improved.md)  
 
 ```swift
 func validAnagramBruteForce(_ s: String, _ t: String) -> Bool {
