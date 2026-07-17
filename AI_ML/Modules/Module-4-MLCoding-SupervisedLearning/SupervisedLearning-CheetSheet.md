@@ -88,6 +88,8 @@ The real objective is
 
 Regression is a supervised learning technique used to predict **continuous numerical values.**
 
+---  
+
 ### What ML Does
 
 Machine
@@ -106,4 +108,9 @@ Predicts
 
 Future Values
 
-This is the essence of supervised learning.
+This is the essence of supervised learning.  
+
+---  
+
+### What Does "Linear" Mean?
+
