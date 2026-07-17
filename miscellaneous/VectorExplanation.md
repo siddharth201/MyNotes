@@ -73,7 +73,7 @@ When Python prints (3, 1), it means "3 rows and exactly 1 column." That 1 is the
 
 ---  
 
- 
+### Q. A vector has mass and direction correct? 
 
 
 
