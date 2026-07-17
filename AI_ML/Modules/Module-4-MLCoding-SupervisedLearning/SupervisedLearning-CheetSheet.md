@@ -29,3 +29,6 @@ the object.
 ---  
 
 ### Label / Target Variable
+
+Target is
+> The value we want the model to predict.
