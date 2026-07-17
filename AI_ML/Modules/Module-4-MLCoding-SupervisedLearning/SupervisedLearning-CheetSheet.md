@@ -10,6 +10,7 @@
 ---  
 
 ### Sample / Observation / Instance / Record
+A Sample is
 > One example from the dataset. 
 
 ---  
