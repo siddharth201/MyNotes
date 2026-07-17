@@ -1009,23 +1009,17 @@ y
 
 The goal of supervised learning is to learn a mapping:
 
-[
-f(X) = y
-]
+$$f(X) = y$$
 
 This equation is so important that you'll see variations of it throughout ML literature.
 
 For Linear Regression:
 
-[
-\hat{y} = wX + b
-]
+$$\hat{y} = wX + b$$
 
 For Neural Networks:
 
-[
-\hat{y} = f(X; \theta)
-]
+$$\hat{y} = f(X; \theta)$$
 
 Different models, same underlying idea: learn a function from inputs to outputs.
 
