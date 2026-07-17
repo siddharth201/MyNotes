@@ -52,4 +52,47 @@ func validAnagram(_ s: String, _ t: String) -> Bool {
 }
 ```  
 
-#### Brute Force Optimize
+#### Brute Force Improved  
+
+```swift
+func validAnagramBruteForce(_ s: String, _ t: String) -> Bool {
+
+    guard s.count == t.count else {
+        return false
+    }
+
+    var processed = Set<Character>()
+
+    for char in s {
+
+        if processed.contains(char) {
+            continue
+        }
+
+        var count1 = 0
+        var count2 = 0
+
+        for current in s {
+            if current == char {
+                count1 += 1
+            }
+        }
+
+        for current in t {
+            if current == char {
+                count2 += 1
+            }
+        }
+
+        if count1 != count2 {
+            return false
+        }
+
+        processed.insert(char)
+    }
+
+    return true
+}
+```  
+
+#### Optimize
