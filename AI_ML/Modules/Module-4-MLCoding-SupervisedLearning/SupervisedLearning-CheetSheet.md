@@ -15,4 +15,5 @@
 ---  
 
 ### Feature
+A Feature is
 > An input variable describing one characteristic of a sample.
