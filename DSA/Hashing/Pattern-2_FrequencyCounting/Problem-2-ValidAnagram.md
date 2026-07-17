@@ -50,7 +50,13 @@ func validAnagram(_ s: String, _ t: String) -> Bool {
     
     return true
 }
-```  
+``` 
+
+#### Complexity
+```swift
+Time: O(n²)
+Space: O(k) 
+```
 
 #### Brute Force Improved  
 
@@ -94,5 +100,11 @@ func validAnagramBruteForce(_ s: String, _ t: String) -> Bool {
     return true
 }
 ```  
+
+#### Complexity
+```swift
+Time: O(n²)
+Space: O(k) 
+```
 
 #### Optimize
