@@ -119,6 +119,12 @@ A grid is a two-dimensional surface. To find a number in a grid, you cannot just
 * Vector (One Column): One arrow. It has one specific magnitude and one specific direction.
 * Grid (Multiple Columns): A container of multiple arrows, each pointing in different directions. [6, 7, 8, 9] 
 
+---  
+
+### Q. So a grid is a scaler?
+
+### Answer  
+
 
 
  
