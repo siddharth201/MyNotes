@@ -68,6 +68,7 @@ print(matrix.shape)  # Outputs: (3, 2) -> 2D Grid
                    [11]])
 print(vector.shape)  # Outputs: (3, 1) -> 1 Column means it is a Vector
 
+
 When Python prints (3, 1), it means "3 rows and exactly 1 column." That 1 is the giveaway. It proves the data has no width, making it a linear vector of targets. [6] 
 
 
