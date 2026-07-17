@@ -80,3 +80,5 @@ Testing
 ---  
 
 ### Linear Regression Intuition
+> "Regression is not about fitting a line. It is about discovering the relationship between variables."
+
