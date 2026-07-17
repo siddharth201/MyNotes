@@ -73,7 +73,28 @@ When Python prints (3, 1), it means "3 rows and exactly 1 column." That 1 is the
 
 ---  
 
-### Q. A vector has mass and direction correct? 
+### Q. A vector has mass and direction correct?  
+
+### Answer
+
+No, that is a common mix-up. A vector has magnitude and direction, not mass. [1, 2, 3, 4] 
+Here is the difference between those terms and why it matters.
+## 1. Magnitude (Size or Amount)
+Magnitude just means "how much" or "how long" the vector is. [5, 6] 
+
+* In physics, magnitude could be a speed (like 60 km/h) or a force (like 10 Newtons).
+* In machine learning and math, the magnitude is just the value or length of the data point. In your target data, the numbers 6, 8, and 11 are magnitudes. [7, 8, 9, 10, 11] 
+
+## 2. Direction
+Direction tells you where that magnitude is pointing. [12] 
+
+* In physics, this is literally a direction, like "North" or "30 degrees upward."
+* In machine learning, "direction" means pointing to a specific spot in a grid or data space. For example, a vector tells the computer exactly how many steps to move along the X-axis and Y-axis to find a specific data point. [13, 14, 15, 16, 17] 
+
+## Why Mass is Different
+Mass is a scalar, not a vector. A scalar is just a single number with no direction at all. If an object weighs 50 kilograms, it weighs 50 kilograms no matter which way it is moving or pointing. It has no direction. [18, 19, 20, 21, 22] 
+
+ 
 
 
 
