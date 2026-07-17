@@ -15,3 +15,4 @@
 ---  
 
 ### Feature
+> An input variable describing one characteristic of a sample.
