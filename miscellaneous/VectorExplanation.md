@@ -126,6 +126,40 @@ A grid is a two-dimensional surface. To find a number in a grid, you cannot just
 ### Answer  
 
 
+No, a grid is not a scalar either. [1] 
+In mathematics and programming, data structures are divided into three distinct levels based on how much information they hold: scalars, vectors, and grids (matrices). [2] 
+Here is how they stack up:
+## 1. Scalar (Zero Dimensions)
+
+* What it is: A single, isolated number.
+* Properties: It has magnitude, but no direction at all.
+* Example: 5 or 12.8. [3, 4, 5, 6] 
+
+## 2. Vector (One Dimension)
+
+* What it is: A single column or row of numbers.
+* Properties: It combines numbers to point in one specific direction with one magnitude.
+* Example: [3, 4]. [7, 8, 9, 10] 
+
+## 3. Grid / Matrix (Two Dimensions)
+
+* What it is: A table with multiple rows and multiple columns.
+* Properties: It is a collection of multiple vectors. It has multiple directions and multiple magnitudes inside it.
+* Example: A 2x2 table. [11, 12] 
+
+## Summary of the Difference
+
+| Data Type | What it looks like | Direction count |
+|---|---|---|
+| Scalar | A single number | 0 directions |
+| Vector | One column | 1 direction |
+| Grid | Multiple columns | Multiple directions |
+
+A grid cannot be a scalar because a scalar is the smallest possible unit of data (just one number), while a grid is a large container holding many numbers arranged in rows and columns. [13, 14] 
+
+
+
+
 
  
 
