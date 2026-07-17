@@ -496,23 +496,42 @@ The most intuitive approach.
 ## Algorithm
 
 ```text
-IF lengths are different
+FUNCTION IsAnagram(string1, string2)
 
-    return false
+    IF length of string1 is NOT EQUAL to length of string2 THEN
+        RETURN False
+    END IF
 
-Create Frequency Map for s
+    CREATE an empty Dictionary called 'frequencyMap1'
+    CREATE an empty Dictionary called 'frequencyMap2'
 
-Create Frequency Map for t
+    FOR EACH character IN string1
 
-Compare both Maps
+        IF character already exists in 'frequencyMap1' THEN
+            INCREMENT its count by 1
+        ELSE
+            ADD character with count = 1
+        END IF
 
-If equal
+    END FOR
 
-    return true
+    FOR EACH character IN string2
 
-Else
+        IF character already exists in 'frequencyMap2' THEN
+            INCREMENT its count by 1
+        ELSE
+            ADD character with count = 1
+        END IF
 
-    return false
+    END FOR
+
+    IF frequencyMap1 is EQUAL to frequencyMap2 THEN
+        RETURN True
+    ELSE
+        RETURN False
+    END IF
+
+END FUNCTION
 ```
 
 ---
