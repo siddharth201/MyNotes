@@ -4,4 +4,4 @@
 ---  
 
 ### Dataset
-> 
+> An organized collection of observations used for learning patterns.
