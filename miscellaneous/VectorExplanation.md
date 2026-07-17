@@ -1,5 +1,5 @@
 
-> Q y Vector 
+Q. y Vector 
 
 Targets   
 6  
