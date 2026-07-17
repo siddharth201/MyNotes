@@ -10,4 +10,8 @@
 ---  
 
 ### Sample / Observation / Instance / Record
-> One example from the dataset.
+> One example from the dataset. 
+
+---  
+
+### Feature
