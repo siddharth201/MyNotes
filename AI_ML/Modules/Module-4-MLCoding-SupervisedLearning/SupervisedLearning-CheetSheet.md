@@ -77,4 +77,6 @@ Testing
 * **Shape(X)** = $(n \times d)$
 * **Shape(y)** = $(n \times 1)$
 
----
+---  
+
+### Linear Regression Intuition
