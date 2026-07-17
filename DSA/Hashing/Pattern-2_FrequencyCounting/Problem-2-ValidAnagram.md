@@ -144,18 +144,22 @@ func isAnagram(_ s: String, _ t: String) -> Bool {
         return false
     }
 
-    var freqS: [Character: Int] = [:]
-    var freqT: [Character: Int] = [:]
+    var frequency: [Character: Int] = [:]
 
     for ch in s {
-        freqS[ch, default: 0] += 1
+        frequency[ch, default: 0] += 1
     }
 
     for ch in t {
-        freqT[ch, default: 0] += 1
+
+        guard let count = frequency[ch], count > 0 else {
+            return false
+        }
+
+        frequency[ch] = count - 1
     }
 
-    return freqS == freqT
+    return true
 }
 ```
 
