@@ -113,4 +113,7 @@ This is the essence of supervised learning.
 ---  
 
 ### What Does "Linear" Mean?
+Linear means
+
+> The output changes approximately proportionally with the input.
 
