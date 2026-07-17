@@ -8,9 +8,9 @@ Targets
 
 Written as
  
-y = 
-6 
-8 
+y =   
+6  
+8   
 11 
 
 Notice Only one column. Therefore Vector. 
