@@ -487,33 +487,21 @@ Suppose
 
 our model is
 
-[
-\hat y=wx+b
-]
+$$\hat y=wx+b$$
 
 Residual
 
-[
-y-(wx+b)
-]
+$$y-(wx+b)$$
 
 Square it
 
-[
-(y-(wx+b))^2
-]
+$$(y-(wx+b))^2$$
 
 Now
 
 sum over all samples.
 
-[
-\boxed{
-RSS=
-\sum_{i=1}^{n}
-(y_i-\hat y_i)^2
-}
-]
+$$\boxed{RSS=\sum_{i=1}^{n}(y_i-\hat y_i)^2}$$
 
 Or,
 
