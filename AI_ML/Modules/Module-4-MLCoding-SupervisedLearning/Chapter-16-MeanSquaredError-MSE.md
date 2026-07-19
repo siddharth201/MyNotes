@@ -749,14 +749,7 @@ For Linear Regression,
 
 we can define
 
-[
-J(w,b)
-======
-
-\frac1n
-\sum_{i=1}^{n}
-(y_i-\hat y_i)^2
-]
+$$J(w,b) = \frac1n\sum_{i=1}^{n}(y_i-\hat y_i)^2$$
 
 Notice something.
 
