@@ -757,13 +757,7 @@ The cost
 
 depends on
 
-[
-w
-
-\text{and}
-
-b
-]
+$$w \text{and} b$$
 
 Different
 
