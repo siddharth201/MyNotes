@@ -948,9 +948,7 @@ We now know
 
 **what** we want to minimize:
 
-[
-RSS=\sum (y_i-\hat y_i)^2
-]
+$$RSS=\sum (y_i-\hat y_i)^2$$
 
 But in Machine Learning,
 
@@ -977,19 +975,11 @@ The next chapter answers:
 
 ### Objective
 
-[
-\boxed{
-RSS=\sum_{i=1}^{n}(y_i-\hat y_i)^2
-}
-]
+$$\boxed{RSS=\sum_{i=1}^{n}(y_i-\hat y_i)^2}$$
 
 For Linear Regression:
 
-[
-\boxed{
-RSS=\sum_{i=1}^{n}\left(y_i-(wx_i+b)\right)^2
-}
-]
+$$\boxed{RSS=\sum_{i=1}^{n}\left(y_i-(wx_i+b)\right)^2}$$
 
 ### Key Concepts
 
