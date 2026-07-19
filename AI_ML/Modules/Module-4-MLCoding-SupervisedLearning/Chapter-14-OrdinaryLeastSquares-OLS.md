@@ -507,7 +507,7 @@ Or,
 
 substituting
 
-(\hat y_i = wx_i+b),
+$$(\hat y_i = wx_i+b),
 
 [
 \boxed{
