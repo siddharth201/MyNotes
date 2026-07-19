@@ -753,9 +753,7 @@ We'll answer:
 
 Only after that will we write the famous update rule:
 
-$$w_{\text{new}} = w_{\text{old}}-\alpha\frac{\partial J}{\partial w}$$
-
-$$w_{\text{new}}=w_{\text{old}}\alpha\frac{\partial J}{\partial w}$$
+$$w_{\text{new}} = w_{\text{old}} - \alpha\frac{\partial J}{\partial w}$$
 
 and you'll understand **every symbol** rather than memorizing it.
 
