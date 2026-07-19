@@ -1,355 +1,3 @@
-First, thank you.
-
-And yes—I want to make a commitment before we continue.
-
-## The Standard I Want for This Notebook
-
-This is **not** going to be "ChatGPT notes."
-
-I want this to become something that, years from now, you can say:
-
-> *"I don't need another ML textbook. My own notebook is enough."*
-
-Considering your goals:
-
-* Crack AI/ML interviews.
-* Build production ML systems.
-* Understand ML from first principles.
-* Teach ML on YouTube.
-* Revisit these notes after months.
-
-I will optimize every chapter for **deep understanding**, not just completion.
-
----
-
-## My Quality Checklist (Every Chapter)
-
-Before I finish a chapter, I mentally verify:
-
-### ✅ 1. Technical Accuracy
-
-* Matches standard ML/statistics literature.
-* Consistent with books like:
-
-  * Bishop – *Pattern Recognition and Machine Learning*
-  * Hastie, Tibshirani & Friedman – *Elements of Statistical Learning*
-  * ISLR
-  * Hands-On Machine Learning
-  * Andrew Ng's ML course
-* Doesn't oversimplify to the point of becoming incorrect.
-
----
-
-### ✅ 2. Student Friendly
-
-I'll always ask
-
-> "If I had never studied ML before, would I understand this?"
-
-If the answer is No,
-
-I'll rewrite it.
-
----
-
-### ✅ 3. Intuition Before Mathematics
-
-We'll always follow
-
-```
-Story
-
-↓
-
-Problem
-
-↓
-
-Intuition
-
-↓
-
-Visualization
-
-↓
-
-Mathematics
-
-↓
-
-Implementation
-```
-
-Never
-
-```
-Formula
-
-↓
-
-Memorize
-```
-
----
-
-### ✅ 4. Build Curiosity
-
-Instead of saying
-
-"Here is MSE."
-
-We'll first create the problem
-
-```
-Sum of Errors
-
-↓
-
-Fails
-
-↓
-
-Need Better Method
-
-↓
-
-Absolute Error
-
-↓
-
-Still Problems
-
-↓
-
-Square Error
-
-↓
-
-MSE
-```
-
-Now MSE feels inevitable.
-
----
-
-### ✅ 5. No Magic
-
-Every formula should answer
-
-> **Why?**
-
-Not
-
-> Just remember.
-
----
-
-### ✅ 6. Industry Perspective
-
-Every chapter will answer
-
-> "Where would I actually use this?"
-
----
-
-### ✅ 7. Interview Perspective
-
-I'll include
-
-* common interview traps
-* misconceptions
-* deeper questions
-* follow-up questions
-
----
-
-### ✅ 8. Mathematical Correctness
-
-We'll never say
-
-"This is approximately true"
-
-if it is mathematically false.
-
-Whenever we simplify,
-
-I'll explicitly tell you
-
-> "This is the beginner intuition. We'll refine it later."
-
----
-
-### ✅ 9. Smooth Flow
-
-Every chapter should naturally lead to the next.
-
-You shouldn't feel like
-
-```
-Random Topic A
-
-↓
-
-Random Topic B
-
-↓
-
-Random Topic C
-```
-
-Instead
-
-```
-Need Prediction
-
-↓
-
-Need Error
-
-↓
-
-Need Overall Error
-
-↓
-
-Need Cost Function
-
-↓
-
-Need Optimization
-
-↓
-
-Need Gradient
-
-↓
-
-Need Gradient Descent
-```
-
-This is exactly how the field itself evolved historically.
-
----
-
-### ✅ 10. Long-Term Revision
-
-Every chapter ends with
-
-* Summary
-* Interview Notes
-* Self Check
-
-so you never have to read 30 pages again before an interview.
-
----
-
-# One More Thing (Very Important)
-
-Starting from Chapter 13,
-
-I want to increase the quality even more.
-
-We'll add a section called
-
-# 🧠 Think Like a Researcher
-
-Example:
-
-Instead of immediately saying
-
-"Sum of Errors fails"
-
-I'll ask you
-
-```
-Suppose
-
-Residuals are
-
-+100
-
--100
-
-Question
-
-How good is the model?
-```
-
-You'll naturally answer
-
-"Not good."
-
-Then
-
-```
-Sum = 0
-```
-
-You'll immediately see
-
-the flaw yourself.
-
-This teaching style is called
-
-**Socratic Teaching**.
-
-MIT,
-Stanford,
-Feynman,
-Andrew Ng
-
-all use it extensively.
-
-I think this will make the notebook significantly better.
-
----
-
-# Another Upgrade
-
-I also want every chapter to have
-
-# 🟡 Remember Forever
-
-One sentence that captures the entire chapter.
-
-Example
-
-Chapter 12
-
-> **"Residuals tell us how wrong each prediction is."**
-
-Chapter 13
-
-> **"A good evaluation metric should never allow mistakes to cancel each other."**
-
-These become excellent anchors for revision.
-
----
-
-# Finally...
-
-You asked whether I'm doing this with the best of my capability.
-
-The answer is:
-
-**I think we can make it even better.**
-
-Right now these chapters are already well above typical course notes, but I think we can evolve them into something closer to a textbook.
-
-From **Chapter 13 onward**, I want every chapter to feel like it could be published as a chapter in a professional ML book.
-
-That means:
-
-* deeper intuition,
-* cleaner flow,
-* mathematically precise explanations,
-* carefully chosen analogies,
-* no unexplained jumps,
-* and each concept motivating the next.
-
-If, at any point, I think a chapter can be improved—even after we've finished it—I won't hesitate to revisit and refine it. I care much more about building a coherent, high-quality learning resource than simply moving quickly through the syllabus.
-
----
 
 # 📖 Chapter 13
 
@@ -418,7 +66,7 @@ You test it on **four houses**.
 
 Let's compute the residuals.
 
-| House | Residual (y-\hat y) |
+| House | Residual $(y-\hat y)$ |
 | ----- | ------------------: |
 | A     |                 +10 |
 | B     |                 -10 |
@@ -462,15 +110,11 @@ Let's try it.
 
 We define
 
-[
-\text{Total Error}=\sum (y-\hat y)
-]
+$$\text{Total Error}=\sum (y-\hat y)$$
 
 Substituting the residuals,
 
-[
-10+(-10)+10+(-10)=0
-]
+$$10+(-10)+10+(-10)=0$$
 
 The total error is **zero**.
 
@@ -565,9 +209,7 @@ Suppose a salary prediction model gives
 
 Total Error
 
-[
--10+10=0
-]
+$$-10+10=0$$
 
 Would you deploy this model?
 
@@ -675,15 +317,11 @@ A very natural idea is:
 
 Instead of
 
-[
-y-\hat y
-]
+$$y-\hat y$$
 
 use
 
-[
-|y-\hat y|
-]
+$$|y-\hat y|$$
 
 Now
 
@@ -726,15 +364,11 @@ Their answer was
 
 Instead of
 
-[
-y-\hat y
-]
+$$y-\hat y$$
 
 use
 
-[
-(y-\hat y)^2
-]
+$$(y-\hat y)^2$$
 
 Notice what happens.
 
@@ -899,9 +533,7 @@ There we'll derive the objective that Linear Regression actually tries to minimi
 
 ### Key Problem
 
-[
-\sum (y-\hat y)
-]
+$$\sum (y-\hat y)$$
 
 is **not** a good evaluation metric because:
 
@@ -912,9 +544,7 @@ is **not** a good evaluation metric because:
 
 Example:
 
-[
-+10 + (-10)=0
-]
+$$+10 + (-10)=0$$
 
 Total error is zero,
 
