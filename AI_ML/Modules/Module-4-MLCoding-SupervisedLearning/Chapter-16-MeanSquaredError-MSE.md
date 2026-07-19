@@ -634,9 +634,7 @@ Squares
 
 MSE
 
-[
-\frac{9}{3}=3
-]
+$$\frac{9}{3}=3$$
 
 ---
 
@@ -664,9 +662,7 @@ Squares
 
 MSE
 
-[
-\frac{27}{3}=9
-]
+$$\frac{27}{3}=9$$
 
 Notice something.
 
