@@ -507,7 +507,7 @@ Or,
 
 substituting
 
-(\hat y_i = wx_i+b),
+$(\hat y_i = wx_i+b)$,
 
 $$\boxed{RSS=\sum_{i=1}^{n}\left(y_i-(wx_i+b)\right)^2}$$
 
