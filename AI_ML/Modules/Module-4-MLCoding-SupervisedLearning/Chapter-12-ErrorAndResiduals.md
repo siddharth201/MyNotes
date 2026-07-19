@@ -234,11 +234,7 @@ Error is
 
 Mathematically,
 
-[
-\boxed{
-Error=y-\hat y
-}
-]
+$$\boxed{Error=y-\hat y}$$
 
 This is one of the most important equations in Machine Learning.
 
@@ -258,9 +254,7 @@ Students often ask
 
 Why not
 
-[
-\hat y-y
-]
+$$\hat y-y$$
 
 Good question.
 
@@ -276,9 +270,7 @@ In statistics and much of ML,
 
 we commonly use
 
-[
-y-\hat y
-]
+$$y-\hat y$$
 
 because
 
@@ -302,9 +294,7 @@ Prediction
 
 Error
 
-[
-100-90=10
-]
+$$100-90=10$$
 
 Positive.
 
@@ -332,9 +322,7 @@ Prediction
 
 Error
 
-[
-90-100=-10
-]
+$$90-100=-10$$
 
 Negative.
 
@@ -514,9 +502,7 @@ Mathematically,
 
 for a training sample,
 
-[
-Residual=y-\hat y
-]
+$$Residual=y-\hat y$$
 
 The formula
 
@@ -751,9 +737,7 @@ Can we simply
 
 add them?
 
-[
-2+(-2)+5+(-5)=0
-]
+$$2+(-2)+5+(-5)=0$$
 
 Amazing!
 
@@ -985,9 +969,7 @@ and discover why the entire field of Linear Regression is built on **squaring re
 
 ### Error
 
-[
-\boxed{\text{Error}=y-\hat y}
-]
+$$\boxed{\text{Error}=y-\hat y}$$
 
 * Measures the difference between the actual and predicted values.
 * Quantifies how wrong a prediction is.
