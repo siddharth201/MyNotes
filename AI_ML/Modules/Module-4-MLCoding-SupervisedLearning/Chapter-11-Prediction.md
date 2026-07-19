@@ -662,9 +662,7 @@ That comparison gives us
 
 This chapter will introduce one of the most fundamental concepts in Machine Learning:
 
-[
-\boxed{\text{Error} = y-\hat y}
-]
+$$\boxed{\text{Error} = y-\hat y}$$
 
 From that single equation,
 
@@ -708,9 +706,7 @@ Prediction is computed by applying the learned model to a new input.
 
 For Linear Regression:
 
-[
-\hat y = wx + b
-]
+$$\hat y = wx + b]
 
 The values of (w) and (b) remain fixed during prediction.
 
