@@ -779,7 +779,7 @@ This equation is the foundation of learning.
 
 ---
 
-# Why Do Many Books Use (\frac{1}{2n})?
+# Why Do Many Books Use $(\frac{1}{2n})$?
 
 You may encounter
 
