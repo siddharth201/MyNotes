@@ -702,7 +702,7 @@ This chapter creates the need for them.
 
 Imagine a slider controlling the slope.
 
-$$genui{"functions_sequences_graphs_learning_block":{"type_id":"SLOPE_INTERCEPT"}}$$
+$$y=mx+b$$
 
 As you move the slope and intercept:
 
