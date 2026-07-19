@@ -941,12 +941,7 @@ Now we know
 
 **what** we want to minimize:
 
-[
-J(w,b)=
-\frac1n
-\sum
-(y_i-\hat y_i)^2
-]
+$$J(w,b)=\frac1n\sum(y_i-\hat y_i)^2$$
 
 The next question is
 
@@ -979,14 +974,7 @@ Only after understanding optimization will **Gradient Descent** feel natural rat
 
 ### Mean Squared Error (MSE)
 
-[
-\boxed{
-MSE=
-\frac1n
-\sum_{i=1}^{n}
-(y_i-\hat y_i)^2
-}
-]
+$$\boxed{MSE=\frac1n\sum_{i=1}^{n}(y_i-\hat y_i)^2}$$
 
 ### Derivation
 
