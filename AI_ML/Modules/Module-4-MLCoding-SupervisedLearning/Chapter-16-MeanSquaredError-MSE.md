@@ -783,14 +783,7 @@ This equation is the foundation of learning.
 
 You may encounter
 
-[
-J(w,b)
-======
-
-\frac1{2n}
-\sum
-(y_i-\hat y_i)^2
-]
+$$J(w,b) = \frac1{2n}\sum(y_i-\hat y_i)^2$$
 
 Question
 
