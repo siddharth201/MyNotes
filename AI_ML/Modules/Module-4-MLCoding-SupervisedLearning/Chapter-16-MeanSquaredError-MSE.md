@@ -98,9 +98,7 @@ We know
 
 Linear Regression minimizes
 
-[
-RSS=\sum_{i=1}^{n}(y_i-\hat y_i)^2
-]
+$$RSS=\sum_{i=1}^{n}(y_i-\hat y_i)^2$$
 
 Question
 
@@ -190,15 +188,11 @@ the average.
 
 Student A
 
-[
-\frac{2}{10}=20%
-]
+$$\frac{2}{10}=20%$$
 
 Student B
 
-[
-\frac{10}{100}=10%
-]
+$$\frac{10}{100}=10%$$
 
 Interesting.
 
@@ -320,9 +314,7 @@ step by step.
 
 Prediction Error
 
-[
-y-\hat y
-]
+$$y-\hat y$$
 
 ---
 
@@ -330,9 +322,7 @@ y-\hat y
 
 Square it
 
-[
-(y-\hat y)^2
-]
+$$(y-\hat y)^2$$
 
 ---
 
@@ -342,9 +332,7 @@ Add
 
 all samples
 
-[
-\sum_{i=1}^{n}(y_i-\hat y_i)^2
-]
+$$\sum_{i=1}^{n}(y_i-\hat y_i)^2$$
 
 This is
 
@@ -364,14 +352,7 @@ by
 
 n.
 
-[
-\boxed{
-MSE=
-\frac1n
-\sum_{i=1}^{n}
-(y_i-\hat y_i)^2
-}
-]
+$$\boxed{MSE=\frac1n\sum_{i=1}^{n}(y_i-\hat y_i)^2}$$
 
 Congratulations.
 
@@ -497,9 +478,7 @@ Let's compute.
 
 ## RSS
 
-[
-4+4+9=17
-]
+$$4+4+9=17$$
 
 ---
 
@@ -509,13 +488,9 @@ There are
 
 3 samples.
 
-[
-MSE=\frac{17}{3}
-]
+$$MSE=\frac{17}{3}$$
 
-[
-MSE\approx5.67
-]
+$$MSE\approx5.67$$
 
 That single number
 
@@ -587,9 +562,7 @@ non-negative.
 
 Therefore
 
-[
-MSE\ge0
-]
+$$MSE\ge0$$
 
 ---
 
@@ -619,9 +592,7 @@ Average
 
 Therefore
 
-[
-MSE=0
-]
+$$MSE=0$$
 
 This is
 
