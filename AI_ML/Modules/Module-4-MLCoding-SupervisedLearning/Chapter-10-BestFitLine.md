@@ -704,6 +704,9 @@ Imagine a slider controlling the slope.
 
 $$y=mx+b$$
 
+<iframe src="https://desmos.com" width="500px" height="350px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+
 As you move the slope and intercept:
 
 * Some lines clearly miss the data.
