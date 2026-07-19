@@ -228,9 +228,7 @@ Training is like preparation.
 
 Suppose our trained model is
 
-[
-\hat{y}=2x+5
-]
+$$\hat{y}=2x+5$$
 
 Now
 
@@ -238,9 +236,7 @@ a new house arrives.
 
 Area
 
-[
-x=100
-]
+$$x=100$$
 
 Question
 
@@ -248,13 +244,9 @@ What is the predicted price?
 
 Substitute
 
-[
-\hat{y}=2(100)+5
-]
+$$\hat{y}=2(100)+5$$
 
-[
-\hat{y}=205
-]
+$$\hat{y}=205$$
 
 That's a prediction.
 
