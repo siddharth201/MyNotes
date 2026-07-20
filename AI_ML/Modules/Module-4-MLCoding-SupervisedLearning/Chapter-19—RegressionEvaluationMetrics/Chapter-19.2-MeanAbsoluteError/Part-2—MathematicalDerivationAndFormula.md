@@ -210,16 +210,12 @@ The notation is simply a shorter way of referring to each observation.
 
 Now that we have symbols, the prediction error for the **i-th observation** becomes
 
-$$
-e_i
-=
-y_i-\hat y_i
-$$
+$$e_i=y_i-\hat y_i$$
 
 Let's interpret it.
 
-- \(y_i\) → Actual value
-- \(\hat y_i\) → Predicted value
+- $\(y_i\)$ → Actual value
+- $\(\hat y_i\)$ → Predicted value
 
 Subtract them.
 
