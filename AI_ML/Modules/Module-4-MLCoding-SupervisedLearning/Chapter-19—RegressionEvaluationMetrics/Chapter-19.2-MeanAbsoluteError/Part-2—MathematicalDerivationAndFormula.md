@@ -116,13 +116,7 @@ $$
 
 In general we write
 
-$$
-\text{Error}
-=
-\text{Actual}
--
-\text{Prediction}
-$$
+$$\text{Error}=\text{Actual}-\text{Prediction}$$
 
 Still very simple.
 
