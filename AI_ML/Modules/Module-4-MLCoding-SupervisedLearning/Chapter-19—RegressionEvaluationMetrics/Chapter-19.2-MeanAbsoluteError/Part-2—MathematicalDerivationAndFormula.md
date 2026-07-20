@@ -196,11 +196,11 @@ Think of it like this:
 
 | Dataset Row | Mathematical Name |
 |--------------|-------------------|
-| Row 1 | \(y_1\) |
-| Row 2 | \(y_2\) |
-| Row 3 | \(y_3\) |
+| Row 1 | $\(y_1\)$ |
+| Row 2 | $\(y_2\)$ |
+| Row 3 | $\(y_3\)$ |
 | ... | ... |
-| Row n | \(y_n\) |
+| Row n | $\(y_n\)$ |
 
 The notation is simply a shorter way of referring to each observation.
 
