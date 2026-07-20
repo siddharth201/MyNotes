@@ -184,7 +184,7 @@ Prediction 4
 
 we attach an index.
 
-$$y_1,y_2,y_3, ...y_n$$
+$$y_1, y_2, y_3, ...y_n$$
 
 Similarly,
 
