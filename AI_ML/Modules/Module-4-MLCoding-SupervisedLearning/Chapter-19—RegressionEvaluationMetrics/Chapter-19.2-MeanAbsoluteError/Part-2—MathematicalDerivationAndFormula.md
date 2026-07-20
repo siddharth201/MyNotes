@@ -558,13 +558,13 @@ Every symbol was introduced because we needed it.
 
 | Symbol | Why It Exists |
 |---------|---------------|
-| \(y_i\) | Represent the actual value of the i-th observation |
-| \(\hat y_i\) | Represent the model's prediction |
-| \(y_i-\hat y_i\) | Measure the prediction error |
-| \(|\cdot|\) | Remove the direction and keep only the magnitude |
-| \(\sum\) | Add errors efficiently without writing thousands of terms |
-| \(n\) | Convert the total error into an average |
-| \(MAE\) | Give this complete process a name |
+| $\(y_i\)$ | Represent the actual value of the i-th observation |
+| $\(\hat y_i\)$ | Represent the model's prediction |
+| $\(y_i-\hat y_i\)$ | Measure the prediction error |
+| $\(|\cdot|\)$ | Remove the direction and keep only the magnitude |
+| $\(\sum\)$ | Add errors efficiently without writing thousands of terms |
+| $\(n\)$ | Convert the total error into an average |
+| $\(MAE\)$ | Give this complete process a name |
 
 This is one of the biggest lessons in mathematics:
 
