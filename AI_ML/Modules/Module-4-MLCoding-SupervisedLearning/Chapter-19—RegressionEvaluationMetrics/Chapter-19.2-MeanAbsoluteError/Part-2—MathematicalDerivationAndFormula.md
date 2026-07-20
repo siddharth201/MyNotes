@@ -188,7 +188,7 @@ $$y_1, y_2, y_3, ...y_n$$
 
 Similarly,
 
-$$\hat y_1,\;\hat y_2,\;\hat y_3,\;...\hat y_n$$
+$$\hat y_1,\hat y_2,\hat y_3,...\hat y_n$$
 
 The subscript is nothing more than a row number.
 
