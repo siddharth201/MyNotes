@@ -58,10 +58,10 @@ Q.4 Given the value of a single bill and the number of bills you received, print
 <summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
 
 ```text
-A = input()
-B = input()
+N = int(input())
+M = int(input())
 
-print(A+" says Hi to "+B)
+print(N * M)
 ```
 </details>
 
