@@ -120,3 +120,18 @@ print("54" + "23")
 ### Problem Description
 
 #### Print the first five letters of the English alphabet i.e. A, B, C, D and E.
+
+### Output Format
+
+#### Print the characters in separate lines.
+
+<details>
+<summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
+
+```text
+N = int(input())
+M = int(input())
+
+print(N * M)
+```
+</details> 
