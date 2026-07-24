@@ -47,7 +47,7 @@ print(A+B)
 A = input()
 B = input()
 
-print(A+B)
+print(A+" says Hi to "+B)
 ```
 </details>
 
