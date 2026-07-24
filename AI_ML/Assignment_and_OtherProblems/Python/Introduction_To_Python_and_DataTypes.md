@@ -76,6 +76,6 @@ print(N * M)
 N = int(input())
 M = int(input())
 
-print(N * M)
+print(N - M)
 ```
 </details> 
