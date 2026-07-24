@@ -52,7 +52,7 @@ print(A+" says Hi to "+B)
 </details>
 
 
-Q.4 Given the value of a single bill and the number of bills you received, print the total value of the bills.  
+### Q.4 Given the value of a single bill and the number of bills you received, print the total value of the bills.  
 
 <details>
 <summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
