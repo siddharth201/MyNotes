@@ -16,8 +16,9 @@
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
 
-
+```text
 4. #
+```
 </details>
 
 </details>
