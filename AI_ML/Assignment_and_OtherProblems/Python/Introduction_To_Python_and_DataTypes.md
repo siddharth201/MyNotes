@@ -22,3 +22,6 @@
 </details>
 
 </details>
+
+
+### Given two numbers A and B. Concatenate the two numbers and print it.
