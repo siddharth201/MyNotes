@@ -91,19 +91,19 @@ print("54" + "23")
 <summary>$\color{red}{\huge{\textbf{Options:}}}$</summary>
 
 ```text
-1. //
+1. 77
 
-2. %
+2. 5423
 
-3. """
+3. 54
 
-4. #
+4. 23
 ```
 <details>
 <summary>$\color{green}{\Large{\textbf{Answer}}}$</summary>
 
 ```text
-4. #
+4. 5423
 ```
 </details>
 
