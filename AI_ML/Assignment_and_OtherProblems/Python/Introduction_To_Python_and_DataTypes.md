@@ -36,3 +36,18 @@ B = input()
 print(A+B)
 ```
 </details>
+
+
+### Q.3 Take two names A and B as input from the user, print "A says Hi to B" (Without quotations), where A and B are the names in input.  
+
+<details>
+<summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
+
+```text
+A = input()
+B = input()
+
+print(A+B)
+```
+</details>
+
