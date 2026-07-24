@@ -12,4 +12,9 @@
 
 4. #
 ```
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+4. #
+</details>
+
 </details>
