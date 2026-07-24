@@ -63,5 +63,19 @@ M = int(input())
 
 print(N * M)
 ```
-</details>
+</details> 
 
+
+### Q.5 Your friend Rahul plans to visit exotic countries all around the world. Sadly, Rahul's math skills aren't good enough. Take the amount of money Rahul has before the currency exchange and the amount of money that is spent from his savings as input, print the amount of money that remains in his savings.  
+
+
+<details>
+<summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
+
+```text
+N = int(input())
+M = int(input())
+
+print(N * M)
+```
+</details> 
