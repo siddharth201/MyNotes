@@ -29,4 +29,10 @@
 <details>
 <summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
 
+```text
+A = input()
+B = input()
+
+print(A+B)
+```
 </details>
