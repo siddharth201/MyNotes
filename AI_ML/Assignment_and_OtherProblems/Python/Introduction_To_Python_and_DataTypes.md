@@ -3,5 +3,7 @@
 
 <details>
 <summary>$\color{red}{\huge{\textbf{Options:}}}$</summary>
-
+```text
+1. 
+```
 </details>
