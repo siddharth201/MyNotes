@@ -5,7 +5,11 @@
 <summary>$\color{red}{\huge{\textbf{Options:}}}$</summary>
 ```text
 1. //
+
 2. %
-3.
+
+3. """
+
+4. #
 ```
 </details>
