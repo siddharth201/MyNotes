@@ -24,7 +24,7 @@
 </details>
 
 
-### Given two numbers A and B. Concatenate the two numbers and print it.
+### Q.2 Given two numbers A and B. Concatenate the two numbers and print it.
 
 <details>
 <summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
