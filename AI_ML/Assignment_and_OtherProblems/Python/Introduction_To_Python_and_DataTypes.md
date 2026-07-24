@@ -3,6 +3,7 @@
 
 <details>
 <summary>$\color{red}{\huge{\textbf{Options:}}}$</summary>
+
 ```text
 1. //
 
@@ -14,6 +15,7 @@
 ```
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+
 4. #
 </details>
 
