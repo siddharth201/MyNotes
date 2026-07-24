@@ -78,4 +78,11 @@ M = int(input())
 
 print(N - M)
 ```
-</details> 
+</details>   
+
+### Q.6 What is the result of the following expression in Python?
+
+```text
+
+print("54" + "23")
+```
