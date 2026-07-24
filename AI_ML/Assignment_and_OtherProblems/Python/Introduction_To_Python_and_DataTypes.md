@@ -26,4 +26,7 @@
 
 ### Given two numbers A and B. Concatenate the two numbers and print it.
 
+<details>
+<summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
 
+</details>
