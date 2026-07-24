@@ -14,7 +14,7 @@
 4. #
 ```
 <details>
-<summary>$\color{black}{\LARGE{\textbf{Answer}}}$</summary>
+<summary>$\color{black}{\Large{\textbf{Answer}}}$</summary>
 
 ```text
 4. #
