@@ -23,6 +23,7 @@
 
 </details>
 
+---
 
 ### Q.2 Given two numbers A and B. Concatenate the two numbers and print it.
 
@@ -37,6 +38,7 @@ print(A+B)
 ```
 </details>
 
+---
 
 ### Q.3 Take two names A and B as input from the user, print "A says Hi to B" (Without quotations), where A and B are the names in input.  
 
@@ -51,6 +53,7 @@ print(A+" says Hi to "+B)
 ```
 </details>
 
+---
 
 ### Q.4 Given the value of a single bill and the number of bills you received, print the total value of the bills.  
 
@@ -65,6 +68,7 @@ print(N * M)
 ```
 </details> 
 
+---
 
 ### Q.5 Your friend Rahul plans to visit exotic countries all around the world. Sadly, Rahul's math skills aren't good enough. Take the amount of money Rahul has before the currency exchange and the amount of money that is spent from his savings as input, print the amount of money that remains in his savings.  
 
@@ -78,7 +82,9 @@ M = int(input())
 
 print(N - M)
 ```
-</details>   
+</details> 
+
+---  
 
 ### Q.6 What is the result of the following expression in Python?
 
@@ -108,3 +114,7 @@ print("54" + "23")
 </details>
 
 </details>
+
+---
+
+### 
