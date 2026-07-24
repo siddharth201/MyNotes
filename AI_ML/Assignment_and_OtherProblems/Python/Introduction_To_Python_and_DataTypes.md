@@ -129,9 +129,8 @@ print("54" + "23")
 <summary>$\color{green}{\Large{\textbf{Solution}}}$</summary>
 
 ```text
-N = int(input())
-M = int(input())
-
-print(N * M)
+print("A\nB\nC\nD\nE")
 ```
 </details> 
+
+---
