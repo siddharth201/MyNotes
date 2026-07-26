@@ -58,6 +58,6 @@ func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
 ```
 #### Complexity
 ```swift
-Time: O(n)
+Time: O(n + m)
 Space: O(k) 
 ```
