@@ -26,3 +26,33 @@ Output: true
 ```
 
 ### Solution
+
+```swift
+func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
+
+    guard ransomNote.count <= magazine.count else {
+        return false
+    }
+
+    var frequency: [Character: Int] = [:]
+
+    for char in magazine {
+        frequency[char, default: 0] += 1
+    }
+
+    for char in ransomNote {
+
+        guard let count = frequency[char] else {
+            return false
+        }
+
+        frequency[char] = count - 1
+
+        if frequency[char]! < 0 {
+            return false
+        }
+    }
+
+    return true
+}
+```
