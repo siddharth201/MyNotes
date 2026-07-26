@@ -28,6 +28,8 @@
 [Problem 1 – Character Frequency](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-1%E2%80%93CharacterFrequency.md)  
 
 [Problem 2 – Valid Anagram](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-2%E2%80%93ValidAnagram.md)
+
+[Problem 3 – Ransom Note]()
 </details>
 
 </details>
