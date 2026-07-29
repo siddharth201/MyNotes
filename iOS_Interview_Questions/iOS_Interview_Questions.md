@@ -835,8 +835,101 @@ print(person2.name)   // Gaur
 
 ### **Mutability**
 
-• Value type immutability depends on whether the variable is declared with `let` (constant).
-• Reference type variables declared with `let` → You **can modify properties** inside the object, but you **cannot reassign** it to another object.
+In Swift, the fundamental difference between a `struct` (Structure) and a `class` regarding mutability comes down to one core concept: **Value Types vs. Reference Types**.
+
+Here is a clear, architectural mental model of how mutability changes depending on whether you choose a struct or a class.
+
+---
+
+#### 1. Structs: Value Mutability (The Copy Machine)
+
+A `struct` is a **value type**. When you pass a struct around, Swift passes a unique *copy* of the data.
+
+Because of this, the mutability of a struct's properties is strictly tied to the variable declaration (`let` vs `var`) of the instance itself.
+
+##### The Rules of Struct Mutability:
+
+* **Declared with `let` (Constant):** The entire instance is frozen. You **cannot** change any properties inside it, even if those properties were declared with `var` inside the struct.
+* **Declared with `var` (Variable):** You can change any property declared with `var`.
+
+###### The `mutating` Keyword:
+
+Because structs are value types, a method inside a struct cannot modify its own properties by default. You must explicitly mark the function with the `mutating` keyword. This tells Swift, *"This function will swap out this old copy for a mutated copy."*
+
+```swift
+struct Task {
+    var title: String
+    var isCompleted: Bool
+
+    // Must use 'mutating' because it modifies properties within a value type
+    mutating func completeTask() {
+        isCompleted = true
+    }
+}
+
+// Case 1: Constant Struct
+let fixedTask = Task(title: "Write Core Data Logic", isCompleted: false)
+// fixedTask.isCompleted = true // ❌ Compile Error: fixedTask is a constant 'let'
+// fixedTask.completeTask()     // ❌ Compile Error: Cannot call mutating method on a 'let' constant
+
+// Case 2: Variable Struct
+var activeTask = Task(title: "Debug Network Layer", isCompleted: false)
+activeTask.completeTask()       // ✅ Works perfectly!
+
+```
+
+---
+
+#### 2. Classes: Reference Mutability (The Shared Billboard)
+
+A `class` is a **reference type**. When you instantiate a class, the variable doesn't hold the actual data; it holds a *pointer* (reference) to a memory address where the data lives.
+
+Because of this, declaring a class instance with `let` **only freezes the pointer, not the data it points to.** #### The Rules of Class Mutability:
+
+* **Declared with `let`:** You cannot point this variable to a *new* instance of the class. However, you **can** freely modify any `var` properties inside that instance.
+* **No `mutating` keyword:** Class methods can alter internal properties freely without any special keywords because they are modifying the shared heap memory directly.
+
+```swift
+class LocalSession {
+    var userId: String
+    var token: String?
+
+    init(userId: String) {
+        self.userId = userId
+    }
+
+    // No 'mutating' keyword needed
+    func updateToken(newPrivilege: String) {
+        self.token = newPrivilege
+    }
+}
+
+// Declared with 'let'
+let currentSession = LocalSession(userId: "Veeram_99")
+
+currentSession.token = "xyz123" // ✅ Works! We are changing the internal data, not the reference pointer.
+currentSession.updateToken(newPrivilege: "abc789") // ✅ Works perfectly!
+
+// currentSession = LocalSession(userId: "Guest") // ❌ Compile Error: Cannot reassign a 'let' constant reference pointer.
+
+```
+
+---
+
+### Visual Comparison: Memory Behavior
+
+| Feature | Struct (`struct`) | Class (`class`) |
+| --- | --- | --- |
+| **Type Category** | Value Type | Reference Type |
+| **Memory Allocation** | Stack (Fast, local) | Heap (Dynamic, shared) |
+| **Behavior of `let` instance** | **Completely Immutable:** Properties cannot change. | **Pointer Immutable:** The reference cannot change, but `var` properties *can* change. |
+| **Internal Methods** | Requires `mutating` keyword to change internal state. | Modifies properties freely without extra keywords. |
+
+### Architectural Impact (Offline-First & Thread Safety)
+
+When building robust architectures (like offline synchronization or data repositories), **Structs are highly preferred for Data Models.** Because structs enforce value mutability, they are inherently **thread-safe**. If you pass a struct model to a background thread to sync with a remote database, you don't have to worry about the main thread changing that model's data mid-flight. Classes, on the other hand, require careful synchronization (like actors or locks) because multiple parts of your app can hold a reference to the exact same instance and mutate it simultaneously.
+
+Are you deciding whether to use a struct or a class for a specific data entity or manager component in your architecture right now?
 
 ---
 
