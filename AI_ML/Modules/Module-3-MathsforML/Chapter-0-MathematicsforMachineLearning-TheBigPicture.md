@@ -209,6 +209,11 @@ $$
 X = \begin{bmatrix} 2 \\ 4 \\ 6 \\ 8 \end{bmatrix}
 $$
 
+$$
+X = \begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\\\ 8 \end{bmatrix}
+$$
+
+
 and
 
 $$y=\begin{bmatrix}35\50\68\82\end{bmatrix}$$
