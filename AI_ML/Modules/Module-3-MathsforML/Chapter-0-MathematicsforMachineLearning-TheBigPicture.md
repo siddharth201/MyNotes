@@ -207,6 +207,8 @@ and
 
 $$y=\begin{bmatrix}35\50\68\82\end{bmatrix}$$
 
+$$y=\begin{bmatrix}35\\50\\68\\82\end{bmatrix}$$
+
 Now mathematics becomes organized.
 
 Linear Algebra gives us
