@@ -31,7 +31,7 @@
 
 [Problem 3 – Ransom Note](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Pattern-2-FrequencyCountingProblem-3-RansomNote.md)
 
-[Problem 4 – Majority Element]()
+[Problem 4 – Majority Element](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Problem-4-MajorityElement.md)
 </details>
 
 </details>
