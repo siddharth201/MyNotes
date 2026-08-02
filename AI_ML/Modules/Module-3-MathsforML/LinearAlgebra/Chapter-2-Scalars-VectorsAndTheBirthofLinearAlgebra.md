@@ -283,7 +283,7 @@ Only size.
 Usually written as
 
 $$
-a,;b,;x,;5,;3.14
+a,b,x,5,3.14
 $$
 
 A scalar is simply one number.
