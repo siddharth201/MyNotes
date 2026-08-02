@@ -385,6 +385,10 @@ $$
 \end{bmatrix}
 $$
 
+````math
+X = \begin{bmatrix} 2 \\ 4 \\ 6 \\ 8 \end{bmatrix}
+````
+
 Where:
 
 * 22 = Age
