@@ -386,7 +386,7 @@ $$
 $$
 
 ````math
-X = \begin{bmatrix} 22 \\ 175 \\ 70 \end{bmatrix}
+$x$ = \begin{bmatrix} 22 \\ 175 \\ 70 \end{bmatrix}
 ````
 
 Where:
