@@ -376,17 +376,9 @@ That package is called a vector.
 
 Mathematically,
 
-$$
-\mathbf{x}=
-\begin{bmatrix}
-22\
-175\
-70
-\end{bmatrix}
-$$
 
 ````math
-$x$ = \begin{bmatrix} 22 \\ 175 \\ 70 \end{bmatrix}
+x = \begin{bmatrix} 22 \\ 175 \\ 70 \end{bmatrix}
 ````
 
 Where:
