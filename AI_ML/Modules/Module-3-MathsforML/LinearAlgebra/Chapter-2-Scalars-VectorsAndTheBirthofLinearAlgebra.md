@@ -543,6 +543,10 @@ $$
 \end{bmatrix}
 $$
 
+````math
+x = \begin{bmatrix} 1 \\ 5 \\ 7 \\ 9 \end{bmatrix}
+````
+
 contains four values.
 
 It is a
