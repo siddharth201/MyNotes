@@ -90,28 +90,14 @@ The **magnitude** (also called the **length** or **Euclidean norm**) of a vector
 
 For a vector
 
-$$
-\mathbf{x}
-==========
-
-\begin{bmatrix}
-x_1\
-x_2\
-\vdots\
-x_n
-\end{bmatrix}
-$$
+````math
+x = \begin{bmatrix} x_1 \\ x_2 \\ . \\ . \\ . \\ x_n \end{bmatrix}
+````
 
 its magnitude is
 
 $$
-\boxed{
-|\mathbf{x}|
-============
-
-\sqrt{x_1^2+x_2^2+\cdots+x_n^2}
-}
-$$
+\boxed{|\mathbf{x}|=\sqrt{x_1^2+x_2^2+\cdots+x_n^2}}$$
 
 ---
 
