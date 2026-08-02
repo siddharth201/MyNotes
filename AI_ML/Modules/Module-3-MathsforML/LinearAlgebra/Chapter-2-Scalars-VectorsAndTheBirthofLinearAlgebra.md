@@ -534,14 +534,6 @@ So it is a
 
 Another example
 
-$$
-\begin{bmatrix}
-1\
-5\
-7\
-9
-\end{bmatrix}
-$$
 
 ````math
 x = \begin{bmatrix} 1 \\ 5 \\ 7 \\ 9 \end{bmatrix}
