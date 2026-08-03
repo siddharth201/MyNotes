@@ -401,6 +401,12 @@ A[NumPy Library]
 --> B[Alias: np]
 
 --> C[np.array()]
+```  
+
+```mermaid
+flowchart LR
+    A[NumPy Library] --> B[Alias: np]
+    B --> C["np.array()"]
 ```
 
 ---
