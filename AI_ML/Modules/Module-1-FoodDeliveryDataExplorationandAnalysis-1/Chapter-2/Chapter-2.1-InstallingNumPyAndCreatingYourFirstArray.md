@@ -215,7 +215,7 @@ flowchart LR
 
 A[pip]
 
---> B[Python Package Index (PyPI)]
+--> B[Python Package Index]
 
 --> C[Download NumPy]
 
