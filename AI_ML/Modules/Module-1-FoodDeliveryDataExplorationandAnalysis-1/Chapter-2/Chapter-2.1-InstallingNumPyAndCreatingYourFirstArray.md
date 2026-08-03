@@ -391,17 +391,7 @@ Using the standard alias makes code easier to read and collaborate on.
 
 ---
 
-# Visual Explanation
-
-```mermaid
-flowchart LR
-
-A[NumPy Library]
-
---> B[Alias: np]
-
---> C[np.array()]
-```  
+# Visual Explanation  
 
 ```mermaid
 flowchart LR
