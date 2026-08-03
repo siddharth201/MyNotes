@@ -221,6 +221,22 @@ A[pip]
 --> D[Install into Python Environment]
 ```
 
+```mermaid
+flowchart LR
+
+A[Python Programming Language]
+
+--> B[NumPy]
+
+--> C[Pandas]
+
+--> D[Matplotlib]
+
+--> E[SciPy]
+
+--> F[Scikit-Learn]
+```
+
 ---
 
 ### ASCII Version
