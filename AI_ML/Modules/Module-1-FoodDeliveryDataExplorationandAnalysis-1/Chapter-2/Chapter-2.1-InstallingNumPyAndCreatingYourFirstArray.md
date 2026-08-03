@@ -221,7 +221,8 @@ A[pip]
 --> D[Install into Python Environment]
 ```
 
-```mermaid
+```mermaid  
+
 flowchart LR
 
 A[Python Programming Language]
