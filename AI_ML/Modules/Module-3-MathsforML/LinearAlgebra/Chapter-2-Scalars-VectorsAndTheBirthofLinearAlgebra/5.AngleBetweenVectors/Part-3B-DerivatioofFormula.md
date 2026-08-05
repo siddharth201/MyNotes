@@ -429,7 +429,7 @@ This theorem relates:
 
 Exactly what we need.
 
-[**Law of Cosin**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/LawOfCosin.md)
+[**Law of Cosines**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/LawOfCosin.md)
 
 ---
 
