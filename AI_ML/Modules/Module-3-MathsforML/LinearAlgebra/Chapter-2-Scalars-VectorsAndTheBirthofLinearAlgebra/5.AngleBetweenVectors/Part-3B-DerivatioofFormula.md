@@ -71,6 +71,88 @@ Final Angle Formula
 
 # Step 1 — Start With Two Vectors
 
+## What are we given?
+
+Suppose we already know two vectors
+
+[
+\mathbf{x}
+==========
+
+\begin{bmatrix}
+x_1\
+x_2
+\end{bmatrix},
+\qquad
+\mathbf{y}
+==========
+
+\begin{bmatrix}
+y_1\
+y_2
+\end{bmatrix}
+]
+
+Both vectors start from the **same origin**.
+
+At this point, we know:
+
+* the coordinates of **x**
+* the coordinates of **y**
+
+But we **do not know the angle** between them.
+
+Our objective is to compute
+
+[
+\theta
+]
+
+using only the numerical values stored inside the vectors.
+
+---
+
+## Publication-Quality Figure 1 — Two Known Vectors
+
+```
+                B
+                ●
+               ↗  y
+              /
+             /
+            /
+O ●──────────────► A
+        x
+```
+
+**Figure 1:** Two vectors originate from the same point (O). The angle between them is unknown.
+
+---
+
+## Geometry Insight
+
+Notice what information we already possess.
+
+✓ Both vectors start from the same origin.
+
+✓ We know their coordinates.
+
+✓ We know their lengths can be computed.
+
+✗ But we do **not** know the angle between them.
+
+So the entire problem becomes
+
+> **How can we compute the angle using only the coordinates of the vectors?**
+
+Unfortunately, there is no direct formula for this yet.
+
+We need another idea.
+
+---
+
+# Step 1 — Start With Two Vectors
+
 # Step 1 — Start With Two Vectors
 
 Suppose we have two vectors
