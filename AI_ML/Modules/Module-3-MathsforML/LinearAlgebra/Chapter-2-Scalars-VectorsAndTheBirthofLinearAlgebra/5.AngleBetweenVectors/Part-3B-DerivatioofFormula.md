@@ -243,21 +243,11 @@ To move from A to B,
 
 Mathematically,
 
-[
-AB
-==
-
-OB-OA
-]
+$$AB = OB-OA$$
 
 Substituting the vectors,
 
-[
-AB
-==
-
-\mathbf{y}-\mathbf{x}
-]
+$$AB = \mathbf{y}-\mathbf{x}$$
 
 Exactly the same result.
 
