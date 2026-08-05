@@ -378,47 +378,8 @@ Understanding this identity now will make many future derivations feel much more
 - This step transforms a geometric equation into a linear algebra equation.
 - The dot product appears naturally—it is not introduced artificially.
 
-# Step 5 — Expanding the Left-Hand Side
 
-So far, our equation still contains the term
 
-$\lVert\mathbf{x}-\mathbf{y}\rVert^2$.
-
-To connect this expression with the **dot product**, we now rewrite it using a fundamental identity from Linear Algebra.
-
-### 🔑 Vector Identity
-
-$$\lVert\mathbf{x}-\mathbf{y}\rVert^2=(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})$$
-
-Expanding this expression gives
-
-$$
-(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
-=
-\mathbf{x}^T\mathbf{x}
--
-\mathbf{x}^T\mathbf{y}
--
-\mathbf{y}^T\mathbf{x}
-+
-\mathbf{y}^T\mathbf{y}
-$$
-
-Notice that the middle two terms are identical because
-
-$$\mathbf{x}^T\mathbf{y}=\mathbf{y}^T\mathbf{x}$$
-
-Therefore, the expression simplifies to
-
-$$\mathbf{x}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}-2\mathbf{x}^T\mathbf{y}$$
-
-### 💡 Why This Step?
-
-This is the most important algebraic step in the derivation.
-
-Until now, everything came from **Geometry**.
-
-After this expansion, the **dot product naturally appears**, allowing us to connect geometry with linear algebra.
 
 ## 🧠 Think Like a Mathematician
 
