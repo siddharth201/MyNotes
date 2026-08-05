@@ -184,15 +184,11 @@ This is the most beautiful observation in the derivation.
 
 We already know
 
-[
-OA=\mathbf{x}
-]
+$OA=\mathbf{x}$
 
 and
 
-[
-OB=\mathbf{y}
-]
+$OB=\mathbf{y}$
 
 Now ask yourself a simple question.
 
