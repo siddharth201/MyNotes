@@ -361,11 +361,11 @@ There is a general rule in geometry.
 
 If two points have **position vectors**
 
-[
+$$
 \mathbf{a}
 \quad\text{and}\quad
 \mathbf{b},
-]
+$$
 
 then the vector joining them is always
 
