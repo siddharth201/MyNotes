@@ -177,9 +177,8 @@ AB
 
 Let's compute it.
 
----
 
-# Finding the Third Side
+## Finding the Third Side
 
 This is the most beautiful observation in the derivation.
 
