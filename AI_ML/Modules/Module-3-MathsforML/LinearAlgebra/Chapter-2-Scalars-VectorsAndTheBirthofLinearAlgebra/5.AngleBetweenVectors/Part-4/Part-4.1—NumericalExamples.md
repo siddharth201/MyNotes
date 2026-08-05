@@ -75,8 +75,8 @@ Multiply the numbers that occupy the **same position**.
 
 | Component | Multiplication | Result |
 | --------- | -------------: | -----: |
-| First     |   (2 \times 4) |      8 |
-| Second    |   (3 \times 1) |      3 |
+| First     |   $2 \times 4$ |      8 |
+| Second    |   $3 \times 1$ |      3 |
 
 ---
 
