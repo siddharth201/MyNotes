@@ -406,6 +406,14 @@ and
 
 Since our vectors already give us the side lengths of a triangle, this theorem allows us to calculate the unknown angle.
 
+Unlike Pythagoras,
+
+which only works for right triangles,
+
+the Law of Cosines works for every triangle.
+
+That is exactly why we can apply it here.
+
 # 📐 Publication-Quality Figure 3 — Generic Triangle
 
 ```text
