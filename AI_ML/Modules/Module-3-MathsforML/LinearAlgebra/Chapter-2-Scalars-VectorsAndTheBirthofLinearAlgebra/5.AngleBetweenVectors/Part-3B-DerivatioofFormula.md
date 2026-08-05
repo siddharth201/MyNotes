@@ -479,6 +479,10 @@ To connect this geometric expression with the **dot product**, we now rewrite it
 
 ---
 
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+```
+
 ### 🔑 Vector Identity
 
 A vector's squared magnitude can always be written as the dot product of the vector with itself.
