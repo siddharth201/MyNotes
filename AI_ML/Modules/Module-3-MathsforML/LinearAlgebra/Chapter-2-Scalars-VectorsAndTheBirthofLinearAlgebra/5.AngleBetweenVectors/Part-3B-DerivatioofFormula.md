@@ -182,11 +182,11 @@ This is the most beautiful observation in the derivation.
 
 We already know
 
-$OA=\mathbf{x}$
+$$OA=\mathbf{x}$$
 
 and
 
-$OB=\mathbf{y}$
+$$OB=\mathbf{y}$$
 
 Now ask yourself a simple question.
 
@@ -208,19 +208,15 @@ That movement is exactly the opposite of **OA**.
 
 Since
 
-$OA=\mathbf{x},$
+$$OA=\mathbf{x},$$
 
 we have
 
-[
-A\rightarrow O=-\mathbf{x}
-]
+$$A\rightarrow O=-\mathbf{x}$$
 
 Now travel from the origin to B.
 
-[
-O\rightarrow B=\mathbf{y}
-]
+$$O\rightarrow B=\mathbf{y}$$
 
 Combining both journeys,
 
