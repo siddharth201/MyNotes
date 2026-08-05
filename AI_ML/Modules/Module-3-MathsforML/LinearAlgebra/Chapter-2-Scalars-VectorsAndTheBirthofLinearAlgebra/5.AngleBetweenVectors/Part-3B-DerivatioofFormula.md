@@ -198,8 +198,6 @@ then
 
 $$c^2=a^2+b^2-2ab\cos\theta$$
 
----
-
 ### 💡 Why This Formula?
 
 The Law of Cosines is the only theorem that directly connects
