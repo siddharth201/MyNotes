@@ -277,6 +277,36 @@ This surprises many students.
 
 ---
 
+# Step 4 — Translating Geometry into Vectors
+
+So far, our equation is written in the language of **Geometry**.
+
+To use it in Linear Algebra, we must express every side of the triangle using **vector magnitudes**.
+
+The correspondence is straightforward:
+
+| Triangle Side | Vector Interpretation |
+|:-------------:|:---------------------:|
+| $a$ | $\|\mathbf{x}\|$ |
+| $b$ | $\|\mathbf{y}\|$ |
+| $c$ | $\|\mathbf{x}-\mathbf{y}\|$ |
+
+Replacing each side with its corresponding vector length transforms the **Law of Cosines** into its vector form.
+
+### 🔑 Key Result
+
+$$\|\mathbf{x}-\mathbf{y}\|^2=\|\mathbf{x}\|^2+\|\mathbf{y}\|^2-2\|\mathbf{x}\|\|\mathbf{y}\|\cos\theta$$
+
+### 💡 Why This Step?
+
+Notice that nothing has changed mathematically.
+
+We have **not derived a new formula**.
+
+We have simply rewritten the classical **Law of Cosines** using vector notation.
+
+This is the exact moment where **Geometry transitions into Linear Algebra**.
+
 # Step 5 — Expand the Left-Hand Side
 
 Now we use a property of vectors.
