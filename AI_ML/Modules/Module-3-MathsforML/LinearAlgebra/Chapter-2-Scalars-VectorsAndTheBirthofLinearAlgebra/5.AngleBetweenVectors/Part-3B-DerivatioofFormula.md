@@ -429,6 +429,8 @@ This theorem relates:
 
 Exactly what we need.
 
+[**Law of Cosin**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/LawOfCosin.md)
+
 ---
 
 # Step 4 — Translating Geometry into Vectors
