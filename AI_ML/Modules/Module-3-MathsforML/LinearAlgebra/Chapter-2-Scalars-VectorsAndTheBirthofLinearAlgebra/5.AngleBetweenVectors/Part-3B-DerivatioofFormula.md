@@ -159,9 +159,7 @@ AB = ?
 
 Now we have a proper triangle
 
-[
-\triangle OAB
-]
+$\triangle OAB$
 
 whose sides are
 
