@@ -99,16 +99,7 @@ using only the numerical values stored inside the vectors.
 
 ## Publication-Quality Figure 1 — Two Known Vectors
 
-```
-                B
-                ●
-               ↗  y
-              /
-             /
-            /
-O ●──────────────► A
-        x
-```
+![Two Known Vectors](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/Gemini_Generated_Image_n1cropn1cropn1cr.png)
 
 **Figure 1:** Two vectors originate from the same point (O). The angle between them is unknown.
 
