@@ -84,7 +84,6 @@ Multiply the numbers that occupy the **same position**.
 
 Now simply add the results.
 
-````markdown
 ```math
 \mathbf{x}\cdot\mathbf{y}
 =
@@ -96,17 +95,14 @@ Now simply add the results.
 =
 11
 ```
-````
 
 Therefore,
 
-````markdown
 ```math
 \boxed{
 \mathbf{x}\cdot\mathbf{y}=11
 }
 ```
-````
 
 ---
 
