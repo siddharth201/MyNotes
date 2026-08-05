@@ -71,7 +71,7 @@ Final Angle Formula
 
 # Step 1 — Start With Two Vectors
 
-## Step 1 — Start With Two Vectors
+# Step 1 — Start With Two Vectors
 
 Suppose we have two vectors
 
