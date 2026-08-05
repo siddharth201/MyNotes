@@ -61,6 +61,20 @@ Consider two vectors
 ```
 ````
 
+```math
+\mathbf{x}=
+\begin{bmatrix}
+2\\
+3
+\end{bmatrix},
+\qquad
+\mathbf{y}=
+\begin{bmatrix}
+4\\
+1
+\end{bmatrix}
+```
+
 ---
 
 ## Step 1 — Multiply Corresponding Components
