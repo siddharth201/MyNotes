@@ -220,31 +220,15 @@ $$O\rightarrow B=\mathbf{y}$$
 
 Combining both journeys,
 
-[
-A\rightarrow B
-==============
-
-A\rightarrow O
-+
-O\rightarrow B
-]
+$$A\rightarrow B = A\rightarrow O + O\rightarrow B$$
 
 Substituting,
 
-[
-A\rightarrow B
-==============
-
-(-\mathbf{x})
-+
-\mathbf{y}
-]
+$$A\rightarrow B = (-\mathbf{x}) + \mathbf{y}$$
 
 Therefore,
 
-[
-\boxed{A\rightarrow B=\mathbf{y}-\mathbf{x}}
-]
+$$\boxed{A\rightarrow B=\mathbf{y}-\mathbf{x}}$$
 
 ---
 
