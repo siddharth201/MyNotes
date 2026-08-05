@@ -7894,7 +7894,7 @@ Use it when:
 
 ### **Q1: What are the fundamental secure coding principles for iOS development?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
  
 Writing secure iOS apps means protecting **user data**, **preventing attacks**, and **ensuring app integrity**.
 
@@ -7946,6 +7946,10 @@ Writing secure iOS apps means protecting **user data**, **preventing attacks**, 
 * Only enable necessary **capabilities and permissions** (camera, location, contacts).
 * Remove **unused code, debug info, and third-party SDKs** that aren't essential.
 </details>  
+
+<details>
+<summary>Answer2</summary>
+</details> 
 
 ### **Q2: How do you securely clear sensitive data from memory in Swift?**
 <details>
