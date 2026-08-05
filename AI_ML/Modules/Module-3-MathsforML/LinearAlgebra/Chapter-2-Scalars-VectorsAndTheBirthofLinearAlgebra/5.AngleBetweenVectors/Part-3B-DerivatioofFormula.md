@@ -77,6 +77,7 @@ Suppose we already know two vectors
 
 $$\mathbf{x}=\begin{bmatrix}x_1\\x_2\end{bmatrix},\qquad \mathbf{y}=\begin{bmatrix}y_1\\y_2\end{bmatrix}$$
 
+$$\mathbf{x}=(x_1,x_2)^T,\qquad \mathbf{y}=(y_1,y_2)^T$$
 
 Both vectors start from the **same origin**.
 
