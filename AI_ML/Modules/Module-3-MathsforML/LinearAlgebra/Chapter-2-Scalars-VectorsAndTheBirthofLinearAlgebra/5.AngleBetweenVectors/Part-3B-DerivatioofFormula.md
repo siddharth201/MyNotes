@@ -185,27 +185,36 @@ This single observation allows Linear Algebra to borrow a theorem from Geometry.
 
 # Step 3 — Recall the Law of Cosines
 
+Now that our vectors form a triangle, we can use a classical result from geometry.
+
+### Law of Cosines
+
 For any triangle,
 
----
-
-## Mathematical Statement
-
-If a triangle has sides
-
-* (a)
-* (b)
-* (c)
-
-and angle θ opposite side (c),
+- side lengths are $a$, $b$, and $c$
+- $\theta$ is the angle opposite side $c$
 
 then
 
-[
-\boxed{
-c^2=a^2+b^2-2ab\cos\theta
-}
-]
+$$
+c^2
+=
+a^2+b^2-2ab\cos\theta
+$$
+
+---
+
+### 💡 Why This Formula?
+
+The Law of Cosines is the only theorem that directly connects
+
+- side lengths
+
+and
+
+- angles.
+
+Since our vectors already give us the side lengths of a triangle, this theorem allows us to calculate the unknown angle.
 
 ---
 
