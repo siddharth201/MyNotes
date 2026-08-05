@@ -138,7 +138,6 @@ So our first goal is to **create a triangle**.
 
 We simply connect the endpoints of the vectors.
 
----
 
 ## Publication-Quality Figure 2 — Constructing the Triangle
 
