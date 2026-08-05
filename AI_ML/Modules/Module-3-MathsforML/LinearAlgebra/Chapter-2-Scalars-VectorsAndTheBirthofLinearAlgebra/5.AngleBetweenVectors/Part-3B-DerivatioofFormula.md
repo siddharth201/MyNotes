@@ -210,8 +210,6 @@ and
 
 Since our vectors already give us the side lengths of a triangle, this theorem allows us to calculate the unknown angle.
 
----
-
 # 📐 Publication-Quality Figure 3 — Generic Triangle
 
 ```text
@@ -225,7 +223,6 @@ Since our vectors already give us the side lengths of a triangle, this theorem a
           A     c     B
 ```
 
----
 
 ## 📐 Geometry Insight
 
