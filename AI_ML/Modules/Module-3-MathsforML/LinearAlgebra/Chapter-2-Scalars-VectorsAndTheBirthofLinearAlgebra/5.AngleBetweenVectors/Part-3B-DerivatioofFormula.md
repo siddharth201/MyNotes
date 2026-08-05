@@ -128,49 +128,330 @@ We need another idea.
 ---
 
 
-# Step 2 — Create a Triangle
+# Step 2 — Turn the Vectors into a Triangle
 
-Now connect the endpoints of the vectors.
+The Law of Cosines works only for **triangles**.
+
+Right now we only have two vectors sharing the same starting point.
+
+So our first goal is to **create a triangle**.
+
+We simply connect the endpoints of the vectors.
 
 ---
 
-# 📐 Publication-Quality Figure 2 — Completing the Triangle
+## Publication-Quality Figure 2 — Constructing the Triangle
 
-```text
-                         y
-                         ↑
-
-                    ● B = y
-                   ╱│
-                  ╱ │
-                 ╱  │
-                ╱θ  │
-               ╱    │
-              ╱     │
-             ╱      │
-O ●────────●────────┘────────→ x
-  A = x
+```
+                B
+                ●
+               /|
+              / |
+          y  /  |
+            /   |
+           /    |
+O ●───────●-----+
+      x    A
 
 OA = x
 OB = y
-AB = x − y
+AB = ?
 ```
+
+Now we have a proper triangle
+
+[
+\triangle OAB
+]
+
+whose sides are
+
+* (OA)
+* (OB)
+* (AB)
+
+The first two sides are already known.
+
+The only unknown side is
+
+[
+AB
+]
+
+Let's compute it.
 
 ---
 
-## 📐 Geometry Insight
+# Finding the Third Side
 
-Notice something beautiful.
+This is the most beautiful observation in the derivation.
 
-The third side of the triangle is represented by the vector  
+We already know
 
-$$\mathbf{x}-\mathbf{y}$$
+[
+OA=\mathbf{x}
+]
 
-This is not magic.
+and
 
-It simply represents the displacement from one endpoint to the other.
+[
+OB=\mathbf{y}
+]
 
-This single observation allows Linear Algebra to borrow a theorem from Geometry.
+Now ask yourself a simple question.
+
+> **If I am standing at point A, how do I reach point B?**
+
+There are two possible ways.
+
+---
+
+## Method 1 (Two-Step Journey)
+
+Travel from **A** back to the origin.
+
+```
+A → O
+```
+
+That movement is exactly the opposite of **OA**.
+
+Since
+
+[
+OA=\mathbf{x},
+]
+
+we have
+
+[
+A\rightarrow O=-\mathbf{x}
+]
+
+Now travel from the origin to B.
+
+[
+O\rightarrow B=\mathbf{y}
+]
+
+Combining both journeys,
+
+[
+A\rightarrow B
+==============
+
+A\rightarrow O
++
+O\rightarrow B
+]
+
+Substituting,
+
+[
+A\rightarrow B
+==============
+
+(-\mathbf{x})
++
+\mathbf{y}
+]
+
+Therefore,
+
+[
+\boxed{A\rightarrow B=\mathbf{y}-\mathbf{x}}
+]
+
+---
+
+## Method 2 (A More Elegant Way)
+
+Think of vectors as **displacements**.
+
+To move from A to B,
+
+1. Remove the displacement that took you from O to A.
+2. Add the displacement that takes you from O to B.
+
+Mathematically,
+
+[
+AB
+==
+
+OB-OA
+]
+
+Substituting the vectors,
+
+[
+AB
+==
+
+\mathbf{y}-\mathbf{x}
+]
+
+Exactly the same result.
+
+---
+
+# Why Does
+
+[
+AB=OB-OA
+]
+
+Actually Work?
+
+This confuses almost everyone the first time.
+
+Let's understand it visually.
+
+Imagine you have GPS coordinates.
+
+```
+Origin O = Home
+
+A = Office
+
+B = Mall
+```
+
+Suppose
+
+```
+Home → Office = 4 km East
+```
+
+and
+
+```
+Home → Mall = 7 km East
+```
+
+Then what is
+
+```
+Office → Mall ?
+```
+
+You don't start from Home anymore.
+
+So you remove the journey to Office first.
+
+```
+7 km
+−4 km
+-----
+3 km
+```
+
+That is exactly
+
+```
+Mall − Office
+```
+
+or
+
+[
+OB-OA
+]
+
+Nothing magical happened.
+
+We simply asked:
+
+> "Where is B relative to A instead of relative to the origin?"
+
+---
+
+# Another Numerical Example
+
+Suppose
+
+[
+\mathbf{x}
+==========
+
+\begin{bmatrix}
+2\
+1
+\end{bmatrix},
+\qquad
+\mathbf{y}
+==========
+
+\begin{bmatrix}
+5\
+4
+\end{bmatrix}
+]
+
+These tell us
+
+* A is located at (2,1)
+* B is located at (5,4)
+
+Now ask
+
+> **How do I go from A to B?**
+
+Subtract the coordinates.
+
+[
+\begin{aligned}
+AB
+&=
+(5,4)-(2,1)\
+&=
+(3,3)
+\end{aligned}
+]
+
+Exactly the same rule:
+
+[
+\boxed{
+AB
+==
+
+## OB
+
+OA
+}
+]
+
+---
+
+# Think Like a Mathematician
+
+There is a general rule in geometry.
+
+If two points have **position vectors**
+
+[
+\mathbf{a}
+\quad\text{and}\quad
+\mathbf{b},
+]
+
+then the vector joining them is always
+
+[
+\boxed{
+\overrightarrow{AB}
+===================
+
+\mathbf{b}-\mathbf{a}
+}
+]
+
+This is one of the most fundamental identities in Linear Algebra.
+
+Once you remember this rule, the rest of the derivation becomes almost automatic.
+
+---
 
 ---
 
