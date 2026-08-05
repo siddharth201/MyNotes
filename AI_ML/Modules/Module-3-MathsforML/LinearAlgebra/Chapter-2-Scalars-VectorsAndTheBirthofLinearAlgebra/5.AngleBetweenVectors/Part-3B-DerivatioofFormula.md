@@ -75,12 +75,23 @@ Final Angle Formula
 
 Suppose we already know two vectors
 
-$$\mathbf{x}=\begin{bmatrix} x_1 \\ x_2 \end{bmatrix},\qquad \mathbf{y}=\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}$$
+[
+\mathbf{x}
+==========
 
-````math
-x = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
-````
+\begin{bmatrix}
+x_1\
+x_2
+\end{bmatrix},
+\qquad
+\mathbf{y}
+==========
 
+\begin{bmatrix}
+y_1\
+y_2
+\end{bmatrix}
+]
 
 Both vectors start from the **same origin**.
 
