@@ -171,11 +171,8 @@ AB = x − y
 
 Notice something beautiful.
 
-The third side of the triangle is
-
-[
-\boxed{\mathbf{x}-\mathbf{y}}
-]
+The third side of the triangle is represented by the vector
+$\mathbf{x}-\mathbf{y}$.
 
 This is not magic.
 
