@@ -471,6 +471,64 @@ This is the exact moment where **Geometry transitions into Linear Algebra**.
 
 ---
 
+## Step 5 — Expand the Left-Hand Side
+
+So far, our equation contains the term
+
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+```
+
+To rewrite it in algebraic form, we use the identity
+
+```math
+\lVert\mathbf{v}\rVert^2=\mathbf{v}^T\mathbf{v}
+```
+
+for any vector \(\mathbf{v}\).
+
+Applying this to \(\mathbf{v}=\mathbf{x}-\mathbf{y}\), we get
+
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2=(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
+```
+
+Now expand the brackets:
+
+```math
+(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})=\mathbf{x}^T\mathbf{x}-\mathbf{x}^T\mathbf{y}-\mathbf{y}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}
+```
+
+Since
+
+```math
+\mathbf{x}^T\mathbf{y}=\mathbf{y}^T\mathbf{x}
+```
+
+this simplifies to
+
+```math
+(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})=\mathbf{x}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}-2\mathbf{x}^T\mathbf{y}
+```
+
+And because
+
+```math
+\mathbf{x}^T\mathbf{x}=\lVert\mathbf{x}\rVert^2,\qquad \mathbf{y}^T\mathbf{y}=\lVert\mathbf{y}\rVert^2
+```
+
+we obtain
+
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2=\lVert\mathbf{x}\rVert^2+\lVert\mathbf{y}\rVert^2-2\mathbf{x}^T\mathbf{y}
+```
+
+### Why this step matters
+
+This is the point where geometry becomes algebra.  
+The left side is a distance-like quantity, and the right side is written using dot products.  
+That bridge is what lets us compare this equation with the Law of Cosines in the next step.
+
 # Step 5 — Expand the Left-Hand Side
 
 I actually think **Step 5 is the most important step of the entire derivation**, and your current version is mathematically correct but a little too "magical."
