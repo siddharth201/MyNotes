@@ -8314,7 +8314,7 @@ If you can explain these ten principles confidently, you'll have a strong answer
 
 ### **Q2: How do you securely clear sensitive data from memory in Swift?**
 <details>
-<summary>Answer</summary>   
+<summary>Answer1</summary>   
 
 * Sensitive data like **passwords, cryptographic keys, or tokens** can remain in memory after use.
 * If an attacker gains memory access (via debugging, jailbreaking, or a memory dump), they can steal this data.
@@ -8333,6 +8333,12 @@ If you can explain these ten principles confidently, you'll have a strong answer
 ### 4. Use Keychain for Storage
 * Instead of storing sensitive data in memory for long periods, store it securely in the **Keychain**, which is managed by the OS.
 * Keychain automatically **encrypts data** and ensures **memory-safe access**.
+
+</details> 
+
+<details>
+<summary>Answer2</summary>
+
 
 </details>  
 
