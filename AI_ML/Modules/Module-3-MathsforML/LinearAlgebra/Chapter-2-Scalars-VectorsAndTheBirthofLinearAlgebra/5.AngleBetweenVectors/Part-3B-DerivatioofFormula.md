@@ -347,28 +347,11 @@ Now ask
 
 Subtract the coordinates.
 
-[
-\begin{aligned}
-AB
-&=
-(5,4)-(2,1)\
-&=
-(3,3)
-\end{aligned}
-]
+$$\begin{aligned}AB&=(5,4)-(2,1)\&=(3,3)\end{aligned}]
 
 Exactly the same rule:
 
-[
-\boxed{
-AB
-==
-
-## OB
-
-OA
-}
-]
+$$\boxed{AB=OB-OA}$$    
 
 ---
 
