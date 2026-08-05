@@ -255,9 +255,7 @@ Exactly the same result.
 
 # Why Does
 
-[
-AB=OB-OA
-]
+$$AB=OB-OA$$
 
 Actually Work?
 
