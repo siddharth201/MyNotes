@@ -261,56 +261,51 @@ Notice that nothing has changed mathematically.
 
 We have simply rewritten the classical **Law of Cosines** using vector notation.
 
-This is the exact moment where **Geometry transitions into Linear Algebra**.
+This is the exact moment where **Geometry transitions into Linear Algebra**. 
 
-# Step 5 — Expand the Left-Hand Side
+---
 
-Now we use a property of vectors.
+# Step 5 — Expanding the Left-Hand Side
 
-[
-|\mathbf{x}-\mathbf{y}|^2
-=========================
+So far, our equation still contains the term
 
+$\lVert\mathbf{x}-\mathbf{y}\rVert^2$.
+
+To connect this expression with the **dot product**, we now rewrite it using a fundamental identity from Linear Algebra.
+
+### 🔑 Vector Identity
+
+$$\lVert\mathbf{x}-\mathbf{y}\rVert^2=(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})$$
+
+Expanding this expression gives
+
+$$
 (\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
-]
-
----
-
-Expand it.
-
-# [
-
-## \mathbf{x}^T\mathbf{x}
-
-## \mathbf{x}^T\mathbf{y}
-
-\mathbf{y}^T\mathbf{x}
-+
-\mathbf{y}^T\mathbf{y}
-]
-
-Since
-
-[
-\mathbf{x}^T\mathbf{y}
-======================
-
-\mathbf{y}^T\mathbf{x}
-]
-
-we obtain
-
-# [
-
+=
 \mathbf{x}^T\mathbf{x}
+-
+\mathbf{x}^T\mathbf{y}
+-
+\mathbf{y}^T\mathbf{x}
 +
 \mathbf{y}^T\mathbf{y}
-----------------------
+$$
 
-2\mathbf{x}^T\mathbf{y}
-]
+Notice that the middle two terms are identical because
 
----
+$$\mathbf{x}^T\mathbf{y}=\mathbf{y}^T\mathbf{x}$$
+
+Therefore, the expression simplifies to
+
+$$\mathbf{x}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}-2\mathbf{x}^T\mathbf{y}$$
+
+### 💡 Why This Step?
+
+This is the most important algebraic step in the derivation.
+
+Until now, everything came from **Geometry**.
+
+After this expansion, the **dot product naturally appears**, allowing us to connect geometry with linear algebra.
 
 ## 🧠 Think Like a Mathematician
 
