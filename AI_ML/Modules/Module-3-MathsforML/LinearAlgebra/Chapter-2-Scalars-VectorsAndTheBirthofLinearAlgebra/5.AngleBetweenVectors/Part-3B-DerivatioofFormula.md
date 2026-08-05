@@ -235,48 +235,6 @@ Exactly what we need.
 
 ---
 
-# Step 4 — Replace Triangle Sides with Vector Lengths
-
-Our triangle has sides
-
-| Triangle Side | Vector Interpretation     |
-| ------------- | ------------------------- |
-| (a)           | (|\mathbf{x}|)            |
-| (b)           | (|\mathbf{y}|)            |
-| (c)           | (|\mathbf{x}-\mathbf{y}|) |
-
-Therefore,
-
-[
-\boxed{
-|\mathbf{x}-\mathbf{y}|^2
-=========================
-
-|\mathbf{x}|^2
-+
-|\mathbf{y}|^2
---------------
-
-2|\mathbf{x}||\mathbf{y}|\cos\theta
-}
-]
-
----
-
-## 🧠 First Milestone
-
-Notice something.
-
-We have already expressed the angle using vectors.
-
-No dot product yet.
-
-This surprises many students.
-
-> **The derivation begins with Geometry, not Algebra.**
-
----
-
 # Step 4 — Translating Geometry into Vectors
 
 So far, our equation is written in the language of **Geometry**.
