@@ -471,6 +471,327 @@ This is the exact moment where **Geometry transitions into Linear Algebra**.
 
 ---
 
+=========
+
+# Step 5 — Expand the Left-Hand Side
+
+Up to this point, our derivation has come entirely from **Geometry**.
+
+Using the Law of Cosines, we obtained the equation
+
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+=
+\lVert\mathbf{x}\rVert^2
++
+\lVert\mathbf{y}\rVert^2
+-
+2\lVert\mathbf{x}\rVert\lVert\mathbf{y}\rVert\cos\theta
+```
+
+Notice something important.
+
+The equation contains the quantity
+
+```math
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+```
+
+which is the **square of the length** of the vector
+$\mathbf{x}-\mathbf{y}$.
+
+Our goal is to eventually obtain a formula involving the **dot product**.
+
+So the first question is:
+
+> **Can we rewrite the squared length of a vector using the dot product?**
+
+The answer is **Yes**, and that is the key idea behind this entire step.
+
+---
+
+# 🔑 A Fundamental Identity
+
+There is a very important identity in Linear Algebra:
+
+> **The dot product of any vector with itself is equal to the square of its length.**
+
+Mathematically,
+
+```math
+\boxed{
+\lVert\mathbf{v}\rVert^2
+=
+\mathbf{v}^T\mathbf{v}
+}
+```
+
+This identity is true for **every vector**, no matter how many dimensions it has.
+
+---
+
+## Why is this true?
+
+Suppose
+
+```math
+\mathbf{v}
+=
+\begin{bmatrix}
+3\\
+4
+\end{bmatrix}
+```
+
+Its length is
+
+```math
+\lVert\mathbf{v}\rVert
+=
+\sqrt{3^2+4^2}
+=
+5
+```
+
+Therefore,
+
+```math
+\lVert\mathbf{v}\rVert^2
+=
+25
+```
+
+Now compute its dot product with itself.
+
+```math
+\mathbf{v}^T\mathbf{v}
+=
+3\times3
++
+4\times4
+=
+9+16
+=
+25
+```
+
+Both quantities are exactly the same.
+
+This is **not a coincidence**.
+
+For any vector
+
+```math
+\mathbf{v}
+=
+\begin{bmatrix}
+v_1\\
+v_2\\
+\vdots\\
+v_n
+\end{bmatrix}
+```
+
+we have
+
+```math
+\mathbf{v}^T\mathbf{v}
+=
+v_1^2+v_2^2+\cdots+v_n^2
+=
+\lVert\mathbf{v}\rVert^2
+```
+
+That is why the identity always holds.
+
+---
+
+# Applying the Identity
+
+In our derivation, the vector is **not**
+$\mathbf{x}$ or $\mathbf{y}$.
+
+Instead, the vector whose length we are measuring is
+
+```math
+\mathbf{x}-\mathbf{y}
+```
+
+So we simply apply the identity by replacing
+$\mathbf{v}$ with $\mathbf{x}-\mathbf{y}$.
+
+Therefore,
+
+```math
+\boxed{
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+=
+(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
+}
+```
+
+This is the bridge that converts a **geometric quantity**
+(length)
+into an **algebraic quantity**
+(dot products).
+
+---
+
+# Step 5.1 — Expand the Brackets
+
+Now we expand the expression exactly like we expand ordinary algebra.
+
+Recall the familiar identity from school:
+
+```text
+(a-b)(a-b)
+=
+a²-ab-ba+b²
+```
+
+Nothing changes here.
+
+The only difference is that our "numbers" are vectors.
+
+Treat
+
+```text
+A = \mathbf{x}^T
+
+B = \mathbf{y}^T
+
+C = \mathbf{x}
+
+D = \mathbf{y}
+```
+
+Then
+
+```text
+(A-B)(C-D)
+
+=
+
+AC
+-
+AD
+-
+BC
++
+BD
+```
+
+Substituting the vectors gives
+
+```math
+(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
+=
+\mathbf{x}^T\mathbf{x}
+-
+\mathbf{x}^T\mathbf{y}
+-
+\mathbf{y}^T\mathbf{x}
++
+\mathbf{y}^T\mathbf{y}
+```
+
+Notice that nothing mysterious happened.
+
+We simply used the **distributive law**, exactly as we have done since high school algebra.
+
+---
+
+# Step 5.2 — Simplify the Expression
+
+The middle two terms look different,
+
+```math
+\mathbf{x}^T\mathbf{y}
+```
+
+and
+
+```math
+\mathbf{y}^T\mathbf{x}
+```
+
+but they represent the **same scalar**.
+
+Therefore,
+
+```math
+\mathbf{x}^T\mathbf{y}
+=
+\mathbf{y}^T\mathbf{x}
+```
+
+So the two middle terms combine into
+
+```math
+-2\mathbf{x}^T\mathbf{y}
+```
+
+giving
+
+```math
+\boxed{
+(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})
+=
+\mathbf{x}^T\mathbf{x}
++
+\mathbf{y}^T\mathbf{y}
+-
+2\mathbf{x}^T\mathbf{y}
+}
+```
+
+Finally, substitute back
+
+```math
+\mathbf{x}^T\mathbf{x}
+=
+\lVert\mathbf{x}\rVert^2,
+\qquad
+\mathbf{y}^T\mathbf{y}
+=
+\lVert\mathbf{y}\rVert^2
+```
+
+to obtain
+
+```math
+\boxed{
+\lVert\mathbf{x}-\mathbf{y}\rVert^2
+=
+\lVert\mathbf{x}\rVert^2
++
+\lVert\mathbf{y}\rVert^2
+-
+2\mathbf{x}^T\mathbf{y}
+}
+```
+
+---
+
+# 💡 Think Like a Mathematician
+
+Notice what we have accomplished.
+
+Until now, our equation came entirely from **Geometry** through the Law of Cosines.
+
+In this step, we rewrote the **same geometric quantity** using **Linear Algebra**.
+
+We now have **two different expressions describing exactly the same quantity**
+$\lVert\mathbf{x}-\mathbf{y}\rVert^2$.
+
+In the next step, we will place these two equations side by side.
+
+Since their left-hand sides are identical, their right-hand sides must also be identical.
+
+That simple observation leads directly to one of the most important formulas in Machine Learning—the **Dot Product Formula**.
+
+=========
+
 ## Step 5 — Expand the Left-Hand Side
 
 So far, our equation contains the term
