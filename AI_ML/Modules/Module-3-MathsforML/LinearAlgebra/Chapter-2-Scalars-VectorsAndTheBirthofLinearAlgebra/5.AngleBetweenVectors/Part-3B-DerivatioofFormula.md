@@ -265,6 +265,119 @@ This is the exact moment where **Geometry transitions into Linear Algebra**.
 
 ---
 
+# Step 5 — Expand the Left-Hand Side
+
+So far, our equation still contains the term $\lVert\mathbf{x}-\mathbf{y}\rVert^2$.
+
+To connect this geometric expression with the **dot product**, we now rewrite it using a fundamental identity from Linear Algebra.
+
+---
+
+### 🔑 Vector Identity
+
+A vector's squared magnitude can always be written as the dot product of the vector with itself.
+
+$$\lVert\mathbf{x}-\mathbf{y}\rVert^2=(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})$$
+
+> **Why is this true?**
+>
+> The dot product of any vector with itself equals the square of its magnitude.
+>
+> $$\mathbf{v}^T\mathbf{v}=\lVert\mathbf{v}\rVert^2$$
+>
+> Here, our vector happens to be $(\mathbf{x}-\mathbf{y})$.
+
+---
+
+### Step 5.1 — Expand the Brackets
+
+Now expand the matrix multiplication exactly like expanding
+
+$$(a-b)^2=a^2-2ab+b^2$$
+
+Using matrix algebra,
+
+$$(\mathbf{x}-\mathbf{y})^T(\mathbf{x}-\mathbf{y})=\mathbf{x}^T\mathbf{x}-\mathbf{x}^T\mathbf{y}-\mathbf{y}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}$$
+
+---
+
+### 💡 Why This Expansion?
+
+Notice that this looks almost identical to ordinary algebra.
+
+The only difference is that the variables are now **vectors** instead of numbers.
+
+If you understand polynomial expansion, this step should feel familiar.
+
+---
+
+### Step 5.2 — Simplify the Expression
+
+The middle two terms are identical because the dot product is commutative.
+
+$$\mathbf{x}^T\mathbf{y}=\mathbf{y}^T\mathbf{x}$$
+
+Therefore,
+
+$$\mathbf{x}^T\mathbf{x}-\mathbf{x}^T\mathbf{y}-\mathbf{y}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}=\mathbf{x}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}-2\mathbf{x}^T\mathbf{y}$$
+
+---
+
+### 🔑 Key Result
+
+We have successfully rewritten
+
+$$\lVert\mathbf{x}-\mathbf{y}\rVert^2$$
+
+as
+
+$$\mathbf{x}^T\mathbf{x}+\mathbf{y}^T\mathbf{y}-2\mathbf{x}^T\mathbf{y}$$
+
+---
+
+### 💡 Pause & Reflect
+
+Take a moment to appreciate what just happened.
+
+We **did not invent any new mathematics**.
+
+We simply expressed the **same quantity** in a different mathematical language.
+
+- Before this step, our equation was written using **Geometry**.
+- After this step, it is written using **Linear Algebra**.
+
+This is the bridge that allows the **dot product** to appear naturally.
+
+Without this expansion, the famous angle-between-vectors formula could never be derived.
+
+---
+
+### 🤖 Machine Learning Connection
+
+This exact algebraic expansion appears repeatedly in Machine Learning.
+
+You'll encounter it in:
+
+- Linear Regression
+- Least Squares Optimization
+- Principal Component Analysis (PCA)
+- Support Vector Machines (SVM)
+- Kernel Methods
+- Mahalanobis Distance
+- Gradient Descent derivations
+
+Understanding this identity now will make many future derivations feel much more natural.
+
+---
+
+## 📝 Key Takeaways
+
+- A squared vector magnitude can always be written as a dot product.
+- Matrix expansion follows the same rules as algebraic expansion.
+- The commutative property of the dot product simplifies the expression.
+- This step transforms a geometric equation into a linear algebra equation.
+- The dot product appears naturally—it is not introduced artificially.
+
 # Step 5 — Expanding the Left-Hand Side
 
 So far, our equation still contains the term
