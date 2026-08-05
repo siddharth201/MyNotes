@@ -324,23 +324,17 @@ We simply asked:
 
 Suppose
 
-[
-\mathbf{x}
-==========
-
-\begin{bmatrix}
-2\
-1
+```math
+\mathbf{x}=\begin{bmatrix}
+x_1\\
+x_2
 \end{bmatrix},
 \qquad
-\mathbf{y}
-==========
-
-\begin{bmatrix}
-5\
-4
+\mathbf{y}=\begin{bmatrix}
+y_1\\
+y_2
 \end{bmatrix}
-]
+```
 
 These tell us
 
