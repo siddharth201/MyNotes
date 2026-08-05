@@ -91,9 +91,7 @@ But we **do not know the angle** between them.
 
 Our objective is to compute
 
-[
-\theta
-]
+$\theta$
 
 using only the numerical values stored inside the vectors.
 
