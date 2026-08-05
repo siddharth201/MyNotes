@@ -369,14 +369,13 @@ $$
 
 then the vector joining them is always
 
-[
+$$
 \boxed{
 \overrightarrow{AB}
-===================
-
+=
 \mathbf{b}-\mathbf{a}
 }
-]
+$$
 
 This is one of the most fundamental identities in Linear Algebra.
 
