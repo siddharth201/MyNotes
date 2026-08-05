@@ -208,9 +208,7 @@ That movement is exactly the opposite of **OA**.
 
 Since
 
-[
-OA=\mathbf{x},
-]
+$OA=\mathbf{x},$
 
 we have
 
