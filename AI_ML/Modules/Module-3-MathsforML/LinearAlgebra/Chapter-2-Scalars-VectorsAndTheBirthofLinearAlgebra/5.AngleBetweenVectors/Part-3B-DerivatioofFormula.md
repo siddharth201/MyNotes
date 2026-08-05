@@ -171,9 +171,7 @@ The first two sides are already known.
 
 The only unknown side is
 
-[
-AB
-]
+$AB$
 
 Let's compute it.
 
