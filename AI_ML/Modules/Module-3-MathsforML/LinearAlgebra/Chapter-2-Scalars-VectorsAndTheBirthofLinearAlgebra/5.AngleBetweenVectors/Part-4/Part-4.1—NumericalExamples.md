@@ -45,22 +45,6 @@ This section is computation-oriented. By the end, you should be able to look at 
 
 Consider two vectors
 
-````markdown
-```math
-\mathbf{x}=
-\begin{bmatrix}
-2\\
-3
-\end{bmatrix},
-\qquad
-\mathbf{y}=
-\begin{bmatrix}
-4\\
-1
-\end{bmatrix}
-```
-````
-
 ```math
 \mathbf{x}=
 \begin{bmatrix}
