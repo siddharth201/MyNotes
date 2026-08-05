@@ -134,11 +134,9 @@ That is why the dot product always multiplies **corresponding components**.
 
 We obtained
 
-````markdown
 ```math
-\mathbf{x}\cdot\mathbf{y}=11
+\boxed{\mathbf{x}\cdot\mathbf{y}=11}
 ```
-````
 
 What does **11** mean?
 
