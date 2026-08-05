@@ -71,33 +71,31 @@ Final Angle Formula
 
 # Step 1 — Start With Two Vectors
 
+## Step 1 — Start With Two Vectors
+
 Suppose we have two vectors
 
-[
-\mathbf{x}=
+$$
+\mathbf{x} =
 \begin{bmatrix}
-x_1\
+x_1 \\
 x_2
-\end{bmatrix}
-]
-
-and
-
-[
-\mathbf{y}=
+\end{bmatrix},
+\qquad
+\mathbf{y} =
 \begin{bmatrix}
-y_1\
+y_1 \\
 y_2
 \end{bmatrix}
-]
+$$
 
-We want to find the angle
+Our goal is to determine the angle
 
-[
+$$
 \theta
-]
+$$
 
-between them.
+between these two vectors.
 
 ---
 
