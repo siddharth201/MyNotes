@@ -103,9 +103,9 @@ using only the numerical values stored inside the vectors.
 
 **Figure 1:** Two vectors originate from the same point (O). The angle between them is unknown.
 
----
 
-## Geometry Insight
+
+### Geometry Insight
 
 Notice what information we already possess.
 
