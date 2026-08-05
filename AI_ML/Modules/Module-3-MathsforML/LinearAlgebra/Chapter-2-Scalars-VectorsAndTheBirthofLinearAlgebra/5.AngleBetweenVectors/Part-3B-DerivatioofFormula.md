@@ -479,9 +479,6 @@ To connect this geometric expression with the **dot product**, we now rewrite it
 
 ---
 
-```math
-\lVert\mathbf{x}-\mathbf{y}\rVert^2
-```
 
 ### 🔑 Vector Identity
 
