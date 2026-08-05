@@ -310,9 +310,7 @@ Mall − Office
 
 or
 
-[
-OB-OA
-]
+$$OB-OA$$
 
 Nothing magical happened.
 
