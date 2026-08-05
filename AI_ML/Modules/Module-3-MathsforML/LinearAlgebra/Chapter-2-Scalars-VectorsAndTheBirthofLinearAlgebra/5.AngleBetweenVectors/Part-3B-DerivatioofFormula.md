@@ -287,21 +287,19 @@ The correspondence is straightforward:
 
 | Triangle Side | Vector Interpretation |
 |:-------------:|:---------------------:|
-| $a$ | $\|\mathbf{x}\|$ |
-| $b$ | $\|\mathbf{y}\|$ |
-| $c$ | $\|\mathbf{x}-\mathbf{y}\|$ |
+| $a$ | $\lVert\mathbf{x}\rVert$ |
+| $b$ | $\lVert\mathbf{y}\rVert$ |
+| $c$ | $\lVert\mathbf{x}-\mathbf{y}\rVert$ |
 
-Replacing each side with its corresponding vector length transforms the **Law of Cosines** into its vector form.
+Replacing each geometric side with its corresponding vector length transforms the classical Law of Cosines into its vector form.
 
 ### 🔑 Key Result
 
-$$\|\mathbf{x}-\mathbf{y}\|^2=\|\mathbf{x}\|^2+\|\mathbf{y}\|^2-2\|\mathbf{x}\|\|\mathbf{y}\|\cos\theta$$
+$$\lVert\mathbf{x}-\mathbf{y}\rVert^2=\lVert\mathbf{x}\rVert^2+\lVert\mathbf{y}\rVert^2-2\lVert\mathbf{x}\rVert\lVert\mathbf{y}\rVert\cos\theta$$
 
 ### 💡 Why This Step?
 
 Notice that nothing has changed mathematically.
-
-We have **not derived a new formula**.
 
 We have simply rewritten the classical **Law of Cosines** using vector notation.
 
