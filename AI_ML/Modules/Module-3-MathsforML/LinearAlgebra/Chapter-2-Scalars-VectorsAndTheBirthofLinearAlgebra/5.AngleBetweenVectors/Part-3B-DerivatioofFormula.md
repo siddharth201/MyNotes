@@ -534,14 +534,14 @@ This identity is true for **every vector**, no matter how many dimensions it has
 
 Suppose
 
-
-$$\mathbf{v}
+```math
+\mathbf{v}
 =
 \begin{bmatrix}
 3\\
 4
 \end{bmatrix}
-
+```
 
 Its length is
 
