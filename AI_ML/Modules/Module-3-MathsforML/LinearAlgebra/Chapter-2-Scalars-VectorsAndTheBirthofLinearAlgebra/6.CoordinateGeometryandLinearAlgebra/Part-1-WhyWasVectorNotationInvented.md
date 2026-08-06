@@ -97,12 +97,12 @@ This is the power of Linear Algebra.
 
 ## Key Insight
 
-> **Vector notation was not invented to make mathematics more complicated. It was invented to make large equations simpler, cleaner, and easier to work with.**
+> **Vector notation was not invented to make mathematics more complicated. It was invented to make large equations simpler, cleaner, and easier to work with.** 
 
 That is why nearly every Machine Learning textbook replaces
 
 ```text
-w₁x₁+w₂x₂+\cdots+w_dx_d
+w₁x₁ + w₂x₂ + ... + wdxd
 ```
 
 with
@@ -112,3 +112,10 @@ wᵀx
 ```
 
 In the next part, we'll build these vectors step by step and see how this compact notation emerges naturally from the original coordinate equation.
+
+
+
+
+
+
+
