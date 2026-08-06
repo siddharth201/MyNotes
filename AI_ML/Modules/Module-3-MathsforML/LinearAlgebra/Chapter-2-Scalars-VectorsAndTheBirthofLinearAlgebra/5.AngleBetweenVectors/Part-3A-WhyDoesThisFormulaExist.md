@@ -522,9 +522,6 @@ But the Law of Cosines talks about **triangle side lengths**, while vectors are 
 
 So how do we convert
 
-$$\mathbf{x}=\begin{bmatrix}2\\2\end{bmatrix}$$
-$$\mathbf{x}=\begin{bmatrix}2\\2\end{bmatrix}$$
-
 ```math
 $$\mathbf{x}=\begin{bmatrix}2\\2\end{bmatrix}$$
 ```
