@@ -105,9 +105,7 @@ How can it possibly know the angle?
 
 Suppose we simply subtract the vectors.
 
-[
-\mathbf{x}-\mathbf{y}
-]
+$$\mathbf{x}-\mathbf{y}$$
 
 Does that tell us the angle?
 
