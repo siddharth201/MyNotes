@@ -66,9 +66,9 @@ Imagine you're writing the world's first Machine Learning algorithm.
 
 The computer receives two vectors.
 
-$$\mathbf{x}=\begin{bmatrix} 2 \\2 \end{bmatrix}$$
+$$\mathbf{x}=\begin{bmatrix} 2 \\ 2 \end{bmatrix}$$
 
-$$\mathbf{y}=\begin{bmatrix} 1 \\0 \end{bmatrix}$$
+$$\mathbf{y}=\begin{bmatrix} 1 \\ 0 \end{bmatrix}$$
 
 Now imagine the computer asks you
 
