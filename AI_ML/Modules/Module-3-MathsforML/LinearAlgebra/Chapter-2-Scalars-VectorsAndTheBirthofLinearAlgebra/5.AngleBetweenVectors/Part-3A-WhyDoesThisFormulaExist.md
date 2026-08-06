@@ -131,7 +131,7 @@ Compare magnitudes.
 
 Suppose
 
-$$|\mathbf{x}|=5$$
+$$∥\mathbf{x}∥=5$$
 
 [
 |\mathbf{y}|=5
