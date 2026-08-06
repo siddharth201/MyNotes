@@ -66,10 +66,6 @@ Imagine you're writing the world's first Machine Learning algorithm.
 
 The computer receives two vectors.
 
-$$\mathbf{x}=\begin{bmatrix} 2 \\ 2 \end{bmatrix}$$
-
-$$\mathbf{y}=\begin{bmatrix} 1 \\ 0 \end{bmatrix}$$
-
 ```math
 \mathbf{x}=\begin{bmatrix}2\\2\end{bmatrix},\qquad
 \mathbf{y}=\begin{bmatrix}1\\0\end{bmatrix}
