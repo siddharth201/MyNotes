@@ -326,13 +326,13 @@ Suppose
 
 ```math
 \mathbf{x}=\begin{bmatrix}
-x_1\\
-x_2
+2\\
+1
 \end{bmatrix},
 \qquad
 \mathbf{y}=\begin{bmatrix}
-y_1\\
-y_2
+5\\
+4
 \end{bmatrix}
 ```
 
