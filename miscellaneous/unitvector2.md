@@ -1,3 +1,5 @@
+### Ok so we use unit vector to compare how much similar two objects are? is it ok to say?
+
 **Yes, you are incredibly close!** You have the right intuition, but to be 100% accurate, we just need to tweak the phrasing slightly.
 
 Instead of saying, *"We use a unit vector to compare similarity,"* it is more accurate to say:
