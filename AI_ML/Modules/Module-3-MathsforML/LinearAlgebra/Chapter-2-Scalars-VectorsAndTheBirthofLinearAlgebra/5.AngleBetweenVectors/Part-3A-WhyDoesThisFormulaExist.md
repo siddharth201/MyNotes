@@ -70,6 +70,11 @@ $$\mathbf{x}=\begin{bmatrix} 2 \\ 2 \end{bmatrix}$$
 
 $$\mathbf{y}=\begin{bmatrix} 1 \\ 0 \end{bmatrix}$$
 
+```math
+\mathbf{x}=\begin{bmatrix}x_1\\x_2\end{bmatrix},\qquad
+\mathbf{y}=\begin{bmatrix}y_1\\y_2\end{bmatrix}
+```
+
 Now imagine the computer asks you
 
 > **"What is the angle between them?"**
