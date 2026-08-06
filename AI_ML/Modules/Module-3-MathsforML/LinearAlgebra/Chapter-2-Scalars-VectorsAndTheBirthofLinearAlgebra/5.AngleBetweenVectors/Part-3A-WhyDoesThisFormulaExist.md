@@ -133,9 +133,7 @@ Suppose
 
 $$∥\mathbf{x}∥=5$$
 
-[
-|\mathbf{y}|=5
-]
+$$∥\mathbf{y}∥=5$$
 
 Same magnitude.
 
