@@ -2,7 +2,7 @@ Excellent. I think this is the perfect topic to demonstrate the philosophy of ou
 
 Most books simply write:
 
-$$\cos\theta=\frac{\mathbf{x}\cdot\mathbf{y}}{|\mathbf{x}||\mathbf{y}|}$$
+$$\cos\theta=\frac{\mathbf{x}\cdot\mathbf{y}}{∥\mathbf{x}∥ ∥\mathbf{y}∥}$$
 
 and ask students to memorize it.
 
