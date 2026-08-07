@@ -295,13 +295,8 @@ Projection = ||x|| cosθ
 
 From linear algebra,
 
-```math id="sp21"
-\boxed{
-\operatorname{comp}_{\mathbf{y}}(\mathbf{x})
-=
-\frac{\mathbf{x}^{T}\mathbf{y}}
-{\|\mathbf{y}\|}
-}
+```math
+compᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
 
 The second formula is much more useful because it no longer requires us to know the angle explicitly.
