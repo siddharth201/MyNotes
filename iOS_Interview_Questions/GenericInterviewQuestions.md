@@ -3426,6 +3426,15 @@ The next question that naturally follows—and is asked very frequently—is:
 
 This is the next logical topic because `some` and `any` were introduced largely to address challenges around protocols with associated types and existential types. Understanding this completes the mental model of Swift's type system.
 
+</details>  
+
+---  
+
+### Q. Why Were Generics Introduced? ?
+ 
+<details>
+<summary>Answer</summary>
+
 </details>
 
 
