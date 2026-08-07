@@ -365,4 +365,412 @@ That will give us the complete projected vector, not just its length.
 ## ===================
 ## ===================
 
-## Q. 
+## Q. Why is (x^T y) a Scalar?
+
+## Answer:
+
+Excellent question.
+
+This is actually one of the most important concepts in Linear Algebra. Once you understand this, **matrix multiplication**, **dot product**, **linear regression**, **neural networks**, and **attention mechanisms** become much easier.
+
+Let's build the intuition slowly.
+
+---
+
+# Why is (x^T y) a Scalar?
+
+Suppose
+
+```text
+      ⎡2⎤
+x =   ⎢3⎥
+      ⎣4⎦
+```
+
+and
+
+```text
+      ⎡5⎤
+y =   ⎢1⎥
+      ⎣2⎦
+```
+
+Notice something.
+
+Both are **column vectors**.
+
+Their size is
+
+```text
+3 × 1
+```
+
+---
+
+# Step 1 — Take the Transpose
+
+When we transpose **x**, rows become columns.
+
+```text
+xᵀ
+
+=
+
+[2   3   4]
+```
+
+Now its size becomes
+
+```text
+1 × 3
+```
+
+while
+
+```text
+y
+
+=
+
+⎡5⎤
+⎢1⎥
+⎣2⎦
+```
+
+is still
+
+```text
+3 × 1
+```
+
+---
+
+# Step 2 — Matrix Multiplication Rule
+
+Remember the rule we studied earlier.
+
+```text
+(m × n)
+
+×
+
+(n × p)
+
+=
+
+(m × p)
+```
+
+Now substitute the sizes.
+
+```text
+(1 × 3)
+
+×
+
+(3 × 1)
+
+=
+
+(1 × 1)
+```
+
+Therefore,
+
+the result must have size
+
+```text
+1 × 1
+```
+
+A **1×1 matrix** is simply a **single number**.
+
+That single number is called a **scalar**.
+
+So even before multiplying,
+
+we already know the answer will be a scalar.
+
+---
+
+# Step 3 — Perform the Multiplication
+
+```text
+[2  3  4]
+
+×
+
+⎡5⎤
+⎢1⎥
+⎣2⎦
+```
+
+Multiply corresponding entries.
+
+```text
+=
+
+2×5
+
++
+
+3×1
+
++
+
+4×2
+```
+
+```text
+=
+
+10+3+8
+
+=
+
+21
+```
+
+The answer is
+
+```text
+21
+```
+
+Notice,
+
+there are
+
+* no rows,
+* no columns,
+* no direction,
+
+only a single numerical value.
+
+Hence,
+
+```text
+xᵀy = 21
+```
+
+is a scalar.
+
+---
+
+# Why Doesn't It Become Another Vector?
+
+This is the intuition most books never explain.
+
+Imagine
+
+```text
+xᵀ
+
+=
+
+[2 3 4]
+```
+
+asks three questions simultaneously.
+
+```text
+How much of y's first component?
+
+How much of y's second component?
+
+How much of y's third component?
+```
+
+Then it immediately **adds all three answers together**.
+
+```text
+2×5
+
++
+
+3×1
+
++
+
+4×2
+```
+
+Everything gets collapsed into
+
+one final value.
+
+Once you add everything,
+
+nothing remains to form another vector.
+
+Only one number survives.
+
+---
+
+# Compare with Ordinary Matrix Multiplication
+
+Suppose instead
+
+```text
+A
+
+is
+
+2×3
+```
+
+and
+
+```text
+B
+
+is
+
+3×4
+```
+
+The result becomes
+
+```text
+2×4
+```
+
+because
+
+each row of A interacts with
+
+each column of B.
+
+You get many outputs.
+
+---
+
+But here,
+
+there is only
+
+```text
+ONE row
+```
+
+and
+
+```text
+ONE column
+```
+
+So only
+
+```text
+ONE multiplication result
+```
+
+is produced.
+
+Hence,
+
+```text
+1×1
+```
+
+---
+
+# Geometric Interpretation
+
+This is where it becomes beautiful.
+
+The number
+
+```text
+xᵀy
+```
+
+is **not just any scalar**.
+
+It measures
+
+> **how strongly the two vectors point in the same direction.**
+
+Large positive value
+
+```text
+→ Highly aligned
+```
+
+Zero
+
+```text
+→ Perpendicular
+```
+
+Negative
+
+```text
+→ Opposite directions
+```
+
+So although the output is just one number,
+
+that number contains rich geometric information about the relationship between the two vectors.
+
+---
+
+# Connection to Projection
+
+Now you can understand why the scalar projection formula is
+
+```math
+\operatorname{comp}_{\mathbf y}(\mathbf x)
+=
+\frac{\mathbf x^T\mathbf y}
+{\|\mathbf y\|}
+```
+
+The numerator
+
+```text
+xᵀy
+```
+
+already measures the **alignment** between the vectors.
+
+Dividing by
+
+```text
+||y||
+```
+
+removes the effect of **y's magnitude**, leaving only the component of **x** along **y**.
+
+---
+
+# 💡 Think Like a Mathematician
+
+There is a deeper pattern that you'll see throughout Machine Learning:
+
+* **Vector** → contains many values.
+* **Matrix** → transforms vectors.
+* **Dot Product** → compresses two vectors into a **single meaningful number**.
+
+This is why you'll repeatedly encounter expressions like
+
+```text
+wᵀx
+```
+
+in Linear Regression,
+
+Logistic Regression,
+
+Neural Networks,
+
+Support Vector Machines,
+
+and even Transformers.
+
+They all start by asking the same question:
+
+> **"Given two vectors, can we summarize their relationship using one meaningful number?"**
+
+The dot product is the mathematical tool that answers that question.
+
