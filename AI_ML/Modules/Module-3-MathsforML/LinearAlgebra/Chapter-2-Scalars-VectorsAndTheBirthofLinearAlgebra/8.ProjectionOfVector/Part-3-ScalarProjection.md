@@ -290,9 +290,7 @@ Compare the two formulas.
 From trigonometry,
 
 ```text id="sp20"
-Projection
-=
-||x|| cosθ
+Projection = ||x|| cosθ
 ```
 
 From linear algebra,
