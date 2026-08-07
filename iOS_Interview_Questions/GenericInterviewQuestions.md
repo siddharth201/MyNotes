@@ -1146,6 +1146,8 @@ A simple analogy is:
 
 </details>  
 
+---  
+
 <details>
 <summary>$\color{red}{\huge{\textbf{Generics}}}$</summary>
 
