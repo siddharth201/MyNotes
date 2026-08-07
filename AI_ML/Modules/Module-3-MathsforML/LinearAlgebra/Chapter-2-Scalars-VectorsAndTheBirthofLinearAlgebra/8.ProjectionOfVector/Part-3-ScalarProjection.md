@@ -120,12 +120,7 @@ Projection
 Replace **cosθ** using the equation we just derived.
 
 ```text id="sp9"
-Projection
-=
-||x||
-×
-(xᵀy)
-/(||x|| ||y||)
+Projection = ||x|| × (xᵀy) / (||x|| ||y||)
 ```
 
 Now simplify.
@@ -143,7 +138,7 @@ They cancel each other.
 Therefore,
 
 ```text id="sp11"
-Projection=(xᵀy) / ||y||
+Projection = (xᵀy) / ||y||
 ```
 
 This is the **scalar projection formula**.
