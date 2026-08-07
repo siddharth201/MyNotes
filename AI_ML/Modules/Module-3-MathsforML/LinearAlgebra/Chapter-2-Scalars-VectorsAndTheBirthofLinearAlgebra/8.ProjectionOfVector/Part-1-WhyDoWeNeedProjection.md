@@ -264,9 +264,9 @@ We will begin, just as in the lecture, with **basic right-angle trigonometry**, 
 
 
 
-                            =============================
-                            # Gemini:
-                            =============================
+=============================
+# Gemini:
+=============================
 
   
 
