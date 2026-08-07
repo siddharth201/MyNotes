@@ -700,10 +700,7 @@ that number contains rich geometric information about the relationship between t
 Now you can understand why the scalar projection formula is
 
 ```math
-\operatorname{comp}_{\mathbf y}(\mathbf x)
-=
-\frac{\mathbf x^T\mathbf y}
-{\|\mathbf y\|}
+compᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
 
 The numerator
