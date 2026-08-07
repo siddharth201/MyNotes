@@ -1846,7 +1846,7 @@ This is the next logical topic because it builds directly on the generic type pa
 
 
 
-
+What are Generic Constraints? Why do we write T: Equatable or T: Hashable?
 
 
 </details>
