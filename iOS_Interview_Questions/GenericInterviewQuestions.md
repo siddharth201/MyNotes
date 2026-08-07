@@ -1288,7 +1288,7 @@ Acronym: FAST
 🛡️ Safety: Prevents type errors at compile time.
 🧩 Type-Independent: Not locked into a single specific data type.
 
-Generics provide a Flexible, Type-Independent way to write one reusable Algorithm while guaranteeing strict compile-time Safety.
+Generics provide a Flexible, Type-Independent way to write one reusable Algorithm while maintaining compile-time type safety.
 ```
 
 Notice
