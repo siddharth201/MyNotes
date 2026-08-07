@@ -1278,7 +1278,13 @@ This is exactly the problem Generics solve.
 
 ## Definition
 
-**Generics allow us to write one algorithm that works with many data types while maintaining compile-time type safety.**
+**Generics allow us to write one algorithm that works with many data types while maintaining compile-time type safety.**  
+
+```text
+Acronym: FAST
+
+"Generics provide a Flexible, Type-Independent way to write one reusable Algorithm while guaranteeing strict compile-time Safety."
+```
 
 Notice
 
