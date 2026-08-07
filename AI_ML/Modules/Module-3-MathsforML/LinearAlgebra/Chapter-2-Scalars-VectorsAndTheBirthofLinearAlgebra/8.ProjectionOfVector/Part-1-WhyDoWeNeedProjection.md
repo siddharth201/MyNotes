@@ -267,7 +267,7 @@ We will begin, just as in the lecture, with **basic right-angle trigonometry**, 
 ==============================================
 ==============================================
 
-#Gemini:  
+# Gemini:  
 
 To understand the **projection** of one vector onto another in simple words, we use the **"Shadow Analogy."**
 
