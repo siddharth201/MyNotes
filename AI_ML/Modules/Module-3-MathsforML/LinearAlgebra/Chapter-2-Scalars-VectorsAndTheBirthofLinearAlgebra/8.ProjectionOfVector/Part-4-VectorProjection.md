@@ -183,7 +183,7 @@ Now simplify.
 Multiplying the denominators,
 
 ```math
-compᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
+Projᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
 
 > **⚠️ Notebook Rendering Note:** If your renderer rejects `\operatorname`, write the label as plain text and keep only the formula in the math block.
