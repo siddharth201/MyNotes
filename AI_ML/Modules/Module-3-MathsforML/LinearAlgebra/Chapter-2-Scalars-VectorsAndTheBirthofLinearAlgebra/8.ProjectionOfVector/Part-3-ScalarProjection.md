@@ -345,7 +345,7 @@ That will give us the complete projected vector, not just its length.
 ## ===================
 ## ===================
 
-## Q. Why is (x^T y) a Scalar?
+## Q. Why is $(x^T y)$ a Scalar?
 
 ## Answer:
 
@@ -357,7 +357,7 @@ Let's build the intuition slowly.
 
 ---
 
-# Why is (x^T y) a Scalar?
+# Why is $(x^T y)$ a Scalar?
 
 Suppose
 
