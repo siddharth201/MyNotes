@@ -301,19 +301,4 @@ you will see that vector projection becomes one of the most fundamental operatio
 
 ---
 
-### **Rendering-safe rule for this notebook**
-
-Since your renderer does **not** support `\operatorname{...}`, throughout the notebook we will write:
-
-**Vector projection of x onto y**
-
-followed by
-
-```math
-\frac{\mathbf{x}^{T}\mathbf{y}}
-{\|\mathbf{y}\|^{2}}
-\mathbf{y}
-```
-
-instead of using `\operatorname{proj}`. This keeps the notebook clean, consistent, and free from rendering errors.
 
