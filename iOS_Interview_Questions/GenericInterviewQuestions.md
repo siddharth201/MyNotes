@@ -1842,11 +1842,22 @@ This is the next logical topic because it builds directly on the generic type pa
 
 
 
+</details>  
+
+---
+
+### Q. What are Generic Constraints? Why do we write T: Equatable or T: Hashable ?
+ 
+<details>
+<summary>Answer</summary>
+
+
+
 </details>
 
 
 
-What are Generic Constraints? Why do we write T: Equatable or T: Hashable?
+
 
 
 </details>
