@@ -2747,6 +2747,15 @@ The very next question after this is often:
 
 This is one of the most confusing Swift topics and a favorite in senior iOS interviews because it tests whether you understand protocols, generics, and the Swift type system at a deeper level.
 
+</details>  
+
+---
+
+### Q. Why Were Generics Introduced? ?
+ 
+<details>
+<summary>Answer</summary>
+
 </details>
 
 
