@@ -552,7 +552,9 @@ If you have worked at companies like Tata Digital or Dew Solutions, it's also ap
 This is a credible answer if you understood the process but did not personally own the Apple Developer account.
  
 
-</details>
+</details>  
+
+---
 
 ### Q. Can you explain how to upload build on Appstore or testflight?
 <details>
