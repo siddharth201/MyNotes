@@ -1283,7 +1283,12 @@ This is exactly the problem Generics solve.
 ```text
 Acronym: FAST
 
-"Generics provide a Flexible, Type-Independent way to write one reusable Algorithm while guaranteeing strict compile-time Safety."
+🛠️ Flexible: Works with many different data types.
+🔄 Algorithm: One reusable block of logic or code.
+🛡️ Safety: Prevents type errors at compile time.
+🧩 Type-Independent: Not locked into a single specific data type.
+
+Generics provide a Flexible, Type-Independent way to write one reusable Algorithm while guaranteeing strict compile-time Safety.
 ```
 
 Notice
