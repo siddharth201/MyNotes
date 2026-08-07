@@ -155,16 +155,12 @@ This is the **scalar projection formula**.
 
 # Final Scalar Projection Formula
 
-The scalar projection of **x** onto **y** is
-
-```math id="sp12"
-\boxed{
-\operatorname{comp}_{\mathbf{y}}(\mathbf{x})
-=
-\frac{\mathbf{x}^{T}\mathbf{y}}
-{\|\mathbf{y}\|}
-}
+```math
+\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
+
+
+> This quantity is called the **scalar projection** (or **component**) of **x** onto **y**. It gives only the **length of the projection** and **does not include its direction**.
 
 The notation
 
