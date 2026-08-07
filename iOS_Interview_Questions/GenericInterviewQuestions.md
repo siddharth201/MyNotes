@@ -1144,6 +1144,10 @@ A simple analogy is:
 
 > "Once development is complete, I update the app version and build number, verify that the correct release configuration, certificates, and provisioning profiles are being used, and then archive the app in Xcode using a Generic iOS Device. After the archive is created, I validate it to ensure there are no signing or configuration issues. If validation succeeds, I distribute the archive to App Store Connect. Apple processes the uploaded build, after which it becomes available in TestFlight. We first distribute it to internal testers for QA. If external users need to test it, we submit the build for Beta App Review and share it with external tester groups after approval. Once QA signs off, we create a new App Store version, add the release notes and metadata, attach the approved build, and submit it for Apple's review. After approval, we either release the app manually, schedule the release, or let it go live automatically. In projects with CI/CD, much of this process is automated using Fastlane integrated with tools like Jenkins, GitHub Actions, or Bitrise."
 
+</details>  
+
+<details>
+<summary>$\color{red}{\huge{\textbf{Generics}}}$</summary>
 </details>
 
 
