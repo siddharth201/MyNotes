@@ -3430,7 +3430,7 @@ This is the next logical topic because `some` and `any` were introduced largely 
 
 ---  
 
-### Q. Why Were Generics Introduced? ?
+### Q. What are some and any in Swift? Why were they introduced, and how are they related to Generics and Associated Types?
  
 <details>
 <summary>Answer</summary>
