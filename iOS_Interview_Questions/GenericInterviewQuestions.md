@@ -1148,6 +1148,15 @@ A simple analogy is:
 
 <details>
 <summary>$\color{red}{\huge{\textbf{Generics}}}$</summary>
+
+### Q. Explain Team ID, App ID, and Bundle Identifier ?
+
+## 
+<details>
+<summary>Answer</summary>
+
+</details>
+
 </details>
 
 
