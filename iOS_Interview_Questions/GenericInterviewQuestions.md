@@ -192,7 +192,9 @@ These are different App IDs, so they do not conflict.
 
 > **Team ID** identifies the Apple Developer account or organization and is assigned by Apple. **Bundle Identifier** identifies an app within that team and is configured in Xcode. Together, the Team ID and Bundle Identifier form the **App ID**, which Apple uses to uniquely identify the application for code signing, provisioning profiles, capabilities, and App Store distribution.
 
-</details>
+</details>  
+
+---
 
 ### Q. How we create certificate and provisional profiles?
 <details>
