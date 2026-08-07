@@ -143,10 +143,7 @@ They cancel each other.
 Therefore,
 
 ```text id="sp11"
-Projection
-=
-(xᵀy)
-/||y||
+Projection=(xᵀy) / ||y||
 ```
 
 This is the **scalar projection formula**.
