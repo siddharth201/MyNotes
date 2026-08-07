@@ -2751,7 +2751,7 @@ This is one of the most confusing Swift topics and a favorite in senior iOS inte
 
 ---
 
-### Q. Why Were Generics Introduced? ?
+### Q. What is the difference between Generics and Associated Types?
  
 <details>
 <summary>Answer</summary>
