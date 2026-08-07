@@ -156,9 +156,8 @@ This is the **scalar projection formula**.
 # Final Scalar Projection Formula
 
 ```math
-\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
+compᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
-
 
 > This quantity is called the **scalar projection** (or **component**) of **x** onto **y**. It gives only the **length of the projection** and **does not include its direction**.
 
