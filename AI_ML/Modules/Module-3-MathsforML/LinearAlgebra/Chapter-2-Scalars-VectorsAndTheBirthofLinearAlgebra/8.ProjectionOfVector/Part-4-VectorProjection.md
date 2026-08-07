@@ -185,17 +185,6 @@ Multiplying the denominators,
 ```math
 Projᵧ(x)=\frac{\mathbf{x}^T\mathbf{y}}{\|\mathbf{y}\|}
 ```
-
-> **⚠️ Notebook Rendering Note:** If your renderer rejects `\operatorname`, write the label as plain text and keep only the formula in the math block.
-
-**Vector projection of x onto y**
-
-```math id="vp406"
-\frac{\mathbf{x}^{T}\mathbf{y}}
-{\|\mathbf{y}\|^{2}}
-\mathbf{y}
-```
-
 ---
 
 # 4.7 Why Does This Formula Work?
