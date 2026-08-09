@@ -10,7 +10,9 @@ Our final goal is to prove:
 ```math
 \boxed{\mathbf{w}\perp\text{the line}}
 ```
-
+```math
+\boxed{\boldsymbol{w} \perp \text{the line}}
+```
 But we cannot prove this immediately.
 
 We first need to know:
