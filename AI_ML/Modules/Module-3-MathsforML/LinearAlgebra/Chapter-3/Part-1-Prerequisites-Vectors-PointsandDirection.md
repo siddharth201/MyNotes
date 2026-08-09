@@ -2,9 +2,6 @@
 
 # Part 1 — Prerequisites: Vectors, Points and Direction
 
-Now let's rebuild Part 1 properly.
-
----
 
 ## 1.1 Why Are We Studying These Prerequisites?
 
