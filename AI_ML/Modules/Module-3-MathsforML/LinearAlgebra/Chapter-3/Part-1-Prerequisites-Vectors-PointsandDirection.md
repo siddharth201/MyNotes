@@ -17,6 +17,9 @@ Our final goal is to prove:
 ```math
 \boxed{\bm{w} \perp \text{the line}}
 ```
+
+$$ \boxed{\boldsymbol{w} \perp \text{the line}} $$
+
 But we cannot prove this immediately.
 
 We first need to know:
