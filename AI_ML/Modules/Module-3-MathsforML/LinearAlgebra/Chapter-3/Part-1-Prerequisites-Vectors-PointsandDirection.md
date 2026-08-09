@@ -20,6 +20,8 @@ Our final goal is to prove:
 
 $$ \boxed{\boldsymbol{w} \perp \text{the line}} $$
 
+$$ \boxed{\mathbf{\mathit{w}} \perp \text{the line}} $$
+
 But we cannot prove this immediately.
 
 We first need to know:
