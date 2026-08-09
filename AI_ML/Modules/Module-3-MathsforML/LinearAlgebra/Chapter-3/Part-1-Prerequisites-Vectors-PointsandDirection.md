@@ -22,6 +22,9 @@ $$ \boxed{\boldsymbol{w} \perp \text{the line}} $$
 
 $$ \boxed{\mathbf{\mathit{w}} \perp \text{the line}} $$
 
+Here is the inline formula: $\boxed{\boldsymbol{w} \perp \text{the line}}$
+
+
 But we cannot prove this immediately.
 
 We first need to know:
