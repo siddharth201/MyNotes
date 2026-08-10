@@ -176,6 +176,8 @@ The vector from A to B is obtained by:
 \boxed{
 \overrightarrow{AB}
 =
+\overrightarrow{OB}-\overrightarrow{OA}
+=
 \overrightarrow{b}-\overrightarrow{a}
 }
 ```
