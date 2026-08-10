@@ -110,7 +110,7 @@ This is one of the most useful ways to think about a linear equation.
 
 ---
 
-# 3.4 What Is `\overrightarrow{w}`?
+# 3.4 What Is $\overrightarrow{w}$?
 
 Now we come to the most important object.
 
@@ -133,9 +133,9 @@ At this stage, however, we should temporarily forget the word "weight" and think
 
 Later, we will prove something extremely important:
 
-> **The vector `\overrightarrow{w}` is perpendicular to the line.**
+> **The vector $\overrightarrow{w}$ is perpendicular to the line.**
 
-Therefore, `\overrightarrow{w}` is also called a **normal vector**.
+Therefore, $\overrightarrow{w}$ is also called a **normal vector**.
 
 ```math id="normal-vector"
 \boxed{
