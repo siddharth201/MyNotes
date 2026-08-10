@@ -40,7 +40,7 @@ We will build this intuition carefully.
 
 ---
 
-# 3.2 What Is `\overrightarrow{x}`?
+# 3.2 What Is $\overrightarrow{x}$?
 
 Suppose we are working in 2D.
 
