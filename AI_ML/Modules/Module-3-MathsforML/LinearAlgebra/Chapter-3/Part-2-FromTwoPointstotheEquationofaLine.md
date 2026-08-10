@@ -46,7 +46,7 @@ Now suppose the line has a direction vector:
 }
 ```
 
-The vector `d` tells us which direction the line travels.
+The vector **d** tells us which direction the line travels.
 
 ---
 
