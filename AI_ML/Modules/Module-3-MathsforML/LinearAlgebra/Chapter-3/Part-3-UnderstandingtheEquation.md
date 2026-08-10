@@ -642,7 +642,7 @@ That proof comes next.
 
 Think of the equation as having two jobs:
 
-### `\overrightarrow{w}`
+### $\overrightarrow{w}$
 
 ```text
               w
