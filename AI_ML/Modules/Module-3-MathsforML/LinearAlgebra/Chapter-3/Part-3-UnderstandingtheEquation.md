@@ -34,7 +34,7 @@ It contains three important components:
 
 The most important distinction is:
 
-> **`\overrightarrow{w}` controls the orientation of the line, while `w₀` controls where that line is located.**
+> **$\overrightarrow{w}$ controls the orientation of the line, while `w₀` controls where that line is located.**
 
 We will build this intuition carefully.
 
