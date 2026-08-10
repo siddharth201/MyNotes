@@ -72,7 +72,7 @@ can be represented by:
 \end{bmatrix}
 ```
 
-So `\overrightarrow{x}` represents **the location we are currently asking about**.
+So $\overrightarrow{x}$ represents **the location we are currently asking about**.
 
 ---
 
