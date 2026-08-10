@@ -1,4 +1,4 @@
-# Part 5 — Main Proof: Why $`\mathbf{w}`$ Is Perpendicular to the Line
+# Part 5 — Main Proof: Why $`\overrightarrow{w}`$ Is Perpendicular to the Line
 
 This is the **central proof of the topic**.
 
@@ -6,11 +6,11 @@ In Part 4, we discovered the key idea:
 
 > If two points lie on the same line, the vector joining them gives the direction of that line.
 
-Now we will prove rigorously that the vector $`\mathbf{w}`$ in
+Now we will prove rigorously that the vector $`\overrightarrow{w}`$ in
 
 ```math id="p5-main"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
@@ -24,7 +24,7 @@ Consider the line:
 
 ```math id="p5-line"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
@@ -32,15 +32,15 @@ We want to prove:
 
 ```math id="p5-result"
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
-Equivalently, if $`\mathbf{d}`$ is any direction vector of the line, we want to prove:
+Equivalently, if $`\overrightarrow{d}`$ is any direction vector of the line, we want to prove:
 
 ```math id="p5-perp"
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -54,7 +54,7 @@ So our entire proof reduces to showing:
 
 ```math id="p5-target"
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -67,13 +67,13 @@ Take any two different points on the line.
 Let their position vectors be:
 
 ```math id="p5-x1"
-\mathbf{x}_1
+\overrightarrow{x}_1
 ```
 
 and:
 
 ```math id="p5-x2"
-\mathbf{x}_2
+\overrightarrow{x}_2
 ```
 
 The important word here is **arbitrary**.
@@ -90,7 +90,7 @@ Therefore:
 
 ```math id="p5-eq1"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}_1+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_1+w_0=0
 }
 ```
 
@@ -98,7 +98,7 @@ and:
 
 ```math id="p5-eq2"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}_2+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_2+w_0=0
 }
 ```
 
@@ -112,11 +112,11 @@ Now subtract the first equation from the second.
 
 ```math id="p5-subtract"
 \left(
-\mathbf{w}^{T}\mathbf{x}_2+w_0
+\overrightarrow{w}^{T}\overrightarrow{x}_2+w_0
 \right)
 -
 \left(
-\mathbf{w}^{T}\mathbf{x}_1+w_0
+\overrightarrow{w}^{T}\overrightarrow{x}_1+w_0
 \right)
 =
 0
@@ -133,9 +133,9 @@ w_0-w_0=0
 So we are left with:
 
 ```math id="p5-after-cancel"
-\mathbf{w}^{T}\mathbf{x}_2
+\overrightarrow{w}^{T}\overrightarrow{x}_2
 -
-\mathbf{w}^{T}\mathbf{x}_1
+\overrightarrow{w}^{T}\overrightarrow{x}_1
 =
 0
 ```
@@ -144,9 +144,9 @@ Using the distributive property of the dot product:
 
 ```math id="p5-factor"
 \boxed{
-\mathbf{w}^{T}
+\overrightarrow{w}^{T}
 \left(
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 \right)
 =
 0
@@ -162,7 +162,7 @@ This is the **critical equation**.
 Now look at:
 
 ```math id="p5-difference"
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 ```
 
 What is this?
@@ -173,9 +173,9 @@ Therefore:
 
 ```math id="p5-direction"
 \boxed{
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 }
 ```
 
@@ -185,7 +185,7 @@ Substitute this into our previous result:
 
 ```math id="p5-substitution"
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -196,24 +196,24 @@ Substitute this into our previous result:
 Recall the geometric interpretation of the dot product:
 
 ```math id="p5-dot-angle"
-\mathbf{w}^{T}\mathbf{d}
+\overrightarrow{w}^{T}\overrightarrow{d}
 =
-\|\mathbf{w}\|
-\|\mathbf{d}\|
+\|\overrightarrow{w}\|
+\|\overrightarrow{d}\|
 \cos\theta
 ```
 
 But we have just proved:
 
 ```math id="p5-zero"
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 ```
 
 Therefore:
 
 ```math id="p5-cos-zero"
-\|\mathbf{w}\|
-\|\mathbf{d}\|
+\|\overrightarrow{w}\|
+\|\overrightarrow{d}\|
 \cos\theta
 =
 0
@@ -239,17 +239,17 @@ Hence:
 
 ```math id="p5-vector-perp"
 \boxed{
-\mathbf{w}\perp\mathbf{d}
+\overrightarrow{w}\perp\overrightarrow{d}
 }
 ```
 
-But $`\mathbf{d}`$ points along the line.
+But $`\overrightarrow{d}`$ points along the line.
 
 Therefore:
 
 ```math id="p5-final"
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
@@ -264,19 +264,19 @@ The entire proof can now be compressed into one logical sequence.
 Two points lie on the line:
 
 ```math id="p5-chain1"
-\mathbf{w}^{T}\mathbf{x}_1+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_1+w_0=0
 ```
 
 ```math id="p5-chain2"
-\mathbf{w}^{T}\mathbf{x}_2+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_2+w_0=0
 ```
 
 Subtract:
 
 ```math id="p5-chain3"
-\mathbf{w}^{T}
+\overrightarrow{w}^{T}
 \left(
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 \right)
 =
 0
@@ -285,22 +285,22 @@ Subtract:
 But:
 
 ```math id="p5-chain4"
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 ```
 
 Therefore:
 
 ```math id="p5-chain5"
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 ```
 
 Hence:
 
 ```math id="p5-chain6"
 \boxed{
-\mathbf{w}\perp\mathbf{d}
+\overrightarrow{w}\perp\overrightarrow{d}
 }
 ```
 
@@ -308,7 +308,7 @@ Since **d** is along the line:
 
 ```math id="p5-chain7"
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
@@ -316,12 +316,12 @@ Since **d** is along the line:
 
 # 5.7 Why Is the Proof So Powerful?
 
-Notice that we never assumed that $`\mathbf{w}`$ was perpendicular.
+Notice that we never assumed that $`\overrightarrow{w}`$ was perpendicular.
 
 We started only with the equation:
 
 ```math id="p5-start"
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 ```
 
 and the definition of a point lying on the line.
@@ -343,13 +343,13 @@ There is another important idea hidden inside the proof.
 We had:
 
 ```math id="p5-bias1"
-\mathbf{w}^{T}\mathbf{x}_1+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_1+w_0=0
 ```
 
 and:
 
 ```math id="p5-bias2"
-\mathbf{w}^{T}\mathbf{x}_2+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_2+w_0=0
 ```
 
 When we subtract:
@@ -363,9 +363,9 @@ So the bias disappears completely.
 What remains is:
 
 ```math id="p5-bias4"
-\mathbf{w}^{T}
+\overrightarrow{w}^{T}
 \left(
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 \right)
 =
 0
@@ -375,7 +375,7 @@ This gives us a deeper understanding of the roles of the two parameters:
 
 | Quantity       | Geometric role             |
 | -------------- | -------------------------- |
-| $`\mathbf{w}`$ | Determines the orientation |
+| $`\overrightarrow{w}`$ | Determines the orientation |
 | $`w_0`$        | Determines the position    |
 
 Changing $`w_0`$ can move the line, but it cannot change the direction of the line.
@@ -396,7 +396,7 @@ The corresponding normal/weight vector is:
 
 ```math id="p5-num-w"
 \boxed{
-\mathbf{w}
+\overrightarrow{w}
 =
 \begin{bmatrix}
 1\\
@@ -468,10 +468,10 @@ Therefore:
 }
 ```
 
-Now calculate the dot product with $`\mathbf{w}`$:
+Now calculate the dot product with $`\overrightarrow{w}`$:
 
 ```math id="p5-num-dot"
-\mathbf{w}^{T}\overrightarrow{AB}
+\overrightarrow{w}^{T}\overrightarrow{AB}
 =
 \begin{bmatrix}
 1 & 1
@@ -492,11 +492,11 @@ Hence:
 
 ```math id="p5-num-result"
 \boxed{
-\mathbf{w}^{T}\overrightarrow{AB}=0
+\overrightarrow{w}^{T}\overrightarrow{AB}=0
 }
 ```
 
-Therefore $`\mathbf{w}`$ is perpendicular to the direction of the line.
+Therefore $`\overrightarrow{w}`$ is perpendicular to the direction of the line.
 
 ---
 
@@ -534,17 +534,17 @@ For the line defined by:
 
 ```math id="p5-theorem-line"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
-the vector $`\mathbf{w}`$ is perpendicular to every direction vector of the line.
+the vector $`\overrightarrow{w}`$ is perpendicular to every direction vector of the line.
 
 Therefore:
 
 ```math id="p5-theorem-result"
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
@@ -560,15 +560,15 @@ Suppose a classifier has:
 
 ```math id="p5-ml-boundary"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
 This boundary separates regions of the feature space.
 
-The vector $`\mathbf{w}`$ is perpendicular to that boundary.
+The vector $`\overrightarrow{w}`$ is perpendicular to that boundary.
 
-Therefore, $`\mathbf{w}`$ tells us the **orientation of the decision boundary**.
+Therefore, $`\overrightarrow{w}`$ tells us the **orientation of the decision boundary**.
 
 This gives us a very useful mental model:
 
@@ -593,13 +593,13 @@ If you remember only one derivation from this topic, remember this:
 
 ```math id="p5-memory1"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}_1+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_1+w_0=0
 }
 ```
 
 ```math id="p5-memory2"
 \boxed{
-\mathbf{w}^{T}\mathbf{x}_2+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}_2+w_0=0
 }
 ```
 
@@ -607,8 +607,8 @@ Subtract:
 
 ```math id="p5-memory3"
 \boxed{
-\mathbf{w}^{T}
-(\mathbf{x}_2-\mathbf{x}_1)=0
+\overrightarrow{w}^{T}
+(\overrightarrow{x}_2-\overrightarrow{x}_1)=0
 }
 ```
 
@@ -616,9 +616,9 @@ And because:
 
 ```math id="p5-memory4"
 \boxed{
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 =
-\mathbf{d}
+\overrightarrow{d}
 }
 ```
 
@@ -626,7 +626,7 @@ we get:
 
 ```math id="p5-memory5"
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -634,7 +634,7 @@ Therefore:
 
 ```math id="p5-memory6"
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
