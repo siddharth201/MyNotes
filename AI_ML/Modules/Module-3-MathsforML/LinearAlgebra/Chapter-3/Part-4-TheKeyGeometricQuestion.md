@@ -57,7 +57,9 @@ If $`\overrightarrow{x_1}`$ and $`\overrightarrow{x_2}`$ are two points on the l
 
 ```math
 \boxed{
-\overrightarrow{x_1x_2}
+\overrightarrow{x_1}
+\overrightarrow{x_2}
+
 =
 \overrightarrow{x_2}-\overrightarrow{x_1}
 }
