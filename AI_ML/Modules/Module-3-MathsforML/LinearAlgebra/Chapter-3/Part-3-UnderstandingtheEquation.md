@@ -86,7 +86,7 @@ Consider the equation:
 }
 ```
 
-For any particular point `\overrightarrow{x}`, we can substitute its coordinates.
+For any particular point $\overrightarrow{x}$, we can substitute its coordinates.
 
 If the equation evaluates to zero, that point lies **on the line**.
 
