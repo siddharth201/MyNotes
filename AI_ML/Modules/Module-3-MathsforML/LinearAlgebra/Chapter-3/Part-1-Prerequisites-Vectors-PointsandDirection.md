@@ -107,7 +107,7 @@ then its position vector is:
 
 ```math
 \boxed{
-\mathbf{a}
+\overrightarrow{a}
 =
 \begin{bmatrix}
 2\\
@@ -151,7 +151,7 @@ B = (5, 7)
 Their position vectors are:
 
 ```math
-\mathbf{a}
+\overrightarrow{a}
 =
 \begin{bmatrix}
 2\\
@@ -162,7 +162,7 @@ Their position vectors are:
 and:
 
 ```math
-\mathbf{b}
+\overrightarrow{b}
 =
 \begin{bmatrix}
 5\\
@@ -176,7 +176,7 @@ The vector from A to B is obtained by:
 \boxed{
 \overrightarrow{AB}
 =
-\mathbf{b}-\mathbf{a}
+\overrightarrow{b}-\overrightarrow{a}
 }
 ```
 
@@ -225,13 +225,13 @@ Imagine going from A back to the origin and then from the origin to B.
 From A to O:
 
 ```math
-\overrightarrow{AO}=-\mathbf{a}
+\overrightarrow{AO}=-\overrightarrow{a}
 ```
 
 From O to B:
 
 ```math
-\overrightarrow{OB}=\mathbf{b}
+\overrightarrow{OB}=\overrightarrow{b}
 ```
 
 Therefore, by the triangle law:
@@ -249,7 +249,7 @@ So:
 ```math
 \overrightarrow{AB}
 =
--\mathbf{a}+\mathbf{b}
+-\overrightarrow{a}+\overrightarrow{b}
 ```
 
 Hence:
@@ -258,7 +258,7 @@ Hence:
 \boxed{
 \overrightarrow{AB}
 =
-\mathbf{b}-\mathbf{a}
+\overrightarrow{b}-\overrightarrow{a}
 }
 ```
 
@@ -284,9 +284,9 @@ If the position vectors of the two points are **x₁** and **x₂**, then:
 
 ```math
 \boxed{
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 }
 ```
 
@@ -318,7 +318,7 @@ Therefore, if **w** is perpendicular to the line direction **d**, then:
 
 ```math
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -352,7 +352,7 @@ Our final objective is to show that the vector **w** appearing in:
 
 ```math
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
@@ -366,9 +366,9 @@ For two points on a line:
 
 ```math
 \boxed{
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 }
 ```
 
@@ -376,7 +376,7 @@ And perpendicularity is expressed through:
 
 ```math
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -384,8 +384,8 @@ Combining these:
 
 ```math
 \boxed{
-\mathbf{w}^{T}
-(\mathbf{x}_2-\mathbf{x}_1)
+\overrightarrow{w}^{T}
+(\overrightarrow{x}_2-\overrightarrow{x}_1)
 =
 0
 }
@@ -406,9 +406,9 @@ Think:
 Two points on the line allow us to find that direction.
 
 ```math
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 ```
 
 A vector perpendicular to that direction is a **normal vector**.
@@ -443,7 +443,7 @@ A point can be represented relative to the origin by its position vector.
 \boxed{
 \overrightarrow{AB}
 =
-\mathbf{b}-\mathbf{a}
+\overrightarrow{b}-\overrightarrow{a}
 }
 ```
 
@@ -451,9 +451,9 @@ A point can be represented relative to the origin by its position vector.
 
 ```math
 \boxed{
-\mathbf{d}
+\overrightarrow{d}
 =
-\mathbf{x}_2-\mathbf{x}_1
+\overrightarrow{x}_2-\overrightarrow{x}_1
 }
 ```
 
@@ -461,7 +461,7 @@ A point can be represented relative to the origin by its position vector.
 
 ```math
 \boxed{
-\mathbf{w}^{T}\mathbf{d}=0
+\overrightarrow{w}^{T}\overrightarrow{d}=0
 }
 ```
 
@@ -469,7 +469,7 @@ And this gives us the foundation for the central theorem:
 
 ```math
 \boxed{
-\mathbf{w}\perp\text{line}
+\overrightarrow{w}\perp\text{line}
 }
 ```
 
@@ -487,7 +487,7 @@ Then we'll gradually arrive at the ML form:
 
 ```math
 \boxed{
-\mathbf{w}^{T}\mathbf{x}+w_0=0
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
 }
 ```
 
