@@ -28,9 +28,9 @@ It contains three important components:
 
 | Component            | Meaning                                        |
 | -------------------- | ---------------------------------------------- |
-| `\overrightarrow{x}` | A point/vector representing a location         |
-| `\overrightarrow{w}` | Weight/normal vector that controls orientation |
-| `w_0`                | Bias/intercept that controls position          |
+| $\overrightarrow{x}$ | A point/vector representing a location         |
+| $\overrightarrow{w}$ | Weight/normal vector that controls orientation |
+| $w_0$                | Bias/intercept that controls position          |
 
 The most important distinction is:
 
