@@ -286,7 +286,7 @@ Only the position changed.
 
 ---
 
-# 3.8 Why Does `\overrightarrow{w}` Control Orientation?
+# 3.8 Why Does $\overrightarrow{w}$ Control Orientation?
 
 Let's look at:
 
