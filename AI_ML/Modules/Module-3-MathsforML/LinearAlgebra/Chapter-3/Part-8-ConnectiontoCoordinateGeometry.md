@@ -133,8 +133,8 @@ We can therefore create a direct mapping:
 
 | Coordinate Geometry | Linear Algebra / ML                              |
 | ------------------- | ------------------------------------------------ |
-| `a`                 | first component of `\overrightarrow{w}`          |
-| `b`                 | second component of `\overrightarrow{w}`         |
+| `a`                 | first component of $\overrightarrow{w}$          |
+| `b`                 | second component of $\overrightarrow{w}$         |
 | `c`                 | `w₀`                                             |
 | `ax₁ + bx₂ + c = 0` | `\overrightarrow{w}ᵀ\overrightarrow{x} + w₀ = 0` |
 
