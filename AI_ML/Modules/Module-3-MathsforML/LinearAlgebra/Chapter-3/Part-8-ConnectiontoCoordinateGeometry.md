@@ -136,7 +136,7 @@ We can therefore create a direct mapping:
 | `a`                 | first component of $\overrightarrow{w}$          |
 | `b`                 | second component of $\overrightarrow{w}$         |
 | `c`                 | `w₀`                                             |
-| `ax₁ + bx₂ + c = 0` | `\overrightarrow{w}ᵀ\overrightarrow{x} + w₀ = 0` |
+| `ax₁ + bx₂ + c = 0` | $\overrightarrow{w}ᵀ\overrightarrow{x} + w₀ = 0$ |
 
 So the ML notation is not replacing coordinate geometry.
 
