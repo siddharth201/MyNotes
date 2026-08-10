@@ -534,7 +534,7 @@ and:
 y=y_1+td_y
 ```
 
-Assuming `d_x` is non-zero, from the first equation:
+Assuming $d_x$ is non-zero, from the first equation:
 
 ```math
 t=\frac{x-x_1}{d_x}
