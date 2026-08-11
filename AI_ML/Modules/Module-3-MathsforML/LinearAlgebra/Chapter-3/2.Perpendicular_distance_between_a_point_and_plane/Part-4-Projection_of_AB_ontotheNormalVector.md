@@ -1,657 +1,693 @@
+Yes. I reviewed my previous Part 3 carefully against the **handwritten derivation**, the attached Scaler material, and the rendering issues you have identified. 
 
-# **Part 4 — Projection of $\overrightarrow{AB}$ onto the Normal Vector**
+There were three things that needed correction:
 
-In Part 2, we established the complete geometric setup:
+1. I used the unsupported `\operatorname{comp}` notation.
+2. I introduced notation that was unnecessary for the derivation.
+3. The presentation should follow the **exact projection → substitution → plane-condition → distance** sequence visible in your handnotes.
 
-* $A$ is a point on the plane.
-* $B$ is the point whose distance from the plane we want.
-* $\overrightarrow{AB}$ connects the plane to the external point.
-* $\overrightarrow{w}$ is the normal vector to the plane.
-* The required distance is the **component of $\overrightarrow{AB}$ in the direction of $\overrightarrow{w}$**.
-
-Now we use the projection concept we studied earlier.
+Below is the **clean replacement for the entire Part 3**.
 
 ---
 
-## 3.1 The Key Idea
+# Part 3 — Projection of $\overrightarrow{AB}$ onto the Normal Vector
 
-We have the vector
+In Part 2, we established:
 
-$`\overrightarrow{AB}=\overrightarrow{x_2}-\overrightarrow{x_1}`$
+* $A$ lies on the plane.
+* $B$ is the point whose distance from the plane we want.
+* $\overrightarrow{AB}$ connects the plane point to the external point.
+* $\overrightarrow{w}$ is perpendicular to the plane.
 
-and we want to know:
+Therefore, the shortest distance from $B$ to the plane must lie in the direction of $\overrightarrow{w}$.
 
-> **How much of $\overrightarrow{AB}$ lies in the direction of $\overrightarrow{w}$?**
+So our problem becomes:
 
-Geometrically:
+> **Find the component of $\overrightarrow{AB}$ along $\overrightarrow{w}$.**
 
-```text
-                         B ●
-                          /|
-                         / |
-                        /  |  ← perpendicular component
-                       /   |
-                      /    |
-                     ●-----+
-                     A
-──────────────────────────────
-            Plane
+That is exactly a **scalar projection** problem.
 
-                     ↑
-                     |
-                     |  w
-                     |
+---
+
+# 3.1 The Vector We Want to Project
+
+From Part 2:
+
+```math id="p3-ab"
+\boxed{
+\overrightarrow{AB}
+=
+\overrightarrow{x_2}
+-
+\overrightarrow{x_1}
+}
 ```
 
-The diagonal vector is $\overrightarrow{AB}$.
+Here:
 
-The vertical component is the part of $\overrightarrow{AB}$ pointing in the normal direction.
+* $\overrightarrow{x_1}$ is a point on the plane.
+* $\overrightarrow{x_2}$ is the external point.
+* $\overrightarrow{AB}$ points from the plane toward the external point.
 
-That component is exactly what we need for the perpendicular distance.
+But $\overrightarrow{AB}$ is not necessarily perpendicular to the plane.
+
+Therefore, we cannot simply use its magnitude.
+
+We need only the part of $\overrightarrow{AB}$ that lies in the normal direction.
 
 ---
 
-# 3.2 Recall: Scalar Projection
+# 3.2 The Direction We Want
 
-From our previous chapter on projection, the scalar projection of a vector onto another vector is:
+We already know from the previous chapter that:
+
+```math id="p3-normal"
+\boxed{
+\overrightarrow{w}\perp\text{plane}
+}
+```
+
+Therefore, $\overrightarrow{w}$ is exactly the direction of the perpendicular distance.
+
+So we want:
+
+> **The component of $\overrightarrow{AB}$ in the direction of $\overrightarrow{w}$.**
+
+---
+
+# 3.3 Convert $\overrightarrow{w}$ into a Unit Vector
+
+The vector $\overrightarrow{w}$ may have any magnitude.
+
+But for measuring a component along a direction, we need only the **direction**.
+
+Therefore we normalize $\overrightarrow{w}$:
+
+```math id="p3-unit-w"
+\boxed{
+\widehat{w}
+=
+\frac{\overrightarrow{w}}
+{\|\overrightarrow{w}\|}
+}
+```
+
+This vector has:
+
+```text
+Magnitude = 1
+Direction = same as w
+```
+
+So it is a pure direction vector.
+
+---
+
+# 3.4 Scalar Projection onto the Normal Direction
+
+The scalar projection of $\overrightarrow{AB}$ onto the direction $\overrightarrow{w}$ is therefore:
 
 **Scalar projection of $\overrightarrow{AB}$ onto $\overrightarrow{w}$**
 
-```math
+```math id="p3-projection"
+\boxed{
+\overrightarrow{AB}^{T}
+\frac{\overrightarrow{w}}
+{\|\overrightarrow{w}\|}
+}
+```
+
+Move the scalar denominator outside:
+
+```math id="p3-projection2"
+\boxed{
 \frac{
 \overrightarrow{AB}^{T}\overrightarrow{w}
 }{
 \|\overrightarrow{w}\|
 }
+}
 ```
 
-This gives us a **single number**.
+Because the dot product is commutative, we may also write:
 
-That number tells us how much of $\overrightarrow{AB}$ lies along the direction of $\overrightarrow{w}$.
-
-### Why divide by $|\overrightarrow{w}|$?
-
-Because $\overrightarrow{w}$ may not be a unit vector.
-
-If we first convert it into a unit vector,
-
-$`\widehat{w}=\frac{\overrightarrow{w}}{\|\overrightarrow{w}\|}`$,
-
-then the scalar projection is simply:
-
-$$
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
-
-\overrightarrow{AB}^{T}\widehat{w}
-$$
-
-Therefore:
-
-$$
+```math id="p3-projection3"
 \boxed{
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
-
 \frac{
-\overrightarrow{AB}^{T}\overrightarrow{w}
+\overrightarrow{w}^{T}\overrightarrow{AB}
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
 }
-$$
+```
+
+This is the form used in the handwritten derivation. 
 
 ---
 
-# 3.3 Substitute $\overrightarrow{AB}$
+# 3.5 Why Does This Give the Perpendicular Component?
+
+Suppose the angle between $\overrightarrow{AB}$ and $\overrightarrow{w}$ is $\theta$.
+
+From the geometric interpretation of the dot product:
+
+```math id="p3-dot-angle"
+\overrightarrow{w}^{T}\overrightarrow{AB}
+=
+\|\overrightarrow{w}\|
+\|\overrightarrow{AB}\|
+\cos\theta
+```
+
+Divide by $|\overrightarrow{w}|$:
+
+```math id="p3-cancel"
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{AB}
+}{
+\|\overrightarrow{w}\|
+}
+=
+\|\overrightarrow{AB}\|\cos\theta
+```
+
+But:
+
+```math id="p3-component"
+\boxed{
+\|\overrightarrow{AB}\|\cos\theta
+}
+```
+
+is precisely the component of $\overrightarrow{AB}$ along the normal direction.
+
+Therefore:
+
+> **The scalar projection gives us the signed perpendicular component of $\overrightarrow{AB}$.**
+
+---
+
+# 3.6 Substitute the Vector $\overrightarrow{AB}$
 
 From Part 2:
 
-$`\overrightarrow{AB}=\overrightarrow{x_2}-\overrightarrow{x_1}`$
+```math id="p3-sub-ab"
+\overrightarrow{AB}
+=
+\overrightarrow{x_2}
+-
+\overrightarrow{x_1}
+```
+
+Substitute this into the projection:
+
+```math id="p3-substitution"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}
+\left(
+\overrightarrow{x_2}
+-
+\overrightarrow{x_1}
+\right)
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+Now expand the dot product:
+
+```math id="p3-expand"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{x_2}
+-
+\overrightarrow{w}^{T}\overrightarrow{x_1}
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+We are now one step away from the final formula.
+
+---
+
+# 3.7 Use the Fact That $\overrightarrow{x_1}$ Lies on the Plane
+
+This is the crucial step from the handnotes.
+
+Because $\overrightarrow{x_1}$ represents a point on the plane, it satisfies:
+
+```math id="p3-plane-condition"
+\boxed{
+\overrightarrow{w}^{T}\overrightarrow{x_1}
++
+w_0
+=
+0
+}
+```
 
 Therefore:
 
-$$
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
-
-\frac{
-(\overrightarrow{x_2}-\overrightarrow{x_1})^{T}
-\overrightarrow{w}
-}{
-|\overrightarrow{w}|
-}
-$$
-
-Using the distributive property of the dot product:
-
-# $$
-
-\frac{
-\overrightarrow{x_2}^{T}\overrightarrow{w}
-------------------------------------------
-
-\overrightarrow{x_1}^{T}\overrightarrow{w}
-}{
-|\overrightarrow{w}|
-}
-$$
-
-Since the dot product is commutative:
-
-$`\overrightarrow{x}^{T}\overrightarrow{w}=\overrightarrow{w}^{T}\overrightarrow{x}`$
-
-we can write:
-
-# $$
-
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x_2}
-------------------------------------------
-
+```math id="p3-x1-rearrange"
+\boxed{
 \overrightarrow{w}^{T}\overrightarrow{x_1}
-}{
-|\overrightarrow{w}|
-}
-$$
-
-This expression is already very close to our final answer.
-
-But there is one beautiful piece of information we haven't used yet.
-
----
-
-# 3.4 Remember: $\overrightarrow{x_1}$ Lies on the Plane
-
-Point $A$ was deliberately chosen on the plane.
-
-The plane equation is:
-
-$`\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0`$
-
-Therefore, because $`\overrightarrow{x_1}`$ represents a point on the plane:
-
-$$
-\overrightarrow{w}^{T}\overrightarrow{x_1}+w_0=0
-$$
-
-Rearranging:
-
-$$
-\overrightarrow{w}^{T}\overrightarrow{x_1}
-==========================================
-
+=
 -w_0
-$$
+}
+```
 
-This is the key substitution.
+This allows us to replace the unknown quantity
+$\overrightarrow{w}^{T}\overrightarrow{x_1}$.
 
 ---
 
-# 3.5 Substitute into the Projection
+# 3.8 Substitute Again
 
 We had:
 
-$$
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
-
+```math id="p3-before-final"
 \frac{
 \overrightarrow{w}^{T}\overrightarrow{x_2}
-------------------------------------------
-
+-
 \overrightarrow{w}^{T}\overrightarrow{x_1}
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
-$$
+```
 
-Since:
+Substitute:
 
-$$
+```math id="p3-replace"
 \overrightarrow{w}^{T}\overrightarrow{x_1}
-==========================================
-
+=
 -w_0
-$$
+```
 
-we get:
+Therefore:
 
-# $$
-
+```math id="p3-replace2"
 \frac{
 \overrightarrow{w}^{T}\overrightarrow{x_2}
--(-w_0)
+-
+(-w_0)
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
-$$
-
-Therefore:
-
-$$
-\boxed{
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
-
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
-}{
-|\overrightarrow{w}|
-}
-}
-$$
-
-This is a major result.
-
----
-
-# 3.6 What Just Happened?
-
-Something very important happened algebraically.
-
-Initially, our expression contained **two points**:
-
-$`\overrightarrow{x_1}`$ and $`\overrightarrow{x_2}`$.
-
-But after using the fact that $`\overrightarrow{x_1}`$ lies on the plane, $`\overrightarrow{x_1}`$ disappeared.
-
-We are left only with:
-
-* the normal vector $\overrightarrow{w}$
-* the external point $\overrightarrow{x_2}$
-* the plane constant $w_0$
-
-So we don't actually need to know which point $A$ we initially selected.
-
-That is why the final point-to-plane distance formula can be calculated directly from the point and the plane equation.
-
----
-
-# 3.7 Why Can the Projection Be Negative?
-
-This is an important geometric detail.
-
-The scalar projection is **signed**.
-
-Suppose $\overrightarrow{AB}$ points in the same general direction as $\overrightarrow{w}$:
-
-```text
-        w ↑
-
-        B ●
-          |
-          |
-          ● A
-────────────── Plane
 ```
-
-Then:
-
-$$
-\overrightarrow{AB}^{T}\overrightarrow{w}>0
-$$
-
-so the projection is positive.
-
-But suppose the point lies on the opposite side:
-
-```text
-────────────── Plane
-          ● A
-          |
-          |
-          ● B
-          ↓
-          w
-```
-
-Then the projection can be negative.
-
-Therefore:
-
-> **Projection tells us both magnitude and direction relative to $\overrightarrow{w}$.**
-
-But ordinary geometric distance cannot be negative.
-
----
-
-# 3.8 Distance Must Be Non-Negative
-
-Distance is always:
-
-$$
-d\geq0
-$$
-
-Therefore we take the absolute value of the signed projection.
 
 So:
 
-$$
-d
-=
-
-\left|
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-\right|
-$$
-
-Substituting our result:
-
-$$
+```math id="p3-signed-distance"
 \boxed{
-d
-=
-
 \frac{
-\left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
-\right|
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
 }
-$$
+```
 
-This is the **perpendicular distance from point $B$ to the plane**.
+This is the **signed perpendicular distance**.
 
 ---
 
-# 3.9 The Final Formula
+# 3.9 Why Do We Call It Signed Distance?
 
-For a plane:
+The projection can be positive or negative.
 
-$`\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0`$
+For example:
 
-and a point represented by:
+```text
+Point on one side
+      ↓
+positive projection
 
-$`\overrightarrow{x_2}`$,
+Point on other side
+      ↓
+negative projection
+```
 
-the perpendicular distance is:
+The sign tells us which side of the plane the point lies on relative to the direction of $\overrightarrow{w}$.
 
-$$
+So:
+
+```math id="p3-signed"
+\boxed{
+d_{\text{signed}}
+=
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+This contains more information than ordinary distance.
+
+---
+
+# 3.10 Ordinary Distance Must Be Non-Negative
+
+Geometric distance cannot be negative.
+
+Therefore we take the absolute value:
+
+```math id="p3-absolute"
 \boxed{
 d
 =
+\left|
+d_{\text{signed}}
+\right|
+}
+```
 
+Substituting the signed distance:
+
+```math id="p3-final"
+\boxed{
+d
+=
 \frac{
 \left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
 \right|
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
 }
-$$
+```
 
-This is the formula we ultimately wanted.
+This is the **perpendicular distance between the point and the plane**.
 
-But more importantly, **we did not memorize it**.
+---
 
-We built it from:
+# 3.11 The Entire Derivation in One Chain
+
+This is the derivation you should eventually be able to reproduce from memory.
+
+### Start with the vector from the plane to the point
+
+```math id="p3-chain1"
+\boxed{
+\overrightarrow{AB}
+=
+\overrightarrow{x_2}
+-
+\overrightarrow{x_1}
+}
+```
+
+### Project onto the normal direction
+
+```math id="p3-chain2"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{AB}
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+### Substitute $\overrightarrow{AB}$
+
+```math id="p3-chain3"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}
+(\overrightarrow{x_2}-\overrightarrow{x_1})
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+### Expand
+
+```math id="p3-chain4"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{x_2}
+-
+\overrightarrow{w}^{T}\overrightarrow{x_1}
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+### Use the plane equation
+
+```math id="p3-chain5"
+\boxed{
+\overrightarrow{w}^{T}\overrightarrow{x_1}
+=
+-w_0
+}
+```
+
+### Obtain signed distance
+
+```math id="p3-chain6"
+\boxed{
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+### Take absolute value
+
+```math id="p3-chain7"
+\boxed{
+d
+=
+\frac{
+\left|
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
+\right|
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
+
+---
+
+# 3.12 Why Does $\overrightarrow{x_1}$ Disappear?
+
+This is one of the nicest parts of the derivation.
+
+We started with:
+
+```math id="p3-x1-start"
+\overrightarrow{x_1}
+```
+
+because we needed a point on the plane to construct $\overrightarrow{AB}$.
+
+But after using the plane equation:
+
+```math id="p3-x1-eliminate"
+\overrightarrow{w}^{T}\overrightarrow{x_1}
+=
+-w_0
+```
+
+the point disappears.
+
+Therefore the final distance formula needs only:
+
+* the normal vector $\overrightarrow{w}$,
+* the plane constant $w_0$,
+* the external point $\overrightarrow{x_2}$.
+
+We do **not** need to know a particular point on the plane.
+
+That is why the final formula is so useful computationally.
+
+---
+
+# 3.13 Connection to the Handwritten Notes
+
+This follows the exact mathematical structure visible in your two handwritten pages:
 
 ```text
-Point + Plane
-      ↓
-Choose a point on plane
-      ↓
-Construct AB
-      ↓
+AB
+ ↓
+projection on w
+ ↓
+wᵀ(x₂ − x₁) / ||w||
+ ↓
+(wᵀx₂ − wᵀx₁) / ||w||
+ ↓
+replace wᵀx₁ using plane equation
+ ↓
+(wᵀx₂ + w₀) / ||w||
+ ↓
+absolute value
+ ↓
+distance
+```
+
+The key source step is the handwritten observation that $`x_1`$ lies on the plane and therefore satisfies the plane equation. 
+
+---
+
+# 🧠 Part 3 Mental Model
+
+Think of the entire derivation as:
+
+```text
+AB
+ ↓
+"How much of AB points normally
+to the plane?"
+ ↓
 Project AB onto w
-      ↓
-Use plane equation
-      ↓
-x₁ disappears
-      ↓
-Take absolute value
-      ↓
-Perpendicular distance
+ ↓
+Signed perpendicular distance
+ ↓
+Use the fact that A lies on the plane
+ ↓
+Eliminate x₁
+ ↓
+Absolute value
+ ↓
+Actual distance
 ```
+
+The formula is therefore not something mysterious.
+
+It is simply:
+
+> **Projection + the equation of the plane.**
 
 ---
 
-# 3.10 Why the Denominator $|\overrightarrow{w}|$ Exists
+# 🎯 Ultimate Goal in ML — Simple View
 
-This is worth understanding deeply because it is one of the most common places where students memorize instead of understanding.
+Suppose the plane is actually a **linear decision boundary**.
 
-Suppose:
+Then:
 
-$`\overrightarrow{w}`$
-
-is very large:
-
-```text
-w = [100, 100]
+```math id="p3-ml-boundary"
+\overrightarrow{w}^{T}\overrightarrow{x}
++
+w_0
+=
+0
 ```
 
-versus:
+The formula we just derived tells us:
 
-```text
-w = [1, 1]
-```
-
-These vectors point in exactly the same direction.
-
-They represent the **same normal direction**, but their magnitudes are different.
-
-The distance obviously cannot change just because we multiplied the normal vector by $100$.
-
-Therefore we must normalize by its magnitude:
-
-$$
-\frac{\overrightarrow{w}}{|\overrightarrow{w}|}
-$$
-
-That is exactly why:
-
-$$
-|\overrightarrow{w}|
-$$
-
-appears in the denominator.
-
----
-
-# 3.11 A Beautiful Invariance Check
-
-Suppose we multiply the entire plane equation by some non-zero constant $c$.
-
-Original plane:
-
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0
-$$
-
-Multiply everything by $c$:
-
-$$
-(c\overrightarrow{w})^{T}\overrightarrow{x}+cw_0=0
-$$
-
-This describes the **same plane**.
-
-Now calculate the distance using the new representation:
-
-$$
-d'
-==
-
-\frac{
-\left|
-(c\overrightarrow{w})^{T}\overrightarrow{x_2}+cw_0
-\right|
-}{
-|c\overrightarrow{w}|
-}
-$$
-
-The numerator becomes:
-
-$$
-|c|
-\left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
-\right|
-$$
-
-and the denominator becomes:
-
-$$
-|c||\overrightarrow{w}|
-$$
-
-Therefore:
-
-$$
-d'
-==
-
-\frac{
-|c|
-\left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
-\right|
-}{
-|c||\overrightarrow{w}|
-}
-$$
-
-The $|c|$ cancels:
-
-$$
+```math id="p3-ml-distance"
 \boxed{
-d'=d
-}
-$$
-
-### Deep insight
-
-> **The geometric distance depends on the plane itself, not on the particular numerical scaling used to represent the plane.**
-
-That is an important linear-algebra property.
-
----
-
-# 3.12 Connection to Our Earlier Projection Chapter
-
-Notice how directly our previous topic is being reused.
-
-Earlier we learned:
-
-> To find the component of one vector along another vector, use projection.
-
-Now:
-
-```text
-Vector to project:
-        AB
-
-Direction:
-        w
-
-Projection:
-        component of AB along w
-
-Meaning:
-        perpendicular distance
-```
-
-So the point-to-plane distance formula is not an isolated formula.
-
-It is fundamentally a **projection problem**.
-
----
-
-# 🎯 Ultimate Goal in ML — In Simple Terms
-
-We can now translate the mathematics back into ML language.
-
-Suppose:
-
-$`\overrightarrow{w}^{T}\overrightarrow{x}+w_0=0`$
-
-is a **decision boundary**.
-
-For a data point $`\overrightarrow{x_2}`$, we calculate:
-
-$$
 d
 =
-
 \frac{
 \left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
+\overrightarrow{w}^{T}\overrightarrow{x}
++
+w_0
 \right|
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
-$$
+}
+```
 
 In simple terms:
 
-> **This number tells us how physically far the data point is from the model's boundary.**
+> **Given a data point, this tells us how far the point is from the model's linear boundary.**
 
-So geometry gives us a way to turn:
+So the mathematical journey is:
 
-> **“This point is close/far from the boundary.”**
+```text
+Projection
+   ↓
+Perpendicular distance
+   ↓
+Distance from a data point
+to a linear boundary
+   ↓
+ML
+```
 
-into an actual numerical quantity.
+We will later use this geometric interpretation to understand why distance from a boundary matters in classification.
 
 ---
 
-# 🧠 Part 3 — What You Should Remember
+# 🔑 Part 3 — Final Takeaways
 
-### Core geometric idea
+The three formulas worth remembering are:
 
-$`\overrightarrow{AB}`$ contains many directional components.
+### Vector from plane point to external point
 
-We only want the component perpendicular to the plane.
+```math id="p3-t1"
+\boxed{
+\overrightarrow{AB}
+=
+\overrightarrow{x_2}
+-
+\overrightarrow{x_1}
+}
+```
 
-### Correct direction
+### Signed perpendicular distance
 
-$`\overrightarrow{w}`$ is perpendicular to the plane.
+```math id="p3-t2"
+\boxed{
+d_{\text{signed}}
+=
+\frac{
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
+}{
+\|\overrightarrow{w}\|
+}
+}
+```
 
-Therefore we project $`\overrightarrow{AB}`$ onto $`\overrightarrow{w}`$.
+### Actual perpendicular distance
 
-### Key substitution
-
-Because $`\overrightarrow{x_1}`$ lies on the plane:
-
-$$
-\overrightarrow{w}^{T}\overrightarrow{x_1}+w_0=0
-$$
-
-which gives:
-
-$$
-\overrightarrow{w}^{T}\overrightarrow{x_1}=-w_0
-$$
-
-### Final result
-
-$$
+```math id="p3-t3"
 \boxed{
 d
 =
-
 \frac{
 \left|
-\overrightarrow{w}^{T}\overrightarrow{x_2}+w_0
+\overrightarrow{w}^{T}\overrightarrow{x_2}
++
+w_0
 \right|
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
 }
-$$
+```
 
----
+And the most important conceptual sentence is:
 
-## 🔑 One-Line Mental Model
+> **Perpendicular distance is the magnitude of the projection of the vector from a point on the plane to the external point onto the plane's normal direction.**
 
-> **Point-to-plane distance = project the point-to-plane vector onto the plane's normal direction.**
-
-And the next natural step is to take this formula and **work through numerical examples**, so that every term has a concrete geometric meaning rather than remaining symbolic.
-
-
-
+This is the exact bridge from our **Projection** chapter to **Point-to-Plane Distance**.
