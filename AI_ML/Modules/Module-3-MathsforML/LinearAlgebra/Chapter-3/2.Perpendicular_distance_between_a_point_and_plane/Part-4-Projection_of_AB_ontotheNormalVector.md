@@ -55,16 +55,15 @@ That component is exactly what we need for the perpendicular distance.
 
 From our previous chapter on projection, the scalar projection of a vector onto another vector is:
 
-$$
-\operatorname{comp}_{\overrightarrow{w}}(\overrightarrow{AB})
-=============================================================
+**Scalar projection of $\overrightarrow{AB}$ onto $\overrightarrow{w}$**
 
+```math
 \frac{
 \overrightarrow{AB}^{T}\overrightarrow{w}
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
-$$
+```
 
 This gives us a **single number**.
 
@@ -653,3 +652,6 @@ $$
 > **Point-to-plane distance = project the point-to-plane vector onto the plane's normal direction.**
 
 And the next natural step is to take this formula and **work through numerical examples**, so that every term has a concrete geometric meaning rather than remaining symbolic.
+
+
+
