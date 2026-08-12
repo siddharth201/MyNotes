@@ -16,7 +16,7 @@ P – Preventing common security vulnerabilities
 E – Exploit-proofed (building applications that are difficult to exploit)
 ```
 
-The key principles: 
+The key principles: Remember the word **"MAD SCIENTIST"**
 
 
 </details>
