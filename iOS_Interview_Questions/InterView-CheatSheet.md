@@ -35,8 +35,12 @@ The key principles: Remember the word **"MAD SCIENTIST"**
 
 **I (Input Validation) :** $LI_fVAR$
 
+</details>
 
+## **Q2: How do you securely clear sensitive data from memory in Swift?**
 
+<details>
+<summary>Acronym</summary>
 
 </details>
 
