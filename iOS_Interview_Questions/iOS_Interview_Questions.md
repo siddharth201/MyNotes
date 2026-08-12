@@ -8446,8 +8446,10 @@ secret = SecureData("myPassword".utf8)
 ```
 
 <details>
-<summary>Example</summary>
-```swift
+<summary>Working Example</summary>  
+
+```swift  
+  
 import Foundation
 import CryptoKit
 
