@@ -8447,6 +8447,47 @@ secret = SecureData("myPassword".utf8)
 
 <details>
 <summary>Example</summary>
+```swift
+import Foundation
+import CryptoKit
+
+print("--- 1. CryptoKit Verification ---")
+
+func verifyCryptoKitWipe() {
+    let originalPassword = "myPassword123"
+    let passwordBytes = Array(originalPassword.utf8)
+    
+    var key: SymmetricKey? = SymmetricKey(data: passwordBytes)
+    
+    // 1. Capture the memory pointer address where the key data lives
+    var capturedAddress: UnsafeRawPointer? = nil
+    key?.withUnsafeBytes { body in
+        capturedAddress = body.baseAddress
+    }
+    
+    guard let targetAddress = capturedAddress else { return }
+    print("Key memory address captured: \(targetAddress)")
+    
+    // 2. Clear out the object reference to trigger deallocation/zeroization
+    key = nil
+    
+    // 3. Programmatically read the memory address directly to verify the wipe
+    let rawBuffer = UnsafeRawBufferPointer(start: targetAddress, count: passwordBytes.count)
+    let clearedBytes = Array(rawBuffer)
+    let stringFromClearedBytes = String(bytes: clearedBytes, encoding: .utf8) ?? ""
+    
+    print("Bytes at address after deallocation: \(clearedBytes)")
+    
+    // Assert tracking
+    if !stringFromClearedBytes.contains(originalPassword) {
+        print("✅ VERIFIED: The original password string is gone from that memory location.")
+    } else {
+        print("❌ FAILED: The sensitive data still exists at the location.")
+    }
+}
+
+verifyCryptoKitWipe()
+```
 </details>
 
 #### (ii) The Manual Solution: Overwriting Bytes
