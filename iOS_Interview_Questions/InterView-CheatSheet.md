@@ -33,7 +33,7 @@ The key principles: Remember the word **"MAD SCIENTIST"**
 | **A**  | Authorization                          |  
 
 
-**I (Input Validation) :** LI_fVAR
+**I (Input Validation) :** $LI_fVAR$
 
 
 
