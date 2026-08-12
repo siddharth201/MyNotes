@@ -7,6 +7,8 @@
 <details>
 <summary>Acronym</summary>
 
+Secure coding in iOS is all about protecting user data, preventing common security vulnerabilities, and building applications that are difficult to exploit.
+
 
 </details>
 
