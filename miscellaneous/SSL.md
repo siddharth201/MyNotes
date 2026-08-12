@@ -183,7 +183,11 @@ private let validPins = [
     "ORgYmF...primary-production-pin...=",
     "9zXbM1...backup-disaster-recovery-pin...="
 ]
-```
+```  
+
+---  
+
+### Q. If we can extract public key with Step 1: Extract the Public Key Hash Using Terminal, then we can pin this in our melicious app and send request to server?
 
 
 
