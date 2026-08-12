@@ -29,17 +29,18 @@ Imagine you want to send a locked briefcase to a corporate office building.
 ## 1. Standard SSL/TLS (The ID Check)
 The courier reaches the building. A government-approved security desk checks the building's registration papers, sees it is valid, and lets the courier pass.
 
-* The Risk: If a rogue actor sets up a fake building across the street and manages to trick the government into issuing valid registration papers for it, the courier will deliver your briefcase to the fake building. This is a Man-in-the-Middle (MITM) attack. [14] 
+* The Risk: If a rogue actor sets up a fake building across the street and manages to trick the government into issuing valid registration papers for it, the courier will deliver your briefcase to the fake building. This is a Man-in-the-Middle (MITM) attack. 
 
 ## 2. With SSL Pinning (The Secret Password)
 The courier reaches the building. They check the government registration papers (SSL/TLS passed), but then they also look at a secret photo of the receptionist that you glued inside their folder. If the receptionist's face does not match the photo exactly, the courier grabs the briefcase and runs away.
 
-* The Benefit: Even if a hacker generates a perfectly legal, valid certificate for a fake server, your app will reject it because the certificate doesn't match the specific one "pinned" inside your app. [15, 16, 17] 
+* The Benefit: Even if a hacker generates a perfectly legal, valid certificate for a fake server, your app will reject it because the certificate doesn't match the specific one "pinned" inside your app. 
 
 ------------------------------
 ## Why SSL Pinning is Critical for Mobile Apps
-In modern mobile apps (iOS and Android), hackers and security researchers routinely intercept app traffic to steal API keys, reverse-engineer business logic, or manipulate data. They do this by installing a custom "Root Certificate" onto a device (using tools like Charles Proxy, Burp Suite, or Proxyman). [18, 19, 20, 21, 22] 
+In modern mobile apps (iOS and Android), hackers and security researchers routinely intercept app traffic to steal API keys, reverse-engineer business logic, or manipulate data. They do this by installing a custom "Root Certificate" onto a device (using tools like Charles Proxy, Burp Suite, or Proxyman). 
 
-* Without SSL Pinning: The device recognizes the proxy tool as a valid authority, and standard SSL/TLS succeeds. The hacker can see all your app's passwords and private data in clear text. [23, 24, 25] 
-* With SSL Pinning: The app looks at the proxy's certificate, realizes it doesn't match the pinned production certificate, and instantly kills the connection. [26, 27, 28] 
+* Without SSL Pinning: The device recognizes the proxy tool as a valid authority, and standard SSL/TLS succeeds. The hacker can see all your app's passwords and private data in clear text.   
+
+* With SSL Pinning: The app looks at the proxy's certificate, realizes it doesn't match the pinned production certificate, and instantly kills the connection.  
 
