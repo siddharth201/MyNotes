@@ -8530,11 +8530,7 @@ if allZeros && totalSum == 0 {
 </details>
 
 
-```swift
-secret.withUnsafeMutableBytes { buffer in
-    buffer.initializeMemory(as: UInt8.self, repeating: 0)
-}
-```
+#### (iii) Unsafe Pointer (initializeMemory / memset_s)
 
 This replaces every byte with `0`, reducing the chance of sensitive information remaining in memory.
 
