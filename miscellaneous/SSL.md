@@ -95,6 +95,97 @@ If it doesn't match, the app instantly severs the connection, completely defeati
 
 ---  
 
-## Q. How to inspect a server's Public Key hash so you know exactly what value needs to be pinned inside your app code?
+## Q. How to inspect a server's Public Key hash so you know exactly what value needs to be pinned inside your app code?  
+
+## Answer:
+
+To inspect a server's certificate and extract its Public Key hash (also called a SHA-256 pin), you can use the computer terminal.
+The standard industry approach is to pin the Subject Public Key Info (SPKI) hash rather than the full certificate. This allows you to renew your server's certificate without breaking your mobile app, as long as you reuse the same underlying private/public key pair.
+
+## Step 1: Extract the Public Key Hash Using Terminal
+Open your computer's Terminal (macOS/Linux) and run the following command. Replace ://github.com with your actual server domain.
+
+```text
+openssl s_client -connect ://github.com -servername ://github.com -showcerts | \
+openssl x509 -pubkey -noout | \
+openssl pkey -pubin -outform der | \
+openssl dgst -sha256 -binary | \
+openssl enc -base64
+```
+
+## What this command is doing:
+
+   1. openssl s_client: Connects to your server over port 443 and downloads the certificates.
+   2. openssl x509: Extracts just the public key from the certificate.
+   3. openssl pkey: Converts that key into a standard raw binary format (DER).
+   4. openssl dgst: Generates a secure SHA-256 cryptographic fingerprint of those bytes.
+   5. openssl enc: Converts that fingerprint into a clean Base64 string that you can paste into your code.
+
+## Expected Terminal Output:
+
+ORgYmF...your-unique-base64-hash-goes-here...=
+
+This output string is your exact Public Key Pin.
+
+## Step 2: Implement the Pin in Swift (Native URLSession)
+Once you have that Base64 string, you enforce it inside your app using the URLSessionDelegate method urlSession(_:didReceive:completionHandler:).
+Here is how you parse the server's public key in your code and match it against your pinned hash:
+
+```swift
+import Foundationimport CryptoKit
+class SecureSessionDelegate: NSObject, URLSessionDelegate {
+    
+    // 1. Paste your extracted Base64 string here
+    private let pinnedPublicKeyHash = "ORgYmF...your-unique-base64-hash-goes-here...="
+    
+    func urlSession(_ session: URLSession, 
+                    didReceive challenge: URLAuthenticationChallenge, 
+                    completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        
+        // 2. Ensure we are validating the server's identity (Server Trust)
+        guard challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust,
+              let serverTrust = challenge.protectionSpace.serverTrust else {
+            completionHandler(.performDefaultHandling, nil)
+            return
+        }
+        
+        // 3. Extract the public key from the server's certificate chain
+        // Note: SecTrustCopyKey is the native API used in iOS/macOS to read public keys
+        guard let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0),
+              let publicKey = SecCertificateCopyKey(certificate),
+              let publicKeyData = SecKeyCopyExternalRepresentation(publicKey, nil) as Data? else {
+            completionHandler(.cancelAuthenticationChallenge, nil)
+            return
+        }
+        
+        // 4. Hash the server's public key using SHA-256 (CryptoKit)
+        let hash = SHA256.hash(data: publicKeyData)
+        let serverHashBase64 = Data(hash).base64EncodedString()
+        
+        // 5. Compare the server's hash to your hardcoded pin
+        if serverHashBase64 == pinnedPublicKeyHash {
+            print("✅ SSL Pinning Passed! Public keys match.")
+            completionHandler(.useCredential, URLCredential(trust: serverTrust))
+        } else {
+            print("❌ SSL Pinning Failed! Potential Man-in-the-Middle attack.")
+            completionHandler(.cancelAuthenticationChallenge, nil)
+        }
+    }
+}
+```
+
+## ⚠️ The Golden Rule of SSL Pinning: Always Have a Backup Pin
+If your server's private key is compromised, or if your DevOps team loses access to it, they will have to generate a brand new key. If that happens, your old app users will be locked out because the pin won't match anymore.
+To prevent this, you should always extract a backup public key hash from a secondary key pair that is safely locked away in your company's vault. Put both keys in your app configuration:
+
+```text
+private let validPins = [
+    "ORgYmF...primary-production-pin...=",
+    "9zXbM1...backup-disaster-recovery-pin...="
+]
+```
+
+
+
 
 
