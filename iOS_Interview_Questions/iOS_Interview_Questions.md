@@ -8662,6 +8662,8 @@ This is exactly the kind of refinement I think will make your book stand out. In
 
 </details>  
 
+---  
+
 ### **Q3: What is SSL/TLS? Why is it important for mobile app security?**
 <details>
 <summary>Answer</summary>  
