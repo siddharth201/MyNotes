@@ -14,7 +14,9 @@ Acronym - PPE
 P – Protecting user data
 P – Preventing common security vulnerabilities
 E – Exploit-proofed (building applications that are difficult to exploit)
-```₹
+```
+
+The key principles: 
 
 
 </details>
