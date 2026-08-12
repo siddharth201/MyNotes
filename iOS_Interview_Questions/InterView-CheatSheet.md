@@ -49,6 +49,19 @@ Required fields
 <details>
 <summary>Acronym</summary>
 
+## Remember **"CLEAR"**
+
+Whenever you handle sensitive data, think **CLEAR**.
+
+| Letter | Meaning                                |
+| ------ | -------------------------------------- |
+| **C**  | Clear memory after use                 |
+| **L**  | Limit lifetime of sensitive data       |
+| **E**  | Erase mutable bytes (`Data`)           |
+| **A**  | Avoid globals and singletons           |
+| **R**  | Rely on Keychain for long-term storage |
+
+> 💡 **Quick Tip:** If sensitive data is no longer needed, **CLEAR it**.
 </details>
 
 </details>
