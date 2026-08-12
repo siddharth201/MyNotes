@@ -46,7 +46,7 @@ In modern mobile apps (iOS and Android), hackers and security researchers routin
 
 ---  
 
-## explain this part "any valid certificate issued by an official Certificate Authority (CA)."  
+## Q. Explain this part "any valid certificate issued by an official Certificate Authority (CA)."  
 
 ## Answer:  
 
