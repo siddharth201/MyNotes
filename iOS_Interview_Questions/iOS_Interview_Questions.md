@@ -8503,12 +8503,31 @@ let range = 0..<secret.count
 secret.resetBytes(in: range)  
 ```
 
+<details>
+<summary>Working Example</summary>  
 
+```swift
+import Foundation
 
+print("\n--- 2. Manual Solution (resetBytes) Verification ---")
 
+var secretData = Data("sensitivePassword".utf8)
 
+// Securely wipe the data
+let range = 0..<secretData.count
+secretData.resetBytes(in: range)
 
+// Programmatically verify all bytes are zero
+let totalSum = secretData.reduce(0) { $0 + Int($1) }
+let allZeros = secretData.allSatisfy { $0 == 0 }
 
+if allZeros && totalSum == 0 {
+    print("✅ VERIFIED: Mathematically proven that every single byte has been set to 00.")
+} else {
+    print("❌ FAILED: Non-zero values detected inside the buffer.")
+}
+```
+</details>
 
 
 ```swift
