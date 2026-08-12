@@ -8537,7 +8537,33 @@ This script uses standard functional matching (allSatisfy) over the memory buffe
 
 <summary>Working Example</summary>
 
+```swift
+import Foundation
 
+print("\n--- 3 & 4. Pointer & memset_s Verification ---")
+
+let originalData = Array("topSecret".utf8)
+let count = originalData.count
+
+let pointer = UnsafeMutableRawBufferPointer.allocate(byteCount: count, alignment: 1)
+pointer.copyBytes(from: originalData)
+
+// Run the low-level memset_s fix
+if let baseAddress = pointer.baseAddress {
+    _ = memset_s(baseAddress, pointer.count, 0, pointer.count)
+}
+
+// Programmatic check: Scan the pointer elements without printing hardcoded strings
+let pointerWipedClean = pointer.allSatisfy { $0 == 0 }
+
+if pointerWipedClean {
+    print("✅ VERIFIED: Unsafe allocation verified clean. Buffer contains 0x00.")
+} else {
+    print("❌ FAILED: Memory allocation layer still holds remnants of data.")
+}
+
+pointer.deallocate()
+```
 
 </details>
 
