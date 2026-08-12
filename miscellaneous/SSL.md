@@ -44,3 +44,9 @@ In modern mobile apps (iOS and Android), hackers and security researchers routin
 
 * With SSL Pinning: The app looks at the proxy's certificate, realizes it doesn't match the pinned production certificate, and instantly kills the connection.  
 
+---  
+
+## explain this part "any valid certificate issued by an official Certificate Authority (CA)."  
+
+## Answer:  
+
