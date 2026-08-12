@@ -8530,7 +8530,16 @@ if allZeros && totalSum == 0 {
 </details>
 
 
-#### (iii) Unsafe Pointer (initializeMemory / memset_s)
+#### (iii) Unsafe Pointer (initializeMemory / memset_s)  
+This script uses standard functional matching (allSatisfy) over the memory buffer elements to prove programmatic compliance.
+
+<details>
+
+<summary>Working Example</summary>
+
+
+
+</details>
 
 This replaces every byte with `0`, reducing the chance of sensitive information remaining in memory.
 
