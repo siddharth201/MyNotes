@@ -34,6 +34,13 @@ The key principles: Remember the word **"MAD SCIENTIST"**
 
 
 **I (Input Validation) :** $LI_fVAR$
+```text
+Input format
+Length
+Allowed characters
+Value ranges
+Required fields
+```
 
 </details>
 
