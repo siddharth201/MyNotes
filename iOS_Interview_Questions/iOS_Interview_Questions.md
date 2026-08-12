@@ -8429,7 +8429,7 @@ Since `Data` provides mutable byte access, you can overwrite its contents once y
 
 ## The Correct Way to Clear Memory in Swift
 To securely wipe sensitive data, you must use SecureData (from CryptoKit) or manually overwrite a contiguous memory buffer using UnsafeMutablePointer.
-## 1. The Best Modern Solution: SecureData (CryptoKit)
+#### (i) The Best Modern Solution: SecureData (CryptoKit)
 CryptoKit provides a SecureData type specifically designed for this. It automatically zeroes out its memory when it goes out of scope.
 
 ```text
@@ -8438,7 +8438,7 @@ import CryptoKit
 secret = SecureData("myPassword".utf8)  
 ```
 
-## 2. The Manual Solution: Overwriting Bytes
+#### (ii) The Manual Solution: Overwriting Bytes
 If you must use Data, you have to explicitly call resetBytes(in:) to fill the memory with zeros before the object leaves scope.
 
 ```text
