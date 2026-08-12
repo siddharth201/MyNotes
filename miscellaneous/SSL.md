@@ -1,11 +1,12 @@
 ## Q. Is SSL/TLS is different from SSL pinning?
 
 ## Answer:  
+    
 
 Yes, SSL/TLS and SSL Pinning are entirely different concepts, though they work together to secure network communication. [1, 2, 3] 
 Think of SSL/TLS as the highway security system, and SSL Pinning as a private security guard who checks the driver's exact face before letting them through. [4] 
 Here is the precise breakdown of how they differ, why they are used, and how they protect your apps.
-------------------------------
+
 ## The Short Answer
 
 * SSL/TLS establishes an encrypted connection between a client (app) and a server. It ensures that data cannot be intercepted or read by hackers on the same network. However, it blindly trusts any valid certificate issued by an official Certificate Authority (CA). [5, 6, 7, 8] 
