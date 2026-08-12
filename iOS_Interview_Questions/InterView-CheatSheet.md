@@ -30,7 +30,12 @@ The key principles: Remember the word **"MAD SCIENTIST"**
 | **N**  | Never Hardcode Secrets                 |
 | **T**  | Target a Small Attack Surface          |
 | **I**  | Implement Apple's Latest Security APIs |
-| **A**  | Authorization                          |
+| **A**  | Authorization                          |  
+
+
+**I (Input Validation) :** LIVAR
+
+
 
 
 </details>
