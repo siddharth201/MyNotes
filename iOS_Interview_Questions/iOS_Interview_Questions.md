@@ -8444,7 +8444,8 @@ If you must use Data, you have to explicitly call resetBytes(in:) to fill the me
 ```text
 var secret = Data("myPassword".utf8)  
 // Use the secret here...  
-// Securely wipe the data by filling it with zeroslet range = 0..<secret.count  
+// Securely wipe the data by filling it with zeros  
+let range = 0..<secret.count  
 secret.resetBytes(in: range)  
 ```
 
