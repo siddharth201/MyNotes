@@ -8420,12 +8420,19 @@ If you need explicit control over memory, convert the sensitive value to `Data`.
 
 Example:
 
-```swift
-var secret = Data("myPassword".utf8)
+```text
+var secret = Data("myPassword".utf8)  
+// Use the secret here...  
+// Securely wipe the data by filling it with zeros  
+let range = 0..<secret.count  
+secret.resetBytes(in: range)  
 ```
 
 Since `Data` provides mutable byte access, you can overwrite its contents once you're done using it.
 
+## 3. Overwrite Memory Using `withUnsafeMutableBytes`
+
+When handling cryptographic material or highly sensitive information, you can manually overwrite the bytes before releasing them.
 
 ### The Correct Way to Clear Memory in Swift
 To securely wipe sensitive data, you must use SecureData (from CryptoKit) or manually overwrite a contiguous memory buffer using UnsafeMutablePointer.
@@ -8438,6 +8445,10 @@ import CryptoKit
 secret = SecureData("myPassword".utf8)  
 ```
 
+<details>
+<summary>Example</summary>
+</details>
+
 #### (ii) The Manual Solution: Overwriting Bytes
 If you must use Data, you have to explicitly call resetBytes(in:) to fill the memory with zeros before the object leaves scope.
 
@@ -8449,9 +8460,13 @@ let range = 0..<secret.count
 secret.resetBytes(in: range)  
 ```
 
-## 3. Overwrite Memory Using `withUnsafeMutableBytes`
 
-When handling cryptographic material or highly sensitive information, you can manually overwrite the bytes before releasing them.
+
+
+
+
+
+
 
 ```swift
 secret.withUnsafeMutableBytes { buffer in
