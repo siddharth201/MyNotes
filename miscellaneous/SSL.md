@@ -10,7 +10,7 @@ Here is the precise breakdown of how they differ, why they are used, and how the
 ## The Short Answer
 
 * SSL/TLS establishes an encrypted connection between a client (app) and a server. It ensures that data cannot be intercepted or read by hackers on the same network. However, it blindly trusts any valid certificate issued by an official Certificate Authority (CA). [5, 6, 7, 8] 
-* SSL Pinning is an extra security layer added on top of SSL/TLS. Instead of trusting any official CA, the app hardcodes (pins) the exact certificate or public key of your specific server. The app will reject the connection if the server shows any other certificate, even if it is completely official. [9, 10, 11, 12, 13] 
+* SSL Pinning is an extra security layer added on top of SSL/TLS. Instead of trusting any official CA, the app hardcodes (pins) the exact certificate or public key of your specific server. The app will reject the connection if the server shows any other certificate, even if it is completely official. 
 
 ------------------------------
 ## Core Comparison Table
