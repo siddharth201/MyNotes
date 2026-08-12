@@ -8432,16 +8432,21 @@ To securely wipe sensitive data, you must use SecureData (from CryptoKit) or man
 ## 1. The Best Modern Solution: SecureData (CryptoKit)
 CryptoKit provides a SecureData type specifically designed for this. It automatically zeroes out its memory when it goes out of scope.
 
+```text
 import CryptoKit
-// The memory is automatically zeroed out when 'secret' is deallocatedlet secret = SecureData("myPassword".utf8)
+// The memory is automatically zeroed out when 'secret' is deallocatedlet   
+secret = SecureData("myPassword".utf8)  
+```
 
 ## 2. The Manual Solution: Overwriting Bytes
 If you must use Data, you have to explicitly call resetBytes(in:) to fill the memory with zeros before the object leaves scope.
 
-var secret = Data("myPassword".utf8)
-// Use the secret here...
-// Securely wipe the data by filling it with zeroslet range = 0..<secret.count
-secret.resetBytes(in: range)
+```text
+var secret = Data("myPassword".utf8)  
+// Use the secret here...  
+// Securely wipe the data by filling it with zeroslet range = 0..<secret.count  
+secret.resetBytes(in: range)  
+```
 
 ## 3. Overwrite Memory Using `withUnsafeMutableBytes`
 
