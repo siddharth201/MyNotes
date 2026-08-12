@@ -95,6 +95,6 @@ If it doesn't match, the app instantly severs the connection, completely defeati
 
 ---  
 
-## Q.
+## Q. How to inspect a server's Public Key hash so you know exactly what value needs to be pinned inside your app code?
 
 
