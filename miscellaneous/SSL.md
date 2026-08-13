@@ -185,11 +185,14 @@ private let validPins = [
 ]
 ```
 
+### Code Explaination
 This Swift code implements SSL Pinning (specifically, Public Key Pinning) in an iOS or macOS application. It ensures the app only communicates with a specific server by verifying that the server's public key matches a hardcoded cryptographic hash, preventing Man-in-the-Middle (MitM) attacks. [1, 2, 3, 4] 
 Here is the step-by-step breakdown of how it works:
 ## 1. Hardcoded Reference Hash
 
-private let pinnedPublicKeyHash = "ORgYmF...your-unique-base64-hash-goes-here...="
+```swift
+private let pinnedPublicKeyHash = "ORgYmF...your-unique-base64-hash-goes-here...=".
+```
 
 
 * What it does: This variable stores a pre-calculated, trusted SHA-256 hash of your server's public key, encoded in Base64 string format.
@@ -197,11 +200,13 @@ private let pinnedPublicKeyHash = "ORgYmF...your-unique-base64-hash-goes-here...
 
 ## 2. Challenge Interception
 
+```swift
 guard challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust, 
       let serverTrust = challenge.protectionSpace.serverTrust else {
     completionHandler(.performDefaultHandling, nil)
     return
 }
+```
 
 
 * What it does: When the app makes a network request, the server presents its SSL certificate. The urlSession(_:didReceive:completionHandler:) delegate method intercepts this handshake.  
@@ -209,12 +214,14 @@ guard challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMetho
 
 ## 3. Public Key Extraction
 
+```swift
 guard let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0),
       let publicKey = SecCertificateCopyKey(certificate),
       let publicKeyData = SecKeyCopyExternalRepresentation(publicKey, nil) as Data? else {
     completionHandler(.cancelAuthenticationChallenge, nil)
     return
 }
+```
 
 
 * What it does: It digs into the server's certificate chain using Apple's Security framework.
@@ -225,14 +232,16 @@ guard let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0),
 
 ## 4. Cryptographic Hashing
 
+```swift
 let hash = SHA256.hash(data: publicKeyData)let serverHashBase64 = Data(hash).base64EncodedString()
-
+```
 
 * What it does: It takes the raw server public key data and hashes it using the SHA-256 algorithm via Apple's CryptoKit framework.
 * The Conversion: Because raw hashes are hard to read, it converts the resulting hash bytes into a readable Base64 string. 
 
 ## 5. Verification and Decision
 
+```swift
 if serverHashBase64 == pinnedPublicKeyHash {
     print("✅ SSL Pinning Passed! Public keys match.")
     completionHandler(.useCredential, URLCredential(trust: serverTrust))
@@ -240,6 +249,7 @@ if serverHashBase64 == pinnedPublicKeyHash {
     print("❌ SSL Pinning Failed! Potential Man-in-the-Middle attack.")
     completionHandler(.cancelAuthenticationChallenge, nil)
 }
+```
 
 
 * The Comparison: The code compares the newly generated serverHashBase64 against the hardcoded pinnedPublicKeyHash from Step 1.
