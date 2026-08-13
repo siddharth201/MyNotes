@@ -86,6 +86,27 @@ Whenever you hear **SSL/TLS**, think about the four things it provides.
 
 > 💡 **Quick Tip:** HTTPS is simply **HTTP running over TLS**.
 
-</details>
+</details>  
+
+---
+
+<details>
+<summary>Acronym</summary>   
+
+## Remember **PIN**
+
+When you hear **Certificate Pinning**, think **PIN**.
+
+| Letter | Meaning                        |
+| ------ | ------------------------------ |
+| **P**  | Pin one trusted certificate    |
+| **I**  | Ignore every other certificate |
+| **N**  | No Match → No Connection       |
+
+> 💡 **Quick Tip:** TLS asks, **"Is this certificate trusted?"**
+> Certificate Pinning asks, **"Is this *my* certificate?"**
+
+That's the easiest way to remember the difference.  
+</details> 
 
 </details>
