@@ -9903,7 +9903,7 @@ I think this answer shows exactly the direction we should take for the book. We 
 
 ### **Q5: What's the difference between certificate pinning and public key pinning?**    
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 Both are techniques to **strengthen SSL/TLS connections**, but they differ in **what exactly is pinned**.
 
@@ -9937,6 +9937,337 @@ Both are techniques to **strengthen SSL/TLS connections**, but they differ in **
 **Use Case:**
 * When you want **long-term stability** while still enforcing security.
 * Common in production apps that need to avoid breaking due to certificate rotation.
+
+</details>
+
+<details>
+<summary>Answer2</summary>  
+
+This is a perfect follow-up after Q4. Instead of repeating the previous answer, let's focus on **comparison**, **trade-offs**, and **when to choose one over the other**. That's exactly what interviewers are looking for.
+
+---
+
+# Q5. What's the difference between Certificate Pinning and Public Key Pinning?
+
+---
+
+## ⭐ Difficulty
+
+🟡 Intermediate
+
+---
+
+# 🎤 Interview Answer (30–60 Seconds)
+
+Both Certificate Pinning and Public Key Pinning add an extra layer of security on top of HTTPS/TLS by restricting which server the app trusts.
+
+The main difference is what gets pinned.
+
+* **Certificate Pinning** stores the entire server certificate inside the app. The connection succeeds only if the server presents that exact certificate.
+* **Public Key Pinning** stores only the server's public key. As long as the server renews its certificate using the same public key, the app continues to trust it.
+
+Certificate Pinning is simpler to implement but requires app updates whenever the certificate changes. Public Key Pinning is more flexible and is generally the preferred approach for production applications.
+
+---
+
+# 🧠 Memory Trick
+
+## Remember **"Whole vs Key"**
+
+Think of it like locking a house.
+
+🏠 **Certificate Pinning**
+
+> You trust the **entire house**.
+
+🔑 **Public Key Pinning**
+
+> You trust only the **key** that opens the house.
+
+The house (certificate) may be renovated or repainted, but if the same key works, you still trust it.
+
+---
+
+# 🔑 Keywords to Mention in an Interview
+
+* TLS
+* Digital Certificate
+* Public Key
+* Certificate Renewal
+* Certificate Rotation
+* URLSessionDelegate
+* SSL Pinning
+
+---
+
+# 📖 Detailed Explanation
+
+Both techniques strengthen TLS by adding another verification step during the TLS handshake.
+
+Normally, iOS trusts any certificate issued by a trusted Certificate Authority (CA).
+
+With pinning, your app becomes more selective.
+
+Instead of trusting every valid certificate, it trusts only the certificate or public key that you've chosen.
+
+The difference lies in **what is pinned**.
+
+---
+
+# 1. Certificate Pinning
+
+Certificate Pinning stores the **entire server certificate** inside the application.
+
+Whenever the app connects to the server, it compares the server's certificate with the pinned one.
+
+```
+Server Certificate
+        │
+        ▼
+Compare Entire Certificate
+        │
+   Match?
+   │     │
+ Yes     No
+ │        │
+Allow   Reject
+```
+
+If every detail matches, the connection succeeds.
+
+Otherwise, the connection is rejected.
+
+---
+
+## Advantages
+
+✅ Easy to understand.
+
+✅ Straightforward to implement.
+
+✅ Provides very strict validation.
+
+---
+
+## Limitations
+
+Certificates have an expiry date.
+
+When the certificate is renewed, even if it's issued for the same server, the certificate itself changes.
+
+That means the application must also be updated with the new certificate.
+
+If users don't update the app in time, secure connections may stop working.
+
+---
+
+## Best Use Cases
+
+Certificate Pinning works well when:
+
+* You control both the server and the mobile app.
+* Certificate changes are infrequent.
+* App updates can be released alongside certificate updates.
+
+---
+
+# 2. Public Key Pinning
+
+Instead of storing the whole certificate, the application stores only the server's **public key**.
+
+```
+Certificate
+ ├── Public Key ✅
+ ├── Expiry Date
+ ├── Issuer
+ └── Other Metadata
+```
+
+During the TLS handshake, only the public key is compared.
+
+If the server renews its certificate but continues using the same public key, the connection still succeeds.
+
+---
+
+## Advantages
+
+✅ More flexible.
+
+✅ Certificate renewal doesn't require an app update (as long as the public key stays the same).
+
+✅ Better suited for long-term maintenance.
+
+---
+
+## Limitations
+
+Slightly more complex to implement.
+
+If the public key itself changes, the application must still be updated.
+
+---
+
+## Best Use Cases
+
+Public Key Pinning is ideal when:
+
+* Certificates are renewed regularly.
+* Long-term stability is important.
+* You want to minimise app updates caused by certificate rotation.
+
+---
+
+# Side-by-Side Comparison
+
+| Feature                | Certificate Pinning   | Public Key Pinning               |
+| ---------------------- | --------------------- | -------------------------------- |
+| What is pinned?        | Entire certificate    | Public key only                  |
+| Certificate renewal    | ❌ Requires app update | ✅ Usually continues to work      |
+| Flexibility            | Lower                 | Higher                           |
+| Maintenance            | Higher                | Lower                            |
+| Implementation         | Simpler               | Slightly more complex            |
+| Production suitability | Good                  | Better for long-term deployments |
+
+---
+
+# Which One Should You Choose?
+
+There isn't a universal answer.
+
+### Choose Certificate Pinning if:
+
+* You want the strictest validation.
+* Certificate changes are rare.
+* You're comfortable releasing app updates when certificates change.
+
+---
+
+### Choose Public Key Pinning if:
+
+* Your certificates are renewed regularly.
+* You want fewer maintenance issues.
+* Long-term stability is more important.
+
+This is why **Public Key Pinning** is often the preferred choice for production applications.
+
+---
+
+# Real-World Example
+
+Imagine your server certificate expires every year.
+
+### With Certificate Pinning
+
+```
+Certificate V1
+↓
+
+Pinned
+
+↓
+
+Certificate Renewed
+
+↓
+
+Mismatch
+
+↓
+
+❌ App Stops Working
+```
+
+---
+
+### With Public Key Pinning
+
+```
+Certificate V1
+↓
+
+Public Key A
+
+↓
+
+Certificate Renewed
+
+↓
+
+Still Uses Public Key A
+
+↓
+
+✅ App Continues Working
+```
+
+The certificate changes, but the trusted public key remains the same.
+
+---
+
+# ⚠️ Common Mistakes
+
+❌ Thinking Public Key Pinning and Certificate Pinning are completely different security mechanisms.
+
+> Public Key Pinning is simply a different way of implementing certificate pinning.
+
+---
+
+❌ Assuming Public Key Pinning never requires updates.
+
+> If the server's public key changes, the application must also be updated.
+
+---
+
+❌ Believing Certificate Pinning replaces TLS.
+
+> Both techniques work **on top of TLS**. They don't replace it.
+
+---
+
+# 🔄 Common Follow-up Questions
+
+Interviewers often ask:
+
+* Why is Public Key Pinning preferred in production?
+* What happens when a pinned certificate expires?
+* How do you implement Public Key Pinning using `URLSessionDelegate`?
+* Can Certificate Pinning prevent all MITM attacks?
+* What is certificate rotation?
+* How do you safely rotate pinned keys?
+
+---
+
+# 🚀 Senior Engineer Insight
+
+One of the biggest operational challenges with pinning is **certificate rotation**. If a pinned certificate expires unexpectedly and the app isn't updated in time, every secure request can fail.
+
+To avoid this, many production systems use **Public Key Pinning** because the certificate can be renewed without changing the trusted public key. Some organizations also maintain **backup pins** to support smooth key rotation without breaking existing app versions.
+
+---
+
+## 📌 Quick Revision
+
+### Remember **Whole vs Key**
+
+🏠 **Certificate Pinning** → Trust the **whole certificate**.
+
+🔑 **Public Key Pinning** → Trust only the **public key**.
+
+| Certificate Pinning                        | Public Key Pinning                                 |
+| ------------------------------------------ | -------------------------------------------------- |
+| Entire certificate                         | Public key only                                    |
+| Less flexible                              | More flexible                                      |
+| Certificate renewal may require app update | Certificate renewal usually doesn't affect the app |
+| Easier to implement                        | Better for long-term production systems            |
+
+> **One-line takeaway:**
+> **Certificate Pinning locks the entire certificate. Public Key Pinning locks only the public key, making certificate renewal much easier without sacrificing security.**
+
+---
+
+### 💡 Author's Note
+
+This is another example where a comparison table is more effective than long paragraphs. For interview questions that ask for differences, readers should be able to grasp the answer in seconds. We'll use this style consistently throughout the book—brief interview answer first, followed by a clear comparison, practical examples, and finally the deeper explanation for those who want to understand the reasoning behind it.
 
 </details>
 
