@@ -8,7 +8,7 @@ Here is a direct comparison overview:
 | Maintenance | High (Requires frequent app updates or remote config updates). | Low (Keys can outlive certificates for years). |
 | Security Level | Maximum (Strict identity match). | High (Flexible, but protects against rogue Certificate Authorities). |
 
-------------------------------
+
 ## Code Examples
 Both methods use the exact same URLSessionDelegate lifecycle. The difference is entirely inside Step 3 and 4 where you extract and compare the data. [4] 
 ## Option A: Certificate Pinning
@@ -91,12 +91,12 @@ class PublicKeyPinningDelegate: NSObject, URLSessionDelegate {
     }
 }
 
-------------------------------
 ## Which one should you use?
 Most production modern mobile apps prefer Public Key Pinning because: [12] 
 
    1. No App Store Emergency Updates: Standard SSL certificates expire every 90 days to 1 year. If you use Certificate Pinning, you must push an app update every year before the old certificate expires. If users don't update, their app breaks. [13, 14, 15, 16] 
    2. Key Reuse: When your ops team renews your website's SSL certificate, they can choose to keep the same private/public key pair (re-signing it with a new validity date). With Public Key Pinning, your app continues working smoothly without any changes. [17, 18, 19, 20] 
 
+---  
 
-
+## Q. How to implement a backup pin setup so your app doesn't break if your server's primary key ever needs to be revoked in an emergency?
