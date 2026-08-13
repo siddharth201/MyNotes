@@ -10265,7 +10265,9 @@ To avoid this, many production systems use **Public Key Pinning** because the ce
 
 ### 💡 Author's Note
 
-This is another example where a comparison table is more effective than long paragraphs. For interview questions that ask for differences, readers should be able to grasp the answer in seconds. We'll use this style consistently throughout the book—brief interview answer first, followed by a clear comparison, practical examples, and finally the deeper explanation for those who want to understand the reasoning behind it.
+This is another example where a comparison table is more effective than long paragraphs. For interview questions that ask for differences, readers should be able to grasp the answer in seconds. We'll use this style consistently throughout the book—brief interview answer first, followed by a clear comparison, practical examples, and finally the deeper explanation for those who want to understand the reasoning behind it.  
+
+[**Detail Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/SSLkeys_vs_SSLCert.md)
 
 </details>
 
