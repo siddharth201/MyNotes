@@ -9542,7 +9542,7 @@ This is a good example of how we'll improve on the original material. Instead of
 
 ### **Q4: What is certificate pinning? What security threats does it prevent?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 * **Certificate pinning** is a security technique where your app "**pins**" or trusts **only a specific server certificate or public key**.
 * Even if a device trusts other certificates from the system store, your app will **reject connections** unless the server's certificate matches the pinned one.
@@ -9564,6 +9564,12 @@ This is a good example of how we'll improve on the original material. Instead of
     * Prevents attackers from issuing certificates from compromised or untrusted CAs.
 3.  **Network Spoofing**
     * Protects against attackers trying to intercept or redirect traffic on untrusted networks (Wi-Fi, etc.).
+</details>
+
+<details>
+<summary>Answer2</summary>  
+
+
 </details>
 
 ### **Q5: What's the difference between certificate pinning and public key pinning?**    
