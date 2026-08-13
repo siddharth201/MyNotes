@@ -9945,11 +9945,9 @@ Both are techniques to **strengthen SSL/TLS connections**, but they differ in **
 
 This is a perfect follow-up after Q4. Instead of repeating the previous answer, let's focus on **comparison**, **trade-offs**, and **when to choose one over the other**. That's exactly what interviewers are looking for.
 
----
 
 # Q5. What's the difference between Certificate Pinning and Public Key Pinning?
 
----
 
 ## ⭐ Difficulty
 
