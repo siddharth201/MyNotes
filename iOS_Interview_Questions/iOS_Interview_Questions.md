@@ -8666,7 +8666,7 @@ This is exactly the kind of refinement I think will make your book stand out. In
 
 ### **Q3: What is SSL/TLS? Why is it important for mobile app security?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 * **SSL (Secure Sockets Layer)** and **TLS (Transport Layer Security)** are protocols that secure communication over the internet.
 * TLS is the modern version; SSL is mostly outdated.
