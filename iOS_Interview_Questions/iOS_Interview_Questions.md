@@ -9219,7 +9219,12 @@ Stack → Handles TLS automatically
 * You don’t write TLS code manually
 * You can override via delegate (e.g., pinning)
 
-</details>  
+</details>
+
+<details>
+<summary>Answer2</summary>
+
+</details>
 
 ### **Q4: What is certificate pinning? What security threats does it prevent?**
 <details>
