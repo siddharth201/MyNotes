@@ -183,7 +183,84 @@ private let validPins = [
     "ORgYmF...primary-production-pin...=",
     "9zXbM1...backup-disaster-recovery-pin...="
 ]
-```  
+```
+
+### Code Explaination
+This Swift code implements SSL Pinning (specifically, Public Key Pinning) in an iOS or macOS application. It ensures the app only communicates with a specific server by verifying that the server's public key matches a hardcoded cryptographic hash, preventing Man-in-the-Middle (MitM) attacks. [1, 2, 3, 4] 
+Here is the step-by-step breakdown of how it works:
+## 1. Hardcoded Reference Hash
+
+```swift
+private let pinnedPublicKeyHash = "ORgYmF...your-unique-base64-hash-goes-here...=".
+```
+
+
+* What it does: This variable stores a pre-calculated, trusted SHA-256 hash of your server's public key, encoded in Base64 string format.
+* Why it matters: This acts as the "source of truth." The app will compare any server it connects to against this specific string. 
+
+## 2. Challenge Interception
+
+```swift
+guard challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust, 
+      let serverTrust = challenge.protectionSpace.serverTrust else {
+    completionHandler(.performDefaultHandling, nil)
+    return
+}
+```
+
+
+* What it does: When the app makes a network request, the server presents its SSL certificate. The urlSession(_:didReceive:completionHandler:) delegate method intercepts this handshake.  
+* The Guard check: It ensures that the current challenge is specifically for Server Trust (checking if the server is who it says it is). If it is a different type of challenge (like username/password login), it passes it down to standard iOS handling (.performDefaultHandling). 
+
+## 3. Public Key Extraction
+
+```swift
+guard let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0),
+      let publicKey = SecCertificateCopyKey(certificate),
+      let publicKeyData = SecKeyCopyExternalRepresentation(publicKey, nil) as Data? else {
+    completionHandler(.cancelAuthenticationChallenge, nil)
+    return
+}
+```
+
+
+* What it does: It digs into the server's certificate chain using Apple's Security framework.
+* SecTrustGetCertificateAtIndex(serverTrust, 0) gets the leaf certificate (the server's actual certificate).
+   * SecCertificateCopyKey(certificate) extracts the public key from that certificate.
+   * SecKeyCopyExternalRepresentation(...) converts that abstract public key into raw bits (Data). 
+* Failure handle: If any of these extractions fail, the connection is instantly aborted (.cancelAuthenticationChallenge).
+
+## 4. Cryptographic Hashing
+
+```swift
+let hash = SHA256.hash(data: publicKeyData)let serverHashBase64 = Data(hash).base64EncodedString()
+```
+
+* What it does: It takes the raw server public key data and hashes it using the SHA-256 algorithm via Apple's CryptoKit framework.
+* The Conversion: Because raw hashes are hard to read, it converts the resulting hash bytes into a readable Base64 string. 
+
+## 5. Verification and Decision
+
+```swift
+if serverHashBase64 == pinnedPublicKeyHash {
+    print("✅ SSL Pinning Passed! Public keys match.")
+    completionHandler(.useCredential, URLCredential(trust: serverTrust))
+} else {
+    print("❌ SSL Pinning Failed! Potential Man-in-the-Middle attack.")
+    completionHandler(.cancelAuthenticationChallenge, nil)
+}
+```
+
+
+* The Comparison: The code compares the newly generated serverHashBase64 against the hardcoded pinnedPublicKeyHash from Step 1.
+* Success (==): If they match, the connection is safe. The app trusts the server and proceeds with the network request (.useCredential).
+* Failure (!=): If they do not match, it means someone might be intercepting the traffic (a MitM attack) or the server certificate changed. The app completely blocks the connection (.cancelAuthenticationChallenge) to protect user data. 
+
+To help you implement or optimize this, let me know:
+
+* Do you need help generating the Base64 hash from your current server certificate?
+* Are you looking to add a backup pin to prevent the app from breaking when your server certificate expires?
+* Do you want to see how to attach this delegate to a URLSession instance?
 
 ---  
 
