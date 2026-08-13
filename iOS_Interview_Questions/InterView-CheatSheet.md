@@ -42,7 +42,9 @@ Value ranges
 Required fields
 ```
 
-</details>
+</details>  
+
+---
 
 ## **Q2: How do you securely clear sensitive data from memory in Swift?**
 
@@ -62,6 +64,10 @@ Whenever you handle sensitive data, think **CLEAR**.
 | **R**  | Rely on Keychain for long-term storage |
 
 > 💡 **Quick Tip:** If sensitive data is no longer needed, **CLEAR it**.
-</details>
+</details>  
+
+---
+
+## **Q3. What is SSL/TLS? Why is it important for mobile app security?**
 
 </details>
