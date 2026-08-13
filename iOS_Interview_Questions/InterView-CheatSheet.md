@@ -71,7 +71,8 @@ Whenever you handle sensitive data, think **CLEAR**.
 ## **Q3. What is SSL/TLS? Why is it important for mobile app security?**
 
 <details>
-<summary>Acronym</summary>
+<summary>Acronym</summary>  
+
 ## Remember **CIA + H**
 
 Whenever you hear **SSL/TLS**, think about the four things it provides.
