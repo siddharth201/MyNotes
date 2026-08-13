@@ -9895,7 +9895,9 @@ For most apps, **TLS + ATS** is sufficient. Certificate Pinning is typically res
 
 ### 💡 Author's Note
 
-I think this answer shows exactly the direction we should take for the book. We didn't just answer *what* Certificate Pinning is—we explained **why it exists**, **how it works**, **when to use it**, and **its trade-offs**. That's the level of understanding interviewers expect from senior iOS developers, and it gives readers a much stronger foundation than memorizing a definition alone.
+I think this answer shows exactly the direction we should take for the book. We didn't just answer *what* Certificate Pinning is—we explained **why it exists**, **how it works**, **when to use it**, and **its trade-offs**. That's the level of understanding interviewers expect from senior iOS developers, and it gives readers a much stronger foundation than memorizing a definition alone.  
+
+[**Detail Explaination**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/SSL.md)
 
 </details>
 
