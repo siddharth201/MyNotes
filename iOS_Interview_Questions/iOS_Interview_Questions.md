@@ -10651,6 +10651,407 @@ func urlSession(_ session: URLSession,
 <details>
 <summary>Answer2</summary>  
 
+I love this question because it's asked in almost every senior iOS interview when networking or security is discussed.
+
+However, I'd improve the original material in one major way.
+
+> **The interview isn't really asking you to remember the method signature.**
+>
+> It's testing whether you understand **when this delegate method is called**, **what happens inside it**, and **how it's used for SSL Pinning**.
+
+Let's make it practical.
+
+---
+
+# Q7. What is the `URLSessionDelegate` method for handling authentication challenges?
+
+---
+
+## ⭐ Difficulty
+
+🟡 Intermediate
+
+---
+
+# 🎤 Interview Answer (30–60 Seconds)
+
+`urlSession(_:didReceive:completionHandler:)` is a delegate method of `URLSessionDelegate` that is called whenever a network request requires authentication.
+
+It is commonly used to handle server trust validation, SSL/TLS certificate verification, certificate pinning, client certificates, and HTTP authentication.
+
+Inside this method, the app examines the authentication challenge and decides whether to trust the server, provide credentials, continue with the default system behaviour, or cancel the request.
+
+---
+
+# 🧠 Memory Trick
+
+## Remember **"CHECK"**
+
+When this delegate method is called, your app performs a security **CHECK**.
+
+| Letter | Meaning                       |
+| ------ | ----------------------------- |
+| **C**  | Check the challenge           |
+| **H**  | Handle authentication         |
+| **E**  | Evaluate the certificate      |
+| **C**  | Choose an action              |
+| **K**  | Keep or Reject the connection |
+
+---
+
+# 🔑 Keywords to Mention in an Interview
+
+* URLSessionDelegate
+* Authentication Challenge
+* URLAuthenticationChallenge
+* Server Trust
+* Certificate Pinning
+* SSL/TLS
+* URLCredential
+* completionHandler
+
+---
+
+# 📖 Method Signature
+
+```swift
+func urlSession(
+    _ session: URLSession,
+    didReceive challenge: URLAuthenticationChallenge,
+    completionHandler: @escaping (
+        URLSession.AuthChallengeDisposition,
+        URLCredential?
+    ) -> Void
+)
+```
+
+---
+
+# What Is an Authentication Challenge?
+
+Whenever your app connects to a server, iOS may pause the request and ask:
+
+> **"Should I trust this server?"**
+
+or
+
+> **"Do you want to provide credentials?"**
+
+This request from the system is called an **Authentication Challenge**.
+
+The delegate method gives your app a chance to decide what should happen next.
+
+---
+
+# Where Is It Used?
+
+This method can handle different types of authentication.
+
+* SSL/TLS Certificate Validation
+* Certificate Pinning
+* Public Key Pinning
+* Client Certificate Authentication
+* HTTP Basic Authentication
+* HTTP Digest Authentication
+
+---
+
+# How It Works
+
+```mermaid
+flowchart TD
+
+A[Network Request]
+--> B[TLS Handshake Begins]
+
+B
+--> C[Authentication Challenge]
+
+C
+--> D[URLSessionDelegate]
+
+D
+--> E{Validate Challenge}
+
+E
+-->|Trusted| F[Continue Request]
+
+E
+-->|Not Trusted| G[Reject Request]
+```
+
+---
+
+# Understanding the Parameters
+
+## 1. session
+
+The current `URLSession` handling the request.
+
+Usually, you don't need to do much with it.
+
+---
+
+## 2. challenge
+
+Contains everything about the authentication request.
+
+For example:
+
+* Server Trust
+* Authentication Method
+* Certificate
+* Protection Space
+
+This is the most important parameter.
+
+---
+
+## 3. completionHandler
+
+This is how you tell iOS what to do next.
+
+You must call it exactly once.
+
+---
+
+# AuthChallengeDisposition Options
+
+There are four commonly used responses.
+
+---
+
+## 1. `.useCredential`
+
+Accept the server or provide credentials.
+
+Example:
+
+```swift
+completionHandler(.useCredential, credential)
+```
+
+Used for:
+
+* SSL Pinning
+* Client Certificates
+* HTTP Authentication
+
+---
+
+## 2. `.performDefaultHandling`
+
+Tell iOS:
+
+> "I don't need custom handling. Continue as normal."
+
+```swift
+completionHandler(.performDefaultHandling, nil)
+```
+
+This is what most apps use.
+
+---
+
+## 3. `.cancelAuthenticationChallenge`
+
+Stop the request completely.
+
+```swift
+completionHandler(.cancelAuthenticationChallenge, nil)
+```
+
+Used when:
+
+* Certificate validation fails
+* Authentication fails
+
+---
+
+## 4. `.rejectProtectionSpace`
+
+Reject this protection space and continue searching for another authentication method.
+
+This option is less commonly used.
+
+---
+
+# SSL Pinning Flow
+
+This delegate method is where SSL Pinning is usually implemented.
+
+```mermaid
+flowchart TD
+
+A[Receive Server Certificate]
+
+--> B[Extract Certificate]
+
+B
+--> C[Compare With Pinned Certificate]
+
+C
+-->|Match| D[Use Credential]
+
+C
+-->|Mismatch| E[Cancel Request]
+```
+
+---
+
+# Real-World Example
+
+Imagine you're building a banking app.
+
+```mermaid
+flowchart LR
+
+A[Banking App]
+
+--> B[Server Presents Certificate]
+
+B
+--> C[Delegate Receives Challenge]
+
+C
+--> D{Matches Pinned Certificate?}
+
+D
+-->|Yes| E[Continue]
+
+D
+-->|No| F[Reject Connection]
+```
+
+Without this delegate method, your application couldn't perform Certificate Pinning.
+
+---
+
+# Sample Swift Code
+
+```swift
+class NetworkManager: NSObject, URLSessionDelegate {
+
+    func urlSession(
+        _ session: URLSession,
+        didReceive challenge: URLAuthenticationChallenge,
+        completionHandler: @escaping (
+            URLSession.AuthChallengeDisposition,
+            URLCredential?
+        ) -> Void
+    ) {
+
+        guard let trust = challenge.protectionSpace.serverTrust else {
+            completionHandler(.cancelAuthenticationChallenge, nil)
+            return
+        }
+
+        let credential = URLCredential(trust: trust)
+        completionHandler(.useCredential, credential)
+    }
+}
+```
+
+> **Note:** This example simply accepts the server trust. For **Certificate Pinning**, you would first compare the server's certificate or public key with the pinned one before calling `.useCredential`.
+
+---
+
+# ⚠️ Common Mistakes
+
+❌ Forgetting to call the `completionHandler`.
+
+> The request will remain pending.
+
+---
+
+❌ Calling the `completionHandler` more than once.
+
+> This can cause unexpected behaviour or crashes.
+
+---
+
+❌ Automatically trusting every certificate.
+
+> Doing this bypasses the purpose of SSL/TLS validation and creates a serious security vulnerability.
+
+---
+
+# 🔄 Common Follow-up Questions
+
+Interviewers often ask:
+
+* What is `URLAuthenticationChallenge`?
+* What is `serverTrust`?
+* Where do you implement Certificate Pinning?
+* What is `URLCredential`?
+* Difference between `.useCredential` and `.performDefaultHandling`?
+* Why must `completionHandler` always be called?
+
+---
+
+# 🚀 Senior Engineer Insight
+
+This delegate method acts as a **security checkpoint** during the TLS handshake.
+
+Most applications simply let iOS handle certificate validation using `.performDefaultHandling`.
+
+However, if you need custom security—such as Certificate Pinning, Public Key Pinning, or client certificate authentication—this is the place where that logic is implemented.
+
+In other words, **Certificate Pinning isn't a separate API**. It's a custom validation step implemented inside this delegate method.
+
+---
+
+# 📌 Quick Revision
+
+### Remember **CHECK**
+
+* **C** – Check the challenge
+* **H** – Handle authentication
+* **E** – Evaluate the certificate
+* **C** – Choose an action
+* **K** – Keep or Reject the connection
+
+### Flow
+
+```mermaid
+flowchart LR
+
+Request
+
+--> Challenge
+
+--> Delegate
+
+--> Validate
+
+--> Allow or Reject
+```
+
+### Common Dispositions
+
+| Option                           | Purpose                             |
+| -------------------------------- | ----------------------------------- |
+| `.useCredential`                 | Accept server / provide credentials |
+| `.performDefaultHandling`        | Let iOS handle authentication       |
+| `.cancelAuthenticationChallenge` | Cancel the request                  |
+| `.rejectProtectionSpace`         | Reject this authentication method   |
+
+> **One-line takeaway:**
+> **`urlSession(_:didReceive:completionHandler:)` is the security checkpoint where your app decides whether to trust a server, provide credentials, or reject the connection. It's also the primary place to implement Certificate or Public Key Pinning.**
+
+---
+
+## 💡 Book Improvement Suggestion
+
+I recommend placing this question **immediately after the Certificate Pinning questions**, exactly as you've done. The progression feels natural:
+
+1. What is TLS?
+2. What is Certificate Pinning?
+3. Certificate vs Public Key Pinning
+4. When should you use Pinning?
+5. **How is Pinning actually implemented in iOS? (`URLSessionDelegate`)**
+
+This creates a smooth learning journey—from concept → comparison → use cases → implementation—which is much easier for readers to understand and remember.
 
 </details> 
 
