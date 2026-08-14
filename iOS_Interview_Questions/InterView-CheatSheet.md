@@ -2,7 +2,7 @@
 <details>
 <summary>$\color{red}{\huge{\textbf{15. Application Security in iOS Apps}}}$</summary>
 
-### **Q1: What are the fundamental secure coding principles for iOS development?**
+## Q1: What are the fundamental secure coding principles for iOS development?
 
 <details>
 <summary>Acronym</summary>
@@ -46,12 +46,12 @@ Required fields
 
 ---
 
-## **Q2: How do you securely clear sensitive data from memory in Swift?**
+## Q2: How do you securely clear sensitive data from memory in Swift?**
 
 <details>
 <summary>Acronym</summary>
 
-## Remember **"CLEAR"**
+### Remember **"CLEAR"**
 
 Whenever you handle sensitive data, think **CLEAR**.
 
@@ -68,12 +68,12 @@ Whenever you handle sensitive data, think **CLEAR**.
 
 ---
 
-## **Q3. What is SSL/TLS? Why is it important for mobile app security?**
+## Q3. What is SSL/TLS? Why is it important for mobile app security?
 
 <details>
 <summary>Acronym</summary>  
 
-## Remember **CIA + H**
+### Remember **CIA + H**
 
 Whenever you hear **SSL/TLS**, think about the four things it provides.
 
@@ -90,12 +90,12 @@ Whenever you hear **SSL/TLS**, think about the four things it provides.
 
 ---
 
-## **Q5: What's the difference between certificate pinning and public key pinning?**
+## Q5: What's the difference between certificate pinning and public key pinning?
 
 <details>
 <summary>Acronym</summary>   
 
-## Remember **PIN**
+### Remember **PIN**
 
 When you hear **Certificate Pinning**, think **PIN**.
 
@@ -113,14 +113,14 @@ That's the easiest way to remember the difference.
 
 ---  
 
-## ** Q6. When should you implement SSL/TLS Pinning in your iOS application?**
+## Q6. When should you implement SSL/TLS Pinning in your iOS application?
 
 <details>
 <summary>Acronym</summary>  
  
 # 🧠 Memory Trick
 
-## Remember **"SHIELD"**
+### Remember **"SHIELD"**
 
 When should you use SSL Pinning?
 
