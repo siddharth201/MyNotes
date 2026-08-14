@@ -10273,7 +10273,7 @@ This is another example where a comparison table is more effective than long par
 
 ### **Q6: When should you implement SSL pinning in your iOS application?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 SSL pinning is **not always necessary**, but it’s critical for apps that handle **sensitive data** or are exposed to **high-security risks**.
 
@@ -10295,6 +10295,12 @@ SSL pinning is **not always necessary**, but it’s critical for apps that handl
 **5. Use Cases Where Pinning Might Not Be Needed**
 * Public content apps (news, blogs) without sensitive info.
 * Apps that can gracefully handle SSL issues with standard ATS protections.
+</details>
+
+<details>
+<summary>Answer2</summary>  
+
+
 </details>
 
 ### **Q7: What is the `URLSessionDelegate` method for handling authentication challenges?**
