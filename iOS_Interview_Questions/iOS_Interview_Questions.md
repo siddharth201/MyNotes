@@ -10300,6 +10300,326 @@ SSL pinning is **not always necessary**, but it’s critical for apps that handl
 <details>
 <summary>Answer2</summary>  
 
+Perfect. Also noted your new requirement.
+
+> **From now onwards, I will not use ASCII diagrams. I'll use Mermaid diagrams throughout the book.** They look professional, are easy to edit in Markdown, and render beautifully on GitHub, Obsidian, Docusaurus, etc.
+
+---
+
+# Q6. When should you implement SSL/TLS Pinning in your iOS application?
+
+---
+
+## ⭐ Difficulty
+
+🟡 Intermediate
+
+---
+
+# 🎤 Interview Answer (30–60 Seconds)
+
+SSL/TLS Pinning should be used when your app handles highly sensitive data or requires an extra layer of security beyond standard HTTPS/TLS.
+
+It's commonly used in banking, payment, healthcare, enterprise, and authentication apps where preventing Man-in-the-Middle (MITM) attacks is critical.
+
+However, pinning is **not required for every app**. It increases security but also adds maintenance overhead because certificate or key changes must be managed carefully.
+
+---
+
+# 🧠 Memory Trick
+
+## Remember **"SHIELD"**
+
+When should you use SSL Pinning?
+
+| Letter | Meaning                          |
+| ------ | -------------------------------- |
+| **S**  | Sensitive Data                   |
+| **H**  | High Security Apps               |
+| **I**  | Internet over Untrusted Networks |
+| **E**  | Enterprise & Compliance          |
+| **L**  | Login & Authentication Apps      |
+| **D**  | Defence against MITM             |
+
+> 💡 **Quick Rule:**
+> **If your app protects money, identity, or health, consider SSL Pinning.**
+
+---
+
+# 🔑 Keywords to Mention in an Interview
+
+* HTTPS
+* TLS
+* SSL Pinning
+* Certificate Pinning
+* Public Key Pinning
+* MITM Attack
+* Banking Apps
+* Healthcare Apps
+* PCI-DSS
+* HIPAA
+
+---
+
+# 📖 Detailed Explanation
+
+HTTPS/TLS already provides strong security for most applications.
+
+SSL/TLS Pinning is an **additional security layer**, not a replacement for HTTPS.
+
+Because pinning increases maintenance effort, it should only be used when the additional protection justifies the cost.
+
+---
+
+# ✅ When Should You Use SSL/TLS Pinning?
+
+## 1. Apps Handling Sensitive Data
+
+Applications that process confidential information should strongly consider pinning.
+
+Examples include:
+
+* Banking Apps
+* Payment Apps
+* Healthcare Apps
+* Government Apps
+* Enterprise Apps
+* Authentication Apps
+
+These apps transmit information such as:
+
+* Login credentials
+* Access tokens
+* Financial information
+* Medical records
+* Personal identity information
+
+Mermaid Diagram:
+
+```mermaid
+flowchart LR
+    A[Sensitive Data] --> B[Use HTTPS/TLS]
+    B --> C[Add SSL Pinning]
+    C --> D[Extra Protection]
+```
+
+---
+
+## 2. Apps Used on Untrusted Networks
+
+Users frequently connect through:
+
+* Public Wi-Fi
+* Airport Wi-Fi
+* Hotel Networks
+* Coffee Shops
+
+These networks are more vulnerable to interception attacks.
+
+SSL Pinning helps ensure your app communicates only with the intended server.
+
+---
+
+## 3. High Security Applications
+
+Applications where security is a business requirement.
+
+Examples:
+
+* Mobile Banking
+* Digital Wallets
+* Investment Apps
+* Password Managers
+* Enterprise VPN Apps
+
+For these apps, even a single compromised connection can have serious consequences.
+
+---
+
+## 4. Compliance Requirements
+
+Some industries have strict security standards.
+
+Examples:
+
+* PCI-DSS (Payment Systems)
+* HIPAA (Healthcare)
+* Financial Regulations
+* Government Security Policies
+
+Although pinning isn't always explicitly required, it is often recommended as part of a defence-in-depth strategy.
+
+---
+
+## 5. Protecting Against Compromised Certificate Authorities
+
+Normally, iOS trusts hundreds of Certificate Authorities (CAs).
+
+If one of them is compromised or mistakenly issues a certificate, HTTPS alone may not be enough.
+
+Pinning restricts trust to your own certificate or public key.
+
+```mermaid
+flowchart TD
+    A[Trusted CA] --> B[Issues Certificate]
+    B --> C[HTTPS Trusts It]
+
+    D[SSL Pinning]
+    D --> E[Compare with Pinned Certificate]
+
+    E -->|Match| F[Allow Connection]
+    E -->|No Match| G[Reject Connection]
+```
+
+---
+
+# ❌ When SSL Pinning May NOT Be Necessary
+
+Not every application benefits from pinning.
+
+Examples include:
+
+* News Apps
+* Blog Apps
+* Weather Apps
+* Public Information Apps
+* Content Streaming Apps
+
+If your app only displays public content and doesn't exchange sensitive information, HTTPS with App Transport Security (ATS) is usually sufficient.
+
+---
+
+# Trade-off of Using SSL Pinning
+
+SSL Pinning increases security, but it also increases maintenance.
+
+Whenever a certificate or public key changes, the application must be updated (unless Public Key Pinning is used and the key remains the same).
+
+```mermaid
+flowchart LR
+    A[More Security] --> C[SSL Pinning]
+    B[More Maintenance] --> C
+
+    C --> D[Certificate Rotation]
+    D --> E[Careful Planning Required]
+```
+
+---
+
+# Decision Flow
+
+```mermaid
+flowchart TD
+    A[Does the app handle sensitive data?]
+
+    A -->|Yes| B[Use HTTPS/TLS]
+
+    B --> C{High Security Needed?}
+
+    C -->|Yes| D[Consider SSL Pinning]
+
+    C -->|No| E[ATS + HTTPS is Enough]
+
+    A -->|No| E
+```
+
+---
+
+# Real-World Examples
+
+| Application      | SSL Pinning? | Reason                                          |
+| ---------------- | ------------ | ----------------------------------------------- |
+| Banking App      | ✅ Yes        | Protect financial transactions                  |
+| Payment Gateway  | ✅ Yes        | Prevent credential theft                        |
+| Healthcare App   | ✅ Yes        | Secure patient records                          |
+| Corporate VPN    | ✅ Yes        | Enterprise security                             |
+| Social Media App | 🤔 Depends   | Sensitive login data but operational trade-offs |
+| News App         | ❌ Usually No | Public content only                             |
+| Weather App      | ❌ Usually No | Low security risk                               |
+
+---
+
+# ⚠️ Common Mistakes
+
+❌ Assuming every app should use SSL Pinning.
+
+> Most apps are sufficiently protected by HTTPS and ATS.
+
+---
+
+❌ Believing SSL Pinning replaces HTTPS.
+
+> Pinning only strengthens HTTPS. It doesn't replace it.
+
+---
+
+❌ Ignoring certificate rotation.
+
+> Poor certificate management can accidentally block legitimate users.
+
+---
+
+# 🔄 Common Follow-up Questions
+
+Interviewers often ask:
+
+* Should every iOS app implement SSL Pinning?
+* Why don't apps like Facebook or Instagram always use Certificate Pinning?
+* What problems can SSL Pinning introduce?
+* What is certificate rotation?
+* How do you safely rotate pinned keys?
+* Why is Public Key Pinning often preferred over Certificate Pinning?
+
+---
+
+# 🚀 Senior Engineer Insight
+
+A common misconception is that **more security is always better**.
+
+In reality, security is about balancing **protection, maintainability, and user experience**.
+
+For most applications, **HTTPS + App Transport Security (ATS)** already provides excellent security.
+
+SSL Pinning should be reserved for applications where the consequences of a compromised connection outweigh the operational cost of maintaining pinned certificates or keys.
+
+That's why banking, healthcare, payment, and enterprise apps often implement pinning, while many public content apps do not.
+
+---
+
+# 📌 Quick Revision
+
+### Remember **SHIELD**
+
+* **S** – Sensitive Data
+* **H** – High Security Apps
+* **I** – Internet over Untrusted Networks
+* **E** – Enterprise & Compliance
+* **L** – Login & Authentication
+* **D** – Defence against MITM
+
+### Decision Table
+
+| Scenario       | SSL Pinning? |
+| -------------- | ------------ |
+| Banking App    | ✅ Yes        |
+| Healthcare App | ✅ Yes        |
+| Payment App    | ✅ Yes        |
+| Enterprise App | ✅ Yes        |
+| News App       | ❌ Usually No |
+| Weather App    | ❌ Usually No |
+
+> **One-line takeaway:**
+> **Use SSL/TLS Pinning when your app protects sensitive data or operates in high-security environments. For most other apps, HTTPS with ATS provides sufficient protection.**
+
+---
+
+## 💡 Book Improvement Suggestion
+
+One thing I'd improve over the source material is **terminology**. Throughout the book, we should consistently use **"TLS Pinning"** or **"Certificate Pinning"** instead of **"SSL Pinning"** where appropriate. SSL has been deprecated for years, and modern iOS applications use **TLS**. We can still mention *SSL Pinning* because it's a commonly used interview term, but add a note like:
+
+> **Note:** Although people often say *SSL Pinning*, modern iOS apps actually use **TLS**. The terms are commonly used interchangeably in interviews, but technically **TLS Pinning** is the correct term.
+
+This small correction will make the book technically accurate while remaining interview-friendly.
 
 </details>
 
