@@ -10625,7 +10625,7 @@ This small correction will make the book technically accurate while remaining in
 
 ### **Q7: What is the `URLSessionDelegate` method for handling authentication challenges?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 In iOS, when a **network request** encounters an **authentication challenge** (like SSL/TLS certificate verification, HTTP Basic auth, or client certificates), you can handle it using this delegate method:
 
@@ -10646,7 +10646,13 @@ func urlSession(_ session: URLSession,
 * **Client certificates** for secure APIs.
 * **HTTP Basic or Digest authentication**.
 
-</details>  
+</details> 
+
+<details>
+<summary>Answer2</summary>  
+
+
+</details> 
 
 ### **Q8: What is App Transport Security (ATS)? How do you configure it in an iOS app?**
 <details>
