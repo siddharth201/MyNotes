@@ -90,6 +90,8 @@ Whenever you hear **SSL/TLS**, think about the four things it provides.
 
 ---
 
+**Q5: What's the difference between certificate pinning and public key pinning?**
+
 <details>
 <summary>Acronym</summary>   
 
@@ -107,6 +109,13 @@ When you hear **Certificate Pinning**, think **PIN**.
 > Certificate Pinning asks, **"Is this *my* certificate?"**
 
 That's the easiest way to remember the difference.  
-</details> 
+</details>  
+
+---  
+
+**Q5: What's the difference between certificate pinning and public key pinning?**
+
+<details>
+<summary>Acronym</summary> 
 
 </details>
