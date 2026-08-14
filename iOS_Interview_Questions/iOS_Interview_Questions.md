@@ -11015,16 +11015,10 @@ In other words, **Certificate Pinning isn't a separate API**. It's a custom vali
 
 ```mermaid
 flowchart LR
-
-Request
-
---> Challenge
-
---> Delegate
-
---> Validate
-
---> Allow or Reject
+    Request --> Challenge
+    Challenge --> Delegate
+    Delegate --> Validate
+    Validate --> decision[Allow or Reject]
 ```
 
 ### Common Dispositions
