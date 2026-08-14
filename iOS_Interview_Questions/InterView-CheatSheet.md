@@ -118,7 +118,23 @@ That's the easiest way to remember the difference.
 <details>
 <summary>Acronym</summary>  
  
+# 🧠 Memory Trick
 
+## Remember **"SHIELD"**
+
+When should you use SSL Pinning?
+
+| Letter | Meaning                          |
+| ------ | -------------------------------- |
+| **S**  | Sensitive Data                   |
+| **H**  | High Security Apps               |
+| **I**  | Internet over Untrusted Networks |
+| **E**  | Enterprise & Compliance          |
+| **L**  | Login & Authentication Apps      |
+| **D**  | Defence against MITM             |
+
+> 💡 **Quick Rule:**
+> **If your app protects money, identity, or health, consider SSL Pinning.**
 </details>  
 
 
