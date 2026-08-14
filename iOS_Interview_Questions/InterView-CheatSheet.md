@@ -90,7 +90,7 @@ Whenever you hear **SSL/TLS**, think about the four things it provides.
 
 ---
 
-**Q5: What's the difference between certificate pinning and public key pinning?**
+## **Q5: What's the difference between certificate pinning and public key pinning?**
 
 <details>
 <summary>Acronym</summary>   
@@ -113,9 +113,13 @@ That's the easiest way to remember the difference.
 
 ---  
 
-**Q5: What's the difference between certificate pinning and public key pinning?**
+## ** Q6. When should you implement SSL/TLS Pinning in your iOS application?**
 
 <details>
-<summary>Acronym</summary> 
+<summary>Acronym</summary>  
+ 
+
+</details>  
+
 
 </details>
