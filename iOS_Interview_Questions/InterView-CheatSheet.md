@@ -117,8 +117,6 @@ That's the easiest way to remember the difference.
 
 <details>
 <summary>Acronym</summary>  
- 
-# 🧠 Memory Trick
 
 ### Remember **"SHIELD"**
 
