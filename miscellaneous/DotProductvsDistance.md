@@ -634,4 +634,10 @@ The AI can use different mathematical questions:
 
 > "Do they point in the same preference direction?"
 
-And this is the bridge from the mathematics you're learning now to **embeddings, recommendation systems, semantic search, and eventually LLMs**.
+And this is the bridge from the mathematics you're learning now to **embeddings, recommendation systems, semantic search, and eventually LLMs**.  
+
+---  
+
+### Q. How much do these arrows point in the same direction? vs Are they pointing in the same direction?  
+
+
