@@ -11191,7 +11191,7 @@ func authenticateUser() {
 
 ### **Q13: What are symmetric vs asymmetric encryption? When would you use each?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 **Symmetric Encryption**
 
@@ -11257,6 +11257,12 @@ func authenticateUser() {
 
 • Often, both are combined: asymmetric encryption exchanges a symmetric key, then symmetric encryption handles the bulk of the data.
 </details>  
+
+<details>
+<summary>Answer2</summary>  
+
+
+</details>
 
 ### **Q14: What are GDPR and HIPAA? How do they affect iOS app development?**
 <details>
