@@ -27,5 +27,7 @@ c. yes, they can at (3, 1)
 
 ### Q.2 Find the distance of the point (−6,0,0) from the plane 2x−3y+6z=2?  
 <details>
+<summary>Options</Summary>  
+
 
 </details>
