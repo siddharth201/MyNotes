@@ -1,4 +1,4 @@
-### Three robots have been programmed to move along the paths x-y-2=0, x+y-4=0, and x+3y=6 in an infinite space. Do you think that these robots will ever collide?
+### Q.1 Three robots have been programmed to move along the paths x-y-2=0, x+y-4=0, and x+3y=6 in an infinite space. Do you think that these robots will ever collide?
 <details>
 <summary>Options</Summary>
 
@@ -13,11 +13,12 @@ d. yes, they can at (1, 1)
 ```  
 
 <details>
-<summary>Answer</Answer>
+<summary>Answer</summary>
 
 c. yes, they can at (3, 1)  
 
-[Ecplanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)  
+
 </details>
 
 </details>
