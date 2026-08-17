@@ -7,6 +7,8 @@ a. yes, they can at (1, 2)
 
 b. No  
 
-c. 
+c. yes, they can at (3, 1)  
+
+d. 
 ```
 </details>
