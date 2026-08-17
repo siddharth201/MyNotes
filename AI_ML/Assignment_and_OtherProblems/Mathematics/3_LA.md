@@ -21,4 +21,8 @@ c. yes, they can at (3, 1)
 
 </details>
 
-</details>
+</details>  
+
+---  
+
+### Q.2
