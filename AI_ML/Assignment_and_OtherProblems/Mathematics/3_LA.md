@@ -29,5 +29,11 @@ c. yes, they can at (3, 1)
 <details>
 <summary>Options</Summary>  
 
+```text
+a. 4  
 
+b. 2  
+
+c. 3.
+```
 </details>
