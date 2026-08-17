@@ -3,6 +3,8 @@
 <summary>Options</Summary>
 
 ```text
+a. yes, they can at (1, 2)  
 
+b. 
 ```
 </details>
