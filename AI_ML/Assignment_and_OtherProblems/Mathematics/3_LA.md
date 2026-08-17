@@ -17,7 +17,7 @@ d. yes, they can at (1, 1)
 
 c. yes, they can at (3, 1)  
 
-[Ecplanation]()
+[Ecplanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)
 </details>
 
 </details>
