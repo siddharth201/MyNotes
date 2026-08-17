@@ -43,7 +43,7 @@ d. -6
 
 **b. 2**  
 
-[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)  
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
 
 </details>
 
