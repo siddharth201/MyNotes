@@ -15,7 +15,7 @@ d. yes, they can at (1, 1)
 <details>
 <summary>Answer</summary>
 
-c. yes, they can at (3, 1)  
+**c. yes, they can at (3, 1)**  
 
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)  
 
@@ -36,6 +36,15 @@ b. 2
 
 c. 3.75
 
-d. 
-```
+d. -6
+```  
+<details>
+<summary>Answer</summary>
+
+**b. 2**  
+
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.1.md)  
+
+</details>
+
 </details>
