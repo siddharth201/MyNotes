@@ -10,5 +10,14 @@ b. No
 c. yes, they can at (3, 1)  
 
 d. yes, they can at (1, 1)
-```
+```  
+
+<details>
+<summary>Answer</Answer>
+
+c. yes, they can at (3, 1)  
+
+[Ecplanation]()
+</details>
+
 </details>
