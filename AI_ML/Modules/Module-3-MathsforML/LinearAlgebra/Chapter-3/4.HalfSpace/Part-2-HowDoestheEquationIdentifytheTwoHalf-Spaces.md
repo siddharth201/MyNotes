@@ -456,7 +456,7 @@ Be careful here.
 
 We should **not** say:
 
-> "$\overrightarrow{w}^{T}\overrightarrow{x}$ directly gives the distance from the plane."
+> $\overrightarrow{w}^{T}\overrightarrow{x}$ "directly gives the distance from the plane."
 
 That is not generally true.
 
