@@ -977,6 +977,13 @@ Use:
 }
 ```
 
+$$\boxed{
+\text{sign} \left( 
+\overrightarrow{w}^{T}\overrightarrow{x}+w_0 
+\right)
+}$$
+
+
 ### Question 2
 
 > **How far is it from the boundary?**
