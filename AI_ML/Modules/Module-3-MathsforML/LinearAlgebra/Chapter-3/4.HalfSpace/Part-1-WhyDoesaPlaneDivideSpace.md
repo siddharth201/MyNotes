@@ -968,15 +968,6 @@ The model asks two questions.
 
 Use:
 
-```math
-\boxed{
-\operatorname{sign}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}+w_0
-\right)
-}
-```
-
 $$\boxed{
 \text{sign} \left( 
 \overrightarrow{w}^{T}\overrightarrow{x}+w_0 
