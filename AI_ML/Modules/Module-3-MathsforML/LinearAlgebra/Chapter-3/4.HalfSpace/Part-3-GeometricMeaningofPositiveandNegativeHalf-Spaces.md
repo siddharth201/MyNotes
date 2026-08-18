@@ -784,17 +784,15 @@ This is also directly connected to our earlier topic **Projection of a Vector**.
 
 Remember:
 
-```math id="hs3-projection"
-\operatorname{proj}_{\overrightarrow{w}}
-(\overrightarrow{PX})
-=
+$$\text{proj}_{\overrightarrow{w}} (\overrightarrow{PX}) 
+= 
 \frac{
 \overrightarrow{w}^{T}\overrightarrow{PX}
 }{
 \|\overrightarrow{w}\|^2
 }
-\overrightarrow{w}
-```
+\overrightarrow{w}$$
+
 
 The scalar component along $\overrightarrow{w}$ is:
 
