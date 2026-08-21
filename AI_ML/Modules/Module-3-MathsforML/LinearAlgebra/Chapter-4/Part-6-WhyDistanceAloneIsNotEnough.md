@@ -1,19 +1,12 @@
+
+
 # Part 6 — Why Distance Alone Is Not Enough
 
 We now have an important tool.
 
-For a specific training point $\overrightarrow{x}^{(i)}$, its signed distance from the decision boundary is
+For a specific training point $`\overrightarrow{x}^{(i)}`$, its signed distance from the decision boundary is:
 
-$$
-d^{(i)}
-=======
-
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-}{
-|\overrightarrow{w}|
-}
-$$
+$`d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b}{\|\overrightarrow{w}\|}`$
 
 And we know:
 
@@ -37,9 +30,7 @@ Let's understand why.
 
 Let's define our labels as:
 
-$$
-y^{(i)} \in {-1,+1}
-$$
+$`y^{(i)} \in \{-1,+1\}`$
 
 For example:
 
@@ -66,15 +57,11 @@ And suppose our decision boundary is:
 
 The classifier predicts:
 
-$$
-\hat{y}^{(i)}
-=============
-
+$`\hat{y}^{(i)} =
 \begin{cases}
-+1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0 \
--1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
-\end{cases}
-$$
++1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b > 0 \\
+-1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b < 0
+\end{cases}`$
 
 So far, so good.
 
@@ -84,15 +71,11 @@ So far, so good.
 
 Suppose the actual label is:
 
-$$
-y^{(i)}=+1
-$$
+$`y^{(i)} = +1`$
 
 And the point lies on the positive side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b > 0`$
 
 Then:
 
@@ -105,9 +88,7 @@ Prediction         +1
 
 Its signed distance might be:
 
-$$
-d^{(i)}=+3
-$$
+$`d^{(i)} = +3`$
 
 Excellent.
 
@@ -117,21 +98,15 @@ Excellent.
 
 Suppose the actual label is still:
 
-$$
-y^{(i)}=+1
-$$
+$`y^{(i)} = +1`$
 
 But the point is on the negative side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b < 0`$
 
 For example:
 
-$$
-d^{(i)}=-3
-$$
+$`d^{(i)} = -3`$
 
 Then:
 
@@ -146,15 +121,11 @@ But look at the **ordinary distance**.
 
 The first point had:
 
-$$
-|d^{(i)}|=3
-$$
+$`|d^{(i)}| = 3`$
 
 The second point also has:
 
-$$
-|d^{(i)}|=3
-$$
+$`|d^{(i)}| = 3`$
 
 So ordinary distance says:
 
@@ -236,9 +207,7 @@ We need to combine **two pieces of information**.
 
 The signed quantity
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b`$
 
 tells us which side the point lies on.
 
@@ -246,9 +215,7 @@ tells us which side the point lies on.
 
 The actual label
 
-$$
-y^{(i)}
-$$
+$`y^{(i)}`$
 
 tells us whether it should belong to the positive or negative class.
 
@@ -268,24 +235,15 @@ This is the key idea of this Part.
 
 Our labels are:
 
-$$
-y^{(i)}\in{-1,+1}
-$$
+$`y^{(i)} \in \{-1,+1\}`$
 
 And our signed position is:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b`$
 
 So let's multiply them:
 
-$$
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right)`$
 
 This looks like a small algebraic trick.
 
@@ -297,35 +255,19 @@ But it gives us something extremely useful.
 
 Suppose:
 
-$$
-y^{(i)}=+1
-$$
+$`y^{(i)} = +1`$
 
 and the point is correctly on the positive side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b > 0`$
 
 Then:
 
-$$
-(+1)(\text{positive})
-=====================
-
-\text{positive}
-$$
+$`(+1)(\text{positive}) = \text{positive}`$
 
 Therefore:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)>0
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) > 0`$
 
 ---
 
@@ -333,35 +275,19 @@ $$
 
 Now suppose:
 
-$$
-y^{(i)}=-1
-$$
+$`y^{(i)} = -1`$
 
 A correctly classified $-1$ point must lie on the negative side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b < 0`$
 
 Therefore:
 
-$$
-(-1)(\text{negative})
-=====================
-
-\text{positive}
-$$
+$`(-1)(\text{negative}) = \text{positive}`$
 
 Again:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)>0
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) > 0`$
 
 That's the clever part.
 
@@ -396,35 +322,19 @@ Now let's deliberately misclassify the points.
 
 Actual:
 
-$$
-y^{(i)}=+1
-$$
+$`y^{(i)} = +1`$
 
 But it lies on the negative side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b < 0`$
 
 Therefore:
 
-$$
-(+1)(\text{negative})
-=====================
-
-\text{negative}
-$$
+$`(+1)(\text{negative}) = \text{negative}`$
 
 So:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)<0
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) < 0`$
 
 ---
 
@@ -432,35 +342,19 @@ $$
 
 Actual:
 
-$$
-y^{(i)}=-1
-$$
+$`y^{(i)} = -1`$
 
 But it lies on the positive side:
 
-$$
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0
-$$
+$`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b > 0`$
 
 Therefore:
 
-$$
-(-1)(\text{positive})
-=====================
-
-\text{negative}
-$$
+$`(-1)(\text{positive}) = \text{negative}`$
 
 Again:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)<0
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) < 0`$
 
 ---
 
@@ -468,38 +362,28 @@ $$
 
 This is one of the most important tables in this chapter.
 
-| Actual $y^{(i)}$ | Position $\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b$ |   Result | Classification |
-| ---------------: | ----------------------------------------------------------: | -------: | -------------- |
-|             $+1$ |                                                    Positive | Positive | ✅ Correct      |
-|             $-1$ |                                                    Negative | Positive | ✅ Correct      |
-|             $+1$ |                                                    Negative | Negative | ❌ Wrong        |
-|             $-1$ |                                                    Positive | Negative | ❌ Wrong        |
+| Actual $`y^{(i)}`$ | Position $`\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b`$ |   Result | Classification |
+| -----------------: | --------------------------------------------------------------: | -------: | -------------- |
+|               $+1$ |                                                        Positive | Positive | ✅ Correct      |
+|               $-1$ |                                                        Negative | Positive | ✅ Correct      |
+|               $+1$ |                                                        Negative | Negative | ❌ Wrong        |
+|               $-1$ |                                                        Positive | Negative | ❌ Wrong        |
 
 Therefore:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)>0
-\quad\Rightarrow\quad
-\text{correctly classified}
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) > 0`$
+
+means:
+
+> **Correctly classified**
 
 and:
 
-$$
-\boxed{
-y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)<0
-\quad\Rightarrow\quad
-\text{misclassified}
-}
-$$
+$`y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right) < 0`$
+
+means:
+
+> **Misclassified**
 
 ---
 
@@ -507,54 +391,33 @@ $$
 
 Earlier we defined signed distance as:
 
-$$
-d^{(i)}
-=======
-
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-}{
-|\overrightarrow{w}|
-}
-$$
+$`d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b}{\|\overrightarrow{w}\|}`$
 
 We can multiply this by the actual label:
 
-$$
-y^{(i)}d^{(i)}
-$$
+$`y^{(i)}d^{(i)}`$
 
 Therefore:
 
-$$
-y^{(i)}d^{(i)}
-==============
+# $`y^{(i)}d^{(i)}
 
 y^{(i)}
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-}{
-|\overrightarrow{w}|
-}
-$$
+\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b}
+{|\overrightarrow{w}|}`$
 
 or:
 
-$$
-\boxed{
+$`\boxed{
 y^{(i)}d^{(i)}
 ==============
 
 \frac{
 y^{(i)}
-\left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)
+\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b\right)
 }{
 |\overrightarrow{w}|
 }
-}
-$$
+}`$
 
 This quantity is extremely important.
 
@@ -576,13 +439,9 @@ Point B → actual +1 → signed distance -3
 
 Ordinary distances:
 
-$$
-|+3|=3
-$$
+$`|+3| = 3`$
 
-$$
-|-3|=3
-$$
+$`|-3| = 3`$
 
 No distinction.
 
@@ -590,15 +449,11 @@ Now multiply by the labels.
 
 ### Point A
 
-$$
-(+1)(+3)=+3
-$$
+$`(+1)(+3) = +3`$
 
 ### Point B
 
-$$
-(+1)(-3)=-3
-$$
+$`(+1)(-3) = -3`$
 
 Now:
 
@@ -805,18 +660,16 @@ So:
 
 The **label-adjusted signed distance** is:
 
-$$
-\boxed{
+$`\boxed{
 \frac{
 y^{(i)}
 \left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b
 \right)
 }{
-|\overrightarrow{w}|
+\|\overrightarrow{w}\|
 }
-}
-$$
+}`$
 
 Interpretation:
 
@@ -830,15 +683,13 @@ For now, that's the most important meaning.
 
 ### ① Ordinary distance is not enough
 
-$$
-\frac{
+$`\frac{
 \left|
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b
 \right|
 }{
-|\overrightarrow{w}|
-}
-$$
+\|\overrightarrow{w}\|
+}`$
 
 only tells us:
 
@@ -850,13 +701,11 @@ It loses the side information.
 
 ### ② Signed distance preserves side information
 
-$$
-\frac{
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
+$`\frac{
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b
 }{
-|\overrightarrow{w}|
-}
-$$
+\|\overrightarrow{w}\|
+}`$
 
 tells us:
 
@@ -866,22 +715,16 @@ tells us:
 
 ### ③ Actual label tells us where the point SHOULD be
 
-$$
-y^{(i)}\in{-1,+1}
-$$
+$`y^{(i)}\in\{-1,+1\}`$
 
 ---
 
 ### ④ Multiplying them aligns the signs
 
-$$
-\boxed{
-y^{(i)}
+$`y^{(i)}
 \left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
-\right)>0
-}
-$$
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b
+\right)>0`$
 
 means:
 
@@ -891,18 +734,14 @@ means:
 
 ### ⑤ Label-adjusted signed distance
 
-$$
-\boxed{
-\frac{
+$`\frac{
 y^{(i)}
 \left(
-\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b
 \right)
 }{
-|\overrightarrow{w}|
-}
-}
-$$
+\|\overrightarrow{w}\|
+}`$
 
 means:
 
