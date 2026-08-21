@@ -1,7 +1,6 @@
-
 # Part 6 — Why Distance Alone Is Not Enough
 
-We now have an important tool:
+We now have an important tool.
 
 For a specific training point $\overrightarrow{x}^{(i)}$, its signed distance from the decision boundary is
 
@@ -39,7 +38,7 @@ Let's understand why.
 Let's define our labels as:
 
 $$
-y^{(i)}\in{-1,+1}
+y^{(i)} \in {-1,+1}
 $$
 
 For example:
@@ -68,10 +67,12 @@ And suppose our decision boundary is:
 The classifier predicts:
 
 $$
-\hat{y}^{(i)}=
+\hat{y}^{(i)}
+=============
+
 \begin{cases}
-+1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0\
--1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
++1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0 \
+-1, & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0
 \end{cases}
 $$
 
@@ -229,11 +230,11 @@ So:
 
 # 5. What Information Are We Missing?
 
-We need to combine **two pieces of information**:
+We need to combine **two pieces of information**.
 
 ### Information 1 — Where is the point?
 
-The signed quantity:
+The signed quantity
 
 $$
 \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
@@ -243,7 +244,7 @@ tells us which side the point lies on.
 
 ### Information 2 — What should its class be?
 
-The actual label:
+The actual label
 
 $$
 y^{(i)}
@@ -915,6 +916,8 @@ means:
 
 And this sets up the next important question:
 
-# **Part 7 — From Signed Distance to Margin**
+> We want to use these distances to evaluate whether a decision boundary is good — but there is a mathematical problem with simply using the absolute distance.
 
-Here we will connect this quantity to the idea of **margin** and finally understand why a classifier would want the two classes to have a larger gap between them.
+That is exactly what we will solve in:
+
+# **Part 7 — From Signed Distance to Margin**
