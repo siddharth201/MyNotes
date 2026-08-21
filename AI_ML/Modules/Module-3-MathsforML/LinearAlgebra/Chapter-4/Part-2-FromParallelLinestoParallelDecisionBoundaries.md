@@ -54,7 +54,6 @@ Both have slope $2$.
 
 Therefore, they are parallel.
 
-genui{"learning_viz":{"type_id":"PARALLEL_LINE"}}
 
 ### Simple mental picture
 
