@@ -496,3 +496,65 @@ And **this is the ultimate reason Chapter 4 exists**.
 
 In the next Part, we will build the geometry required to make that idea mathematically measurable: **parallel decision boundaries**.
 
+
+
+
+Absolutely. I’ll keep this distinction **explicit in every further formula**.
+
+From now on, whenever we introduce an equation involving $\overrightarrow{x}$, I’ll first clarify **what $\overrightarrow{x}$ represents in that particular equation**.
+
+### Our notation going forward
+
+**1. Generic point used to define a plane**
+
+```math
+\overrightarrow{w}^{T}\overrightarrow{x}+b=0
+```
+
+Here, $\overrightarrow{x}$ means:
+
+> **Any point that lies on the plane.**
+
+**2. Specific data point**
+
+```math
+\overrightarrow{x}^{(i)}
+```
+
+Here, it means:
+
+> **The $i$-th data point / feature vector from our dataset.**
+
+For example:
+
+```math
+d^{(i)}
+=
+\frac{
+\left|
+\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
+\right|
+}{
+\|\overrightarrow{w}\|
+}
+```
+
+Here we will explicitly say:
+
+> $\overrightarrow{x}^{(i)}$ is the specific data point whose distance from the decision boundary we are calculating.
+
+### 🔒 Simple rule
+
+```text
+x
+↓
+Generic point / mathematical variable
+
+x⁽ⁱ⁾
+↓
+Specific training data point
+```
+
+And when there is any possibility of confusion, **I will stop and explain the role of the variable before deriving the formula.**
+
+This is especially important now because Chapter 4 is moving from **pure geometry → data points → classification → optimization**, so the notation will start carrying more meaning.
