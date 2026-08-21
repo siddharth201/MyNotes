@@ -5,9 +5,7 @@ We now have an important tool.
 For a specific training point $\overrightarrow{x}^{(i)}$, its signed distance from the decision boundary is
 
 $$
-d^{(i)}
-=======
-
+d^{(i)}=
 \frac{
 \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b
 }{
