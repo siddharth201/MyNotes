@@ -1,15 +1,17 @@
+
+
 # Part 6 — Why Distance Alone Is Not Enough
 
 We now have an important tool:
 For a specific training point $\overrightarrow{x}^{(i)}$, its signed distance from the decision boundary is
 
-$$d^{(i)} \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\vert{}\overrightarrow{w}\vert{}}$$
+$$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 And we know:
 
-* d⁽ⁱ⁾ > 0 → one side
-* d⁽ⁱ⁾ = 0 → on boundary
-* d⁽ⁱ⁾ < 0 → other side
+* $d^{(i)} > 0 \rightarrow$ one side
+* $d^{(i)} = 0 \rightarrow$ on boundary
+* $d^{(i)} < 0 \rightarrow$ other side
 
 At first, this seems like everything we need.
 But there is a subtle problem.
@@ -48,8 +50,7 @@ And suppose our decision boundary is:
 
 The classifier predicts:
 
-
-$$\hat{y}^{(i)}=\begin{cases}+1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0\\-1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0\end{cases}$$
+$$\hat{y}^{(i)} = \begin{cases} +1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0 \\ -1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0 \end{cases}$$
 
 So far, so good.
 
@@ -230,7 +231,7 @@ $$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0$$
 Then:
 
 
-$$(+1)(\text{positive}) \text{ positive}$$
+$$(+1)(\text{positive}) = \text{positive}$$
 
 Therefore:
 
@@ -252,7 +253,7 @@ $$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0$$
 Therefore:
 
 
-$$(-1)(\text{negative}) \text{ positive}$$
+$$(-1)(\text{negative}) = \text{positive}$$
 
 Again:
 
@@ -272,7 +273,7 @@ Let's put them together:
 
 So:
 **Correct classification ↓**
-**y⁽ⁱ⁾(wᵀx⁽ⁱ⁾ + b) > 0**
+**$y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b) > 0$**
 
 This gives us a single mathematical test for correctness.
 
@@ -294,7 +295,7 @@ $$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0$$
 Therefore:
 
 
-$$(+1)(\text{negative}) \text{ negative}$$
+$$(+1)(\text{negative}) = \text{negative}$$
 
 So:
 
@@ -315,7 +316,7 @@ $$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0$$
 Therefore:
 
 
-$$(-1)(\text{positive}) \text{ negative}$$
+$$(-1)(\text{positive}) = \text{negative}$$
 
 Again:
 
@@ -348,7 +349,7 @@ $$\boxed{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)<0 
 Earlier we defined signed distance as:
 
 
-$$d^{(i)} \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\vert{}\overrightarrow{w}\vert{}}$$
+$$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 We can multiply this by the actual label:
 
@@ -358,12 +359,12 @@ $$y^{(i)}d^{(i)}$$
 Therefore:
 
 
-$$y^{(i)}d^{(i)} y^{(i)} \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\vert{}\overrightarrow{w}\vert{}}$$
+$$y^{(i)}d^{(i)} = y^{(i)} \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 or:
 
 
-$$\boxed{y^{(i)}d^{(i)} \frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\vert{}\overrightarrow{w}\vert{}}}$$
+$$\boxed{y^{(i)}d^{(i)} = \frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\Vert{}\overrightarrow{w}\Vert{}}}$$
 
 This quantity is extremely important.
 It tells us:
@@ -463,7 +464,7 @@ But now we add:
 So:
 
 * Data Point ↓
-* wᵀx⁽ⁱ⁾ + b ↓
+* $\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b$ ↓
 * Which side? ↓
 * Signed distance ↓
 * × actual label ↓
@@ -522,14 +523,14 @@ Keep this visual in your `.md` notes:
 Then:
 
 **Correct +1 point:**
-y⁽ⁱ⁾ = +1
-d⁽ⁱ⁾ > 0
-(+1)(+distance) = +
+$y^{(i)} = +1$
+$d^{(i)} > 0$
+$(+1)(+\text{distance}) = \text{positive}$
 
 **Correct -1 point:**
-y⁽ⁱ⁾ = -1
-d⁽ⁱ⁾ < 0
-(-1)(-distance) = +
+$y^{(i)} = -1$
+$d^{(i)} < 0$
+$(-1)(-\text{distance}) = \text{positive}$
 
 So:
 
@@ -549,7 +550,7 @@ So:
 The label-adjusted signed distance is:
 
 
-$$\boxed{\frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\vert{}\overrightarrow{w}\vert{}}}$$
+$$\boxed{\frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\Vert{}\overrightarrow{w}\Vert{}}}$$
 
 Interpretation:
 It tells us how far the data point lies on the side of the boundary that is correct for its actual class.
@@ -562,7 +563,7 @@ For now, that's the most important meaning.
 **① Ordinary distance is not enough**
 
 
-$$\frac{\left\vert{}\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right\vert{}}{\vert{}\overrightarrow{w}\vert{}}$$
+$$\frac{\left\vert{}\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right\vert{}}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 
 only tells us: How far?
@@ -571,7 +572,7 @@ It loses the side information.
 **② Signed distance preserves side information**
 
 
-$$\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\vert{}\overrightarrow{w}\vert{}}$$
+$$\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 
 tells us: How far + which side?
@@ -592,7 +593,7 @@ means: The point is correctly classified.
 **⑤ Label-adjusted signed distance**
 
 
-$$\boxed{\frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\vert{}\overrightarrow{w}\vert{}}}$$
+$$\boxed{\frac{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)}{\Vert{}\overrightarrow{w}\Vert{}}}$$
 
 
 means: How far the point is on its correct side of the boundary.
