@@ -1,3 +1,5 @@
+
+
 # Part 7 — From Signed Distance to Margin
 
 We have now reached the **central idea** behind why we introduced signed distance in the first place.
@@ -14,6 +16,7 @@ Signed Distance
 Is that side correct for its actual class?
        ↓
 y⁽ⁱ⁾ × signed distance
+
 ```
 
 Now we want to move from **one individual data point** to the **entire dataset**.
@@ -30,7 +33,7 @@ And this is where the concept of **margin** comes in.
 
 For a specific training point $\overrightarrow{x}^{(i)}$, signed distance from the decision boundary is:
 
-$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b}{|\overrightarrow{w}|}$
+$$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 This tells us:
 
@@ -38,7 +41,7 @@ This tells us:
 
 Then we incorporated the actual class label:
 
-$y^{(i)}d^{(i)} = \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{|\overrightarrow{w}|}$
+$$y^{(i)}d^{(i)} = \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 This tells us:
 
@@ -50,7 +53,7 @@ But ML is not about one point.
 
 We have a dataset containing many points:
 
-${(\overrightarrow{x}^{(1)},y^{(1)}),(\overrightarrow{x}^{(2)},y^{(2)}),\ldots,(\overrightarrow{x}^{(n)},y^{(n)})}$
+$$\{(\overrightarrow{x}^{(1)},y^{(1)}),(\overrightarrow{x}^{(2)},y^{(2)}),\ldots,(\overrightarrow{x}^{(n)},y^{(n)})\}$$
 
 So now we need to think about **all the points together**.
 
@@ -71,6 +74,7 @@ Suppose we have the same dataset and two possible decision boundaries.
                   |
               -   |   -
             -     |     -
+
 ```
 
 The points are separated, but some points are quite close to the boundary.
@@ -89,6 +93,7 @@ The points are separated, but some points are quite close to the boundary.
 
                -   -
              -       -
+
 ```
 
 Here the two classes have a larger separation.
@@ -129,6 +134,7 @@ Imagine a road separating two groups of people.
           ●
 
        Group B
+
 ```
 
 The boundary is not merely separating the groups.
@@ -153,6 +159,7 @@ Point 2 → 7 units
 Point 3 → 5 units
 Point 4 → 2 units
 Point 5 → 8 units
+
 ```
 
 The boundary is generally quite far from most points.
@@ -175,7 +182,7 @@ Therefore:
 
 For every training point, we can calculate the label-adjusted signed distance:
 
-$y^{(i)}d^{(i)}$
+$$y^{(i)}d^{(i)}$$
 
 Suppose we get:
 
@@ -187,6 +194,7 @@ Point       y⁽ⁱ⁾d⁽ⁱ⁾
 3              8
 4              2
 5              6
+
 ```
 
 All are positive.
@@ -197,11 +205,11 @@ But which point determines the safety of our boundary?
 
 The closest one:
 
-$2$
+$$2$$
 
 So the margin is related to:
 
-$\min_i y^{(i)}d^{(i)}$
+$$\min_i y^{(i)}d^{(i)}$$
 
 This is a very important transition.
 
@@ -211,11 +219,11 @@ This is a very important transition.
 
 Using our expression for label-adjusted signed distance:
 
-$y^{(i)}d^{(i)} = \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{|\overrightarrow{w}|}$
+$$y^{(i)}d^{(i)} = \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 the geometric margin can be expressed as:
 
-$\gamma = \min_i \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{|\overrightarrow{w}|}$
+$$\gamma = \min_i \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b)}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 Don't try to memorize this yet.
 
@@ -231,6 +239,7 @@ Find the smallest one
 That tells us how close the closest point is
         ↓
 That is the margin
+
 ```
 
 ---
@@ -247,6 +256,7 @@ Point B → 8 units
 Point C → 6 units
 Point D → 1 unit
 Point E → 7 units
+
 ```
 
 The boundary has plenty of room around A, B, C and E.
@@ -257,7 +267,7 @@ D is the point that limits how much we can safely move the boundary.
 
 Therefore:
 
-$\min(10,8,6,1,7)=1$
+$$\min(10,8,6,1,7)=1$$
 
 So the margin is controlled by the **closest point**.
 
@@ -298,6 +308,7 @@ Think of the decision boundary as a wall.
         ●
 
                  -1 class
+
 ```
 
 The closest points create the effective **safety zone** around the boundary.
@@ -316,7 +327,7 @@ This distinction is important.
 
 For one particular point:
 
-$d^{(i)}$
+$$d^{(i)}$$
 
 asks:
 
@@ -324,7 +335,7 @@ asks:
 
 ### Label-adjusted distance
 
-$y^{(i)}d^{(i)}$
+$$y^{(i)}d^{(i)}$$
 
 asks:
 
@@ -332,7 +343,7 @@ asks:
 
 ### Margin
 
-$\gamma = \min_i y^{(i)}d^{(i)}$
+$$\gamma = \min_i y^{(i)}d^{(i)}$$
 
 asks:
 
@@ -352,6 +363,7 @@ One point + its actual class
 Margin
    ↓
 Entire dataset
+
 ```
 
 This distinction is extremely important.
@@ -371,13 +383,14 @@ Consider two decision boundaries.
     ---- Boundary ----
 
       - - - -
+
 ```
 
 Closest point is very close.
 
 Margin:
 
-$\gamma = 1$
+$$\gamma = 1$$
 
 ---
 
@@ -393,13 +406,14 @@ $\gamma = 1$
 
 
       - - - -
+
 ```
 
 There is more separation.
 
 Margin:
 
-$\gamma = 4$
+$$\gamma = 4$$
 
 Intuitively, Boundary B is safer.
 
@@ -429,6 +443,7 @@ Small margin:
        | tiny change
        ↓
 -------|----------------
+
 ```
 
 But if the margin is large:
@@ -444,6 +459,7 @@ Large margin:
 
 -------------------------
        Boundary
+
 ```
 
 The same small perturbation is less likely to change the classification.
@@ -462,15 +478,15 @@ We previously learned about the distance between **two parallel planes/lines**.
 
 For a decision boundary:
 
-$\overrightarrow{w}^{T}\overrightarrow{x} + b = 0$
+$$\overrightarrow{w}^{T}\overrightarrow{x} + b = 0$$
 
 we can imagine two parallel boundaries around it:
 
-$\overrightarrow{w}^{T}\overrightarrow{x} + b = +c$
+$$\overrightarrow{w}^{T}\overrightarrow{x} + b = +c$$
 
 and:
 
-$\overrightarrow{w}^{T}\overrightarrow{x} + b = -c$
+$$\overrightarrow{w}^{T}\overrightarrow{x} + b = -c$$
 
 They have the same normal vector $\overrightarrow{w}$, so they are parallel.
 
@@ -498,6 +514,7 @@ Conceptually:
 ----------------------   - margin boundary
 
        - class
+
 ```
 
 This is the geometric picture that eventually leads to the famous **maximum-margin separator**.
@@ -512,17 +529,17 @@ You may encounter slightly different terminology in ML resources.
 
 For a particular point:
 
-$y^{(i)}\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{|\overrightarrow{w}|}$
+$$y^{(i)}\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 For the dataset, the smallest such value is the geometric margin:
 
-$\gamma = \min_i \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b)}{|\overrightarrow{w}|}$
+$$\gamma = \min_i \frac{y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b)}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 ### Functional margin
 
-Sometimes we omit the normalization by $|\overrightarrow{w}|$:
+Sometimes we omit the normalization by $\Vert{}\overrightarrow{w}\Vert{}$:
 
-$y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b)$
+$$y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b)$$
 
 This is called the **functional margin**.
 
@@ -532,17 +549,17 @@ Because multiplying $\overrightarrow{w}$ and $b$ by a positive constant does not
 
 For example:
 
-$\overrightarrow{w}^{T}\overrightarrow{x}+b=0$
+$$\overrightarrow{w}^{T}\overrightarrow{x}+b=0$$
 
 and:
 
-$2\overrightarrow{w}^{T}\overrightarrow{x}+2b=0$
+$$2\overrightarrow{w}^{T}\overrightarrow{x}+2b=0$$
 
 represent exactly the same boundary.
 
 But the functional margin changes.
 
-The geometric margin does not, because the normalization by $|\overrightarrow{w}|$ removes that arbitrary scaling.
+The geometric margin does not, because the normalization by $\Vert{}\overrightarrow{w}\Vert{}$ removes that arbitrary scaling.
 
 This is one reason geometric distance is so important.
 
@@ -558,15 +575,16 @@ Their label-adjusted signed distances are:
 Point 1 → 5
 Point 2 → 3
 Point 3 → 7
+
 ```
 
 Then:
 
-$\gamma = \min(5,3,7)$
+$$\gamma = \min(5,3,7)$$
 
 Therefore:
 
-$\gamma = 3$
+$$\gamma = 3$$
 
 Now imagine another boundary:
 
@@ -574,21 +592,23 @@ Now imagine another boundary:
 Point 1 → 8
 Point 2 → 6
 Point 3 → 10
+
 ```
 
 Then:
 
-$\gamma = \min(8,6,10)$
+$$\gamma = \min(8,6,10)$$
 
 Therefore:
 
-$\gamma = 6$
+$$\gamma = 6$$
 
 So:
 
 ```text
 Boundary A → margin = 3
 Boundary B → margin = 6
+
 ```
 
 Boundary B has the larger margin.
@@ -605,13 +625,14 @@ Suppose:
 Point 1 → +5
 Point 2 → +3
 Point 3 → -2
+
 ```
 
 The negative value means that Point 3 is on the wrong side relative to its actual class.
 
 Therefore:
 
-$\min(5,3,-2) = -2$
+$$\min(5,3,-2) = -2$$
 
 The resulting margin is negative.
 
@@ -629,37 +650,37 @@ Let's put everything together.
 
 ### Decision boundary
 
-$\overrightarrow{w}^{T}\overrightarrow{x}+b=0$
+$$\overrightarrow{w}^{T}\overrightarrow{x}+b=0$$
 
 ↓
 
 ### For a specific training point
 
-$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b$
+$$\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b$$
 
 ↓
 
 ### Signed distance
 
-$d^{(i)}=\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{|\overrightarrow{w}|}$
+$$d^{(i)}=\frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 ↓
 
 ### Include actual class
 
-$y^{(i)}d^{(i)}$
+$$y^{(i)}d^{(i)}$$
 
 ↓
 
 ### Look at all training points
 
-${y^{(1)}d^{(1)},y^{(2)}d^{(2)},...,y^{(n)}d^{(n)}}$
+$$\{y^{(1)}d^{(1)},y^{(2)}d^{(2)},...,y^{(n)}d^{(n)}\}$$
 
 ↓
 
 ### Find the closest one
 
-$\gamma=\min_i y^{(i)}d^{(i)}$
+$$\gamma=\min_i y^{(i)}d^{(i)}$$
 
 ↓
 
@@ -695,6 +716,7 @@ That gives the margin
 Try to make that margin larger
           ↓
 Maximum-margin decision boundary
+
 ```
 
 This is the core intuition behind **Support Vector Machines**.
@@ -714,6 +736,7 @@ A bad fence might be technically correct:
           | fence
           |
        - - - -
+
 ```
 
 But it is dangerously close to some points.
@@ -730,6 +753,7 @@ A better fence gives both classes more breathing room:
 
 
        - - - -
+
 ```
 
 The **margin measures that breathing room**.
@@ -744,19 +768,19 @@ And because the closest point determines the available breathing room:
 
 ### Signed distance
 
-$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{|\overrightarrow{w}|}$
+$$d^{(i)} = \frac{\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b}{\Vert{}\overrightarrow{w}\Vert{}}$$
 
 **One point → how far + which side**
 
 ### Label-adjusted signed distance
 
-$y^{(i)}d^{(i)}$
+$$y^{(i)}d^{(i)}$$
 
 **One point → how far on its correct side**
 
 ### Margin
 
-$\gamma = \min_i y^{(i)}d^{(i)}$
+$$\gamma = \min_i y^{(i)}d^{(i)}$$
 
 **Entire dataset → how close is the closest point?**
 
@@ -771,4 +795,3 @@ $\gamma = \min_i y^{(i)}d^{(i)}$
 > **Signed distance tells us about one point; label-adjusted signed distance tells us whether that point is safely on its correct side; margin looks across all points and asks how close the closest point is to the decision boundary.**
 
 The natural next step is now to understand **why the closest points matter so much and how they lead to the concept of Support Vectors**.
-
