@@ -287,7 +287,7 @@ This gives us a single mathematical test for correctness.
 
 Now let's deliberately misclassify the points.
 
-**Wrong +1 point**
+**Wrong +1 point**  
 Actual:
 
 
