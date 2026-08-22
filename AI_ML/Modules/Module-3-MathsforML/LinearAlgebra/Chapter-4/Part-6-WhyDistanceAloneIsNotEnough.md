@@ -50,7 +50,12 @@ And suppose our decision boundary is:
 
 The classifier predicts:
 
-$$\hat{y}^{(i)} = \begin{cases} +1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0 \\ -1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0 \end{cases}$$
+$$
+\hat{y}^{(i)} = \begin{cases} 
+  +1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b>0 \\
+  -1 & \text{if } \overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b<0 
+\end{cases}
+$$
 
 So far, so good.
 
