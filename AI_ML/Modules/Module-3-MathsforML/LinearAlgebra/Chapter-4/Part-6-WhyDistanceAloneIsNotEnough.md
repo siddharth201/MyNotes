@@ -277,7 +277,8 @@ Let's put them together:
 | $-1$ | Negative | ✅ | Positive |
 
 So:
-**Correct classification ↓**
+**Correct classification  
+ ↓**
 **$y^{(i)}(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)} + b) > 0$**
 
 This gives us a single mathematical test for correctness.
