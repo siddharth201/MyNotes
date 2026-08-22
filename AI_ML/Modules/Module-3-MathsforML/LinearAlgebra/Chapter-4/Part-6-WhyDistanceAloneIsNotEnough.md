@@ -530,12 +530,14 @@ Then:
 
 **Correct +1 point:**  
 $y^{(i)} = +1$  
-$d^{(i)} > 0$  
+$d^{(i)} > 0$   
+ 
 $(+1)(+\text{distance}) = \text{positive}$  
 
 **Correct -1 point:**  
 $y^{(i)} = -1$  
-$d^{(i)} < 0$  
+$d^{(i)} < 0$   
+ 
 $(-1)(-\text{distance}) = \text{positive}$  
 
 So:
