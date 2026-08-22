@@ -308,7 +308,7 @@ So:
 
 $$\boxed{y^{(i)}\left(\overrightarrow{w}^{T}\overrightarrow{x}^{(i)}+b\right)<0}$$
 
-**Wrong -1 point**
+**Wrong -1 point** 
 Actual:
 
 
