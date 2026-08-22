@@ -210,6 +210,7 @@ $$2$$
 So the margin is related to:
 
 $$\min_i y^{(i)}d^{(i)}$$
+$\min_i y^{(i)}d^{(i)}$
 
 This is a very important transition.
 
