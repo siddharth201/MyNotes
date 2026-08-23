@@ -251,7 +251,7 @@ d^{(i)}
 
 gives us a distance measured in actual geometric units, while preserving the sign.
 
-[**Deep Explanation**]()
+[**Deep Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/Maths/NormalizationNeed.md)
 
 ---
 
