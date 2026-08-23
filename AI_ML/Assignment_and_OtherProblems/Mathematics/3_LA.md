@@ -105,5 +105,7 @@ d. -6
 
 <details>
 <summary>Options</Summary> 
+**a.** [-5, 1, 15] and [-21, 6, -12]  
 
+**b.**
 </details>
