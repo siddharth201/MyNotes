@@ -47,6 +47,28 @@ d. -6
 
 </details>  
 
-### Q.3 
+### Q.3 Suppose you have a dataset D which has the following points: [(1,2), (3,1), (0,0), (4,0)]. The corresponding labels are: [0, 1, 0, 1]. We wish to classify this data using a line.
+Which of the following lines classify the points properly?
+
+<details>
+<summary>Options</Summary>  
+
+```text
+a. 4  
+
+b. 2  
+
+c. 3.75
+
+d. -6
+```  
+<details>
+<summary>Answer</summary>
+
+**b. 2**  
+
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
+
+</details> 
 
 </details>
