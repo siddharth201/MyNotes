@@ -63,32 +63,13 @@ d. -6
 * **d.** $x_2 = x_1 + 2$
  
 ```  
+**a.** $x_1 = 0.5$
 
-```math
-$x_1 = 0.5$ &emsp; $x_2 = 1$ &emsp; $x_1 = 2$ &emsp; $x_2 = x_1 + 2$
+**b.** $x_2 = 1$
 
-```  
+**c.** $x_1 = 2$
 
-```math
-$x_1 = 0.5$
-$x_2 = 1$
-$x_1 = 2$
-$x_2 = x_1 + 2$
-
-```
-
-```math
-b. x_1 = 0.5
-```  
-
-```math
-a. x_2 = 1
-```
-c. $
-<details>
-<summary>Answer</summary>
-
-c. $x_1 = 2$
+**d.** $x_2 = x_1 + 2$
 
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
 
