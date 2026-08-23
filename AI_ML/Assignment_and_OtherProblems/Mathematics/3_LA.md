@@ -84,10 +84,11 @@ b. x_1 = 0.5
 ```math
 a. x_2 = 1
 ```
+c. $
 <details>
 <summary>Answer</summary>
 
-c. x_1 = 2  
+c. $x_1 = 2$
 
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
 
