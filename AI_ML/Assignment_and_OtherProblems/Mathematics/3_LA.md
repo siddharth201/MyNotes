@@ -124,18 +124,6 @@ d. -6
 
 ---  
 
-### Given vectors v 
-1
-​
-  and v 
-2
-​
-  of same dimensionality, then the length of the projection of v 
-1
-​
-  on v 
-2
-​
-  is :  
+### Given vectors $v_1$  and $v_2$ of same dimensionality, then the length of the projection of $v_1$  on $v_2$  is :  
 
 
