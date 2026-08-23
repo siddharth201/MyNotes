@@ -150,7 +150,13 @@ d. -6
 ### Q.7 Given two equations of plane $π1:2x+3y+6=0$ and $π2:4x+6y+12=0$. How many common/intersecting points these planes have?  
 
 <details>
-<summary>Options</Summary>
+<summary>Options</Summary>  
+
+a. 1  
+
+b. 2  
+
+c. 
 </details>
 
 
