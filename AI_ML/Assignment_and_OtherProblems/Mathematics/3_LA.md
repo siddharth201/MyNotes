@@ -53,8 +53,8 @@ Which of the following lines classify the points properly?
 <details>
 <summary>Options</Summary>  
 
-```text
-a. 4  
+```math
+x_1 =   
 
 b. 2  
 
