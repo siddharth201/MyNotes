@@ -213,11 +213,9 @@ So:
 ```
 
 ---
-{
-\|\overrightarrow{w}\|
-}
 
-# 5. Why Do We Divide by $|\overrightarrow{w}|$?
+
+# 5. Why Do We Divide by $||\overrightarrow{w}||$?
 
 This is something we already learned in the previous chapter.
 
