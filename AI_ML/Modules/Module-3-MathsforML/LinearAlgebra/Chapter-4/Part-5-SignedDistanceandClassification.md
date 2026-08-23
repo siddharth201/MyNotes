@@ -251,6 +251,8 @@ d^{(i)}
 
 gives us a distance measured in actual geometric units, while preserving the sign.
 
+[**Deep Explanation**]()
+
 ---
 
 # 6. Let's See the Three Cases
