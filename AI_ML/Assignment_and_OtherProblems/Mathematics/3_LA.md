@@ -185,6 +185,13 @@ d. -6
 
 **c.** 3
 
-**d.** 7
+**d.** 7  
+
+<details>
+<summary>Answer</summary>
+
+**a.** 0
+
+</details>
 </details>
 
