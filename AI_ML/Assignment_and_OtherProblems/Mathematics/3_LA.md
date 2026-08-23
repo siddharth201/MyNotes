@@ -60,12 +60,12 @@ b. x_2 = 1
 
 c. x_1 = 2
 
-d. -6
+d. x_2 = x_1 + 2
 ```  
 <details>
 <summary>Answer</summary>
 
-**b. 2**  
+**c. x_1 = 2**  
 
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
 
