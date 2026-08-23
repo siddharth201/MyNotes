@@ -54,9 +54,9 @@ Which of the following lines classify the points properly?
 <summary>Options</Summary>  
 
 ```math
-x_1 = 0.5  
+a. x_1 = 0.5  
 
-b. 2  
+b. x_2 = 1  
 
 c. 3.75
 
