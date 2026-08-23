@@ -82,4 +82,20 @@ d. -6
 <details>
 <summary>Options</Summary> 
 
+**1.** The datapoint $(x_1,y_1)$ lies towards the normal of the plane  
+
+**2.** The datapoint $(x_1,y_1)$ lies towards in opposite direction to the normal of the plane  
+
+**3.** The datapoint $(x_1,y_1)$ lies on the plane
+
+**4.** Nothing can be concluded  
+
+<details>
+<summary>Answer</summary>
+
+**c.** $x_1 = 2$ 
+
+[Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.3.md)  
+
+</details>
 </details>
