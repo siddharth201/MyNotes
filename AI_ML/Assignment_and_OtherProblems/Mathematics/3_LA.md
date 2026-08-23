@@ -45,6 +45,8 @@ d. -6
 
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.2.md)  
 
-</details>
+</details>  
+
+### Q.3 
 
 </details>
