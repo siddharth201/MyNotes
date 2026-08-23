@@ -51,8 +51,7 @@ d. -6
 
 ---
 
-### Q.3 Suppose you have a dataset D which has the following points: [(1,2), (3,1), (0,0), (4,0)]. The corresponding labels are: [0, 1, 0, 1]. We wish to classify this data using a line.
-Which of the following lines classify the points properly?
+### Q.3 Suppose you have a dataset D which has the following points: [(1,2), (3,1), (0,0), (4,0)]. The corresponding labels are: [0, 1, 0, 1]. We wish to classify this data using a line. Which of the following lines classify the points properly?
 
 <details>
 <summary>Options</Summary>  
