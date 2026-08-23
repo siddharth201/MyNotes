@@ -213,6 +213,9 @@ So:
 ```
 
 ---
+{
+\|\overrightarrow{w}\|
+}
 
 # 5. Why Do We Divide by $|\overrightarrow{w}|$?
 
