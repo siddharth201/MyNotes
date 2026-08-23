@@ -72,15 +72,22 @@ The point did not move. The line did not move. Yet, the score jumped from $4$ to
 
 Dividing by $\vert{}\vert{}\vec{w}\vert{}\vert{}$ removes this scaling effect completely. Let us compute $\vert{}\vert{}\vec{w}\vert{}\vert{}$ (the length of the weight vector) for both:
 
-* First equation weights $\vec{w} = [1, 1]$:
-$$\vert{}\vert{}\vec{w}\vert{}\vert{} = \sqrt{1^2 + 1^2} = \sqrt{2}$$ 
-$$\text{True Distance} = \frac{4}{\sqrt{2}} \approx 2.83$$ 
-* Second equation weights $\vec{w} = [10, 10]$:
-$$\vert{}\vert{}\vec{w}\vert{}\vert{} = \sqrt{10^2 + 10^2} = \sqrt{200} = 10\sqrt{2}$$ 
+* First equation weights $\vec{w} = [1, 1]$:  
+
+$$\vert{}\vert{}\vec{w}\vert{}\vert{} = \sqrt{1^2 + 1^2} = \sqrt{2}$$  
+ 
+$$\text{True Distance} = \frac{4}{\sqrt{2}} \approx 2.83$$  
+ 
+* Second equation weights $\vec{w} = [10, 10]$:  
+
+$$\vert{}\vert{}\vec{w}\vert{}\vert{} = \sqrt{10^2 + 10^2} = \sqrt{200} = 10\sqrt{2}$$  
+ 
 $$\text{True Distance} = \frac{40}{10\sqrt{2}} = \frac{4}{\sqrt{2}} \approx 2.83$$ 
 
-By dividing by $\vert{}\vert{}\vec{w}\vert{}\vert{}$, both equations yield the exact same physical distance in real coordinate space units.
-------------------------------
+By dividing by $\vert{}\vert{}\vec{w}\vert{}\vert{}$, both equations yield the exact same physical distance in real coordinate space units.  
+
+------------------------------  
+
 ## Summary Checklist
 
 * Raw Score: Measures confidence relative to weight scale.
