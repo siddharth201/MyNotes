@@ -166,6 +166,8 @@ d. -6
 
 **c.** Infinite 
 
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.7.md)
+
 </details>  
 
 </details>  
