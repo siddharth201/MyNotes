@@ -152,13 +152,21 @@ d. -6
 <details>
 <summary>Options</Summary>  
 
-a. 1  
+**a.** 1  
 
-b. 2  
+**b.** 2  
 
-c. Infinite  
+**c.** Infinite  
 
-d. 
+**d.** Cannot be determined  
+
+<details>
+<summary>Answer</summary>
+
+**c.** Infinite 
+
+</details>  
+
 </details>
 
 
