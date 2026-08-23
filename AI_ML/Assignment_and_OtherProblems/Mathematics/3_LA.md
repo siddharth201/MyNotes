@@ -63,6 +63,14 @@ d. -6
 * **d.** $x_2 = x_1 + 2$
  
 ```  
+
+```math
+**a.** $x_1 = 0.5$ &emsp; **b.** $x_2 = 1$ &emsp; **c.** $x_1 = 2$ &emsp; **d.** $x_2 = x_1 + 2$
+
+```  
+
+```math
+```
 <details>
 <summary>Answer</summary>
 
