@@ -78,11 +78,11 @@ $x_2 = x_1 + 2$
 ```
 
 ```math
-$x_1 = 0.5$
+b. x_1 = 0.5
 ```  
 
 ```math
-$x_2 = 1$
+a. x_2 = 1
 ```
 <details>
 <summary>Answer</summary>
