@@ -156,7 +156,9 @@ a. 1
 
 b. 2  
 
-c. 
+c. Infinite  
+
+d. 
 </details>
 
 
