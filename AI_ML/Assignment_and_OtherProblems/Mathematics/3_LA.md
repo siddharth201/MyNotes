@@ -143,7 +143,8 @@ d. -6
 1. $$\frac{v_1 \cdot v_2}{|v_2|}$$  
 
 </details>
-<details>  
+
+</details>  
 
 ---  
 
