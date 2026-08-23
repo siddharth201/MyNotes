@@ -34,4 +34,8 @@ If you'd like, let me know:
 
 ---  
 
-### 
+### Actually I am not able to fully understand the concept, although I have memorized it but did not understood properly
+
+### Answer:
+
+
