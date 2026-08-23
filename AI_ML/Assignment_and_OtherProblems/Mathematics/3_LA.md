@@ -179,6 +179,12 @@ d. -6
 <details>
 <summary>Options</Summary>
 
+**a.** 0
 
+**a.** 0
+
+**a.** 0
+
+**a.** 0
 </details>
 
