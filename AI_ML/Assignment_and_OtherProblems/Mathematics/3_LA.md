@@ -1,4 +1,4 @@
-### Q.1 Three robots have been programmed to move along the paths x-y-2=0, x+y-4=0, and x+3y=6 in an infinite space. Do you think that these robots will ever collide?
+### Q.1 Three robots have been programmed to move along the paths $x-y-2=0$, $x+y-4=0$, and $x+3y=6$ in an infinite space. Do you think that these robots will ever collide?
 <details>
 <summary>Options</Summary>
 
@@ -25,7 +25,7 @@ d. yes, they can at (1, 1)
 
 ---  
 
-### Q.2 Find the distance of the point (−6,0,0) from the plane 2x−3y+6z=2?  
+### Q.2 Find the distance of the point $(−6,0,0)$ from the plane $2x−3y+6z=2$?  
 <details>
 <summary>Options</Summary>  
 
@@ -51,7 +51,7 @@ d. -6
 
 ---
 
-### Q.3 Suppose you have a dataset D which has the following points: [(1,2), (3,1), (0,0), (4,0)]. The corresponding labels are: [0, 1, 0, 1]. We wish to classify this data using a line. Which of the following lines classify the points properly?
+### Q.3 Suppose you have a dataset D which has the following points: $[(1,2), (3,1), (0,0), (4,0)]$. The corresponding labels are: $[0, 1, 0, 1]$. We wish to classify this data using a line. Which of the following lines classify the points properly?
 
 <details>
 <summary>Options</Summary>    
