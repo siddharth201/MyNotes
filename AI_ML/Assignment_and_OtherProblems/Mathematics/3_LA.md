@@ -75,12 +75,4 @@ d. -6
 
 </details>  
 
-### Given that we have a plane $ax+by+c=0$ and a data point $(x_1,y_1)$ . Now when we insert this data point into the equation of a plane, we get $ax 
-1
-​
- +by 
-1
-​
- +c > 0.
-
-What can be said about this data point?
+### Given that we have a plane $ax+by+c=0$ and a data point $(x_1,y_1)$ . Now when we insert this data point into the equation of a plane, we get $ax_1+by_1+c > 0$. What can be said about this data point?
