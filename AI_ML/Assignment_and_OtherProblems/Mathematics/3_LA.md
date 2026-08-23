@@ -101,4 +101,4 @@ d. -6
 
 ---  
 
-### Q.5 
+### Q.5 Let a = [4, 1, 3] and b = [7, 1, 9] be two vectors. What are the values of $4a - 3b$ and $-7a + b$ respectively?
