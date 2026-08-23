@@ -57,13 +57,11 @@ d. -6
 <summary>Options</Summary>  
 
 ```math
-a. x_1 = 0.5    
-
-b. x_2 = 1    
-
-c. x_1 = 2  
-
-d. x_2 = x_1 + 2  
+* **a.** $x_1 = 0.5$
+* **b.** $x_2 = 1$
+* **c.** $x_1 = 2$
+* **d.** $x_2 = x_1 + 2$
+ 
 ```  
 <details>
 <summary>Answer</summary>
