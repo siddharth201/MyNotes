@@ -64,7 +64,8 @@ $$\text{Score} = 1(3) + 1(3) - 2 = 4$$
 $$\text{Score} = 10(3) + 10(3) - 20 = 40$$ 
   
   
-The point did not move. The line did not move. Yet, the score jumped from $4$ to $40$ purely because we changed our math scaling. An algorithm cannot rely on a "distance" that changes arbitrarily.
+The point did not move. The line did not move. Yet, the score jumped from $4$ to $40$ purely because we changed our math scaling. An algorithm cannot rely on a "distance" that changes arbitrarily.  
+
 ------------------------------
 ## How Normalization Fixes It
 Dividing by $\vert{}\vert{}\vec{w}\vert{}\vert{}$ removes this scaling effect completely. Let us compute $\vert{}\vert{}\vec{w}\vert{}\vert{}$ (the length of the weight vector) for both:
