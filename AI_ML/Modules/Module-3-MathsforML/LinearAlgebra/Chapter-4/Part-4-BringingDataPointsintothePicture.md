@@ -360,9 +360,9 @@ The shortest distance is perpendicular to the boundary.
 
 And perpendicular direction is given by:
 
-```text
-→ w
-```
+
+$\overrightarrow{w}$
+
 
 Therefore:
 
