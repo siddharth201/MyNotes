@@ -55,14 +55,7 @@ d. -6
 
 <details>
 <summary>Options</Summary>  
-
-```math
-* **a.** $x_1 = 0.5$
-* **b.** $x_2 = 1$
-* **c.** $x_1 = 2$
-* **d.** $x_2 = x_1 + 2$
  
-```  
 **a.** $x_1 = 0.5$
 
 **b.** $x_2 = 1$
@@ -71,8 +64,13 @@ d. -6
 
 **d.** $x_2 = x_1 + 2$
 
+<details>
+<summary>Answer</summary>
+
+**c.** $x_1 = 2$ 
+
 [Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/LA-3/Q.3.md)  
 
-</details> 
+</details>
 
 </details>
