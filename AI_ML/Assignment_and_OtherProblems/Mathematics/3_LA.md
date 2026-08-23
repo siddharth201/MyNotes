@@ -172,7 +172,13 @@ d. -6
 
 </details>  
 
----
+---  
+
+### Q.8 Let $x = [2, 1, -3]$ and $y = [5, 8, 6]$ be two vectors. What is the length of the projection of $x$ on $y$?
+
+<details>
+<summary>Options</Summary>
 
 
+</details>
 
