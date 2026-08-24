@@ -18,20 +18,20 @@ E – Exploit-proofed (building applications that are difficult to exploit)
 
 The key principles: Remember the word **"SECURE iOS APP"**
 
-| Letter | Meaning                                |
-| ------ | -------------------------------------- |
+| Letter | Meaning                                 |
+| ------ | --------------------------------------- |
 | **S**  | Secure Storage                          |
-| **E**  | Encryption                        |
-| **C**  | Secure Communication                       |
-| **U**  | User Authentication & Authorization                         |
-| **R**  | Runtime / Memory Safety           |
-| **E**  | Error Handling                       |
-| **I**  | Input Validation                         |
-| **O**  | Omit Hardcoded Secrets                 |
-| **S**  | Security APIs          |
-| **A**  | Attack Surface Minimization |
-| **P**  | Permission Minimization                          | 
-| **P**  | Authorization                          |  
+| **E**  | Encryption                              |
+| **C**  | Secure Communication                    |
+| **U**  | User Authentication & Authorization     |
+| **R**  | Runtime / Memory Safety                 |
+| **E**  | Error Handling                          |
+| **I**  | Input Validation                        |
+| **O**  | Omit Hardcoded Secrets                  |
+| **S**  | Security APIs                           |
+| **A**  | Attack Surface Minimization             |
+| **P**  | Permission Minimization                 | 
+| **P**  | Platform Security Protections           |  
 
 
 **I (Input Validation) :** $LI_fVAR$
