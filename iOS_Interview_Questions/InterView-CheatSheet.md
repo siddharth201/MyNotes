@@ -20,17 +20,18 @@ The key principles: Remember the word **"SECURE iOS APP"**
 
 | Letter | Meaning                                |
 | ------ | -------------------------------------- |
-| **S**  | Memory Safety                          |
+| **S**  | Secure Storage                          |
 | **E**  | Authentication                         |
 | **C**  | Data Encryption                        |
 | **U**  | Secure Storage                         |
 | **R**  | Secure Network Communication           |
 | **E**  | Input Validation                       |
-| **E**  | Error Handling                         |
-| **N**  | Never Hardcode Secrets                 |
-| **T**  | Target a Small Attack Surface          |
-| **I**  | Implement Apple's Latest Security APIs |
-| **A**  | Authorization                          |  
+| **I**  | Error Handling                         |
+| **O**  | Never Hardcode Secrets                 |
+| **S**  | Target a Small Attack Surface          |
+| **A**  | Implement Apple's Latest Security APIs |
+| **P**  | Authorization                          | 
+| **P**  | Authorization                          |  
 
 
 **I (Input Validation) :** $LI_fVAR$
