@@ -16,16 +16,16 @@ P – Preventing common security vulnerabilities
 E – Exploit-proofed (building applications that are difficult to exploit)
 ```
 
-The key principles: Remember the word **"MAD SCIENTIST"**
+The key principles: Remember the word **"SECURE iOS APP"**
 
 | Letter | Meaning                                |
 | ------ | -------------------------------------- |
 | **S**  | Memory Safety                          |
 | **E**  | Authentication                         |
-| **D**  | Data Encryption                        |
-| **S**  | Secure Storage                         |
-| **C**  | Secure Network Communication           |
-| **I**  | Input Validation                       |
+| **C**  | Data Encryption                        |
+| **U**  | Secure Storage                         |
+| **R**  | Secure Network Communication           |
+| **E**  | Input Validation                       |
 | **E**  | Error Handling                         |
 | **N**  | Never Hardcode Secrets                 |
 | **T**  | Target a Small Attack Surface          |
