@@ -20,8 +20,8 @@ The key principles: Remember the word **"MAD SCIENTIST"**
 
 | Letter | Meaning                                |
 | ------ | -------------------------------------- |
-| **M**  | Memory Safety                          |
-| **A**  | Authentication                         |
+| **S**  | Memory Safety                          |
+| **E**  | Authentication                         |
 | **D**  | Data Encryption                        |
 | **S**  | Secure Storage                         |
 | **C**  | Secure Network Communication           |
