@@ -25,7 +25,7 @@ The key principles: Remember the word **"SECURE iOS APP"**
 | **C**  | Secure Communication                       |
 | **U**  | User Authentication & Authorization                         |
 | **R**  | Runtime / Memory Safety           |
-| **E**  | Input Validation                       |
+| **E**  | Error Handling                       |
 | **I**  | Error Handling                         |
 | **O**  | Never Hardcode Secrets                 |
 | **S**  | Target a Small Attack Surface          |
