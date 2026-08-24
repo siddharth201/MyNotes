@@ -30,7 +30,7 @@ The key principles: Remember the word **"SECURE iOS APP"**
 | **O**  | Omit Hardcoded Secrets                 |
 | **S**  | Security APIs          |
 | **A**  | Attack Surface Minimization |
-| **P**  | Authorization                          | 
+| **P**  | Permission Minimization                          | 
 | **P**  | Authorization                          |  
 
 
