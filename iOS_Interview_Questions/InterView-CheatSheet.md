@@ -29,7 +29,7 @@ The key principles: Remember the word **"SECURE iOS APP"**
 | **I**  | Input Validation                         |
 | **O**  | Omit Hardcoded Secrets                 |
 | **S**  | Security APIs          |
-| **A**  | Implement Apple's Latest Security APIs |
+| **A**  | Attack Surface Minimization |
 | **P**  | Authorization                          | 
 | **P**  | Authorization                          |  
 
