@@ -9,7 +9,7 @@
 
 2. SSresidual << SStotal
 
-3. All the elements in the first and last columns are equated to zero.
+3. SSresidual >> SStotal
 
 4. All the elements in the first and last rows are equated to zero.  
 ```   
