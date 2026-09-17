@@ -5,7 +5,7 @@
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. All the elements except those at the border are equated to zero.
+1. SSresidual = SStotal
 
 2. All the elements at the border are equated to zero.
 
