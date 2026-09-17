@@ -1,5 +1,5 @@
 
-### When will the value of R-square tend to -infinity?  
+### Q. When will the value of R-square tend to -infinity?  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
