@@ -17,10 +17,10 @@
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. All the elements except those at the border are equated to zero.  
+3. SSresidual >> SStotal  
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/DAV-1/DAV_1_Q_1.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square_tend_to_-infinity.md)
 </details>  
 
 </details>  
