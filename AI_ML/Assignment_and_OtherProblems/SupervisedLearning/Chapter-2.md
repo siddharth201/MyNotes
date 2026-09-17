@@ -1,5 +1,5 @@
 
-### Q. When will the value of R-square tend to -infinity?  
+### Q.1 When will the value of R-square tend to -infinity?  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
@@ -27,7 +27,7 @@
   
 ---
 
-### Q. What does it imply when $$SS_Residual = SS_Total$$ ?
+### Q.2 What does it imply when $$SS_Residual = SS_Total$$ ?
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
@@ -48,7 +48,7 @@
 2. It is a mean modell  
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square_tend_to_-infinity.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/mean_model.md)
 </details>  
 
 </details>  
