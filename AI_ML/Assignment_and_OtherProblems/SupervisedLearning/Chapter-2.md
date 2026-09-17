@@ -33,7 +33,7 @@
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. SSresidual = SStotal
+1. The model is far worse than the mean model
 
 2. SSresidual << SStotal
 
