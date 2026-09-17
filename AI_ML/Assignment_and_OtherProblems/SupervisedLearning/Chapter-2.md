@@ -1,12 +1,5 @@
 
-### Q1. Matrix elements 
-
-### What will be the outcome of the following code snippet ?
-
-```text
-x = np.ones((5,5))
-x[1:-1,1:-1] = 0 
-```   
+### When will the value of R-square tend to -infinity?  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
