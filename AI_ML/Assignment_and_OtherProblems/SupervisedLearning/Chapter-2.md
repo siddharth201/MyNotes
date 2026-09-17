@@ -11,7 +11,7 @@
 
 3. SSresidual >> SStotal
 
-4. All the elements in the first and last rows are equated to zero.  
+4. SS_residual=0
 ```   
    
 
