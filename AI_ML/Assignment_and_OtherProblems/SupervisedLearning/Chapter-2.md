@@ -37,7 +37,7 @@
 
 2. It is a mean model
 
-3. SSresidual >> SStotal
+3. It is the best model
 
 4. SS_residual=0
 ```   
