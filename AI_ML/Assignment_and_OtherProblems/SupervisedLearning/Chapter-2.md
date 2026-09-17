@@ -35,7 +35,7 @@
 ```text
 1. The model is far worse than the mean model
 
-2. SSresidual << SStotal
+2. It is a mean model
 
 3. SSresidual >> SStotal
 
