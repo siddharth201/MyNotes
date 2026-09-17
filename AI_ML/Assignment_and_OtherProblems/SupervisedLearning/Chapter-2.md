@@ -7,7 +7,7 @@
 ```text
 1. SSresidual = SStotal
 
-2. All the elements at the border are equated to zero.
+2. SSresidual << SStotal
 
 3. All the elements in the first and last columns are equated to zero.
 
