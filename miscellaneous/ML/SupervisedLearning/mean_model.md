@@ -16,10 +16,9 @@ Because its total squared mistakes match the total squared mistakes of the "Lazy
 
 To continue mastering $R^2$ and model evaluation, would you like to explore:
 
-* 
 * What causes a model to perform worse than the mean model (Option 1, yielding a negative $R^2$)?
 * What mathematical condition represents the best model (Option 3)?
-* 
+
 
 
 
