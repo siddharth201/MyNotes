@@ -27,7 +27,7 @@
   
 ---
 
-### Q. When will the value of R-square tend to -infinity?  
+### Q. What does it imply when SS_Residual = SS_Total ?
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
