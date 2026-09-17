@@ -27,7 +27,7 @@
   
 ---
 
-### Q. What does it imply when SS_Residual = SS_Total ?
+### Q. What does it imply when $$SS_Residual = SS_Total$$ ?
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
