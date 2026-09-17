@@ -39,13 +39,13 @@
 
 3. It is the best model
 
-4. SS_residual=0
+4. None of the above
 ```   
    
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-3. SSresidual >> SStotal  
+2. It is a mean modell  
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square_tend_to_-infinity.md)
