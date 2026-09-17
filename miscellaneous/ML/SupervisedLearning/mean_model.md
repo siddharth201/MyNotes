@@ -2,7 +2,7 @@ The correct answer is 2. It is a mean model (or performs exactly like one).
 
 ##  The Math Behind the Answer
 
-Let's plug $SS_{Residual} = SS_{Total}$ into our trusted $R^2$ formula:   
+Let's plug $SS_{Residual} = SS_{Total}$ into our trusted $R^2$ formula:     
 
 $$R^2 = 1 - \frac{SS_{Residual}}{SS_{Total}}$$ 
 Since both terms are equal, the fraction simplifies to 1:
