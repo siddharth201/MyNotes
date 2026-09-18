@@ -1,2 +1,2 @@
 
-
+The range of the slope (\(m\)) is all real numbers, which stretches from negative infinity to positive infinity (\(-\infty < m < +\infty\)).The value of \(m\) can be absolutely any positive number, negative number, or zero, depending on how the line tilts:Positive Slope (\(m > 0\)): The line slants upward from left to right. As the line becomes steeper and closer to being perfectly vertical, \(m\) approaches \(+\infty \).Negative Slope (\(m < 0\)): The line slants downward from left to right. As it gets steeper in the downward direction, \(m\) approaches \(-\infty \).Zero Slope (\(m = 0\)): The line is perfectly horizontal (flat).
