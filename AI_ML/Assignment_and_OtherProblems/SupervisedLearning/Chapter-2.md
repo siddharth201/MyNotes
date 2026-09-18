@@ -190,7 +190,7 @@ Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Sq
 
 2. Minimum is -1
 
-3. 0 to infinity
+3. Maximum is 1
 
 4. -1 to 1
 ```   
