@@ -172,3 +172,38 @@ Choose the correct answer from below, please note that this question may have mu
   
 ---
 
+
+### Q.7 What will be the minima and maxima for the R-squared metric? The formula for R-squared is shown below:
+
+$$R^2 = 1 - \frac{SSR}{TSS}$$
+
+$$R^2 = 1 - \frac{\sum (y_i-\hat{y}_i)^2}{\sum (y_i-\bar{y}_i)^2}$$
+
+Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Squares?
+
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. -infinity to + infinity
+
+2. 0 to 1
+
+3. 0 to infinity
+
+4. -1 to 1
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. -infinity to + infinity
+  
+  
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/SlopeOfLine.md)
+</details>  
+
+</details>  
+  
+---
