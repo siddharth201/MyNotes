@@ -202,7 +202,7 @@ Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Sq
 
 3. Maximum is 1
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/SlopeOfLine.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Minima_Maxima_R-square.md)
 </details>  
 
 </details>  
