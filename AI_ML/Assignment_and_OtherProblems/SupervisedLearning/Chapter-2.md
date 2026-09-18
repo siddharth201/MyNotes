@@ -186,7 +186,7 @@ Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Sq
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. -infinity to + infinity
+1. Minimum is -infinity
 
 2. 0 to 1
 
