@@ -53,4 +53,32 @@
 
 </details>  
   
+---  
+
+### Q.2 What does it imply when $$SS_Residual = SS_Total$$ ?
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. The model is far worse than the mean model
+
+2. It is a mean model
+
+3. It is the best model
+
+4. None of the above
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+2. It is a mean modell  
+  
+  
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/mean_model.md)
+</details>  
+
+</details>  
+  
 ---
