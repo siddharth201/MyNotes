@@ -150,7 +150,7 @@ Choose the correct answer from below, please note that this question may have mu
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. y = -4x - 3
+1. -infinity to + infinity
 
 2. y = 4x + 3
 
