@@ -26,6 +26,8 @@ If you were to train a linear regression model on data following this exact line
 Would you like to find the standard form of this equation ($Ax + By = C$), or see how to plot it using Python (matplotlib)?
 
 
+## How we can draw this on paper?
+
 To draw the line $y = -4x - 3$ on paper, you only need to plot two points on a grid and connect them with a ruler.
 Here is the easiest step-by-step way to do it:
 ## Step 1: Draw your X and Y axes
@@ -46,10 +48,11 @@ You already know the line passes through the point given in the problem: $(-2, 5
 * Draw a dot at $(-2, 5)$.
 
 (Alternative using slope: Since the slope is $-4$, you can start at your first dot $(0,-3)$, go left 1 unit, and go up 4 units to find the point $(-1, 1)$.)
+
 ## Step 4: Connect the dots
 Place a straight ruler across both dots and draw a line clean through them. Put arrows on both ends of the line to show it goes on forever.
-------------------------------
-Would you like to practice finding points for another equation, or should we look at how multiple lines intersect on a graph?
+
+
 
 
 
