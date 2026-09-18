@@ -156,13 +156,13 @@ Choose the correct answer from below, please note that this question may have mu
 
 3. 0 to infinity
 
-4. y = 4x - 3
+4. -1 to 1
 ```   
    
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. y = -4x - 3
+1. -infinity to + infinity
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/FindEquation.md)
