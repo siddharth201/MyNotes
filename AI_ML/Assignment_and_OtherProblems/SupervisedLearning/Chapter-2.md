@@ -228,9 +228,7 @@ c. 2
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. 1. Minimum is -infinity  
-
-3. Maximum is 1
+c. 2
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Minima_Maxima_R-square.md)
 </details>  
