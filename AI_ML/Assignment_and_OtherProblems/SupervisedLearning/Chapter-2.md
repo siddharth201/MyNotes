@@ -124,7 +124,7 @@ Choose the correct answer from below, please note that this question may have mu
 ```text
 1. y = -4x - 3
 
-2. model.coef_
+2. y = 4x + 3
 
 3. model.intercept_
 
