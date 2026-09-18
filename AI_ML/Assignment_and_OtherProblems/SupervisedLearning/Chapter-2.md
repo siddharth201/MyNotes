@@ -128,14 +128,13 @@ Choose the correct answer from below, please note that this question may have mu
 
 3. y = -4x + 3
 
-4. model.score()
+4. y = 4x - 3
 ```   
    
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-2. model.coef_  
-3. model.intercept_
+1. y = -4x - 3
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Skelearn_Parameters.md)
