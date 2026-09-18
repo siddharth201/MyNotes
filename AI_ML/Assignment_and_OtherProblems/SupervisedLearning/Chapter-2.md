@@ -104,8 +104,7 @@ Choose the correct answer from below, please note that this question may have mu
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-2. model.coef_
-
+2. model.coef_  
 3. model.intercept_
   
   
