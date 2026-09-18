@@ -65,7 +65,7 @@
 
 2. How close a datapoint is from the line of best fit.
 
-3. It is the best model
+3. How far a datapoint is away from the line of best fit
 
 4. None of the above
 ```   
