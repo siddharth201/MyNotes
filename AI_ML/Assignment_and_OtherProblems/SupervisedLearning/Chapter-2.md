@@ -114,3 +114,35 @@ Choose the correct answer from below, please note that this question may have mu
 </details>  
   
 ---
+
+
+### Q.4 After fitting the model using sklearn library, how can we get the parameters of line (hyperplane) ?
+
+Choose the correct answer from below, please note that this question may have multiple correct answers
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. model.predict()
+
+2. model.coef_
+
+3. model.intercept_
+
+4. model.score()
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+2. model.coef_  
+3. model.intercept_
+  
+  
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Skelearn_Parameters.md)
+</details>  
+
+</details>  
+  
+---
