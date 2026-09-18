@@ -144,7 +144,7 @@ Choose the correct answer from below, please note that this question may have mu
   
 ---  
 
-### Q.6 Find the equation of the line that passes through the point (-2 , 5) and has a slope of -4.
+### Q.6 Given an equation of line, y = mx + c, What is the range of slope (m)?
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
