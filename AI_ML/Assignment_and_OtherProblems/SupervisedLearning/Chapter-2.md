@@ -67,7 +67,7 @@
 
 3. How far a datapoint is away from the line of best fit
 
-4. None of the above
+4. None of the options
 ```   
    
 
