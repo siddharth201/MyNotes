@@ -230,7 +230,7 @@ c. 2
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
 c. 2
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Minima_Maxima_R-square.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/ParametersInLinearLine.md)
 </details>  
 
 </details>  
