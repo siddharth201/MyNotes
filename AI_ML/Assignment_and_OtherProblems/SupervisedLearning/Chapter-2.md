@@ -73,10 +73,10 @@
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-2. It is a mean modell  
+1. How much better is our model performing compared to the mean model.
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/mean_model.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square-intutive.md
 </details>  
 
 </details>  
