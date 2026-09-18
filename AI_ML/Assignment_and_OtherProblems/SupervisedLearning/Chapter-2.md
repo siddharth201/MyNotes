@@ -152,7 +152,7 @@ Choose the correct answer from below, please note that this question may have mu
 ```text
 1. -infinity to + infinity
 
-2. y = 4x + 3
+2. 0 to 1
 
 3. y = -4x + 3
 
