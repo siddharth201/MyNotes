@@ -137,7 +137,7 @@ Choose the correct answer from below, please note that this question may have mu
 1. y = -4x - 3
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Skelearn_Parameters.md)
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/FindEquation.md)
 </details>  
 
 </details>  
