@@ -76,7 +76,7 @@
 1. How much better is our model performing compared to the mean model.
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square-intutive.md
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square-intutive.md)
 </details>  
 
 </details>  
@@ -109,7 +109,7 @@ Choose the correct answer from below, please note that this question may have mu
 3. model.intercept_
   
   
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square-intutive.md
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Skelearn_Parameters.md)
 </details>  
 
 </details>  
