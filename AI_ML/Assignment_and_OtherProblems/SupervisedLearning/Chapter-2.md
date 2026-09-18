@@ -116,7 +116,7 @@ Choose the correct answer from below, please note that this question may have mu
 ---
 
 
-### Q.Find the equation of the line that passes through the point (-2 , 5) and has a slope of -4.
+### Q.5 Find the equation of the line that passes through the point (-2 , 5) and has a slope of -4.
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
