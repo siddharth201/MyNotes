@@ -104,7 +104,9 @@ Choose the correct answer from below, please note that this question may have mu
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. How much better is our model performing compared to the mean model.
+2. model.coef_
+
+3. model.intercept_
   
   
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square-intutive.md
