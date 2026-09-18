@@ -61,7 +61,7 @@
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. The model is far worse than the mean model
+1. How much better is our model performing compared to the mean model.
 
 2. It is a mean model
 
