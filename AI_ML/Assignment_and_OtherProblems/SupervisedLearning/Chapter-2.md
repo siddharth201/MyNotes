@@ -208,3 +208,33 @@ Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Sq
 </details>  
   
 ---
+
+ ### Q.8 How many parameters are needed to estimate a simple linear regression model if there is just one independent variable?
+
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. Minimum is -infinity
+
+2. Minimum is -1
+
+3. Maximum is 1
+
+4. Maximum is infinity
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. 1. Minimum is -infinity  
+
+3. Maximum is 1
+  
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Minima_Maxima_R-square.md)
+</details>  
+
+</details>  
+  
+---
