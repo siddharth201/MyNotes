@@ -142,4 +142,32 @@ Choose the correct answer from below, please note that this question may have mu
 
 </details>  
   
+---  
+
+### Q.6 Find the equation of the line that passes through the point (-2 , 5) and has a slope of -4.
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. y = -4x - 3
+
+2. y = 4x + 3
+
+3. y = -4x + 3
+
+4. y = 4x - 3
+```   
+   
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. y = -4x - 3
+  
+  
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/FindEquation.md)
+</details>  
+
+</details>  
+  
 ---
