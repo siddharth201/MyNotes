@@ -154,7 +154,7 @@ Choose the correct answer from below, please note that this question may have mu
 
 2. 0 to 1
 
-3. y = -4x + 3
+3. 0 to infinity
 
 4. y = 4x - 3
 ```   
