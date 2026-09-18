@@ -188,7 +188,7 @@ Where **SSR** is the Sum of Squared Residuals and **TSS** is the Total sum of Sq
 ```text
 1. Minimum is -infinity
 
-2. 0 to 1
+2. Minimum is -1
 
 3. 0 to infinity
 
