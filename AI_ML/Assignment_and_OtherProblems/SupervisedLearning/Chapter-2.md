@@ -92,13 +92,13 @@ Choose the correct answer from below, please note that this question may have mu
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. How much better is our model performing compared to the mean model.
+1. model.predict()
 
-2. How close a datapoint is from the line of best fit.
+2. model.coef_
 
-3. How far a datapoint is away from the line of best fit
+3. model.intercept_
 
-4. None of the options
+4. model.score()
 ```   
    
 
