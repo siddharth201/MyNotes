@@ -220,7 +220,7 @@ a. 0
 
 b. 1
 
-3. Maximum is 1
+c. 2
 
 4. Maximum is infinity
 ```   
