@@ -63,7 +63,7 @@
 ```text
 1. How much better is our model performing compared to the mean model.
 
-2. It is a mean model
+2. How close a datapoint is from the line of best fit.
 
 3. It is the best model
 
