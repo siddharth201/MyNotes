@@ -222,7 +222,7 @@ b. 1
 
 c. 2
 
-4. Maximum is infinity
+4. Can't determine
 ```   
    
 
