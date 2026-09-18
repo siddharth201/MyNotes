@@ -84,7 +84,9 @@
 ---
 
 
-### Q.3 What do you understand by R-square score, intuitively ?
+### Q.4 After fitting the model using sklearn library, how can we get the parameters of line (hyperplane) ?
+
+Choose the correct answer from below, please note that this question may have multiple correct answers
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
