@@ -55,7 +55,7 @@
   
 ---  
 
-### Q.2 What does it imply when $$SS_Residual = SS_Total$$ ?
+### Q.3 What do you understand by R-square score, intuitively ?
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
