@@ -46,7 +46,7 @@ If you understand these five, most of Modern Concurrency becomes connected rathe
 
 ### Interview Answer
 
-> Concurrency means allowing multiple units of work to make progress during overlapping periods of time. The system can switch between tasks while one task is waiting, such as waiting for network I/O.
+> Concurrency is about dealing with multiple tasks at the same time, but not necessarily running them simultaneously. It allows the system to interleave tasks so they progress together. In iOS, concurrency is achieved using GCD, OperationQueue, and Swift’s async/await..
 
 Example:
 
