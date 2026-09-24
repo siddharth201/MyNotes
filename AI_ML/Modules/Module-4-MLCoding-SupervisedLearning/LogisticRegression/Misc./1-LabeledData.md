@@ -1,3 +1,5 @@
+## Q. Supervised learning uses Labeled data to learn pattern. Explain this
+
 Supervised learning relies on labeled data, which means every piece of information in the training dataset already includes the correct answer. Think of it like learning a new subject with a teacher who provides the questions along with an answer key.
 
 Here is a simple breakdown of how this process works:
