@@ -1,3 +1,6 @@
+
+## Q. Can we fit Linear Regression Model for a classification problem?
+
 Yes, you can fit a Linear Regression model to a classification problem, but it is generally a bad idea.
 While the math will technically compute and spit out a straight line, Linear Regression suffers from major flaws when forced to categorize data.
 Here is an intuitive breakdown of why it breaks down, using a 0 (Not Spam) and 1 (Spam) example.
