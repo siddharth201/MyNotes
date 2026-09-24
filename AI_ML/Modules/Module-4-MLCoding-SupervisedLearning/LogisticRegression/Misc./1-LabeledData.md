@@ -29,6 +29,6 @@ Depending on the label, supervised learning usually falls into one of two catego
 * Classification: Used when the label is a distinct category (e.g., predicting if a tumor is Benign or Malignant, or if an image is a Cat or a Dog).
 * Regression: Used when the label is a continuous numerical value (e.g., predicting the exact price of a house based on its square footage and location).
 
-To help tailor this, would you like to explore a specific real-world example (like how Netflix predicts what you'll watch), or do you want to look at the mathematical algorithms used to find these patterns?
+
 
 
