@@ -56,7 +56,7 @@ This example fetches a list of dynamic image URLs from a free mock API (picsum.p
 ### Complete SwiftUI Example (Copy & Paste into Xcode)
 You can paste this directly into a new SwiftUI View file or an Xcode Playground (ensure you choose iOS App template if using a playground).
 
-
+```swift
 import SwiftUI
 // 1. A Simple Model to hold our downloaded image datastruct GridItemModel: Identifiable {
     let id = UUID()
@@ -150,6 +150,7 @@ import SwiftUI
         ImageGalleryView()
     }
 }
+```
 
 ## Why TaskGroup shines here:
 If you look closely at the logs or visual loading, all 12 images fetch simultaneously. Because of D.P.S.W., Swift spawns 12 parallel web requests. The UI waits for the group to assemble the batch, and then displays them seamlessly inside the grid all at once.
