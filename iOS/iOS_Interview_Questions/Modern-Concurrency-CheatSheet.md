@@ -439,85 +439,8 @@ They can overlap.
 
 Use TaskGroup when the number of child tasks is **dynamic**.
 
-In Swift, a TaskGroup is a tool used to manage structural concurrency when you need to run a dynamic number of tasks in parallel and wait for all of them to finish.
-
-Unlike async let, which is great for a fixed, known number of concurrent tasks, a TaskGroup allows you to spawn tasks dynamically (like inside a loop).  
-
-**Key Concepts:**  
-
-* **Concurrency:** All tasks added to the group run at the exact same time.  
-
-* **Automatic Cleanup:** The group waits for all its child tasks to finish before it exits.  
-
-* **Type Safety:** All tasks in a specific group must return data of the same type.  
-
----  
-
-To memorize that exact definition, use the acronym D.P.S.W. (think of it like an app or a gaming term, like "Deep Sweep"):
-
-* D – Dynamic: Runs a dynamic number of tasks.
-* P – Parallel: Runs them all in parallel (at the exact same time).
-* S – Structural: Manages structural concurrency (safely contained).
-* W – Wait: Forces the app to wait for all of them to finish.
-
-## 💡 The Mind Trigger
+### 💡 The Mind Trigger
 Just remember: When you have a massive, unpredictable workload, you need to make a D.P.S.W. (Deep Sweep) to clear it all out at once!
-
-
-
-```swift
-import Foundation
-
-// 1. Define a function that simulates a network request
-func fetchUserData(userId: Int) async -> String {
-    // Simulate network delay between 1 and 3 seconds
-    let delay = UInt64.random(in: 1...3)
-    try? await Task.sleep(nanoseconds: delay * 1_000_000_000)
-    
-    return "Data for User \(userId) (took \(delay)s)"
-}
-
-// 2. Define a function that uses TaskGroup to fetch data concurrently
-func fetchAllUsersConcurrently(ids: [Int]) async -> [String] {
-    // We use withTaskGroup because we know the type of data returned (String)
-    await withTaskGroup(of: String.self) { group in
-        var results = [String]()
-        
-        // Dynamically add a child task for each ID
-        for id in ids {
-            group.addTask {
-                return await fetchUserData(userId: id)
-            }
-        }
-        
-        // Collect the results as they finish
-        for await result in group {
-            results.append(result)
-        }
-        
-        return results
-    }
-}
-
-// 3. Main execution context to run the async code
-Task {
-    print("Starting downloads...")
-    let start = CFAbsoluteTimeGetCurrent()
-    
-    let userIds = [101, 102, 103, 104, 105]
-    let profiles = await fetchAllUsersConcurrently(ids: userIds)
-    
-    let end = CFAbsoluteTimeGetCurrent()
-    
-    print("\n--- Results ---")
-    for profile in profiles {
-        print(profile)
-    }
-    
-    print(String(format: "\nTotal time taken: %.2f seconds", end - start))
-}
-
-```
 
 Apple defines `TaskGroup` as a group containing dynamically created child tasks. ([Apple Developer][4])
 
