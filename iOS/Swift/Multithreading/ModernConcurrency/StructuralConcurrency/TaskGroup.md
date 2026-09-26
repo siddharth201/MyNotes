@@ -47,9 +47,8 @@ If you are fetching images from an API array (like an Instagram feed or a photo 
 await withTaskGroup(of: UIImage.self) { group in
     for url in imageUrls {
         group.addTask { await downloadImage(url: url) }
-    }  // Collect images...
-    
-    
+    }    
+    // Collect images...
 }  
 ```
 
