@@ -208,6 +208,7 @@ Here is the exact breakdown of what each part means:
 * W (Wait): The await keyword at the very front forces the app to wait for the entire team to cross the finish line.  
 
 ---  
+  
 
 
 
