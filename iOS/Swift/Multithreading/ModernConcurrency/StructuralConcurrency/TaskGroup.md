@@ -154,7 +154,7 @@ import SwiftUI
 
 ## Why TaskGroup shines here:
 If you look closely at the logs or visual loading, all 12 images fetch simultaneously. Because of D.P.S.W., Swift spawns 12 parallel web requests. The UI waits for the group to assemble the batch, and then displays them seamlessly inside the grid all at once.
-Would you like to see how to change this so that images pop up one by one as soon as they finish downloading, instead of waiting for the entire group to finish?
+
 
 
 
