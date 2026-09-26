@@ -19,5 +19,6 @@ To memorize that exact definition, use the acronym D.P.S.W. (think of it like an
 ## 💡 The Mind Trigger
 Just remember: When you have a massive, unpredictable workload, you need to make a D.P.S.W. (Deep Sweep) to clear it all out at once!
 
+## Q. If I have to download multiple images than I have to use TaskGroup?
 
 
