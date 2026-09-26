@@ -51,6 +51,112 @@ If you are downloading a massive number of images (e.g., 500 high-res photos), s
 
 ## Q. Give a working example of images going into a scrolling list (like a SwiftUI List or LazyVGrid)
 
+Here is a complete, working example using SwiftUI and TaskGroup.
+This example fetches a list of dynamic image URLs from a free mock API (picsum.photos) and downloads all the images concurrently using a TaskGroup before displaying them in a scrolling LazyVGrid.
+### Complete SwiftUI Example (Copy & Paste into Xcode)
+You can paste this directly into a new SwiftUI View file or an Xcode Playground (ensure you choose iOS App template if using a playground).
+
+
+import SwiftUI
+// 1. A Simple Model to hold our downloaded image datastruct GridItemModel: Identifiable {
+    let id = UUID()
+    let image: UIImage
+}
+// 2. The ViewModel that handles concurrent downloading@MainActorclass ImageGalleryViewModel: ObservableObject {
+    @Published var downloadedImages: [GridItemModel] = []
+    @Published var isLoading = false
+    
+    // Mock URLs (A dynamic list of 12 random images)
+    private let imageUrlStrings = (1...12).map { "https://picsum.photos\($0 * 10)/300/300" }
+    
+    func loadAllImages() async {
+        isLoading = true
+        defer { isLoading = false } // Ensures loading stops when done
+        
+        // Remember our acronym D.P.S.W. (Dynamic, Parallel, Structural, Wait)
+        // We use withTaskGroup because the number of URLs is dynamic.
+        await withTaskGroup(of: UIImage?.self) { group in
+            
+            // D - Dynamic: Loop through our dynamic array of URLs
+            for urlString in imageUrlStrings {
+                guard let url = URL(string: urlString) else { continue }
+                
+                // P - Parallel: Add each download task to run concurrently
+                group.addTask {
+                    do {
+                        let (data, _) = try await URLSession.shared.data(from: url)
+                        return UIImage(data: data)
+                    } catch {
+                        print("Failed to download image: \(error)")
+                        return nil // Return nil so one failure doesn't break the whole group
+                    }
+                }
+            }
+            
+            // S & W - Structural & Wait: Collect results safely as they finish
+            var temporaryImages: [GridItemModel] = []
+            for await uiImage in group {
+                if let uiImage = uiImage {
+                    temporaryImages.append(GridItemModel(image: uiImage))
+                }
+            }
+            
+            // Update the UI on the main thread
+            self.downloadedImages = temporaryImages
+        }
+    }
+}
+// 3. The SwiftUI View with a Scrolling LazyVGridstruct ImageGalleryView: View {
+    @StateObject private var viewModel = ImageGalleryViewModel()
+    
+    // Define a simple 3-column grid layout
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    var body: some View {
+        NavigationView {
+            ScrollView {
+                if viewModel.isLoading && viewModel.downloadedImages.isEmpty {
+                    ProgressView("Downloading concurrently...")
+                        .padding(.top, 50)
+                } else {
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        ForEach(viewModel.downloadedImages) { item in
+                            Image(uiImage: item.image)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(minWidth: 0, maxWidth: .infinity)
+                                .frame(height: 110)
+                                .cornerRadius(8)
+                                .clipped()
+                        }
+                    }
+                    .padding()
+                }
+            }
+            .navigationTitle("TaskGroup Gallery")
+            .task {
+                // Automatically triggers the concurrent download when view appears
+                await viewModel.loadAllImages()
+            }
+        }
+    }
+}
+// Preview provider for Xcodestruct ImageGalleryView_Previews: PreviewProvider {
+    static var previews: some View {
+        ImageGalleryView()
+    }
+}
+
+## Why TaskGroup shines here:
+If you look closely at the logs or visual loading, all 12 images fetch simultaneously. Because of D.P.S.W., Swift spawns 12 parallel web requests. The UI waits for the group to assemble the batch, and then displays them seamlessly inside the grid all at once.
+Would you like to see how to change this so that images pop up one by one as soon as they finish downloading, instead of waiting for the entire group to finish?
+
+
+
 
 
 
