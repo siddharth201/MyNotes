@@ -78,7 +78,10 @@ struct GridItemModel: Identifiable {
     let id = UUID()
     let image: UIImage
 }
-// 2. The ViewModel that handles concurrent downloading@MainActorclass ImageGalleryViewModel: ObservableObject {
+// 2. The ViewModel that handles concurrent downloading  
+
+@MainActor  
+class ImageGalleryViewModel: ObservableObject {
     @Published var downloadedImages: [GridItemModel] = []
     @Published var isLoading = false
     
@@ -122,7 +125,9 @@ struct GridItemModel: Identifiable {
         }
     }
 }
-// 3. The SwiftUI View with a Scrolling LazyVGridstruct ImageGalleryView: View {
+// 3. The SwiftUI View with a Scrolling LazyVGrid  
+
+struct ImageGalleryView: View {
     @StateObject private var viewModel = ImageGalleryViewModel()
     
     // Define a simple 3-column grid layout
@@ -161,7 +166,8 @@ struct GridItemModel: Identifiable {
         }
     }
 }
-// Preview provider for Xcodestruct ImageGalleryView_Previews: PreviewProvider {
+// Preview provider for Xcode  
+struct ImageGalleryView_Previews: PreviewProvider {
     static var previews: some View {
         ImageGalleryView()
     }
