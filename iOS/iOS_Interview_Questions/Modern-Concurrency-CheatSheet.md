@@ -464,24 +464,57 @@ Just remember: When you have a massive, unpredictable workload, you need to make
 
 
 ```swift
-let ids = [1, 2, 3, 4, 5]
+import Foundation
 
-let results = await withTaskGroup(of: String.self) { group in
+// 1. Define a function that simulates a network request
+func fetchUserData(userId: Int) async -> String {
+    // Simulate network delay between 1 and 3 seconds
+    let delay = UInt64.random(in: 1...3)
+    try? await Task.sleep(nanoseconds: delay * 1_000_000_000)
     
-    for id in ids {
-        group.addTask {
-            await fetch(id)
-        }
-    }
-    
-    var values: [String] = []
-    
-    for await value in group {
-        values.append(value)
-    }
-    
-    return values
+    return "Data for User \(userId) (took \(delay)s)"
 }
+
+// 2. Define a function that uses TaskGroup to fetch data concurrently
+func fetchAllUsersConcurrently(ids: [Int]) async -> [String] {
+    // We use withTaskGroup because we know the type of data returned (String)
+    await withTaskGroup(of: String.self) { group in
+        var results = [String]()
+        
+        // Dynamically add a child task for each ID
+        for id in ids {
+            group.addTask {
+                return await fetchUserData(userId: id)
+            }
+        }
+        
+        // Collect the results as they finish
+        for await result in group {
+            results.append(result)
+        }
+        
+        return results
+    }
+}
+
+// 3. Main execution context to run the async code
+Task {
+    print("Starting downloads...")
+    let start = CFAbsoluteTimeGetCurrent()
+    
+    let userIds = [101, 102, 103, 104, 105]
+    let profiles = await fetchAllUsersConcurrently(ids: userIds)
+    
+    let end = CFAbsoluteTimeGetCurrent()
+    
+    print("\n--- Results ---")
+    for profile in profiles {
+        print(profile)
+    }
+    
+    print(String(format: "\nTotal time taken: %.2f seconds", end - start))
+}
+
 ```
 
 Apple defines `TaskGroup` as a group containing dynamically created child tasks. ([Apple Developer][4])
