@@ -175,7 +175,15 @@ struct ImageGalleryView_Previews: PreviewProvider {
 ```
 
 ## Why TaskGroup shines here:
-If you look closely at the logs or visual loading, all 12 images fetch simultaneously. Because of D.P.S.W., Swift spawns 12 parallel web requests. The UI waits for the group to assemble the batch, and then displays them seamlessly inside the grid all at once.
+If you look closely at the logs or visual loading, all 12 images fetch simultaneously. Because of D.P.S.W., Swift spawns 12 parallel web requests. The UI waits for the group to assemble the batch, and then displays them seamlessly inside the grid all at once.  
+
+---  
+
+## Breakdown  
+
+### Q. Explain $await withTaskGroup(of: UIImage?.self) { group in$  
+
+
 
 
 
