@@ -443,7 +443,9 @@ Unlike async let, which is great for a fixed, known number of concurrent tasks, 
 
 **Key ConceptsConcurrency:**  
 
-* All tasks added to the group run at the exact same time.Automatic Cleanup: The group waits for all its child tasks to finish before it exits.Type Safety: All tasks in a specific group must return data of the same type.
+* All tasks added to the group run at the exact same time.  
+
+* Automatic Cleanup: The group waits for all its child tasks to finish before it exits.Type Safety: All tasks in a specific group must return data of the same type.
 
 ```swift
 let ids = [1, 2, 3, 4, 5]
