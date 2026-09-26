@@ -435,6 +435,8 @@ They can overlap.
 
 # Q14. What is TaskGroup?
 
+[Details](https://github.com/siddharth201/MyNotes/blob/main/iOS/Swift/Multithreading/ModernConcurrency/StructuralConcurrency/TaskGroup.md)
+
 Use TaskGroup when the number of child tasks is **dynamic**.
 
 In Swift, a TaskGroup is a tool used to manage structural concurrency when you need to run a dynamic number of tasks in parallel and wait for all of them to finish.
