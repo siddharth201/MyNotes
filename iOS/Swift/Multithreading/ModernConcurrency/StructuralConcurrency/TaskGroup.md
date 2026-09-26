@@ -72,7 +72,9 @@ You can paste this directly into a new SwiftUI View file or an Xcode Playground 
 
 ```swift
 import SwiftUI
-// 1. A Simple Model to hold our downloaded image datastruct GridItemModel: Identifiable {
+// 1. A Simple Model to hold our downloaded image data  
+
+struct GridItemModel: Identifiable {
     let id = UUID()
     let image: UIImage
 }
