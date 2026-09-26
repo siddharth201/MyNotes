@@ -28,17 +28,30 @@ Here is the simple rule of thumb to decide:
 ### ❌ Scenario A: You have a FIXED number of images (Use async let)
 If you hardcoded exactly 3 images (like a profile picture, a background banner, and a logo), you do not need a TaskGroup. You should use async let instead because the count is fixed and known ahead of time.
 
-// Fixed number: async let is easier and cleanerasync let profile = downloadImage(url: url1)async let banner = downloadImage(url: url2)let images = await [profile, banner] 
+```swift
+// Fixed number: async let is easier and cleaner  
+
+async let profile = downloadImage(url: url1)  
+async let banner = downloadImage(url: url2)  
+
+let images = await [profile, banner] 
+
+```
 
 ### Scenario B: You have a DYNAMIC number of images (Use TaskGroup)
-If you are fetching images from an API array (like an Instagram feed or a photo gallery), you have no idea if the user has 2 images or 200 images until the app runs. This is when you must use TaskGroup to download them concurrently [].
+If you are fetching images from an API array (like an Instagram feed or a photo gallery), you have no idea if the user has 2 images or 200 images until the app runs. This is when you must use TaskGroup to download them concurrently.
 
-// Dynamic number: You need a TaskGroup to loop and spawn tasksawait withTaskGroup(of: UIImage.self) { group in
+```swift
+// Dynamic number: You need a TaskGroup to loop and spawn tasks  
+
+await withTaskGroup(of: UIImage.self) { group in
     for url in imageUrls {
         group.addTask { await downloadImage(url: url) }
-    }
-    // Collect images...
-}
+    }  // Collect images...
+    
+    
+}  
+```
 
 
 ### Direct Comparison
