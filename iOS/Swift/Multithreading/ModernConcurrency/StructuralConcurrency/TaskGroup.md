@@ -181,7 +181,7 @@ If you look closely at the logs or visual loading, all 12 images fetch simultane
 
 ## Breakdown  
 
-### Q. Explain $await withTaskGroup(of: UIImage?.self) { group in$  
+### Q. Explain await withTaskGroup(of: UIImage?.self) { group in 
 
 This specific line is the starting gate of your structural concurrency block. It initializes the group and sets the rules for every task inside it.
 Here is the exact breakdown of what each part means:
