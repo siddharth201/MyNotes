@@ -205,7 +205,10 @@ Here is the exact breakdown of what each part means:
 * D (Dynamic): This line prepares the engine to accept a dynamic loop of tasks inside the { group in } block.
 * P (Parallel): It signals that everything added to this group object will run at the exact same time.
 * S (Structural): The { group in } closure acts as a literal structural boundary. Tasks cannot leak outside of this block.
-* W (Wait): The await keyword at the very front forces the app to wait for the entire team to cross the finish line.
+* W (Wait): The await keyword at the very front forces the app to wait for the entire team to cross the finish line.  
+
+---  
+
 
 
 
