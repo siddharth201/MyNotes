@@ -55,7 +55,7 @@
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. Class probabilities
+1. Log-loss will be a very high value.
 
 2. Raw scores
 
