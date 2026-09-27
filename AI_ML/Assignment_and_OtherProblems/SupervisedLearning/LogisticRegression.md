@@ -47,6 +47,35 @@
 
 </details>  
   
+---  
+
+### Q.3 Suppose the actual label is y = 1 and the predicted probability is ŷ = 0.8. What will the log-loss be?
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. Class probabilities
+
+2. Raw scores
+
+3. Error rates
+
+4. Regression coefficients
+
+```   
+<details>
+
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. Class probabilities  
+
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/SigmoidFunction.md) 
+  
+</details>  
+
+</details>  
+  
 ---
+
 
 
