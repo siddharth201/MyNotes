@@ -92,12 +92,19 @@ Choose the correct answer from below, please note that this question may have mu
 
 2. When 'MSE' is used as the loss function in logistic regression, the loss function is non-convex in nature.
 
-3. Using 'log loss' as the loss function in logistic regression results in a non-convex loss function.
+3. Using 'log loss' as the loss function in logistic regression results in a non-convex loss function.  
+
+4. When 'MSE' is used as the loss function in logistic regression, the loss function is convex in nature.
 ```   
 <details>
 
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-2. Log-loss will be a very low value.
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>  
+
+```text
+1. Using 'log loss' as the loss function in logistic regression results in a convex loss function.
+
+2. When 'MSE' is used as the loss function in logistic regression, the loss function is non-convex in nature.
+```
 
 [**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
   
