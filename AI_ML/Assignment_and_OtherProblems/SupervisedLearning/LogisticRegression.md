@@ -33,11 +33,13 @@
 
 3. Error rates
 
+4. Regression coefficients
+
 ```   
 <details>
 
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. True  
+1. Class probabilities 
   
 </details>  
 
