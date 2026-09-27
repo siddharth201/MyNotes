@@ -11,7 +11,9 @@ A convex function has only a single, globally optimal bottom point, while a non-
 | Examples in ML | Linear Regression, Logistic Regression, SVMs. | Deep Neural Networks (Deep Learning). |
 
 
-## Graphical Intuition## The "Chord" Rule (Mathematical Definition)
+## Graphical Intuition  
+
+## The "Chord" Rule (Mathematical Definition)
 If you pick any two random points on the curve of a function and draw a straight line segment (a chord) between them:
 
 * Convex: The straight line will always sit above or on the curve.
