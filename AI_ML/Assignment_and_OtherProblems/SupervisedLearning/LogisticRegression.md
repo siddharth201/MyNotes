@@ -80,7 +80,9 @@
 
 With respect to these, which of the following statement(s) is/are true?
 
-Note: The diagrams are just given as examples, answer the question after understanding the convex and non-convex functions.
+Note: The diagrams are just given as examples, answer the question after understanding the convex and non-convex functions.  
+
+Choose the correct answer from below, please note that this question may have multiple correct answers
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
