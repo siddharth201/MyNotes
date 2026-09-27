@@ -107,7 +107,8 @@ Choose the correct answer from below, please note that this question may have mu
 ```
 
 **Explanation**
-[**Convex vs NonConvex**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
+[**Convex vs NonConvex**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Convex-nonConvex.md)   
+[]
   
 </details>  
 
