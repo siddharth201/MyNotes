@@ -21,7 +21,7 @@
   
 ---  
 
-### Q.1 In logistic regression, the output of the sigmoid function is interpreted as:
+### Q.2 In logistic regression, the output of the sigmoid function is interpreted as:
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
