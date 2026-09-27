@@ -74,7 +74,9 @@
   
 ---  
 
-### Q.4 Consider the following diagrams as examples of the convex function(left) and non-convex function(right):  
+### Q.4 Consider the following diagrams as examples of the convex function(left) and non-convex function(right):
+
+![Image](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/Logloss.png)  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
