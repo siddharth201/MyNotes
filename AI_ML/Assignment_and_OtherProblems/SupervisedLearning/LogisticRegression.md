@@ -29,7 +29,7 @@
 ```text
 1. Class probabilities
 
-2. False
+2. Raw scores
 
 ```   
 <details>
