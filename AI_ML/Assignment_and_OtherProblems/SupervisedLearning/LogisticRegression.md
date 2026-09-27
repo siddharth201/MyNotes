@@ -158,14 +158,28 @@ y_true = [1, 0, 1, 0, 0, 0, 1, 1, 0, 1]
 ```
 
 <details>
-<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+<summary>$\color{black}{\huge{\textbf{Programme:}}}$</summary>  
 
 ```text
-1. Log-loss will be a very high value.
+import numpy as np
+def logloss(z, y_true):
+    '''z, y_true are lists
+       output ->  numpy array is expected to be returned
+    '''
+    
+    z = np.asarray(z)
+    y_true = np.asarray(y_true)
 
-2. Log-loss will be a very low value.
+    probability = 1 / (1 + np.exp(-z)) # apply sigmoid to z array
+    
 
-3. Log-loss will be O.
+    loss_array = - (y_true * np.log(probability) + (1 - y_true) * np.log(1-probability))
+    
+    # take mean of loss array to get log loss
+    loss = np.mean(loss_array)
+    
+
+    return np.round(loss, 2)
 ```   
 <details>
 
