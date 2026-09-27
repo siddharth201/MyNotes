@@ -88,7 +88,7 @@ Choose the correct answer from below, please note that this question may have mu
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. Log-loss will be a very high value.
+1. Using 'log loss' as the loss function in logistic regression results in a convex loss function.
 
 2. Log-loss will be a very low value.
 
