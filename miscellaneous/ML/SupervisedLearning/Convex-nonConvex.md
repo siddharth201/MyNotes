@@ -13,7 +13,7 @@ A convex function has only a single, globally optimal bottom point, while a non-
 
 ## Graphical Intuition  
 
-![Image]()  
+![Image](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/ConvexNonConvex.png)  
 
 ## The "Chord" Rule (Mathematical Definition)
 If you pick any two random points on the curve of a function and draw a straight line segment (a chord) between them:
