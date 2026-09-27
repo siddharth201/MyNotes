@@ -90,7 +90,7 @@ Choose the correct answer from below, please note that this question may have mu
 ```text
 1. Using 'log loss' as the loss function in logistic regression results in a convex loss function.
 
-2. Log-loss will be a very low value.
+2. When 'MSE' is used as the loss function in logistic regression, the loss function is non-convex in nature.
 
 3. Log-loss will be O.
 ```   
