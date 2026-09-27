@@ -74,7 +74,7 @@
   
 ---  
 
-### Q.3 Suppose the actual label is y = 1 and the predicted probability is ŷ = 0.8. What will the log-loss be?
+### Q.4 Consider the following diagrams as examples of the convex function(left) and non-convex function(right):  
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
