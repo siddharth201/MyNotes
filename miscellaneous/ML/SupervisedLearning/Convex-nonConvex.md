@@ -13,6 +13,8 @@ A convex function has only a single, globally optimal bottom point, while a non-
 
 ## Graphical Intuition  
 
+![Image]()  
+
 ## The "Chord" Rule (Mathematical Definition)
 If you pick any two random points on the curve of a function and draw a straight line segment (a chord) between them:
 
@@ -20,10 +22,13 @@ If you pick any two random points on the curve of a function and draw a straight
 * Non-Convex: The straight line will cross through or sit below parts of the curve.
 
 
-## Why this Matters in Machine Learning## 1. Optimization Guarantee
-When training a model like Logistic Regression (which uses a convex log-loss function), your algorithm can start anywhere on the curve. If it keeps walking downhill (Gradient Descent), it is guaranteed to find the best possible solution.
-## 2. The Neural Network Problem
+## Why this Matters in Machine Learning  
+
+### 1. Optimization Guarantee
+When training a model like Logistic Regression (which uses a convex log-loss function), your algorithm can start anywhere on the curve. If it keeps walking downhill (Gradient Descent), it is guaranteed to find the best possible solution.  
+
+### 2. The Neural Network Problem
 Deep Neural Networks have highly complex, non-convex loss surfaces. If you initialize your weights poorly, your gradient descent algorithm might walk down into a shallow, suboptimal valley (local minimum) and get stuck there, completely missing the much deeper valley (global minimum) further away. Machine learning engineers use advanced optimizers (like Adam or Momentum) to help the algorithm "bounce" out of these shallow traps.
-Are you studying this to understand gradient descent optimization, or do you need help proving if a specific mathematical equation is convex or non-convex?
+
 
 
