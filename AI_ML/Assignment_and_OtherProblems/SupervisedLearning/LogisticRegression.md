@@ -184,7 +184,7 @@ def logloss(z, y_true):
     return np.round(loss, 2)
 ```   
 
-[Solution Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/LR-Q4.md)  
+[Solution Explanation](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/LR-Q2.md)  
   
 </details>    
   
