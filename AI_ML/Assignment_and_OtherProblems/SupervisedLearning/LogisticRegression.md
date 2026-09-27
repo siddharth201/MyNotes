@@ -106,7 +106,8 @@ Choose the correct answer from below, please note that this question may have mu
 2. When 'MSE' is used as the loss function in logistic regression, the loss function is non-convex in nature.
 ```
 
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
+**Explanation**
+[**Convex vs NonConvex**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
   
 </details>  
 
