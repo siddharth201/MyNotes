@@ -31,6 +31,8 @@
 
 2. Raw scores
 
+3. Error rates
+
 ```   
 <details>
 
