@@ -27,7 +27,7 @@
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
 ```text
-1. True
+1. Class probabilities
 
 2. False
 
