@@ -19,4 +19,28 @@
 
 </details>  
   
+---  
+
+### Q.1 In logistic regression, the output of the sigmoid function is interpreted as:
+
+<details>
+<summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
+
+```text
+1. True
+
+2. False
+
+```   
+<details>
+
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. True  
+  
+</details>  
+
+</details>  
+  
 ---
+
+
