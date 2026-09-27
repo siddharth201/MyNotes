@@ -66,7 +66,7 @@
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
 2. Log-loss will be a very low value.
 
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/SigmoidFunction.md) 
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
   
 </details>  
 
