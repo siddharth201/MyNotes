@@ -39,7 +39,9 @@
 <details>
 
 <summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-1. Class probabilities 
+1. Class probabilities  
+
+[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/R-square_tend_to_-infinity.md) 
   
 </details>  
 
