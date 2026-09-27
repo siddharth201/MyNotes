@@ -181,15 +181,6 @@ def logloss(z, y_true):
 
     return np.round(loss, 2)
 ```   
-<details>
-
-<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
-2. Log-loss will be a very low value.
-
-[**Explanation**](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Logloss.md) 
-  
-</details>  
-
 </details>  
   
 --- 
