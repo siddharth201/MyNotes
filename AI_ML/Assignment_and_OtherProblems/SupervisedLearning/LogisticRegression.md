@@ -11,3 +11,12 @@
 
 ```   
 <details>
+
+<summary>$\color{black}{\huge{\textbf{Answer}}}$</summary>
+1. True  
+  
+</details>  
+
+</details>  
+  
+---
