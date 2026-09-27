@@ -57,7 +57,7 @@
 ```text
 1. Log-loss will be a very high value.
 
-2. Raw scores
+2. Log-loss will be a very low value.
 
 3. Error rates
 
