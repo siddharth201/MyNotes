@@ -78,6 +78,10 @@
 
 ![Image](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/Logloss.png)  
 
+With respect to these, which of the following statement(s) is/are true?
+
+Note: The diagrams are just given as examples, answer the question after understanding the convex and non-convex functions.
+
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
 
