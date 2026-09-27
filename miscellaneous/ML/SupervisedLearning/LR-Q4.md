@@ -26,5 +26,20 @@ A perfectly convex function must shape like a bowl where the slope gets steeper 
 Log-loss uses a logarithm ($-\ln(\hat{y})$) instead of a square power. The logarithm acts like a magnifying glass for catastrophic mistakes: as your prediction gets closer to $0$ when it should be $1$, the log-loss shoots up to infinity, creating a perfectly steep, continuous slope that guides Gradient Descent straight to the global minimum every single time.
 
 
+## Q. Comparison between MSE Loss and Log-Loss for that exact same data point ($y = 1$)
+
+Here is the comparison between MSE Loss and Log-Loss for that exact same data point ($y = 1$).
+Notice how the shapes differ dramatically as the model's weight ($w$) varies:  
+
+### The Visual Difference:
+
+   1. MSE Loss (Left): As you move left (where the model is completely wrong), the curve flattens out. Because it levels off like a plateau, it breaks the mathematical rule of convexity and creates an optimization trap.
+   2. Log-Loss (Right): As the model gets more wrong (moving left), the curve gets steeper and steeper. It forms a clean, continuous slide. No matter where Gradient Descent starts on that curve, the steep slope aggressively pushes the weights down toward the bottom right (the global minimum).
+
+
+
+
+
+
 
 
