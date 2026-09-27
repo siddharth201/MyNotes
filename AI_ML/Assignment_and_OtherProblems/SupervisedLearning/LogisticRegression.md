@@ -117,7 +117,45 @@ Choose the correct answer from below, please note that this question may have mu
   
 ---
   
-### Q.4 Suppose the actual label is y = 1 and the predicted probability is ŷ = 0.8. What will the log-loss be?
+### Q.4 Error function for logistic regression is -$y.log(\hat{y}) - (1 - y).log(1 - \hat{y})$, where y represents the true label and $\hat{y}$ represents the probability output by logistic regression model.
+Given that Numpy array y_true represents the true labels for each observation, array z represents the $(w_0 + w_1.x_1 + w_2.x_2)$ predicted by the logistic regression model before applying the sigmoid, complete the function **logloss()** to calculate the value of the logloss
+**Note:** The value of logloss should be rounded up to 2 decimals.
+
+**Input Format:**
+
+```text
+Two arrays of representing z - value (multiplication of weights and x) and target variable (y_true)
+
+```
+
+**Output Format:**
+
+```text
+Return the loss value (float value) of the model rounded off to two decimal places.
+
+```
+
+**Sample Input:**
+
+```text
+z = [3.11, 0.08, 0.76, 5.98, 3.05, 0.12, 8.99, 1.69, 1.75, 1.54]
+y_true = [1, 0, 1, 0, 0, 0, 1, 1, 0, 1]
+
+```
+
+**Sample Output:**
+
+```text
+1.33
+
+```
+
+**Output Explanation:**
+
+```text
+1.33 is the loss calculated by calculating log loss for each observation and then averaged across.
+
+```
 
 <details>
 <summary>$\color{black}{\huge{\textbf{Options:}}}$</summary>  
