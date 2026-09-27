@@ -117,7 +117,8 @@ Choose the correct answer from below, please note that this question may have mu
   
 ---
   
-### Q.5 Error function for logistic regression is - $y.log(\hat{y}) - (1 - y).log(1 - \hat{y})$, where y represents the true label and $\hat{y}$ represents the probability output by logistic regression model.
+### Q.5 Error function for logistic regression is - $y.log(\hat{y}) - (1 - y).log(1 - \hat{y})$, where y represents the true label and $\hat{y}$ represents the probability output by logistic regression model.  
+
 Given that Numpy array y_true represents the true labels for each observation, array z represents the $(w_0 + w_1.x_1 + w_2.x_2)$ predicted by the logistic regression model before applying the sigmoid, complete the function **logloss()** to calculate the value of the logloss
 **Note:** The value of logloss should be rounded up to 2 decimals.
 
