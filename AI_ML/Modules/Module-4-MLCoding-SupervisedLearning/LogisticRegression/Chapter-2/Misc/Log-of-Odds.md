@@ -911,6 +911,18 @@ $$
 \boxed{P(\text{Win})=90\%}
 $$
 
+$$
+\boxed{P=\frac{9}{1+9}=0.9=90\%}
+$$
+
+$$
+\boxed{P = \frac{9}{1+9} = \frac{9}{10} = 0.9 = 90\%}
+$$
+
+$$
+\boxed{P(\text{Win})=90\%}
+$$
+
 
 And going the other direction:
 
