@@ -903,6 +903,14 @@ $$
 \boxed{P=\frac{9}{1+9}=0.9=90\%}
 $$
 
+$$
+P = \frac{9}{1+9}
+$$
+
+$$
+P = 0.9 = 90\%
+$$
+
 And going the other direction:
 
 $$
