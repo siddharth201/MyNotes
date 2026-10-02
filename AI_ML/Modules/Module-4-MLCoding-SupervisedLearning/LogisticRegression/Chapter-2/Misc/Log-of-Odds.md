@@ -878,7 +878,7 @@ P(Win)=\frac{9}{9+1}=\frac{9}{10}=0.9
 $$
 
 $$
-\boxed{P(Win)=90\%}
+P(Win)=90\%
 $$
 
 ### Very important distinction
