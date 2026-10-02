@@ -829,4 +829,8 @@ p
 }
 $$
 
-**This is the real reason Logistic Regression is called "logistic" regression.** The lecture's algebra is essentially proving this relationship.
+**This is the real reason Logistic Regression is called "logistic" regression.** The lecture's algebra is essentially proving this relationship.  
+
+---  
+  
+## Q.
