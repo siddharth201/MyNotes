@@ -1,4 +1,6 @@
 
+[Chat-GPT Link]()
+
  The lecture is deriving an important relationship in **Logistic Regression**:
 
 $$
