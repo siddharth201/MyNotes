@@ -1,5 +1,5 @@
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6abf7f5f8c808191bf765b04f0698f89)
 
  The lecture is deriving an important relationship in **Logistic Regression**:
 
