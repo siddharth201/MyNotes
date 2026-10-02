@@ -833,4 +833,6 @@ $$
 
 ---  
   
-## Q.
+## Q. let suppose odd comes 9 than we can say we can win 9 time and loss 1 time?  
+
+
