@@ -10,9 +10,7 @@ Suppose customers are represented using two features:
 
 Customers who buy a particular product form a curved, ring-shaped region surrounded by customers who don't buy it.
 
-[Performers: The Kernel Trick, Random Fourier Features, and Attention | Teddy Koker](https://images.openai.com/static-rsc-4/-Cz-I9iH0EJFniCraoYU-Oy3QDYHYOOIeiI6yoX-zRFSolWqozFv0KdZv2Qf7eQl4TcfFGdvaURfxCglLY6qA48esjZcu83nGm59ErdsMDEH4kB9_X060L5J4vJdhuGRiB7atuShdjB46LAHy10I4aDPqJZC0cCOvxgOz6cBso4?purpose=inline)
-
-[teddykoker.com](https://teddykoker.com/2020/11/performers/?utm_source=chatgpt.com)
+[Performers: The Kernel Trick, Random Fourier Features, and Attention](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/KNN-vs-DecisionTree.png)
 
 Illustration of a nonlinear classification pattern.
 
