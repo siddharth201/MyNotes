@@ -1,4 +1,6 @@
 
+## Q. An example where KNN is better than Decision Tree?
+
 Friend, imagine we want to classify customers based on their shopping behaviour.
 
 ### Example: K-NN can be better than a Decision Tree
