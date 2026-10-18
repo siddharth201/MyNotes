@@ -39,4 +39,4 @@ Illustration of a nonlinear classification pattern.
 
 Why might K-NN win? If nearby customers tend to have similar labels and the decision boundary is nonlinear, K-NN can perform well without learning a large set of tree rules.
 
-Important: K-NN is not automatically better here. Its performance depends on feature scaling, the choice of \\(K\\), noise, and data density. A well-tuned Decision Tree or tree ensemble may perform equally well or better.
+Important: K-NN is not automatically better here. Its performance depends on feature scaling, the choice of $K$, noise, and data density. A well-tuned Decision Tree or tree ensemble may perform equally well or better.
