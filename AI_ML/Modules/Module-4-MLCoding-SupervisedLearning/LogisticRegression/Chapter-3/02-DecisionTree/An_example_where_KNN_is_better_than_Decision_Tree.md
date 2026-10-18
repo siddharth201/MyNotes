@@ -1,4 +1,22 @@
 
+## Q. Why do we need Decision Trees if we already have K-NN?
+
+Both solve classification problems, but they make predictions differently.
+
+- K-NN: Predicts based on the labels of nearby data points. It can be computationally expensive during prediction because it needs to find neighbours.
+- Decision Tree: Predicts by following learned decision rules, such as `Age < 29`. These rules are often easier to interpret and explain.
+
+Key takeaway: Decision Trees provide rule-based, interpretable predictions, while K-NN relies on neighbouring examples. Neither is always better; the choice depends on the data and problem.
+
+## Q. Are Decision Trees used only for classification?
+
+No. Decision Trees support both classification and regression.
+
+- Classification Tree: Predicts a category, such as whether an employee will Stay or Leave.
+- Regression Tree: Predicts a numerical value, such as a house price or an employee's expected salary.
+
+The key difference is the type of output: a class label versus a numerical value.
+
 ## Q. An example where KNN is better than Decision Tree?
 
 Friend, imagine we want to classify customers based on their shopping behaviour.
