@@ -30,7 +30,7 @@ Suppose customers are represented using two features:
 
 Customers who buy a particular product form a curved, ring-shaped region surrounded by customers who don't buy it.
 
-[Performers: The Kernel Trick, Random Fourier Features, and Attention](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/KNN-vs-DecisionTree.png)
+![Performers: The Kernel Trick, Random Fourier Features, and Attention](https://github.com/siddharth201/MyNotes/blob/main/miscellaneous/ML/SupervisedLearning/Images/KNN-vs-DecisionTree.png)
 
 Illustration of a nonlinear classification pattern.
 
