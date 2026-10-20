@@ -1,5 +1,5 @@
 
-## Python is a high-level, general-purpose programming language known for its readable syntax and broad ecosystem.
+## Q. Python is a high-level, general-purpose programming language known for its readable syntax and broad ecosystem.
 
 ### What is meaning of 
 * **high-level**
@@ -87,7 +87,7 @@ So complete statement:
 
 ---  
 
-## Some example from Low level langauages and how they differ from high level langauages  
+## Q. Some example from Low level langauages and how they differ from high level langauages  
 
 Absolutely. This is a very important concept for students because **“high-level vs low-level” is fundamentally about abstraction**.
 
@@ -112,9 +112,9 @@ The **closer we are to the hardware**, the more "low-level" the language is.
 
 ---
 
-## 2. Examples of Low-Level Languages
+### 2. Examples of Low-Level Languages
 
-### A. Machine Language
+#### A. Machine Language
 
 Machine language consists of instructions represented as **binary (0s and 1s)**.
 
@@ -130,7 +130,7 @@ You don't normally write applications directly in machine code because it is ext
 
 ---
 
-### B. Assembly Language
+#### B. Assembly Language
 
 Assembly is a little more human-readable than machine code, but still very close to the CPU.
 
@@ -161,7 +161,7 @@ Assembly is therefore considered **low-level**.
 
 ---
 
-# 3. Compare the Same Task
+## 3. Compare the Same Task
 
 Suppose we want to calculate:
 
@@ -219,7 +219,7 @@ Python handles those details through its runtime and the underlying system.
 
 ---
 
-# 4. The Real Difference: Abstraction
+## 4. The Real Difference: Abstraction
 
 This is the **most important point to teach**.
 
@@ -257,7 +257,7 @@ That's why we call Python **high-level**.
 
 ---
 
-# 5. But Be Careful: High-Level ≠ Slow, Low-Level ≠ Fast
+## 5. But Be Careful: High-Level ≠ Slow, Low-Level ≠ Fast
 
 This is an important clarification for students.
 
@@ -291,7 +291,7 @@ For example, **C/C++** are high-level compared with assembly, but are still cons
 
 ---
 
-# 6. A Useful Spectrum
+## 6. A Useful Spectrum
 
 For teaching, I would show students this:
 
