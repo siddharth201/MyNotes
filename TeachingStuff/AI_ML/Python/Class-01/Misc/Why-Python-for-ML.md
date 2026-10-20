@@ -723,4 +723,8 @@ That would be a much more realistic **AI Engineer** skillset than simply saying 
 
 ### 🎯 One line I'd actually put in your Class 1 teaching notes:
 
-> **"Python AI/ML में इसलिए popular नहीं है क्योंकि Python सबसे fast language है; बल्कि इसलिए क्योंकि यह AI/ML ecosystem की सबसे productive और widely supported language बन चुकी है, जबकि heavy computation अक्सर optimized lower-level code और GPUs पर होती है."**
+> **"Python AI/ML में इसलिए popular नहीं है क्योंकि Python सबसे fast language है; बल्कि इसलिए क्योंकि यह AI/ML ecosystem की सबसे productive और widely supported language बन चुकी है, जबकि heavy computation अक्सर optimized lower-level code और GPUs पर होती है."**  
+
+---  
+
+
