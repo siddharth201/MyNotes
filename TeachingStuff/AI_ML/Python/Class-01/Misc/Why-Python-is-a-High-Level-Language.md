@@ -83,4 +83,8 @@ Python     → Many different types of applications
 So complete statement:
 
 > **Python is a high-level, general-purpose language**  
-> = Python human-friendly abstraction provide karti hai **aur** ek specific domain tak limited nahi hai.
+> = Python human-friendly abstraction provide karti hai **aur** ek specific domain tak limited nahi hai.  
+
+---  
+
+## Some example from Low level langauages and how they differ from high level langauages
