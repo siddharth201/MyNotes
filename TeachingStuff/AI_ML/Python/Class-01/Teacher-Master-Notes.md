@@ -1,5 +1,5 @@
 
-[Chat-GPT reference]()
+[Chat-GPT reference](https://chatgpt.com/s/t_6ad7a18b90008191bbb5a733ea98c670)
 
 बिल्कुल Friend. नीचे **Teacher / Master Notes — Class 1** हैं। इसे मैंने student notes की copy नहीं बनाया है; इसका उद्देश्य है कि **आप class लेने से पहले concept को technically सही तरीके से समझ सकें, अच्छे examples दे सकें, student के “why?” questions handle कर सकें और interview में भी answer कर सकें।**
 
