@@ -727,4 +727,6 @@ That would be a much more realistic **AI Engineer** skillset than simply saying 
 
 ---  
 
+## Q. Explain same in Hindi but in Brief so that I can expalin it properly to students  
+
 
