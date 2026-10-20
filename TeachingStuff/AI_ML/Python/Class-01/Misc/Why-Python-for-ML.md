@@ -1,5 +1,5 @@
 
-[Chat-GPT Response]()
+[Chat-GPT Response](https://chatgpt.com/s/t_6ad7a26f9ec88191bd8ab568fe854c3d)
 
 ## Why Python for ML?
 
