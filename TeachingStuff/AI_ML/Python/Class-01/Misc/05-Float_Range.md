@@ -1,3 +1,6 @@
+
+[Chat-GPT Link]()
+
 Is concept ko Swift se compare karke samajhte hain. Aapko Swift aati hai, isliye same example dono languages mein run karne se floating-point precision ka concept clear ho jayega.
 
 ## 1. Python mein kya hota hai?
