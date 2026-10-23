@@ -118,6 +118,7 @@ Ek aur useful point: Python ka `int` aur NumPy ka `int32`/`int64` same cheez nah
 
 ---  
 
+[Chat-GPT Link]()
 **Q. Swift se compare krke samajhaiye**
 
 Swift se compare karenge toh Python ke arbitrary-precision integers ka concept aur easily samajh aayega, especially kyunki aap Swift mein already programming kar chuke hain.
