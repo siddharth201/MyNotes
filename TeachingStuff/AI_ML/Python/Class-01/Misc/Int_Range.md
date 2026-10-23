@@ -1,4 +1,8 @@
 
+**Q. Python में integer की range fixed 32-bit/64-bit integer जैसी beginner-level limitation नहीं है। 
+Python integers arbitrary precision support करते हैं, subject primarily to available memory.
+Explain this**
+
 Is statement ko samajhne ke liye pehle humein ye samajhna hoga ki computer numbers ko memory mein kaise store karta hai.
 
 ## 1. Integer store karne ke liye memory chahiye
@@ -110,4 +114,8 @@ Students ko ye sentence yaad karwa sakte hain:
 
 > Python integers use arbitrary precision: unlike fixed-width integers, they can grow beyond 32-bit or 64-bit ranges by using additional memory, subject to practical limits.
 
-Ek aur useful point: Python ka `int` aur NumPy ka `int32`/`int64` same cheez nahi hain. NumPy ke fixed-width integer types ki range limited hoti hai, jo AI/ML mein arrays ke saath kaam karte waqt important hai.
+Ek aur useful point: Python ka `int` aur NumPy ka `int32`/`int64` same cheez nahi hain. NumPy ke fixed-width integer types ki range limited hoti hai, jo AI/ML mein arrays ke saath kaam karte waqt important hai.  
+
+---  
+
+
