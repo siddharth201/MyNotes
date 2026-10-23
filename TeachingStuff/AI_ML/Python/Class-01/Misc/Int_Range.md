@@ -118,4 +118,4 @@ Ek aur useful point: Python ka `int` aur NumPy ka `int32`/`int64` same cheez nah
 
 ---  
 
-
+**Q. Swift se compare krke samajhaiye**
