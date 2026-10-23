@@ -119,3 +119,170 @@ Ek aur useful point: Python ka `int` aur NumPy ka `int32`/`int64` same cheez nah
 ---  
 
 **Q. Swift se compare krke samajhaiye**
+
+Swift se compare karenge toh Python ke arbitrary-precision integers ka concept aur easily samajh aayega, especially kyunki aap Swift mein already programming kar chuke hain.
+
+## 1. Swift vs Python: Same number, different behavior
+
+Maan lijiye hum ek bahut bada number calculate karna chahte hain.
+
+### Python
+
+```
+number = 2**100print(number)
+```
+
+Python ise successfully calculate kar sakta hai, kyunki Python ka built-in `int` arbitrary precision support karta hai.
+
+### Swift
+
+```
+let number: Int = 2
+let result = number << 100
+```
+
+Yahan ek important catch hai: Swift mein `Int` normally 64-bit hota hai on modern 64-bit platforms. Isliye `Int` sirf 64-bit signed range represent kar sakta hai.
+
+Swift mein upar diya gaya shift operation `2^101` ko represent nahi karega; fixed-width integer ke bits shift karne par higher bits discard ho jaate hain. Ye arbitrary-precision arithmetic nahi hai.
+
+Swift mein agar aap likhen:
+
+```
+let number = Int.max
+print(number)
+```
+
+64-bit platform par output hoga:
+
+```
+9223372036854775807
+```
+
+Ye `Int` ki maximum value hai.
+
+## 2. Dono ki range compare karein
+
+| Feature                | Python `int`                                 | Swift `Int`                                   |
+| ---------------------- | -------------------------------------------- | --------------------------------------------- |
+| Typical representation | Variable-sized integer                       | Fixed-width integer                           |
+| Common bit width       | Zaroorat ke hisaab se badhti hai             | 64-bit on modern 64-bit platforms             |
+| Maximum value          | Fixed 64-bit limit nahi                      | `Int.max`                                     |
+| Very large integers    | Built-in support                             | Built-in `Int` mein nahi                      |
+| Overflow behavior      | Practical resource limits tak grow karta hai | Normal arithmetic mein overflow trap hota hai |
+
+## 3. Swift mein overflow ka example
+
+```
+let number = Int.max
+let result = number + 1
+```
+
+Swift mein debug aur release builds dono mein ordinary checked integer addition overflow hone par trap karta hai.
+
+Aap overflow ko explicitly handle bhi kar sakte hain:
+
+```
+let result = Int.max.addingReportingOverflow(1)
+
+print(result.partialValue)
+print(result.overflow)
+```
+
+Output:
+
+```
+-9223372036854775808
+true
+```
+
+Yahan `partialValue` wrapped result hai aur `overflow` batata hai ki overflow hua tha.
+
+Python mein:
+
+```
+number = 2**63 - 1result = number + 1print(result)
+```
+
+Output:
+
+```
+9223372036854775808
+```
+
+Python ko integer ke liye ek extra bit ki zaroorat padi, aur usne integer representation ko expand kar diya.
+
+## 4. Visualize karein
+
+Swift `Int`
+
+Fixed width
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Conceptually, a fixed number of bits. Swift `Int` is typically 64-bit, not 16-bit as this illustration suggests.
+
+Python `int`
+
+Variable size
+
+bit
+
+bit
+
+bit
+
+bit
+
+bit
+
+bit
+
+bit
+
+bit
+
+Additional storage as needed
+
+Note: Diagram conceptual hai; actual Python integer memory internally fixed-size chunks mein manage hoti hai.
+
+## 5. Kya Swift mein arbitrary-precision integers possible hain?
+
+Haan, lekin built-in `Int` se nahi. Aap arbitrary-precision integer library use kar sakte hain, jaise Swift ecosystem mein `BigInt` implementations.
+
+Python mein arbitrary precision built-in feature hai; Swift mein iske liye additional library ya custom implementation chahiye.
+
+### Students ko samjhane ke liye final line
+
+> Python `int` zaroorat ke hisaab se apna storage badha sakta hai, jabki Swift ka built-in `Int` fixed-width hota hai. Isliye Python bahut bade integers ko directly handle karta hai, lekin Swift `Int` ki range limited hai.
+
+Ek practical distinction: Swift mein `Int` ki width platform par depend karti hai; modern iOS devices par ye 64-bit hota hai. Python ka integer bhi unlimited nahi hai — available memory aur implementation limits apply hoti hain.
