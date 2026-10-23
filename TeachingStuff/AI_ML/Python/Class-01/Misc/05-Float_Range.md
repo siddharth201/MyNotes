@@ -1,5 +1,5 @@
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6adb99f1b3908191821632b6c2d1036a)
 
 Is concept ko Swift se compare karke samajhte hain. Aapko Swift aati hai, isliye same example dono languages mein run karne se floating-point precision ka concept clear ho jayega.
 
