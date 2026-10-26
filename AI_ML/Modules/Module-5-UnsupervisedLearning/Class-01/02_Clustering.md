@@ -89,7 +89,7 @@ Do important concepts yaad rakho.
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Inter-Intra-clustering.jpeg" width="250" alt="Click to enlarge">
 </a>
 
-Intra-cluster distance
+**Intra-cluster distance**
 
 Ek hi cluster ke points ke beech ki distance.
 
@@ -99,7 +99,7 @@ Generally, hum chahte hain ki same cluster ke points relatively close hon.
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
 </a>
 
-Inter-cluster distance
+**Inter-cluster distance**
 
 Different clusters ke beech ki separation ko samajhne ka concept.
 
