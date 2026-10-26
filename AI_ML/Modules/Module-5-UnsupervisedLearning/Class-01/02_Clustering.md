@@ -1,5 +1,5 @@
 
-[Chat-GPT Response]()
+[Chat-GPT Response](https://chatgpt.com/s/t_6adf5bc7a7bc8191a2ba635abfafe349)
 
 ## 1. What is Clustering?
 
