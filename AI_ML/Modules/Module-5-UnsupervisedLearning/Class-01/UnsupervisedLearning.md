@@ -46,7 +46,7 @@ Ek important distinction: Unsupervised Learning mein data ke andar information h
 
 ## 3. Unsupervised Learning ke main tasks
 
-[Kmeans: k-means clustering - mlxtend](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg)
+![Kmeans: k-means clustering - mlxtend](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg)
 
 1\. Clustering
 
@@ -54,7 +54,7 @@ Similar data points ko groups mein organize karna.
 
 Example: K-Means, DBSCAN
 
-[Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
+![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
 
 2\. Dimensionality Reduction
 
@@ -62,7 +62,7 @@ Data ko fewer dimensions mein represent karna while preserving useful informatio
 
 Example: PCA
 
-[Market Basket Analysis using Apriori Algorithm | by Dhaval Bagal | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg)
+![Market Basket Analysis using Apriori Algorithm | by Dhaval Bagal | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg)
 
 3\. Association Rule Learning
 
