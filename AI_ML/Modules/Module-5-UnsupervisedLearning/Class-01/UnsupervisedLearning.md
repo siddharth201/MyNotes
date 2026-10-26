@@ -46,18 +46,18 @@ Ek important distinction: Unsupervised Learning mein data ke andar information h
 
 ## 3. Unsupervised Learning ke main tasks
 
-![Kmeans: k-means clustering - mlxtend](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg)
-
 1\. Clustering
+
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Similar data points ko groups mein organize karna.
 
 Example: K-Means, DBSCAN
 
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg" width="250" alt="Click to enlarge">
-</a>
+
 
 
 [![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
