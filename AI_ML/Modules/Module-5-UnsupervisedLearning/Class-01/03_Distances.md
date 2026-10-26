@@ -25,37 +25,26 @@ Horizontal difference = 3 units; vertical difference = 4 units.
 ---
 
 Suppose do points hain:
-
-$$\
-A=(1,2),\qquad B=(4,6)\
-
-$$
-
+\(A=(1,2),\qquad B=(4,6)\)
 A se B tak:
-
-- X-axis par difference: $4-1=3$
-- Y-axis par difference: $6-2=4$
-
+• X-axis par difference: \(4-1=3\)
+• Y-axis par difference: \(6-2=4\)
 Pythagoras theorem use karenge:
-
-$$
-d_E(A,B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-$$
-
-
+\(d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\)
 Values put karo:
-
-$$\
-d_E=\sqrt7\
-$$
-
-$$\
-\=\sqrt7\
-\=\sqrt25\
-\=\boxed5\
-$$
-
+\(d_{E}(A,B)=\sqrt{3^{2}+4^{2}}\)
+\(=\sqrt{9+16}\)
+\(=\sqrt{25}\)
+\(=\boxed{5}\)
 Isliye Euclidean Distance 5 units hai.
+
+Key Corrections Made:
+
+1. Fixed \sqrt arguments: Added curly braces {} so the numbers display correctly inside the radical sign (e.g., \sqrt{25}).
+2. Corrected Math Logic: Changed the incorrect \sqrt7 (which came from mistakenly adding \(3+4\)) to the correct squares sum: \(\sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25}\).
+3. Fixed \boxed syntax: Wrapped the final answer inside curly braces as \boxed{5}.
+If you want to render this in a single continuous math block instead of multiple separate blocks, let me know!
+
 
 ### General formula for multiple features
 
