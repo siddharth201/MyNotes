@@ -46,7 +46,7 @@ Ek important distinction: Unsupervised Learning mein data ke andar information h
 
 ## 3. Unsupervised Learning ke main tasks
 
-1\. Clustering
+**1\. Clustering**
 
 <a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg" target="_blank">
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg" width="250" alt="Click to enlarge">
@@ -57,22 +57,25 @@ Similar data points ko groups mein organize karna.
 Example: K-Means, DBSCAN
 
 
+**2\. Dimensionality Reduction**
 
 
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg" width="250" alt="Click to enlarge">
+</a>
 
-[![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
-
-
-
-2\. Dimensionality Reduction
 
 Data ko fewer dimensions mein represent karna while preserving useful information as much as possible.
 
 Example: PCA
 
-![Market Basket Analysis using Apriori Algorithm | by Dhaval Bagal | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg)
 
-3\. Association Rule Learning
+**3\. Association Rule Learning**
+
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg" width="250" alt="Click to enlarge">
+</a>
+
 
 Data mein items ya events ke beech recurring relationships discover karna.
 
