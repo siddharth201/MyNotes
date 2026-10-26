@@ -54,9 +54,10 @@ Isliye Euclidean Distance 5 units hai.
 
 Agar har point mein $d$ features hain, toh:
 
-$$\
-d_E(x,y)=\sqrt^(x_j-y_j)^2}\
 $$
+d_E(x,y)=\sqrt{(x_j-y_j)^2}
+$$
+
 
 Matlab har feature ka difference lo, uska square karo, sabko add karo aur square root le lo.
 
