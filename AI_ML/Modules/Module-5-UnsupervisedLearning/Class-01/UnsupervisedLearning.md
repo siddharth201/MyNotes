@@ -54,7 +54,7 @@ Similar data points ko groups mein organize karna.
 
 Example: K-Means, DBSCAN
 
-![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
+<!--![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)-->
 
 
 [![Mastering PCA for Dimensionality Reduction in Data Science | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/DimensionalityReduction.jpeg)
