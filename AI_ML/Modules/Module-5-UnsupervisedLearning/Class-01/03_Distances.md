@@ -114,9 +114,10 @@ Aisa kyun? Euclidean distance seedha diagonal route leti hai, jabki Manhattan di
 
 ### General formula
 
-$$\
-d_M(x,y)=\sum\_^|x_j-y_j|\
 $$
+d_M(x,y)=\sum_{j=1}^{n} |x_j-y_j|
+$$
+
 
 Yaani har feature ka absolute difference calculate karo aur unhe add kar do.
 
