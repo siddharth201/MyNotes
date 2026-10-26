@@ -80,9 +80,9 @@ Suppose tumhe point A se point B tak jaana hai. Agar roads sirf horizontal aur v
 
 ### Visualize it
 
-[What is Manhattan Distance? A Deep Dive | DataCamp](https://images.openai.com/static-rsc-4/Uw3waLAzdOpHAY6jbC-V4-CR7M33nbXVZYjY01c-2EEwSmUfZN9gCdHIsk9AClQJPrdl5KPwYvgHzPHaNmABap2DO0CScT3yBhp9JfpTyqZeDi7K9YSUlFiOF-_V-Ou7hL3bxxUEAZ3ocilIyFfPhqPp11JwGIUywL3KQ_ljliQ?purpose=inline)
-
-[datacamp.com](https://www.datacamp.com/tutorial/manhattan-distance?utm_source=chatgpt.com)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Horizontal movement = 3 units; vertical movement = 4 units. Route order can vary, but total distance stays the same.
 
