@@ -274,6 +274,12 @@ $$
 \frac{x\cdot y}{\|x\|_2\|y\|_2}
 $$
 
+$$
+\mathrm{cosSim}(x,y)=
+\frac{x\cdot y}{|x|_2|y|_2}
+$$
+
+
 A common definition of cosine distance is:
 
 $$
