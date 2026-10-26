@@ -154,9 +154,9 @@ B ke values A se double hain, lekin dono vectors same direction mein point karte
 
 ### Visualize vector direction
 
-[Векторы - Задания ЕГЭ по математике 2027 с ответами и решением](https://images.openai.com/static-rsc-4/bl5u8_SX7VATnQPqV8kxdpg8s7IOd8EvpsMpkhRjEilvN1BBLe6S-lV5pm5UYy5O0Q-H_NJBKnZg5ijW5lxJ5HStlYKp8cZyZRacMcg2RvPcDSxsGWHozne3vfep0Mc5Ls_x6AEKhGGbsGlrEcKDBDjOO4SkHopqe0XzaKcLEhA?purpose=inline)
-
-[ege-hub.ru](https://ege-hub.ru/testing/ege/matematika/vektory-po-ege?utm_source=chatgpt.com)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Both vectors point in the same direction, even though B is longer.
 
