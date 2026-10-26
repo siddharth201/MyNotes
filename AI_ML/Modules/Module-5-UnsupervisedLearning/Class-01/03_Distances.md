@@ -35,7 +35,7 @@ $A=(1,2),\qquad B=(4,6)\$
 
 **Pythagoras theorem use karenge:**
 
-$\(d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\)$  
+$\d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\$  
 
 Values put karo:  
 
