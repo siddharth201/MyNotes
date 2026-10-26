@@ -80,8 +80,8 @@ Suppose tumhe point A se point B tak jaana hai. Agar roads sirf horizontal aur v
 
 ### Visualize it
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Horizontal movement = 3 units; vertical movement = 4 units. Route order can vary, but total distance stays the same.
