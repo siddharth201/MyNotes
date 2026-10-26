@@ -38,9 +38,10 @@ A se B tak:
 
 Pythagoras theorem use karenge:
 
-$$\
-d_E(A,B)=\sqrt\
 $$
+d_E(A,B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+$$
+
 
 Values put karo:
 
