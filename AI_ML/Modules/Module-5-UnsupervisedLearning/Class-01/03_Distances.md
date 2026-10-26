@@ -154,8 +154,8 @@ B ke values A se double hain, lekin dono vectors same direction mein point karte
 
 ### Visualize vector direction
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/manhattan.jpeg" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/cosin.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/cosin.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Both vectors point in the same direction, even though B is longer.
