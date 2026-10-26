@@ -38,13 +38,6 @@ Values put karo:
 \(=\boxed{5}\)
 Isliye Euclidean Distance 5 units hai.
 
-Key Corrections Made:
-
-1. Fixed \sqrt arguments: Added curly braces {} so the numbers display correctly inside the radical sign (e.g., \sqrt{25}).
-2. Corrected Math Logic: Changed the incorrect \sqrt7 (which came from mistakenly adding \(3+4\)) to the correct squares sum: \(\sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25}\).
-3. Fixed \boxed syntax: Wrapped the final answer inside curly braces as \boxed{5}.
-If you want to render this in a single continuous math block instead of multiple separate blocks, let me know!
-
 
 ### General formula for multiple features
 
