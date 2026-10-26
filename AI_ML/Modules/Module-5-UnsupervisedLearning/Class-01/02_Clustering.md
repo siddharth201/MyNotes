@@ -85,7 +85,9 @@ Lekin similarity kaise measure hogi, yeh algorithm aur distance metric par depen
 
 Do important concepts yaad rakho.
 
-[PPT - Clustering Basic Concepts and Algorithms 1 PowerPoint Presentation - ID:1450644](https://images.openai.com/static-rsc-4/YUGoa6acvdng_ZITJ_-AOKeJ86ldZ1L2zks7Vlml206Ii4m8kTd1gCXaLAuCF_XP0_4updLnXLVxx3cX6SofYUGh7nsEGyFvCnICSj9_0V_KcAXxf289BwdTCtRo3ehhCCS1YiNmM3p-LoJNrgzSSHebBIY2X8EdR-LwHT_OiGI?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Intra-cluster distance
 
