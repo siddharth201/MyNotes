@@ -16,8 +16,8 @@ Imagine karo tum ek park mein ho. Tumhari current position A hai aur tumhe point
 
 ### Visualize it
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/euclidien.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Horizontal difference = 3 units; vertical difference = 4 units.
