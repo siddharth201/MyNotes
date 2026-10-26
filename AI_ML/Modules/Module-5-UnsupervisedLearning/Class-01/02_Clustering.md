@@ -28,8 +28,8 @@ Clustering algorithm discover kar sakta hai ki A, B, C ek group mein aate hain, 
 
 Conceptual scatter plot — spending vs. purchases
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Cluster 1
