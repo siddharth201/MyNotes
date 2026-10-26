@@ -1,4 +1,4 @@
-Friend, let's understand this from the basics in Hinglish. 😊
+[Chat-GPT Link](https://chatgpt.com/s/t_6adf41fca5c88191ada218fd155f6504)
 
 ## What is Unsupervised Learning?
 
