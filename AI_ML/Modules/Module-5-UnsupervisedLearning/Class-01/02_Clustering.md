@@ -153,8 +153,8 @@ Data ke dense regions identify karke clusters banaye jaate hain. Kuch points noi
 
 Example: DBSCAN
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/density.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/density.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 **3\. Hierarchical clustering**
