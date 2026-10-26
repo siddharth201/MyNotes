@@ -85,8 +85,8 @@ Lekin similarity kaise measure hogi, yeh algorithm aur distance metric par depen
 
 Do important concepts yaad rakho.
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Inter-Intra-clustering.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Inter-Intra-clustering.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Intra-cluster distance
@@ -95,7 +95,9 @@ Ek hi cluster ke points ke beech ki distance.
 
 Generally, hum chahte hain ki same cluster ke points relatively close hon.
 
-[Calculate K Means By Hand at Nancy Green blog](https://images.openai.com/static-rsc-4/LdtqOTUa7e1tVd1Jw74FUfPB2jevbpwsybxQHG30WqrLotz9_TO93pnRcbmdFuUw9dkkSkwdvucD4DBYXGk7i9VNdVS6kUyWAoIzfvLwm1snpqeYB2S1OdkGVLA8NFTmx0hqGiDbJ91jhUSz7ZaIZ7TbT6cd6Sg3teF-Et5hsaY?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Inter-Intra-clustering.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Inter-Intra-clustering.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Inter-cluster distance
 
