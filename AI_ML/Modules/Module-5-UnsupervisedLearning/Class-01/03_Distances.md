@@ -24,16 +24,21 @@ Horizontal difference = 3 units; vertical difference = 4 units.
 
 ---
 
-Suppose do points hain:
+Suppose do points hain:  
 
-$\(A=(1,2),\qquad B=(4,6)\)$
+$\A=(1,2),\qquad B=(4,6)\$
+  
+A se B tak:  
 
-A se B tak:
-• X-axis par difference: \(4-1=3\)
-• Y-axis par difference: \(6-2=4\)
+• X-axis par difference: $\(4-1=3\)$  
+• Y-axis par difference: $\(6-2=4\)$  
+
 Pythagoras theorem use karenge:
-\(d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\)
-Values put karo:
+
+$\(d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\)$  
+
+Values put karo:  
+
 \(d_{E}(A,B)=\sqrt{3^{2}+4^{2}}\)
 \(=\sqrt{9+16}\)
 \(=\sqrt{25}\)
