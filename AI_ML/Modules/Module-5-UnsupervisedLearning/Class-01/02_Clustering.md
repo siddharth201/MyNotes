@@ -135,29 +135,39 @@ Clustering se discover hue groups baad mein classification ke liye useful ho sak
 
 ## 5. Clustering ke types aur algorithms
 
-[K-Means Clustering: A Deep Dive into Algorithm & Python Implementation | Medium](https://images.openai.com/static-rsc-4/8q_R967Sjq0G8PkKD0CVlDA_cUnB-vSQcMatoIrg75-MTgeWWSKO5iQAt0mJDA0CkEn5Masx4bqsYkscY2NCoaADei23yiuE0tDyBuFxXoUHbOsDeBRhS1Oiv8a0C1LYnOZxLvcTmVVrwdiD-CsgL480fYW7SmYQuVN3d6FfHRQ?purpose=inline)
 
-1\. Centroid-based clustering
+**1\. Centroid-based clustering**
 
 Data points ko cluster centers ke around organize kiya jaata hai.
 
 Example: K-Means
 
-[Clustering Techniques in Machine Learning | by praveenreddy_c | Medium](https://images.openai.com/static-rsc-4/iDqubNPe5KDjgWCLInKrr1e8wXCEDQQ3dgNmgB9iXVsmq9eM98sN2GiKOvBd6RiGar8Lrc_M2xXLYS0Rjpo3qx8hLlj3PV3vs5n3HmBR3eP407F_ZyqQkiUYjGbh-alAOPXPa-AfWCcvBpj91gsfQfS7LHXCito9QI4pZrMjNXo?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
+</a>
 
-2\. Density-based clustering
+
+**2\. Density-based clustering**
 
 Data ke dense regions identify karke clusters banaye jaate hain. Kuch points noise bhi classify ho sakte hain.
 
 Example: DBSCAN
 
-[Hierarchical Clustering: Dendrograms, Linkage Criteria - Interactive](https://images.openai.com/static-rsc-4/4iWnilOQnDbnUIFrkZtm-j2NC8loTozwbFY5azbKzzHKQGJ298pYjs7_W0JAT-6Cm28Nw84llzwkH9ShN3i10x-tkyTxkRfXAeoWNfSh5sDroWdyqGNvLsp2M526IdyMfJdLXoSg85kzMTM2XxigdkcvpaWqcvnLSw0hVgotoQA?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
+</a>
 
-3\. Hierarchical clustering
+**3\. Hierarchical clustering**
+
 
 Clusters ko merge ya split karke hierarchical structure banaya jaata hai.
 
 Example: Agglomerative Clustering
+
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
+</a>
+
 
 Hum abhi K-Means padh rahe hain, jo centroid-based clustering algorithm hai.
 
