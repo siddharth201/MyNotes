@@ -133,6 +133,8 @@ For a dataset with $d$ features, the centroid contains $d$ coordinates.
 
 ## 5. How K-Means Works: Step by Step
 
+[Visualization]()
+
 K-Means repeatedly performs two operations:
 
 1. Assign each point to its nearest centroid.
