@@ -62,7 +62,7 @@ Data ko fewer dimensions mein represent karna while preserving useful informatio
 
 Example: PCA
 
-[Market Basket Analysis using Apriori Algorithm | by Dhaval Bagal | Medium](https://images.openai.com/static-rsc-4/5OblIyyF46IqXw7tV-F9I-74wwe-l_4_mgcpEkt34OxdzZapOa1iPqLbkbIIrTu_ve8qUAF2JWiY3mEQ-Cj0XnfP-iE8DOdByiw-xRrmvsGWI7ng1zzI2Y3-IWLb9eelelIXy0iSuIBj6pNgm6527m_y6XQnjY9GDqzMQ3XZ6PE?purpose=inline)
+[Market Basket Analysis using Apriori Algorithm | by Dhaval Bagal | Medium](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/AssociationRuleLearning.jpeg)
 
 3\. Association Rule Learning
 
