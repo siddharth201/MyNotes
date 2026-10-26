@@ -28,9 +28,9 @@ Clustering algorithm discover kar sakta hai ki A, B, C ek group mein aate hain, 
 
 Conceptual scatter plot — spending vs. purchases
 
-[Data visualization in data mining | Filo](https://images.openai.com/static-rsc-4/IOQRXXOAl0t8UhaXpMEy-an7xz39yteB98LuadutWuxHvpeWHVu4TE9m1nItnr_unkTf5ckfvD-3ANjdBlj4IqzoU8bsTWM7Z-pR2pYDg7FAM9zgQ9FfeJEiC5y5xgN4XBQ-RdQgq3aYR1A_TaubDGn66PG1SXLPv8B51ZI90_k?purpose=inline)
-
-[askfilo.com](https://askfilo.com/user-question-answers-smart-solutions/data-visualization-in-data-mining-3435353335383935?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Cluster 1
 
