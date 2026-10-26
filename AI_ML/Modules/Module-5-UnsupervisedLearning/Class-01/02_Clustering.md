@@ -164,8 +164,8 @@ Clusters ko merge ya split karke hierarchical structure banaya jaata hai.
 
 Example: Agglomerative Clustering
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/inter-intra-clustering1.jpeg" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/hierarchical.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/hierarchical.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 
