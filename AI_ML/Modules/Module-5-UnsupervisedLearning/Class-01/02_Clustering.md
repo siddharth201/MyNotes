@@ -196,4 +196,3 @@ Regression
 
 Final mental model: Clustering ka matlab sirf data ko groups mein baantna nahi hai. Iska purpose data ke features mein meaningful structure discover karna hai.
 
-Ab jab clustering ka concept clear hai, next step samajhna hai ki K-Means centroid aur distance ka use karke ye groups practically kaise banata hai.
