@@ -30,8 +30,8 @@ $A=(1,2),\qquad B=(4,6)\$
   
 **A se B tak:** 
 
-• X-axis par difference: $\(4-1=3\)$  
-• Y-axis par difference: $\(6-2=4\)$  
+• X-axis par difference: $\4-1=3\$  
+• Y-axis par difference: $\6-2=4\$  
 
 **Pythagoras theorem use karenge:**
 
