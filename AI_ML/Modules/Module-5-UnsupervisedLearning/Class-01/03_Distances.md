@@ -168,4 +168,5 @@ $$
 \text{sim}(A,B) = \frac{A \cdot B}{|A| |B|}
 $$
 
+> **Note:** If we have very high dimention data we should think about Cosine Similarity
 
