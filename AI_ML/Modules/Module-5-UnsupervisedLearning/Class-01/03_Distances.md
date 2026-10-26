@@ -22,6 +22,8 @@ Imagine karo tum ek park mein ho. Tumhari current position A hai aur tumhe point
 
 Horizontal difference = 3 units; vertical difference = 4 units.
 
+---
+
 Suppose do points hain:
 
 $$\
