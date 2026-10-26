@@ -16,9 +16,9 @@ Imagine karo tum ek park mein ho. Tumhari current position A hai aur tumhe point
 
 ### Visualize it
 
-[iki-nokta-arasindaki-mesafe - Tiger Algebra Çözücü](https://images.openai.com/static-rsc-4/kavWeHdpnPRJBiFKGX7MtpuQ-nx3yAFhVYSZLSnIplrg7Dg-7dYKIUYzTM_fTMdG5MItwsBd2IEL-Ur08FR4i_Eiq9Ro6YoowMFPKbuAw6Wj7ZphklOdE9MuhD4i9UIRfg-6_LNRyoPFSh93gIuWnqviJYWzhIR1H_2URzNfEYc?purpose=inline)
-
-[tiger-algebra.com](https://www.tiger-algebra.com/tr/terimler-ve-konular/iki-nokta-arasindaki-mesafe-ve-ortanca-nokta/?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Horizontal difference = 3 units; vertical difference = 4 units.
 
