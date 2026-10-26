@@ -46,7 +46,7 @@ Ek important distinction: Unsupervised Learning mein data ke andar information h
 
 ## 3. Unsupervised Learning ke main tasks
 
-[Kmeans: k-means clustering - mlxtend](https://images.openai.com/static-rsc-4/cRWybC1ltScMk003WBgdhJKLW_ZTBWfp7nRo5tgfNedCwNG6A4YThxXaThkutYSDEtvFK_w5xifvFq_gMAzLoi8Xw2b86k-2hbS4PAIaq1AmHZ_zY3kRxpowYqe9Mo-neEEUAbXxlaCVEvc7TL3Vrv457TGJhr-PiMjZS5Z8Swk?purpose=inline)
+[Kmeans: k-means clustering - mlxtend](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clustering.jpeg)
 
 1\. Clustering
 
