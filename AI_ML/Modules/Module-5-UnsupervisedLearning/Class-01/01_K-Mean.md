@@ -269,10 +269,6 @@ It resembles movement along city blocks rather than directly through the city.
 
 Cosine similarity measures the angle between two nonzero vectors:
 
-$$
-\operatorname{cosSim}(x,y)=
-\frac{x\cdot y}{\|x\|_2\|y\|_2}
-$$
 
 $$
 \mathrm{cosSim}(x,y)=
@@ -283,8 +279,9 @@ $$
 A common definition of cosine distance is:
 
 $$
-d_{\cos}(x,y)=1-\operatorname{cosSim}(x,y)
+d_{\cos}(x,y)=1-\mathrm{cosSim}(x,y)
 $$
+
 
 Cosine similarity emphasizes vector direction rather than magnitude. It is useful in text analysis and embedding-based applications.
 
