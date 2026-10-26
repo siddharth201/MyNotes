@@ -165,6 +165,7 @@ Isliye in vectors ki Cosine Similarity 1 hogi.
 ### Formula
 
 $$
-\operatorname{sim}(A,B) = \frac{A \cdot B}{\|A\| \|B\|}
+\text{sim}(A,B) = \frac{A \cdot B}{|A| |B|}
 $$
+
 
