@@ -3,7 +3,7 @@
 
 ## 1. What is Clustering?
 
-Clustering is the process of grouping similar data points together, so that points within the same group are relatively similar to one another.
+**Clustering is the process of grouping similar data points together, so that points within the same group are relatively similar to one another.**
 
 Hinglish mein samjho: Humare paas bahut saara data hai, lekin humein pehle se nahi pata ki kaun-se data points ek jaise hain. Clustering algorithm unke features aur similarity ke basis par groups discover karta hai.
 
