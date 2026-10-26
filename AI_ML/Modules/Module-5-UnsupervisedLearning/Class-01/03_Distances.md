@@ -26,10 +26,10 @@ Horizontal difference = 3 units; vertical difference = 4 units.
 
 Suppose do points hain:
 
-$$
-d_E(A,B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-$$
+$$\
+A=(1,2),\qquad B=(4,6)\
 
+$$
 
 A se B tak:
 
