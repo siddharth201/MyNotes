@@ -133,7 +133,7 @@ For a dataset with $d$ features, the centroid contains $d$ coordinates.
 
 ## 5. How K-Means Works: Step by Step
 
-[Visualization]()
+[Visualization](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
 
 K-Means repeatedly performs two operations:
 
