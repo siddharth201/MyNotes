@@ -37,7 +37,7 @@ $A=(1,2),\qquad B=(4,6)\$
 
 $\d_{E}(A,B)=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\$  
 
-Values put karo:  
+**Values put karo:**  
 
 $\(d_{E}(A,B)=\sqrt{3^{2}+4^{2}}\)$
 $\(=\sqrt{9+16}\)$
