@@ -32,12 +32,10 @@ Conceptual scatter plot — spending vs. purchases
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/clusteringvisual.jpeg" width="250" alt="Click to enlarge">
 </a>
 
-Cluster 1
-
+**Cluster 1**
 Lower spending, fewer purchases
 
-Cluster 2
-
+**Cluster 2**
 Higher spending, more purchases
 
 The groups are illustrative. The algorithm discovers clusters from the numerical features; people interpret their meaning afterward.
