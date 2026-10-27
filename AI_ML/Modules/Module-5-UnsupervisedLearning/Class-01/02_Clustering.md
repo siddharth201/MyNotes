@@ -53,17 +53,19 @@ Customer example mein:
 
 Suppose do customers ka data hai:
 
-$$\
-A=(1000,2),\qquad B=(1200,3)\
-$$
+$$A = (1000, 2), \quad B = (1200, 3)$$
 
 Aur ek third customer hai:
 
-$$\
-C=(18000,15)\
-$$
+$$C = (18000, 15)$$
 
-A aur B ke feature values relatively close hain, jabki C ke values kaafi different hain.
+$A$ aur $B$ ke feature values relatively close hain, jabki $C$ ke values kaafi different hain.
+
+Agar hum Euclidean distance use karein, toh:
+
+$$d(A, B) = \sqrt{(1200 - 1000)^2 + (3 - 2)^2} = \sqrt{200^2 + 1^2} = \sqrt{40001} \approx 200$$
+
+$A$ aur $B$ ke beech distance, $C$ ke saath comparison mein kaafi kam hogi.
 
 Agar hum Euclidean distance use karein, toh:
 
