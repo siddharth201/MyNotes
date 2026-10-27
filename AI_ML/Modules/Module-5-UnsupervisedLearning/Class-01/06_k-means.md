@@ -160,11 +160,11 @@ Output: Cluster assignments and centroids
 
 ### 5. K-Means ki limitations
 
-- K pehle choose karna padta hai: Algorithm khud automatically best K guarantee nahi karta.
-- Initialization matters: Different starting centroids se different results aa sakte hain.
-- Outliers affect centroids: Mean extreme values se influence hota hai.
-- Feature scaling matters: Income jaise large-range features, age jaise small-range features ko dominate kar sakte hain.
-- Har shape ke clusters ke liye suitable nahi: K-Means roughly spherical/compact clusters ke liye best suited hai; irregular shapes ke liye DBSCAN jaise algorithms better ho sakte hain.
+- **K pehle choose karna padta hai:** Algorithm khud automatically best K guarantee nahi karta.
+- **Initialization matters:** Different starting centroids se different results aa sakte hain.
+- **Outliers affect centroids:** Mean extreme values se influence hota hai.
+- **Feature scaling matters:** Income jaise large-range features, age jaise small-range features ko dominate kar sakte hain.
+- **Har shape ke clusters ke liye suitable nahi:** K-Means roughly spherical/compact clusters ke liye best suited hai; irregular shapes ke liye DBSCAN jaise algorithms better ho sakte hain.
 
 ## 6. Ultimate goal in ML — simple terms
 
