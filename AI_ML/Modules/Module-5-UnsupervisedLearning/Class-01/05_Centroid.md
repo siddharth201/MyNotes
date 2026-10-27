@@ -124,7 +124,7 @@ K-Means++ mein selection probability ka relationship hota hai:
 
 Yahan `D(x)` = point `x` ki nearest selected centroid se distance.
 
-Important: K-Means++ hamesha sabse door point choose nahi karta. Woh distant points ko higher probability deta hai.
+**Important:** K-Means++ hamesha sabse door point choose nahi karta. Woh distant points ko higher probability deta hai.
 
 ## 3. Method 3: Multiple Random Initializations
 
