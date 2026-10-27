@@ -51,7 +51,7 @@ Suppose 4 customers ka spending score hai:
 
 Humein `K = 2` clusters banane hain.
 
-### Step 1: Initial centroids choose karo
+#### Step 1: Initial centroids choose karo
 
 Maan lo initial centroids randomly choose hue:
 
@@ -60,7 +60,7 @@ Maan lo initial centroids randomly choose hue:
 
 Ye sirf starting positions hain.
 
-### Step 2: Har point ko nearest centroid assign karo
+#### Step 2: Har point ko nearest centroid assign karo
 
 | Customer | Score | Distance from C₁ = 2 | Distance from C₂ = 10 | Cluster |
 | -------- | ----- | -------------------- | --------------------- | ------- |
@@ -76,7 +76,7 @@ Result:
 
 Yahan distance absolute difference se calculate ki gayi hai, kyunki example one-dimensional hai.
 
-### Step 3: New centroids calculate karo
+#### Step 3: New centroids calculate karo
 
 Centroid ka matlab cluster ke points ka mean hai.
 
