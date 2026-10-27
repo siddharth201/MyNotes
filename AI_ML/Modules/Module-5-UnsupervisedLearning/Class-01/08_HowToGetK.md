@@ -7,7 +7,7 @@ Commonly, hum 3 approaches use karte hain:
 
 Ye K choose karne ka ek popular method hai.
 
-Intuition: K badhane se WCSS (Within-Cluster Sum of Squares) generally decrease hota hai. Lekin humein aisa K chahiye jiske baad extra clusters add karne se improvement relatively kam ho jaaye.
+**Intuition:** K badhane se WCSS (Within-Cluster Sum of Squares) generally decrease hota hai. Lekin humein aisa K chahiye jiske baad extra clusters add karne se improvement relatively kam ho jaaye.
 
 <a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/elbow.jpeg="_blank">
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/elbow.jpeg" width="250" alt="Click to enlarge">
