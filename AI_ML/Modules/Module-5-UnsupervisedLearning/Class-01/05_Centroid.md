@@ -102,19 +102,15 @@ Problem: Agar dono centroids galti se ek hi natural group ke paas select ho gaye
 
 K-Means++ initial centroids ko smarter way mein choose karta hai.
 
-## 1
-
-First centroid
+### 1. First centroid
 
 Dataset se ek point randomly select karo.
 
-## 2
-
-Calculate distances
+### 2. Calculate distances
 
 Har point ki nearest already-selected centroid se distance calculate karo.
 
-## 3
+### 3.
 
 Choose the next centroid probabilistically
 
