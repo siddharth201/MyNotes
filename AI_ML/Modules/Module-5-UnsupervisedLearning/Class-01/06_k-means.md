@@ -96,7 +96,7 @@ Naye centroids 3 aur 11 use karke distances dobara calculate karenge. Is example
 
 Centroids bhi dobara 3 aur 11 hi aayenge. Isliye algorithm converge kar gaya.
 
-Final result
+**Final result**
 
 Cluster 1
 
