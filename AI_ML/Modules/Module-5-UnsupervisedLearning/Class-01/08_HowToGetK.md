@@ -9,9 +9,10 @@ Ye K choose karne ka ek popular method hai.
 
 Intuition: K badhane se WCSS (Within-Cluster Sum of Squares) generally decrease hota hai. Lekin humein aisa K chahiye jiske baad extra clusters add karne se improvement relatively kam ho jaaye.
 
-[K-means Clustering: Complete Guide with Algorithm, Implementation & Best Practices - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/7KyAP-bU3wtlC7c-QVeLJZb1Bo94ga0YknB4Yf_seilBHlIB3PJcg2rAKznqI9bS_6JjJmP8kwX0bGaWz5CeRfbdYG0D2fkHMsVDAb5TiPRaA4EWR6Bv96ODpJ2i4fiubpsADShECmU859pmxKh61u0eohApuKJnYqr1jZbJaUs?purpose=inline)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
-[mbrenndoerfer.com](https://mbrenndoerfer.com/writing/kmeans-clustering-complete-guide?utm_source=chatgpt.com)
 
 Illustrative graph: elbow ke aas-paas WCSS ka decrease noticeably slow hone lagta hai.
 
