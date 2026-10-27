@@ -90,7 +90,7 @@ Cluster 2:
 
 Ab centroids 2 aur 10 se update hokar 3 aur 11 ho gaye.
 
-### Step 4: Points dobara assign karo
+#### Step 4: Points dobara assign karo
 
 Naye centroids 3 aur 11 use karke distances dobara calculate karenge. Is example mein assignments same rahenge.
 
