@@ -35,10 +35,10 @@ K-Means ka core idea simple hai:
 
 Is process ke do main operations hain:
 
-- Assignment step: Point kis cluster mein jayega?
-- Update step: Cluster ka naya center kahan hoga?
+- **Assignment step:** Point kis cluster mein jayega?
+- **Update step:** Cluster ka naya center kahan hoga?
 
-## 2. Worked example: K-Means kaise kaam karta hai?
+### 2. Worked example: K-Means kaise kaam karta hai?
 
 Suppose 4 customers ka spending score hai:
 
