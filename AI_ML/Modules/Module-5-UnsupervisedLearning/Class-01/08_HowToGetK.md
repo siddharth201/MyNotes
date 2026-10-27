@@ -1,5 +1,5 @@
 
- K-Means mein K ka matlab hai number of clusters. Important question hai: jab humein pehle se nahi pata ki kitne clusters hone chahiye, toh K kaise choose karein?
+ K-Means mein **K ka matlab hai number of clusters**. Important question hai: jab humein pehle se nahi pata ki kitne clusters hone chahiye, toh K kaise choose karein?
 
 Commonly, hum 3 approaches use karte hain:
 
