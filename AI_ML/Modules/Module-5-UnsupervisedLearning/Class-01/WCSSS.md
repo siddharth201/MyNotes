@@ -74,6 +74,8 @@ WCSS = 4
 
 [pairote-sat.github.io](https://pairote-sat.github.io/SCMA248/Chapter8_Unsupervised_Learning.html?utm_source=chatgpt.com)
 
+https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/WCSS.jpeg
+
 Har point ka distance centroid se calculate hota hai. WCSS mein in distances ko square karke add kiya jata hai.
 
 ## 5. Elbow Method mein WCSS ka use kaise hota hai?
