@@ -16,15 +16,15 @@ Ye K choose karne ka ek popular method hai.
 
 Illustrative graph: elbow ke aas-paas WCSS ka decrease noticeably slow hone lagta hai.
 
-Steps:
+**Steps:**
 
-1. K = 1 se start karo.
-2. K = 2, 3, 4, 5, ... ke liye K-Means run karo.
-3. Har K ka WCSS record karo.
-4. WCSS vs. K graph plot karo.
-5. Jahan curve sharply decrease hone ke baad relatively flatten ho, us elbow ko candidate K samjho.
+**1.** K = 1 se start karo.
+**2.** K = 2, 3, 4, 5, ... ke liye K-Means run karo.
+**3.** Har K ka WCSS record karo.
+**4.** WCSS vs. K graph plot karo.
+**5.** Jahan curve sharply decrease hone ke baad relatively flatten ho, us elbow ko candidate K samjho.
 
-Dhyan rahe: elbow hamesha clear nahi hota, isliye ye method perfect answer guarantee nahi karta.
+**Dhyan rahe:** elbow hamesha clear nahi hota, isliye ye method perfect answer guarantee nahi karta.
 
 ## 2. Silhouette Score
 
