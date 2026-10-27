@@ -110,6 +110,28 @@ Cluster 2
 
 Centroid = 11
 
+<div style="border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; font-family: sans-serif; background: #ffffff;">
+  <div style="font-weight: 700; font-size: 1.15rem; margin-bottom: 14px; color: #111827;">
+    Final result
+  </div>
+
+  <div style="display: flex; gap: 14px;">
+    <!-- Cluster 1 Card -->
+    <div style="flex: 1; background: #e0edff; border-radius: 10px; padding: 16px; color: #1d4ed8;">
+      <div style="font-weight: 600; font-size: 1rem; margin-bottom: 8px;">Cluster 1</div>
+      <div style="font-weight: 700; font-size: 1.4rem; margin-bottom: 14px;">2, 4</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">Centroid = 3</div>
+    </div>
+
+    <!-- Cluster 2 Card -->
+    <div style="flex: 1; background: #def7ec; border-radius: 10px; padding: 16px; color: #046c4e;">
+      <div style="font-weight: 600; font-size: 1rem; margin-bottom: 8px;">Cluster 2</div>
+      <div style="font-weight: 700; font-size: 1.4rem; margin-bottom: 14px;">10, 12</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">Centroid = 11</div>
+    </div>
+  </div>
+</div>
+
 ### 3. K-Means actually optimize kya karta hai?
 
 K-Means ka objective hai data points ko apne assigned centroids ke jitna close ho sake rakhna.
