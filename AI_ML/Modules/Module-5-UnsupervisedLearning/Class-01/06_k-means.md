@@ -114,7 +114,7 @@ Centroid = 11
 
 K-Means ka objective hai data points ko apne assigned centroids ke jitna close ho sake rakhna.
 
-Iske liye standard K-Means WCSS (Within-Cluster Sum of Squares) minimize karta hai.
+Iske liye standard K-Means **WCSS (Within-Cluster Sum of Squares)** minimize karta hai.
 
 Simple language mein:
 
