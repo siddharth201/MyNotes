@@ -32,9 +32,9 @@ Ye method check karta hai ki clusters internally kitne cohesive hain aur ek doos
 
 Silhouette score ka range **-1 se +1** hai:
 
-- Close to +1: Clustering generally achhi hai.
-- Around 0: Clusters overlap kar sakte hain.
-- Negative: Kuch points shayad wrong cluster mein assigned hain.
+- **Close to +1:** Clustering generally achhi hai.
+- **Around 0:** Clusters overlap kar sakte hain.
+- **Negative:** Kuch points shayad wrong cluster mein assigned hain.
 
 Different K values ke silhouette scores compare karo. Higher score useful signal hai, lekin score ko domain knowledge aur cluster usefulness ke saath evaluate karna chahiye.
 
