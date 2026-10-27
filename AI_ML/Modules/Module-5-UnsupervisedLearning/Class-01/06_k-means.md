@@ -158,7 +158,7 @@ Input: Dataset X, number of clusters K
 Output: Cluster assignments and centroids
 ```
 
-## 5. K-Means ki limitations
+### 5. K-Means ki limitations
 
 - K pehle choose karna padta hai: Algorithm khud automatically best K guarantee nahi karta.
 - Initialization matters: Different starting centroids se different results aa sakte hain.
