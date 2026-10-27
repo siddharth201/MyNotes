@@ -118,10 +118,10 @@ Iske liye standard K-Means **WCSS (Within-Cluster Sum of Squares)** minimize kar
 
 Simple language mein:
 
-1. Har point aur uske assigned centroid ke beech distance calculate karo.
-2. Har distance ka square karo.
-3. Sabhi squared distances ko add karo.
-4. Algorithm centroid positions aur assignments update karke is total ko reduce karne ki koshish karta hai.
+**1.** Har point aur uske assigned centroid ke beech distance calculate karo.
+**2.** Har distance ka square karo.
+**3.** Sabhi squared distances ko add karo.
+**4.** Algorithm centroid positions aur assignments update karke is total ko reduce karne ki koshish karta hai.
 
 Hamare example mein final centroids 3 aur 11 hain.
 
