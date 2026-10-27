@@ -9,6 +9,8 @@ Think of it as the cluster's average location.
 
 [garden.synesthesia.co.uk](https://garden.synesthesia.co.uk/k-means-clustering/?utm_source=chatgpt.com)
 
+https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeansClustering.jpeg
+
 Imagine the dots represent customers. K-Means groups similar customers together, and the centroid represents the average location of each group.
 
 ## 2. Calculate a centroid step by step
