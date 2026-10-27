@@ -3,7 +3,7 @@ WCSS calculate karna K-Means ka ek important concept hai. Chalo apne previous ex
 
 ## 1. WCSS kya measure karta hai?
 
-WCSS (Within-Cluster Sum of Squares) measure karta hai ki cluster ke data points apne centroid se kitne spread out hain.
+**WCSS (Within-Cluster Sum of Squares)** measure karta hai ki cluster ke data points apne centroid se kitne spread out hain.
 
 - WCSS low → points generally apne centroids ke close hain.
 - WCSS high → points generally apne centroids se zyada spread out hain.
