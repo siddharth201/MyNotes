@@ -114,7 +114,7 @@ Har point ki nearest already-selected centroid se distance calculate karo.
 
 Jo points existing centroids se zyada door hain, unke select hone ki probability zyada hoti hai.
 
-### 4.Repeat
+### 4. Repeat
 
 Jab tak `K` initial centroids select na ho jaayein.
 
