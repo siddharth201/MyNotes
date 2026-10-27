@@ -65,4 +65,8 @@ For example, if customer data contains age, income, and spending score, the cent
 
 K-Means = Assign points to the nearest centroid → Calculate new centroids → Repeat.
 
-The centroid is the cluster's average position, and K-Means repeatedly updates it to improve the clustering.
+The centroid is the cluster's average position, and K-Means repeatedly updates it to improve the clustering.  
+
+---  
+
+## Q. 
