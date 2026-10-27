@@ -110,6 +110,13 @@ Cluster 2
 
 Centroid = 11
 
+**Final result**
+
+| **Cluster 1** | **Cluster 2** |
+| :--- | :--- |
+| **`2, 4`** | **`10, 12`** |
+| *Centroid = 3* | *Centroid = 11* |
+
 ### 3. K-Means actually optimize kya karta hai?
 
 K-Means ka objective hai data points ko apne assigned centroids ke jitna close ho sake rakhna.
