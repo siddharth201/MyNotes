@@ -64,7 +64,7 @@ Cluster 2 WCSS = 1 + 1 = 2
 
 `Total WCSS = 2 + 2 = 4`
 
-Final answer
+**Final answer**
 
 WCSS = 4
 
