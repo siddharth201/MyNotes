@@ -1,7 +1,6 @@
 
-Friend, chalo K-Means ko step by step samajhte hain — intuition, numerical example aur algorithm ke saath.
 
-# K-Means Clustering
+## K-Means Clustering
 
 K-Means ek unsupervised machine learning algorithm hai jo data ko K clusters mein divide karta hai, taaki similar data points ek cluster mein aa sakein.
 
