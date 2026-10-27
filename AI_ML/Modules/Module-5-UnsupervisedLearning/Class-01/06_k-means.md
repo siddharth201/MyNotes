@@ -100,17 +100,17 @@ Centroids bhi dobara 3 aur 11 hi aayenge. Isliye algorithm converge kar gaya.
 
 Cluster 1
 
-## 2, 4
+`2, 4`
 
 Centroid = 3
 
 Cluster 2
 
-## 10, 12
+`10, 12`
 
 Centroid = 11
 
-## 3. K-Means actually optimize kya karta hai?
+### 3. K-Means actually optimize kya karta hai?
 
 K-Means ka objective hai data points ko apne assigned centroids ke jitna close ho sake rakhna.
 
