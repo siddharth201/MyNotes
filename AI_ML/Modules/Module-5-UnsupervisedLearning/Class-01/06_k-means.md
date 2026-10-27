@@ -133,11 +133,11 @@ Cluster 2 ka WCSS:
 
 `(10 - 11)² + (12 - 11)² = 1 + 1 = 2`
 
-Total WCSS = 2 + 2 = 4
+**Total WCSS** = 2 + 2 = 4
 
 Note: K-Means generally local optimum tak converge karta hai; global best clustering ki guarantee nahi hoti. Isi liye K-Means++ initialization aur multiple restarts useful hain.
 
-## 4. Algorithm in pseudocode
+### 4. Algorithm in pseudocode
 
 ```
 Input: Dataset X, number of clusters K
