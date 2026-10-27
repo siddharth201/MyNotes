@@ -79,8 +79,8 @@ Suppose hamare paas 6 data points hain aur humein `K = 2` clusters banane hain.
 
 ---  
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/OriginalDataPoints.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/OriginalDataPoints.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Illustrative dataset: abhi clusters assign nahi hue hain.
