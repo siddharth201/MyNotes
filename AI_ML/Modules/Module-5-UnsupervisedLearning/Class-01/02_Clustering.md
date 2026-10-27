@@ -67,18 +67,6 @@ $$d(A, B) = \sqrt{(1200 - 1000)^2 + (3 - 2)^2} = \sqrt{200^2 + 1^2} = \sqrt{4000
 
 $A$ aur $B$ ke beech distance, $C$ ke saath comparison mein kaafi kam hogi.
 
-Agar hum Euclidean distance use karein, toh:
-
-$$\
-d(A,B)=\sqrt201\
-$$
-
-$$\
-\approx 200\
-$$
-
-A aur B ke beech distance, C ke saath comparison mein kaafi kam hogi.
-
 Basic intuition: Chhoti distance ka matlab chosen features ke according zyada similarity ho sakti hai.
 
 Lekin similarity kaise measure hogi, yeh algorithm aur distance metric par depend karta hai. Har clustering algorithm sirf distance ya nearest points ke basis par kaam nahi karta.
