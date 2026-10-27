@@ -30,7 +30,7 @@ Illustrative graph: elbow ke aas-paas WCSS ka decrease noticeably slow hone lagt
 
 Ye method check karta hai ki clusters internally kitne cohesive hain aur ek doosre se kitne well-separated hain.
 
-Silhouette score ka range -1 se +1 hai:
+Silhouette score ka range **-1 se +1** hai:
 
 - Close to +1: Clustering generally achhi hai.
 - Around 0: Clusters overlap kar sakte hain.
