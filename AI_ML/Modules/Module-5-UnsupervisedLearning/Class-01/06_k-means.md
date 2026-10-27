@@ -16,9 +16,10 @@ Yahan pehle se labels nahi diye gaye. Algorithm data mein patterns find karta ha
 
 ---  
 
-[A deeper view into Unsupervised Learning concepts and techniques | by Mauro Krikorian | SOUTHWORKS | Medium](https://images.openai.com/static-rsc-4/jwLLldVHwJkj0boDVly19TNMudFW8Ko6CPSdTFASAjIrSw6x9NfZa5q5OhMRvSY4f_gsbkv_kNybqyVG3wtho4WqoeroVKp9OfWcfDG8VsCKmIhVI5HZTQd96e_U1YWOrOXBF8jL91Ona7B-tmIqEvolpcDjyzDCut4XhabEgR4?purpose=inline)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
-[medium.com](https://medium.com/southworks/a-deeper-view-into-unsupervised-learning-concepts-and-techniques-7c404a3bc87b?utm_source=chatgpt.com)
 
 Conceptual illustration: data points ko groups mein assign karna aur har group ka centroid identify karna.  
 
