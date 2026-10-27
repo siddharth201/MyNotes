@@ -66,7 +66,7 @@ Cluster 2 WCSS = 1 + 1 = 2
 
 Final answer
 
-# WCSS = 4
+WCSS = 4
 
 ## 4. Visual intuition
 
