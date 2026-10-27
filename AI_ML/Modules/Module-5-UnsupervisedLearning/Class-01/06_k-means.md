@@ -166,12 +166,12 @@ Output: Cluster assignments and centroids
 - **Feature scaling matters:** Income jaise large-range features, age jaise small-range features ko dominate kar sakte hain.
 - **Har shape ke clusters ke liye suitable nahi:** K-Means roughly spherical/compact clusters ke liye best suited hai; irregular shapes ke liye DBSCAN jaise algorithms better ho sakte hain.
 
-## 6. Ultimate goal in ML — simple terms
+### 6. Ultimate goal in ML — simple terms
 
 K-Means ka purpose sirf data ko groups mein baantna nahi hai. Purpose hai data mein hidden structure discover karna, jab humein pehle se correct labels nahi pata.
 
-Yaad rakhne ka shortcut:
+**Yaad rakhne ka shortcut:**
 
-Choose K → Initialize → Assign → Update → Repeat
+`Choose K → Initialize → Assign → Update → Repeat`
 
-Ek important check: K-Means mein centroid calculate karte waqt hum mean use karte hain. Isi wajah se standard K-Means squared Euclidean distance minimize karta hai.
+**Ek important check:** K-Means mein centroid calculate karte waqt hum mean use karte hain. Isi wajah se standard K-Means squared Euclidean distance minimize karta hai.
