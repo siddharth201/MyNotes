@@ -27,11 +27,11 @@ Conceptual illustration: data points ko groups mein assign karna aur har group k
 
 K-Means ka core idea simple hai:
 
-**1.** `K` decide karo — kitne clusters chahiye.
-**2.** Initial centroids choose karo.
-**3.** Har data point ko nearest centroid wale cluster mein assign karo.
-**4.** Har cluster ka naya centroid calculate karo.
-**5.** Assignment aur centroid update repeat karo, jab tak algorithm converge na kare.
+**1.** `K` decide karo — kitne clusters chahiye.  
+**2.** Initial centroids choose karo.  
+**3.** Har data point ko nearest centroid wale cluster mein assign karo.  
+**4.** Har cluster ka naya centroid calculate karo.  
+**5.** Assignment aur centroid update repeat karo, jab tak algorithm converge na kare.  
 
 Is process ke do main operations hain:
 
