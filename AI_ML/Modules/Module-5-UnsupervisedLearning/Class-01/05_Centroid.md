@@ -69,4 +69,4 @@ The centroid is the cluster's average position, and K-Means repeatedly updates i
 
 ---  
 
-## Q. 
+## Q. Hum initial centroid decide kaise krte hain?
