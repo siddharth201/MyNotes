@@ -22,19 +22,19 @@ Suppose we have three points in a cluster:
 
 The centroid is the mean of the x-coordinates and the mean of the y-coordinates.
 
-Step 1: Calculate the average x-coordinate.
+**Step 1: Calculate the average x-coordinate.**
 
 `x_centroid = (2 + 4 + 6) / 3 = 4`
 
-Step 2: Calculate the average y-coordinate.
+**Step 2: Calculate the average y-coordinate.**
 
 `y_centroid = (2 + 4 + 3) / 3 = 3`
 
-Step 3: Combine both coordinates.
+**Step 3: Combine both coordinates.**
 
 Final centroid
 
-# C = (4, 3)
+`C = (4, 3)`
 
 Notice that the centroid does not have to be an actual data point. In this example, `(4, 3)` is the centroid, even though none of the three original points is located there.
 
