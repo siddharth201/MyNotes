@@ -42,13 +42,13 @@ Notice that the centroid does not have to be an actual data point. In this examp
 
 K-Means uses centroids to decide which cluster a data point belongs to.
 
-Step 1: Start with cluster centroids.
+**Step 1:** Start with cluster centroids.
 
-Step 2: Calculate each point's distance to the centroids.
+**Step 2:** Calculate each point's distance to the centroids.
 
-Step 3: Assign each point to its nearest centroid.
+**Step 3:** Assign each point to its nearest centroid.
 
-Step 4: Recalculate each centroid using the newly assigned points.
+**Step 4:** Recalculate each centroid using the newly assigned points.
 
 Repeat until the assignments or centroids stop changing significantly.
 
