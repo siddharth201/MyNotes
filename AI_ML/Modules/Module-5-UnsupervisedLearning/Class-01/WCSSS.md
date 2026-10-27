@@ -70,11 +70,10 @@ WCSS = 4
 
 ## 4. Visual intuition
 
-[8. Unsupervised Machine Learning: K-means Clustering — SCMA248 Introduction to Data Science](https://images.openai.com/static-rsc-4/qlfU-mWhd8iy85N-g99X0sj8ifXH1PcVllhkv9Eo4BF0o3Xz5JWHU-sYLUlJb8tUCFiRyFWcsh1rmxVXxe4gHsEzkq5mEr2PAur5x29TwHtUKLh0_CbWvPxTisZ-sMmsqENF9Lmg61pBdHtPI1oSUcnP_jpQX1cDLp191N3Kofw?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/WCSS.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/WCSS.jpeg" width="250" alt="Click to enlarge">
+</a>
 
-[pairote-sat.github.io](https://pairote-sat.github.io/SCMA248/Chapter8_Unsupervised_Learning.html?utm_source=chatgpt.com)
-
-https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/WCSS.jpeg
 
 Har point ka distance centroid se calculate hota hai. WCSS mein in distances ko square karke add kiya jata hai.
 
