@@ -14,10 +14,10 @@ WCSS calculate karna K-Means ka ek important concept hai. Chalo apne previous ex
 
 Yaani:
 
-1. Har point aur uske centroid ke beech distance nikalo.
-2. Distance ka square karo.
-3. Ek cluster ke sabhi squared distances add karo.
-4. Sabhi clusters ke totals add kar do.
+**1.** Har point aur uske centroid ke beech distance nikalo.
+**2.** Distance ka square karo.
+**3.** Ek cluster ke sabhi squared distances add karo.
+**4.** Sabhi clusters ke totals add kar do.
 
 ## 3. Numerical example
 
