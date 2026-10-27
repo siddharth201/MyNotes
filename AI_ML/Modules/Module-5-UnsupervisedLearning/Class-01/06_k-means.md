@@ -1,5 +1,5 @@
 
-[Practice K-Means]()
+[Practice K-Means](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
 
 ## K-Means Clustering
 
