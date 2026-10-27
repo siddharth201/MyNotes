@@ -5,11 +5,10 @@ Think of it as the cluster's average location.
 
 ## 1. Understand with a visual example
 
-[K-Means Clustering](https://images.openai.com/static-rsc-4/_8H_m5pi7hSJprYJGXGbDcn0b8IZvEmhAZ_apqzcSPLdWzQd97s5KIqe9HFgTupWAHswgz3ZoDA4LVMQ4c7xlV3dv3o07HURoFaWn4JzTvs9GBHwzUZ4hoUUKEql2AiGeRrgq-4Lc0hBDMZpS07EGhpyD3hzvpkr9TPZgiBaqyQ?purpose=inline)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeansClustering.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeansClustering.jpeg" width="250" alt="Click to enlarge">
+</a>
 
-[garden.synesthesia.co.uk](https://garden.synesthesia.co.uk/k-means-clustering/?utm_source=chatgpt.com)
-
-https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeansClustering.jpeg
 
 Imagine the dots represent customers. K-Means groups similar customers together, and the centroid represents the average location of each group.
 
