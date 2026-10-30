@@ -180,6 +180,6 @@ Task
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q6. Concurrency vs Parallelism?</b></summary>
 
 </details>
