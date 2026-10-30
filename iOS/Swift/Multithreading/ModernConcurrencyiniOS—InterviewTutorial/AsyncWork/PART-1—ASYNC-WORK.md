@@ -210,5 +210,5 @@ Don't say:
 
 > "Concurrency means multiple threads."
 
-Modern Swift concurrency is intentionally abstracted above threads. Swift Documentation
+Modern Swift concurrency is intentionally abstracted above threads.
 </details>
