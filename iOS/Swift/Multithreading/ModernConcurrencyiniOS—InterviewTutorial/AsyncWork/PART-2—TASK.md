@@ -100,6 +100,8 @@ Task {
     let result = await task.value
     print("Result:", result)
 }
+
+Mental model
 </details>
 
 <details>
