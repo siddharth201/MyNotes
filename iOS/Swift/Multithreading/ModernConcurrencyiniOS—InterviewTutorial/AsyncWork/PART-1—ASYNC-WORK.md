@@ -103,3 +103,8 @@ Task {
 That's a common interview mistake.
 
 </details>
+
+<details>
+<summary><b>Explanation</b></summary>
+
+</details>
