@@ -238,12 +238,14 @@ Because `buttonTapped()` isn't asynchronous.
 
 You can do:
 
+```swift
 func buttonTapped() {
     Task {
         let user = await fetchUser()
         print(user)
     }
 }
+```
 
 This leads us to our next concept.
 
