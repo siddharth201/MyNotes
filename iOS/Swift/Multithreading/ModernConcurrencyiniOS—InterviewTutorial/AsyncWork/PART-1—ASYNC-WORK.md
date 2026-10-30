@@ -6,8 +6,9 @@
 
 > Modern Swift Concurrency is Swift's language-level system for writing asynchronous and concurrent code using async/await, Tasks, structured concurrency, actors, and Sendable to make asynchronous code easier to write and safer from data races.
 
-Don't give a 2-minute answer unless interviewer asks.
-Remember
+
+**Remember**
+
 A-S-S
 Async work
 Structure
