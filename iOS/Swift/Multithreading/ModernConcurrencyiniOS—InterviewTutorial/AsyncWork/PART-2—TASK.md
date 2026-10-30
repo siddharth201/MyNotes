@@ -58,9 +58,12 @@ Button("Load User") {
 <summary><b>Q10. Does creating a Task start it automatically?</b></summary>
 
 Yes.
+
+```swift
 let task = Task {
     print("Running")
 }
+```
 
 You don't call:
 task.start() // ❌
