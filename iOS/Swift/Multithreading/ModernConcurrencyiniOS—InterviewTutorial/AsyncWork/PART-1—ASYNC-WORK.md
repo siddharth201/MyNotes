@@ -217,6 +217,8 @@ Modern Swift concurrency is intentionally abstracted above threads.
 <summary><b>Q7. Can I call an async function directly from a normal function?</b></summary>
 
 Suppose:
+
+```swift
 func fetchUser() async -> String {
     "Siddharth"
 }
