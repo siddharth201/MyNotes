@@ -125,4 +125,9 @@ Task {
 }
 
 Expected:
+
+1
+        ← task suspends
+        ← approximately 2 seconds
+2 Siddharth
 </details>
