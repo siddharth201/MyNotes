@@ -78,7 +78,16 @@ Tasks begin executing after creation.
 <details>
 <summary><b>Q10. Does creating a Task start it automatically?</b></summary>
 
+Yes.
 
+let task = Task {
+    print("Running")
+}
+
+You don't call:
+task.start() // ❌
+
+Tasks begin executing after creation. Apple Developer
 </details>
 
 <details>
