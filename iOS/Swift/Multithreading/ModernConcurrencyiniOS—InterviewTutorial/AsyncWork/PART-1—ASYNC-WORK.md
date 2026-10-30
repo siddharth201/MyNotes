@@ -150,4 +150,28 @@ Swift's concurrency model allows an asynchronous function to give up its executi
 No.**
 
 This is one of the first things I would expect you to answer confidently.
+
+```text
+
+BLOCKING
+
+Thread
+│
+├──── waiting ──────────┤
+│                       │
+cannot do other work
+
+
+SUSPENDING
+
+Task
+│
+├── running
+│
+├── await
+│
+│   suspended
+│
+└── resume
+```
 </details>
