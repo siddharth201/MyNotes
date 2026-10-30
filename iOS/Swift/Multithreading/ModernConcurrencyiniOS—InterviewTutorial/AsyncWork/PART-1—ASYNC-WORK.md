@@ -214,7 +214,9 @@ Modern Swift concurrency is intentionally abstracted above threads.
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q7. Can I call an async function directly from a normal function?</b></summary>
+
+
 
 </details>
 
