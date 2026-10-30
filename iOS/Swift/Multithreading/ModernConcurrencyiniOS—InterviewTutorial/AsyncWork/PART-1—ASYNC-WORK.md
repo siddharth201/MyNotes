@@ -146,7 +146,7 @@ Swift's concurrency model allows an asynchronous function to give up its executi
 <details>
 <summary><b>Q5. Does await block the thread?</b></summary>
 
-**Answer
+**Answer  
 No.**
 
 This is one of the first things I would expect you to answer confidently.
