@@ -25,6 +25,7 @@ Task {
 
 **Mental model**
 
+```text
 async function
       ↓
 needs execution
@@ -32,6 +33,8 @@ needs execution
      Task
       ↓
 asynchronous work
+```
+
 </details>
 
 <details>
