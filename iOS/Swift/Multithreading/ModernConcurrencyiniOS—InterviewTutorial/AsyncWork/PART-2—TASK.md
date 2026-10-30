@@ -79,6 +79,7 @@ Tasks begin executing after creation.
 <summary><b>Q11. Can I get a result from a Task?</b></summary>
 
 Yes.
+
 let task = Task {
     return 42
 }
