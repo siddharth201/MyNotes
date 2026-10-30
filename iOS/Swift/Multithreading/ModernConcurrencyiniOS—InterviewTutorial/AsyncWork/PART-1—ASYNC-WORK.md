@@ -187,4 +187,21 @@ Task
 > Concurrency means multiple tasks can make progress during overlapping periods. Parallelism means multiple pieces of work actually execute simultaneously.
 
 Think:
+
+```text
+
+CONCURRENCY
+
+Task A ─────┐       ┌────
+            └───────┘
+Task B      ────────┐    ┌──
+                    └────┘
+
+
+PARALLELISM
+
+CPU 1:  A ───────────────
+
+CPU 2:  B ───────────────
+```
 </details>
