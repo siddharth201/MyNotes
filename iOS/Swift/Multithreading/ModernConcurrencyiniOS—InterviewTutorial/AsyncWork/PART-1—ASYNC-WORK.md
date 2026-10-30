@@ -79,6 +79,7 @@ func loadData() async throws {
 > `async` means a function can suspend while performing asynchronous work and later resume.
 
 Example:
+
 func fetchUser() async -> String {
     return "Siddharth"
 }
