@@ -11,9 +11,9 @@
 
 ### A-S-S
 
-**A**sync work
-**S**tructure
-**S**afety
+**A**sync work  
+**S**tructure  
+**S**afety  
 
 ```text
 Async/Await
