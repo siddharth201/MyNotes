@@ -17,6 +17,8 @@ Task {
 
     print("Task finished")
 }
+
+Mental model
 </details>
 
 <details>
