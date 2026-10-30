@@ -87,10 +87,13 @@ func fetchUser() async -> String {
 ```
 
 Call:
+
+```swift
 Task {
     let user = await fetchUser()
     print(user)
 }
+```
 
 Important
 async does not mean:
