@@ -175,6 +175,6 @@ Task
 └── resume
 ```
 
-Interview answer
-await suspends the task, not the thread. While the task is suspended, the execution resource can be used for other work.
+**Interview answer**
+> await suspends the task, not the thread. While the task is suspended, the execution resource can be used for other work.
 </details>
