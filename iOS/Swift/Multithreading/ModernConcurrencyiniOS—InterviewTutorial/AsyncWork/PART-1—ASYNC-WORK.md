@@ -56,4 +56,16 @@ This is callback-based asynchronous programming.
 
 With async/await:
 
+```swift
+func loadData() async throws {
+    let user = try await fetchUser()
+    let orders = try await fetchOrders(user)
+    let products = try await fetchProducts(orders)
+
+    print(products)
+}
+```
+
+Interview definition
+async/await lets us write asynchronous code in a sequential-looking style, making control flow and error handling easier to understand
 </details>
