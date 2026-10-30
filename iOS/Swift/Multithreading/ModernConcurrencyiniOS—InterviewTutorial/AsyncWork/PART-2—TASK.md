@@ -119,7 +119,7 @@ Task
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q12. What is Task {} vs Task.detached?</b></summary>
 
 </details>
 
