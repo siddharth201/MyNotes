@@ -39,6 +39,18 @@ asynchronous work
 <details>
 <summary><b>Q9. Why do we need Task {}?</b></summary>
 
+Because it gives synchronous code a way to start asynchronous work.
+
+For example, SwiftUI:
+Button("Load User") {
+    Task {
+        let user = await fetchUser()
+        print(user)
+    }
+}
+
+Interview answer
+Task is commonly used as a bridge when synchronous code needs to start asynchronous work.
 </details>
 
 <details>
