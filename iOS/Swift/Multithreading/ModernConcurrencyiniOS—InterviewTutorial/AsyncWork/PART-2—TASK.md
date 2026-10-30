@@ -155,5 +155,6 @@ A regular task inherits context from where it is created. A detached task is int
 <details>
 <summary><b>Q13. Run Task vs Task.detached</b></summary>
 
+Create:
 </details>
 
