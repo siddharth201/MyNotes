@@ -102,6 +102,12 @@ Task {
 }
 
 Mental model
+
+Task
+ │
+ └── produces Result
+          ↓
+      task.value
 </details>
 
 <details>
