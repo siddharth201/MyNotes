@@ -80,6 +80,7 @@ Tasks begin executing after creation.
 
 Yes.
 
+```swift
 let task = Task {
     return 42
 }
