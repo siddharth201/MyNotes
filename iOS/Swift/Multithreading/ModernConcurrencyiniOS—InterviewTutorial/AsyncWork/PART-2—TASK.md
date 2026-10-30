@@ -121,6 +121,20 @@ Task
 <details>
 <summary><b>Q12. What is Task {} vs Task.detached?</b></summary>
 
+Must know
+
+Remember:
+Task = INHERIT
+Detached = DETACH
+Task
+Task {
+    // inherits relevant context
+}
+
+Detached
+Task.detached {
+    // does not inherit the surrounding actor/context
+}
 </details>
 
 <details>
