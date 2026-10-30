@@ -115,6 +115,4 @@ Swift Concurrency is not a replacement for the operating system's threads or CPU
 
 It provides a higher-level programming model that works with the Swift runtime and underlying execution resources.
 
-My follow-up interview question for you:
 
-If Swift Concurrency is a language-level system, does that mean GCD is obsolete and we should never use `DispatchQueue` anymore?
