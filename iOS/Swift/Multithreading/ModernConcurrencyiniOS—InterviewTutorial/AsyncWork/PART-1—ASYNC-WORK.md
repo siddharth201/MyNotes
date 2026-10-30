@@ -66,6 +66,7 @@ func loadData() async throws {
 }
 ```
 
-Interview definition
-async/await lets us write asynchronous code in a sequential-looking style, making control flow and error handling easier to understand
+**Interview definition**
+
+> async/await lets us write asynchronous code in a sequential-looking style, making control flow and error handling easier to understand
 </details>
