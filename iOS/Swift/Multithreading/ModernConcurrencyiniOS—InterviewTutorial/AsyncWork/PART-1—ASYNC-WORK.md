@@ -182,4 +182,8 @@ Task
 <details>
 <summary><b>Q6. Concurrency vs Parallelism?</b></summary>
 
+Interview definition
+Concurrency means multiple tasks can make progress during overlapping periods. Parallelism means multiple pieces of work actually execute simultaneously.
+
+Think:
 </details>
