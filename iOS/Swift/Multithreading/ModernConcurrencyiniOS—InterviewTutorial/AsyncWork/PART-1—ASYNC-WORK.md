@@ -76,7 +76,7 @@ func loadData() async throws {
 
 **Simple definition**
 
-async means a function can suspend while performing asynchronous work and later resume.
+> `async` means a function can suspend while performing asynchronous work and later resume.
 
 Example:
 func fetchUser() async -> String {
