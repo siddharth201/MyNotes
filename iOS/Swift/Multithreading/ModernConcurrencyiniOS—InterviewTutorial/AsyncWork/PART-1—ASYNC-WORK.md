@@ -15,6 +15,7 @@
 **S**tructure
 **S**afety
 
+```text
 Async/Await
      ↓
 Task
@@ -24,4 +25,5 @@ Structured Concurrency
 Actors + Isolation
      ↓
 Sendable
+```
 </details>
