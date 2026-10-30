@@ -34,11 +34,10 @@ needs execution
       ↓
 asynchronous work
 ```
-
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q9. Why do we need Task {}?</b></summary>
 
 </details>
 
