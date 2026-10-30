@@ -40,4 +40,19 @@ Sendable
 <details>
 <summary><b>Q2. What problem did async/await solve?</b></summary>
 
+Before:
+
+```swift
+fetchUser { user in
+    fetchOrders(user) { orders in
+        fetchProducts(orders) { products in
+            print(products)
+        }
+    }
+}
+```
+
+This is callback-based asynchronous programming.
+
+With async/await:
 </details>
