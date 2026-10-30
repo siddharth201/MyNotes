@@ -49,8 +49,9 @@ Button("Load User") {
     }
 }
 
-Interview answer
-Task is commonly used as a bridge when synchronous code needs to start asynchronous work.
+**Interview answer**
+
+> Task is commonly used as a bridge when synchronous code needs to start asynchronous work.
 </details>
 
 <details>
