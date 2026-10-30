@@ -38,6 +38,6 @@ Sendable
 
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q2. What problem did async/await solve?</b></summary>
 
 </details>
