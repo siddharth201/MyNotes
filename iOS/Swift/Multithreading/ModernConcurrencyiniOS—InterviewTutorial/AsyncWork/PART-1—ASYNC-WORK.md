@@ -95,7 +95,7 @@ Task {
 }
 ```
 
-Important
+**Important**
 async does not mean:
 "Run this on a background thread."
 
