@@ -111,6 +111,8 @@ That's a common interview mistake.
 > `await` marks a point where the current task may suspend until an asynchronous operation produces its result.
 
 Example:
+
+```swift
 func fetchUser() async -> String {
     try? await Task.sleep(for: .seconds(2))
     return "Siddharth"
