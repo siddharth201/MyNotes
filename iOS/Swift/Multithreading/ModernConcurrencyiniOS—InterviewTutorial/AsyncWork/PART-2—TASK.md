@@ -92,6 +92,7 @@ print(result)
 
 Full example:
 
+```swift
 import Foundation
 
 let task = Task {
@@ -103,6 +104,7 @@ Task {
     let result = await task.value
     print("Result:", result)
 }
+```
 
 Mental model
 
