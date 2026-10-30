@@ -222,6 +222,7 @@ Suppose:
 func fetchUser() async -> String {
     "Siddharth"
 }
+```
 
 This won't work:
 func buttonTapped() {
