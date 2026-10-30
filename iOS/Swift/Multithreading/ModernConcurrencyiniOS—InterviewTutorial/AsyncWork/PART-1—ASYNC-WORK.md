@@ -80,9 +80,11 @@ func loadData() async throws {
 
 Example:
 
+```swift
 func fetchUser() async -> String {
     return "Siddharth"
 }
+```
 
 Call:
 Task {
