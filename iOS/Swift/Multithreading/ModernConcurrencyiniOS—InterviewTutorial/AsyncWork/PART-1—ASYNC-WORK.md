@@ -251,32 +251,3 @@ This leads us to our next concept.
 
 </details>
 
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
-
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
-
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
-
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
-
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
-
-<details>
-<summary><b>Explanation</b></summary>
-
-</details>
