@@ -73,7 +73,8 @@ func loadData() async throws {
 
 <details>
 <summary><b>Q3. What does async mean?</b></summary>
-
+  
+  
 **Simple definition**
 
 > `async` means a function can suspend while performing asynchronous work and later resume.
