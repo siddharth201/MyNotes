@@ -71,7 +71,8 @@ You don't call:
 task.start() // ❌
 ```
 
-Tasks begin executing after creation. Apple Developer
+Tasks begin executing after creation.
+
 </details>
 
 <details>
