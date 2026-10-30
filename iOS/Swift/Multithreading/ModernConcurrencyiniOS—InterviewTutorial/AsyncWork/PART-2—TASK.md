@@ -19,6 +19,14 @@ Task {
 }
 
 Mental model
+
+async function
+      ↓
+needs execution
+      ↓
+     Task
+      ↓
+asynchronous work
 </details>
 
 <details>
