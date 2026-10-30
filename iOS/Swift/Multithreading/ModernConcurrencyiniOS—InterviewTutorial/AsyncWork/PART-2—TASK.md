@@ -129,7 +129,8 @@ Remember:
 
 #### Detached = DETACH
 
-Task
+**Task**
+
 Task {
     // inherits relevant context
 }
