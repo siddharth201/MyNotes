@@ -88,6 +88,18 @@ let result = await task.value
 print(result)
 
 Full example:
+
+import Foundation
+
+let task = Task {
+    try? await Task.sleep(for: .seconds(1))
+    return 42
+}
+
+Task {
+    let result = await task.value
+    print("Result:", result)
+}
 </details>
 
 <details>
