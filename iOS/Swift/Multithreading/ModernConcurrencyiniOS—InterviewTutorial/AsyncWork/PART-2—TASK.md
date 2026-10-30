@@ -66,7 +66,10 @@ let task = Task {
 ```
 
 You don't call:
+
+```swift
 task.start() // ❌
+```
 
 Tasks begin executing after creation. Apple Developer
 </details>
