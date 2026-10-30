@@ -121,7 +121,7 @@ Task
 <details>
 <summary><b>Q12. What is Task {} vs Task.detached?</b></summary>
 
-Must know
+**Must know**
 
 Remember:
 Task = INHERIT
