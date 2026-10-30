@@ -216,7 +216,21 @@ Modern Swift concurrency is intentionally abstracted above threads.
 <details>
 <summary><b>Q7. Can I call an async function directly from a normal function?</b></summary>
 
+Suppose:
+func fetchUser() async -> String {
+    "Siddharth"
+}
 
+This won't work:
+func buttonTapped() {
+    let user = await fetchUser() // ❌
+}
+
+Why?
+
+Because buttonTapped() isn't asynchronous.
+
+You can do:
 
 </details>
 
