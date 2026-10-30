@@ -108,7 +108,7 @@ That's a common interview mistake.
 <summary><b>Q4. What does await mean?</b></summary>
 
 **Interview definition**
-> await marks a point where the current task may suspend until an asynchronous operation produces its result.
+> `await` marks a point where the current task may suspend until an asynchronous operation produces its result.
 
 Example:
 func fetchUser() async -> String {
