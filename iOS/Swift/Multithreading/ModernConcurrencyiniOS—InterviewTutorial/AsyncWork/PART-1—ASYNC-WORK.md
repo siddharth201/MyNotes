@@ -107,7 +107,7 @@ That's a common interview mistake.
 <details>
 <summary><b>Q4. What does await mean?</b></summary>
 
-Interview definition
+**Interview definition**
 await marks a point where the current task may suspend until an asynchronous operation produces its result.
 
 Example:
@@ -130,4 +130,8 @@ Expected:
         ← task suspends
         ← approximately 2 seconds
 2 Siddharth
+
+Mental model
+await = suspend, not block
+Swift's concurrency model allows an asynchronous function to give up its execution resource while waiting and resume later; Swift doesn't guarantee that it resumes on the same thread. 
 </details>
