@@ -74,4 +74,22 @@ func loadData() async throws {
 <details>
 <summary><b>Q3. What does async mean?</b></summary>
 
+Simple definition
+async means a function can suspend while performing asynchronous work and later resume.
+
+Example:
+func fetchUser() async -> String {
+    return "Siddharth"
+}
+
+Call:
+Task {
+    let user = await fetchUser()
+    print(user)
+}
+
+Important
+async does not mean:
+"Run this on a background thread."
+
 </details>
