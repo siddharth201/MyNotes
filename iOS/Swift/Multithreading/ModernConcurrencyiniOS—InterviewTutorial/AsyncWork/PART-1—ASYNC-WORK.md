@@ -107,4 +107,22 @@ That's a common interview mistake.
 <details>
 <summary><b>Q4. What does await mean?</b></summary>
 
+Interview definition
+await marks a point where the current task may suspend until an asynchronous operation produces its result.
+
+Example:
+func fetchUser() async -> String {
+    try? await Task.sleep(for: .seconds(2))
+    return "Siddharth"
+}
+
+Task {
+    print("1")
+
+    let user = await fetchUser()
+
+    print("2 \(user)")
+}
+
+Expected:
 </details>
