@@ -35,3 +35,9 @@ Sendable
 
 [**Q. Does Swift create a new thread for every Task?**](https://github.com/siddharth201/MyNotes/blob/main/iOS/Swift/Multithreading/ModernConcurrencyiniOS%E2%80%94InterviewTutorial/Misc/Does-Swift-create-a-new-thread-fo-every-Task.md)
 </details>
+
+
+<details>
+<summary><b>Explanation</b></summary>
+
+</details>
