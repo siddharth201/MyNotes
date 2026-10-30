@@ -1,5 +1,5 @@
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6ae1627309a48191aafff032965d0fee)
 
 We will follow this exact order:
 
