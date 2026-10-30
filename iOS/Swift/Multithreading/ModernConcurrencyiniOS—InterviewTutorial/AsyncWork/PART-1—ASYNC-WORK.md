@@ -234,7 +234,7 @@ func buttonTapped() {
 
 Why?
 
-Because buttonTapped() isn't asynchronous.
+Because `buttonTapped()` isn't asynchronous.
 
 You can do:
 
