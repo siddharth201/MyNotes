@@ -131,9 +131,11 @@ Remember:
 
 **Task**
 
+```swift
 Task {
     // inherits relevant context
 }
+```
 
 Detached
 Task.detached {
