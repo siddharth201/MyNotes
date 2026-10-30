@@ -78,6 +78,16 @@ Tasks begin executing after creation.
 <details>
 <summary><b>Q11. Can I get a result from a Task?</b></summary>
 
+Yes.
+let task = Task {
+    return 42
+}
+
+let result = await task.value
+
+print(result)
+
+Full example:
 </details>
 
 <details>
