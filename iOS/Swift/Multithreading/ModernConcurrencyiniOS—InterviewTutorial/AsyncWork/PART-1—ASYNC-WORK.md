@@ -25,5 +25,7 @@ Structured Concurrency
 Actors + Isolation
      ↓
 Sendable
-```
+```  
+
+**Follow-Ups**
 </details>
