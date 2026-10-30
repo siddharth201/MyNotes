@@ -9,10 +9,11 @@
 
 **Remember**
 
-A-S-S
-Async work
-Structure
-Safety
+### A-S-S
+
+**A**sync work
+**S**tructure
+**S**afety
 
 Async/Await
      ↓
