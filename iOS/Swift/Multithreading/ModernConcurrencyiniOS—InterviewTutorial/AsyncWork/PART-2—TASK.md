@@ -156,5 +156,26 @@ A regular task inherits context from where it is created. A detached task is int
 <summary><b>Q13. Run Task vs Task.detached</b></summary>
 
 Create:
+
+```swift
+import SwiftUI
+
+@MainActor
+struct ContentView: View {
+
+    var body: some View {
+        Button("Run Tasks") {
+            Task {
+                print("Regular Task")
+                print("MainActor:", MainActor.assumeIsolated { true })
+            }
+
+            Task.detached {
+                print("Detached Task")
+            }
+        }
+    }
+}
+```
 </details>
 
