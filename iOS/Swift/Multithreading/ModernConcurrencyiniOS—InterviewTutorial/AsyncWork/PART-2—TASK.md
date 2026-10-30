@@ -21,8 +21,9 @@ Task {
 
     print("Task finished")
 }
+```
 
-Mental model
+**Mental model**
 
 async function
       ↓
