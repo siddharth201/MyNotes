@@ -138,7 +138,7 @@ Expected:
 
 **Mental model**
 
-#### await = suspend, not block
+#### `await = suspend, not block`
 
 Swift's concurrency model allows an asynchronous function to give up its execution resource while waiting and resume later; Swift doesn't guarantee that it resumes on the same thread. 
 </details>
