@@ -124,7 +124,8 @@ Task
 **Must know**
 
 Remember:
-Task = INHERIT
+
+#### Task = INHERIT
 Detached = DETACH
 Task
 Task {
