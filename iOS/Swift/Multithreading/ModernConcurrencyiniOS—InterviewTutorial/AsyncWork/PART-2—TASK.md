@@ -146,7 +146,9 @@ Task.detached {
 ```
 
 A regular task inherits context from where it is created. A detached task is intentionally independent.
-Interview definition
+
+**Interview definition**
+
 Task {} creates an unstructured task that inherits relevant context from its creation site, while Task.detached creates a task that does not inherit that context and therefore requires more explicit handling of isolation and Sendable values.
 </details>
 
