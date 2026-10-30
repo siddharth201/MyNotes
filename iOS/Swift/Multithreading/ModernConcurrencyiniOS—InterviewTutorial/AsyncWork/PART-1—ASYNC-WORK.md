@@ -144,6 +144,6 @@ Swift's concurrency model allows an asynchronous function to give up its executi
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q5. Does await block the thread?</b></summary>
 
 </details>
