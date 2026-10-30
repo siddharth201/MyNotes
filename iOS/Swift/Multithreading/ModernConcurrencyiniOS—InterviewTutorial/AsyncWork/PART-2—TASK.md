@@ -76,7 +76,8 @@ Tasks begin executing after creation.
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q10. Does creating a Task start it automatically?</b></summary>
+
 
 </details>
 
