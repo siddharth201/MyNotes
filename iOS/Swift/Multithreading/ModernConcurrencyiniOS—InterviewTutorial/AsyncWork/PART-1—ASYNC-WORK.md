@@ -12,4 +12,13 @@ Async work
 Structure
 Safety
 
+Async/Await
+     ↓
+Task
+     ↓
+Structured Concurrency
+     ↓
+Actors + Isolation
+     ↓
+Sendable
 </details>
