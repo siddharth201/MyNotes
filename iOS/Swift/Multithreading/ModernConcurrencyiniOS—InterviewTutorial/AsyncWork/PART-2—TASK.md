@@ -177,5 +177,15 @@ struct ContentView: View {
     }
 }
 ```
+
+For interview purposes, don't use Thread.isMainThread as your primary explanation.
+
+The important modern concept is:
+Which isolation context does this task inherit?
+
+not:
+Which thread number is it running on?
+
+Actors execute through executors; default actors use Swift's concurrency runtime rather than each actor owning a dedicated thread.
 </details>
 
