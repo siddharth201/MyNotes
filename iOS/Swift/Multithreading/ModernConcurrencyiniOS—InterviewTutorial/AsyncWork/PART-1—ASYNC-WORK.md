@@ -129,10 +129,12 @@ Task {
 
 Expected:
 
+```text
 1
         ← task suspends
         ← approximately 2 seconds
 2 Siddharth
+```
 
 Mental model
 await = suspend, not block
