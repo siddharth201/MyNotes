@@ -55,4 +55,5 @@ fetchUser { user in
 This is callback-based asynchronous programming.
 
 With async/await:
+
 </details>
