@@ -72,6 +72,6 @@ func loadData() async throws {
 </details>
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q3. What does async mean?</b></summary>
 
 </details>
