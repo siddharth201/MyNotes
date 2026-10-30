@@ -137,10 +137,13 @@ Task {
 }
 ```
 
-Detached
+**Detached**
+
+```swift
 Task.detached {
     // does not inherit the surrounding actor/context
 }
+```
 
 A regular task inherits context from where it is created. A detached task is intentionally independent.
 Interview definition
