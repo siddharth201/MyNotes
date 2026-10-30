@@ -126,7 +126,9 @@ Task
 Remember:
 
 #### Task = INHERIT
-Detached = DETACH
+
+#### Detached = DETACH
+
 Task
 Task {
     // inherits relevant context
