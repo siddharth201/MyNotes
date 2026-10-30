@@ -7,6 +7,16 @@ A Task is a unit of asynchronous work. It provides a context in which asynchrono
 
 Apple defines Task as a unit of asynchronous work; tasks begin running after creation and can be cancelled or awaited. Apple Developer
 Simple example
+
+import Foundation
+
+Task {
+    print("Task started")
+
+    try? await Task.sleep(for: .seconds(2))
+
+    print("Task finished")
+}
 </details>
 
 <details>
