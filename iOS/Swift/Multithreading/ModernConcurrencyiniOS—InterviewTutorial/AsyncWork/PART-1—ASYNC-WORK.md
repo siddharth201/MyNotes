@@ -225,9 +225,12 @@ func fetchUser() async -> String {
 ```
 
 This won't work:
+
+```swift
 func buttonTapped() {
     let user = await fetchUser() // ❌
 }
+```
 
 Why?
 
