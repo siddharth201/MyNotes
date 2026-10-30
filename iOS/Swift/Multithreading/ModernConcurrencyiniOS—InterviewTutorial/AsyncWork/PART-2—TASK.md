@@ -88,6 +88,7 @@ let task = Task {
 let result = await task.value
 
 print(result)
+```
 
 Full example:
 
