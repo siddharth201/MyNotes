@@ -187,7 +187,10 @@ Which isolation context does this task inherit?
 ```
 
 not:
+
+```text
 Which thread number is it running on?
+```
 
 Actors execute through executors; default actors use Swift's concurrency runtime rather than each actor owning a dedicated thread.
 </details>
