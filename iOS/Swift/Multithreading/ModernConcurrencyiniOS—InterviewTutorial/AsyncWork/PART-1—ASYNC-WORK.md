@@ -30,5 +30,5 @@ Sendable
 **Follow-Ups**
 [**Why we say Swift Concurrency is Swift's language-level system?**]()
 [**If Swift Concurrency is a language-level system, does that mean GCD is obsolete and we should never use `DispatchQueue` anymore?**]()
-[****]()
+[**Does Swift create a new thread for every Task?**]()
 </details>
