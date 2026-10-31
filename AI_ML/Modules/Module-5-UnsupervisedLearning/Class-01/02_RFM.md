@@ -174,11 +174,11 @@ Champions, loyal, at-risk, low-value, etc.
 
 ```mermaid
 flowchart TD
-    A["Customer Transaction Data<br/><small>Order dates, order counts, purchase amounts</small>"]
-    B["Calculate RFM Features<br/><small>Recency, Frequency, Monetary</small>"]
-    C["Preprocessing<br/><small>Handle skew, scale features, inspect outliers</small>"]
-    D["K-Means Clustering<br/><small>Choose K and group similar customers</small>"]
-    E["Customer Segments<br/><small>Champions, loyal, at-risk, low-value, etc.</small>"]
+    A["<b>Customer Transaction Data</b><br>Order dates, order counts, purchase amounts"]
+    B["<b>Calculate RFM Features</b><br>Recency, Frequency, Monetary"]
+    C["<b>Preprocessing</b><br>Handle skew, scale features, inspect outliers"]
+    D["<b>K-Means Clustering</b><br>Choose K and group similar customers"]
+    E["<b>Customer Segments</b><br>Champions, loyal, at-risk, low-value, etc."]
 
     A --> B
     B --> C
@@ -188,9 +188,10 @@ flowchart TD
     style A fill:#ffffff,stroke:none
     style B fill:#ffffff,stroke:none
     style C fill:#ffffff,stroke:none
-    style D fill:#ffffff,stroke:#16a34a,stroke-width:2px,rx:8px,ry:8px
+    style D fill:#ffffff,stroke:#16a34a,stroke-width:2.5px,rx:8px,ry:8px
     style E fill:#ffffff,stroke:none
-```  
+```
+````[cite: 8]  
 
 ---
 
