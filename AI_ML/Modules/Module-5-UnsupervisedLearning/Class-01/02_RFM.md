@@ -171,7 +171,29 @@ Customer Segments
 Champions, loyal, at-risk, low-value, etc.
 
 ---
-$$\begin{array}{c} \textbf{Customer Transaction Data} \\ \small\text{Order dates, order counts, purchase amounts} \\ \Downarrow \\ \textbf{Calculate RFM Features} \\ \small\text{Recency, Frequency, Monetary} \\ \Downarrow \\ \textbf{Preprocessing} \\ \small\text{Handle skew, scale features, inspect outliers} \\ \Downarrow \\ \boxed{ \begin{array}{c} \\ \qquad\quad \textbf{K-Means Clustering} \quad\qquad \\ \small\text{Choose K and group similar customers} \\ \\ \end{array} } \\ \Downarrow \\ \textbf{Customer Segments} \\ \small\text{Champions, loyal, at-risk, low-value, etc.} \end{array}$$
+$$
+\begin{array}{c}
+\textbf{Customer Transaction Data} \\
+\text{\footnotesize Order dates, order counts, purchase amounts} \\[6pt]
+\downarrow \\[6pt]
+\textbf{Calculate RFM Features} \\
+\text{\footnotesize Recency, Frequency, Monetary} \\[6pt]
+\downarrow \\[6pt]
+\textbf{Preprocessing} \\
+\text{\footnotesize Handle skew, scale features, inspect outliers} \\[6pt]
+\downarrow \\[6pt]
+\fbox{
+  \begin{minipage}{180pt}
+    \centering
+    \textbf{K-Means Clustering} \\
+    \text{\footnotesize Choose K and group similar customers}
+  \end{minipage}
+} \\[6pt]
+\downarrow \\[6pt]
+\textbf{Customer Segments} \\
+\text{\footnotesize Champions, loyal, at-risk, low-value, etc.}
+\end{array}
+$$
 ---
 
 For example, K-Means might discover four groups:
