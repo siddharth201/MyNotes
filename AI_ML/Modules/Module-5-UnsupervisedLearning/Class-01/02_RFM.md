@@ -170,7 +170,8 @@ Customer Segments
 
 Champions, loyal, at-risk, low-value, etc.
 
----
+---  
+
 $$
 \begin{array}{c}
 \textbf{Customer Transaction Data} \\
@@ -193,7 +194,8 @@ $$
 \textbf{Customer Segments} \\
 \text{\footnotesize Champions, loyal, at-risk, low-value, etc.}
 \end{array}
-$$
+$$  
+
 ---
 
 For example, K-Means might discover four groups:
