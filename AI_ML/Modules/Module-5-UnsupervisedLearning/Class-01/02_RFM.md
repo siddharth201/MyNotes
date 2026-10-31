@@ -172,28 +172,19 @@ Champions, loyal, at-risk, low-value, etc.
 
 ---  
 
-$$
-\begin{array}{c}
-\textbf{Customer Transaction Data} \\
-{\footnotesize\text{Order dates, order counts, purchase amounts}} \\[6pt]
-\downarrow \\[6pt]
-\textbf{Calculate RFM Features} \\
-{\footnotesize\text{Recency, Frequency, Monetary}} \\[6pt]
-\downarrow \\[6pt]
-\textbf{Preprocessing} \\
-{\footnotesize\text{Handle skew, scale features, inspect outliers}} \\[6pt]
-\downarrow \\[6pt]
-\boxed{
-  \begin{matrix}
-    \textbf{K-Means Clustering} \\
-    {\footnotesize\text{Choose K and group similar customers}}
-  \end{matrix}
-} \\[6pt]
-\downarrow \\[6pt]
-\textbf{Customer Segments} \\
-{\footnotesize\text{Champions, loyal, at-risk, low-value, etc.}}
-\end{array}
-$$  
+```mermaid
+flowchart TD
+    A["**Customer Transaction Data**<br/>Order dates, order counts, purchase amounts"]
+    B["**Calculate RFM Features**<br/>Recency, Frequency, Monetary"]
+    C["**Preprocessing**<br/>Handle skew, scale features, inspect outliers"]
+    D["🟩 **K-Means Clustering**<br/>Choose K and group similar customers"]
+    E["**Customer Segments**<br/>Champions, loyal, at-risk, low-value, etc."]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```  
 
 ---
 
