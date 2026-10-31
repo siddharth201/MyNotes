@@ -131,6 +131,9 @@ RFM scores ke basis par business different customer segments create kar sakta ha
 | At Risk         | Low R, previously high F/M | Re-engagement campaigns   |
 | Lost Customers  | Low R, low F/M             | Win-back campaigns        |
 
+
+![RFM](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/RFM.png)
+
 For example:
 
 A customer previously purchased 15 times and spent ₹40,000, but hasn't purchased in the last 180 days.
