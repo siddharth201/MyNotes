@@ -103,9 +103,19 @@ In scores ko combine karke RFM profile bana sakte hain.
 
 **Example:**
 
+### Customer A
 
 
 
+| **Recency** | **Frequency** | **Monetary** |
+| --- | --- | --- |
+| **`5`** | **`5`** | **`5`** |
+
+**RFM Score: 555**
+
+*`Potential Champions`*
+
+Customer recently purchased, purchases frequently, and spends significantly.
 
 
 ## 5. RFM se customer segments kaise banate hain?
