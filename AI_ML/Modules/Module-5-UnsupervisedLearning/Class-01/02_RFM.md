@@ -149,28 +149,7 @@ This is particularly important for your Unsupervised Learning module.
 RFM itself is not necessarily a clustering algorithm. It is a feature engineering and customer analysis technique.
 
 We can use RFM values as input features for K-Means.
-
-Customer Transaction Data
-
-Order dates, order counts, purchase amounts
-
-Calculate RFM Features
-
-Recency, Frequency, Monetary
-
-Preprocessing
-
-Handle skew, scale features, inspect outliers
-
-K-Means Clustering
-
-Choose K and group similar customers
-
-Customer Segments
-
-Champions, loyal, at-risk, low-value, etc.
-
----  
+  
 
 ```mermaid
 flowchart TD
@@ -193,7 +172,6 @@ flowchart TD
 ```
 ````[cite: 8]  
 
----
 
 For example, K-Means might discover four groups:
 
