@@ -42,12 +42,15 @@ asynchronous work
 Because it gives synchronous code a way to start asynchronous work.
 
 For example, SwiftUI:
+  
+```swift
 Button("Load User") {
     Task {
         let user = await fetchUser()
         print(user)
     }
 }
+```
 
 **Interview answer**
 
