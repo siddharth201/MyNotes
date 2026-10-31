@@ -138,7 +138,7 @@ For example:
 
 A customer previously purchased 15 times and spent ₹40,000, but hasn't purchased in the last 180 days.
 
-Business might classify this customer as At Risk and send a personalised offer.
+Business might classify this customer as **At Risk** and send a personalised offer.
 
 But remember, segmentation rules differ between businesses. A customer inactive for 30 days might be at risk for a grocery app, whereas that may be normal for a furniture business.
 
