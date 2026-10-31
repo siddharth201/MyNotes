@@ -170,11 +170,8 @@ flowchart TD
     style D fill:#ffffff,stroke:#16a34a,stroke-width:2.5px,rx:8px,ry:8px
     style E fill:#ffffff,stroke:none
 ```
-````[cite: 8]  
   
   
-
-
 For example, K-Means might discover four groups:
 
 - Cluster 1: Recent, frequent, high spenders.
