@@ -125,6 +125,22 @@ Customer recently purchased, purchases frequently, and spends significantly.
 
 Note: Ye scoring illustration hai. Actual score boundaries business ke data distribution ke according define hote hain. Quintiles (five equal-sized groups) ek common method hain.
 
+
+### Customer A
+
+$$
+\begin{array}{ccc}
+\mathbf{\color{#059669}{\Huge 5}} & \mathbf{\color{#059669}{\Huge 5}} & \mathbf{\color{#059669}{\Huge 5}} \\[4pt]
+\text{\small Recency} & \text{\small Frequency} & \text{\small Monetary}
+\end{array}
+$$
+
+**RFM Score: 555**
+
+$\colorbox{#DCFCE7}{\color{#166534}\small\textbf{\textsf{ Potential Champions }}}$
+
+Customer recently purchased, purchases frequently, and spends significantly.
+
 ## 5. RFM se customer segments kaise banate hain?
 
 RFM scores ke basis par business different customer segments create kar sakta hai.
