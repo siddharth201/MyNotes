@@ -101,7 +101,7 @@ Lekin Frequency aur Monetary mein generally:
 
 In scores ko combine karke RFM profile bana sakte hain.
 
-Example:
+**Example:**
 
 Customer A
 
