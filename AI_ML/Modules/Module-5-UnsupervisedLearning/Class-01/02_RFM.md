@@ -183,12 +183,11 @@ $$
 \textbf{Preprocessing} \\
 \text{\footnotesize Handle skew, scale features, inspect outliers} \\[6pt]
 \downarrow \\[6pt]
-\fbox{
-  \begin{minipage}{180pt}
-    \centering
+\boxed{
+  \begin{matrix}
     \textbf{K-Means Clustering} \\
     \text{\footnotesize Choose K and group similar customers}
-  \end{minipage}
+  \end{matrix}
 } \\[6pt]
 \downarrow \\[6pt]
 \textbf{Customer Segments} \\
