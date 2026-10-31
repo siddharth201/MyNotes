@@ -175,23 +175,23 @@ Champions, loyal, at-risk, low-value, etc.
 $$
 \begin{array}{c}
 \textbf{Customer Transaction Data} \\
-\text{\footnotesize Order dates, order counts, purchase amounts} \\[6pt]
+{\footnotesize\text{Order dates, order counts, purchase amounts}} \\[6pt]
 \downarrow \\[6pt]
 \textbf{Calculate RFM Features} \\
-\text{\footnotesize Recency, Frequency, Monetary} \\[6pt]
+{\footnotesize\text{Recency, Frequency, Monetary}} \\[6pt]
 \downarrow \\[6pt]
 \textbf{Preprocessing} \\
-\text{\footnotesize Handle skew, scale features, inspect outliers} \\[6pt]
+{\footnotesize\text{Handle skew, scale features, inspect outliers}} \\[6pt]
 \downarrow \\[6pt]
 \boxed{
   \begin{matrix}
     \textbf{K-Means Clustering} \\
-    \text{\footnotesize Choose K and group similar customers}
+    {\footnotesize\text{Choose K and group similar customers}}
   \end{matrix}
 } \\[6pt]
 \downarrow \\[6pt]
 \textbf{Customer Segments} \\
-\text{\footnotesize Champions, loyal, at-risk, low-value, etc.}
+{\footnotesize\text{Champions, loyal, at-risk, low-value, etc.}}
 \end{array}
 $$  
 
