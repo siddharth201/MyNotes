@@ -103,43 +103,10 @@ In scores ko combine karke RFM profile bana sakte hain.
 
 **Example:**
 
-Customer A
-
-# 5
-
-Recency
-
-# 5
-
-Frequency
-
-# 5
-
-Monetary
-
-# RFM Score: 555
-
-Potential Champions
-
-Customer recently purchased, purchases frequently, and spends significantly.
-
-Note: Ye scoring illustration hai. Actual score boundaries business ke data distribution ke according define hote hain. Quintiles (five equal-sized groups) ek common method hain.
 
 
-### Customer A
 
-$$
-\begin{array}{ccc}
-\mathbf{\color{#059669}{\Huge 5}} & \mathbf{\color{#059669}{\Huge 5}} & \mathbf{\color{#059669}{\Huge 5}} \\[4pt]
-\text{\small Recency} & \text{\small Frequency} & \text{\small Monetary}
-\end{array}
-$$
 
-**RFM Score: 555**
-
-$\colorbox{#DCFCE7}{\color{#166534}\small\textbf{\textsf{ Potential Champions }}}$
-
-Customer recently purchased, purchases frequently, and spends significantly.
 
 ## 5. RFM se customer segments kaise banate hain?
 
