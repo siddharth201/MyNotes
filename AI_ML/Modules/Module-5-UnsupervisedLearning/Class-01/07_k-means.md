@@ -1,6 +1,8 @@
 
 [Practice K-Means](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
 
+[Practice K-Means](https://hckr.pl/k-means-visualization/)
+
 ## K-Means Clustering
 
 **K-Means ek unsupervised machine learning algorithm hai jo data ko K clusters mein divide karta hai, taaki similar data points ek cluster mein aa sakein.**
