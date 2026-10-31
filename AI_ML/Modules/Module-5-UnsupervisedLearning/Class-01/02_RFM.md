@@ -28,9 +28,7 @@ RFM isi problem ko solve karne mein help karta hai.
 
 ## 2. RFM ke three dimensions
 
-[A Shopping Calendar Icon specifically designed for use in various Ecommerce Applications](https://images.openai.com/static-rsc-4/bmEQhLySVRr3rGPH3WEoB5zP-ax-tAuYFxm5BUGTTzsANXyj0DGxzu3Lsu_ascxr1IRquQY7QpHEMXnfzYsSRYr2A7WTpTuyAVXPqPrm0yDUFASxV3iIX1RSNbYPGLoeYsb58YsG6varSURhUZ7Wanwoy6pf8wNjc27nh55wjxCVXPotlNnSu1lQfmQSA3ZM?purpose=inline)
-
-R – Recency
+**R – Recency**
 
 Customer ne last purchase kitne din pehle kiya?
 
@@ -38,9 +36,7 @@ Example: Last purchase 5 days ago.
 
 Generally, fewer days means more recent and potentially more engaged.
 
-[Bulk buying Flaticons Lineal Color icon | Freepik](https://images.openai.com/static-rsc-4/zc4Ce8Gn6uYGmc-VQdSPycGcq0FcSkjjvd20PVGCGJFBmGnKqgXSIwINI8_vPAOv4zUn5SBiDGMmxxxzae1A4ozhlWg2WjKqdBKL4GcLMwg2shxYZnTye2tsSXpoggwjqOqJeizlOzfgZ0AWgeP3C-pwdWFPVVT-J2EVhBKanek?purpose=inline)
-
-F – Frequency
+**F – Frequency**
 
 Customer ne given time period mein kitni purchases ki?
 
@@ -48,9 +44,7 @@ Example: Last 12 months mein 20 orders.
 
 Higher frequency generally indicates repeat purchasing behaviour.
 
-[Vector Wallet and Money Rupee Icon](https://images.openai.com/static-rsc-4/HhZJqe3B2JDq2f0SEG_vDoarn-KdzbQDcDTne2NDNU2woo0HWCRI0Sc3yIvHyaKM2AmqLEXbA5t5uE93sFP8oT-GNAafylCjSY3hUQlhN5Aijmdlm_bcK_zAGh4uIdUKfS281Ej-7Oo0woOAfQs-6Gj-fYj6dRDkW82NyAOQ5_YZubGObd_RA6ZT3Gic7sLT?purpose=inline)
-
-M – Monetary
+**M – Monetary**
 
 Customer ne given time period mein kitna spend kiya?
 
