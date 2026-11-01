@@ -798,6 +798,8 @@ Ultimate goal in ML: Silhouette Score helps us determine whether our clustering 
 
 ---  
 
+## Q. Why its value ranges from -1 to +1.
+
 **Friend, your lecturer is explaining two extreme cases of Silhouette Score. These examples help us understand why its value ranges from -1 to +1.**
 
 Let's understand both scenarios using the formula:
