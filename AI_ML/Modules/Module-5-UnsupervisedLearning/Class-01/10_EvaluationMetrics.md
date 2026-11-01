@@ -185,7 +185,7 @@ Dunn Index is calculated as:
 
 Let's understand both terms.
 
-A. Inter-cluster distance
+**A. Inter-cluster distance**
 
 Distance between two different clusters.
 
