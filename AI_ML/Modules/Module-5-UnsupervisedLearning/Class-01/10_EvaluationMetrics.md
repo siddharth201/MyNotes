@@ -621,7 +621,7 @@ Suppose we have two clusters:
 
 Let's calculate the Silhouette Score for point `2` in Cluster A.
 
-Step 1: Calculate `a` (intra-cluster distance)
+**Step 1: Calculate `a` (intra-cluster distance)**
 
 Our selected point is 2.
 
