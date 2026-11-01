@@ -576,7 +576,7 @@ A good clustering should have:
 
 Let's understand it with a numerical example.
 
-# 1. Two important distances
+### 1. Two important distances
 
 Silhouette Score uses two distances for every data point.
 
