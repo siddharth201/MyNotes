@@ -412,11 +412,9 @@ Minimum distance between any point in cluster A and any point in cluster B.
 
 Centroid-based variant
 
-https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn4.jpeg
-
-[Unsupervised Learning in R: Determination of Cluster Number | by Fatih Emre Ozturk, MSc | Medium](https://images.openai.com/static-rsc-4/tgHpeYooUz1W5vWIGemPlee4aNQS9uZxiqjBlE_FLuHi4avaJivUnd6ALa2ZqppwSzXV8mooLyR5kFsL0rA4CxhSrTQysUp4jYOxKXHrYIdYDHDbCqyIql3qEwUrXQD6Tk9BfwpT3e5vPhp5D7e12lJ_PsWJdVBf0DLcD3RwWAM?purpose=inline)
-
-[medium.com](https://medium.com/%40ozturkfemre/unsupervised-learning-determination-of-cluster-number-be8842cdb11?utm_source=chatgpt.com)
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn4.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn4.jpeg" width="250" alt="Click to enlarge">
+</a>
 
 Distance between the two cluster centroids.
 
