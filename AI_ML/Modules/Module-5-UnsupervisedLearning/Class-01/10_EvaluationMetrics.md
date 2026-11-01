@@ -304,10 +304,7 @@ The classical Dunn Index is:
 
 In mathematical notation:
 
-$$\
-DI = \frac \delta(C_i,C_j)}\
-\
-$$
+$$DI = \frac{\delta(C_i, C_j)}{\Delta(C_k)}$$
 
 Where:
 
