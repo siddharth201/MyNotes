@@ -277,4 +277,4 @@ This returns `[User]?`, but the function's return type is non-optional `[User]`.
 
 ---  
 
-
+## Q. How I would know , only `try` will work or I have to use `do-catch`?
