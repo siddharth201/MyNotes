@@ -811,9 +811,9 @@ Where:
 
 ## Scenario 1: Silhouette Score = -1
 
-[Silhouette Score | RoboSathi](https://images.openai.com/static-rsc-4/hj-5Ttx4Kv-_qHSMEaslAxGbTuHmtyqQ78r9BWAm7D7KDDKZZDhPWCbNglEMhu-Tkx2DbebU61I2-EERoRjG_U0X-unfoakAgTjriGseNMtIoeI9ZXFW9211pK42oH6JIVpM9KLjHrauormb-l9kwNLa7XVTnJFIPnephBzgrzY?purpose=inline)
-
-[robosathi.com](https://robosathi.com/docs/machine_learning/unsupervised/k_means/silhouette-score/?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Imagine a data point is assigned to Cluster A, but it is actually much closer to Cluster B.
 
