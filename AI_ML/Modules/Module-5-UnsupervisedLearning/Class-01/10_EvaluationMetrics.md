@@ -454,12 +454,18 @@ Suppose we calculate Dunn Index for different K values:
 | 5 | 0.40       |
 | 6 | 0.05       |
 | 7 | 0.20       |
+  
+
+---  
+
 
 Dunn Index vs Number of Clusters
 
 Illustrative values based on the lecture transcript.
 
 00.250.50.751234567
+
+https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%203.02.52%E2%80%AFPM.png
 
 The highest score is at K = 2.
 
