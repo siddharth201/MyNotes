@@ -161,8 +161,8 @@ Imagine we have two different clustering results.
 
 Clustering A — Good separation
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/dunn1.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/dunn1.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Compact clusters with large separation.
