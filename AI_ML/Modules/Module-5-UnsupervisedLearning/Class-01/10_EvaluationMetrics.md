@@ -82,7 +82,62 @@ Ultimate goal: Building a model is not enough. We also need a reliable way to de
 <details>
 <summary>What is Evaluation Metrics</summary>
 
+Yes, friend! All three are used to evaluate clustering, but there is an important distinction:
 
+Dunn Index and Silhouette Score are evaluation metrics, whereas the Elbow Method is a technique for selecting the number of clusters (K).
+
+## 1. Comparison
+
+| Technique        | Purpose             | What does it measure?                                                    |
+| ---------------- | ------------------- | ------------------------------------------------------------------------ |
+| Dunn Index       | Evaluate clustering | Cluster compactness and separation                                       |
+| Silhouette Score | Evaluate clustering | How well each point fits its cluster compared with neighbouring clusters |
+| Elbow Method     | Select optimal K    | Reduction in WCSS as K increases                                         |
+
+## 2. Understand their roles
+
+Elbow Method
+
+K Selection
+
+- Run K-Means with different K values.
+- Calculate WCSS for each K.
+- Find the elbow where improvement starts diminishing.
+
+Silhouette Score
+
+Evaluation Metric
+
+- Measures cluster cohesion and separation.
+- Range: -1 to +1.
+- Higher is generally better.
+
+Dunn Index
+
+Evaluation Metric
+
+- Compares minimum inter-cluster distance with maximum intra-cluster diameter.
+- Higher is generally better.
+
+## 3. How do we use them together in an industry project?
+
+Suppose we are segmenting customers using K-Means.
+
+1. Try different K values, such as 2, 3, 4, 5, 6.
+2. Use the Elbow Method to identify candidate K values.
+3. Calculate Silhouette Score and Dunn Index to evaluate clustering quality.
+4. Inspect the resulting customer segments.
+5. Select a solution that is both statistically reasonable and useful for the business.
+
+Important: These techniques may suggest different K values. There is no guarantee that all three will agree. Business usefulness and domain knowledge also matter.
+
+## 4. Interview-ready answer
+
+If an interviewer asks whether all three are evaluation metrics, you can say:
+
+"Silhouette Score and Dunn Index are internal clustering evaluation metrics. The Elbow Method is primarily a technique for selecting the optimal number of clusters by analysing WCSS across different K values."
+
+Remember: Elbow → How many clusters? Silhouette and Dunn → How good are the clusters?
 </details>
 
 
