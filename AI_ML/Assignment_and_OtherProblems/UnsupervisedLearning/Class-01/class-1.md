@@ -4,6 +4,10 @@
 
 **A** Because the dataset does not contain labeled target values.  
 
-**B** 
+**B** Because the dataset has too many features.
+
+**C**
+
+**D** 
 
 </details>
