@@ -144,5 +144,126 @@ Remember: Elbow → How many clusters? Silhouette and Dunn → How good are the 
 <details>
 <summary><b>Explain Dunn Index</b></summary>
 
+Friend, Dunn Index is a clustering evaluation metric used to measure how good a clustering result is.
 
+Its main objective is to check two things:
+
+1. Clusters should be compact — points within a cluster should be close to each other.
+2. Clusters should be well separated — different clusters should be far from each other.
+
+In simple terms:
+
+Good clustering = Small intra-cluster distance + Large inter-cluster distance.
+
+## 1. Intuition with an example
+
+Imagine we have two different clustering results.
+
+Clustering A — Good separation
+
+[k-means Algorithm - 공돌이의 수학정리노트 (Angelo's Math Notes)](https://images.openai.com/static-rsc-4/StIgoGYoXqrKRNRwOqRyQZ2b2w4-_T6Rt4GQwA6bPv5ChMV-9tT9LacOXYN79rbWrWm1nryLy_IwUi4qEQiXfY09NR8I_KpfDfUbdp-zBuq4IDXSn_5w-lHOmgh-2rYNDQadHFLdILa3l4RP6hm2cmQrHXflo7SnjMrXQTijXlo?purpose=inline)
+
+[angeloyeo.github.io](https://angeloyeo.github.io/2021/02/07/k_means_en.html?utm_source=chatgpt.com)
+
+Compact clusters with large separation.
+
+Clustering B — Poor separation
+
+[Unsupervised clustering — CSS 2](https://images.openai.com/static-rsc-4/hHJ49RCMpbr4RPhjL4JZmQp5RAOCt3-NINBU283OJXWukrFdFvjMSYbL9e2iJyyRp9eWb6qqdi4U4uPqrhfmPYFYQZdzM_osp7WZi9SbPU1GrUG5nYZ5RSVyZ8v92YP7kYpXnH_wZumFelRe06qxUk4bSl4_-d5PEbg13IVCatU?purpose=inline)
+
+[ucsd-css2.github.io](https://ucsd-css2.github.io/ucsd-css2-website/lectures/20-unsupervised-clustering.html?utm_source=chatgpt.com)
+
+Clusters are spread out and overlap.
+
+Dunn Index helps compare these clustering results.
+
+## 2. Dunn Index formula
+
+Dunn Index is calculated as:
+
+`Dunn Index = Minimum inter-cluster distance / Maximum intra-cluster diameter`
+
+Let's understand both terms.
+
+A. Inter-cluster distance
+
+Distance between two different clusters.
+
+We consider the minimum distance between any two points belonging to different clusters, then take the minimum across all cluster pairs.
+
+B. Intra-cluster diameter
+
+Maximum distance between any two points within the same cluster.
+
+We calculate this for every cluster and take the maximum.
+
+## 3. Numerical example
+
+Suppose we have two clusters:
+
+- Cluster A: Points (1, 1), (2, 1)
+- Cluster B: Points (8, 1), (9, 1)
+
+Step 1: Calculate intra-cluster diameter
+
+For Cluster A:
+
+`Distance = sqrt((2-1)^2 + (1-1)^2) = 1`
+
+For Cluster B:
+
+`Distance = sqrt((9-8)^2 + (1-1)^2) = 1`
+
+Maximum intra-cluster diameter = 1.
+
+Step 2: Calculate minimum inter-cluster distance
+
+The closest points from the two clusters are (2, 1) and (8, 1).
+
+`Distance = sqrt((8-2)^2 + (1-1)^2) = 6`
+
+Minimum inter-cluster distance = 6.
+
+Step 3: Calculate Dunn Index
+
+`Dunn Index = 6 / 1 = 6`
+
+Final Dunn Index
+
+# 6
+
+## 4. How do we interpret Dunn Index?
+
+| Dunn Index    | Interpretation                                  |
+| ------------- | ----------------------------------------------- |
+| Higher value  | Generally better clustering                     |
+| Lower value   | Poorer compactness or separation                |
+| Close to zero | Clusters may be overlapping or poorly separated |
+
+There is no universal threshold that says a Dunn Index above a particular number is always good.
+
+## 5. Dunn Index vs Silhouette Score
+
+Both are internal clustering evaluation metrics, but their calculations differ.
+
+| Feature               | Dunn Index                     | Silhouette Score                  |
+| --------------------- | ------------------------------ | --------------------------------- |
+| Compactness           | Maximum cluster diameter       | Average intra-cluster distance    |
+| Separation            | Minimum inter-cluster distance | Distance to nearest other cluster |
+| Better value          | Higher                         | Closer to +1                      |
+| Sensitive to outliers | Can be highly sensitive        | Can also be affected              |
+
+Important limitation: Dunn Index uses the worst-case cluster diameter and minimum cluster separation. A single outlier or very close pair of points can significantly reduce its value.
+
+## 6. Interview takeaway
+
+Remember this simple relationship:
+
+- Dunn Index ↑ = Generally better clustering.
+- Intra-cluster diameter ↓ = Better compactness.
+- Inter-cluster separation ↑ = Better separation.
+
+Ultimate goal: Dunn Index evaluates whether clusters are compact internally and sufficiently separated from each other.
+
+One important distinction: Dunn Index is an evaluation metric, not a clustering algorithm. It does not create clusters; it evaluates clusters created by algorithms such as K-Means or hierarchical clustering.
 </details>
