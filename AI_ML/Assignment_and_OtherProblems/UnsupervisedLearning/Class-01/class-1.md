@@ -22,7 +22,9 @@
 <details>
 <summary><b>Q. Why does the centroid move to the mean during the update step instead of the median?</b></summary>
 
+**A.** Because the mean minimizes the total squared distance (WCSS).
 
+**B.** 
 
 </details>
 
