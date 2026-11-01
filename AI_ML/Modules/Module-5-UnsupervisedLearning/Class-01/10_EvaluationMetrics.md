@@ -402,7 +402,7 @@ However, classical Dunn Index uses minimum point-to-point distance between diffe
 
 Let's compare:
 
-Classical Dunn Index
+**Classical Dunn Index**
 
 <a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn3.jpeg" target="_blank">
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn3.jpeg" width="250" alt="Click to enlarge">
@@ -410,7 +410,7 @@ Classical Dunn Index
 
 Minimum distance between any point in cluster A and any point in cluster B.
 
-Centroid-based variant
+**Centroid-based variant**
 
 <a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn4.jpeg" target="_blank">
   <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn4.jpeg" width="250" alt="Click to enlarge">
