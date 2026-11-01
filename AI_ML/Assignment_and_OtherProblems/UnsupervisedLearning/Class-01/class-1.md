@@ -135,7 +135,7 @@ Notice:
 - K = 4 → 5: WCSS remains the same.
 - K = 5 → 6: WCSS decreases.
 
-0306090120123456
+![WCSS](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%205.36.37%E2%80%AFPM.png)
 
 ### Why does this happen mathematically?
 
