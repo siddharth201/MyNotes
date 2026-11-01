@@ -483,7 +483,7 @@ We should also examine:
 - Whether the clusters are too broad or too small.
 - Whether another K gives more actionable segments.
 
-## 7. Critical verification: Is Dunn Index not used in industry because it is non-monotonic?
+### 7. Critical verification: Is Dunn Index not used in industry because it is non-monotonic?
 
 This is the most misleading statement in the lecture.
 
@@ -528,7 +528,7 @@ So, the accurate conclusion is:
 
 Dunn Index is a valid clustering evaluation metric, but it has limitations. It can be used in practice, although it is not necessarily the only or preferred metric.
 
-## 8. Dunn Index vs Silhouette Score vs Elbow Method
+### 8. Dunn Index vs Silhouette Score vs Elbow Method
 
 Let's consolidate what we've learned.
 
@@ -541,7 +541,7 @@ Let's consolidate what we've learned.
 
 These are internal evaluation approaches because they assess cluster structure without requiring ground-truth labels.
 
-## 9. Interview-ready explanation
+### 9. Interview-ready explanation
 
 Question: What is Dunn Index?
 
