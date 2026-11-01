@@ -100,6 +100,9 @@ Interview takeaway: K-Means uses mean, not median, because the mean is the optim
 
 **D.** Unpredictable.
 
+<details>
+<summary><b>Answer</b></summary>
 
+</details>
 </details>
 
