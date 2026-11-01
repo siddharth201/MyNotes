@@ -796,7 +796,6 @@ Correct!
 
 Ultimate goal in ML: Silhouette Score helps us determine whether our clustering algorithm has grouped similar data points together while keeping dissimilar groups sufficiently separated.  
 
----  
 
 ## Q. Why its value ranges from -1 to +1.
 
