@@ -150,3 +150,71 @@ func fetchUsers() async throws -> [User] {
     }
 ```
 
+You do not need a `do-catch` block inside `fetchUsers()` because the function itself is marked with the **`throws`** keyword.
+
+In Swift, when a function is marked as `throws`, it delegates error handling to the caller. Instead of catching and resolving errors internally, the function propagates any errors up the call stack.
+
+### How Error Propagation Works Here
+
+1. **`try await URLSession.shared.data(from: url)`**
+If the network request fails (e.g., no internet connection, DNS failure, timeout), `URLSession` throws an error. Because there is no `do-catch`, that error immediately exits `fetchUsers()` and is thrown directly to whichever function called it.
+2. **`try JSONDecoder().decode([User].self, from: data)`**
+If the network request succeeds but the JSON does not match your `User` model (e.g., missing keys, type mismatches), `decode` throws a `DecodingError`. That error also immediately bubbles up to the caller.
+3. **`throw URLError(.badURL)`**
+Your manual guard failure uses the same propagation mechanism, throwing a `URLError` directly out of the function.
+
+---
+
+### Where Does `do-catch` Go?
+
+The error must eventually be handled wherever `fetchUsers()` is invoked (typically in a ViewModel, Controller, or Swift Task):
+
+```swift
+Task {
+    do {
+        let users = try await fetchUsers()
+        print("Fetched \(users.count) users")
+    } catch let decodingError as DecodingError {
+        // Handle JSON mismatch specifically
+        print("Failed to decode users: \(decodingError)")
+    } catch {
+        // Handle network or bad URL errors
+        print("Failed to fetch users: \(error.localizedDescription)")
+    }
+}
+
+```
+
+### When Would You Use `do-catch` Inside `fetchUsers`?
+
+You only need `do-catch` inside this function if you want to **intercept**, **transform**, or **recover** from the error before it reaches the caller. For example:
+
+* **Wrapping errors into a custom domain type:**
+```swift
+do {
+    let (data, _) = try await URLSession.shared.data(from: url)
+    return try JSONDecoder().decode([User].self, from: data)
+} catch {
+    throw CustomAppError.userFetchFailed(underlying: error)
+}
+
+```
+
+
+* **Providing a fallback or default value:**
+```swift
+do {
+    return try JSONDecoder().decode([User].self, from: data)
+} catch {
+    return [] // Return empty list instead of failing
+}
+
+```
+
+
+
+If you do not need to alter the error or recover from it internally, letting `throws` bubble the error up keeps your network code clean and concise.
+
+---
+
+## Q. 
