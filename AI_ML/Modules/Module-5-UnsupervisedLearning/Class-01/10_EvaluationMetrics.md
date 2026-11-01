@@ -631,7 +631,7 @@ Other points in its own cluster are 1 and 3.
 
 `a = (1 + 1) / 2 = 1`
 
-Step 2: Calculate `b` (nearest-cluster distance)
+**Step 2: Calculate `b` (nearest-cluster distance)**
 
 Points in the other cluster are 8, 9 and 10.
 
@@ -639,7 +639,7 @@ Points in the other cluster are 8, 9 and 10.
 
 `b = (6 + 7 + 8) / 3 = 7`
 
-Step 3: Calculate Silhouette Score
+**Step 3: Calculate Silhouette Score**
 
 `s = (b - a) / max(a, b)`
 
@@ -647,7 +647,7 @@ Step 3: Calculate Silhouette Score
 
 `s = 6 / 7`
 
-# 0.857
+**0.857**
 
 Good clustering for this point
 
