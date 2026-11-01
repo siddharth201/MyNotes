@@ -216,7 +216,7 @@ For Cluster B:
 
 Maximum intra-cluster diameter = 1.
 
-Step 2: Calculate minimum inter-cluster distance
+**Step 2: Calculate minimum inter-cluster distance**
 
 The closest points from the two clusters are (2, 1) and (8, 1).
 
