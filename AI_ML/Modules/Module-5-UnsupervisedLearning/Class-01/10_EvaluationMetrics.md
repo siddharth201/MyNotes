@@ -726,7 +726,7 @@ Suppose we run K-Means with different K values.
 
 Illustrative clustering evaluation results.
 
-00.250.50.75123456
+![Silhouette Score vs K]()
 
 Here, K = 3 has the highest Silhouette Score.
 
