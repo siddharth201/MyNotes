@@ -593,7 +593,7 @@ For a data point, calculate its average distance from the points in each other c
 It tells us how close the point is to its nearest alternative cluster.
 
 <a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/SilhouteScore1.jpeg" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/SilhouteScore1.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Conceptual diagram: a measures within-cluster distance; b measures distance to the nearest other cluster.
