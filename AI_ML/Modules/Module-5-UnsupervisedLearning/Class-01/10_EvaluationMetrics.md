@@ -566,8 +566,8 @@ Question: Why can Dunn Index be sensitive to outliers?
 
 In simple language, it answers two questions:
 
-1. Is this point close to the other points in its own cluster?
-2. Is this point sufficiently far from points in other clusters?
+**1.** Is this point close to the other points in its own cluster?
+**2.** Is this point sufficiently far from points in other clusters?
 
 A good clustering should have:
 
