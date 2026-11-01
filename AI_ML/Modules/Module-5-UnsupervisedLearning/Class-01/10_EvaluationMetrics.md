@@ -555,27 +555,4 @@ Question: Why can Dunn Index be sensitive to outliers?
 
 "Because it uses the minimum inter-cluster distance and maximum intra-cluster diameter. A single outlier can significantly affect either of these quantities."
 
-## 10. Scaler lecture coverage checklist
-
-Revision checklist
-
-8/8 covered
-
-Definition and intuition of Dunn Index
-
-Minimum inter-cluster distance
-
-Maximum intra-cluster diameter
-
-Numerical calculation: 3 / 10 = 0.3
-
-Centroid-based distance example from lecture
-
-Choosing K using the highest Dunn Index
-
-Understanding non-monotonic behaviour
-
-Limitations and outlier sensitivity
-
-My recommendation: For your Master Notes, remember the classical point-to-point definition. Also retain the instructor's centroid-based calculation as a separate example, with the clarification above. That way, you understand both what was taught and what is mathematically standard.
 </details>
