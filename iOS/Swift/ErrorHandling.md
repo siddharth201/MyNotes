@@ -133,4 +133,8 @@ If you try to build this, Xcode (and the Swift compiler) will immediately throw 
 
 > 🛑 `Thrown expression type 'BankError' does not conform to 'Error'`
 
-**The Bottom Line:** The `throw` keyword in Swift has a hardcoded rule: whatever comes immediately after the word `throw` **must** conform to the `Error` protocol. If it doesn't, Swift will not let your app run.
+**The Bottom Line:** The `throw` keyword in Swift has a hardcoded rule: whatever comes immediately after the word `throw` **must** conform to the `Error` protocol. If it doesn't, Swift will not let your app run.  
+
+---
+
+
