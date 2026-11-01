@@ -26,7 +26,9 @@
 
 **B.** Because the median is computationally expensive.
 
-**C.** 
+**C.** Because the mean is always one of the data points.
+
+**D.**
 
 </details>
 
