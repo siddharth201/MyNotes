@@ -560,7 +560,7 @@ Question: Why can Dunn Index be sensitive to outliers?
 <details>
 <summary><b>Explanation Silhouette Score</b></summary>
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6ae71918ecd081919bc20ff895aff03e)
 
 Friend, Silhouette Score is an internal clustering evaluation metric that tells us how well a data point fits into its assigned cluster compared with the nearest alternative cluster.
 
