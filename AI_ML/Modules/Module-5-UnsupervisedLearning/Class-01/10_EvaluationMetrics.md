@@ -80,7 +80,7 @@ Ultimate goal: Building a model is not enough. We also need a reliable way to de
 
 
 <details>
-<summary>What is Evaluation Metrics</summary>
+<summary><b>is Dunn Index, elbow method and  Silhouette Score all are evaluation metrics?</b></summary>
 
 Yes, friend! All three are used to evaluate clustering, but there is an important distinction:
 
