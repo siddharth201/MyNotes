@@ -706,11 +706,11 @@ Overall score:
 
 Overall Silhouette Score
 
-# 0.78
+ **0.78**
 
 This indicates reasonably good clustering separation in this illustrative example.
 
-## 6. How do we use it to select K?
+### 6. How do we use it to select K?
 
 Suppose we run K-Means with different K values.
 
