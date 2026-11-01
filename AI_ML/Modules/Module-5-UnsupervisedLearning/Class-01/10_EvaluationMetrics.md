@@ -404,9 +404,9 @@ Let's compare:
 
 Classical Dunn Index
 
-[Unsupervised Learning in R: Determination of Cluster Number | by Fatih Emre Ozturk, MSc | Medium](https://images.openai.com/static-rsc-4/gYDm6LB_HzCGagecIffNj-tHi7Vcfilj9Tw2CQy4Z8lshItokTomphzwp_whZnFHiyWXitUDwPL_qC_NgVlWsuyt5WyJXR_U4qWf6jTnzWPsX_O4BznnKsOBR1vTIG1h1vQbfGqbhwcfkDPuOehoE848Ei61rn0ek5CT5j4HrLA?purpose=inline)
-
-[medium.com](https://medium.com/%40ozturkfemre/unsupervised-learning-determination-of-cluster-number-be8842cdb11?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Minimum distance between any point in cluster A and any point in cluster B.
 
