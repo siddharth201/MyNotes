@@ -10,6 +10,10 @@
 
 **D** Because supervised learning cannot handle numerical data. 
 
+<details>
+<summary><b>Answer</b></summary>
 
+**A** Because the dataset does not contain labeled target values.
+</details>
 
 </details>
