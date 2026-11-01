@@ -90,7 +90,8 @@ Interview takeaway: K-Means uses mean, not median, because the mean is the optim
 ---  
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>What happens to WCSS as K increases (while keeping the dataset fixed)?</b></summary>
+
 
 </details>
 
