@@ -657,22 +657,7 @@ This means point 2 is close to its own cluster and relatively far from the other
 
 The score ranges from -1 to +1.
 
-# +1
-
-Excellent separation
-
-Point is much closer to its own cluster than other clusters.
-
-# 0
-
-Cluster boundary
-
-Point may lie between two clusters.
-
-# -1
-
-Poor assignment  
-
+  
 
 | Score | Interpretation | Details |
 | :---: | :--- | :--- |
