@@ -766,11 +766,11 @@ from sklearn.cluster import KMeansfrom sklearn.metrics import silhouette_scorefo
 
 Note: Silhouette Score requires at least 2 distinct clusters and fewer clusters than data points.
 
-## 9. Interview-ready definition
+### 9. Interview-ready definition
 
 "Silhouette Score is an internal clustering evaluation metric that measures how well a data point fits within its assigned cluster compared with the nearest neighbouring cluster. It considers intra-cluster cohesion and inter-cluster separation. Its value ranges from -1 to +1, and a higher score generally indicates better-defined clusters."
 
-## 10. Quick self-check
+### 10. Quick self-check
 
 Suppose a data point has:
 
