@@ -316,7 +316,7 @@ Interpretation:
 - Numerator measures separation.
 - Denominator measures the worst-case cluster spread.
 
-## 3. Numerical example from the lecture
+### 3. Numerical example from the lecture
 
 The instructor gives three clusters and their inter-cluster distances:
 
@@ -348,7 +348,7 @@ Therefore:
 
 Lecture example — final answer
 
-# 0.3
+**0.3**
 
 The calculation is mathematically correct, assuming those distances have been calculated using a consistent definition.
 
