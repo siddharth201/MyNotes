@@ -28,7 +28,7 @@
 
 **C.** Because the mean is always one of the data points.
 
-**D.**
+**D.** Because K-Means requires an odd number of points.
 
 </details>
 
