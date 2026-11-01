@@ -275,14 +275,15 @@ I've reviewed the lecture transcript and checked its mathematical explanations a
 
 The instructor explains the basic idea correctly, but there are two important points that need correction:
 
-1. He calculates inter-cluster distance using centroid-to-centroid distance. That is a possible centroid-based variant, but the commonly used classical Dunn Index uses the minimum distance between data points belonging to different clusters.
-2. His explanation that Dunn Index is not used in industry because it is non-monotonic is misleading. Non-monotonic behaviour alone is not a valid reason to reject an evaluation metric.
+**1.** He calculates inter-cluster distance using centroid-to-centroid distance. That is a possible centroid-based variant, but the commonly used classical Dunn Index uses the minimum distance between data points belonging to different clusters.
+
+**2.** His explanation that Dunn Index is not used in industry because it is non-monotonic is misleading. Non-monotonic behaviour alone is not a valid reason to reject an evaluation metric.
 
 Let's separate what the lecture teaches from the corrections, then build the notes.
 
-# Dunn Index — Lecture Notes
+## Dunn Index — Lecture Notes
 
-## 1. What is Dunn Index?
+### 1. What is Dunn Index?
 
 Dunn Index is an internal clustering evaluation metric used to evaluate the quality of clustering.
 
@@ -295,7 +296,7 @@ The intuition:
 
 Good clustering = Compact clusters + Well-separated clusters.
 
-## 2. Formula
+### 2. Formula
 
 The classical Dunn Index is:
 
