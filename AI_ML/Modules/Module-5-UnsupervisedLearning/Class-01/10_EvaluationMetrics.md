@@ -598,7 +598,7 @@ It tells us how close the point is to its nearest alternative cluster.
 
 Conceptual diagram: a measures within-cluster distance; b measures distance to the nearest other cluster.
 
-## 2. Silhouette Score formula
+### 2. Silhouette Score formula
 
 For each data point:
 
