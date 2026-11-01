@@ -271,4 +271,304 @@ One important distinction: Dunn Index is an evaluation metric, not a clustering 
 <details>
 <summary><b>Dunn Index - Scaler Lecture</b></summary>
 
+I've reviewed the lecture transcript and checked its mathematical explanations against the standard definition of the Dunn Index.
+
+The instructor explains the basic idea correctly, but there are two important points that need correction:
+
+1. He calculates inter-cluster distance using centroid-to-centroid distance. That is a possible centroid-based variant, but the commonly used classical Dunn Index uses the minimum distance between data points belonging to different clusters.
+2. His explanation that Dunn Index is not used in industry because it is non-monotonic is misleading. Non-monotonic behaviour alone is not a valid reason to reject an evaluation metric.
+
+Let's separate what the lecture teaches from the corrections, then build the notes.
+
+# Dunn Index — Lecture Notes
+
+## 1. What is Dunn Index?
+
+Dunn Index is an internal clustering evaluation metric used to evaluate the quality of clustering.
+
+It evaluates two properties:
+
+- Compactness: Points within the same cluster should be close to each other.
+- Separation: Different clusters should be far away from each other.
+
+The intuition:
+
+Good clustering = Compact clusters + Well-separated clusters.
+
+## 2. Formula
+
+The classical Dunn Index is:
+
+`Dunn Index = Minimum Inter-cluster Distance / Maximum Intra-cluster Diameter`
+
+In mathematical notation:
+
+$$\
+DI = \frac \delta(C_i,C_j)}\
+\
+$$
+
+Where:
+
+- `δ(Cᵢ, Cⱼ)` = distance between two different clusters.
+- `Δ(Cₖ)` = diameter of a cluster, i.e. maximum distance between any two points within that cluster.
+
+Interpretation:
+
+- Numerator measures separation.
+- Denominator measures the worst-case cluster spread.
+
+## 3. Numerical example from the lecture
+
+The instructor gives three clusters and their inter-cluster distances:
+
+| Cluster pair | Inter-cluster distance |
+| ------------ | ---------------------- |
+| C1 and C3    | 13                     |
+| C2 and C3    | 15                     |
+| C1 and C2    | 3                      |
+
+Minimum inter-cluster distance:
+
+`Min(13, 15, 3) = 3`
+
+Now, the intra-cluster diameters are:
+
+| Cluster | Intra-cluster diameter |
+| ------- | ---------------------- |
+| C1      | 5                      |
+| C2      | 7                      |
+| C3      | 10                     |
+
+Maximum intra-cluster diameter:
+
+`Max(5, 7, 10) = 10`
+
+Therefore:
+
+`Dunn Index = 3 / 10 = 0.3`
+
+Lecture example — final answer
+
+# 0.3
+
+The calculation is mathematically correct, assuming those distances have been calculated using a consistent definition.
+
+## 4. Important correction: How is inter-cluster distance calculated?
+
+This is where the lecture needs clarification.
+
+The instructor calculates the distance between centroids.
+
+He gives these coordinates:
+
+Cluster A
+
+- (2, 3)
+- (3, 4)
+- (4, 5)
+
+Centroid A:
+
+`((2 + 3 + 4)/3, (3 + 4 + 5)/3)`
+
+`= (3, 4)`
+
+Cluster B
+
+- (8, 9)
+- (9, 10)
+- (10, 11)
+
+Centroid B:
+
+`((8 + 9 + 10)/3, (9 + 10 + 11)/3)`
+
+`= (9, 10)`
+
+Now calculate centroid-to-centroid Euclidean distance:
+
+`d = sqrt((9 - 3)^2 + (10 - 4)^2)`
+
+`= sqrt(36 + 36)`
+
+`= sqrt(72)`
+
+`= 8.49 approximately`
+
+Definition clarification
+
+The instructor's calculation of 8.49 is correct as a centroid distance.
+
+However, classical Dunn Index uses minimum point-to-point distance between different clusters, not necessarily centroid distance.
+
+Let's compare:
+
+Classical Dunn Index
+
+[Unsupervised Learning in R: Determination of Cluster Number | by Fatih Emre Ozturk, MSc | Medium](https://images.openai.com/static-rsc-4/gYDm6LB_HzCGagecIffNj-tHi7Vcfilj9Tw2CQy4Z8lshItokTomphzwp_whZnFHiyWXitUDwPL_qC_NgVlWsuyt5WyJXR_U4qWf6jTnzWPsX_O4BznnKsOBR1vTIG1h1vQbfGqbhwcfkDPuOehoE848Ei61rn0ek5CT5j4HrLA?purpose=inline)
+
+[medium.com](https://medium.com/%40ozturkfemre/unsupervised-learning-determination-of-cluster-number-be8842cdb11?utm_source=chatgpt.com)
+
+Minimum distance between any point in cluster A and any point in cluster B.
+
+Centroid-based variant
+
+[Unsupervised Learning in R: Determination of Cluster Number | by Fatih Emre Ozturk, MSc | Medium](https://images.openai.com/static-rsc-4/tgHpeYooUz1W5vWIGemPlee4aNQS9uZxiqjBlE_FLuHi4avaJivUnd6ALa2ZqppwSzXV8mooLyR5kFsL0rA4CxhSrTQysUp4jYOxKXHrYIdYDHDbCqyIql3qEwUrXQD6Tk9BfwpT3e5vPhp5D7e12lJ_PsWJdVBf0DLcD3RwWAM?purpose=inline)
+
+[medium.com](https://medium.com/%40ozturkfemre/unsupervised-learning-determination-of-cluster-number-be8842cdb11?utm_source=chatgpt.com)
+
+Distance between the two cluster centroids.
+
+Both are possible ways of defining cluster separation, but they are not interchangeable. If you use centroid distance, explicitly call it a centroid-based Dunn variant rather than the classical definition.
+
+Similarly, intra-cluster diameter in the classical definition means the maximum pairwise distance between points within that cluster.
+
+## 5. How to interpret Dunn Index?
+
+The general interpretation is:
+
+| Dunn Index    | Interpretation                                    |
+| ------------- | ------------------------------------------------- |
+| Higher        | Better compactness and separation                 |
+| Lower         | Poorer compactness or separation                  |
+| Close to zero | Very close clusters or highly spread-out clusters |
+
+There is no universal threshold for deciding whether a Dunn Index is good.
+
+Why does a higher value indicate better clustering?
+
+- Higher numerator means greater separation between clusters.
+- Lower denominator means smaller cluster diameter.
+- Both make the ratio larger.
+
+## 6. Can Dunn Index help us choose K?
+
+Yes. This is another concept demonstrated in the lecture.
+
+Suppose we calculate Dunn Index for different K values:
+
+| K | Dunn Index |
+| - | ---------- |
+| 2 | 0.80       |
+| 3 | 0.65       |
+| 4 | 0.40       |
+| 5 | 0.40       |
+| 6 | 0.05       |
+| 7 | 0.20       |
+
+Dunn Index vs Number of Clusters
+
+Illustrative values based on the lecture transcript.
+
+00.250.50.751234567
+
+The highest score is at K = 2.
+
+Therefore, based on this metric and these tested K values, K = 2 is the preferred candidate.
+
+But does this prove that two clusters are the best business solution? No.
+
+We should also examine:
+
+- Whether the clusters are meaningful.
+- Whether the segmentation is useful for the business.
+- Whether the clusters are too broad or too small.
+- Whether another K gives more actionable segments.
+
+## 7. Critical verification: Is Dunn Index not used in industry because it is non-monotonic?
+
+This is the most misleading statement in the lecture.
+
+The instructor says Dunn Index is not monotonic and therefore industry does not use it.
+
+Let's understand the issue.
+
+What does monotonic mean?
+
+A metric is monotonic if it consistently moves in one direction as its input changes.
+
+But Dunn Index is not expected to increase or decrease consistently as K changes.
+
+For example:
+
+`K = 2 → 0.80`
+
+`K = 3 → 0.65`
+
+`K = 4 → 0.40`
+
+`K = 5 → 0.40`
+
+`K = 6 → 0.05`
+
+`K = 7 → 0.20`
+
+It decreases and then increases.
+
+Is that necessarily a problem? No.
+
+Different K values create different cluster structures. There is no mathematical requirement that Dunn Index must change monotonically.
+
+Actual limitations of Dunn Index:
+
+1. Outlier sensitivity: A single extreme point can increase a cluster's diameter and reduce the Dunn Index.
+2. Worst-case dependency: It uses minimum inter-cluster distance and maximum intra-cluster diameter. One problematic pair can strongly affect the score.
+3. Computational cost: Calculating pairwise distances can become expensive for large datasets.
+4. Cluster geometry: It may not represent every cluster shape equally well.
+
+So, the accurate conclusion is:
+
+Dunn Index is a valid clustering evaluation metric, but it has limitations. It can be used in practice, although it is not necessarily the only or preferred metric.
+
+## 8. Dunn Index vs Silhouette Score vs Elbow Method
+
+Let's consolidate what we've learned.
+
+| Technique            | Main purpose        | Preferred result                      |
+| -------------------- | ------------------- | ------------------------------------- |
+| Elbow Method         | Help select K       | Point of diminishing WCSS improvement |
+| Silhouette Score     | Evaluate clustering | Higher, closer to +1                  |
+| Dunn Index           | Evaluate clustering | Higher                                |
+| Davies-Bouldin Index | Evaluate clustering | Lower                                 |
+
+These are internal evaluation approaches because they assess cluster structure without requiring ground-truth labels.
+
+## 9. Interview-ready explanation
+
+Question: What is Dunn Index?
+
+"Dunn Index is an internal clustering evaluation metric that measures the ratio of minimum inter-cluster separation to maximum intra-cluster diameter. A higher Dunn Index generally indicates better clustering because it represents compact clusters with good separation."
+
+Question: Does Dunn Index use centroid distance?
+
+"The classical Dunn Index uses minimum point-to-point distance between different clusters and maximum pairwise distance within a cluster. Centroid distance can be used in a variant, but it is not the classical definition."
+
+Question: Why can Dunn Index be sensitive to outliers?
+
+"Because it uses the minimum inter-cluster distance and maximum intra-cluster diameter. A single outlier can significantly affect either of these quantities."
+
+## 10. Scaler lecture coverage checklist
+
+Revision checklist
+
+8/8 covered
+
+Definition and intuition of Dunn Index
+
+Minimum inter-cluster distance
+
+Maximum intra-cluster diameter
+
+Numerical calculation: 3 / 10 = 0.3
+
+Centroid-based distance example from lecture
+
+Choosing K using the highest Dunn Index
+
+Understanding non-monotonic behaviour
+
+Limitations and outlier sensitivity
+
+My recommendation: For your Master Notes, remember the classical point-to-point definition. Also retain the instructor's centroid-based calculation as a separate example, with the clarification above. That way, you understand both what was taught and what is mathematically standard.
 </details>
