@@ -722,7 +722,7 @@ Suppose we run K-Means with different K values.
 | 5 | 0.48             |
 | 6 | 0.35             |
 
-Silhouette Score vs K
+**Silhouette Score vs K**
 
 Illustrative clustering evaluation results.
 
