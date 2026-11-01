@@ -840,8 +840,8 @@ Interpretation: The point is much closer to another cluster than its assigned cl
 
 ## Scenario 2: Silhouette Score = +1
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/SilhouetteScore2.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/SilhouetteScore2.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Imagine a data point is very close to the points in its own cluster and far away from every other cluster.
