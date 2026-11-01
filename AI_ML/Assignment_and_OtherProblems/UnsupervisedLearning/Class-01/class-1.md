@@ -87,3 +87,10 @@ Interview takeaway: K-Means uses mean, not median, because the mean is the optim
 
 </details>
 
+---  
+
+<details>
+<summary><b>Explanation</b></summary>
+
+</details>
+
