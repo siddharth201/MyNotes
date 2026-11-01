@@ -422,7 +422,7 @@ Both are possible ways of defining cluster separation, but they are not intercha
 
 Similarly, intra-cluster diameter in the classical definition means the maximum pairwise distance between points within that cluster.
 
-## 5. How to interpret Dunn Index?
+### 5. How to interpret Dunn Index?
 
 The general interpretation is:
 
