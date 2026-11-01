@@ -653,7 +653,7 @@ Good clustering for this point
 
 This means point 2 is close to its own cluster and relatively far from the other cluster.
 
-## 4. How to interpret Silhouette Score?
+### 4. How to interpret Silhouette Score?
 
 The score ranges from -1 to +1.
 
