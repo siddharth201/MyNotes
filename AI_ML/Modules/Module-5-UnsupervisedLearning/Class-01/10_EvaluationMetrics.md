@@ -191,7 +191,7 @@ Distance between two different clusters.
 
 We consider the minimum distance between any two points belonging to different clusters, then take the minimum across all cluster pairs.
 
-B. Intra-cluster diameter
+**B. Intra-cluster diameter**
 
 Maximum distance between any two points within the same cluster.
 
