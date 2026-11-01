@@ -463,9 +463,12 @@ Dunn Index vs Number of Clusters
 
 Illustrative values based on the lecture transcript.
 
-00.250.50.751234567
 
-https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%203.02.52%E2%80%AFPM.png
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%203.02.52%E2%80%AFPM.png" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%203.02.52%E2%80%AFPM.png" width="250" alt="Click to enlarge">
+</a>  
+
+---
 
 The highest score is at K = 2.
 
