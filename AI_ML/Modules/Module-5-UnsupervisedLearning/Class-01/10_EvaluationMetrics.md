@@ -677,7 +677,7 @@ Point may be closer to another cluster than its assigned cluster.
 
 These are qualitative interpretations, not strict universal thresholds.
 
-## 5. How do we calculate the overall Silhouette Score?
+### 5. How do we calculate the overall Silhouette Score?
 
 An important distinction:
 
