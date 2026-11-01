@@ -150,6 +150,7 @@ func fetchUsers() async throws -> [User] {
     }
 ```
 
+**Ans:**
 You do not need a `do-catch` block inside `fetchUsers()` because the function itself is marked with the **`throws`** keyword.
 
 In Swift, when a function is marked as `throws`, it delegates error handling to the caller. Instead of catching and resolving errors internally, the function propagates any errors up the call stack.
@@ -218,6 +219,7 @@ If you do not need to alter the error or recover from it internally, letting `th
 
 ## Q. So just `try` will work , no need of `try?` or `try!`
 
+**Ans:**
 Yes, standard **`try`** is the correct choice here, and you should **not** use `try?` or `try!`.
 
 Each variant changes how errors are treated:
@@ -273,6 +275,7 @@ This returns `[User]?`, but the function's return type is non-optional `[User]`.
 
 ## Q. How I would know , only `try` will work or I have to use `do-catch`?
 
+**Ans:**
 The rule comes down to one question: **Is the function you are currently writing marked with `throws`?**
 
 
