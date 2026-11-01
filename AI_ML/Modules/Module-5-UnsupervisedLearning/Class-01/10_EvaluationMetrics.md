@@ -612,7 +612,7 @@ Where:
 
 Notice that we divide by `max(a, b)` to normalize the score between -1 and +1.
 
-## 3. Numerical example
+### 3. Numerical example
 
 Suppose we have two clusters:
 
