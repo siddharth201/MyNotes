@@ -137,4 +137,16 @@ If you try to build this, Xcode (and the Swift compiler) will immediately throw 
 
 ---
 
+## Q. In below code we have not use do-catch to handle `try await URLSession.shared.data(from: url)` and `try JSONDecoder().decode([User].self, from: data)` , why?
+```swift
+func fetchUsers() async throws -> [User] {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {
+            throw URLError(.badURL)
+        }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        return try JSONDecoder().decode([User].self, from: data)
+    }
+```
 
