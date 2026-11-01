@@ -558,6 +558,7 @@ Question: Why can Dunn Index be sensitive to outliers?
 </details>
 
 <details>
-<summary><b>Explanation </b></summary>
+<summary><b>Explanation Silhouette Score</b></summary>
+
 
 </details>
