@@ -268,4 +268,7 @@ Ultimate goal: Dunn Index evaluates whether clusters are compact internally and 
 One important distinction: Dunn Index is an evaluation metric, not a clustering algorithm. It does not create clusters; it evaluates clusters created by algorithms such as K-Means or hierarchical clustering.
 </details>
 
+<details>
+<summary><b>Dunn Index - Scaler Lecture</b></summary>
 
+</details>
