@@ -30,5 +30,11 @@
 
 **D.** Because K-Means requires an odd number of points.
 
+<details>
+<summary><b>Answer</b></summary>
+
+**A.** Because the mean minimizes the total squared distance (WCSS).
+</details>
+
 </details>
 
