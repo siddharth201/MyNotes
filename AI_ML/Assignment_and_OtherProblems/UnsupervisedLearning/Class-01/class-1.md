@@ -33,7 +33,55 @@
 <details>
 <summary><b>Answer</b></summary>
 
-**A.** Because the mean minimizes the total squared distance (WCSS).
+**Correct answer: A**
+
+A. Because the mean minimizes the total squared distance (WCSS).
+
+### Why?
+
+K-Means uses the following objective:
+
+`WCSS = Sum of squared distances between data points and their assigned centroid.`
+
+During the update step, K-Means recalculates the centroid to minimize this WCSS.
+
+Mathematically:
+
+- Mean minimizes the sum of squared deviations.
+- Median minimizes the sum of absolute deviations.
+
+### Simple example
+
+Suppose a cluster contains these points:
+
+`2, 4, 6, 8, 10`
+
+Mean:
+
+`(2 + 4 + 6 + 8 + 10) / 5 = 6`
+
+Median:
+
+`6`
+
+Here both happen to be equal. But consider:
+
+`2, 4, 6, 8, 30`
+
+Mean = 10
+
+Median = 6
+
+For standard K-Means, we use the mean because its objective is to minimize squared Euclidean distances.
+
+Remember this distinction:
+
+| Algorithm | Center calculation | Objective                 |
+| --------- | ------------------ | ------------------------- |
+| K-Means   | Mean               | Sum of squared distances  |
+| K-Medians | Median             | Sum of absolute distances |
+
+Interview takeaway: K-Means uses mean, not median, because the mean is the optimal center for minimizing the sum of squared Euclidean distances.
 </details>
 
 </details>
