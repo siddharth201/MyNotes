@@ -592,9 +592,9 @@ For a data point, calculate its average distance from the points in each other c
 
 It tells us how close the point is to its nearest alternative cluster.
 
-[ECLIPSE Presentations – Mathematical Foundations of AI & ML Unit 5: Clustering and Autoencoders](https://images.openai.com/static-rsc-4/hxwPapNjwuHUctafS6HFy4ge-thkESuLUh1A-ceSadppElRGcpJ-VNdi-fxPII45Jl4z2FXtABQTbz59NEVZWsTm-C5TDyfXTN9UeieM4BdZ1jhxA4UiNbjdvnkt-9xwr8IvcdPuYpNuZzwFOMPrpvidZ9tFj2VvnniSd3VyuRM?purpose=inline)
-
-[pelzlab.science](https://pelzlab.science/public_presentations/mathematical_foundations_of_ai_and_ml/05_clustering_and_autoencoders/01_intro.html?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Conceptual diagram: a measures within-cluster distance; b measures distance to the nearest other cluster.
 
