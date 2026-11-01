@@ -586,7 +586,7 @@ Average distance of a data point from all other points in its own cluster.
 
 It tells us how well the point fits into its assigned cluster.
 
-B. Nearest-cluster distance (`b`)
+**B. Nearest-cluster distance (`b`)**
 
 For a data point, calculate its average distance from the points in each other cluster. Then take the smallest of those averages.
 
