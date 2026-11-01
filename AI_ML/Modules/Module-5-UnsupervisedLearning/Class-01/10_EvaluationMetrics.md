@@ -204,7 +204,7 @@ Suppose we have two clusters:
 - Cluster A: Points (1, 1), (2, 1)
 - Cluster B: Points (8, 1), (9, 1)
 
-Step 1: Calculate intra-cluster diameter
+**Step 1: Calculate intra-cluster diameter**
 
 For Cluster A:
 
