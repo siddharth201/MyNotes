@@ -163,7 +163,6 @@ If the network request succeeds but the JSON does not match your `User` model (e
 3. **`throw URLError(.badURL)`**
 Your manual guard failure uses the same propagation mechanism, throwing a `URLError` directly out of the function.
 
----
 
 ### Where Does `do-catch` Go?
 
@@ -228,7 +227,6 @@ Each variant changes how errors are treated:
 * **What it does:** Executes the throwing operation and passes any thrown error directly up to the caller because the function has `throws` in its signature.
 * **Why it fits:** The caller gets full visibility into *why* something failed (e.g., distinguishing between a network timeout vs. an invalid JSON key).
 
----
 
 ### 2. Why not `try?`
 
@@ -254,8 +252,6 @@ This returns `[User]?`, but the function's return type is non-optional `[User]`.
 
 
 
----
-
 ### 3. Why not `try!`
 
 * **What it does:** Force-unwraps the call and asserts that an error will **never** happen.
@@ -264,8 +260,6 @@ This returns `[User]?`, but the function's return type is non-optional `[User]`.
 * Only use `try!` when a failure is logically impossible (like decoding a hardcoded local JSON string that you have already verified). Network requests and JSON decoding from remote servers are never guaranteed to succeed.
 
 
-
----
 
 ### Comparison
 
@@ -278,3 +272,58 @@ This returns `[User]?`, but the function's return type is non-optional `[User]`.
 ---  
 
 ## Q. How I would know , only `try` will work or I have to use `do-catch`?
+
+The rule comes down to one question: **Is the function you are currently writing marked with `throws`?**
+
+
+### The Two Scenarios
+
+#### 1. Inside a `throws` function $\rightarrow$ Use plain `try`
+
+If the current function has `throws` in its declaration, Swift allows unhandled errors to escape. You do not need `do-catch` unless you want to recover from the error right there.
+
+```swift
+// Marked with 'throws' -> plain 'try' works
+func fetchUsers() async throws -> [User] {
+    let (data, _) = try await URLSession.shared.data(from: url)
+    return try JSONDecoder().decode([User].self, from: data)
+}
+
+```
+
+
+#### 2. Inside a non-throwing function $\rightarrow$ You MUST use `do-catch`
+
+If the current function (or closure) **does not** have `throws`, errors cannot escape. The compiler will force you to catch and handle any throwing call using `do-catch`.
+
+Common places this happens:
+
+* Inside `viewDidLoad()` or `body` of a SwiftUI view.
+* Inside UI button click actions or tap handlers.
+* Inside a standard asynchronous `Task { ... }` block.
+
+```swift
+// NOT marked with 'throws' -> compiler error if you don't catch!
+func loadDataOnButtonTap() {
+    Task {
+        do {
+            let users = try await fetchUsers()
+            self.users = users
+        } catch {
+            // Must handle it here: update UI, show an alert, etc.
+            self.errorMessage = error.localizedDescription
+        }
+    }
+}
+
+```
+
+
+### Quick Decision Tree
+
+Ask yourself: **Can this function pass the buck to whoever called it?**
+
+1. **Yes, the caller should decide what to do:**
+Add `throws` to your function signature, and write plain `try`.
+2. **No, this is the end of the line (e.g., UI layer, ViewModel state update):**
+Use `do-catch` so you can show an alert, update an error banner, or log the issue.
