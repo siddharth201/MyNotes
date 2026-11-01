@@ -404,8 +404,8 @@ Let's compare:
 
 Classical Dunn Index
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn3.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Dunn3.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Minimum distance between any point in cluster A and any point in cluster B.
