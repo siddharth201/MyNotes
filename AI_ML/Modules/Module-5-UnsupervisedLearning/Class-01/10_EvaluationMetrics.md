@@ -685,8 +685,8 @@ The calculation we performed above gives the Silhouette Score of one data point,
 
 To calculate the overall score:
 
-1. Calculate the Silhouette Score for every data point.
-2. Take the arithmetic mean of all individual scores.
+**1.** Calculate the Silhouette Score for every data point.
+**2.** Take the arithmetic mean of all individual scores.
 
 For example, suppose five points have these scores:
 
