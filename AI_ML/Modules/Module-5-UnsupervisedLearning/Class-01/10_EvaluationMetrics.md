@@ -671,7 +671,16 @@ Point may lie between two clusters.
 
 # -1
 
-Poor assignment
+Poor assignment  
+
+
+| Score | Interpretation | Details |
+| :---: | :--- | :--- |
+| **`+1`** | 🟩 **Excellent separation** | Point is much closer to its own cluster than other clusters. |
+| **`0`** | 🟧 **Cluster boundary** | Point may lie between two clusters. |
+| **`-1`** | 🟥 **Poor assignment** | Point may be closer to another cluster than its assigned cluster. |  
+
+
 
 Point may be closer to another cluster than its assigned cluster.
 
