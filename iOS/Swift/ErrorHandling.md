@@ -219,4 +219,62 @@ If you do not need to alter the error or recover from it internally, letting `th
 
 ## Q. So just `try` will work , no need of `try?` or `try!`
 
+Yes, standard **`try`** is the correct choice here, and you should **not** use `try?` or `try!`.
+
+Each variant changes how errors are treated:
+
+### 1. Plain `try` (The Right Choice)
+
+* **What it does:** Executes the throwing operation and passes any thrown error directly up to the caller because the function has `throws` in its signature.
+* **Why it fits:** The caller gets full visibility into *why* something failed (e.g., distinguishing between a network timeout vs. an invalid JSON key).
+
+---
+
+### 2. Why not `try?`
+
+* **What it does:** Converts the result into an `Optional` and **discards the error** if one occurs, turning failures into `nil`.
+* **The issue in your code:**
+* For `URLSession`:
+```swift
+let (data, _) = try? await URLSession.shared.data(from: url) // Error!
+
+```
+
+
+`try?` returns an optional tuple `(Data, URLResponse)?`. You cannot directly decompose it into `(data, _)` without unwrapping it first.
+* For `JSONDecoder`:
+```swift
+return try? JSONDecoder().decode([User].self, from: data) // Type mismatch!
+
+```
+
+
+This returns `[User]?`, but the function's return type is non-optional `[User]`. It will fail to compile unless you change the function return type to `[User]?` or provide a default fallback (`?? []`).
+* **Lost context:** Even if compiled, `try?` hides whether a failure was caused by a bad connection, an HTTP error, or corrupted JSON.
+
+
+
+---
+
+### 3. Why not `try!`
+
+* **What it does:** Force-unwraps the call and asserts that an error will **never** happen.
+* **The issue in your code:**
+* If the device loses internet connection, the server is down, or the API response schema changes, your app will **instantly crash** at runtime (`Fatal error`).
+* Only use `try!` when a failure is logically impossible (like decoding a hardcoded local JSON string that you have already verified). Network requests and JSON decoding from remote servers are never guaranteed to succeed.
+
+
+
+---
+
+### Comparison
+
+| Keyword | What Happens on Error | Return Type | Best For |
+| --- | --- | --- | --- |
+| **`try`** | Throws error up to caller | Standard type (`T`) | Throwing functions where callers handle errors |
+| **`try?`** | Swallows error, returns `nil` | Optional (`T?`) | Non-critical operations where failure reason doesn't matter |
+| **`try!`** | **Crashes the app** | Standard type (`T`) | Operations guaranteed never to fail |
+
+---  
+
 
