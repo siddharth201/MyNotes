@@ -161,17 +161,17 @@ Imagine we have two different clustering results.
 
 Clustering A — Good separation
 
-[k-means Algorithm - 공돌이의 수학정리노트 (Angelo's Math Notes)](https://images.openai.com/static-rsc-4/StIgoGYoXqrKRNRwOqRyQZ2b2w4-_T6Rt4GQwA6bPv5ChMV-9tT9LacOXYN79rbWrWm1nryLy_IwUi4qEQiXfY09NR8I_KpfDfUbdp-zBuq4IDXSn_5w-lHOmgh-2rYNDQadHFLdILa3l4RP6hm2cmQrHXflo7SnjMrXQTijXlo?purpose=inline)
-
-[angeloyeo.github.io](https://angeloyeo.github.io/2021/02/07/k_means_en.html?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Compact clusters with large separation.
 
 Clustering B — Poor separation
 
-[Unsupervised clustering — CSS 2](https://images.openai.com/static-rsc-4/hHJ49RCMpbr4RPhjL4JZmQp5RAOCt3-NINBU283OJXWukrFdFvjMSYbL9e2iJyyRp9eWb6qqdi4U4uPqrhfmPYFYQZdzM_osp7WZi9SbPU1GrUG5nYZ5RSVyZ8v92YP7kYpXnH_wZumFelRe06qxUk4bSl4_-d5PEbg13IVCatU?purpose=inline)
-
-[ucsd-css2.github.io](https://ucsd-css2.github.io/ucsd-css2-website/lectures/20-unsupervised-clustering.html?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Clusters are spread out and overlap.
 
