@@ -580,7 +580,7 @@ Let's understand it with a numerical example.
 
 Silhouette Score uses two distances for every data point.
 
-A. Intra-cluster distance (`a`)
+**A. Intra-cluster distance (`a`)**
 
 Average distance of a data point from all other points in its own cluster.
 
