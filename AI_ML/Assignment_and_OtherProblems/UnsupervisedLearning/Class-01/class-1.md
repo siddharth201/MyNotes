@@ -102,7 +102,58 @@ Interview takeaway: K-Means uses mean, not median, because the mean is the optim
 
 <details>
 <summary><b>Answer</b></summary>
+  
+**Correct answer: B**
 
+B. Always decreases (or stays the same).
+
+### Why?
+
+WCSS measures the sum of squared distances between data points and their assigned cluster centroids.
+
+When we increase K, we increase the number of clusters.
+
+This gives K-Means more centroids, allowing data points to be assigned to potentially closer centroids.
+
+Therefore, WCSS can decrease or remain unchanged, but it cannot increase when we consider the optimal clustering solution.
+
+### Example
+
+| K (Clusters) | WCSS |
+| ------------ | ---- |
+| 1            | 100  |
+| 2            | 60   |
+| 3            | 30   |
+| 4            | 20   |
+| 5            | 20   |
+| 6            | 10   |
+
+Notice:
+
+- K = 1 → 2: WCSS decreases.
+- K = 2 → 3: WCSS decreases.
+- K = 4 → 5: WCSS remains the same.
+- K = 5 → 6: WCSS decreases.
+
+0306090120123456
+
+### Why does this happen mathematically?
+
+Suppose we have K = 2 clusters.
+
+Now increase K to 3.
+
+We can split an existing cluster into two smaller clusters. This gives the algorithm an opportunity to reduce the squared distances from points to their respective centroids.
+
+It cannot make the optimal WCSS worse because the previous clustering is still a possible solution (the additional cluster can effectively remain unused).
+
+Important distinction: This guarantee applies to the optimal WCSS for each K. In practical K-Means runs, random initialization and convergence to local minima can sometimes produce a higher observed WCSS for a larger K.
+
+### Interview takeaway
+
+As K increases, WCSS is monotonically non-increasing.
+
+This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing, potentially reaching zero when every data point has its own cluster. We use the Elbow Method to identify diminishing returns.
 </details>
 </details>
 
