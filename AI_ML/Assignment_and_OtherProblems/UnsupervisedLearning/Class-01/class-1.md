@@ -24,7 +24,9 @@
 
 **A.** Because the mean minimizes the total squared distance (WCSS).
 
-**B.** 
+**B.** Because the median is computationally expensive.
+
+**C.** 
 
 </details>
 
