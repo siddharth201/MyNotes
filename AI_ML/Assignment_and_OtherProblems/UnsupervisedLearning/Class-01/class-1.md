@@ -6,7 +6,7 @@
 
 **B** Because the dataset has too many features.
 
-**C**
+**C** Because K-Means requires labeled training data.
 
 **D** 
 
