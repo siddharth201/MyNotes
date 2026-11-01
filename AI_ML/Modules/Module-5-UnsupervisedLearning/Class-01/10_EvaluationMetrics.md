@@ -230,7 +230,7 @@ Step 3: Calculate Dunn Index
 
 Final Dunn Index
 
-# 6
+ **6**
 
 ## 4. How do we interpret Dunn Index?
 
