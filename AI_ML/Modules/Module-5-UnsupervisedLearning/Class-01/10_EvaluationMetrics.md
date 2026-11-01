@@ -840,9 +840,9 @@ Interpretation: The point is much closer to another cluster than its assigned cl
 
 ## Scenario 2: Silhouette Score = +1
 
-[Silhouette Coefficient. This is my first medium story, so… | by Ashutosh Bhardwaj | TDS Archive | Medium](https://images.openai.com/static-rsc-4/b9koJ2iKRTK-LpgQzALVleLpCVfQiagi4awQcLlcGtf3oTVzH7ufvcPzvnW4xMmM772L17Rap5L8OKfnoI5syIQSgWzbxHcFYNJKRS_BtUYaZhyCV9gNJ-p1_8WzmYrNwhG0ZuxEBhPgdqzfOdGKLs0a4LKzlmICWfg0dhJtaoI?purpose=inline)
-
-[medium.com](https://medium.com/data-science/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Imagine a data point is very close to the points in its own cluster and far away from every other cluster.
 
