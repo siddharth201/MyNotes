@@ -224,7 +224,7 @@ The closest points from the two clusters are (2, 1) and (8, 1).
 
 Minimum inter-cluster distance = 6.
 
-Step 3: Calculate Dunn Index
+**Step 3: Calculate Dunn Index**
 
 `Dunn Index = 6 / 1 = 6`
 
