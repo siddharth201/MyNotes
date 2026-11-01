@@ -142,7 +142,7 @@ Remember: Elbow → How many clusters? Silhouette and Dunn → How good are the 
 
 
 <details>
-<summary>What is Evaluation Metrics</summary>
+<summary><b>Explain Dunn Index</b></summary>
 
 
 </details>
