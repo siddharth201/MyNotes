@@ -352,7 +352,7 @@ Lecture example — final answer
 
 The calculation is mathematically correct, assuming those distances have been calculated using a consistent definition.
 
-## 4. Important correction: How is inter-cluster distance calculated?
+### 4. Important correction: How is inter-cluster distance calculated?
 
 This is where the lecture needs clarification.
 
