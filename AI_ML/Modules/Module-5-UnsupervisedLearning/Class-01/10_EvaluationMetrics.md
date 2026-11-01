@@ -169,8 +169,8 @@ Compact clusters with large separation.
 
 Clustering B — Poor separation
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/dunn2.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/dunn2.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 Clusters are spread out and overlap.
