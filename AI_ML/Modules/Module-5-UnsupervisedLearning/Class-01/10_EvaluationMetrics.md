@@ -1,6 +1,6 @@
 
 <details>
-<summary>What is Evaluation Metrics</summary>
+<summary><b>What is Evaluation Metrics</b></summary>
 
 Friend, Evaluation Metrics are measures or criteria that help us judge how well a Machine Learning model or algorithm is performing.
 
