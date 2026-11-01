@@ -440,7 +440,7 @@ Why does a higher value indicate better clustering?
 - Lower denominator means smaller cluster diameter.
 - Both make the ratio larger.
 
-## 6. Can Dunn Index help us choose K?
+### 6. Can Dunn Index help us choose K?
 
 Yes. This is another concept demonstrated in the lecture.
 
