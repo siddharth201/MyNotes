@@ -726,7 +726,7 @@ Suppose we run K-Means with different K values.
 
 Illustrative clustering evaluation results.
 
-![Silhouette Score vs K]()
+![Silhouette Score vs K](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/Screenshot%202026-11-01%20at%204.20.02%E2%80%AFPM.png)
 
 Here, K = 3 has the highest Silhouette Score.
 
@@ -734,7 +734,7 @@ Therefore, K = 3 is the strongest candidate according to this metric among the t
 
 But don't blindly select the highest score. Also examine cluster sizes, business usefulness and domain knowledge.
 
-## 7. Silhouette Score vs Dunn Index vs Elbow Method
+### 7. Silhouette Score vs Dunn Index vs Elbow Method
 
 | Feature       | Silhouette Score                         | Dunn Index                     | Elbow Method          |
 | ------------- | ---------------------------------------- | ------------------------------ | --------------------- |
