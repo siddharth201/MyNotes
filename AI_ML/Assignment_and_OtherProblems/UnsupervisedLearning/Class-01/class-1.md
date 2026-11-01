@@ -8,6 +8,8 @@
 
 **C** Because K-Means requires labeled training data.
 
-**D** 
+**D** Because supervised learning cannot handle numerical data. 
+
+
 
 </details>
