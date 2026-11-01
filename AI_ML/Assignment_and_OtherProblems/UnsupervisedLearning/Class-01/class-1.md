@@ -94,6 +94,8 @@ Interview takeaway: K-Means uses mean, not median, because the mean is the optim
 
 **A.** Always increases.
 
-**B.**
+**B.** Always decreases (or stays the same).
+
+**B** 
 </details>
 
