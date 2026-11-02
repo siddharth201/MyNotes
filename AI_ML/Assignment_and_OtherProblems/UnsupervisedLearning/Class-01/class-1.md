@@ -160,7 +160,7 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 ---  
 
 <details>
-<summary><b>If the WCSS keeps decreasing significantly after adding more clusters beyond the elbow point, which of the following is most likely happening?</b></summary>  
+<summary><b>Q. If the WCSS keeps decreasing significantly after adding more clusters beyond the elbow point, which of the following is most likely happening?</b></summary>  
 
 1. The model is learning better.  
 
@@ -180,6 +180,10 @@ Let's understand why.
 ## 1. First, what is WCSS?
 
 WCSS (Within-Cluster Sum of Squares) measures how close data points are to their respective cluster centroids.
+
+$$
+\text{WCSS} = \sum_{j=1}^{K} \sum_{x_i \in C_j} \|x_i - \mu_j\|^2
+$$
 
 $$
 \text{WCSS} = \sum_{j=1}^{K} \sum_{x_i \in C_j} \|x_i - \mu_j\|^2
