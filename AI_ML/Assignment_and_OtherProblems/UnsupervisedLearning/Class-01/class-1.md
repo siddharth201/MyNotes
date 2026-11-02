@@ -155,5 +155,9 @@ As K increases, WCSS is monotonically non-increasing.
 
 This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing, potentially reaching zero when every data point has its own cluster. We use the Elbow Method to identify diminishing returns.
 </details>
-</details>
+</details>  
+
+---  
+
+
 
