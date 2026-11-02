@@ -177,18 +177,53 @@ The correct answer is Option 2: Overfitting is occurring. ✅
 
 Let's understand why.
 
-## 1. First, what is WCSS?
+You're right. The LaTeX syntax is appearing as raw text instead of rendering.
 
-WCSS (Within-Cluster Sum of Squares) measures how close data points are to their respective cluster centroids.
+Let's rewrite the formula using properly formatted mathematical notation.
 
-\\[ WCSS = \sum\_{j=1}^{K}\sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 \\]
+## 1. What is WCSS?
 
-Where:
+WCSS (Within-Cluster Sum of Squares) measures the sum of squared distances between every data point and the centroid of its assigned cluster.
 
-- \\(K\\) = Number of clusters
-- \\(C_j\\) = Cluster \\(j\\)
-- \\(\mu_j\\) = Centroid of cluster \\(j\\)
-- \\(x_i\\) = Data point
+### Mathematical formula
+
+\\[ \boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 } \\]
+
+### Understanding the symbols
+
+- \\(K\\) = Total number of clusters.
+- \\(C_j\\) = The \\(j^{th}\\) cluster.
+- \\(x_i\\) = An individual data point.
+- \\(\mu_j\\) = Centroid of the \\(j^{th}\\) cluster.
+- \\(\\|x_i-\mu_j\\|^2\\) = Squared Euclidean distance between the data point and its cluster centroid.
+
+### Let's understand the formula
+
+There are two summations:
+
+Inner summation:
+
+\\[ \sum\_{x_i \in C_j}\\|x_i-\mu_j\\|^2 \\]
+
+Calculates the squared distances of all data points belonging to one cluster from that cluster's centroid.
+
+Outer summation:
+
+\\[ \sum\_{j=1}^{K} \\]
+
+Adds the individual cluster sums to calculate the total WCSS.
+
+### 🎯 Intuition
+
+Imagine we have 3 clusters:
+
+\\[ WCSS = WCSS_1 + WCSS_2 + WCSS_3 \\]
+
+Each cluster contributes the sum of squared distances of its points from its centroid.
+
+Lower WCSS means data points are closer to their respective centroids.
+
+I'll use properly rendered LaTeX formatting in our upcoming ML explanations.
 
 Lower WCSS means data points are closer to their cluster centroids.
 
