@@ -184,8 +184,6 @@ WCSS (Within-Cluster Sum of Squares) measures the sum of squared distances betwe
 
 ### Mathematical formula
 
-
-
 $$\boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 }$$
 
 ### Understanding the symbols
@@ -193,8 +191,8 @@ $$\boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 }$$
 - $K$ = Total number of clusters.
 - $C_j$ = The $j^{th}$ cluster.
 - $x_i$ = An individual data point.
-- \\(\mu_j\\) = Centroid of the \\(j^{th}\\) cluster.
-- \\(\\|x_i-\mu_j\\|^2\\) = Squared Euclidean distance between the data point and its cluster centroid.
+- $\mu_j$ = Centroid of the $j^{th}$ cluster.
+- $\\|x_i-\mu_j\\|^2$ = Squared Euclidean distance between the data point and its cluster centroid.
 
 ### Let's understand the formula
 
