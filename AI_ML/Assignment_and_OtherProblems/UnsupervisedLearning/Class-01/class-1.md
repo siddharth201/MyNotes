@@ -164,7 +164,9 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 1. The model is learning better.  
 
-2. 
+2. Overfitting is occurring.  
+
+3. 
 
 </details>
 
