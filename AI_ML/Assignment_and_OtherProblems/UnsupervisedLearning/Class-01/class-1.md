@@ -177,9 +177,6 @@ The correct answer is Option 2: Overfitting is occurring. ✅
 
 Let's understand why.
 
-You're right. The LaTeX syntax is appearing as raw text instead of rendering.
-
-Let's rewrite the formula using properly formatted mathematical notation.
 
 ## 1. What is WCSS?
 
@@ -187,11 +184,11 @@ WCSS (Within-Cluster Sum of Squares) measures the sum of squared distances betwe
 
 ### Mathematical formula
 
-\\[ \boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 } \\]
+$$ \boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 }$$
 
 ### Understanding the symbols
 
-- \\(K\\) = Total number of clusters.
+- $K$ = Total number of clusters.
 - \\(C_j\\) = The \\(j^{th}\\) cluster.
 - \\(x_i\\) = An individual data point.
 - \\(\mu_j\\) = Centroid of the \\(j^{th}\\) cluster.
