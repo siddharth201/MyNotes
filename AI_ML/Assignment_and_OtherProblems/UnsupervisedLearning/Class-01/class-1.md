@@ -168,7 +168,9 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 3. The dataset is getting larger.  
 
-4. 
+4. TSS is reducing.
+
+
 
 </details>
 
