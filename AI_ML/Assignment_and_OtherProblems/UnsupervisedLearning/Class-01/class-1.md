@@ -166,7 +166,9 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 2. Overfitting is occurring.  
 
-3. 
+3. The dataset is getting larger.  
+
+4. 
 
 </details>
 
