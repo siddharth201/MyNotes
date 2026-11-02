@@ -184,7 +184,7 @@ WCSS (Within-Cluster Sum of Squares) measures the sum of squared distances betwe
 
 ### Mathematical formula
 
-$$boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 }$$
+
 
 $$\boxed{ WCSS = \sum\_{j=1}^{K} \sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 }$$
 
