@@ -181,14 +181,15 @@ Let's understand why.
 
 WCSS (Within-Cluster Sum of Squares) measures how close data points are to their respective cluster centroids.
 
-\\[ WCSS = \sum\_{j=1}^{K}\sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 \\]
+$$
+\text{WCSS} = \sum_{j=1}^{K} \sum_{x_i \in C_j} \|x_i - \mu_j\|^2
+$$
 
 Where:
-
-- \\(K\\) = Number of clusters
-- \\(C_j\\) = Cluster \\(j\\)
-- \\(\mu_j\\) = Centroid of cluster \\(j\\)
-- \\(x_i\\) = Data point
+- $K$ = Number of clusters
+- $C_j$ = Cluster $j$
+- $\mu_j$ = Centroid of cluster $j$
+- $x_i$ = Data point
 
 Lower WCSS means data points are closer to their cluster centroids.
 
