@@ -171,7 +171,83 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 4. TSS is reducing.
 
 <details>
-<summary><b>Answer</b></summary>
+<summary><b>Answer</b></summary>  
+
+The correct answer is Option 2: Overfitting is occurring. ✅
+
+Let's understand why.
+
+## 1. First, what is WCSS?
+
+WCSS (Within-Cluster Sum of Squares) measures how close data points are to their respective cluster centroids.
+
+\\[ WCSS = \sum\_{j=1}^{K}\sum\_{x_i \in C_j} \\|x_i-\mu_j\\|^2 \\]
+
+Where:
+
+- \\(K\\) = Number of clusters
+- \\(C_j\\) = Cluster \\(j\\)
+- \\(\mu_j\\) = Centroid of cluster \\(j\\)
+- \\(x_i\\) = Data point
+
+Lower WCSS means data points are closer to their cluster centroids.
+
+## 2. Why does WCSS keep decreasing?
+
+Consider what happens when we increase the number of clusters:
+
+| Number of clusters (K) | WCSS |
+| ---------------------- | ---- |
+| 1                      | 1000 |
+| 2                      | 600  |
+| 3                      | 350  |
+| 4                      | 200  |
+| 5                      | 150  |
+| 6                      | 110  |
+| 7                      | 80   |
+
+As we increase K, WCSS generally decreases.
+
+Why?
+
+Because more clusters allow data points to be grouped around closer centroids.
+
+In fact, if every data point gets its own cluster:
+
+\\[ K=N \implies WCSS=0 \\]
+
+But this doesn't mean we have discovered meaningful clusters!
+
+## 3. What is happening beyond the elbow point?
+
+The Elbow Method helps us identify a reasonable number of clusters.
+
+Before the elbow:
+
+- Adding clusters significantly reduces WCSS.
+- We are capturing meaningful structure.
+
+After the elbow:
+
+- Additional clusters provide diminishing returns.
+- We may start creating unnecessarily small clusters.
+- We risk fitting noise rather than meaningful patterns.
+
+This is what the assignment intends by overfitting.
+
+## 4. Why are the other options incorrect?
+
+- The model is learning better: Lower WCSS alone doesn't prove better generalization or meaningful clustering.
+- The dataset is getting larger: Increasing K doesn't increase the dataset size.
+- TSS is reducing: TSS (Total Sum of Squares) measures overall data dispersion and does not normally decrease just because K increases.
+
+Correct answer: Option 2
+
+Important interview point:
+
+> WCSS will never increase when we increase K in standard K-Means optimization. Therefore, we use the Elbow Method to avoid choosing unnecessarily large K values.
+
+One nuance: continued WCSS reduction alone does not prove overfitting. The question uses that as a simplified indication of over-clustering beyond the elbow point.
 
 </details>
 
