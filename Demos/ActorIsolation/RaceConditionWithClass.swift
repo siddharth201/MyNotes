@@ -27,3 +27,10 @@ func runUnsafeClassExample() async {
     print("Expected count: 1000")
     print("Actual count:   \(counter.count)") // Frequently prints a number less than 1000 (e.g., 942, 988)
 }
+
+@main
+struct Main {
+    static func main() async {
+        await runUnsafeClassExample()
+    }
+}
