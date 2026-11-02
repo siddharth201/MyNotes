@@ -159,5 +159,8 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 ---  
 
+<details>
+<summary><b>Explanation</b></summary>
 
+</details>
 
