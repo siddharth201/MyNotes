@@ -170,7 +170,10 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 4. TSS is reducing.
 
+<details>
+<summary><b>Answer</b></summary>
 
+</details>
 
 </details>
 
