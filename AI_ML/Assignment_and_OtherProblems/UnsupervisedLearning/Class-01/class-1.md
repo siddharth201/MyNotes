@@ -363,7 +363,7 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 --- 
 
 <details> 
-<summary><b>Explanation</b>
+<summary><b>Q. The Overconfident Intern</b>
 <br>This is the regular text on a new line.
 </summary> 
 
