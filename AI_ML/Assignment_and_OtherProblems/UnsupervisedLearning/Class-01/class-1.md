@@ -288,7 +288,13 @@ One nuance: continued WCSS reduction alone does not prove overfitting. The quest
 ---  
 
 <details>
-<summary><b>Q. The "Median Manager"</b><br>This is the regular text on a new line.</summary> 
+<summary><b>Q. The "Median Manager"</b><br>Scenario: A new analyst is reviewing the K-Means update step. They suggest:
+
+"Instead of moving each centroid to the mean of its assigned points, let's move it to the point that minimizes the total squared distance to all points in the cluster — that seems more principled to me."
+
+He doesn't realize that this is already exactly what the mean does.
+
+**Given a cluster with points [[1, 2], [2, 3], [1.5, 1], [3, 2], [2.5, 3.5]], which of the following statements correctly explains why K-Means moves the centroid to the *mean* of these points during the update step?**.</summary> 
 
 Your hidden content goes here. 
 </details>
