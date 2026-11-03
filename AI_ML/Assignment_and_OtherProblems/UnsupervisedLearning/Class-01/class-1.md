@@ -364,7 +364,7 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 
 <details> 
 <summary><b>Q. The Overconfident Intern</b>
-<br>**Scenario:** An analyst is reviewing the relationship between WCSS and the number of clusters (K). They observe that WCSS keeps decreasing as K increases and conclude:
+<br>**Scenario:** An analyst is reviewing the relationship between **WCSS and the number of clusters (K)**. They observe that WCSS keeps decreasing as K increases and conclude:
 
 "If WCSS is lowest when every data point has its own cluster, then using the maximum possible value of K must be the best clustering choice."
 
