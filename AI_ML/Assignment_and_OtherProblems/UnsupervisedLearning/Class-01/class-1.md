@@ -301,7 +301,10 @@ He doesn't realize that this is already exactly what the mean does.
 
 **Given a cluster with points [[1, 2], [2, 3], [1.5, 1], [3, 2], [2.5, 3.5]], which of the following statements correctly explains why K-Means moves the centroid to the *mean* of these points during the update step?**.</summary> 
 
-Your hidden content goes here. 
+
+**1.** The mean is always one of the original data points, making it a safe representative for the cluster.  
+
+**2.**  
 </details>
 
 ---  
