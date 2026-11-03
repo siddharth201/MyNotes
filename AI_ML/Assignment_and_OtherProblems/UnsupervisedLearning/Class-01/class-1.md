@@ -371,7 +371,9 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 Which of the following statements correctly respond to the intern's claim? **(Select all that apply.)**
 </summary> 
 
+**1.** WCSS is monotonically non-increasing as K increases, so adding more clusters cannot increase the WCSS value.
 
+**2. **
 <details>
 <summary><b>Answer</b></summary>
 
