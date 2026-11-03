@@ -445,5 +445,50 @@ Ultimate intuition: Our goal is not to minimize WCSS blindly. Our goal is to fin
 
 </details>
 
+---  
+
+Q6. Compute WCSS
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Problem Statement:
+
+After assigning data points to clusters, you want a single number that measures how "tight" the resulting clusters are. Calculate the Within-Cluster Sum of Squares (WCSS), which is the sum of the squared distances between every point and the centroid of the cluster it belongs to.
+
+
+WCSS = \sum_{\text{points } p} \|p - centroid_{\text{assigned to } p}\|^2
+
+Write a function:
+
+def compute_wcss(points, labels, centroids):
+    ...
+that computes this value.
+
+Input Format:
+
+points: a list of n points, each a list/tuple of d numeric features
+labels: a list of n integers, where labels[i] is the index (into centroids) of the cluster points[i] is assigned to
+centroids: a list of k centroid points, in the same d-dimensional format
+Output Format:
+
+A single float: the total WCSS across all points.
+Constraints:
+
+1 ≤ n ≤ 1000
+1 ≤ k ≤ 20
+1 ≤ d ≤ 10
+-10^4 ≤ coordinate values ≤ 10^4
+0 ≤ labels[i] < k
+Sample Input:
+
+points = [[2, 2], [4, 2], [2, 6], [4, 6]]
+labels = [0, 0, 1, 1]
+centroids = [[3, 2], [3, 6]]
+Sample Output:
+
+4.0
+Explanation: each point is a squared distance of 1.0 away from its assigned centroid — e.g. [2, 2] to [3, 2] is squared distance 1, [4, 2] to [3, 2] is squared distance 1, and similarly for the other two points. 1 + 1 + 1 + 1 = 4.0.
+
 
 
