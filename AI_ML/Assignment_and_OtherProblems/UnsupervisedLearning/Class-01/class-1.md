@@ -310,6 +310,10 @@ He doesn't realize that this is already exactly what the mean does.
 
 **4** The mean guarantees that the total squared distance becomes zero after updating the centroid.
 
+<details>
+<summary><b>Answer</b></summary>
+
+</details>
 
 </details>
 
