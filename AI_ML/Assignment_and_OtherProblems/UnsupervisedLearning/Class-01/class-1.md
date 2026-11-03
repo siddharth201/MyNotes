@@ -375,10 +375,7 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 <details>
 <summary><b>Answer</b></summary>
 
-Your selected answers are all correct: Option 1, Option 2 and Option 4.
-
-Correct
-
+**correct: Option 1, Option 2 and Option 4.**
 
 
 Let's understand why.
