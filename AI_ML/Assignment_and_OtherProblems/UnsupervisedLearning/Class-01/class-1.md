@@ -288,7 +288,7 @@ One nuance: continued WCSS reduction alone does not prove overfitting. The quest
 ---  
 
 <details>
-<summary><b>Q. The "Median Manager"</b><br><br> **Scenario:** A new analyst is reviewing the **K-Means update step. They suggest:
+<summary><b>Q. The "Median Manager"</b><br><br> **Scenario:** A new analyst is reviewing the **K-Means update step**. They suggest:
 
 "Instead of moving each centroid to the mean of its assigned points, let's move it to the point that minimizes the total squared distance to all points in the cluster — that seems more principled to me."
 
