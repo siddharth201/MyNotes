@@ -313,9 +313,9 @@ He doesn't realize that this is already exactly what the mean does.
 <details>
 <summary><b>Answer</b></summary>
 
-Correct Answer: Option 2
+**Correct Answer: Option 2**
 
-The mean minimizes the total squared distance from the centroid to all points in the cluster.
+**The mean minimizes the total squared distance from the centroid to all points in the cluster.**
 
 ### Explanation
 
