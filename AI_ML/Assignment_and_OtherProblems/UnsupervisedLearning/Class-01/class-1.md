@@ -368,7 +368,7 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 
 "If WCSS is lowest when every data point has its own cluster, then using the maximum possible value of K must be the best clustering choice."
 
-Which of the following statements correctly respond to the intern's claim? (Select all that apply.)
+Which of the following statements correctly respond to the intern's claim? **(Select all that apply.)**
 </summary> 
 
 Your hidden content goes here. 
