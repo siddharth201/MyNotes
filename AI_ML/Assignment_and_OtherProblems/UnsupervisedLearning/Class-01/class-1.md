@@ -380,6 +380,12 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 
 **4.** The elbow method can identify where additional clusters provide only small improvements, along with metrics like Silhouette Score.
 
+<details>
+<summary><b>Explanation</b></summary>
+
+
+
+</details>
 
 </details>
 
