@@ -375,7 +375,7 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 
 **2.** Choosing K = 400 is usually impractical because each customer becomes its own cluster, leading to overfitting.
 
-**3.**
+**3.** WCSS should be the only criterion for selecting K, so choosing the maximum possible K is the correct approach.
 <details>
 <summary><b>Answer</b></summary>
 
