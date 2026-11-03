@@ -360,6 +360,16 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 
 </details>
 
----  
+--- 
+
+<details> 
+<summary><b>Explanation</b>
+<br>This is the regular text on a new line.
+</summary> 
+
+Your hidden content goes here. 
+</details>
+
+—- 
 
 
