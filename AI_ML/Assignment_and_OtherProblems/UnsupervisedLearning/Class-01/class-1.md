@@ -371,7 +371,12 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 Which of the following statements correctly respond to the intern's claim? **(Select all that apply.)**
 </summary> 
 
-Your hidden content goes here. 
+
+<details>
+<summary><b>Answer</b></summary>
+
+
+</details> 
 </details>
 
 —- 
