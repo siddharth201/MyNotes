@@ -313,6 +313,49 @@ He doesn't realize that this is already exactly what the mean does.
 <details>
 <summary><b>Answer</b></summary>
 
+Correct Answer: Option 2
+
+The mean minimizes the total squared distance from the centroid to all points in the cluster.
+
+### Explanation
+
+K-Means uses the mean as the centroid because the mathematical property of the mean is that it minimizes the sum of squared Euclidean distances between the centroid and all data points.
+
+Given points:
+
+```
+[[1, 2], [2, 3], [1.5, 1], [3, 2], [2.5, 3.5]]
+```
+
+Step 1: Calculate the mean of each dimension.
+
+X-coordinate mean:
+
+(1 + 2 + 1.5 + 3 + 2.5) / 5 = 2
+
+Y-coordinate mean:
+
+(2 + 3 + 1 + 2 + 3.5) / 5 = 2.3
+
+Therefore, the new centroid is:
+
+Centroid = (2, 2.3)
+
+### Why are the other options incorrect?
+
+1. Mean is always an original data point: False. The mean can be a completely new point that doesn't exist in the dataset.
+2. Mean minimizes total squared distance: Correct. This is the mathematical reason K-Means uses the mean.
+3. Median cannot be calculated for 2D data: False. A coordinate-wise median can be calculated for multidimensional data.
+4. Total squared distance becomes zero: False. The distances generally remain non-zero even after updating the centroid.
+
+### Interview takeaway
+
+Remember this important relationship:
+
+- Mean → Minimizes Sum of Squared Errors (SSE).
+- Median → Minimizes Sum of Absolute Errors (L1 distance).
+
+This is the mathematical foundation behind the centroid update step in K-Means.
 </details>
 
 </details>
