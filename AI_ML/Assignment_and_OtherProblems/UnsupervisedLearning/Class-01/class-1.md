@@ -304,7 +304,9 @@ He doesn't realize that this is already exactly what the mean does.
 
 **1.** The mean is always one of the original data points, making it a safe representative for the cluster.  
 
-**2.**  
+**2.** The mean minimizes the total squared distance from the centroid to all points in the cluster.
+
+**3.** 
 </details>
 
 ---  
