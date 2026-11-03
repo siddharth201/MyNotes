@@ -380,70 +380,8 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 
 **4.** The elbow method can identify where additional clusters provide only small improvements, along with metrics like Silhouette Score.
 
-<details>
-<summary><b>Answer</b></summary>
 
-**correct: Option 1, Option 2 and Option 4.**
-
-
-Let's understand why.
-
-### Option 1: WCSS is monotonically non-increasing as K increases.
-
-True.
-
-As we increase the number of clusters, data points get closer to their respective centroids.
-
-- K = 1 → Higher WCSS
-- K = 2 → Lower WCSS
-- K = 3 → Even lower WCSS
-- K = N → WCSS = 0 (each point becomes its own cluster)
-
-Therefore, WCSS can decrease or remain the same, but cannot increase when K increases under optimal K-Means clustering.
-
-### Option 2: Choosing K = 400 is impractical.
-
-True.
-
-Suppose we have 400 customers and choose K = 400.
-
-Every customer becomes its own cluster.
-
-Although WCSS becomes zero, clustering loses its purpose because we haven't discovered meaningful customer groups.
-
-This is an example of overfitting in the clustering context.
-
-### Option 3: WCSS should be the only criterion for selecting K.
-
-False.
-
-WCSS alone cannot determine the optimal K because it always decreases as K increases.
-
-We should consider other evaluation metrics, such as:
-
-- Silhouette Score
-- Davies-Bouldin Index
-- Domain knowledge
-
-### Option 4: Elbow Method + Silhouette Score.
-
-True.
-
-- Elbow Method: Identifies the point after which adding more clusters provides only marginal improvement in WCSS.
-- Silhouette Score: Evaluates how well-separated and cohesive the clusters are.
-
-### Interview takeaway
-
-Remember these three points:
-
-1. WCSS always decreases or remains constant as K increases.
-2. Minimum WCSS does not necessarily mean optimal clustering.
-3. Use Elbow Method along with Silhouette Score and domain knowledge to select K.
-
-Ultimate intuition: Our goal is not to minimize WCSS blindly. Our goal is to find meaningful, compact and well-separated clusters.
-</details> 
 </details>
 
-—- 
 
 
