@@ -308,7 +308,9 @@ He doesn't realize that this is already exactly what the mean does.
 
 **3.** The mean is used because a median cannot be mathematically calculated for two-dimensional data points.
 
-**4** 
+**4** The mean guarantees that the total squared distance becomes zero after updating the centroid.
+
+
 </details>
 
 ---  
