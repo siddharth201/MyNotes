@@ -306,7 +306,9 @@ He doesn't realize that this is already exactly what the mean does.
 
 **2.** The mean minimizes the total squared distance from the centroid to all points in the cluster.
 
-**3.** 
+**3.** The mean is used because a median cannot be mathematically calculated for two-dimensional data points.
+
+**4** 
 </details>
 
 ---  
