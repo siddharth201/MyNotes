@@ -364,7 +364,7 @@ This is the mathematical foundation behind the centroid update step in K-Means.
 
 <details> 
 <summary><b>Q. The Overconfident Intern</b>
-<br>**Scenario:** An analyst is reviewing the relationship between **WCSS and the number of clusters (K)**. They observe that WCSS keeps decreasing as K increases and conclude:
+<br> **Scenario:** An analyst is reviewing the relationship between **WCSS and the number of clusters (K)**. They observe that WCSS keeps decreasing as K increases and conclude:
 
 "If WCSS is lowest when every data point has its own cluster, then using the maximum possible value of K must be the best clustering choice."
 
@@ -378,6 +378,7 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 **3.** WCSS should be the only criterion for selecting K, so choosing the maximum possible K is the correct approach.
 
 **4.** The elbow method can identify where additional clusters provide only small improvements, along with metrics like Silhouette Score.
+
 <details>
 <summary><b>Answer</b></summary>
 
