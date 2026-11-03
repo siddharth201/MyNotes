@@ -285,3 +285,10 @@ One nuance: continued WCSS reduction alone does not prove overfitting. The quest
 
 </details>
 
+---  
+
+<details> <summary><b>Explanation</b><br>This is the regular text on a new line.</summary> 
+
+Your hidden content goes here. 
+</details>
+
