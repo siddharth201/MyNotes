@@ -373,7 +373,9 @@ Which of the following statements correctly respond to the intern's claim? **(Se
 
 **1.** WCSS is monotonically non-increasing as K increases, so adding more clusters cannot increase the WCSS value.
 
-**2. **
+**2.** Choosing K = 400 is usually impractical because each customer becomes its own cluster, leading to overfitting.
+
+**3.**
 <details>
 <summary><b>Answer</b></summary>
 
