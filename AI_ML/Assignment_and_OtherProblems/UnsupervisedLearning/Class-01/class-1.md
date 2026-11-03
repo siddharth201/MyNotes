@@ -161,7 +161,7 @@ This is exactly why we cannot simply choose the largest K: WCSS keeps decreasing
 
 <details>
 <summary>
-<b> **Q. WCSS decreasing**</b>
+<b>Q. WCSS decreasing</b>
 <br> If the WCSS keeps decreasing significantly after adding more clusters beyond the elbow point, which of the following is most likely happening?
 </summary>  
 
