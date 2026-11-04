@@ -32,7 +32,7 @@ class ViewModel {
 struct App {
     static func main() async {
         let vm = ViewModel()
-        
+        await vm.runexample()
         
     }
 }
