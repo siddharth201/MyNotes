@@ -11,7 +11,7 @@ class ViewModel {
         // Inherits the @MainActor context because ViewModel is @MainActor
         
         Task {
-            print("2. Task (Regular): Main Thread? ->")
+            print("2. Task (Regular): Main Thread? ->", Thread.isMainThread)
         }
     }
 }
