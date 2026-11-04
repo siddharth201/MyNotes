@@ -10,6 +10,8 @@ class ViewModel {
         // MARK: - Regular Task
         // Inherits the @MainActor context because ViewModel is @MainActor
         
-        
+        Task {
+            
+        }
     }
 }
