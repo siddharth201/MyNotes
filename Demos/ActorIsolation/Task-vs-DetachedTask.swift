@@ -34,5 +34,7 @@ struct App {
         let vm = ViewModel()
         await vm.runexample()
         
+        // Brief sleep so background tasks complete before process exits
+        try? await Task.sleep(nanoseconds: 500_000_000)
     }
 }
