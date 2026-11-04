@@ -158,43 +158,46 @@ A regular task inherits context from where it is created. A detached task is int
 <details>
 <summary><b>Q13. Run Task vs Task.detached</b></summary>
 
-Create:
-
 ```swift
-import SwiftUI
+
+import Foundation
+import Dispatch
+
+// Global helper: dynamically inspects if current execution is on the Main queue/actor
+func isCurrentlyOnMainActor() -> Bool {
+    // In GCD terms, MainActor work executes on DispatchQueue.main
+    Thread.isMainThread // Valid in top-level non-async helper
+}
 
 @MainActor
-struct ContentView: View {
-
-    var body: some View {
-        Button("Run Tasks") {
-            Task {
-                print("Regular Task")
-                print("MainActor:", MainActor.assumeIsolated { true })
-            }
-
-            Task.detached {
-                print("Detached Task")
-            }
+class ViewModel {
+    
+    func runExample() async {
+        print("1. Called from @MainActor? ->", isCurrentlyOnMainActor())
+        
+        // MARK: - Regular Task
+        // Inherits @MainActor context
+        Task {
+            let onMain = isCurrentlyOnMainActor()
+            print("2. Task (Regular): @MainActor? ->", onMain)
+        }
+        
+        // MARK: - Task.detached
+        // Completely non-isolated; runs on global cooperative pool
+        Task.detached {
+            // Computed dynamically at runtime inside the detached task
+            let onMain = isCurrentlyOnMainActor()
+            print("3. Task.detached: @MainActor? ->", onMain)
         }
     }
 }
+
+// Top-level script execution
+let vm = await ViewModel()
+await vm.runExample()
+
+// Allow background tasks to finish before process exits
+try? await Task.sleep(nanoseconds: 500_000_000)
 ```
-
-For interview purposes, don't use Thread.isMainThread as your primary explanation.
-
-The important modern concept is:
-
-```text
-Which isolation context does this task inherit?
-```
-
-not:
-
-```text
-Which thread number is it running on?
-```
-
-Actors execute through executors; default actors use Swift's concurrency runtime rather than each actor owning a dedicated thread.
 </details>
 
