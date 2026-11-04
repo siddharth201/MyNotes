@@ -134,6 +134,8 @@ Task
 
 In Swift concurrency, both `Task { ... }` and `Task.detached { ... }` create new concurrent asynchronous work, but they handle **actor isolation** and **context inheritance** differently.
 
+[Actor Isolation]()
+
 ---
 
 ### Key Difference in Plain English
