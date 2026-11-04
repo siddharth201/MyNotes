@@ -1,4 +1,3 @@
-
 import Foundation
 
 // Synchronous helper to safely read Thread.isMainThread without compiler warnings
