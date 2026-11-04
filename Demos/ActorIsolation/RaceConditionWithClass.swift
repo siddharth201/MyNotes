@@ -2,6 +2,7 @@
 import Foundation
 
 // MARK: - Problematic Class
+/*
 final class UnsafeCounter {
     var count: Int = 0
 
@@ -29,3 +30,4 @@ func runUnsafeClassExample() async {
 }
 
 await runUnsafeClassExample()
+*/
