@@ -36,6 +36,8 @@ asynchronous work
 ```
 </details>
 
+---
+
 <details>
 <summary><b>Q9. Why do we need Task {}?</b></summary>
 
@@ -57,6 +59,8 @@ Button("Load User") {
 > `Task` is commonly used as a bridge when synchronous code needs to start asynchronous work.
 </details>
 
+---
+
 <details>
 <summary><b>Q10. Does creating a Task start it automatically?</b></summary>
 
@@ -77,6 +81,8 @@ task.start() // ❌
 Tasks begin executing after creation.
 
 </details>
+
+---
 
 <details>
 <summary><b>Q11. Can I get a result from a Task?</b></summary>
