@@ -11,7 +11,7 @@ class ViewModel {
         // Inherits the @MainActor context because ViewModel is @MainActor
         
         Task {
-            
+            print("2. ")
         }
     }
 }
