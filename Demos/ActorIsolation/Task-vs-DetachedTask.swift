@@ -1,40 +1,38 @@
-
 import Foundation
+import Dispatch
+
+// Global helper: dynamically inspects if current execution is on the Main queue/actor
+func isCurrentlyOnMainActor() -> Bool {
+    // In GCD terms, MainActor work executes on DispatchQueue.main
+    Thread.isMainThread // Valid in top-level non-async helper
+}
 
 @MainActor
 class ViewModel {
     
     func runExample() async {
-        
-        print("1. Called from Main Thread? ->", Thread.isMainThread)
+        print("1. Called from @MainActor? ->", isCurrentlyOnMainActor())
         
         // MARK: - Regular Task
-        // Inherits the @MainActor context because ViewModel is @MainActor
-        
+        // Inherits @MainActor context
         Task {
-            print("2. Task (Regular): Main Thread? ->", Thread.isMainThread)
-            // Stays on the main thread; safe to update UI directly,
-            // but heavy work here will freeze your interface.
+            let onMain = isCurrentlyOnMainActor()
+            print("2. Task (Regular): @MainActor? ->", onMain)
         }
         
         // MARK: - Task.detached
-        // Breaks away from @MainActor and runs independently in the background
+        // Completely non-isolated; runs on global cooperative pool
         Task.detached {
-            print("3. Task.detached: Main Thread? ->", Thread.isMainThread)
-            // Runs on a background thread; ideal for heavy computation
-            // like parsing huge files or compressing images.
+            // Computed dynamically at runtime inside the detached task
+            let onMain = isCurrentlyOnMainActor()
+            print("3. Task.detached: @MainActor? ->", onMain)
         }
     }
 }
 
-// Driver code to execute the async demonstration
-@main
-struct App {
-    static func main() async {
-        let vm = ViewModel()
-        await vm.runExample()
-        
-        // Brief sleep so background tasks complete before process exits
-        try? await Task.sleep(nanoseconds: 500_000_000)
-    }
-}
+// Top-level script execution
+let vm = await ViewModel()
+await vm.runExample()
+
+// Allow background tasks to finish before process exits
+try? await Task.sleep(nanoseconds: 500_000_000)
