@@ -199,5 +199,11 @@ await vm.runExample()
 // Allow background tasks to finish before process exits
 try? await Task.sleep(nanoseconds: 500_000_000)
 ```
+
+### Why Does This Work Without Compiler Warnings?
+
+Moving isCurrentlyOnMainActor() into a synchronous function avoids the "Thread.isMainThread is unavailable from asynchronous contexts" warning that Swift emits when you call it directly inside an async function body.
+
+Inside Task.detached { ... }, calling isCurrentlyOnMainActor() evaluates the actual thread the task is scheduled on at that exact millisecond. It dynamically prints false because it was dispatched to the cooperative thread pool, not because of a hardcoded value.
 </details>
 
