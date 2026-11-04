@@ -38,6 +38,7 @@ Sendable
 [**Q. Does Swift create a new thread for every Task?**](https://github.com/siddharth201/MyNotes/blob/main/iOS/Swift/Multithreading/ModernConcurrencyiniOS%E2%80%94InterviewTutorial/Misc/Does-Swift-create-a-new-thread-fo-every-Task.md)
 </details>
 
+---
 
 <details>
 <summary><b>Q2. What problem did async/await solve?</b></summary>
@@ -73,6 +74,8 @@ func loadData() async throws {
 > async/await lets us write asynchronous code in a sequential-looking style, making control flow and error handling easier to understand
 </details>
 
+---
+
 <details>
 <summary><b>Q3. What does async mean?</b></summary>
   
@@ -105,6 +108,8 @@ Task {
 That's a common interview mistake.
 
 </details>
+
+---
 
 <details>
 <summary><b>Q4. What does await mean?</b></summary>
@@ -145,6 +150,8 @@ Expected:
 Swift's concurrency model allows an asynchronous function to give up its execution resource while waiting and resume later; Swift doesn't guarantee that it resumes on the same thread. 
 </details>
 
+---
+
 <details>
 <summary><b>Q5. Does await block the thread?</b></summary>
 
@@ -181,6 +188,8 @@ Task
 > await suspends the task, not the thread. While the task is suspended, the execution resource can be used for other work.
 </details>
 
+---
+
 <details>
 <summary><b>Q6. Concurrency vs Parallelism?</b></summary>
 
@@ -214,6 +223,8 @@ Don't say:
 
 Modern Swift concurrency is intentionally abstracted above threads.
 </details>
+
+---
 
 <details>
 <summary><b>Q7. Can I call an async function directly from a normal function?</b></summary>
