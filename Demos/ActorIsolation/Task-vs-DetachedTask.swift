@@ -15,5 +15,13 @@ class ViewModel {
             // Stays on the main thread; safe to update UI directly,
             // but heavy work here will freeze your interface.
         }
+        
+        // MARK: - Task.detached
+        // Breaks away from @MainActor and runs independently in the background
+        Task.detached {
+            print("3. Task.detached: Main Thread? ->", Thread.isMainThread)
+            // Runs on a background thread; ideal for heavy computation
+            // like parsing huge files or compressing images.
+        }
     }
 }
