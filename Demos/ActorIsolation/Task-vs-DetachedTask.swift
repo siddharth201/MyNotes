@@ -32,7 +32,7 @@ class ViewModel {
 struct App {
     static func main() async {
         let vm = ViewModel()
-        await vm.runexample()
+        await vm.runExample()
         
         // Brief sleep so background tasks complete before process exits
         try? await Task.sleep(nanoseconds: 500_000_000)
