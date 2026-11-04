@@ -121,39 +121,36 @@ Task
 ```
 </details>
 
+---
+
 <details>
 <summary><b>Q12. What is Task {} vs Task.detached?</b></summary>
 
-**Must know**
+In Swift concurrency, both `Task { ... }` and `Task.detached { ... }` create new concurrent asynchronous work, but they handle **actor isolation** and **context inheritance** differently.
 
-Remember:
+---
 
-#### Task = INHERIT
+### Key Difference in Plain English
 
-#### Detached = DETACH
+* **`Task { ... }` (Inheriting Task):** Inherits the current context. If you launch it from the `@MainActor` (like a SwiftUI View or UIViewController), the code inside the block automatically runs on the `@MainActor`. It also inherits priority and task-local values.
+* **`Task.detached { ... }` (Detached Task):** Completely cuts ties with the surrounding context. Even if you start it from the `@MainActor`, it runs on the background global cooperative thread pool without blocking the UI or inheriting priority.
 
-**Task**
+---
 
-```swift
-Task {
-    // inherits relevant context
-}
-```
+### Executable Example
 
-**Detached**
+[Executable Example]()
 
-```swift
-Task.detached {
-    // does not inherit the surrounding actor/context
-}
-```
+### When to Use Which?
 
-A regular task inherits context from where it is created. A detached task is intentionally independent.
+* **Use `Task { }` by default:** 95% of the time in app development. It lets you call async functions from button taps, triggers UI updates safely without context-switching headaches, and preserves cancellation hierarchies.
+* **Use `Task.detached { }` sparingly:** Only when doing CPU-intensive work (e.g., resizing an image, decrypting a payload, file compression) that was triggered from the main actor and shouldn't block the UI thread or inherit its high priority.
 
-**Interview definition**
 
-> `Task {}` creates an unstructured task that inherits relevant context from its creation site, while `Task.detached` creates a task that does not inherit that context and therefore requires more explicit handling of isolation and Sendable values.
+
 </details>
+
+---
 
 <details>
 <summary><b>Q13. Run Task vs Task.detached</b></summary>
@@ -206,4 +203,6 @@ Moving `isCurrentlyOnMainActor()` into a synchronous function avoids the `"Threa
 
 Inside `Task.detached { ... }`, calling `isCurrentlyOnMainActor()` evaluates the actual thread the task is scheduled on at that exact millisecond. It dynamically prints false because it was dispatched to the cooperative thread pool, not because of a hardcoded value.
 </details>
+
+---
 
