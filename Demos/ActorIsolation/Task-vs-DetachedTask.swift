@@ -30,5 +30,5 @@ class ViewModel {
 // Driver code to execute the async demonstration
 @main
 struct App {
-    
+    static func 
 }
