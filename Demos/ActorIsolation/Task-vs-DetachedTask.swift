@@ -31,6 +31,8 @@ class ViewModel {
 @main
 struct App {
     static func main() async {
+        let vm = ViewModel()
+        
         
     }
 }
