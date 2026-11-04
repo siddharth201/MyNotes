@@ -85,10 +85,16 @@ struct App {
  #How Actors Solve This: Actor Isolation
 
  An actor is a conceptual "box" around your data. It looks and behaves almost exactly like a class (it is also a reference type), but with one crucial superpower: it only allows one thread to access its internal state at any given moment.
+ 
  Here is how it fixes the issue:
- 1. Serialized Execution: Think of an actor as a bank counter with a single, orderly queue. Even if 1,000 tasks scream to increment the counter at the same time, the actor forces them to form a single-file line. It processes them one by one.
- 2. The await Keyword: Because tasks have to wait their turn to enter the actor, Swift forces you to use the await keyword whenever you call an actor's method (e.g., await counter.increment()). This explicitly tells the system: "This call might pause for a microsecond while waiting for the thread ahead of me to finish."
- 3. Compile-Time Safety: If you try to modify an actor’s variable directly from the outside without proper synchronization, the Swift compiler will refuse to build your app. It catches thread-safety bugs before your code ever runs.
- Would you like to look at a third approach, such as using Locks (NSLock) or the newer OSAllocatedUnfairLock, to see how iOS developers traditionally solved this problem before Actors were introduced?
+   
+
+** 1. Serialized Execution:** Think of an actor as a bank counter with a single, orderly queue. Even if 1,000 tasks scream to increment the counter at the same time, the actor forces them to form a single-file line. It processes them one by one.
+ 
+ 
+**2. The await Keyword: **Because tasks have to wait their turn to enter the actor, Swift forces you to use the await keyword whenever you call an actor's method (e.g., await counter.increment()). This explicitly tells the system: "This call might pause for a microsecond while waiting for the thread ahead of me to finish."
+ 
+**3. Compile-Time Safety: **If you try to modify an actor’s variable directly from the outside without proper synchronization, the Swift compiler will refuse to build your app. It catches thread-safety bugs before your code ever runs.
+ 
 
  */
