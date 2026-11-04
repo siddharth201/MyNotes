@@ -1,6 +1,7 @@
 
 import Foundation
 
+@MainActor
 class ViewModel {
     
     func runExample() async {
@@ -27,3 +28,4 @@ class ViewModel {
 }
 
 // Driver code to execute the async demonstration
+@main
