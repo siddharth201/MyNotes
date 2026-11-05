@@ -163,7 +163,7 @@ Answer:
 
 > A TaskGroup lets us dynamically create multiple child tasks and collect their results within a structured concurrency scope.
 
-Apple specifically defines TaskGroup as a group containing dynamically created child tasks. Apple Developer
+Apple specifically defines `TaskGroup` as a group containing dynamically created child tasks. Apple Developer
 
 Example:
 func fetch(id: Int) async -> String {
