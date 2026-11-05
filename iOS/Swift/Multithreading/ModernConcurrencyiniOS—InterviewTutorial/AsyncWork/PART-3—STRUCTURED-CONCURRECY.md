@@ -156,7 +156,9 @@ Answer:
 
 ---
 
-Q17. What is a TaskGroup?
+<details>
+<summary><b>Q17. What is a TaskGroup?</b></summary>
+
 Interview definition
 A TaskGroup lets us dynamically create multiple child tasks and collect their results within a structured concurrency scope.
 
@@ -204,5 +206,8 @@ Mental model
        └──────────┼──────────┘
                   ↓
                Results
+</details>
+
+
 
 
