@@ -154,4 +154,55 @@ Answer:
 > async let.
 </details>
 
+---
+
+Q17. What is a TaskGroup?
+Interview definition
+A TaskGroup lets us dynamically create multiple child tasks and collect their results within a structured concurrency scope.
+
+Apple specifically defines TaskGroup as a group containing dynamically created child tasks. Apple Developer
+
+Example:
+func fetch(id: Int) async -> String {
+    try? await Task.sleep(for: .seconds(1))
+    return "User \(id)"
+}
+
+func fetchUsers() async -> [String] {
+
+    await withTaskGroup(of: String.self) { group in
+
+        for id in 1...5 {
+            group.addTask {
+                await fetch(id: id)
+            }
+        }
+
+        var results: [String] = []
+
+        for await result in group {
+            results.append(result)
+        }
+
+        return results
+    }
+}
+
+Run:
+Task {
+    let users = await fetchUsers()
+    print(users)
+}
+
+Mental model
+              TaskGroup
+                  │
+       ┌──────────┼──────────┐
+       ↓          ↓          ↓
+     Task 1     Task 2     Task 3
+       ↓          ↓          ↓
+       └──────────┼──────────┘
+                  ↓
+               Results
+
 
