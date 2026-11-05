@@ -63,6 +63,27 @@ func fetchOrders() async -> String {
     try? await Task.sleep(for: .seconds(2))
     return "Orders"
 }
+
+Now:
+Task {
+    let start = Date()
+
+    async let user = fetchUser()
+    async let orders = fetchOrders()
+
+    let result = await (user, orders)
+
+    print(result)
+    print("Time:", Date().timeIntervalSince(start))
+}
+
+Approximately:
+fetchUser   ────────── 2 sec
+fetchOrders ────────── 2 sec
+
+Total ≈ 2 sec
+
+rather than:
 </details>
 
 
