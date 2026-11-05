@@ -120,11 +120,14 @@ let user = await fetchUser()
 let orders = await fetchOrders()
 ```
 
+```text
 User
 ──────────>
 
           Orders
           ──────────>
+
+```
 
 Concurrent
 async let user = fetchUser()
