@@ -10,7 +10,7 @@ to:
 >"How do I organize multiple pieces of async work?"
 
 
-Q14. What is Structured Concurrency?
+### Q14. What is Structured Concurrency?
 Interview-friendly definition
 Structured concurrency organizes asynchronous tasks into a hierarchy so that child tasks are tied to the lifetime of their parent and are completed before the structured scope finishes.
 
