@@ -17,7 +17,7 @@ to:
 
 > Structured concurrency organizes asynchronous tasks into a hierarchy so that child tasks are tied to the lifetime of their parent and are completed before the structured scope finishes.
 
-Apple describes `async let` and task groups as structured concurrency mechanisms; child tasks don't outlive their parent scope
+Apple describes `async let` and `task groups` as structured concurrency mechanisms; child tasks don't outlive their parent scope
 
 **Acronym**
 
