@@ -129,9 +129,12 @@ User
 
 ```
 
-Concurrent
+**Concurrent**
+
+```swift
 async let user = fetchUser()
 async let orders = fetchOrders()
+```
 
 let result = await (user, orders)
 
