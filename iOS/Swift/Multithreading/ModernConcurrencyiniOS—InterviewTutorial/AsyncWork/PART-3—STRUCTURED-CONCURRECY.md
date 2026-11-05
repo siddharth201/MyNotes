@@ -11,7 +11,8 @@ to:
 
 ---
 
-### Q14. What is Structured Concurrency?
+<details>
+<summary><b>Q14. What is Structured Concurrency?</b></summary>
 
 **Interview-friendly definition**
 
@@ -39,4 +40,11 @@ Parent Task
 
 The children belong to the parent.
 
----
+
+</details>
+
+---  
+
+
+
+
