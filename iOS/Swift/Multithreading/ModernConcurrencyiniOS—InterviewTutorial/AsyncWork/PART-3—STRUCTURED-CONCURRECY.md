@@ -66,8 +66,11 @@ func fetchOrders() async -> String {
     try? await Task.sleep(for: .seconds(2))
     return "Orders"
 }
+```
 
 Now:
+
+```swift
 Task {
     let start = Date()
 
