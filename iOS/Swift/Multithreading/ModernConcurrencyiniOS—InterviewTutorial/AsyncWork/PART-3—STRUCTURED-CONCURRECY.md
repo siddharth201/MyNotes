@@ -23,8 +23,8 @@ Apple describes `async let` and task groups as structured concurrency mechanisms
 
 ### L-C-C
 
-**L**ifetime
-**C**hild relationship
+**L**ifetime  
+**C**hild relationship  
 **C**ancellation
 
 Think:
