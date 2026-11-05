@@ -146,8 +146,8 @@ Orders
 ──────────>
 ```
 
-Interview question
-"I have exactly three independent API calls. What would you use?"
+**Interview question**
+> "I have exactly three independent API calls. What would you use?"
 
 Answer:
 async let.
