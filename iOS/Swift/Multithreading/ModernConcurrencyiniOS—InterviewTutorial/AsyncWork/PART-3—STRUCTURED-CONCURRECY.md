@@ -134,15 +134,17 @@ User
 ```swift
 async let user = fetchUser()
 async let orders = fetchOrders()
-```
 
 let result = await (user, orders)
+```
 
+```text
 User
 ──────────>
 
 Orders
 ──────────>
+```
 
 Interview question
 "I have exactly three independent API calls. What would you use?"
