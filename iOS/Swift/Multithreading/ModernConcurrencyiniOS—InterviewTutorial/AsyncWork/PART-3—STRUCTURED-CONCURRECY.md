@@ -27,3 +27,13 @@ Apple describes `async let` and task groups as structured concurrency mechanisms
 **C**ancellation
 
 Think:
+
+```text
+Parent Task
+    │
+    ├── Child
+    ├── Child
+    └── Child
+```
+
+
