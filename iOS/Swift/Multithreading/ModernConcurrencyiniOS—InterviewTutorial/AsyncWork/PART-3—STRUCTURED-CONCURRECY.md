@@ -159,8 +159,9 @@ Answer:
 <details>
 <summary><b>Q17. What is a TaskGroup?</b></summary>
 
-Interview definition
-A TaskGroup lets us dynamically create multiple child tasks and collect their results within a structured concurrency scope.
+**Interview definition**
+
+> A TaskGroup lets us dynamically create multiple child tasks and collect their results within a structured concurrency scope.
 
 Apple specifically defines TaskGroup as a group containing dynamically created child tasks. Apple Developer
 
