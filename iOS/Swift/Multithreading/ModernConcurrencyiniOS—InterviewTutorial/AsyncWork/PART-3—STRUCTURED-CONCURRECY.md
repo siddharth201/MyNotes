@@ -113,6 +113,36 @@ Total ≈ 4 sec
 <details>
 <summary><b>Q16. Normal await vs async let</b></summary>
 
+**Sequential**
+
+```swift
+let user = await fetchUser()
+let orders = await fetchOrders()
+```
+
+User
+──────────>
+
+          Orders
+          ──────────>
+
+Concurrent
+async let user = fetchUser()
+async let orders = fetchOrders()
+
+let result = await (user, orders)
+
+User
+──────────>
+
+Orders
+──────────>
+
+Interview question
+"I have exactly three independent API calls. What would you use?"
+
+Answer:
+async let.
 </details>
 
 
