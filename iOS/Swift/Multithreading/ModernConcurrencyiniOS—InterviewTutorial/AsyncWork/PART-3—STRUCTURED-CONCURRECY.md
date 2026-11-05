@@ -55,6 +55,8 @@ The children belong to the parent.
 > async let creates a child task for a known piece of asynchronous work so multiple independent operations can execute concurrently.
 
 Example:
+
+```swift
 func fetchUser() async -> String {
     try? await Task.sleep(for: .seconds(2))
     return "User"
