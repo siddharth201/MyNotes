@@ -206,7 +206,7 @@ Task {
 
 **Mental model**
 
-```
+```text
               TaskGroup
                   │
        ┌──────────┼──────────┐
@@ -216,6 +216,7 @@ Task {
        └──────────┼──────────┘
                   ↓
                Results
+```
 </details>
 
 
