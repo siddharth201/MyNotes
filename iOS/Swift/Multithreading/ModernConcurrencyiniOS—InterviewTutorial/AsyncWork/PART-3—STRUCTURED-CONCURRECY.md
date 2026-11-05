@@ -18,8 +18,10 @@ to:
 
 Apple describes `async let` and task groups as structured concurrency mechanisms; child tasks don't outlive their parent scope
 
-Acronym
-L-C-C
+**Acronym**
+
+### L-C-C
+
 Lifetime
 Child relationship
 Cancellation
