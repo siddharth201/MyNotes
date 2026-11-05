@@ -204,7 +204,9 @@ Task {
 
 ```
 
-Mental model
+**Mental model**
+
+```
               TaskGroup
                   │
        ┌──────────┼──────────┐
