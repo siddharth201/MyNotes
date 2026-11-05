@@ -82,8 +82,11 @@ Task {
     print(result)
     print("Time:", Date().timeIntervalSince(start))
 }
+```
 
 Approximately:
+
+```swift
 fetchUser   ────────── 2 sec
 fetchOrders ────────── 2 sec
 
