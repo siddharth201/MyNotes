@@ -111,7 +111,7 @@ Total ≈ 4 sec
 ---  
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q16. Normal await vs async let</b></summary>
 
 </details>
 
