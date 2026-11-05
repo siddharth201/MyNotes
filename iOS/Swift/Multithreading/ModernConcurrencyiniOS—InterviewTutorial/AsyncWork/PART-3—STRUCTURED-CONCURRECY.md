@@ -195,10 +195,14 @@ func fetchUsers() async -> [String] {
 
 ```
 Run:
+
+```swift
 Task {
     let users = await fetchUsers()
     print(users)
 }
+
+```
 
 Mental model
               TaskGroup
