@@ -95,12 +95,15 @@ Total ≈ 2 sec
 
 rather than:
 
+```text
 User    ────────── 2 sec
 Orders             ────────── 2 sec
 
 Total ≈ 4 sec
+```
 
-Remember
+**Remember**
+
 async let = KNOWN number of concurrent operations
 </details>
 
