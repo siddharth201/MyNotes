@@ -86,11 +86,12 @@ Task {
 
 Approximately:
 
-```swift
+```text
 fetchUser   ────────── 2 sec
 fetchOrders ────────── 2 sec
 
 Total ≈ 2 sec
+```
 
 rather than:
 
