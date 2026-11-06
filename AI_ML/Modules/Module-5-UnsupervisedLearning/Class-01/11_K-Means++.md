@@ -69,10 +69,8 @@ Once the initial centroids are selected, the normal K-Means algorithm starts:
 2. Recalculate each centroid using the mean of its assigned data points.
 3. Repeat assignment and centroid update until convergence.
 
-<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans1%2B%2B.jpeg" target="_blank">
-  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans1%2B%2B.jpeg" width="250" alt="Click to enlarge">
-</a>
 
+![k-nearest-neighbor classification and k-means - an interactive example  · Martin Thoma](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans1%2B%2B.jpeg)
 
 Remember: K-Means++ only changes the centroid initialization process. The assignment and update steps remain the same as standard K-Means.
 
