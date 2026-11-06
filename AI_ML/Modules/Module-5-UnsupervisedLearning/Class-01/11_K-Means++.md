@@ -70,8 +70,8 @@ Once the initial centroids are selected, the normal K-Means algorithm starts:
 2. Recalculate each centroid using the mean of its assigned data points.
 3. Repeat assignment and centroid update until convergence.
 
-<a href="YOUR_IMAGE_URL" target="_blank">
-  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+<a href="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans1%2B%2B.jpeg" target="_blank">
+  <img src="https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans1%2B%2B.jpeg" width="250" alt="Click to enlarge">
 </a>
 
 
