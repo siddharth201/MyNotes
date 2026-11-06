@@ -70,7 +70,9 @@ Once the initial centroids are selected, the normal K-Means algorithm starts:
 2. Recalculate each centroid using the mean of its assigned data points.
 3. Repeat assignment and centroid update until convergence.
 
-[Unsupervised Clustering in Python with Scikit-learn](https://images.openai.com/static-rsc-4/aqciG_ldS7Whfzy4MB2N8f6hKteIM2kHTB52QUobQ7Pan0R-ZjlKyBQnkouKss4vGBNtyPOvN8Bic6wZJWwbGsWaIJQeTisZfhkjbmRzu9ZTGWV1J4M1jYC8v0vOZJKJU2Nc4S1dlOmYrerGQ_kdwFdJx-twlSDpIScChFnBgNk?purpose=inline)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 
 Remember: K-Means++ only changes the centroid initialization process. The assignment and update steps remain the same as standard K-Means.
