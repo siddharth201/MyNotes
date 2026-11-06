@@ -89,10 +89,6 @@ await withTaskGroup(of: ImageData.self) { group in ... }
 
 ```
 
-
-
-
-
 ---
 
 #### 2. `returning: ReturnType.self` (The Optional Closure Return Type)
