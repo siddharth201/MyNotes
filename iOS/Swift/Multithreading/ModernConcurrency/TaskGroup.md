@@ -110,8 +110,6 @@ let allStrings: [String] = await withTaskGroup(of: String.self) { group in
 
 ```
 
-
-
 ---
 
 #### 3. `{ group in ... }` (The Group Handle)
@@ -120,8 +118,6 @@ let allStrings: [String] = await withTaskGroup(of: String.self) { group in
 * It provides the methods to:
 * **Add tasks:** `group.addTask { ... }` spawns a new concurrent child task.
 * **Consume results:** `group` conforms to `AsyncSequence`, so you can iterate over results with `for await value in group { ... }` as soon as tasks finish.
-
-
 
 ---
 
