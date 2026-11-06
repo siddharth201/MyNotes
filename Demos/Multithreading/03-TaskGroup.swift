@@ -6,6 +6,6 @@ func test() async {
 @main
 struct TaskGroup {
     static func main() {
-        
+        await test()
     }
 }
