@@ -272,7 +272,7 @@ await withTaskGroup(of: Int.self) { group in
 print("Group finished")
 ```
 
-Group finished won't be printed until the child tasks are complete.
+`Group finished` won't be printed until the child tasks are complete.
 
 Apple explicitly documents that a task group waits for all child tasks before the group scope is destroyed.
 
