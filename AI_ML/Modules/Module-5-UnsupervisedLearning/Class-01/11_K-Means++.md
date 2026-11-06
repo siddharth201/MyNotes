@@ -14,7 +14,6 @@ For example:
 
 ![k-nearest-neighbor classification and k-means - an interactive example  · Martin Thoma](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans%2B%2B.jpeg)
 
-[martin-thoma.com](https://martin-thoma.com/k-nearest-neighbor-classification-interactive-example/?utm_source=chatgpt.com)
 
 K-Means++ reduces this risk by using a distance-based probability strategy.
 
