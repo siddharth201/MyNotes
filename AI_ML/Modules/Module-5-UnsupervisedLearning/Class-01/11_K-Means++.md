@@ -21,7 +21,7 @@ Important: It improves the chances of selecting good initial centroids; it does 
 
 ## 2. How does K-Means++ work?
 
-Suppose we want to create \\(K=3\\) clusters.
+Suppose we want to create $K=3$ clusters.
 
 ### Step 1: Select the first centroid randomly
 
