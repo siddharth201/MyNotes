@@ -254,6 +254,22 @@ This is a very likely interview question.
 Example:
 
 ```swift
+await withTaskGroup(of: Int.self) { group in
+
+    group.addTask {
+        try? await Task.sleep(for: .seconds(1))
+        return 1
+    }
+
+    group.addTask {
+        try? await Task.sleep(for: .seconds(3))
+        return 2
+    }
+
+    print("Inside group")
+}
+    
+print("Group finished")
 ```
 
 
