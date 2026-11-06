@@ -249,9 +249,12 @@ This is a very likely interview question.
 <details>
 <summary><b>Q19. Does TaskGroup wait for all child tasks?</b></summary>
 
-Yes.
+**Yes.**
 
 Example:
+
+```swift
+```
 
 
 
