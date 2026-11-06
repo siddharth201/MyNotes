@@ -247,7 +247,7 @@ This is a very likely interview question.
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q19. Does TaskGroup wait for all child tasks?</b></summary>
 
 </details>
 
