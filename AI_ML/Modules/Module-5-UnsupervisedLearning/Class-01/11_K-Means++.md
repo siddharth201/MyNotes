@@ -12,7 +12,7 @@ In standard K-Means, initial centroids are selected randomly. Sometimes, multipl
 
 For example:
 
-[k-nearest-neighbor classification and k-means - an interactive example  · Martin Thoma](https://images.openai.com/static-rsc-4/s20jmc0r67594IlTkGg9amQdedaxvAUr5Tj7i71xRvsspzqp0MOK23hjaUaydAplBBlimdPMFX2yR-CfS_QReVXmQFCW6m5O031da-qmgl8mzRUPwIJYWLJPMDe-L5kM0BMpk4rk5fySlBKozyjghPx1i47sSgLKwLPMGIJ6hOQ?purpose=inline)
+[k-nearest-neighbor classification and k-means - an interactive example  · Martin Thoma](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans%2B%2B.jpeg)
 
 [martin-thoma.com](https://martin-thoma.com/k-nearest-neighbor-classification-interactive-example/?utm_source=chatgpt.com)
 
