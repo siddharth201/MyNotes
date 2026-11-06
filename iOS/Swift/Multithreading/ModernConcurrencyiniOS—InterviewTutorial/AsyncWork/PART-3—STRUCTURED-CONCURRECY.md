@@ -239,9 +239,9 @@ This is a very likely interview question.
 
 
 **Memory trick**
-
-### LET = KNOWN
-### GROUP = DYNAMIC
+  
+### LET = KNOWN  
+### GROUP = DYNAMIC  
 </details>
 
 
