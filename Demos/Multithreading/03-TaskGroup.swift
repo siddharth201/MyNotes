@@ -5,7 +5,7 @@ func test() async {
 
 @main
 struct TaskGroup {
-    static func main() {
+    static func main() async {
         await test()
     }
 }
