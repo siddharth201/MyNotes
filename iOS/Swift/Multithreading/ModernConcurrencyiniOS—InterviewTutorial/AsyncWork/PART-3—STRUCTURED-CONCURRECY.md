@@ -244,4 +244,11 @@ This is a very likely interview question.
 ### GROUP = DYNAMIC  
 </details>
 
+---
+
+<details>
+<summary><b>Explanation</b></summary>
+
+</details>
+
 
