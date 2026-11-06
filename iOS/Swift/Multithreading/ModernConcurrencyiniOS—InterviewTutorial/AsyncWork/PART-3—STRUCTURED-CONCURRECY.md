@@ -224,7 +224,7 @@ Task {
 ---  
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q18. `async let` vs `TaskGroup`?</b></summary>
 
 </details>
 
