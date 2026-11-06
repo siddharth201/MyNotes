@@ -238,9 +238,10 @@ This is a very likely interview question.
 | Loop creates children | `TaskGroup` |
 
 
-Memory trick
-LET = KNOWN
-GROUP = DYNAMIC
+**Memory trick**
+
+### LET = KNOWN
+### GROUP = DYNAMIC
 </details>
 
 
