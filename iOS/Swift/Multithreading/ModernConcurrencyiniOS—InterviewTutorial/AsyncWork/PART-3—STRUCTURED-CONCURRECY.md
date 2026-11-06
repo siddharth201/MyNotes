@@ -226,6 +226,19 @@ Task {
 <details>
 <summary><b>Q18. `async let` vs `TaskGroup`?</b></summary>
 
+This is a very likely interview question.
+Situation    Use
+Known number of operations    async let
+Dynamic number    TaskGroup
+3 APIs    async let
+100 URLs from an array    TaskGroup
+Fixed independent work    async let
+Loop creates children    TaskGroup
+
+
+Memory trick
+LET = KNOWN
+GROUP = DYNAMIC
 </details>
 
 
