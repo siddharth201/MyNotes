@@ -138,7 +138,7 @@ There are two important reasons:
 
 Remember the WCSS formula:
 
-$ WCSS=\sum\_{k=1}^{K}\sum\_{x_i\in C_k} \\|x_i-\mu_k\\|^2 $
+$WCSS=\sum\_{k=1}^{K}\sum\_{x_i\in C_k} \\|x_i-\mu_k\\|^2 $
 
 K-Means++ uses the same squared-distance idea during initialization.
 
@@ -161,7 +161,7 @@ There is, however, an important theoretical result from the original K-Means++ r
 
 Its initial seeding has an expected approximation guarantee:
 
-$ \mathbb{E}[\phi]\leq 8(\ln K+2)\phi\_{OPT} $
+$\mathbb{E}[\phi]\leq 8(\ln K+2)\phi\_{OPT} $
 
 Where:
 
