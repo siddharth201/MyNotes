@@ -52,7 +52,7 @@ Where:
 
 K-Means++ selects the next centroid using a probability proportional to the square of the distance.
 
-\\[ \boxed{ P(x_i)= \frac{D(x_i)^2} {\sum\_{j=1}^{n}D(x_j)^2} } \\]
+ $\boxed{ P(x_i)= \frac{D(x_i)^2} {\sum\_{j=1}^{n}D(x_j)^2} }$
 
 This means:
 
