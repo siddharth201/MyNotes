@@ -151,7 +151,7 @@ K-Means++ uses the same squared-distance idea during initialization.
 | Can produce poorly distributed initial centroids. | Encourages well-distributed initial centroids.                       |
 | More sensitive to poor initialization.            | Reduces the risk of poor initialization.                             |
 
-One limitation: K-Means++ is not an outlier-robust technique. Since it uses squared distances, an extreme outlier can receive a very high selection probability.
+**One limitation:** K-Means++ is not an outlier-robust technique. Since it uses squared distances, an extreme outlier can receive a very high selection probability.
 
 ## 6. Does K-Means++ guarantee better clustering?
 
