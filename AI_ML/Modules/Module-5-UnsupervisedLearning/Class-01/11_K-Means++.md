@@ -1,5 +1,6 @@
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6af08fc868288191b95dffc4a991c0a7)
+
 
 # K-Means++ — Improved Centroid Initialization
 
