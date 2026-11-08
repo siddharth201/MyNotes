@@ -133,7 +133,8 @@ This encourages the initial centroids to be distributed across the dataset.
 
 There are two important reasons:
 
-**1. Higher weight for distant points:** Squaring increases the relative importance of points that are far away.
+**1. Higher weight for distant points:** Squaring increases the relative importance of points that are far away.  
+
 **2. Connection with the K-Means objective:** K-Means minimizes the sum of squared distances between data points and their assigned centroids (WCSS).
 
 Remember the WCSS formula:
