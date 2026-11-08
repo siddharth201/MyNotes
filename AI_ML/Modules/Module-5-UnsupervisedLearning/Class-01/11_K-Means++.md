@@ -139,7 +139,7 @@ There are two important reasons:
 
 Remember the WCSS formula:
 
-$WCSS=\sum\_{k=1}^{K}\sum\_{x_i\in C_k} \\|x_i-\mu_k\\|^2 $
+$$WCSS=\sum\_{k=1}^{K}\sum\_{x_i\in C_k} \\|x_i-\mu_k\\|^2$$
 
 K-Means++ uses the same squared-distance idea during initialization.
 
