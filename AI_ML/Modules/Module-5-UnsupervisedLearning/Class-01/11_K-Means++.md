@@ -182,8 +182,8 @@ Let:
 
 | Operation                      | Time complexity |
 | ------------------------------ | --------------- |
-| One standard K-Means iteration | \\(O(nKd)\\)    |
-| K-Means++ initialization       | \\(O(nKd)\\)    |
+| One standard K-Means iteration | $O(nKd)$        |
+| K-Means++ initialization       | $O(nKd)$        |
 
 K-Means++ initialization requires additional computation compared with simply selecting random points.
 
