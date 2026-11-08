@@ -103,7 +103,7 @@ $$P(x_i)=\frac{D(x_i)^2}{30}$$
 | C          | 9/30 = 30%     |
 | D          | 16/30 = 53.33% |
 
-Selection probability
+**Selection probability**
 
 Point A
 
