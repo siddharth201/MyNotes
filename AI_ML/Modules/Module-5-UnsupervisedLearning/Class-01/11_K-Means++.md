@@ -176,9 +176,9 @@ This is an expected $O(\log K)$ approximation guarantee for the seeding cost, no
 
 Let:
 
-- \\(n\\) = number of data points.
-- \\(K\\) = number of clusters.
-- \\(d\\) = number of features.
+- $n$ = number of data points.
+- $K$ = number of clusters.
+- $d$ = number of features.
 
 | Operation                      | Time complexity |
 | ------------------------------ | --------------- |
