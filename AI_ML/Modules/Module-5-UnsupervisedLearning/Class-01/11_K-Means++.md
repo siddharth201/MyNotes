@@ -165,9 +165,9 @@ $\mathbb{E}[\phi]\leq 8(\ln K+2)\phi\_{OPT} $
 
 Where:
 
-- \\(\phi\\) = clustering cost after initialization.
-- \\(\phi\_{OPT}\\) = optimal K-Means clustering cost.
-- \\(K\\) = number of clusters.
+- $\phi$ = clustering cost after initialization.
+- $\phi\_{OPT}$ = optimal K-Means clustering cost.
+- $K$ = number of clusters.
 
 This is an expected \\(O(\log K)\\) approximation guarantee for the seeding cost, not a guarantee of finding the global optimum.
 
