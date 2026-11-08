@@ -1,3 +1,6 @@
+
+[Chat-GPT Link]()
+
 # K-Means++ — Improved Centroid Initialization
 
 ## 1. What is K-Means++?
