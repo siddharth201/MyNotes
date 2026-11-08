@@ -192,9 +192,12 @@ However, better initialization can often reduce the number of iterations needed.
 ## 8. Python Implementation using Scikit-learn
 
 ```
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans  
+
 model = KMeans(    n_clusters=3,    init="k-means++",    n_init=10,    random_state=42)
-labels = model.fit_predict(X)
+
+labels = model.fit_predict(X)  
+
 print("Cluster Labels:")
 print(labels)
 print("Centroids:")
