@@ -105,19 +105,19 @@ $$P(x_i)=\frac{D(x_i)^2}{30}$$
 
 **Selection probability**
 
-Point A
+**Point A**
 
 3.33%
 
-Point B
+**Point B**
 
 13.33%
 
-Point C
+**Point C**
 
 30.00%
 
-Point D
+**Point D**
 
 53.33%
 
