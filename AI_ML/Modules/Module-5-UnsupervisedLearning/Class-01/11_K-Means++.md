@@ -43,10 +43,10 @@ We represent it as:
 
 Where:
 
-- \\(x_i\\) = a data point.
-- \\(C\\) = set of already-selected centroids.
-- \\(d(x_i,c)\\) = distance between the data point and a centroid.
-- \\(D(x_i)\\) = distance from the nearest selected centroid.
+- $x_i$ = a data point.
+- $C$ = set of already-selected centroids.
+- $d(x_i,c)$ = distance between the data point and a centroid.
+- $D(x_i)$ = distance from the nearest selected centroid.
 
 ### Step 3: Calculate the selection probability
 
