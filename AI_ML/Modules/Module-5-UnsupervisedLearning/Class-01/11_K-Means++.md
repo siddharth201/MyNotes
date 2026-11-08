@@ -63,7 +63,7 @@ Important: K-Means++ does not always select the farthest point. It uses weighted
 
 ### Step 4: Repeat the process
 
-Repeat Steps 2 and 3 until all \\(K\\) initial centroids have been selected.
+Repeat Steps 2 and 3 until all $K$ initial centroids have been selected.
 
 ### Step 5: Run standard K-Means
 
