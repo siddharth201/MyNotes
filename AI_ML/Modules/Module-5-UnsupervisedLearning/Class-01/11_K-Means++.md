@@ -94,7 +94,7 @@ The distances of four candidate points from their nearest selected centroid are:
 
 Now calculate the probability of selecting each point:
 
-\\[ P(x_i)=\frac{D(x_i)^2}{30} \\]
+$$P(x_i)=\frac{D(x_i)^2}{30}$$
 
 | Data point | Probability    |
 | ---------- | -------------- |
