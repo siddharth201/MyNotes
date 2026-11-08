@@ -170,7 +170,7 @@ Where:
 - $\phi\_{OPT}$ = optimal K-Means clustering cost.
 - $K$ = number of clusters.
 
-This is an expected \\(O(\log K)\\) approximation guarantee for the seeding cost, not a guarantee of finding the global optimum.
+This is an expected $O(\log K)$ approximation guarantee for the seeding cost, not a guarantee of finding the global optimum.
 
 ## 7. Time Complexity
 
