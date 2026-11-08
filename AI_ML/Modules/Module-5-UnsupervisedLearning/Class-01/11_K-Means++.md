@@ -162,7 +162,7 @@ There is, however, an important theoretical result from the original K-Means++ r
 
 Its initial seeding has an expected approximation guarantee:
 
-$\mathbb{E}[\phi]\leq 8(\ln K+2)\phi\_{OPT} $
+$$\mathbb{E}[\phi]\leq 8(\ln K+2)\phi\_{OPT}$$
 
 Where:
 
