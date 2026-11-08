@@ -84,7 +84,7 @@ Suppose we have already selected two centroids.
 
 The distances of four candidate points from their nearest selected centroid are:
 
-| Data point | Distance \\(D(x_i)\\) | Squared distance |
+| Data point | Distance $D(x_i)$ | Squared distance |
 | ---------- | --------------------- | ---------------- |
 | A          | 1                     | 1                |
 | B          | 2                     | 4                |
