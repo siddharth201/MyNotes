@@ -363,7 +363,9 @@ Second centroid selected
 
 C₂ = E = (8, 7)
 
-[en.wikipedia.org](https://en.wikipedia.org/wiki/K-means%2B%2B?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Now we have:
 
