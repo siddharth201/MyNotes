@@ -241,5 +241,8 @@ Ultimate intuition: K-Means++ tries to avoid selecting all initial centroids fro
 
 ---  
 
+<details>
+<summary><b>Explanation</b></summary>
 
+</details>
 
