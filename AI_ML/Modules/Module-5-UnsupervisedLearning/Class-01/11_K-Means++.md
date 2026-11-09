@@ -318,11 +318,11 @@ Important: K-Means++ uses squared distances, not ordinary distances, to calculat
 
 The probability of selecting a point is:
 
-\\[ P(x)=\frac{D(x)^2}{\sum_j D(x_j)^2} \\]
+$$P(x)=\frac{D(x)^2}{\sum_j D(x_j)^2}$$
 
 First, calculate the sum:
 
-\\[ 0+1+13+25+85+113=237 \\]
+$$0+1+13+25+85+113=237$$
 
 Now calculate the probability for each point:
 
