@@ -465,12 +465,14 @@ Why does K-Means++ use squared distance when selecting the next centroid?
 
 To select the closest point.
 
-To give much higher selection probability to points farther from existing centroids.
+**To give much higher selection probability to points farther from existing centroids.**
 
 To guarantee the globally optimal clustering.
 
 To calculate the final cluster means.
 
 Check answer
+Correct!
+Squaring makes larger distances contribute disproportionately more to the selection probability. It encourages spatially spread-out initial centroids, but does not guarantee globally optimal clusters.
 </details>
 
