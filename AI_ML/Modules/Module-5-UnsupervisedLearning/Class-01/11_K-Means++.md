@@ -267,7 +267,7 @@ Suppose we have six data points in a 2D space:
 | E     | (8, 7)      |
 | F     | (9, 8)      |
 
-We want to create 3 clusters, so \\(K=3\\).
+We want to create 3 clusters, so $K=3$.
 
 ## 2. Step 1 — Select the first centroid randomly
 
