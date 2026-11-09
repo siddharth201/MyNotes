@@ -428,13 +428,11 @@ Third centroid selected
 
 C₃ = D = (5, 4)
 
-[Test Run - K-Means++ Data Clustering | Microsoft Learn](https://images.openai.com/static-rsc-4/h8GqSJcnNavxveTIPJFSwM8-T41FOgmsLQOetwyxL_0ijBJ-vAlVkpLeNnARKMfLztXBxXbjKhp2PHkrVFIAsWhrUdxCoK2842VWK_SakAwcsgiH0OdCbfFSBSQ2eE0w2RkeS-rZDwYiRJfHVPTO2-ruFdhjYfw3PxKqk0kvTAM?purpose=inline)
-
-[learn.microsoft.com](https://learn.microsoft.com/en-us/archive/msdn-magazine/2015/august/test-run-k-means-data-clustering?utm_source=chatgpt.com)
+![learn.microsoft.com](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/Images/KMeans%2B%2B3.jpeg)
 
 Now we have selected all three initial centroids:
 
-\\[ C_1=(1,1),\quad C_2=(8,7),\quad C_3=(5,4) \\]
+$$C_1=(1,1),\quad C_2=(8,7),\quad C_3=(5,4)$$
 
 K-Means++ initialization is complete.
 
