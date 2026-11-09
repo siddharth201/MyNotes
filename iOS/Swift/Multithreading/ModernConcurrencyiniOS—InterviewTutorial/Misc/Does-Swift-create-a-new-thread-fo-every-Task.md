@@ -296,3 +296,57 @@ Can Thread 1 execute another Task while the first Task is suspended?
 Think about it before answering.
 
 ## Q. While Task A is suspended, can Thread 1 execute Task B? Why?
+
+&#x20;Correct!
+
+Yes. Thread 1 can execute another Task while the first Task is suspended at `await`.
+
+Let's understand what happens:
+
+```
+Task {
+    print("Task A - Started")
+
+    let user = await fetchUser()
+
+    print("Task A - Resumed")
+}
+
+Task {
+    print("Task B - Started")
+}
+```
+
+Imagine this execution:
+
+Thread 1 — Execution timeline
+
+1. Task A starts
+
+   Prints "Task A - Started"
+2. Task A reaches await
+
+   Task A suspends while waiting for fetchUser(). Thread is not blocked.
+3. Task B executes
+
+   Thread 1 is available to execute other work.
+4. Task A resumes
+
+   After fetchUser() completes, Task A continues. It may resume on a different thread.
+
+### Important interview point
+
+Suspending a Task is not the same as blocking a Thread.
+
+- Task suspension: The task pauses; the thread can do other work.
+- Thread blocking: The thread itself cannot execute other work until unblocked.
+
+### Next interview question
+
+When Task A resumes after `await`, must it resume on the same thread where it was suspended?
+
+A. Yes, always.
+
+B. No, it may resume on a different thread.
+
+C. Only if it uses `Task.detached`.
