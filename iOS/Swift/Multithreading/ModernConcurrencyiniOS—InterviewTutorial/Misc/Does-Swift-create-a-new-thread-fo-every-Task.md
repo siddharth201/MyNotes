@@ -76,4 +76,6 @@ Important distinctions:
 
 ---  
 
-## Q. 
+## Q. If two Tasks execute concurrently, can they execute on the same thread?
+
+
