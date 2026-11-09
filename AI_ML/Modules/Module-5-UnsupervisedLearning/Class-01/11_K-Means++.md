@@ -244,5 +244,226 @@ Ultimate intuition: K-Means++ tries to avoid selecting all initial centroids fro
 <details>
 <summary><b>Q. Give a numerical example of KMeans++</b></summary>
 
+[Chat-GPT Link]()
+
+Let's understand K-Means++ using a numerical example, step by step.
+
+The main idea behind K-Means++ is:
+
+> Instead of selecting all initial centroids randomly, choose the first centroid randomly and then select subsequent centroids with a higher probability for points that are farther away from the already selected centroids.
+
+This helps spread the initial centroids across the dataset.
+
+## 1. Consider this dataset
+
+Suppose we have six data points in a 2D space:
+
+| Point | Coordinates |
+| ----- | ----------- |
+| A     | (1, 1)      |
+| B     | (2, 1)      |
+| C     | (4, 3)      |
+| D     | (5, 4)      |
+| E     | (8, 7)      |
+| F     | (9, 8)      |
+
+We want to create 3 clusters, so \\(K=3\\).
+
+## 2. Step 1 — Select the first centroid randomly
+
+Suppose K-Means++ randomly selects point A.
+
+First centroid selected
+
+C₁ = A = (1, 1)
+
+[Hierarchical Clustering: Complete Guide with Dendrograms, Linkage Criteria & Implementation - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/CRZQNKwr5ABWvK3CYaEJ_JZZ1qh-GXzb7RjAFyCuLUK2dpjhs8KJZLt7mSZ3eWSVlRMKFaYDMxI5hkKIDfFXCf9HIGVAWR2yc3Rm4FUoiL_2c_p7GNvQe48seSpEYo6oFf7sdFd_DGfppDWjnzTiXpxVDemJkGFTdBGvP5Yh-gU?purpose=inline)
+
+[mbrenndoerfer.com](https://mbrenndoerfer.com/writing/hierarchical-clustering-complete-guide-dendrograms-linkage-criteria?utm_source=chatgpt.com)
+
+Conceptual illustration of the first centroid.
+
+## 3. Step 2 — Calculate squared distances from the first centroid
+
+Now calculate the squared Euclidean distance of every point from A.
+
+Formula:
+
+\\[ D(x)^2=(x_1-c_1)^2+(x_2-c_2)^2 \\]
+
+Here, \\(D(x)\\) is the distance from a data point to its nearest already-selected centroid. Since we have only one centroid, that is A.
+
+For example, for point C = (4, 3):
+
+\\[ D(C)^2=(4-1)^2+(3-1)^2 \\]
+
+\\[ =9+4=13 \\]
+
+Let's calculate for all points:
+
+| Point | Coordinates | Squared distance from A |
+| ----- | ----------- | ----------------------- |
+| A     | (1, 1)      | 0                       |
+| B     | (2, 1)      | 1                       |
+| C     | (4, 3)      | 13                      |
+| D     | (5, 4)      | 25                      |
+| E     | (8, 7)      | 85                      |
+| F     | (9, 8)      | 113                     |
+
+Notice that F has the largest squared distance.
+
+Important: K-Means++ uses squared distances, not ordinary distances, to calculate selection probabilities.
+
+## 4. Step 3 — Calculate selection probabilities
+
+The probability of selecting a point is:
+
+\\[ P(x)=\frac{D(x)^2}{\sum_j D(x_j)^2} \\]
+
+First, calculate the sum:
+
+\\[ 0+1+13+25+85+113=237 \\]
+
+Now calculate the probability for each point:
+
+| Point | Squared distance | Probability |
+| ----- | ---------------- | ----------- |
+| A     | 0                | 0%          |
+| B     | 1                | 0.42%       |
+| C     | 13               | 5.49%       |
+| D     | 25               | 10.55%      |
+| E     | 85               | 35.86%      |
+| F     | 113              | 47.68%      |
+| Total | 237              | 100%        |
+
+Probability of each point being selected as the second centroid.
+
+0%15%30%45%60%ABCDEF
+
+What does this tell us?
+
+- A has 0% probability because it is already selected.
+- B is very close to A, so it has a very low probability.
+- E and F are far away, so they have much higher probabilities.
+- F has the highest probability, but it is not guaranteed to be selected.
+
+## 5. Step 4 — Select the second centroid
+
+Now imagine we use a random selection process based on these probabilities.
+
+Suppose the random selection chooses E.
+
+Second centroid selected
+
+C₂ = E = (8, 7)
+
+[en.wikipedia.org](https://en.wikipedia.org/wiki/K-means%2B%2B?utm_source=chatgpt.com)
+
+Now we have:
+
+- C₁ = A = (1, 1)
+- C₂ = E = (8, 7)
+
+## 6. Step 5 — Calculate distances from the nearest selected centroid
+
+Now calculate the squared distance of each point from its nearest selected centroid.
+
+For example, for point D = (5, 4):
+
+Distance from A:
+
+\\[ (5-1)^2+(4-1)^2=25 \\]
+
+Distance from E:
+
+\\[ (5-8)^2+(4-7)^2=18 \\]
+
+Therefore:
+
+\\[ D(D)^2=\min(25,18)=18 \\]
+
+Repeat for all points:
+
+| Point | From A | From E | Minimum squared distance |
+| ----- | ------ | ------ | ------------------------ |
+| A     | 0      | 85     | 0                        |
+| B     | 1      | 72     | 1                        |
+| C     | 13     | 32     | 13                       |
+| D     | 25     | 18     | 18                       |
+| E     | 85     | 0      | 0                        |
+| F     | 113    | 2      | 2                        |
+
+The sum is:
+
+\\[ 0+1+13+18+0+2=34 \\]
+
+## 7. Step 6 — Calculate probabilities for the third centroid
+
+Again, apply:
+
+\\[ P(x)=\frac{D(x)^2}{\sum_jD(x_j)^2} \\]
+
+| Point | Squared distance | Probability |
+| ----- | ---------------- | ----------- |
+| A     | 0                | 0%          |
+| B     | 1                | 2.94%       |
+| C     | 13               | 38.24%      |
+| D     | 18               | 52.94%      |
+| E     | 0                | 0%          |
+| F     | 2                | 5.88%       |
+| Total | 34               | 100%        |
+
+Suppose the random selection chooses D.
+
+Third centroid selected
+
+C₃ = D = (5, 4)
+
+[Test Run - K-Means++ Data Clustering | Microsoft Learn](https://images.openai.com/static-rsc-4/h8GqSJcnNavxveTIPJFSwM8-T41FOgmsLQOetwyxL_0ijBJ-vAlVkpLeNnARKMfLztXBxXbjKhp2PHkrVFIAsWhrUdxCoK2842VWK_SakAwcsgiH0OdCbfFSBSQ2eE0w2RkeS-rZDwYiRJfHVPTO2-ruFdhjYfw3PxKqk0kvTAM?purpose=inline)
+
+[learn.microsoft.com](https://learn.microsoft.com/en-us/archive/msdn-magazine/2015/august/test-run-k-means-data-clustering?utm_source=chatgpt.com)
+
+Now we have selected all three initial centroids:
+
+\\[ C_1=(1,1),\quad C_2=(8,7),\quad C_3=(5,4) \\]
+
+K-Means++ initialization is complete.
+
+## 8. What happens next?
+
+Now the normal K-Means algorithm starts:
+
+1. Assign every point to its nearest centroid.
+2. Calculate the mean of each cluster.
+3. Update the centroids.
+4. Repeat until convergence.
+
+Remember: K-Means++ only improves the initial selection of centroids. It does not replace the normal K-Means clustering process.
+
+## 9. The most important concept to remember
+
+| Random initialization                      | K-Means++ initialization                                                       |
+| ------------------------------------------ | ------------------------------------------------------------------------------ |
+| Selects initial centroids randomly.        | First centroid is random; subsequent centroids are selected probabilistically. |
+| Centroids may be very close to each other. | Encourages centroids to be spread apart.                                       |
+| Can lead to poor initialization.           | Often produces better initialization.                                          |
+
+Interview-friendly definition:
+
+K-Means++ is an initialization technique for K-Means that selects the first centroid randomly and subsequent centroids with probability proportional to the squared distance from the nearest already-selected centroid. It helps spread initial centroids and often improves clustering quality and convergence.
+
+## Quick check
+
+Why does K-Means++ use squared distance when selecting the next centroid?
+
+To select the closest point.
+
+To give much higher selection probability to points farther from existing centroids.
+
+To guarantee the globally optimal clustering.
+
+To calculate the final cluster means.
+
+Check answer
 </details>
 
