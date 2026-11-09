@@ -289,13 +289,13 @@ Now calculate the squared Euclidean distance of every point from A.
 
 Formula:
 
-\\[ D(x)^2=(x_1-c_1)^2+(x_2-c_2)^2 \\]
+$$D(x)^2=(x_1-c_1)^2+(x_2-c_2)^2$$
 
-Here, \\(D(x)\\) is the distance from a data point to its nearest already-selected centroid. Since we have only one centroid, that is A.
+Here, $D(x)$ is the distance from a data point to its nearest already-selected centroid. Since we have only one centroid, that is A.
 
 For example, for point C = (4, 3):
 
-\\[ D(C)^2=(4-1)^2+(3-1)^2 \\]
+$$D(C)^2=(4-1)^2+(3-1)^2$$
 
 \\[ =9+4=13 \\]
 
