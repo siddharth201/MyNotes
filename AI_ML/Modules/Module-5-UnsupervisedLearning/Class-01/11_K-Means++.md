@@ -351,7 +351,7 @@ What does this tell us?
 - A has 0% probability because it is already selected.
 - B is very close to A, so it has a very low probability.
 - E and F are far away, so they have much higher probabilities.
-- F has the highest probability, but it is not guaranteed to be selected.
+- F has the highest probability, but it is ** guaranteed to** be selected.
 
 ## 5. Step 4 — Select the second centroid
 
