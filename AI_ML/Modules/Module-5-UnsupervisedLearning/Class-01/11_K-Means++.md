@@ -297,7 +297,7 @@ For example, for point C = (4, 3):
 
 $$D(C)^2=(4-1)^2+(3-1)^2$$
 
-\\[ =9+4=13 \\]
+$$=9+4=13$$
 
 Let's calculate for all points:
 
