@@ -127,4 +127,8 @@ await fetchUser()
 
 ---  
 
+## Q. Explain Swift's concurrency runtime in simple way
+
+
+
 ## Q. While Task A is suspended, can Thread 1 execute Task B? Why?
