@@ -381,15 +381,15 @@ For example, for point D = (5, 4):
 
 Distance from A:
 
-\\[ (5-1)^2+(4-1)^2=25 \\]
+$$(5-1)^2+(4-1)^2=25$$
 
 Distance from E:
 
-\\[ (5-8)^2+(4-7)^2=18 \\]
+$$(5-8)^2+(4-7)^2=18$$
 
 Therefore:
 
-\\[ D(D)^2=\min(25,18)=18 \\]
+$$D(D)^2=\min(25,18)=18$$
 
 Repeat for all points:
 
@@ -404,13 +404,13 @@ Repeat for all points:
 
 The sum is:
 
-\\[ 0+1+13+18+0+2=34 \\]
+$$0+1+13+18+0+2=34$$
 
 ## 7. Step 6 — Calculate probabilities for the third centroid
 
 Again, apply:
 
-\\[ P(x)=\frac{D(x)^2}{\sum_jD(x_j)^2} \\]
+$$P(x)=\frac{D(x)^2}{\sum_jD(x_j)^2}$$
 
 | Point | Squared distance | Probability |
 | ----- | ---------------- | ----------- |
