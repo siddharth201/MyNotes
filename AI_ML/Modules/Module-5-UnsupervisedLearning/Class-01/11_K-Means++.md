@@ -199,10 +199,13 @@ model = KMeans(    n_clusters=3,    init="k-means++",    n_init=10,    random_st
 labels = model.fit_predict(X)  
 
 print("Cluster Labels:")
-print(labels)
+print(labels)  
+
 print("Centroids:")
-print(model.cluster_centers_)
-print("WCSS:")print(model.inertia_)
+print(model.cluster_centers_)  
+
+print("WCSS:")
+print(model.inertia_)
 ```
 
 Understanding the parameters:
