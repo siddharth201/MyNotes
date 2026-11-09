@@ -170,7 +170,7 @@ Task {
 
 What happens?
 
-![Swift Concurrency]()
+![Swift Concurrency](https://github.com/siddharth201/MyNotes/blob/main/iOS/Swift/Multithreading/ModernConcurrencyiniOS%E2%80%94InterviewTutorial/Misc/Images/SwiftCocurrency.png)
 
 The runtime coordinates the work. It doesn't mean that every Task gets its own thread.
 
