@@ -277,9 +277,9 @@ First centroid selected
 
 C₁ = A = (1, 1)
 
-[Hierarchical Clustering: Complete Guide with Dendrograms, Linkage Criteria & Implementation - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/CRZQNKwr5ABWvK3CYaEJ_JZZ1qh-GXzb7RjAFyCuLUK2dpjhs8KJZLt7mSZ3eWSVlRMKFaYDMxI5hkKIDfFXCf9HIGVAWR2yc3Rm4FUoiL_2c_p7GNvQe48seSpEYo6oFf7sdFd_DGfppDWjnzTiXpxVDemJkGFTdBGvP5Yh-gU?purpose=inline)
-
-[mbrenndoerfer.com](https://mbrenndoerfer.com/writing/hierarchical-clustering-complete-guide-dendrograms-linkage-criteria?utm_source=chatgpt.com)
+<a href="YOUR_IMAGE_URL" target="_blank">
+  <img src="YOUR_IMAGE_URL" width="250" alt="Click to enlarge">
+</a>
 
 Conceptual illustration of the first centroid.
 
