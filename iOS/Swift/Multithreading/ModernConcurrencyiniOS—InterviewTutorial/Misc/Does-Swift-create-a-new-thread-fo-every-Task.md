@@ -38,9 +38,10 @@ Here:
 | Thread   | OS-level execution resource                       |
 | Executor | Determines where/how actor-isolated work executes |
 
-Next interview question:
 
-If two Tasks execute concurrently, can they execute on the same thread?
+---
+
+## Q. If two Tasks execute concurrently, can they execute on the same thread?
 
 Yes. Two or more Tasks can execute on the same thread at different times.
 
