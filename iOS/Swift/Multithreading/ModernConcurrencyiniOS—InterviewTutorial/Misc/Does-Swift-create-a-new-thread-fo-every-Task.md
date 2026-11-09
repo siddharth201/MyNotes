@@ -1,4 +1,6 @@
 
+## Q. Does Swift create a new thread for every Task?
+
 Swift does not create a new thread for every Task.
 
 ### Interview-friendly answer
@@ -72,4 +74,6 @@ Important distinctions:
 - Thread = Execution resource.
 - Executor = Manages where actor-isolated work executes.
 
+---  
 
+## Q. 
