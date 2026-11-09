@@ -170,33 +170,7 @@ Task {
 
 What happens?
 
-Your Swift Code
-
-Task, async/await, actors
-
-Swift Concurrency Runtime
-
-Manages task lifecycle and execution
-
-Scheduling
-
-Coordinates when work runs
-
-Suspension
-
-Handles waiting and resumption
-
-Executors
-
-Provide execution context
-
-Actor Isolation
-
-Coordinates isolated access
-
-Execution on available threads
-
-Tasks are not permanently attached to individual threads.
+![Swift Concurrency]()
 
 The runtime coordinates the work. It doesn't mean that every Task gets its own thread.
 
