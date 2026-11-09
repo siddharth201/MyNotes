@@ -471,8 +471,10 @@ To guarantee the globally optimal clustering.
 
 To calculate the final cluster means.
 
-Check answer
-Correct!
+**Check answer**  
+
+#### Correct!  
+
 Squaring makes larger distances contribute disproportionately more to the selection probability. It encourages spatially spread-out initial centroids, but does not guarantee globally optimal clusters.
 </details>
 
