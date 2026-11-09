@@ -244,7 +244,7 @@ Ultimate intuition: K-Means++ tries to avoid selecting all initial centroids fro
 <details>
 <summary><b>Q. Give a numerical example of KMeans++</b></summary>
 
-[Chat-GPT Link]()
+[Chat-GPT Link](https://chatgpt.com/s/t_6af1c4dcfb948191a01afa28674c9e52)
 
 Let's understand K-Means++ using a numerical example, step by step.
 
