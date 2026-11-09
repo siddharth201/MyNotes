@@ -235,7 +235,7 @@ Remember these five points:
 
 The most important formula:
 
-\\[ P(x_i)= \frac{D(x_i)^2} {\sum\_{j=1}^{n}D(x_j)^2} \\]
+$$P(x_i)= \frac{D(x_i)^2} {\sum\_{j=1}^{n}D(x_j)^2}$$
 
 Ultimate intuition: K-Means++ tries to avoid selecting all initial centroids from the same small region. It gives distant points a higher chance of becoming centroids, helping K-Means start with a better initial configuration.
 
