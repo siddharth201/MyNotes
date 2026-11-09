@@ -242,7 +242,7 @@ Ultimate intuition: K-Means++ tries to avoid selecting all initial centroids fro
 ---  
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q. Give a numerical example of KMeans++</b></summary>
 
 </details>
 
