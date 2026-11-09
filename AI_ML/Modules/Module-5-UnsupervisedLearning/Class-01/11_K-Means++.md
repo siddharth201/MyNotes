@@ -338,7 +338,13 @@ Now calculate the probability for each point:
 
 Probability of each point being selected as the second centroid.
 
-0%15%30%45%60%ABCDEF
+Point    Probability
+A    0
+B    0.42
+C    5.49
+D    10.55
+E    35.86
+F    47.68
 
 What does this tell us?
 
