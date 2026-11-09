@@ -39,7 +39,7 @@ For every data point, calculate its distance from the nearest already-selected c
 
 We represent it as:
 
- $D(x_i)=\min\_{c\in C}d(x_i,c)$
+ $$D(x_i)=\min\_{c\in C}d(x_i,c)$$
 
 Where:
 
