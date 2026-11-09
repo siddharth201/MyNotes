@@ -471,7 +471,7 @@ To guarantee the globally optimal clustering.
 
 To calculate the final cluster means.
 
-**Check answer**  
+**Check answer:**  
 
 #### Correct!  
 
