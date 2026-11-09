@@ -297,7 +297,7 @@ Think about it before answering.
 
 ## Q. While Task A is suspended, can Thread 1 execute Task B? Why?
 
-&#x20;Correct!
+Correct!
 
 Yes. Thread 1 can execute another Task while the first Task is suspended at `await`.
 
