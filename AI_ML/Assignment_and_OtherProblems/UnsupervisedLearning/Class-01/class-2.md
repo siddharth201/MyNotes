@@ -686,5 +686,123 @@ Remember these three concepts:
 ---
 
 
+<details>
+<summary><b>Q. Which distance metric is predominantly used in both K-Means and K-Means++ Clustering?</b></summary>
+
+**A.** Manhattan Distance
+
+**B.** Cosine Distance
+
+**C.** Euclidean Distance
+
+**D.** Mahalanobis Distance
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option C**
+
+**Euclidean Distance**
+
+### Explanation
+
+Euclidean Distance is the most commonly used distance metric in standard K-Means clustering.
+
+It measures the straight-line distance between two points in a multidimensional space.
+
+K-Means uses this distance to assign each data point to its nearest centroid.
+
+K-Means++ also uses squared Euclidean distances during centroid initialization to determine the probability of selecting subsequent centroids.
+
+### Mathematical formula
+
+For two points in a 2-dimensional space:
+
+\[
+P=(x_1,y_1), \quad Q=(x_2,y_2)
+\]
+
+Euclidean Distance is:
+
+\[
+\boxed{d(P,Q)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}
+\]
+
+For a d-dimensional space:
+
+\[
+d(P,Q)=\sqrt{\sum_{j=1}^{d}(p_j-q_j)^2}
+\]
+
+### Numerical example
+
+Suppose we have two points:
+
+\[
+P=(2,3), \quad Q=(5,7)
+\]
+
+Applying the Euclidean Distance formula:
+
+\[
+d(P,Q)=\sqrt{(5-2)^2+(7-3)^2}
+\]
+
+\[
+=\sqrt{3^2+4^2}
+\]
+
+\[
+=\sqrt{9+16}
+\]
+
+\[
+=\sqrt{25}=\boxed{5}
+\]
+
+Therefore, the Euclidean distance between these two points is 5 units.
+
+### Why does K-Means use Euclidean Distance?
+
+K-Means minimizes the Within-Cluster Sum of Squares (WCSS).
+
+\[
+WCSS=\sum_{j=1}^{K}\sum_{x_i\in C_j}
+\|x_i-\mu_j\|^2
+\]
+
+Here, the squared Euclidean distance measures how far each data point is from its assigned cluster centroid.
+
+This is also why the mean is used during the centroid update step.
+
+### K-Means vs K-Means++
+
+| Feature | K-Means | K-Means++ |
+|---|---|---|
+| Purpose | Clustering | Centroid initialization |
+| Distance calculation | Euclidean distance | Squared Euclidean distance |
+| Main objective | Minimize WCSS | Select better initial centroids |
+
+### Why are the other options incorrect?
+
+- **A. Manhattan Distance:** Measures the sum of absolute differences between coordinates. It is not the standard distance metric used in K-Means.
+- **B. Cosine Distance:** Measures differences in the orientation of vectors rather than their straight-line distance. It is commonly used in text and high-dimensional similarity applications.
+- **C. Euclidean Distance:** Correct. Standard K-Means uses squared Euclidean distance in its objective, while K-Means++ uses squared Euclidean distance for probabilistic centroid selection.
+- **D. Mahalanobis Distance:** Accounts for feature scales and correlations using the covariance matrix. It is not the standard distance metric in K-Means.
+
+### Interview takeaway
+
+Remember:
+
+- **Euclidean Distance (L2):** Straight-line distance.
+- **Manhattan Distance (L1):** Sum of absolute coordinate differences.
+- **Cosine Distance:** Measures differences in vector orientation.
+- **Mahalanobis Distance:** Accounts for feature correlations and covariance.
+
+**Ultimate intuition:** Standard K-Means groups data points around centroids by minimizing squared Euclidean distances. K-Means++ uses the same squared-distance concept to select better initial centroids.
+
+</details>
+</details>
+
 
 
