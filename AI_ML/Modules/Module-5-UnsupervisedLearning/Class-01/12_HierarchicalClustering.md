@@ -165,8 +165,8 @@ $$\boxed{ \Delta ESS\_{A,B}= \frac{|A||B|}{|A|+|B|} \\|\mu_A-\mu_B\\|^2 }$$
 Where:
 
 - $|A|$, $|B|$ = Number of data points in each cluster.
-- $\mu_A\\), \\(\mu_B\\) = Centroids of the two clusters.
-- \\(\Delta ESS\\) = Increase in within-cluster squared error after merging.
+- $\mu_A$, $\mu_B$ = Centroids of the two clusters.
+- $\Delta ESS$ = Increase in within-cluster squared error after merging.
 
 ![Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/M3HnArZALdLlIK4fMlY6xUJISu7OuSmw6MSAEDyVfyxAePS_cLl4_ZDp30EaovAL0tBr0mp94y80LgdD4yYoX6ViWKsjvEu5e9-yCPvACAJqYDZ7z3U9EsFnwrcX-MBzKFA1RX67eHPxtr1RwOofAMkm82vDAB4ETt_-ojhOgMg?purpose=inline)
 
