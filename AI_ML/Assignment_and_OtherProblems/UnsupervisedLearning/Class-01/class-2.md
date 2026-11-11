@@ -1095,9 +1095,7 @@ For every data point, we calculate its squared Euclidean distance from each cent
 
 Mathematically:
 
-$$
-d(P,C)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
-$$
+$$d(P,C)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
 
 **Important:** We are calculating squared Euclidean distance without taking the square root.
 
