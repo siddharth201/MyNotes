@@ -127,7 +127,7 @@ Imagine two groups connected by a few intermediate points. Single Linkage may me
 
 Distance between two clusters is the maximum distance between any pair of points from the two clusters.
 
-\\[ D(A,B)=\max\_{a\in A,b\in B}d(a,b) \\]
+$$D(A,B)=\max\_{a\in A,b\in B}d(a,b)$$
 
 Intuition: Find the farthest pair of points between the two clusters.
 
