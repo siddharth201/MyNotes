@@ -93,8 +93,6 @@ Continue merging the closest clusters until all points become one cluster, or un
 
 ![The Beginner’s Guide to Clustering in Machine Learning | by Utsav Desai | Medium](https://images.openai.com/static-rsc-4/YIVFX04JFGrCRlEgijAMmDTy5jL6DAoX4Z29FxXKR4C8Zbz7prkijlhsSN7M5sZbwGb-92VEI9H_JFjWYSQSLgQUDyDFFvCxYF16Y-eeArwMKX0cPrIa5wdg0UQTTJRdTvnZ1D-xg3bZTbOBVwpPI6qASYbZNC7HQqbGcgonC1k?purpose=inline)
 
-[utsavdesai26.medium.com](https://utsavdesai26.medium.com/the-beginners-guide-to-clustering-in-machine-learning-331987a7ceaf?utm_source=chatgpt.com)
-
 Important: Agglomerative Clustering is greedy and irreversible. Once two clusters are merged, the algorithm does not undo that decision later.
 
 ## 4. What is Linkage?
@@ -115,9 +113,7 @@ Distance between two clusters is the minimum distance between any pair of points
 
 Intuition: Find the closest pair of points between the two clusters.
 
-[An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/yLXZqUusLxmCAYGFqLwLzMbBNjzGzEpLAi9pzUc_g1SHBcLhb5CpmwnSUKBmKbGGpYbZWQqBoHQdNvk9aER3kxR-6H3yUl1q0vjAv3HEI3KPRuFgaSl0l9QYV8iLG7IjnanEVoNR_ApNtnBZ2PW0dI8j7VQgFdp0LCk052bRNUU?purpose=inline)
-
-[datacamp.com](https://www.datacamp.com/tutorial/introduction-hierarchical-clustering-python?utm_source=chatgpt.com)
+![An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/yLXZqUusLxmCAYGFqLwLzMbBNjzGzEpLAi9pzUc_g1SHBcLhb5CpmwnSUKBmKbGGpYbZWQqBoHQdNvk9aER3kxR-6H3yUl1q0vjAv3HEI3KPRuFgaSl0l9QYV8iLG7IjnanEVoNR_ApNtnBZ2PW0dI8j7VQgFdp0LCk052bRNUU?purpose=inline)
 
 - Can form elongated clusters.
 - Prone to the Chaining Effect.
@@ -134,9 +130,7 @@ Distance between two clusters is the maximum distance between any pair of points
 
 Intuition: Find the farthest pair of points between the two clusters.
 
-[An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/tBgQRHO8khDZ8EGelwzKWq53AHkqkRKF3bfXL3tyU0vHxaPB6jxUZ_ZqW8m0vM1ZYhz12VdYlKXd1yDErVmBkEUGSzIes9x4rpcY3dFWqsmK1JVNRG0iMYIeDOFKflMrfAf-uC8lqcjswu5rdBlWiPVt57N3mnUiyMncVHEbEHQ?purpose=inline)
-
-[datacamp.com](https://www.datacamp.com/tutorial/introduction-hierarchical-clustering-python?utm_source=chatgpt.com)
+![An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/tBgQRHO8khDZ8EGelwzKWq53AHkqkRKF3bfXL3tyU0vHxaPB6jxUZ_ZqW8m0vM1ZYhz12VdYlKXd1yDErVmBkEUGSzIes9x4rpcY3dFWqsmK1JVNRG0iMYIeDOFKflMrfAf-uC8lqcjswu5rdBlWiPVt57N3mnUiyMncVHEbEHQ?purpose=inline)
 
 - Tends to produce compact clusters.
 - Can be sensitive to outliers because one distant point can increase the maximum distance.
@@ -149,9 +143,7 @@ Distance between two clusters is the average distance between all cross-cluster 
 
 Intuition: Calculate all pairwise distances between the two clusters and take their average.
 
-[Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/HVA-MwyrF7tPvmCTyQewialB_E8PeVJ1UMreVMKMcZMEzwE-YhGmSHbmr3T1yldkHpeCa5awm_d9KdoET5gX6csYRY0d4yXG73t9gnkdMKKcba5c6_BbhJ4j7yPwi9s4GQMtAO4MhJkSJIYCUbay5Q-1qsy7yFp6aNuQyKZFh3s?purpose=inline)
-
-[stackabuse.com](https://stackabuse.com/hierarchical-clustering-with-python-and-scikit-learn/?utm_source=chatgpt.com)
+![Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/HVA-MwyrF7tPvmCTyQewialB_E8PeVJ1UMreVMKMcZMEzwE-YhGmSHbmr3T1yldkHpeCa5awm_d9KdoET5gX6csYRY0d4yXG73t9gnkdMKKcba5c6_BbhJ4j7yPwi9s4GQMtAO4MhJkSJIYCUbay5Q-1qsy7yFp6aNuQyKZFh3s?purpose=inline)
 
 - Considers all cross-cluster pairwise distances.
 - Provides an alternative to minimum and maximum distance approaches.
@@ -175,9 +167,8 @@ Where:
 - \\(\mu_A\\), \\(\mu_B\\) = Centroids of the two clusters.
 - \\(\Delta ESS\\) = Increase in within-cluster squared error after merging.
 
-[Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/M3HnArZALdLlIK4fMlY6xUJISu7OuSmw6MSAEDyVfyxAePS_cLl4_ZDp30EaovAL0tBr0mp94y80LgdD4yYoX6ViWKsjvEu5e9-yCPvACAJqYDZ7z3U9EsFnwrcX-MBzKFA1RX67eHPxtr1RwOofAMkm82vDAB4ETt_-ojhOgMg?purpose=inline)
+![Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/M3HnArZALdLlIK4fMlY6xUJISu7OuSmw6MSAEDyVfyxAePS_cLl4_ZDp30EaovAL0tBr0mp94y80LgdD4yYoX6ViWKsjvEu5e9-yCPvACAJqYDZ7z3U9EsFnwrcX-MBzKFA1RX67eHPxtr1RwOofAMkm82vDAB4ETt_-ojhOgMg?purpose=inline)
 
-[stackabuse.com](https://stackabuse.com/hierarchical-clustering-with-python-and-scikit-learn/?utm_source=chatgpt.com)
 
 Characteristics:
 
@@ -208,9 +199,7 @@ It helps us understand:
 - The distance at which they were merged.
 - How many clusters we can obtain at different levels.
 
-[Hierarchical Clustering: Build Trees That Reveal Hidden Data Structure - perfecXion.ai](https://images.openai.com/static-rsc-4/bJ6M6_OUFntW1iMxdH1UoVn5e6n7lLMAnb_4oP_CMwlNok43foqdj0HWHBra1sVLSqOK5cHGyb2fCvEVR0hHIJ2ArDNDrUs7vn_JIdPzndDDI8Kw1HyL4dIKv1VMLU6qer3ZSHYj4fUCkhBpBo4v6B8NRP5qXZcmEdnflgfA-og?purpose=inline)
-
-[perfecxion.ai](https://perfecxion.ai/articles/hierarchical-clustering-complete-guide.html?utm_source=chatgpt.com)
+![Hierarchical Clustering: Build Trees That Reveal Hidden Data Structure - perfecXion.ai](https://images.openai.com/static-rsc-4/bJ6M6_OUFntW1iMxdH1UoVn5e6n7lLMAnb_4oP_CMwlNok43foqdj0HWHBra1sVLSqOK5cHGyb2fCvEVR0hHIJ2ArDNDrUs7vn_JIdPzndDDI8Kw1HyL4dIKv1VMLU6qer3ZSHYj4fUCkhBpBo4v6B8NRP5qXZcmEdnflgfA-og?purpose=inline)
 
 ### How to read a Dendrogram?
 
