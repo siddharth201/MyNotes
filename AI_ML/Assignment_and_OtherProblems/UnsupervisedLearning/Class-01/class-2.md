@@ -998,7 +998,7 @@ We repeat these two operations until:
 ### 2. Python implementation
 
 ```python
-def kmeans(points, k, initial_centroids, max_iterations):
+def k_means_clustering(points, k, initial_centroids, max_iterations):
 
     # 1. Initialize centroids
     centroids = list(initial_centroids)
