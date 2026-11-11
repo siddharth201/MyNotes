@@ -119,7 +119,7 @@ Distance between two clusters is the minimum distance between any pair of points
 - Can form elongated clusters.
 - Prone to the **Chaining Effect**.
 
-What is the Chaining Effect?
+**What is the Chaining Effect?**
 
 Imagine two groups connected by a few intermediate points. Single Linkage may merge them into one cluster because it only considers the closest pair of points.
 
