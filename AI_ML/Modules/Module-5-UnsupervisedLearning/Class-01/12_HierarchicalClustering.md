@@ -38,7 +38,7 @@ There are two main approaches:
 
 ![🌳 Hierarchical Clustering in Machine Learning | by Sharwari | Medium](https://images.openai.com/static-rsc-4/Nm2E2e-YUmf4L2gpG_81l4J2w_HKMoWlEVnOgieHreRX96jgdUkzprrTx_xqWJty3A0ZoXC6Y3N_aIjBTFS7C6ZLqqw7YrwUQU9lMfgWv3eW_xMktoJINPm3y8EZeuf0osv_SGhbBM99etZxZoP1BDxncmJzuSS2EFLz69zbN4s?purpose=inline)
 
-2\. Divisive Clustering (Top-Down)
+**2\. Divisive Clustering (Top-Down)**
 
 - Initially, all data points belong to one cluster.
 - The cluster is repeatedly divided into smaller clusters.
