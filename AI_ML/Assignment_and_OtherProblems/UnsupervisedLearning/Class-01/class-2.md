@@ -501,4 +501,82 @@ Remember the K-Means++ initialization strategy:
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q. You are given a dataset and you have to create groups of similar data points in the given dataset using the K-Means clustering algorithm. You need to divide the data into three groups. For this purpose, you have to choose 3 random centroids as the starting centroids for your dataset. Based on the given options and the information given below, which of the following will be the best choice for the start of the centroids?</b></summary>
+
+**A.** [(1,1), (1,2), (1,4)]
+
+**B.** [(1,1), (1,5), (1,10)]
+
+**C.** [(2,0), (2,5), (2,11)]
+
+**D.** [(3,3), (4,4), (5,5)]
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option C**
+
+**[(2,0), (2,5), (2,11)]**
+
+### Explanation
+
+In K-Means clustering, the initial placement of centroids plays an important role in determining the quality of clustering.
+
+If initial centroids are selected too close to each other, they may not represent different regions of the dataset effectively.
+
+Therefore, a good initialization generally aims to distribute the initial centroids across the dataset rather than concentrating them in one small region.
+
+### Why?
+
+Let's compare the given options.
+
+**Option A: [(1,1), (1,2), (1,4)]**
+
+- All three centroids are relatively close to each other.
+- They cover a small region of the feature space.
+- They may not represent the overall distribution of the dataset effectively.
+
+**Option B: [(1,1), (1,5), (1,10)]**
+
+- Centroids are more spread out along the Y-axis.
+- Their distribution is better than Option A.
+
+**Option C: [(2,0), (2,5), (2,11)]**
+
+- Centroids are distributed across a wider range along the Y-axis.
+- They provide good initial coverage of the available range.
+- This makes them the best choice among the given options according to the assignment.
+
+**Option D: [(3,3), (4,4), (5,5)]**
+
+- All three centroids are relatively close to each other.
+- They are concentrated in a small region.
+
+### Why are the other options incorrect?
+
+- **A:** Centroids are concentrated in a relatively small region.
+- **B:** Centroids are reasonably distributed, but cover a smaller range than Option C.
+- **C:** Correct. Centroids are distributed across a wider range.
+- **D:** Centroids are concentrated close to each other.
+
+### Interview takeaway
+
+Remember:
+
+- Poor initialization → Centroids may be concentrated in one region.
+- Better initialization → Centroids are distributed across different regions.
+- K-Means++ → Uses a distance-based probability strategy to select well-separated initial centroids.
+
+**Ultimate intuition:** Good centroid initialization should provide reasonable coverage of the dataset so that K-Means can discover meaningful clusters.
+
+**Important note:** The screenshot does not include the actual dataset or its distribution. Option C is marked as correct in the assignment. Its superiority cannot be independently established without seeing the underlying data.
+
+</details>
+</details>
+
+
 
