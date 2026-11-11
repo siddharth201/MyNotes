@@ -117,7 +117,7 @@ Distance between two clusters is the minimum distance between any pair of points
 ![An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/yLXZqUusLxmCAYGFqLwLzMbBNjzGzEpLAi9pzUc_g1SHBcLhb5CpmwnSUKBmKbGGpYbZWQqBoHQdNvk9aER3kxR-6H3yUl1q0vjAv3HEI3KPRuFgaSl0l9QYV8iLG7IjnanEVoNR_ApNtnBZ2PW0dI8j7VQgFdp0LCk052bRNUU?purpose=inline)
 
 - Can form elongated clusters.
-- [Prone to the **Chaining Effect**.]()
+- [Prone to the **Chaining Effect**.](https://github.com/siddharth201/MyNotes/blob/main/AI_ML/Modules/Module-5-UnsupervisedLearning/Misc/ChainingEffect.md)
 
 **What is the Chaining Effect?**
 
