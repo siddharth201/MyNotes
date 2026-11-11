@@ -58,7 +58,7 @@ Suppose we have five data points: A, B, C, D and E.
 ![Hierarchical Clustering: Complete Guide with Dendrograms, Linkage Criteria & Implementation - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/CRZQNKwr5ABWvK3CYaEJ_JZZ1qh-GXzb7RjAFyCuLUK2dpjhs8KJZLt7mSZ3eWSVlRMKFaYDMxI5hkKIDfFXCf9HIGVAWR2yc3Rm4FUoiL_2c_p7GNvQe48seSpEYo6oFf7sdFd_DGfppDWjnzTiXpxVDemJkGFTdBGvP5Yh-gU?purpose=inline)
 
 
-Step 1: Start with individual clusters.
+### Step 1: Start with individual clusters.
 
 Initially, every data point is its own cluster.
 
@@ -66,21 +66,21 @@ $\\{A\\},\\{B\\},\\{C\\},\\{D\\},\\{E\\}$
 
 We have five clusters.
 
-Step 2: Calculate distances.
+### Step 2: Calculate distances.
 
 Calculate the distances between data points using a distance metric such as Euclidean distance.
 
-Step 3: Merge the two closest clusters.
+### Step 3: Merge the two closest clusters.
 
 Suppose A and B are closest:
 
-\\[ \\{A\\},\\{B\\}\rightarrow\\{A,B\\} \\]
+$\\{A\\},\\{B\\}\rightarrow\\{A,B\\}$
 
 Now we have four clusters:
 
-\\[ \\{A,B\\},\\{C\\},\\{D\\},\\{E\\} \\]
+$ \\{A,B\\},\\{C\\},\\{D\\},\\{E\\} $
 
-Step 4: Recalculate distances between clusters.
+### Step 4: Recalculate distances between clusters.
 
 Now we need to calculate the distance between clusters, not just individual points.
 
