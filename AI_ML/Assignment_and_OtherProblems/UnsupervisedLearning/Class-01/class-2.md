@@ -927,7 +927,7 @@ Remember these Python and Scikit-learn concepts:
 
 
 <details>
-<summary><b>Q. Implement the K-Means Clustering Algorithm from Scratch</b></summary>
+<summary><b>Q.10 Implement the K-Means Clustering Algorithm from Scratch</b></summary>
 
 ### Problem Statement
 
@@ -1292,7 +1292,7 @@ One important distinction: This assignment provides initial centroids as input. 
 
 
 <details>
-<summary><b>Q. Implement the Elbow Method to Find Optimal K</b></summary>
+<summary><b>Q.11 Implement the Elbow Method to Find Optimal K</b></summary>
 
 ### Problem Statement
 
@@ -1533,7 +1533,7 @@ One conceptual distinction: The assignment's simplified maximum-drop rule is not
 
 
 <details>
-<summary><b>Q. Choose statements that are true for the Dunn Index. (Select all that apply.)</b></summary>
+<summary><b>Q.12 Choose statements that are true for the Dunn Index. (Select all that apply.)</b></summary>
 
 **A.** The numerator finds clusters with minimum inter-cluster distance.
 
@@ -1641,7 +1641,7 @@ $$\boxed{\text{Higher Dunn Index} \Rightarrow\text{Better Clustering}}$$
 
 
 <details>
-<summary><b>Q. Suppose a K-Means clustering algorithm was run with K = 4 and the following Silhouette Scores were obtained: 0.61, 0.67, 0.45, 0.63. What does this suggest?</b></summary>
+<summary><b>Q.13 Suppose a K-Means clustering algorithm was run with K = 4 and the following Silhouette Scores were obtained: 0.61, 0.67, 0.45, 0.63. What does this suggest?</b></summary>
 
 **A.** All clusters are well-separated.
 
