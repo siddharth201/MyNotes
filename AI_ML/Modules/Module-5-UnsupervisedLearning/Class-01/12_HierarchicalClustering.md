@@ -140,7 +140,7 @@ $$D(A,B)=\max\_{a\in A,b\in B}d(a,b)$$
 
 Distance between two clusters is the average distance between all cross-cluster pairs of points.
 
-\\[ D(A,B)= \frac{1}{|A||B|} \sum\_{a\in A}\sum\_{b\in B}d(a,b) \\]
+$$D(A,B)= \frac{1}{|A||B|} \sum\_{a\in A}\sum\_{b\in B}d(a,b)$$
 
 Intuition: Calculate all pairwise distances between the two clusters and take their average.
 
