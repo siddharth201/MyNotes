@@ -579,4 +579,112 @@ Remember:
 </details>
 
 
+---
+
+
+<details>
+<summary><b>Q. What does a high Silhouette Score imply in K-Means clustering?</b></summary>
+
+**A.** Clusters have high internal variance.
+
+**B.** Data points are poorly separated.
+
+**C.** Data points are well-clustered and distinct.
+
+**D.** All clusters have equal size.
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option C**
+
+**Data points are well-clustered and distinct.**
+
+### Explanation
+
+The Silhouette Score is an evaluation metric used to measure the quality of clustering.
+
+It evaluates two important properties:
+
+1. **Cohesion:** How close a data point is to other points within its own cluster.
+2. **Separation:** How far a data point is from points belonging to the nearest neighboring cluster.
+
+A high Silhouette Score indicates that:
+- Data points are close to their own cluster members.
+- Data points are well-separated from neighboring clusters.
+- Clusters are relatively compact and distinct.
+
+### Mathematical formula
+
+The Silhouette Score for an individual data point is calculated as:
+
+\[
+\boxed{s(i)=\frac{b(i)-a(i)}{\max(a(i),b(i))}}
+\]
+
+Where:
+
+- \(a(i)\) = Average distance between data point \(i\) and all other points in its own cluster.
+- \(b(i)\) = Minimum average distance between data point \(i\) and points belonging to another cluster (the nearest neighboring cluster).
+
+### Understanding the Silhouette Score
+
+The Silhouette Score ranges from -1 to +1.
+
+| Score | Interpretation |
+|---|---|
+| Close to +1 | Data point is well-clustered and well-separated. |
+| Close to 0 | Data point lies near the boundary between clusters. |
+| Close to -1 | Data point may have been assigned to the wrong cluster. |
+
+### Simple intuition
+
+Imagine we have two customer segments:
+
+- Cluster A: Customers who frequently purchase products.
+- Cluster B: Customers who rarely purchase products.
+
+**Case 1: High Silhouette Score**
+
+Customers are close to other customers in their own segment and far away from customers in the other segment.
+
+This indicates good clustering.
+
+**Case 2: Silhouette Score close to zero**
+
+Some customers are almost equally close to both segments.
+
+This indicates overlapping cluster boundaries.
+
+**Case 3: Negative Silhouette Score**
+
+A customer is closer, on average, to another cluster than to its assigned cluster.
+
+This may indicate incorrect cluster assignment.
+
+### Why are the other options incorrect?
+
+- **A. High internal variance:** Incorrect. High internal variance generally indicates that cluster members are spread out, reducing cluster compactness.
+- **B. Poorly separated data points:** Incorrect. Poor separation generally results in a lower Silhouette Score.
+- **C. Well-clustered and distinct data points:** Correct. A high Silhouette Score indicates good cohesion and separation.
+- **D. All clusters have equal size:** Incorrect. Silhouette Score does not require clusters to contain equal numbers of data points.
+
+### Interview takeaway
+
+Remember these three concepts:
+
+- **High Silhouette Score:** Good cohesion and separation.
+- **Score close to zero:** Possible overlap between clusters.
+- **Negative Silhouette Score:** Possible incorrect cluster assignment.
+
+**Ultimate intuition:** A good clustering algorithm should place similar data points together and keep dissimilar groups apart. The Silhouette Score measures how well this is achieved.
+
+</details>
+</details>
+
+
+---
+
+
+
 
