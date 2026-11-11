@@ -110,7 +110,7 @@ There are four commonly used linkage methods.
 
 Distance between two clusters is the minimum distance between any pair of points from the two clusters.
 
-$$D(A,B)=\min\_{a\in A,b\in B}d(a,b)$$
+**$$D(A,B)=\min\_{a\in A,b\in B}d(a,b)$$**
 
 **Intuition:** Find the closest pair of points between the two clusters.
 
