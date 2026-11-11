@@ -80,9 +80,7 @@ The maximum reduction is 500, which occurs between K = 1 and K = 2.
 
 Therefore, according to the assignment's indexing convention, the answer is:
 
-$$
-\boxed{Elbow\ K = 1}
-$$
+$$\boxed{Elbow\ K = 1}$$
 
 ### 4. Python implementation
 
