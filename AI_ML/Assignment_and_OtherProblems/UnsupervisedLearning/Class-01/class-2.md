@@ -1,6 +1,6 @@
 
 <details>
-<summary><b>Q. ClusterMart's original K-Means model produced messy segments for a group of customers whose behavior formed two interleaving crescent shapes rather than round blobs. Which K-Means assumption does this most directly violate?</b></summary>
+<summary><b>Q.1 ClusterMart's original K-Means model produced messy segments for a group of customers whose behavior formed two interleaving crescent shapes rather than round blobs. Which K-Means assumption does this most directly violate?</b></summary>
 
 **A.** Clusters must all have the same WCSS.
 
