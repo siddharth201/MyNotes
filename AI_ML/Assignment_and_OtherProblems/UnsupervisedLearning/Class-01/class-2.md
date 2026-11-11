@@ -1559,12 +1559,7 @@ The Dunn Index tries to maximize separation between clusters while minimizing th
 
 ### Mathematical formula
 
-$$
-\boxed{
-D = \frac{\text{Minimum Inter-cluster Distance}}
-{\text{Maximum Intra-cluster Distance}}
-}
-$$
+$$\boxed{D = \frac{\text{Minimum Inter-cluster Distance}}{\text{Maximum Intra-cluster Distance}}}$$
 
 Where:
 
@@ -1581,11 +1576,7 @@ It measures the distance between two different clusters.
 
 We consider the minimum distance across all pairs of distinct clusters:
 
-$$
-\boxed{
-\min_{i \neq j}\delta(C_i,C_j)
-}
-$$
+$$\boxed{\min_{i \neq j}\delta(C_i,C_j)}$$
 
 **Intuition:**
 
@@ -1603,11 +1594,7 @@ It measures the diameter of a cluster, generally defined as the maximum distance
 
 We consider the maximum diameter across all clusters:
 
-$$
-\boxed{
-\max_k \Delta(C_k)
-}
-$$
+$$\boxed{\max_k \Delta(C_k)}$$
 
 **Intuition:**
 
@@ -1645,12 +1632,7 @@ Remember this simple relationship:
 
 The Dunn Index rewards clustering solutions where even the closest two clusters are far apart, while even the largest cluster remains compact.
 
-$$
-\boxed{
-\text{Higher Dunn Index} \Rightarrow
-\text{Better Clustering}
-}
-$$
+$$\boxed{\text{Higher Dunn Index} \Rightarrow\text{Better Clustering}}$$
 
 </details>
 </details>
