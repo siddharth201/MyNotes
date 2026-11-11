@@ -219,7 +219,7 @@ $$\boxed{O(N)}$$
 
 Space Complexity:
 
-$$\\boxed\$$
+$$\boxed{O(N)}$$
 
 We create an additional list to store the consecutive WCSS differences.
 
