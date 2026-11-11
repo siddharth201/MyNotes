@@ -154,18 +154,18 @@ $$D(A,B)= \frac{1}{|A||B|} \sum\_{a\in A}\sum\_{b\in B}d(a,b)$$
 
 Ward's method merges the two clusters that produce the smallest increase in total within-cluster sum of squared errors.
 
-Simple intuition:
+**Simple intuition:**
 
 Aisa merge choose karna jisse clusters ke andar overall variation minimum increase ho.
 
 Its mathematical objective is:
 
-\\[ \boxed{ \Delta ESS\_{A,B}= \frac{|A||B|}{|A|+|B|} \\|\mu_A-\mu_B\\|^2 } \\]
+$$\boxed{ \Delta ESS\_{A,B}= \frac{|A||B|}{|A|+|B|} \\|\mu_A-\mu_B\\|^2 }$$
 
 Where:
 
-- \\(|A|\\), \\(|B|\\) = Number of data points in each cluster.
-- \\(\mu_A\\), \\(\mu_B\\) = Centroids of the two clusters.
+- $|A|$, $|B|$ = Number of data points in each cluster.
+- $\mu_A\\), \\(\mu_B\\) = Centroids of the two clusters.
 - \\(\Delta ESS\\) = Increase in within-cluster squared error after merging.
 
 ![Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/M3HnArZALdLlIK4fMlY6xUJISu7OuSmw6MSAEDyVfyxAePS_cLl4_ZDp30EaovAL0tBr0mp94y80LgdD4yYoX6ViWKsjvEu5e9-yCPvACAJqYDZ7z3U9EsFnwrcX-MBzKFA1RX67eHPxtr1RwOofAMkm82vDAB4ETt_-ojhOgMg?purpose=inline)
