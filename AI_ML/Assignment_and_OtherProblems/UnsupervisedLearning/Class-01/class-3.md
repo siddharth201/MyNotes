@@ -296,8 +296,7 @@ The assignment requires each centroid coordinate to be rounded to four decimal p
 
 ### 4. Complete execution flow
 
-```text
-<CodeBlock language="mermaid" editable>
+```mermaid
 flowchart TD
     A["Start: Input points, K, initial centroids"] --> B["Initialize centroids"]
     B --> C["Create K empty clusters"]
@@ -363,19 +362,5 @@ One important distinction: This assignment provides initial centroids as input. 
 </details>
 </details>
 
-```mermaid
-flowchart TD
-    A["Start: Input points, K, initial centroids"] --> B["Initialize centroids"]
-    B --> C["Create K empty clusters"]
-    C --> D["Calculate distance of each point from every centroid"]
-    D --> E["Assign each point to nearest centroid"]
-    E --> F["Calculate mean of each cluster"]
-    F --> G["Update centroids"]
-    G --> H{"Centroids changed?"}
-    H -->|"Yes"| I{"Iterations remaining?"}
-    I -->|"Yes"| C
-    I -->|"No"| J["Round centroid coordinates to 4 decimals"]
-    H -->|"No"| J
-    J --> K["Return final centroids"]
-```
+
     
