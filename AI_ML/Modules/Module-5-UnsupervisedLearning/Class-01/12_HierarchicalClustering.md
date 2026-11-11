@@ -28,7 +28,7 @@ There are two main approaches:
 ![Hierarchical Clustering: Agglomerative and Divisive Explained | Built In](https://images.openai.com/static-rsc-4/SU_q3Kl6o1rwHvNHdVsGuWUfjRNdOUqY-lZKdVPQ_gLEViO9e8jI6KizU2Op-EfJmmX4sNQmkhNX1TXyYJBEuXIDsXNDzblQMbFK7c3-YFYsqTum_v6Q9C_43LnY2llyGgi-SJPT4JPV8uSdKJj8f6wwHqIEW5v_h3bP9Abq6kU?purpose=inline)
 
 
-1\. Agglomerative Clustering (Bottom-Up)
+**1\. Agglomerative Clustering (Bottom-Up)**
 
 - Initially, every data point is a separate cluster.
 - The closest clusters are repeatedly merged.
