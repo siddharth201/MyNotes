@@ -618,9 +618,7 @@ A high Silhouette Score indicates that:
 
 The Silhouette Score for an individual data point is calculated as:
 
-\[
-\boxed{s(i)=\frac{b(i)-a(i)}{\max(a(i),b(i))}}
-\]
+$$\boxed{s(i)=\frac{b(i)-a(i)}{\max(a(i),b(i))}}$$
 
 Where:
 
