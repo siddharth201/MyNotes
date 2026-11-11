@@ -215,7 +215,7 @@ Let N be the number of WCSS values.
 
 Overall Time Complexity:
 
-$$\\boxed\$$
+$$\boxed{O(N)}$$
 
 Space Complexity:
 
