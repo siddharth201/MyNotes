@@ -926,6 +926,10 @@ Remember these Python and Scikit-learn concepts:
 ---
 
 
+This is a complete implementation-based assignment. Here we should understand the K-Means algorithm step by step, implement each stage, and verify the result using the given sample input.
+
+````
+
 <details>
 <summary><b>Q. Implement the K-Means Clustering Algorithm from Scratch</b></summary>
 
@@ -998,7 +1002,7 @@ We repeat these two operations until:
 ### 2. Python implementation
 
 ```python
-def k_means_clustering(points, k, initial_centroids, max_iterations):
+def kmeans(points, k, initial_centroids, max_iterations):
 
     # 1. Initialize centroids
     centroids = list(initial_centroids)
@@ -1095,7 +1099,9 @@ For every data point, we calculate its squared Euclidean distance from each cent
 
 Mathematically:
 
-$$d(P,C)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
+\[
+d(P,C)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+\]
 
 **Important:** We are calculating squared Euclidean distance without taking the square root.
 
@@ -1235,6 +1241,55 @@ flowchart TD
     H -->|"No"| J
     J --> K["Return final centroids"]
 
+````
 
+### 5. Time and Space Complexity
+
+Let:
+
+- N = Number of data points.
+- K = Number of clusters.
+- D = Number of features (2 in this assignment).
+- I = Number of iterations.
+
+| Operation                           | Time Complexity  |
+| ----------------------------------- | ---------------- |
+| Distance calculation and assignment | O(N × K × D)     |
+| Centroid update                     | O(N × D)         |
+| Total per iteration                 | O(N × K × D)     |
+| All iterations                      | O(I × N × K × D) |
+
+Overall Time Complexity:
+
+\\[ \boxed{O(I \times N \times K \times D)} \\]
+
+Space Complexity:
+
+\\[ \boxed{O(N+K\times D)} \\]
+
+We store the cluster assignments for N points and K centroids, each having D dimensions.
+
+### 6. Important implementation notes
+
+- Empty clusters: The assignment does not specify what to do if a cluster receives no points. Our implementation retains its previous centroid in that situation.
+- Convergence: We compare centroid coordinates without rounding. Rounding is performed only when returning the final result.
+- Distance: Squared Euclidean distance is sufficient for finding the nearest centroid.
+- Initialization: We use the supplied initial centroids rather than generating random ones.
+
+### Interview takeaway
+
+K-Means implementation revolves around two fundamental operations:
+
+1. Assignment: Assign every data point to its nearest centroid.
+2. Update: Recalculate each centroid using the mean of its assigned data points.
+
+Repeat these operations until convergence or the maximum iteration limit is reached.
+
+Ultimate intuition: K-Means repeatedly improves cluster membership and cluster centers until the grouping becomes stable.
+
+One important distinction: This assignment provides initial centroids as input. Therefore, we are implementing the core K-Means algorithm, not the K-Means++ initialization procedure.
+
+</details>
+</details>
 
 
