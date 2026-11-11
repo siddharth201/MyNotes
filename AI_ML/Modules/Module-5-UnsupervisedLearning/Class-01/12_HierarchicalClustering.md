@@ -98,7 +98,7 @@ Continue merging the closest clusters until all points become one cluster, or un
 
 ## 4. What is Linkage?
 
-Linkage defines how we calculate the distance between two clusters.
+Linkage defines **how we calculate the distance between two clusters**.
 
 Suppose we have two clusters, A and B, each containing multiple data points.
 
