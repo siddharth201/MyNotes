@@ -71,7 +71,7 @@ Remember:
 
 
 <details>
-<summary><b>Q. Marketing complains that the same customer dataset produces different customer segments every time the model is rerun. Which of the following directly addresses this issue?</b></summary>
+<summary><b>Q.2 Marketing complains that the same customer dataset produces different customer segments every time the model is rerun. Which of the following directly addresses this issue?</b></summary>
 
 **A.** Switch to Hierarchical Clustering.
 
@@ -180,7 +180,7 @@ Remember these three concepts:
 
 
 <details>
-<summary><b>Q. After switching to K-Means++, ClusterMart's model still produced a nonsensical straight-line split through two crescent-shaped customer segments. What does this tell the team?</b></summary>
+<summary><b>Q.3 After switching to K-Means++, ClusterMart's model still produced a nonsensical straight-line split through two crescent-shaped customer segments. What does this tell the team?</b></summary>
 
 **A.** K-Means++ was implemented incorrectly.
 
@@ -274,7 +274,7 @@ K-Means++ makes K-Means start smarter, but it does not make K-Means understand c
 
 
 <details>
-<summary><b>Q. On the WCSS vs. K elbow chart, what should you look for to choose a good value of K?</b></summary>
+<summary><b>Q.4 On the WCSS vs. K elbow chart, what should you look for to choose a good value of K?</b></summary>
 
 **A.** The highest point on the curve.
 
@@ -386,7 +386,7 @@ Remember:
 
 
 <details>
-<summary><b>Q. Which statement about K-Means++ is true?</b></summary>
+<summary><b>Q.5 Which statement about K-Means++ is true?</b></summary>
 
 **A.** It guarantees finding the perfect number of clusters automatically.
 
@@ -505,7 +505,7 @@ Remember the K-Means++ initialization strategy:
 
 
 <details>
-<summary><b>Q. You are given a dataset and you have to create groups of similar data points in the given dataset using the K-Means clustering algorithm. You need to divide the data into three groups. For this purpose, you have to choose 3 random centroids as the starting centroids for your dataset. Based on the given options and the information given below, which of the following will be the best choice for the start of the centroids?</b></summary>
+<summary><b>Q.6 You are given a dataset and you have to create groups of similar data points in the given dataset using the K-Means clustering algorithm. You need to divide the data into three groups. For this purpose, you have to choose 3 random centroids as the starting centroids for your dataset. Based on the given options and the information given below, which of the following will be the best choice for the start of the centroids?</b></summary>
 
 **A.** [(1,1), (1,2), (1,4)]
 
@@ -583,7 +583,7 @@ Remember:
 
 
 <details>
-<summary><b>Q. What does a high Silhouette Score imply in K-Means clustering?</b></summary>
+<summary><b>Q.7 What does a high Silhouette Score imply in K-Means clustering?</b></summary>
 
 **A.** Clusters have high internal variance.
 
@@ -685,7 +685,7 @@ Remember these three concepts:
 
 
 <details>
-<summary><b>Q. Which distance metric is predominantly used in both K-Means and K-Means++ Clustering?</b></summary>
+<summary><b>Q.8 Which distance metric is predominantly used in both K-Means and K-Means++ Clustering?</b></summary>
 
 **A.** Manhattan Distance
 
@@ -789,7 +789,7 @@ Remember:
 
 
 <details>
-<summary><b>Q. What will the following code output if run on a dataset with 3 clusters?</b></summary>
+<summary><b>Q.9 What will the following code output if run on a dataset with 3 clusters?</b></summary>
 
 ```python
 kmeans = KMeans(n_clusters=3, random_state=42).fit(X)
