@@ -363,6 +363,7 @@ One important distinction: This assignment provides initial centroids as input. 
 </details>
 </details>
 
+```
 flowchart TD
     A["Start: Input points, K, initial centroids"] --> B["Initialize centroids"]
     B --> C["Create K empty clusters"]
@@ -376,3 +377,5 @@ flowchart TD
     I -->|"No"| J["Round centroid coordinates to 4 decimals"]
     H -->|"No"| J
     J --> K["Return final centroids"]
+    
+    
