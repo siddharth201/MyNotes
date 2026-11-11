@@ -21,6 +21,8 @@ This creates a hierarchy of clusters.
 
 [ramseyelbasheer.blogspot.com](https://ramseyelbasheer.blogspot.com/2021/05/hierarchical-clustering-explained.html?utm_source=chatgpt.com)
 
+![Hierarchical clustering explained](https://images.openai.com/static-rsc-4/XrVX5Wvf_U6zjKegr17k-tC5kejNWt8xJ71Rs04ssgHKZrxnojiEr2xWo4AE35tV97_D5FqhaZbltG6q3YVDJIMxs_KH2I-ZLvUli8INHHsLiVehPPzO_3tzGOC6jrGpwLSk5dnx6V_N12U3OT3j1rHanGRxDNIpBZ-BYDcIRq8?purpose=inline)
+
 Key idea: Instead of directly creating a fixed number of clusters, Hierarchical Clustering builds a tree of relationships between data points. We can later decide where to cut this tree to get our desired clusters.
 
 ## 2. Types of Hierarchical Clustering
