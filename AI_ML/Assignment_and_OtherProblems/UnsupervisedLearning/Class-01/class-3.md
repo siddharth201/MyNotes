@@ -172,9 +172,7 @@ Python uses zero-based indexing, but the assignment expects a 1-based index.
 
 Therefore:
 
-$$
-Elbow\ K = 0 + 1 = 1
-$$
+$$Elbow\ K = 0 + 1 = 1$$
 
 **Step 4: Return the result**
 
@@ -217,15 +215,11 @@ Let N be the number of WCSS values.
 
 Overall Time Complexity:
 
-$$\
-\boxed\
-$$
+$$\\boxed\$$
 
 Space Complexity:
 
-$$\
-\boxed\
-$$
+$$\\boxed\$$
 
 We create an additional list to store the consecutive WCSS differences.
 
