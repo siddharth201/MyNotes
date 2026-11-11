@@ -60,9 +60,7 @@ We calculate the reduction between consecutive values.
 
 The mathematical formula is:
 
-$$
-Drop_i = WCSS_i - WCSS_{i+1}
-$$
+$$Drop_i = WCSS_i - WCSS_{i+1}$$
 
 Where:
 - $WCSS_i$ = WCSS value at position i.
