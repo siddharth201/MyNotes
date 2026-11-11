@@ -142,7 +142,7 @@ Distance between two clusters is the average distance between all cross-cluster 
 
 $$D(A,B)= \frac{1}{|A||B|} \sum\_{a\in A}\sum\_{b\in B}d(a,b)$$
 
-Intuition: Calculate all pairwise distances between the two clusters and take their average.
+**Intuition:** Calculate all pairwise distances between the two clusters and take their average.
 
 ![Definitive Guide to Hierarchical Clustering with Python and Scikit-Learn](https://images.openai.com/static-rsc-4/HVA-MwyrF7tPvmCTyQewialB_E8PeVJ1UMreVMKMcZMEzwE-YhGmSHbmr3T1yldkHpeCa5awm_d9KdoET5gX6csYRY0d4yXG73t9gnkdMKKcba5c6_BbhJ4j7yPwi9s4GQMtAO4MhJkSJIYCUbay5Q-1qsy7yFp6aNuQyKZFh3s?purpose=inline)
 
