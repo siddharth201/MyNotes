@@ -194,8 +194,10 @@ The function returns:
 
 ### 6. Complete execution flow
 
-<CodeBlock language="mermaid" editable>
-```mermaid
+<CodeBlock language="mermaid" editable>  
+
+```mermaid  
+
 flowchart TD
     A["Input WCSS values"] --> B["Calculate consecutive differences"]
     B --> C["Store differences in a list"]
