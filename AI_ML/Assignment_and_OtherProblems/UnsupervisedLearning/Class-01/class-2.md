@@ -431,21 +431,17 @@ For every remaining data point, calculate its squared distance from the nearest 
 
 We represent this distance as:
 
-\[
-D(x)^2
-\]
+$$D(x)^2$$
 
 Where:
-- \(x\) = A data point.
-- \(D(x)\) = Distance from the nearest selected centroid.
+- $x$ = A data point.
+- $D(x)$ = Distance from the nearest selected centroid.
 
 **Step 3: Calculate selection probabilities.**
 
 The probability of selecting a data point as the next centroid is proportional to its squared distance from the nearest selected centroid.
 
-\[
-P(x) = \frac{D(x)^2}{\sum_{i=1}^{n}D(x_i)^2}
-\]
+$$P(x) = \frac{D(x)^2}{\sum_{i=1}^{n}D(x_i)^2}$$
 
 This means:
 
