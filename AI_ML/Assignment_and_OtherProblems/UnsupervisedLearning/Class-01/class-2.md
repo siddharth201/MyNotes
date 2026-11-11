@@ -385,4 +385,124 @@ Remember:
 ---
 
 
+<details>
+<summary><b>Q. Which statement about K-Means++ is true?</b></summary>
+
+**A.** It guarantees finding the perfect number of clusters automatically.
+
+**B.** It selects all centroids completely at random, with equal probability.
+
+**C.** It picks the first centroid randomly, then favors farther-away points for each subsequent centroid.
+
+**D.** It removes the need to choose K entirely.
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option C**
+
+**It picks the first centroid randomly, then favors farther-away points for each subsequent centroid.**
+
+### Explanation
+
+K-Means++ is an improved initialization technique for the K-Means clustering algorithm.
+
+Its primary objective is to select initial centroids that are reasonably well-separated from each other.
+
+In standard K-Means, randomly selecting initial centroids can sometimes result in poor initialization, which may lead to:
+- Poor clustering results.
+- Slower convergence.
+- Higher WCSS.
+- Different clustering outcomes across different initializations.
+
+K-Means++ addresses this problem by selecting initial centroids strategically using a distance-based probability distribution.
+
+### How does K-Means++ work?
+
+Let's understand its steps.
+
+**Step 1: Select the first centroid randomly.**
+
+Choose one data point randomly from the dataset as the first centroid.
+
+**Step 2: Calculate the distance from the nearest selected centroid.**
+
+For every remaining data point, calculate its squared distance from the nearest already selected centroid.
+
+We represent this distance as:
+
+\[
+D(x)^2
+\]
+
+Where:
+- \(x\) = A data point.
+- \(D(x)\) = Distance from the nearest selected centroid.
+
+**Step 3: Calculate selection probabilities.**
+
+The probability of selecting a data point as the next centroid is proportional to its squared distance from the nearest selected centroid.
+
+\[
+P(x) = \frac{D(x)^2}{\sum_{i=1}^{n}D(x_i)^2}
+\]
+
+This means:
+
+- Points closer to existing centroids have lower selection probabilities.
+- Points farther from existing centroids have higher selection probabilities.
+
+**Step 4: Select the next centroid.**
+
+Select the next centroid using the calculated probability distribution.
+
+**Step 5: Repeat.**
+
+Repeat the distance calculation and probabilistic selection until K initial centroids have been selected.
+
+Finally, execute the standard K-Means algorithm.
+
+### Numerical intuition
+
+Suppose we have four data points with the following squared distances from their nearest selected centroid:
+
+| Data Point | Squared Distance | Selection Probability |
+|---|---:|---:|
+| A | 1 | 1/30 = 3.33% |
+| B | 4 | 4/30 = 13.33% |
+| C | 9 | 9/30 = 30% |
+| D | 16 | 16/30 = 53.33% |
+| **Total** | **30** | **100%** |
+
+Notice:
+
+- Point A has only a 3.33% chance of being selected.
+- Point D has a 53.33% chance of being selected.
+
+Therefore, point D is more likely to become the next centroid because it is farther away from the existing centroid.
+
+**Important:** K-Means++ does not always select the farthest point. It selects probabilistically, favoring points with larger squared distances.
+
+### Why are the other options incorrect?
+
+- **A. Guarantees finding the perfect number of clusters:** Incorrect. K-Means++ improves centroid initialization but does not automatically determine the optimal K. We still need to choose K.
+- **B. Selects all centroids completely at random:** Incorrect. Only the first centroid is selected randomly. Subsequent centroids are selected using a distance-based probability distribution.
+- **C. First centroid randomly, then favors farther-away points:** Correct. This describes the fundamental initialization strategy of K-Means++.
+- **D. Removes the need to choose K:** Incorrect. K-Means++ still requires the number of clusters (K) as an input.
+
+### Interview takeaway
+
+Remember the K-Means++ initialization strategy:
+
+1. First centroid → Random selection.
+2. Calculate squared distances → Distance from the nearest selected centroid.
+3. Next centroid → Probability proportional to squared distance.
+4. Repeat → Until K centroids are selected.
+5. Run standard K-Means → Assignment and centroid update steps.
+
+**Ultimate intuition:** K-Means++ tries to spread initial centroids across the dataset instead of allowing them to be randomly concentrated in one region.
+
+</details>
+</details>
+
 
