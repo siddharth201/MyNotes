@@ -129,7 +129,7 @@ Distance between two clusters is the maximum distance between any pair of points
 
 $$D(A,B)=\max\_{a\in A,b\in B}d(a,b)$$
 
-Intuition: Find the farthest pair of points between the two clusters.
+**Intuition:** Find the farthest pair of points between the two clusters.
 
 ![An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/tBgQRHO8khDZ8EGelwzKWq53AHkqkRKF3bfXL3tyU0vHxaPB6jxUZ_ZqW8m0vM1ZYhz12VdYlKXd1yDErVmBkEUGSzIes9x4rpcY3dFWqsmK1JVNRG0iMYIeDOFKflMrfAf-uC8lqcjswu5rdBlWiPVt57N3mnUiyMncVHEbEHQ?purpose=inline)
 
