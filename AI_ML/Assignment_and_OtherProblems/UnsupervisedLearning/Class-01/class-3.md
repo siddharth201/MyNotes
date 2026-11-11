@@ -1,6 +1,4 @@
-This is a complete implementation-based assignment. Here we should understand the K-Means algorithm step by step, implement each stage, and verify the result using the given sample input.
 
-````
 
 <details>
 <summary><b>Q. Implement the K-Means Clustering Algorithm from Scratch</b></summary>
@@ -313,7 +311,6 @@ flowchart TD
     H -->|"No"| J
     J --> K["Return final centroids"]
 
-````
 
 ### 5. Time and Space Complexity
 
@@ -360,3 +357,6 @@ Repeat these operations until convergence or the maximum iteration limit is reac
 Ultimate intuition: K-Means repeatedly improves cluster membership and cluster centers until the grouping becomes stable.
 
 One important distinction: This assignment provides initial centroids as input. Therefore, we are implementing the core K-Means algorithm, not the K-Means++ initialization procedure.
+
+</details>
+</details>
