@@ -86,9 +86,9 @@ Now we need to calculate the distance between clusters, not just individual poin
 
 But how do we calculate the distance between two clusters containing multiple points?
 
-This is where Linkage comes into the picture.
+This is where **Linkage** comes into the picture.
 
-Step 5: Repeat the process.
+### Step 5: Repeat the process.
 
 Continue merging the closest clusters until all points become one cluster, or until the desired number of clusters is reached.
 
