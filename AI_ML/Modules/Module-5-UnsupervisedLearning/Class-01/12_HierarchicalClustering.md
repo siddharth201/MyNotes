@@ -242,8 +242,8 @@ We can build the full hierarchy without deciding \\(K\\) beforehand. However, to
 
 Let:
 
-- \\(N\\) = Number of data points.
-- \\(d\\) = Number of features.
+- $N$ = Number of data points.
+- $d$ = Number of features.
 
 Hierarchical Clustering can become computationally expensive because it needs to consider relationships between many data points.
 
@@ -253,11 +253,11 @@ A pairwise distance matrix stores distances between every pair of data points.
 
 Its size grows approximately as:
 
-\\[ N\times N \\]
+$N\times N$
 
 Therefore:
 
-\\[ \boxed{O(N^2)\text{ space}} \\]
+$\boxed{O(N^2)\text{ space}}$
 
 ### Time Complexity
 
@@ -267,12 +267,12 @@ For example, optimized implementations in SciPy have the following complexities:
 
 | Linkage method | Time complexity |
 | -------------- | --------------- |
-| Single         | \\(O(N^2)\\)    |
-| Complete       | \\(O(N^2)\\)    |
-| Average        | \\(O(N^2)\\)    |
-| Ward           | \\(O(N^2)\\)    |
+| Single         | $O(N^2)$        |
+| Complete       | $O(N^2)$        |
+| Average        | $O(N^2)$        |
+| Ward           | $O(N^2)$        |
 
-Simpler implementations can require \\(O(N^3)\\) time.
+Simpler implementations can require $O(N^3)$ time.
 
 Interview takeaway: Hierarchical Clustering can become expensive in both time and memory for large datasets. There is no universal dataset-size cutoff; practical feasibility depends on the implementation, hardware and dataset.
 
@@ -299,7 +299,7 @@ Advantages
 
 Disadvantages
 
-1. Can require \\(O(N^2)\\) memory.
+1. Can require $O(N^2)$ memory.
 2. Can be computationally expensive for large datasets.
 3. Agglomerative merging decisions cannot be reversed.
 4. Results depend on the distance metric and linkage method.
@@ -309,7 +309,7 @@ Disadvantages
 
 ### A. Using Scikit-learn
 
-```
+```python
 from sklearn.cluster import AgglomerativeClusteringmodel = AgglomerativeClustering(    n_clusters=3,    metric="euclidean",    linkage="ward")labels = model.fit_predict(X)print("Cluster Labels:")print(labels)
 ```
 
@@ -322,7 +322,7 @@ Understanding the parameters:
 
 We can also use a distance threshold instead of specifying the number of clusters:
 
-```
+```python
 model = AgglomerativeClustering(    n_clusters=None,    distance_threshold=10,    linkage="ward")labels = model.fit_predict(X)
 ```
 
@@ -330,7 +330,7 @@ Here, merging stops when the distance threshold is reached. The value `10` is ju
 
 ### B. Visualizing a Dendrogram using SciPy
 
-```
+```python
 import matplotlib.pyplot as pltfrom scipy.cluster.hierarchy import dendrogram, linkage# Build hierarchical clusteringZ = linkage(X, method="ward")# Plot dendrogramplt.figure(figsize=(10, 5))dendrogram(Z)plt.title("Hierarchical Clustering Dendrogram")plt.xlabel("Data Points")plt.ylabel("Merge Distance")plt.show()
 ```
 
@@ -360,7 +360,7 @@ Four important Linkage methods:
 
 Complexity reminder:
 
-- Space: Commonly \\(O(N^2)\\).
+- Space: Commonly $O(N^2)$.
 - Time: Depends on implementation and linkage method.
 
 ## 12. Check Your Understanding
