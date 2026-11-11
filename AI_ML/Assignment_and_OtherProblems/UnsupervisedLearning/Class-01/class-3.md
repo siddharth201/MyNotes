@@ -195,6 +195,7 @@ The function returns:
 ### 6. Complete execution flow
 
 <CodeBlock language="mermaid" editable>
+```mermaid
 flowchart TD
     A["Input WCSS values"] --> B["Calculate consecutive differences"]
     B --> C["Store differences in a list"]
@@ -202,7 +203,7 @@ flowchart TD
     D --> E["Find index of maximum difference"]
     E --> F["Convert zero-based index to 1-based index"]
     F --> G["Return elbow K"]
-
+```
 
 
 ### 7. Time and Space Complexity
