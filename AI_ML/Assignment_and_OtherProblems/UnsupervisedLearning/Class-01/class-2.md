@@ -716,47 +716,32 @@ K-Means++ also uses squared Euclidean distances during centroid initialization t
 
 For two points in a 2-dimensional space:
 
-\[
-P=(x_1,y_1), \quad Q=(x_2,y_2)
-\]
+$$P=(x_1,y_1), \quad Q=(x_2,y_2)$$
 
 Euclidean Distance is:
 
-\[
-\boxed{d(P,Q)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}
-\]
+$$\boxed{d(P,Q)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}$$
 
 For a d-dimensional space:
 
-\[
-d(P,Q)=\sqrt{\sum_{j=1}^{d}(p_j-q_j)^2}
-\]
+$$d(P,Q)=\sqrt{\sum_{j=1}^{d}(p_j-q_j)^2}$$
 
 ### Numerical example
 
 Suppose we have two points:
 
-\[
-P=(2,3), \quad Q=(5,7)
-\]
+$P=(2,3), \quad Q=(5,7)$
+
 
 Applying the Euclidean Distance formula:
 
-\[
-d(P,Q)=\sqrt{(5-2)^2+(7-3)^2}
-\]
+$d(P,Q)=\sqrt{(5-2)^2+(7-3)^2}$
 
-\[
-=\sqrt{3^2+4^2}
-\]
+$=\sqrt{3^2+4^2}$
 
-\[
-=\sqrt{9+16}
-\]
+$=\sqrt{9+16}$
 
-\[
-=\sqrt{25}=\boxed{5}
-\]
+$=\sqrt{25}=\boxed{5}$
 
 Therefore, the Euclidean distance between these two points is 5 units.
 
@@ -764,10 +749,10 @@ Therefore, the Euclidean distance between these two points is 5 units.
 
 K-Means minimizes the Within-Cluster Sum of Squares (WCSS).
 
-\[
+$
 WCSS=\sum_{j=1}^{K}\sum_{x_i\in C_j}
 \|x_i-\mu_j\|^2
-\]
+$
 
 Here, the squared Euclidean distance measures how far each data point is from its assigned cluster centroid.
 
