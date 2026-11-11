@@ -296,6 +296,7 @@ The assignment requires each centroid coordinate to be rounded to four decimal p
 
 ### 4. Complete execution flow
 
+```text
 <CodeBlock language="mermaid" editable>
 flowchart TD
     A["Start: Input points, K, initial centroids"] --> B["Initialize centroids"]
@@ -310,6 +311,7 @@ flowchart TD
     I -->|"No"| J["Round centroid coordinates to 4 decimals"]
     H -->|"No"| J
     J --> K["Return final centroids"]
+```
 
 
 ### 5. Time and Space Complexity
