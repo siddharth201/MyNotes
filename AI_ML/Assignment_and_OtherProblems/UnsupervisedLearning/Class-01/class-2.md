@@ -1637,4 +1637,82 @@ $$\boxed{\text{Higher Dunn Index} \Rightarrow\text{Better Clustering}}$$
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q. Suppose a K-Means clustering algorithm was run with K = 4 and the following Silhouette Scores were obtained: 0.61, 0.67, 0.45, 0.63. What does this suggest?</b></summary>
+
+**A.** All clusters are well-separated.
+
+**B.** The third cluster might be poorly defined.
+
+**C.** Optimal value of K is 4.
+
+**D.** Inertia is zero.
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option B**
+
+**The third cluster might be poorly defined.**
+
+### Explanation
+
+The Silhouette Score measures the quality of clustering by evaluating two important properties:
+
+1. **Cohesion:** How closely a data point is grouped with other points in its own cluster.
+2. **Separation:** How far a data point is from points belonging to other clusters.
+
+The Silhouette Score ranges from -1 to +1.
+
+- Close to +1 → Data points are well-clustered and well-separated.
+- Close to 0 → Data points may lie near the boundary between clusters.
+- Close to -1 → Data points may have been assigned to the wrong cluster.
+
+### Why?
+
+We are given four Silhouette Scores corresponding to four clusters:
+
+| Cluster | Silhouette Score | Interpretation |
+|---|---:|---|
+| Cluster 1 | 0.61 | Good clustering |
+| Cluster 2 | 0.67 | Good clustering |
+| Cluster 3 | 0.45 | Comparatively weaker clustering |
+| Cluster 4 | 0.63 | Good clustering |
+
+Notice that Cluster 3 has the lowest Silhouette Score (0.45).
+
+This suggests that Cluster 3 may have:
+- Less compact data points.
+- Greater overlap with neighboring clusters.
+- Comparatively weaker separation from other clusters.
+
+Therefore, the third cluster might be less well-defined than the other three clusters.
+
+**Important:** A score of 0.45 is still positive and indicates some degree of meaningful clustering. It does not necessarily mean that Cluster 3 is poorly clustered; it is simply weaker relative to the other clusters.
+
+### Why are the other options incorrect?
+
+- **A. All clusters are well-separated:** Incorrect. Cluster 3 has a comparatively lower score, suggesting weaker separation.
+- **B. The third cluster might be poorly defined:** Correct. It has the lowest Silhouette Score among the four clusters.
+- **C. Optimal value of K is 4:** Incorrect. These scores evaluate the clustering obtained with K = 4. To determine whether K = 4 is optimal, we need to compare clustering quality across different K values.
+- **D. Inertia is zero:** Incorrect. Silhouette Scores do not provide information about whether inertia is zero. Inertia measures the sum of squared distances between data points and their assigned centroids.
+
+### Interview takeaway
+
+Remember:
+
+- Higher Silhouette Score → Better cohesion and separation.
+- Score close to zero → Possible overlapping clusters.
+- Negative Score → Possible incorrect cluster assignment.
+- Comparing scores across different K values → Helps evaluate the choice of cluster count.
+
+**Ultimate intuition:** Even when most clusters are well-defined, a comparatively lower Silhouette Score for one cluster can indicate that its data points are not grouped as effectively as the others.
+
+</details>
+</details>
+
+
 
