@@ -17,10 +17,6 @@ Imagine a school with 100 students.
 
 This creates a hierarchy of clusters.
 
-[Hierarchical clustering explained](https://images.openai.com/static-rsc-4/XrVX5Wvf_U6zjKegr17k-tC5kejNWt8xJ71Rs04ssgHKZrxnojiEr2xWo4AE35tV97_D5FqhaZbltG6q3YVDJIMxs_KH2I-ZLvUli8INHHsLiVehPPzO_3tzGOC6jrGpwLSk5dnx6V_N12U3OT3j1rHanGRxDNIpBZ-BYDcIRq8?purpose=inline)
-
-[ramseyelbasheer.blogspot.com](https://ramseyelbasheer.blogspot.com/2021/05/hierarchical-clustering-explained.html?utm_source=chatgpt.com)
-
 ![Hierarchical clustering explained](https://images.openai.com/static-rsc-4/XrVX5Wvf_U6zjKegr17k-tC5kejNWt8xJ71Rs04ssgHKZrxnojiEr2xWo4AE35tV97_D5FqhaZbltG6q3YVDJIMxs_KH2I-ZLvUli8INHHsLiVehPPzO_3tzGOC6jrGpwLSk5dnx6V_N12U3OT3j1rHanGRxDNIpBZ-BYDcIRq8?purpose=inline)
 
 Key idea: Instead of directly creating a fixed number of clusters, Hierarchical Clustering builds a tree of relationships between data points. We can later decide where to cut this tree to get our desired clusters.
@@ -29,7 +25,7 @@ Key idea: Instead of directly creating a fixed number of clusters, Hierarchical 
 
 There are two main approaches:
 
-[Hierarchical Clustering: Agglomerative and Divisive Explained | Built In](https://images.openai.com/static-rsc-4/SU_q3Kl6o1rwHvNHdVsGuWUfjRNdOUqY-lZKdVPQ_gLEViO9e8jI6KizU2Op-EfJmmX4sNQmkhNX1TXyYJBEuXIDsXNDzblQMbFK7c3-YFYsqTum_v6Q9C_43LnY2llyGgi-SJPT4JPV8uSdKJj8f6wwHqIEW5v_h3bP9Abq6kU?purpose=inline)
+![Hierarchical Clustering: Agglomerative and Divisive Explained | Built In](https://images.openai.com/static-rsc-4/SU_q3Kl6o1rwHvNHdVsGuWUfjRNdOUqY-lZKdVPQ_gLEViO9e8jI6KizU2Op-EfJmmX4sNQmkhNX1TXyYJBEuXIDsXNDzblQMbFK7c3-YFYsqTum_v6Q9C_43LnY2llyGgi-SJPT4JPV8uSdKJj8f6wwHqIEW5v_h3bP9Abq6kU?purpose=inline)
 
 1\. Agglomerative Clustering (Bottom-Up)
 
@@ -39,7 +35,7 @@ There are two main approaches:
 
   More commonly used
 
-[🌳 Hierarchical Clustering in Machine Learning | by Sharwari | Medium](https://images.openai.com/static-rsc-4/Nm2E2e-YUmf4L2gpG_81l4J2w_HKMoWlEVnOgieHreRX96jgdUkzprrTx_xqWJty3A0ZoXC6Y3N_aIjBTFS7C6ZLqqw7YrwUQU9lMfgWv3eW_xMktoJINPm3y8EZeuf0osv_SGhbBM99etZxZoP1BDxncmJzuSS2EFLz69zbN4s?purpose=inline)
+![🌳 Hierarchical Clustering in Machine Learning | by Sharwari | Medium](https://images.openai.com/static-rsc-4/Nm2E2e-YUmf4L2gpG_81l4J2w_HKMoWlEVnOgieHreRX96jgdUkzprrTx_xqWJty3A0ZoXC6Y3N_aIjBTFS7C6ZLqqw7YrwUQU9lMfgWv3eW_xMktoJINPm3y8EZeuf0osv_SGhbBM99etZxZoP1BDxncmJzuSS2EFLz69zbN4s?purpose=inline)
 
 2\. Divisive Clustering (Top-Down)
 
@@ -58,9 +54,8 @@ We will mainly focus on Agglomerative Clustering because it is more commonly use
 
 Suppose we have five data points: A, B, C, D and E.
 
-[Hierarchical Clustering: Complete Guide with Dendrograms, Linkage Criteria & Implementation - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/CRZQNKwr5ABWvK3CYaEJ_JZZ1qh-GXzb7RjAFyCuLUK2dpjhs8KJZLt7mSZ3eWSVlRMKFaYDMxI5hkKIDfFXCf9HIGVAWR2yc3Rm4FUoiL_2c_p7GNvQe48seSpEYo6oFf7sdFd_DGfppDWjnzTiXpxVDemJkGFTdBGvP5Yh-gU?purpose=inline)
+![Hierarchical Clustering: Complete Guide with Dendrograms, Linkage Criteria & Implementation - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/CRZQNKwr5ABWvK3CYaEJ_JZZ1qh-GXzb7RjAFyCuLUK2dpjhs8KJZLt7mSZ3eWSVlRMKFaYDMxI5hkKIDfFXCf9HIGVAWR2yc3Rm4FUoiL_2c_p7GNvQe48seSpEYo6oFf7sdFd_DGfppDWjnzTiXpxVDemJkGFTdBGvP5Yh-gU?purpose=inline)
 
-[mbrenndoerfer.com](https://mbrenndoerfer.com/writing/hierarchical-clustering-complete-guide-dendrograms-linkage-criteria?utm_source=chatgpt.com)
 
 Step 1: Start with individual clusters.
 
@@ -96,7 +91,7 @@ Step 5: Repeat the process.
 
 Continue merging the closest clusters until all points become one cluster, or until the desired number of clusters is reached.
 
-[The Beginner’s Guide to Clustering in Machine Learning | by Utsav Desai | Medium](https://images.openai.com/static-rsc-4/YIVFX04JFGrCRlEgijAMmDTy5jL6DAoX4Z29FxXKR4C8Zbz7prkijlhsSN7M5sZbwGb-92VEI9H_JFjWYSQSLgQUDyDFFvCxYF16Y-eeArwMKX0cPrIa5wdg0UQTTJRdTvnZ1D-xg3bZTbOBVwpPI6qASYbZNC7HQqbGcgonC1k?purpose=inline)
+![The Beginner’s Guide to Clustering in Machine Learning | by Utsav Desai | Medium](https://images.openai.com/static-rsc-4/YIVFX04JFGrCRlEgijAMmDTy5jL6DAoX4Z29FxXKR4C8Zbz7prkijlhsSN7M5sZbwGb-92VEI9H_JFjWYSQSLgQUDyDFFvCxYF16Y-eeArwMKX0cPrIa5wdg0UQTTJRdTvnZ1D-xg3bZTbOBVwpPI6qASYbZNC7HQqbGcgonC1k?purpose=inline)
 
 [utsavdesai26.medium.com](https://utsavdesai26.medium.com/the-beginners-guide-to-clustering-in-machine-learning-331987a7ceaf?utm_source=chatgpt.com)
 
