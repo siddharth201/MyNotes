@@ -78,7 +78,7 @@ $\\{A\\},\\{B\\}\rightarrow\\{A,B\\}$
 
 Now we have four clusters:
 
-$ \\{A,B\\},\\{C\\},\\{D\\},\\{E\\} $
+$\\{A,B\\},\\{C\\},\\{D\\},\\{E\\}$
 
 ### Step 4: Recalculate distances between clusters.
 
