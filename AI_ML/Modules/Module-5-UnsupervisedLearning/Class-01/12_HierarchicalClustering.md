@@ -94,7 +94,7 @@ Continue merging the closest clusters until all points become one cluster, or un
 
 ![The Beginner’s Guide to Clustering in Machine Learning | by Utsav Desai | Medium](https://images.openai.com/static-rsc-4/YIVFX04JFGrCRlEgijAMmDTy5jL6DAoX4Z29FxXKR4C8Zbz7prkijlhsSN7M5sZbwGb-92VEI9H_JFjWYSQSLgQUDyDFFvCxYF16Y-eeArwMKX0cPrIa5wdg0UQTTJRdTvnZ1D-xg3bZTbOBVwpPI6qASYbZNC7HQqbGcgonC1k?purpose=inline)
 
-Important: Agglomerative Clustering is greedy and irreversible. Once two clusters are merged, the algorithm does not undo that decision later.
+**Important:** Agglomerative Clustering is greedy and irreversible. Once two clusters are merged, the algorithm does not undo that decision later.
 
 ## 4. What is Linkage?
 
