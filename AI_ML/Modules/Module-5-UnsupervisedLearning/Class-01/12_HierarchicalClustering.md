@@ -62,7 +62,7 @@ Step 1: Start with individual clusters.
 
 Initially, every data point is its own cluster.
 
-\\[ \\{A\\},\\{B\\},\\{C\\},\\{D\\},\\{E\\} \\]
+$\\{A\\},\\{B\\},\\{C\\},\\{D\\},\\{E\\}$
 
 We have five clusters.
 
