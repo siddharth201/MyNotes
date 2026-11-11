@@ -1529,3 +1529,130 @@ One conceptual distinction: The assignment's simplified maximum-drop rule is not
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q. Choose statements that are true for the Dunn Index. (Select all that apply.)</b></summary>
+
+**A.** The numerator finds clusters with minimum inter-cluster distance.
+
+**B.** The numerator finds clusters with maximum inter-cluster distance.
+
+**C.** The denominator finds clusters with maximum intra-cluster distance.
+
+**D.** The denominator finds clusters with minimum intra-cluster distance.
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answers: Option A and Option C**
+
+### Explanation
+
+The Dunn Index is a clustering evaluation metric used to measure the quality of clustering by considering two important properties:
+
+1. **Inter-cluster distance:** Measures the separation between different clusters.
+2. **Intra-cluster distance:** Measures the spread or diameter of individual clusters.
+
+The Dunn Index tries to maximize separation between clusters while minimizing the spread within individual clusters.
+
+### Mathematical formula
+
+$$
+\boxed{
+D = \frac{\text{Minimum Inter-cluster Distance}}
+{\text{Maximum Intra-cluster Distance}}
+}
+$$
+
+Where:
+
+- **Numerator:** Minimum distance between any two different clusters.
+- **Denominator:** Maximum diameter (intra-cluster distance) among all clusters.
+
+### Understanding the numerator
+
+The numerator calculates the minimum inter-cluster distance.
+
+$$\delta(C_i,C_j)$$
+
+It measures the distance between two different clusters.
+
+We consider the minimum distance across all pairs of distinct clusters:
+
+$$
+\boxed{
+\min_{i \neq j}\delta(C_i,C_j)
+}
+$$
+
+**Intuition:**
+
+We look for the two clusters that are closest to each other.
+
+A larger minimum inter-cluster distance indicates better separation between clusters.
+
+### Understanding the denominator
+
+The denominator calculates the maximum intra-cluster distance.
+
+$$\Delta(C_k)$$
+
+It measures the diameter of a cluster, generally defined as the maximum distance between any two data points within that cluster.
+
+We consider the maximum diameter across all clusters:
+
+$$
+\boxed{
+\max_k \Delta(C_k)
+}
+$$
+
+**Intuition:**
+
+We look for the cluster that has the largest internal spread.
+
+A smaller maximum intra-cluster distance indicates more compact clusters.
+
+### Why are the other options incorrect?
+
+- **A. Minimum inter-cluster distance:** Correct. The numerator considers the minimum separation between any two distinct clusters.
+- **B. Maximum inter-cluster distance:** Incorrect. The Dunn Index considers minimum inter-cluster separation, not maximum separation.
+- **C. Maximum intra-cluster distance:** Correct. The denominator considers the largest cluster diameter.
+- **D. Minimum intra-cluster distance:** Incorrect. The denominator considers the maximum intra-cluster distance to account for the least compact cluster.
+
+### What does a high Dunn Index indicate?
+
+A high Dunn Index indicates:
+
+- Clusters are well-separated.
+- Clusters are internally compact.
+- The overall clustering structure is better.
+
+A low Dunn Index indicates poor separation, large internal cluster spread, or both.
+
+### Interview takeaway
+
+Remember this simple relationship:
+
+| Component | What we consider | Objective |
+|---|---|---|
+| Numerator | Minimum inter-cluster distance | Maximize separation |
+| Denominator | Maximum intra-cluster distance | Minimize cluster spread |
+
+**Ultimate intuition:**
+
+The Dunn Index rewards clustering solutions where even the closest two clusters are far apart, while even the largest cluster remains compact.
+
+$$
+\boxed{
+\text{Higher Dunn Index} \Rightarrow
+\text{Better Clustering}
+}
+$$
+
+</details>
+</details>
+
+
