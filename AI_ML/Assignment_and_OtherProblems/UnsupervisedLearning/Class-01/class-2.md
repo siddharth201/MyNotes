@@ -785,5 +785,144 @@ Remember:
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q. What will the following code output if run on a dataset with 3 clusters?</b></summary>
+
+```python
+kmeans = KMeans(n_clusters=3, random_state=42).fit(X)
+labels = kmeans.predict(X)
+len(set(labels))
+```
+
+**A.** 1
+
+**B.** 2
+
+**C.** 3
+
+**D.** Error
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option C**
+
+**Output: 3**
+
+### Explanation
+
+This question tests our understanding of K-Means cluster labels, the `predict()` method, and Python's `set()` function.
+
+Let's understand the code step by step.
+
+### 1. Initialize and train the K-Means model
+
+```python
+kmeans = KMeans(n_clusters=3, random_state=42).fit(X)
+```
+
+- `n_clusters=3` → We want to divide the dataset into 3 clusters.
+- `random_state=42` → Ensures reproducibility of random initialization.
+- `.fit(X)` → Trains the K-Means model on dataset X.
+
+After training, the model has three cluster centroids.
+
+### 2. Predict cluster labels
+
+```python
+labels = kmeans.predict(X)
+```
+
+The `predict()` method assigns each data point to its nearest cluster centroid.
+
+Suppose the predicted labels are:
+
+```python
+labels = [0, 0, 1, 1, 2, 2, 0, 1, 2]
+```
+
+Here:
+- `0` → Cluster 0
+- `1` → Cluster 1
+- `2` → Cluster 2
+
+**Important:** Cluster labels are identifiers, not actual numerical measurements. Label 2 does not mean that its cluster is better or larger than Cluster 1.
+
+### 3. Understand set(labels)
+
+```python
+set(labels)
+```
+
+A Python `set` stores only unique elements, removing duplicates.
+
+Therefore:
+
+```python
+set(labels)
+```
+
+Output:
+
+```python
+{0, 1, 2}
+```
+
+### 4. Understand len()
+
+```python
+len(set(labels))
+```
+
+The `len()` function returns the number of elements in the set.
+
+Since the set contains three unique labels:
+
+```python
+len({0, 1, 2})
+```
+
+Output:
+
+```python
+3
+```
+
+### Complete execution flow
+
+| Expression | Output |
+|---|---|
+| `kmeans.fit(X)` | Trained K-Means model |
+| `kmeans.predict(X)` | Cluster labels |
+| `set(labels)` | `{0, 1, 2}` |
+| `len(set(labels))` | `3` |
+
+### Why are the other options incorrect?
+
+- **A. 1:** Incorrect. There are three distinct cluster labels, not one.
+- **B. 2:** Incorrect. The predicted labels contain three unique values.
+- **C. 3:** Correct. There are three unique cluster labels: 0, 1 and 2.
+- **D. Error:** Incorrect. The code is valid, assuming X is a valid dataset and the required imports and dependencies are available.
+
+### Interview takeaway
+
+Remember these Python and Scikit-learn concepts:
+
+- `fit()` → Trains the model.
+- `predict()` → Assigns cluster labels to data points.
+- `set()` → Removes duplicate values.
+- `len()` → Returns the number of elements.
+
+**Ultimate intuition:** `len(set(labels))` counts how many distinct cluster labels are actually present in the predictions.
+
+**Important technical note:** Although `n_clusters=3` requests three clusters, the number of distinct predicted labels can be fewer than three if the dataset has fewer than three distinct data points or if fewer distinct clusters are found. The expected answer here is 3, assuming three non-empty clusters are formed.
+
+</details>
+</details>
+
+
 
 
