@@ -112,7 +112,7 @@ Distance between two clusters is the minimum distance between any pair of points
 
 $D(A,B)=\min\_{a\in A,b\in B}d(a,b)$
 
-Intuition: Find the closest pair of points between the two clusters.
+**Intuition:** Find the closest pair of points between the two clusters.
 
 ![An Introduction to Hierarchical Clustering in Python | DataCamp](https://images.openai.com/static-rsc-4/yLXZqUusLxmCAYGFqLwLzMbBNjzGzEpLAi9pzUc_g1SHBcLhb5CpmwnSUKBmKbGGpYbZWQqBoHQdNvk9aER3kxR-6H3yUl1q0vjAv3HEI3KPRuFgaSl0l9QYV8iLG7IjnanEVoNR_ApNtnBZ2PW0dI8j7VQgFdp0LCk052bRNUU?purpose=inline)
 
