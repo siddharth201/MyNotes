@@ -749,10 +749,8 @@ Therefore, the Euclidean distance between these two points is 5 units.
 
 K-Means minimizes the Within-Cluster Sum of Squares (WCSS).
 
-$
-WCSS=\sum_{j=1}^{K}\sum_{x_i\in C_j}
-\|x_i-\mu_j\|^2
-$
+$WCSS=\sum_{j=1}^{K}\sum_{x_i\in C_j}
+\|x_i-\mu_j\|^2$
 
 Here, the squared Euclidean distance measures how far each data point is from its assigned cluster centroid.
 
