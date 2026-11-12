@@ -1117,3 +1117,157 @@ Remember the distinction:
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q.7 Feature Scaling Bias in Clustering</b></summary>
+
+### Problem Statement
+
+A fintech startup runs Hierarchical Clustering on loan applicants using two features:
+
+- Annual Income: Ranging from 20,000 to 500,000.
+- Age: Ranging from 18 to 70.
+
+The resulting dendrogram groups applicants almost entirely by income bracket.
+
+Two 30-year-olds with very different incomes end up in completely different clusters, while a 25-year-old and a 65-year-old with similar incomes land in the same cluster.
+
+What's the most likely cause, and the right fix?
+
+### Options
+
+**A.** Ward linkage is broken for financial data — switch to single linkage instead.
+
+**B.** Income and age are on very different numeric scales, so Euclidean distance is dominated by income; the features should be standardized (e.g., z-scores) before clustering.
+
+**C.** The dendrogram is correct as-is — income is simply a more "important" feature than age, so this is expected and desirable.
+
+**D.** Hierarchical clustering cannot use more than one feature at a time, so this mixing is the root problem.
+
+<details>
+<summary><b>Answer</b></summary>
+
+**Correct Answer: Option B**
+
+**Income and age are on very different numeric scales, so Euclidean distance is dominated by income; the features should be standardized before clustering.**
+
+### Explanation
+
+This question tests our understanding of **Feature Scaling and its importance in Distance-Based Clustering Algorithms.**
+
+Clustering algorithms such as K-Means and Hierarchical Clustering commonly use distance metrics like Euclidean Distance to measure similarity between data points.
+
+When features have significantly different numerical scales, the feature with larger values can dominate the distance calculation.
+
+This creates Feature Scaling Bias.
+
+### Why?
+
+Let's understand using a numerical example.
+
+Suppose we have two loan applicants:
+
+| Applicant | Annual Income | Age |
+|---|---:|---:|
+| A | 100,000 | 25 |
+| B | 110,000 | 65 |
+
+We want to calculate the Euclidean distance between these two applicants.
+
+**Step 1: Calculate Euclidean Distance**
+
+$$d(A,B)=\sqrt{(110000-100000)^2+(65-25)^2}$$
+
+$$d(A,B)=\sqrt{100000000+1600}$$
+
+$$d(A,B)\approx 10000.08$$
+
+Notice something important:
+
+- Income contributes 100,000,000 to the squared distance.
+- Age contributes only 1,600 to the squared distance.
+
+Therefore, income overwhelmingly dominates the distance calculation.
+
+Even though the applicants have a significant age difference of 40 years, the algorithm primarily considers their income difference.
+
+**Step 2: Why is this a problem?**
+
+The clustering algorithm does not automatically understand that:
+
+- Income is measured in currency.
+- Age is measured in years.
+
+It simply processes the numerical values.
+
+As a result:
+
+- Applicants with similar incomes may end up in the same cluster despite having very different ages.
+- Applicants with different incomes may end up in different clusters despite having similar ages.
+
+This is known as Feature Scaling Bias.
+
+**Step 3: Apply Feature Scaling**
+
+To solve this problem, we should standardize the features before clustering.
+
+One commonly used technique is Z-score Standardization.
+
+$$z=\frac{x-\mu}{\sigma}$$
+
+Where:
+
+- x = Original feature value.
+- μ = Mean of that feature.
+- σ = Standard deviation of that feature.
+- z = Standardized value.
+
+After standardization:
+
+- Income values are transformed into comparable standardized units.
+- Age values are also transformed into comparable standardized units.
+- Neither feature dominates simply because of its original numerical scale.
+
+Now Euclidean Distance can consider both features more fairly.
+
+### Feature Scaling Visualization
+
+<AsyncImage query="machine learning feature scaling standardization before after scatter plot different scales income age z score comparison" aspectRatio="16:9" width="100%" fit="contain"/>
+
+### Why are the other options incorrect?
+
+- **A. Ward linkage is broken:** Incorrect. Ward linkage is a valid hierarchical clustering method. The problem is the difference in feature scales, not the linkage method.
+- **B. Standardize the features:** Correct. Standardization brings features onto comparable scales and prevents income from dominating distance calculations merely because of its larger numerical range.
+- **C. Income is more important:** Incorrect. A larger numerical range does not automatically mean a feature is more important. Feature importance should be based on domain knowledge and business objectives.
+- **D. Hierarchical clustering cannot use multiple features:** Incorrect. Hierarchical Clustering supports multiple features. Each data point can be represented as a multidimensional vector.
+
+### Interview Takeaway
+
+Remember these important concepts:
+
+| Concept | Meaning |
+|---|---|
+| Feature Scaling | Bringing features onto comparable scales |
+| Standardization | Transforming features using mean and standard deviation |
+| Normalization | Commonly scaling values to a fixed range, such as 0 to 1 |
+| Feature Scaling Bias | Larger-scale features dominating distance calculations |
+
+**Algorithms sensitive to feature scaling:**
+
+- K-Means Clustering
+- Hierarchical Clustering
+- K-Nearest Neighbors (KNN)
+- Support Vector Machines (SVM)
+
+**Ultimate intuition:** Distance-based algorithms calculate similarity using numerical values. If one feature has values in thousands while another has values in tens, the larger-scale feature can dominate the distance calculation.
+
+Feature scaling ensures that differences in numerical units do not unintentionally control the clustering results.
+
+**Important:** Standardization does not guarantee that features have equal business importance. If income should genuinely receive more importance than age, that should be handled deliberately through feature weighting.
+
+</details>
+</details>
+
+
