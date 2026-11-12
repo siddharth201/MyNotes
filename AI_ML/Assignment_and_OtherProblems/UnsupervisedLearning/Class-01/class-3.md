@@ -433,14 +433,9 @@ Remember these three concepts:
 
 ---
 
-This assignment focuses on implementing Single Linkage Distance from scratch using nested loops and Euclidean distance.
-
-The key idea is simple: calculate the distance between every possible pair of points from the two clusters and return the minimum distance.
-
-````
 
 <details>
-<summary><b>Q. Wildlife Herd Merge Check (Single-Linkage Distance)</b></summary>
+<summary><b>Q.5 Wildlife Herd Merge Check (Single-Linkage Distance)</b></summary>
 
 ### Problem Statement
 
@@ -681,7 +676,7 @@ Therefore, the final result is:
 
 ### 6. Complete execution flow
 
-<CodeBlock language="mermaid" editable>
+```mermaid
 flowchart TD
     A["Input Cluster A and Cluster B"] --> B["Initialize min_dist = None"]
     B --> C["Select a point from Cluster A"]
@@ -698,7 +693,7 @@ flowchart TD
     J -->|"No"| K["Round min_dist to 2 decimals"]
     K --> L["Return minimum distance"]
 
-````
+```
 
 ### 7. Time and Space Complexity
 
@@ -734,5 +729,6 @@ Ultimate intuition: Single Linkage finds the closest connection between two clus
 
 Important implementation detail: This implementation assumes both clusters contain at least one point, as the assignment does not specify behavior for empty clusters.
 
-
+</details>
+</details>
 
