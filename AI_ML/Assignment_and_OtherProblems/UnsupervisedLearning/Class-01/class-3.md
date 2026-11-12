@@ -1153,6 +1153,8 @@ What's the most likely cause, and the right fix?
 
 **Income and age are on very different numeric scales, so Euclidean distance is dominated by income; the features should be standardized before clustering.**
 
+> The root cause is Feature Scaling Bias. Annual income and age have significantly different numerical ranges, so Euclidean distance is dominated by income. We should standardize both features (e.g., using Z-score standardization) before performing Hierarchical Clustering.
+
 ### Explanation
 
 This question tests our understanding of **Feature Scaling and its importance in Distance-Based Clustering Algorithms.**
