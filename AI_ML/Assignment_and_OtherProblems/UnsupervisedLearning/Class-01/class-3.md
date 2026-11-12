@@ -431,5 +431,308 @@ Remember these three concepts:
 </details>
 </details>
 
+---
+
+This assignment focuses on implementing Single Linkage Distance from scratch using nested loops and Euclidean distance.
+
+The key idea is simple: calculate the distance between every possible pair of points from the two clusters and return the minimum distance.
+
+````
+
+<details>
+<summary><b>Q. Wildlife Herd Merge Check (Single-Linkage Distance)</b></summary>
+
+### Problem Statement
+
+A wildlife conservation team is tracking elephant sightings in a national park. Each sighting is logged as `(x, y)` coordinates in kilometers from a base camp.
+
+After running Hierarchical Clustering, the team splits the sightings into two candidate sub-herds, A and B.
+
+Before deciding whether these are genuinely two separate herds or just one herd that got split too early, the team wants to compute the **Single-Linkage Distance** between the two groups.
+
+A small distance suggests the sub-herds should be merged back together.
+
+### Task
+
+Write a Python function `single_linkage_distance(cluster_a, cluster_b)` that returns the minimum Euclidean distance between any point in `cluster_a` and any point in `cluster_b`.
+
+### Function Inputs
+
+- `cluster_a`: List of 2D coordinate tuples `(x, y)` representing sightings in sub-herd A.
+- `cluster_b`: List of 2D coordinate tuples `(x, y)` representing sightings in sub-herd B.
+
+### Function Output
+
+A single float rounded to 2 decimal places, representing the minimum Euclidean distance between the two groups.
+
+### Sample Input
+
+```python
+cluster_a = [(0, 0), (1, 1)]
+cluster_b = [(5, 5), (2, 2)]
+```
+
+### Sample Output
+
+```python
+1.41
+```
+
+<details>
+<summary><b>Answer</b></summary>
+
+### 1. Understanding the problem
+
+Single Linkage calculates the minimum distance between any pair of points belonging to two different clusters.
+
+Suppose:
+
+- Cluster A contains 2 points.
+- Cluster B contains 2 points.
+
+We need to calculate all possible cross-cluster distances.
+
+The number of distance calculations will be:
+
+$$2 \times 2 = 4$$
+
+After calculating all four distances, we select the minimum one.
+
+### 2. Mathematical formula
+
+For two points P and Q in a 2D space, Euclidean Distance is:
+
+$$d(P,Q)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$$
+
+Single Linkage Distance is:
+
+$$SL(A,B)=\min_{p\in A,\ q\in B}d(p,q)$$
+
+### 3. Python implementation
+
+```python
+def single_linkage_distance(cluster_a, cluster_b):
+
+    # 1. Initialize minimum distance
+    min_dist = None
+
+    # 2. Iterate through every point in cluster_a
+    for point_a in cluster_a:
+
+        # 3. Iterate through every point in cluster_b
+        for point_b in cluster_b:
+
+            # 4. Calculate Euclidean distance
+            distance = ((point_a[0] - point_b[0]) ** 2 +
+                        (point_a[1] - point_b[1]) ** 2) ** 0.5
+
+            # 5. Update minimum distance
+            if min_dist is None or distance < min_dist:
+                min_dist = distance
+
+    # 6. Return minimum distance rounded to 2 decimals
+    return round(min_dist, 2)
+```
+
+### 4. Understanding the implementation step by step
+
+**Step 1: Initialize minimum distance**
+
+```python
+min_dist = None
+```
+
+We initialize `min_dist` with `None` because initially, we haven't calculated any distance.
+
+Why not initialize it with zero?
+
+Because we are searching for the minimum distance. If we initialize it with zero, no positive distance can be smaller than zero.
+
+Using `None` indicates that we haven't found any distance yet.
+
+**Step 2: Iterate through Cluster A**
+
+```python
+for point_a in cluster_a:
+```
+
+This loop visits every point in Cluster A.
+
+**Step 3: Iterate through Cluster B**
+
+```python
+for point_b in cluster_b:
+```
+
+For every point in Cluster A, we compare it with every point in Cluster B.
+
+This nested loop ensures that no possible cross-cluster pair is missed.
+
+**Step 4: Calculate Euclidean distance**
+
+```python
+distance = ((point_a[0] - point_b[0]) ** 2 +
+            (point_a[1] - point_b[1]) ** 2) ** 0.5
+```
+
+We calculate the straight-line distance between the two points.
+
+Here:
+- `point_a[0]` and `point_b[0]` represent X coordinates.
+- `point_a[1]` and `point_b[1]` represent Y coordinates.
+- `** 2` calculates the square of the difference.
+- `** 0.5` calculates the square root.
+
+**Step 5: Update minimum distance**
+
+```python
+if min_dist is None or distance < min_dist:
+    min_dist = distance
+```
+
+Two conditions are checked:
+
+1. If `min_dist is None`, this is our first calculated distance. Store it.
+2. If the newly calculated distance is smaller than the existing minimum, update `min_dist`.
+
+Otherwise, retain the previous minimum.
+
+**Step 6: Return rounded distance**
+
+```python
+return round(min_dist, 2)
+```
+
+Finally, we round the minimum distance to two decimal places as required by the assignment.
+
+### 5. Numerical dry run
+
+Given:
+
+```python
+cluster_a = [(0, 0), (1, 1)]
+cluster_b = [(5, 5), (2, 2)]
+```
+
+We calculate every possible pairwise distance.
+
+| Point A | Point B | Euclidean Distance |
+|---|---|---:|
+| (0, 0) | (5, 5) | 7.07 |
+| (0, 0) | (2, 2) | 2.83 |
+| (1, 1) | (5, 5) | 5.66 |
+| (1, 1) | (2, 2) | 1.41 |
+
+Let's understand the minimum calculation:
+
+**First comparison:**
+
+Distance between (0, 0) and (5, 5):
+
+$$d=\sqrt{(5-0)^2+(5-0)^2}=7.07$$
+
+Since `min_dist` is initially `None`:
+
+```python
+min_dist = 7.07
+```
+
+**Second comparison:**
+
+Distance between (0, 0) and (2, 2):
+
+$$d=\sqrt{(2-0)^2+(2-0)^2}=2.83$$
+
+Since 2.83 is smaller than 7.07:
+
+```python
+min_dist = 2.83
+```
+
+**Third comparison:**
+
+Distance between (1, 1) and (5, 5):
+
+$$d=\sqrt{(5-1)^2+(5-1)^2}=5.66$$
+
+Since 5.66 is greater than 2.83, we retain:
+
+```python
+min_dist = 2.83
+```
+
+**Fourth comparison:**
+
+Distance between (1, 1) and (2, 2):
+
+$$d=\sqrt{(2-1)^2+(2-1)^2}=1.41$$
+
+Since 1.41 is smaller than 2.83:
+
+```python
+min_dist = 1.41
+```
+
+Therefore, the final result is:
+
+```python
+1.41
+```
+
+### 6. Complete execution flow
+
+<CodeBlock language="mermaid" editable>
+flowchart TD
+    A["Input Cluster A and Cluster B"] --> B["Initialize min_dist = None"]
+    B --> C["Select a point from Cluster A"]
+    C --> D["Select a point from Cluster B"]
+    D --> E["Calculate Euclidean Distance"]
+    E --> F{"min_dist is None OR distance is smaller?"}
+    F -->|"Yes"| G["Update min_dist"]
+    F -->|"No"| H["Keep existing min_dist"]
+    G --> I{"More points in Cluster B?"}
+    H --> I
+    I -->|"Yes"| D
+    I -->|"No"| J{"More points in Cluster A?"}
+    J -->|"Yes"| C
+    J -->|"No"| K["Round min_dist to 2 decimals"]
+    K --> L["Return minimum distance"]
+
+````
+
+### 7. Time and Space Complexity
+
+Let:
+
+- M = Number of points in Cluster A.
+- N = Number of points in Cluster B.
+
+Time Complexity
+
+We compare every point in Cluster A with every point in Cluster B.
+
+$$T(M,N)=O(M\times N)$$
+
+Space Complexity
+
+We only maintain a few variables (`min_dist` and `distance`).
+
+We don't create any additional list or data structure.
+
+$$S(M,N)=O(1)$$
+
+### 8. Interview takeaway
+
+Remember:
+
+- Single Linkage → Minimum pairwise distance.
+- Complete Linkage → Maximum pairwise distance.
+- Average Linkage → Average pairwise distance.
+- Centroid Linkage → Distance between cluster centroids.
+
+Ultimate intuition: Single Linkage finds the closest connection between two clusters. Even if most points are far apart, one close pair can make the two clusters eligible for merging.
+
+Important implementation detail: This implementation assumes both clusters contain at least one point, as the assignment does not specify behavior for empty clusters.
+
 
 
