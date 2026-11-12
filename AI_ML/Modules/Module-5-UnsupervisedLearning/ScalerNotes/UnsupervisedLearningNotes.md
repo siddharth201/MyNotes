@@ -3,3 +3,5 @@
 
 [Hierarchical clustering](https://scaler-content.github.io/Hierarchical-Clustering/)
 
+[Gaussian Mixture Models]()
+
