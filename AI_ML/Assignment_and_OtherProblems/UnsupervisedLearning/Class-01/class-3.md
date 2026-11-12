@@ -1318,6 +1318,8 @@ new_customers = [(90, 3), (390, 9)]
 <details>
 <summary><b>Answer</b></summary>
 
+> This assignment focuses on Assigning New Data Points to Existing Clusters using Nearest Centroid Distance. The key idea is to calculate the Euclidean distance between each new customer and every existing cluster centroid, then assign the customer to the nearest centroid. If two centroids have the same minimum distance, we select the centroid with the smaller index.
+
 ### 1. Understanding the Problem
 
 We already have existing clusters and their centroids.
