@@ -1275,5 +1275,392 @@ Feature scaling ensures that differences in numerical units do not unintentional
 ---
 
 
+<details>
+<summary><b>Q.8 Assigning New Users to Existing Usage Cluster</b></summary>
+
+### Problem Statement
+
+A telecom company ran Hierarchical Clustering on existing customers' monthly usage data (call minutes, data GB) and computed the centroid (average point) of each resulting cluster.
+
+New customers sign up every day, and the marketing team wants to assign each new customer to the closest existing cluster without rerunning the clustering from scratch.
+
+They need a quick, reusable function for this.
+
+### Task
+
+Write a function `assign_to_nearest_cluster(centroids, new_customers)` that assigns each new customer to the cluster whose centroid is closest (by Euclidean distance).
+
+If a new customer is exactly equidistant from two or more centroids, assign it to the one with the smallest cluster index.
+
+### Function Inputs
+
+- `centroids`: List of tuples representing the (call_minutes, data_gb) centroid of each existing cluster, indexed 0, 1, 2, ...
+- `new_customers`: List of tuples representing (call_minutes, data_gb) for each new customer.
+
+### Function Output
+
+A list of integers (`List[int]`) having the same length as `new_customers`. Each value represents the index of the nearest centroid.
+
+### Sample Input
+
+```python
+centroids = [(100, 2), (400, 10), (50, 20)]
+
+new_customers = [(90, 3), (390, 9)]
+```
+
+### Sample Output
+
+```python
+[0, 1]
+```
+
+<details>
+<summary><b>Answer</b></summary>
+
+### 1. Understanding the Problem
+
+We already have existing clusters and their centroids.
+
+Now, instead of performing clustering again, we simply assign each new customer to the nearest existing centroid.
+
+For every new customer:
+
+1. Calculate the distance from the customer to every centroid.
+2. Identify the minimum distance.
+3. Return the index of the centroid having the minimum distance.
+4. If distances are equal, select the smaller centroid index.
+
+This approach is known as **Nearest Centroid Assignment**.
+
+### 2. Mathematical Intuition
+
+We use Euclidean Distance to measure the distance between a new customer and an existing centroid.
+
+For two points P and C in a 2D space:
+
+$$d(P,C)=\sqrt{(x_p-x_c)^2+(y_p-y_c)^2}$$
+
+Where:
+
+- P = New customer.
+- C = Existing cluster centroid.
+- x and y = Two features (call minutes and data usage).
+
+Our objective is to find the centroid having the minimum distance.
+
+$$\boxed{\text{Assigned Cluster}=\arg\min_k d(P,C_k)}$$
+
+Here, k represents the centroid index.
+
+### 3. Python Implementation
+
+```python
+def assign_to_nearest_cluster(centroids, new_customers):
+
+    # 1. Store final cluster assignments
+    assignments = []
+
+    # 2. Iterate through each new customer
+    for customer in new_customers:
+
+        best_index = None
+        best_distance = None
+
+        # 3. Compare customer with every centroid
+        for i, centroid in enumerate(centroids):
+
+            # 4. Calculate Euclidean distance
+            distance = ((customer[0] - centroid[0]) ** 2 +
+                        (customer[1] - centroid[1]) ** 2) ** 0.5
+
+            # 5. Update nearest centroid
+            if best_distance is None or distance < best_distance:
+                best_distance = distance
+                best_index = i
+
+        # 6. Store the nearest centroid index
+        assignments.append(best_index)
+
+    # 7. Return all assignments
+    return assignments
+```
+
+### 4. Understanding the Implementation Step by Step
+
+**Step 1: Initialize assignments**
+
+```python
+assignments = []
+```
+
+We create an empty list to store the index of the nearest centroid for each new customer.
+
+**Step 2: Iterate through new customers**
+
+```python
+for customer in new_customers:
+```
+
+We process each new customer independently.
+
+For example:
+
+```python
+new_customers = [(90, 3), (390, 9)]
+```
+
+The outer loop processes one customer at a time.
+
+**Step 3: Initialize tracking variables**
+
+```python
+best_index = None
+best_distance = None
+```
+
+- `best_index` stores the index of the nearest centroid.
+- `best_distance` stores the minimum distance found so far.
+
+Initially, both are `None` because we haven't compared the customer with any centroid yet.
+
+**Step 4: Iterate through centroids**
+
+```python
+for i, centroid in enumerate(centroids):
+```
+
+We use `enumerate()` because we need both:
+
+- `i`: Index of the centroid.
+- `centroid`: Actual coordinate of the centroid.
+
+For example:
+
+```python
+centroids = [(100, 2), (400, 10), (50, 20)]
+```
+
+| Index (i) | Centroid |
+|---:|---|
+| 0 | (100, 2) |
+| 1 | (400, 10) |
+| 2 | (50, 20) |
+
+**Step 5: Calculate Euclidean distance**
+
+```python
+distance = ((customer[0] - centroid[0]) ** 2 +
+            (customer[1] - centroid[1]) ** 2) ** 0.5
+```
+
+We calculate the straight-line distance between the new customer and the current centroid.
+
+**Step 6: Update nearest centroid**
+
+```python
+if best_distance is None or distance < best_distance:
+    best_distance = distance
+    best_index = i
+```
+
+Two conditions are checked:
+
+1. If `best_distance is None`, this is the first comparison. Store the distance and centroid index.
+2. If the newly calculated distance is smaller than the previous minimum, update both variables.
+
+Notice that we use `<` instead of `<=`.
+
+Why?
+
+Because the question explicitly states that if two centroids have equal distances, we must select the smaller index.
+
+Since `enumerate()` processes centroids in increasing index order, using `<` preserves the earlier (smaller) index in case of a tie.
+
+**Step 7: Store the assignment**
+
+```python
+assignments.append(best_index)
+```
+
+After comparing the customer with all centroids, we append the nearest centroid index to our result list.
+
+**Step 8: Return assignments**
+
+```python
+return assignments
+```
+
+Once all customers have been processed, we return the complete assignment list.
+
+### 5. Numerical Dry Run
+
+Given:
+
+```python
+centroids = [(100, 2), (400, 10), (50, 20)]
+
+new_customers = [(90, 3), (390, 9)]
+```
+
+We process both customers independently.
+
+**Customer 1: (90, 3)**
+
+Calculate distances from all three centroids.
+
+| Centroid Index | Centroid | Euclidean Distance |
+|---:|---|---:|
+| 0 | (100, 2) | 10.05 |
+| 1 | (400, 10) | 310.06 |
+| 2 | (50, 20) | 40.31 |
+
+The minimum distance is 10.05.
+
+Therefore:
+
+```python
+best_index = 0
+```
+
+We append 0 to assignments.
+
+```python
+assignments = [0]
+```
+
+**Customer 2: (390, 9)**
+
+Now process the second customer.
+
+| Centroid Index | Centroid | Euclidean Distance |
+|---:|---|---:|
+| 0 | (100, 2) | 290.08 |
+| 1 | (400, 10) | 10.05 |
+| 2 | (50, 20) | 340.16 |
+
+The minimum distance is 10.05.
+
+Therefore:
+
+```python
+best_index = 1
+```
+
+We append 1 to assignments.
+
+```python
+assignments = [0, 1]
+```
+
+**Final Output**
+
+```python
+[0, 1]
+```
+
+### 6. Understanding Tie-Breaking
+
+Let's consider an additional example.
+
+Suppose:
+
+```python
+centroids = [(0, 0), (4, 0)]
+
+customer = (2, 0)
+```
+
+Distances:
+
+- Distance from centroid 0 = 2.
+- Distance from centroid 1 = 2.
+
+Both centroids are equally distant.
+
+Since the question requires selecting the smaller index:
+
+```python
+best_index = 0
+```
+
+This is exactly why our implementation uses:
+
+```python
+distance < best_distance
+```
+
+Instead of:
+
+```python
+distance <= best_distance
+```
+
+### 7. Time and Space Complexity
+
+Let:
+
+- U = Number of new customers.
+- K = Number of existing centroids.
+- D = Number of features.
+
+**Time Complexity**
+
+For every new customer, we calculate distances from all K centroids.
+
+Each distance calculation takes O(D) time.
+
+Therefore:
+
+$$T(U,K,D)=O(U\times K\times D)$$
+
+For 2D data:
+
+$$\boxed{T(U,K)=O(U\times K)}$$
+
+**Space Complexity**
+
+- `assignments` stores U cluster indices.
+- `best_index` and `best_distance` require constant space.
+
+Therefore, auxiliary space complexity is:
+
+$$S(U)=O(U)$$
+
+Excluding the output list, additional working space is O(1).
+
+### 8. Important ML Concepts
+
+**Why don't we rerun clustering for new customers?**
+
+The existing clusters and their centroids have already been calculated.
+
+If we only want to assign new customers to existing clusters, nearest-centroid assignment is sufficient.
+
+This saves computational effort and avoids rebuilding the clustering model every time new data arrives.
+
+**Is this the same as K-Means prediction?**
+
+Conceptually, yes.
+
+In K-Means, the `predict()` method assigns new observations to their nearest learned centroid.
+
+However, this assignment problem uses centroids obtained from Hierarchical Clustering. We are reusing those centroids for nearest-centroid assignment.
+
+### 9. Interview Takeaway
+
+Remember:
+
+- Centroid → Average position of points in a cluster.
+- Euclidean Distance → Measures straight-line distance.
+- Nearest Centroid → Assigns a point to the closest cluster center.
+- `enumerate()` → Provides both index and value.
+- Tie-breaking → Using `<` preserves the smaller index.
+
+**Ultimate intuition:** We don't need to rebuild existing clusters whenever a new customer arrives. We simply compare the new customer's coordinates with existing cluster centroids and assign them to the closest one.
+
+</details>
+</details>
+
 
 
