@@ -732,3 +732,388 @@ Important implementation detail: This implementation assumes both clusters conta
 </details>
 </details>
 
+---
+
+
+<details>
+<summary><b>Q.6 Compute WCSS (Within-Cluster Sum of Squares)</b></summary>
+
+### Problem Statement
+
+Your task is to write a function that calculates the Within-Cluster Sum of Squares (WCSS) for a given clustering.
+
+WCSS measures how close the data points in a cluster are to the centroid of that cluster.
+
+For each cluster, compute the sum of squared distances of each point to its cluster's centroid.
+
+### Function Inputs
+
+- `points`: A list of tuples representing 1D or 2D data points.
+- `clusters`: A list of lists, where each sublist contains indices (integers) of points belonging to one cluster.
+
+### Function Output
+
+A float representing the total WCSS, rounded to 2 decimal places.
+
+### Input Format
+
+```python
+[(x1, y1), (x2, y2), ..., (xn, yn)]
+
+[[indices_cluster1], [indices_cluster2], ...]
+```
+
+### Output Format
+
+```python
+WCSS (float)
+```
+
+### Sample Input
+
+```python
+points = [(1, 2), (2, 2), (8, 3), (9, 3)]
+
+clusters = [[0, 1], [2, 3]]
+```
+
+### Sample Output
+
+```python
+1.0
+```
+
+<details>
+<summary><b>Answer</b></summary>
+
+### 1. Understanding the problem
+
+WCSS measures the total squared distance between every data point and the centroid of its assigned cluster.
+
+In simple terms:
+
+- First, identify which points belong to each cluster.
+- Calculate the centroid of each cluster.
+- Calculate the squared distance of every point from its cluster centroid.
+- Add all squared distances across all clusters.
+
+The final sum represents WCSS.
+
+### 2. Mathematical intuition
+
+Let's understand the two important components.
+
+**A. Centroid**
+
+A centroid is the mean position of all data points belonging to a cluster.
+
+For a 2D cluster containing N points:
+
+$$C_x=\frac{\sum_{i=1}^{N}x_i}{N},\quad C_y=\frac{\sum_{i=1}^{N}y_i}{N}$$
+
+**B. Squared Euclidean Distance**
+
+For a point P and its cluster centroid C:
+
+$$d^2(P,C)=(x_p-x_c)^2+(y_p-y_c)^2$$
+
+Notice that we are calculating squared distance, not the actual Euclidean distance.
+
+**C. WCSS**
+
+WCSS is the sum of squared distances of all points from their respective cluster centroids.
+
+$$WCSS=\sum_{k=1}^{K}\sum_{i\in C_k}d^2(x_i,\mu_k)$$
+
+Where:
+
+- K = Number of clusters.
+- C_k = Points belonging to cluster k.
+- μ_k = Centroid of cluster k.
+
+### 3. Python Implementation
+
+```python
+def compute_wcss(points, clusters):
+
+    # 1. Initialize total WCSS
+    total_wcss = 0
+
+    # 2. Iterate through each cluster
+    for cluster in clusters:
+
+        # 3. Retrieve points using their indices
+        cluster_points = [points[i] for i in cluster]
+
+        # 4. Calculate centroid of the cluster
+        n = len(cluster_points)
+        dimensions = len(cluster_points[0])
+
+        centroid = [
+            sum(point[d] for point in cluster_points) / n
+            for d in range(dimensions)
+        ]
+
+        # 5. Calculate squared distances to centroid
+        for point in cluster_points:
+
+            squared_distance = sum(
+                (point[d] - centroid[d]) ** 2
+                for d in range(dimensions)
+            )
+
+            # 6. Accumulate squared distances
+            total_wcss += squared_distance
+
+    # 7. Return rounded total WCSS
+    return round(total_wcss, 2)
+```
+
+### 4. Understanding the implementation step by step
+
+**Step 1: Initialize total WCSS**
+
+```python
+total_wcss = 0
+```
+
+We initialize WCSS with zero because we will accumulate the squared distances of all points across all clusters.
+
+**Step 2: Iterate through each cluster**
+
+```python
+for cluster in clusters:
+```
+
+Each cluster contains indices of the points belonging to it.
+
+For example:
+
+```python
+clusters = [[0, 1], [2, 3]]
+```
+
+This represents:
+
+- Cluster 1 contains points at indices 0 and 1.
+- Cluster 2 contains points at indices 2 and 3.
+
+**Step 3: Retrieve points using their indices**
+
+```python
+cluster_points = [points[i] for i in cluster]
+```
+
+We use the cluster indices to retrieve the actual coordinates from the original points list.
+
+For Cluster 1:
+
+```python
+cluster_points = [(1, 2), (2, 2)]
+```
+
+For Cluster 2:
+
+```python
+cluster_points = [(8, 3), (9, 3)]
+```
+
+**Step 4: Calculate the centroid**
+
+```python
+n = len(cluster_points)
+dimensions = len(cluster_points[0])
+
+centroid = [
+    sum(point[d] for point in cluster_points) / n
+    for d in range(dimensions)
+]
+```
+
+We calculate the mean of each coordinate independently.
+
+For Cluster 1:
+
+$$C_x=\frac{1+2}{2}=1.5$$
+
+$$C_y=\frac{2+2}{2}=2$$
+
+Therefore:
+
+```python
+centroid = [1.5, 2.0]
+```
+
+For Cluster 2:
+
+```python
+centroid = [8.5, 3.0]
+```
+
+**Step 5: Calculate squared distance**
+
+```python
+for point in cluster_points:
+
+    squared_distance = sum(
+        (point[d] - centroid[d]) ** 2
+        for d in range(dimensions)
+    )
+```
+
+We calculate the squared Euclidean distance between each point and its corresponding centroid.
+
+For a 2D point:
+
+$$d^2=(x_p-x_c)^2+(y_p-y_c)^2$$
+
+We do not calculate the square root because WCSS uses squared distances.
+
+**Step 6: Accumulate squared distances**
+
+```python
+total_wcss += squared_distance
+```
+
+Every calculated squared distance is added to `total_wcss`.
+
+This ensures that we calculate the total WCSS across all clusters rather than calculating it separately for just one cluster.
+
+**Step 7: Return rounded WCSS**
+
+```python
+return round(total_wcss, 2)
+```
+
+Finally, we round the total WCSS to two decimal places as required by the assignment.
+
+### 5. Numerical Dry Run
+
+Given:
+
+```python
+points = [(1, 2), (2, 2), (8, 3), (9, 3)]
+
+clusters = [[0, 1], [2, 3]]
+```
+
+Let's calculate WCSS separately for each cluster.
+
+**Cluster 1**
+
+Points:
+
+```python
+[(1, 2), (2, 2)]
+```
+
+Centroid:
+
+$$C_1=(1.5,2)$$
+
+Now calculate squared distances:
+
+| Point | Squared Distance |
+|---|---:|
+| (1, 2) | (1 - 1.5)² + (2 - 2)² = 0.25 |
+| (2, 2) | (2 - 1.5)² + (2 - 2)² = 0.25 |
+
+Therefore:
+
+$$WCSS_1=0.25+0.25=0.50$$
+
+**Cluster 2**
+
+Points:
+
+```python
+[(8, 3), (9, 3)]
+```
+
+Centroid:
+
+$$C_2=(8.5,3)$$
+
+Now calculate squared distances:
+
+| Point | Squared Distance |
+|---|---:|
+| (8, 3) | (8 - 8.5)² + (3 - 3)² = 0.25 |
+| (9, 3) | (9 - 8.5)² + (3 - 3)² = 0.25 |
+
+Therefore:
+
+$$WCSS_2=0.25+0.25=0.50$$
+
+**Final WCSS**
+
+Total WCSS is the sum of WCSS from both clusters.
+
+$$WCSS=WCSS_1+WCSS_2$$
+
+$$WCSS=0.50+0.50=1.0$$
+
+<badge color="success">Expected Output: 1.0</badge>
+
+### 6. Time and Space Complexity
+
+Let:
+
+- N = Total number of data points.
+- K = Number of clusters.
+- D = Number of dimensions.
+
+**Time Complexity**
+
+1. Retrieving points across all clusters: O(N).
+2. Calculating centroids: O(N × D).
+3. Calculating squared distances: O(N × D).
+
+Therefore:
+
+$$T(N,D)=O(N\times D)$$
+
+**Space Complexity**
+
+- `cluster_points` stores the points belonging to the current cluster.
+- `centroid` stores D coordinate values.
+- Other variables require constant space.
+
+The auxiliary space complexity is:
+
+$$S(N,D)=O(N+D)$$
+
+### 7. Important ML Concepts
+
+**Why do we square the distances?**
+
+- Squaring prevents positive and negative coordinate differences from cancelling each other.
+- Larger errors receive a greater penalty.
+- Squared Euclidean distance is mathematically convenient for optimization.
+
+**What does a lower WCSS indicate?**
+
+A lower WCSS generally indicates that points are closer to their respective cluster centroids.
+
+**Does lower WCSS always mean better clustering?**
+
+No. Increasing the number of clusters generally decreases WCSS. In the extreme case, when every point becomes its own cluster, WCSS becomes zero.
+
+This is why we use techniques such as the Elbow Method to help select an appropriate K.
+
+### 8. Interview Takeaway
+
+Remember the distinction:
+
+| Metric | What it measures |
+|---|---|
+| WCSS | Sum of squared distances within clusters |
+| Inertia | Scikit-learn's K-Means objective, equivalent to WCSS |
+| Euclidean Distance | Straight-line distance between two points |
+| Squared Euclidean Distance | Euclidean distance squared |
+
+**Ultimate intuition:** WCSS measures how tightly the data points are grouped around their respective centroids. Smaller WCSS generally means more compact clusters, but it must be evaluated alongside the number of clusters.
+
+</details>
+</details>
+
