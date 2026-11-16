@@ -1,3 +1,6 @@
+
+[Chat-GPT Link](https://chatgpt.com/s/t_6afa850353e08191955c191ecd920867)
+
 # Gaussian Mixture Models (GMM) — Complete Explanation
 
 Unsupervised Learning · Clustering · Probabilistic Models
