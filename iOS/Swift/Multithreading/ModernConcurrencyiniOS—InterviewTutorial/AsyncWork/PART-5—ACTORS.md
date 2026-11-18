@@ -47,6 +47,24 @@ Swift's actor model protects mutable state through isolation and serialized acce
 <details>
 <summary><b>Q25. What is an Actor?</b></summary>
 
+Interview-friendly definition
+An actor is a reference type that protects its mutable state by isolating access to it, allowing only one piece of actor-isolated code to execute at a time.
+
+Example:
+actor Counter {
+
+    private var value = 0
+
+    func increment() {
+        value += 1
+    }
+
+    func getValue() -> Int {
+        value
+    }
+}
+
+Usage:
 </details>
 
 ---
