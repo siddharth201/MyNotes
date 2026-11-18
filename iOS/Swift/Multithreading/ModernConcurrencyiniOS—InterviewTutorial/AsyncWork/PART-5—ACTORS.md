@@ -146,6 +146,18 @@ Default actors use Swift's concurrency runtime and shared thread pool rather tha
 <details>
 <summary><b>Q28. Actor vs Lock?</b></summary>
 
+Traditional synchronization:
+lock.lock()
+value += 1
+lock.unlock()
+
+Actor:
+actor Counter {
+    var value = 0
+}
+
+Interview answer
+With a lock, I manually protect shared mutable state. With an actor, Swift's isolation model protects the actor's mutable state and enforces access at compile time.
 </details>
 
 ---
