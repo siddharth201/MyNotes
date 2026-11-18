@@ -84,7 +84,10 @@ Task {
 ```
 
 Output:
+
+```swift
 2
+```
 </details>
 
 ---
