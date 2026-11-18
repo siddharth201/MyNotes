@@ -129,6 +129,7 @@ Actor ≠ Thread
 ```
 
 Instead:
+
 Actor
   ↓
 Isolation
