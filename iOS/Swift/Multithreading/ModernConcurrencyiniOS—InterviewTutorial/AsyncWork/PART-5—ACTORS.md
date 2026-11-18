@@ -172,6 +172,29 @@ actor Counter {
 <details>
 <summary><b>Q29. Build a thread-safe cache using an Actor</b></summary>
 
+This is very relevant to your production iOS interview.
+actor ImageCache {
+
+    private var storage: [URL: Data] = [:]
+
+    func insert(_ data: Data, for url: URL) {
+        storage[url] = data
+    }
+
+    func value(for url: URL) -> Data? {
+        storage[url]
+    }
+
+    func remove(for url: URL) {
+        storage.removeValue(forKey: url)
+    }
+
+    func removeAll() {
+        storage.removeAll()
+    }
+}
+
+Use it:
 </details>
 
 ---
