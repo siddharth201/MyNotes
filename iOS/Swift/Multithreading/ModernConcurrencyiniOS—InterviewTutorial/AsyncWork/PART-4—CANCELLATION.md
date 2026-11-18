@@ -84,9 +84,10 @@ if Task.isCancelled {
 }
 ```
 
-**Returns a Boolean.**
+Returns a Boolean.
 
-checkCancellation()
+**checkCancellation()**
+
 try Task.checkCancellation()
 
 Throws CancellationError when cancelled.
