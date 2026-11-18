@@ -147,9 +147,12 @@ Default actors use Swift's concurrency runtime and shared thread pool rather tha
 <summary><b>Q28. Actor vs Lock?</b></summary>
 
 Traditional synchronization:
+
+```swift
 lock.lock()
 value += 1
 lock.unlock()
+```
 
 Actor:
 actor Counter {
