@@ -111,6 +111,19 @@ throws
 <details>
 <summary><b>Q4. Does task.cancel() immediately kill the task?</b></summary>
 
+**No.**
+
+This is a classic trap.
+task.cancel()
+
+doesn't mean:
+STOP CPU NOW
+
+It means:
+CANCELLATION REQUESTED
+
+Your task needs to cooperate.
+
 </details>
 
 
