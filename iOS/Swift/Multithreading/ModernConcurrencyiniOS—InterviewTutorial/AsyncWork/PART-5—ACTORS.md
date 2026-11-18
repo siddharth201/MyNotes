@@ -70,7 +70,7 @@ actor Counter {
 
 Usage:
 
-
+```swift
 let counter = Counter()
 
 Task {
@@ -81,6 +81,7 @@ Task {
 
     print(value)
 }
+```
 
 Output:
 2
