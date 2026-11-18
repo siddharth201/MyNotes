@@ -67,6 +67,8 @@ Working: 3
 Cancelling...
 ```
 
+Then cancellation stops the task because `Task.checkCancellation()` throws.
+
 </details>
 
 ---
