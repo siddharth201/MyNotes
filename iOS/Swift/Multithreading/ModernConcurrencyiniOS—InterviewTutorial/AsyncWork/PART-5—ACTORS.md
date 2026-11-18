@@ -35,6 +35,7 @@ Task {
 Task {
     counter.increment()
 }
+```
 
 Multiple concurrent accesses can race on shared mutable state.
 
