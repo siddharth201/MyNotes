@@ -127,7 +127,9 @@ STOP CPU NOW
 
 It means:
 
+```text
 CANCELLATION REQUESTED
+```
 
 Your task needs to cooperate.
 
