@@ -88,10 +88,14 @@ Returns a Boolean.
 
 **checkCancellation()**
 
+```swift
 try Task.checkCancellation()
+```
 
 Throws CancellationError when cancelled.
-Remember
+
+**Remember**
+```text
 isCancelled
      ↓
 Boolean
@@ -99,6 +103,7 @@ Boolean
 checkCancellation()
      ↓
 throws
+```
 </details>
 
 
