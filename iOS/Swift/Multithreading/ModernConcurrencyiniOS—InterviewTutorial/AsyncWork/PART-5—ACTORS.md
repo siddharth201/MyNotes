@@ -138,7 +138,7 @@ Isolation
 Serialized access
 ```
 
-Default actors use Swift's concurrency runtime and shared thread pool rather than owning one dedicated thread. Apple Developer
+Default actors use Swift's concurrency runtime and shared thread pool rather than owning one dedicated thread.
 </details>
 
 ---
