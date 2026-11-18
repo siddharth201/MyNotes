@@ -170,7 +170,7 @@ actor Counter {
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q29. Build a thread-safe cache using an Actor</b></summary>
 
 </details>
 
