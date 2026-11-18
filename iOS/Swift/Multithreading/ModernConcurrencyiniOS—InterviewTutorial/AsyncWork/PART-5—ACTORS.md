@@ -120,6 +120,18 @@ Actor State
 <details>
 <summary><b>Q27. Does an Actor mean a dedicated thread?</b></summary>
 
+**NO.**
+This is extremely important.
+Actor ≠ Thread
+
+Instead:
+Actor
+  ↓
+Isolation
+  ↓
+Serialized access
+
+Default actors use Swift's concurrency runtime and shared thread pool rather than owning one dedicated thread. Apple Developer
 </details>
 
 ---
