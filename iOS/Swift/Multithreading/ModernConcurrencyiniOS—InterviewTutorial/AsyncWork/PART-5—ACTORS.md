@@ -6,7 +6,7 @@ This is arguably the most important part for your interview.
 
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q24. What problem do Actors solve?</b></summary>
 
 </details>
 
