@@ -118,7 +118,7 @@ Actor State
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q27. Does an Actor mean a dedicated thread?</b></summary>
 
 </details>
 
