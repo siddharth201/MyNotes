@@ -52,6 +52,8 @@ Swift's actor model protects mutable state through isolation and serialized acce
 > An actor is a reference type that protects its mutable state by isolating access to it, allowing only one piece of actor-isolated code to execute at a time.
 
 **Example:**
+
+```swift
 actor Counter {
 
     private var value = 0
@@ -64,6 +66,7 @@ actor Counter {
         value
     }
 }
+```
 
 Usage:
 </details>
