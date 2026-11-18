@@ -96,7 +96,10 @@ Output:
 <summary><b>Q26. Why do we need `await` when calling an Actor?</b></summary>
 
 Because you're crossing an isolation boundary.
+
+```swift
 await counter.increment()
+```
 
 Think:
 Outside
