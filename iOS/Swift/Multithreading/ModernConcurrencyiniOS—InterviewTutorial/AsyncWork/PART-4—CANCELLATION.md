@@ -121,7 +121,9 @@ task.cancel()
 
 doesn't mean:
 
+```text
 STOP CPU NOW
+```
 
 It means:
 
