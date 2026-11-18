@@ -76,7 +76,7 @@ Then cancellation stops the task because `Task.checkCancellation()` throws.
 <details>
 <summary><b>Q22. What is the difference between `Task.isCancelled` and `Task.checkCancellation()`?</b></summary>
 
-> **isCancelled**
+**isCancelled**
 
 ```swift
 if Task.isCancelled {
@@ -84,7 +84,8 @@ if Task.isCancelled {
 }
 ```
 
-Returns a Boolean.
+**Returns a Boolean.**
+
 checkCancellation()
 try Task.checkCancellation()
 
