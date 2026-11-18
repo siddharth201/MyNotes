@@ -162,8 +162,9 @@ actor Counter {
 }
 ```
 
-Interview answer
-With a lock, I manually protect shared mutable state. With an actor, Swift's isolation model protects the actor's mutable state and enforces access at compile time.
+**Interview answer**
+
+> With a lock, I manually protect shared mutable state. With an actor, Swift's isolation model protects the actor's mutable state and enforces access at compile time.
 </details>
 
 ---
