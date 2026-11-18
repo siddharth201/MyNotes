@@ -74,7 +74,7 @@ Then cancellation stops the task because `Task.checkCancellation()` throws.
 ---
 
 <details>
-<summary><b>Q22. What is the difference between `Task.isCancelled` and `Task.checkCancellation()`?</b></summary>
+<summary><b>Q3. What is the difference between `Task.isCancelled` and `Task.checkCancellation()`?</b></summary>
 
 **isCancelled**
 
@@ -109,7 +109,7 @@ throws
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q4. Does task.cancel() immediately kill the task?</b></summary>
 
 </details>
 
