@@ -11,9 +11,9 @@
 
 ### S-C-R
 
-Signal
-Check
-Respond
+**S**ignal
+**C**heck
+**R**espond
 </details>
 
 
