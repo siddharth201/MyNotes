@@ -102,6 +102,8 @@ await counter.increment()
 ```
 
 Think:
+
+```swift
 Outside
    │
    │ await
@@ -110,6 +112,7 @@ Actor Isolation Boundary
    │
    ↓
 Actor State
+```
 </details>
 
 ---
