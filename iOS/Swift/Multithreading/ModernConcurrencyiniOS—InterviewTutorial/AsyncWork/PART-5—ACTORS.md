@@ -71,6 +71,19 @@ actor Counter {
 Usage:
 
 
+let counter = Counter()
+
+Task {
+    await counter.increment()
+    await counter.increment()
+
+    let value = await counter.getValue()
+
+    print(value)
+}
+
+Output:
+2
 </details>
 
 ---
