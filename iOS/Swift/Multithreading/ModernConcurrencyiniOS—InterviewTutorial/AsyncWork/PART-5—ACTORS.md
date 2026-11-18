@@ -95,7 +95,18 @@ Output:
 <details>
 <summary><b>Q26. Why do we need `await` when calling an Actor?</b></summary>
 
+Because you're crossing an isolation boundary.
+await counter.increment()
 
+Think:
+Outside
+   │
+   │ await
+   ↓
+Actor Isolation Boundary
+   │
+   ↓
+Actor State
 </details>
 
 ---
