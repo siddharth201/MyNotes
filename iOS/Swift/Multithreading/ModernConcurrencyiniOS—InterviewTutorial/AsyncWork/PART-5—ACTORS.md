@@ -144,7 +144,7 @@ Default actors use Swift's concurrency runtime and shared thread pool rather tha
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q28. Actor vs Lock?</b></summary>
 
 </details>
 
