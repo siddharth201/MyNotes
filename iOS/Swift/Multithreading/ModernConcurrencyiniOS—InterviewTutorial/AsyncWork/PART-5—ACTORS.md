@@ -172,7 +172,9 @@ actor Counter {
 <details>
 <summary><b>Q29. Build a thread-safe cache using an Actor</b></summary>
 
-This is very relevant to your production iOS interview.
+This is **very relevant to your production iOS interview.**
+
+```swift
 actor ImageCache {
 
     private var storage: [URL: Data] = [:]
@@ -193,6 +195,7 @@ actor ImageCache {
         storage.removeAll()
     }
 }
+```
 
 Use it:
 </details>
