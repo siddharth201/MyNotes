@@ -121,8 +121,12 @@ Actor State
 <summary><b>Q27. Does an Actor mean a dedicated thread?</b></summary>
 
 **NO.**
+
 This is extremely important.
+
+```swift
 Actor ≠ Thread
+```
 
 Instead:
 Actor
