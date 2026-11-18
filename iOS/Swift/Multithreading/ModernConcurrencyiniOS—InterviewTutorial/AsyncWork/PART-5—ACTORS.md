@@ -198,6 +198,30 @@ actor ImageCache {
 ```
 
 Use it:
+
+```swift
+let cache = ImageCache()
+
+Task {
+
+    let url = URL(string: "https://example.com/image.jpg")!
+
+    let data = Data("Hello".utf8)
+
+    await cache.insert(data, for: url)
+
+    if let cachedData = await cache.value(for: url) {
+        print(String(data: cachedData, encoding: .utf8)!)
+    }
+}
+```
+
+This gives you an excellent interview story:
+Network Service
+      ↓
+Cache Actor
+      ↓
+Dictionary
 </details>
 
 ---
