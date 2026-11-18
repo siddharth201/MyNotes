@@ -93,7 +93,8 @@ Output:
 ---
 
 <details>
-<summary><b>Q26. Why do we need await when calling an Actor?</b></summary>
+<summary><b>Q26. Why do we need `await` when calling an Actor?</b></summary>
+
 
 </details>
 
