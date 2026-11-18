@@ -60,6 +60,13 @@ Task {
 
 Expected roughly:
 
+```swift
+Working: 1
+Working: 2
+Working: 3
+Cancelling...
+```
+
 </details>
 
 ---
