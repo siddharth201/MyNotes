@@ -76,6 +76,27 @@ Then cancellation stops the task because `Task.checkCancellation()` throws.
 <details>
 <summary><b>Q22. What is the difference between `Task.isCancelled` and `Task.checkCancellation()`?</b></summary>
 
+> **isCancelled**
+
+```swift
+if Task.isCancelled {
+    return
+}
+```
+
+Returns a Boolean.
+checkCancellation()
+try Task.checkCancellation()
+
+Throws CancellationError when cancelled.
+Remember
+isCancelled
+     ↓
+Boolean
+
+checkCancellation()
+     ↓
+throws
 </details>
 
 
