@@ -22,6 +22,8 @@ final class Counter {
 ```
 
 And:
+
+```swift
 Task {
     counter.increment()
 }
