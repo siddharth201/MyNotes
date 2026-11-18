@@ -217,11 +217,14 @@ Task {
 ```
 
 This gives you an excellent interview story:
+
+```text
 Network Service
       ↓
 Cache Actor
       ↓
 Dictionary
+```
 </details>
 
 ---
