@@ -155,9 +155,12 @@ lock.unlock()
 ```
 
 Actor:
+
+```swift
 actor Counter {
     var value = 0
 }
+```
 
 Interview answer
 With a lock, I manually protect shared mutable state. With an actor, Swift's isolation model protects the actor's mutable state and enforces access at compile time.
