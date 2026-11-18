@@ -21,7 +21,42 @@
 <details>
 <summary><b>Q2. Run this cancellation example</b></summary>
 
+```swift
 
+import Foundation
+
+let task = Task {
+    
+    for i in 1...10 {
+        
+        try Task.checkCancellation()
+        
+        print("Working: \(i)")
+        
+        try await Task.sleep(for: .seconds(1))
+    }
+    
+    return "Completed"
+}
+
+Task {
+    
+    do {
+        
+        try await Task.sleep(for: .seconds(3))
+        
+        print("Cancelling...")
+        
+        task.cancel()
+        
+        let result = try await task.value
+        
+        print(result)
+    } catch {
+        print("Task failed or was cancelled: \(error)")
+    }
+}
+```
 
 </details>
 
