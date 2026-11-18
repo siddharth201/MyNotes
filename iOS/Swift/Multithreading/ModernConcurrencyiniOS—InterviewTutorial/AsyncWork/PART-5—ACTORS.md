@@ -45,7 +45,7 @@ Swift's actor model protects mutable state through isolation and serialized acce
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
+<summary><b>Q25. What is an Actor?</b></summary>
 
 </details>
 
