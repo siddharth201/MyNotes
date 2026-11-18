@@ -114,12 +114,17 @@ throws
 **No.**
 
 This is a classic trap.
+
+```swift
 task.cancel()
+```
 
 doesn't mean:
+
 STOP CPU NOW
 
 It means:
+
 CANCELLATION REQUESTED
 
 Your task needs to cooperate.
