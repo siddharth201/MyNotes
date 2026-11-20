@@ -345,6 +345,8 @@ func urlSession(
 
 </details>
 
+---
+
 <details>
 <summary><b>Q9: What are GDPR and HIPAA? How do they affect iOS app development?</b></summary>
 
@@ -396,6 +398,8 @@ func urlSession(
 
 </details>
 
+---
+
 <details>
 <summary><b>Q10: What is App Transport Security (ATS)? Why was it introduced?</b></summary>
 
@@ -438,6 +442,8 @@ func urlSession(
 **Interview Tip:** ATS does not mean that HTTP is technically impossible. It means insecure connections are restricted by default, and exceptions should be used only when necessary.
 
 </details>
+
+---
 
 <details>
 <summary><b>Q11: What is iOS jailbreaking? Why should apps detect jailbroken devices?</b></summary>
@@ -506,6 +512,10 @@ Apps handling sensitive data (banking, health, enterprise) should consider jailb
 Jailbreak detection is not foolproof. Attackers can bypass individual checks, so apps should combine multiple detection techniques with server-side security controls and avoid treating a single detection result as definitive proof of compromise.
 
 </details>
+
+---
+
+
 
 
 
