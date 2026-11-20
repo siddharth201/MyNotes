@@ -287,6 +287,7 @@ Most optimization efforts focus on **cold launch**, since that’s where delays 
    * Minimize usage of dynamic features that increase startup cost.
    * Use whole-module optimization in build settings.
 8. **Use Instruments (Time Profiler + Launch Template)**
+   * Measure what's blocking main thread at startup.
 
 </details>
 
