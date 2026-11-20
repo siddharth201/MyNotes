@@ -265,3 +265,34 @@ SSL pinning is <b>not always necessary</b>, but it’s critical for apps that ha
 
 ---
 
+<details>
+<summary><b>Q7: What is the URLSessionDelegate method for handling authentication challenges?</b></summary>
+
+In iOS, when a <b>network request</b> encounters an <b>authentication challenge</b> (like SSL/TLS certificate verification, HTTP Basic auth, or client certificates), you can handle it using this delegate method:
+
+```swift
+func urlSession(
+    _ session: URLSession,
+    didReceive challenge: URLAuthenticationChallenge,
+    completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void
+)
+```
+
+### AuthChallengeDisposition Options
+
+- <b>useCredential</b> → Accept the provided credential or create a new one.
+- <b>performDefaultHandling</b> → Let the system handle the challenge automatically.
+- <b>cancelAuthenticationChallenge</b> → Cancel the request.
+- <b>rejectProtectionSpace</b> → Reject the challenge without canceling the entire request.
+
+### When It's Used
+
+- <b>SSL/TLS certificate validation</b> (including certificate pinning).
+- <b>Client certificates</b> for secure APIs.
+- <b>HTTP Basic or Digest authentication.</b>
+
+</details>
+
+---
+
+
