@@ -104,6 +104,8 @@ When the object dies:
 **Key Points:**
 * Weak references are **safe pointers** that auto-clear on deallocation.
 
+* The weak reference table is the behind-the-scenes mechanism that keeps weak references valid and prevents dangling pointers.
+
 </details>
 
 ---
