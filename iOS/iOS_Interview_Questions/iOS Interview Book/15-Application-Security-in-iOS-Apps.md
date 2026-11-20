@@ -516,18 +516,17 @@ Jailbreak detection is not foolproof. Attackers can bypass individual checks, so
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
-
-### Q12: What is the Local Authentication framework? How does it work?
+<summary><b>Q12. What is the Local Authentication framework? How does it work?</b></summary>
 
 - It’s an **Apple framework** that allows iOS apps to **authenticate users locally** using **biometrics or device passcode**.
-- Main goal: **securely verify user identity** without sending credentials over the network.
+
+- Main goal: **Securely verify user identity** without sending credentials over the network.
 
 **Supported Authentication Methods:**
 
-1. **Face ID** – facial recognition.
-2. **Touch ID** – fingerprint recognition.
-3. **Device Passcode** – fallback if biometrics fail or aren’t available.
+1. **Face ID** – Facial recognition.
+2. **Touch ID** – Fingerprint recognition.
+3. **Device Passcode** – Fallback if biometrics fail or aren’t available.
 
 **How It Works**
 
@@ -541,13 +540,14 @@ Jailbreak detection is not foolproof. Attackers can bypass individual checks, so
 ---
 
 <details>
-<summary><b>Explanation</b></summary>
-
-### Q13: What is OWASP Mobile Top 10? What are the main security risks for mobile apps?
+<summary><b>Q13. What is OWASP Mobile Top 10? What are the main security risks for mobile apps?</b></summary>
 
 - **OWASP** stands for **Open Web Application Security Project**.
+
 - The **Mobile Top 10** is a list of the **most critical security risks** for mobile apps.
+
 - Helps developers **understand and mitigate vulnerabilities** in iOS and Android apps.
+
 - Updated periodically to reflect **emerging threats**.
 
 ### Main Security Risks for Mobile Apps
@@ -613,6 +613,3 @@ Here’s a simplified version of the latest OWASP Mobile Top 10 (common in iOS a
 </details>
 
 ---
-
-
-
