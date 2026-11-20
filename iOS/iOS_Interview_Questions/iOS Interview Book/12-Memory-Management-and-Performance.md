@@ -196,3 +196,98 @@ Imagine a scrolling list in your app stutters.
 </details>
 
 ---
+
+<details>
+<summary><b>Q7: What causes poor scrolling performance in UITableView and UICollectionView?</b></summary>
+
+**1. Heavy Work on the Main Thread**
+* UI rendering happens on the **main thread**.
+* If you do expensive work (JSON parsing, image decoding, database fetches) on the main thread, scrolling will stutter.
+  Solution: move heavy tasks to a **background thread** using GCD or `OperationQueue` .
+
+**2. Improper Cell Reuse**
+* If you don’t reuse cells correctly, new cells are constantly created.
+* This increases CPU and memory usage during fast scrolling.
+  Solution: always use `dequeueReusableCell(withIdentifier:)` for tables and `dequeueReusableCell(for:)` in collections.
+
+**3. Large or Unoptimized Images**
+* Loading full-size images directly into cells causes slow decoding and huge memory spikes.
+* Images not cached will reload every time a cell appears.
+  Solution: resize images to the correct display size, use libraries like **SDWebImage / Kingfisher** for caching.
+
+**4. Complex Auto Layout or Deep View Hierarchies**
+* If cells have too many nested views or heavy Auto Layout constraints, the system spends a lot of time calculating layouts during scrolling.
+  Solution: simplify layouts, use stack views efficiently, or consider manual layout ( `layoutSubviews` ).
+
+**5. Synchronous Networking or Disk Access**
+* Fetching data or images synchronously inside `cellForRowAt` blocks the UI.
+  Solution: use **asynchronous loading** and update cells when data is ready.
+
+**6. Too Much Work in `cellForRowAt`**
+* `cellForRowAt` is called **constantly** as you scroll.
+* If you do complex setup, parsing, or drawing here, performance tanks.
+  Solution: pre-calculate values before, and keep `cellForRowAt` lightweight (just bind data).
+
+**7. Offscreen Rendering & Blending**
+* Using properties like `cornerRadius` , `shadow` , `maskToBounds` on many cells forces Core Animation to do extra offscreen rendering.
+* This adds GPU overhead and drops frames.
+  Solution: use `shadowPath` , pre-rendered assets, or rasterization where appropriate.
+
+</details>
+
+---
+
+<details>
+<summary><b>Q8: How do you optimize app launch time and what factors affect it?</b></summary>
+
+App launch time is a **big part of user experience** — if your app takes too long to start, users might drop it right away. Apple even monitors "App Launch Performance" in App Store submissions. Let’s go step by step.
+
+**Types of App Launch**
+1. **Cold Launch** – App starts from scratch (no process in memory).
+2. **Warm Launch** – App is in memory but not running (just suspended).
+3. **Hot Launch** – App is already running in background and brought to foreground.
+
+Most optimization efforts focus on **cold launch**, since that’s where delays are most noticeable.
+
+**Factors Affecting Launch Time**
+
+1. **App Binary Size & Dynamic Libraries**
+   * Loading lots of dynamic frameworks slows startup.
+   * Large app binaries take longer to load.
+2. **Heavy `AppDelegate` / `SceneDelegate` Code**
+   * Doing network calls, database setup, or analytics initialization before the first screen appears adds big delays.
+3. **Storyboard Loading & View Hierarchies**
+   * Large storyboards or deep view hierarchies take more time to decode and render.
+4. **Disk and I/O Operations**
+   * Reading large files, Core Data migrations, or synchronous disk/database access during launch blocks UI.
+5. **Static Initializers & Singletons**
+   * Static variables or singletons that do heavy work at startup increase launch cost.
+
+**Optimization Techniques**
+
+1. **Lazy Loading**
+   * Don’t load everything at once.
+   * Postpone work like analytics, ads, or data fetch until after the first screen is visible.
+2. **Optimize AppDelegate / SceneDelegate**
+   * Keep `didFinishLaunchingWithOptions` as light as possible.
+   * Defer setup work using `DispatchQueue.global().async` .
+3. **Reduce Dependencies**
+   * Avoid unnecessary 3rd-party SDKs or static initializations.
+   * If you must use them, initialize lazily.
+4. **Smaller Storyboards**
+   * Split giant storyboards into smaller modules.
+   * Consider programmatic UI for complex layouts.
+5. **Image & Asset Optimization**
+   * Use appropriate image sizes.
+   * Enable asset catalogs and compression.
+6. **Database Handling**
+   * Defer Core Data migrations or run them in background after showing UI.
+   * Use lightweight persistent stores if possible.
+7. **Precompile / Reduce Swift Overhead**
+   * Minimize usage of dynamic features that increase startup cost.
+   * Use whole-module optimization in build settings.
+8. **Use Instruments (Time Profiler + Launch Template)**
+
+</details>
+
+---
