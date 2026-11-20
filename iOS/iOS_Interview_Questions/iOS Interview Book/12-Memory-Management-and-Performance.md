@@ -1,5 +1,5 @@
 
-## 
+## Memory Management & Performance
 
 <details>
 <summary><b>Q1: What is ARC (Automatic Reference Counting)? How does it differ from garbage collection?</b></summary>
