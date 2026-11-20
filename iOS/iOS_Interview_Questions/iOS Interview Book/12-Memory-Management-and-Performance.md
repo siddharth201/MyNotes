@@ -293,3 +293,78 @@ Most optimization efforts focus on **cold launch**, since that’s where delays 
 </details>
 
 ---
+
+<details>
+<summary><b>Q9: How does ARC interact with Core Foundation objects and CFRetain / CFRelease ?</b></summary>
+
+**1. ARC vs Core Foundation**
+* Swift’s **ARC** automatically manages the lifetime of Swift/Objective-C objects ( `NSObject` and subclasses).
+* **Core Foundation objects** (e.g., `CFArray` , `CFString` , `CFDictionary` ) are C-based, not Swift classes.
+* CF objects use **manual reference counting** with `CFRetain()` and `CFRelease()` .
+
+So, if you create a CF object, you are responsible for balancing retains and releases. ARC doesn’t step in unless the object is **toll-free bridged** to Cocoa.
+
+**2. Toll-Free Bridging**
+
+Some CF types are **“toll-free bridged”** with Foundation equivalents:
+* `CFStringRef` ↔ `NSString`
+* `CFArrayRef` ↔ `NSArray`
+* `CFDictionaryRef` ↔ `NSDictionary`
+
+This means you can cast between them freely.
+When you do this in Swift, ARC takes over and manages the retain/release for you.
+
+**3. Non-Bridged CF Objects**
+
+If you’re working with a CF type that’s **not bridged**, ARC won’t manage it.
+You must manually use `CFRetain` and `CFRelease` .
+
+**4. Unmanaged\<T\>**
+
+Swift provides `Unmanaged<T>` to wrap CF objects when ARC can’t directly manage them.
+
+Two main methods:
+* `takeRetainedValue()` → use when you get an object you **own** (you must release later).
+* `takeUnretainedValue()` → use when you get an object you **don’t own** (you must retain if you want to keep it).
+
+</details>
+
+---
+
+<details>
+<summary><b>Q10: How do you handle retain cycles in deeply nested object hierarchies?</b></summary>
+
+A **retain cycle** happens when objects hold **strong references** to each other.
+
+In a nested hierarchy like:
+`Parent -> Child -> Grandchild -> Parent`
+ARC can’t free them, even if you don’t need them anymore.
+
+Result → **Memory leak**.
+
+**How to handle it**
+
+**1. Weak references for back links**
+* Parent should strongly own children.
+* Children should keep **weak** references back to parent.
+
+**2. Use unowned when safe**
+* If child cannot exist without parent (like a credit card without an owner), use **unowned**.
+* Unowned does not keep the parent alive, but never becomes `nil` .
+
+**3. Closures with [weak self] or [unowned self]**
+* Closures capture `self` strongly by default → retain cycles.
+* Always use capture lists
+
+**4. Break references manually**
+* Sometimes you need to **set references to nil** in `deinit` or `cleanup()` methods.
+
+**5. Decide ownership clearly**
+* Not every relationship should be strong.
+* Rule:
+  * **Top → Down:** strong (e.g., parent owns children).
+  * **Bottom → Up:** weak/unowned (e.g., child knows parent, but doesn’t keep it alive).
+
+</details>
+
+---
