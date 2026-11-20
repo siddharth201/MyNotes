@@ -109,3 +109,90 @@ When the object dies:
 </details>
 
 ---
+
+<details>
+<summary><b>Q5: What's the difference between [weak self] and [unowned self] in closure capture lists?</b></summary>
+
+**`[weak self]` in Closures**
+* Captures `self` as a **weak reference**.
+* Does **not** increase retain count.
+* Becomes `nil` automatically when `self` is deallocated.
+* Since it may become `nil` , you must use **optional unwrapping** inside the closure.
+
+**`[unowned self]` in Closures**
+* Captures `self` as an **unowned reference**.
+* Does **not** increase retain count.
+* Unlike weak, it is **not optional** and never becomes `nil` .
+* Assumes that `self` will **always be alive** when the closure runs.
+
+**Key Points**
+* Use `[weak self]` in most cases, especially with async callbacks, timers, or escaping closures.
+* Use `[unowned self]` only when you are **100% sure** that `self` will be alive for as long as the closure exists (e.g., closure owned by `self` itself).
+
+</details>
+
+---
+
+<details>
+<summary><b>Q6: What is a retain cycle (reference cycle)? How does it prevent memory deallocation?</b></summary>
+
+* A **retain cycle** (also called a reference cycle) happens when **two or more objects hold strong references to each other**.
+* Because of this, their reference counts never drop to zero.
+* As a result, ARC can’t deallocate them → **memory leak**.
+
+**How Retain Cycles Prevent Deallocation**
+* ARC frees memory only when the reference count hits **0**.
+* In a cycle, each object keeps the other alive with a strong reference.
+* Even if you set all external references to `nil` , the cycle keeps the objects in memory forever.
+
+**Key Point:**
+* Always check relationships between objects.
+* Use **weak** or **unowned** to break cycles (commonly in delegates, closures, and parent-child relationships).
+
+</details>
+
+---
+
+<details>
+<summary><b>Q6: What is Instruments and what types of performance issues can it help identify?</b></summary>
+
+* Instruments is a **profiling and debugging tool** bundled with Xcode.
+* It lets you run your app and record its behavior in real time.
+* Provides visual graphs, timelines, and detailed metrics.
+* Helps track memory, CPU, energy, and UI performance issues.
+
+Think of it as a **microscope for your app’s runtime behavior**.
+
+**Common Performance Issues Instruments Helps Identify**
+
+**Memory Issues**
+* **Leaks instrument** → Detects memory leaks (like retain cycles).
+* **Allocations instrument** → Tracks memory usage and allocations over time.
+* Helps find excessive memory growth that may cause crashes.
+
+**CPU Usage**
+* **Time Profiler** → Shows which functions consume the most CPU time.
+* Detects inefficient algorithms, tight loops, or blocking operations.
+
+**Energy Usage**
+* **Energy Log** → Monitors battery consumption.
+* Identifies high CPU, GPU, and background activity that drain power.
+
+**UI Performance**
+* **Core Animation instrument** → Measures frame rendering times.
+* Detects dropped frames, laggy animations, and layout bottlenecks.
+
+**File and Network Activity**
+* Tracks disk reads/writes and network calls.
+* Helps spot slow I/O or excessive background activity.
+
+**Example Use Case**
+
+Imagine a scrolling list in your app stutters.
+* Run **Instruments → Core Animation** → You see frame rates drop below 60 FPS.
+* Switch to **Time Profiler** → You find that a heavy image decoding function is blocking the main thread.
+  Solution: move image decoding to a background thread.
+
+</details>
+
+---
