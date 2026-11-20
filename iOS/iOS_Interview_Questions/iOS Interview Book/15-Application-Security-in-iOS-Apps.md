@@ -295,4 +295,217 @@ func urlSession(
 
 ---
 
+<details>
+<summary><b>Q8: What are symmetric vs asymmetric encryption? When would you use each?</b></summary>
+
+### Symmetric Encryption
+
+- Uses **one secret key** for both encryption and decryption.
+- Both sender and receiver must **share the same key securely**.
+- Fast and efficient for encrypting **large amounts of data**.
+
+**Example Algorithms:**
+
+- AES (Advanced Encryption Standard).
+- DES (Data Encryption Standard) — outdated and insecure; should not be used.
+
+**Use Cases:**
+
+- Encrypting local files or databases.
+- Encrypting data at rest.
+- Fast encryption for large payloads.
+
+### Asymmetric Encryption
+
+- Uses a **key pair**:
+
+  - **Public Key** → Can be shared with anyone. Used to encrypt data for the key owner or verify their digital signatures.
+  - **Private Key** → Kept secret by the owner. Used to decrypt data or create digital signatures.
+
+- Slower than symmetric encryption, generally used for key exchange, digital signatures, and authentication.
+
+**Example Algorithms:**
+
+- RSA (Rivest–Shamir–Adleman).
+- ECC (Elliptic Curve Cryptography), including ECDH and ECDSA.
+
+**Use Cases:**
+
+- Securely establishing or exchanging symmetric keys.
+- Digital signatures for authentication and integrity.
+- Secure authentication and key exchange.
+
+### Key Points
+
+- **Use symmetric encryption** for data storage and large payloads.
+- **Use asymmetric cryptography** for secure key exchange and digital signatures.
+- Often, both are combined using **hybrid encryption**: asymmetric cryptography establishes a shared symmetric key, and symmetric encryption handles the bulk of the data.
+
+**Real-world example:** HTTPS/TLS uses asymmetric cryptography (typically ephemeral key exchange) to establish shared secrets, then symmetric authenticated encryption to protect application data.
+
+</details>
+
+<details>
+<summary><b>Q9: What are GDPR and HIPAA? How do they affect iOS app development?</b></summary>
+
+### GDPR (General Data Protection Regulation)
+
+- **Region:** European Union (EU).
+- **Purpose:** Protects the personal data and privacy of individuals in the EU/EEA.
+- **Focus:** User consent, data transparency, and the right to access, correct, or delete personal data.
+
+### Key Requirements for iOS Apps
+
+1. **User consent** – Obtain valid consent where required before processing personal data.
+2. **Right to access/delete data** – Allow users to access and request deletion of their personal data.
+3. **Data minimization** – Collect only the data necessary for the application's purpose.
+4. **Secure storage and transmission** – Protect sensitive data using appropriate security measures.
+5. **Privacy policy** – Clearly explain what data is collected, how it is used, and why.
+
+### Impact on iOS Development
+
+- Use secure storage (Keychain and appropriately protected local databases).
+- Use HTTPS/TLS for network requests.
+- Implement consent flows and privacy settings.
+- Support data deletion and export requests.
+- Be transparent about data collection and third-party sharing.
+
+### HIPAA (Health Insurance Portability and Accountability Act)
+
+- **Region:** United States.
+- **Purpose:** Protects sensitive personal health information (PHI).
+- **Focus:** Security, privacy, and confidentiality of medical information.
+
+**Important:** HIPAA does not automatically apply to every health-related app. It primarily applies to covered entities and their business associates.
+
+### Key Requirements for iOS Apps
+
+1. **Data encryption at rest and in transit** – Protect electronic protected health information (ePHI).
+2. **Access controls** – Only authorized users should access PHI.
+3. **Audit logs** – Track access to sensitive health information.
+4. **Data integrity** – Protect PHI against improper alteration or destruction.
+5. **Business Associate Agreements (BAA)** – Required when applicable third-party service providers handle PHI on behalf of covered entities.
+
+### Impact on iOS Development
+
+- Protect health-related data using Keychain and appropriate file/database encryption.
+- Implement strong authentication and authorization.
+- Use secure HTTPS/TLS communication.
+- Choose appropriately HIPAA-compliant backend and third-party services.
+- Maintain audit logs for sensitive operations.
+
+</details>
+
+<details>
+<summary><b>Q10: What is App Transport Security (ATS)? Why was it introduced?</b></summary>
+
+### What is App Transport Security?
+
+- ATS is a security feature introduced by Apple in **iOS 9 and macOS 10.11**.
+- It enforces secure network connections for apps using Apple's URL Loading System.
+- By default, it requires connections to meet Apple's security requirements, including HTTPS/TLS.
+
+### Why ATS Was Introduced
+
+**1. Improve Network Security**
+
+- Prevent apps from transmitting sensitive data over unencrypted HTTP connections.
+
+**2. Prevent Man-in-the-Middle (MITM) Attacks**
+
+- TLS certificate validation helps prevent attackers from intercepting or modifying data in transit.
+
+**3. Promote Modern Cryptography**
+
+- Encourages TLS 1.2 or higher and strong cryptographic configurations.
+
+**4. Standardize Secure Connections Across Apps**
+
+- Makes secure networking the default and reduces the burden on developers to configure basic transport security.
+
+### ATS Requirements
+
+- Use HTTPS with supported TLS versions (TLS 1.2 or higher under standard ATS requirements).
+- Certificates must be valid and trusted.
+- Use strong cipher suites and forward secrecy where required.
+- Avoid obsolete cryptographic algorithms and configurations.
+
+### Default Behavior
+
+- If an app attempts to connect using insecure HTTP through the URL Loading System, ATS blocks the connection unless an appropriate exception is configured.
+- Exceptions can be configured in the app's `Info.plist` using `NSAppTransportSecurity`.
+
+**Interview Tip:** ATS does not mean that HTTP is technically impossible. It means insecure connections are restricted by default, and exceptions should be used only when necessary.
+
+</details>
+
+<details>
+<summary><b>Q11: What is iOS jailbreaking? Why should apps detect jailbroken devices?</b></summary>
+
+### What is Jailbreaking?
+
+- **Jailbreaking** is the process of bypassing Apple's built-in software restrictions on iOS devices.
+- It can provide elevated privileges, including root-level access, allowing installation of unauthorized apps, tweaks, and system modifications.
+- Jailbreaking can weaken Apple's security mechanisms and compromise device integrity.
+
+### How Jailbreaking Works
+
+- Exploits vulnerabilities in iOS to gain elevated privileges.
+- May install package managers (like Cydia) to download apps outside the App Store.
+- Can modify system files and bypass normal security restrictions.
+
+### Why Apps Should Detect Jailbroken Devices
+
+**1. Security Risks**
+
+- Jailbroken devices may allow attackers to bypass app security controls.
+- Sensitive data (tokens, passwords, API keys) may become more vulnerable to extraction.
+
+**2. Prevent Piracy**
+
+- Jailbreaking can facilitate cracked apps and unauthorized in-app purchase modifications, potentially impacting revenue.
+
+**3. Maintain App Integrity**
+
+- Banking, payment, and enterprise apps may require a trusted execution environment.
+- Detection helps identify potentially compromised devices.
+
+**4. Compliance Requirements**
+
+- Certain financial, health, or enterprise applications may have security policies requiring restrictions on compromised devices.
+
+### Common Jailbreak Detection Techniques
+
+**1. Check for Known Jailbreak Files**
+
+Check for commonly associated files and paths, such as:
+
+- `/Applications/Cydia.app`
+- `/bin/bash`
+- Other known jailbreak-related files.
+
+**2. Check for Write Access to System Directories**
+
+- Normally, an app cannot write outside its sandbox.
+- Unexpected write access may indicate compromised device restrictions.
+
+**3. Check for Suspicious Processes or Files**
+
+- Look for suspicious processes, modified system files, or jailbreak-related artifacts.
+
+**4. Check for Ability to Open Restricted URL Schemes**
+
+- For example, the `cydia://` URL scheme can indicate the presence of Cydia.
+
+### Key Points
+
+Apps handling sensitive data (banking, health, enterprise) should consider jailbreak detection as one layer of their security strategy.
+
+**Important Interview Point:**
+
+Jailbreak detection is not foolproof. Attackers can bypass individual checks, so apps should combine multiple detection techniques with server-side security controls and avoid treating a single detection result as definitive proof of compromise.
+
+</details>
+
+
 
