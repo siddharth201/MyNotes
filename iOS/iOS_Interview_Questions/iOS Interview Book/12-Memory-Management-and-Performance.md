@@ -115,6 +115,8 @@ When the object dies:
 <details>
 <summary><b>Q5: What's the difference between [weak self] and [unowned self] in closure capture lists?</b></summary>
 
+[**Explanation with example**]()
+
 **`[weak self]` in Closures**
 * Captures `self` as a **weak reference**.
 * Does **not** increase retain count.
