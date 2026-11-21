@@ -55,6 +55,8 @@ If the reference count drops to **zero**, the object is immediately deallocated 
 <details>
 <summary><b>Q3: What's the difference between strong, weak, and unowned references?</b></summary>
 
+[**Explanation with example**](https://github.com/siddharth201/MyNotes/blob/main/iOS/iOS_Interview_Questions/iOS%20Interview%20Book/Misc/Strong-vs-Weak-vs-Unowned.md)
+
 **Strong Reference (default)**
 * A **strong reference** means the object is kept alive as long as this reference exists.
 * This is the default in Swift.
