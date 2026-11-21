@@ -11873,7 +11873,7 @@ Answering that naturally leads to hybrid encryption and the TLS handshake, helpi
 
 ### **Q18: What is OWASP Mobile Top 10? What are the main security risks for mobile apps?**
 <details>
-<summary>Answer</summary>  
+<summary>Answer1</summary>  
 
 • OWASP stands for Open Web Application Security Project.
 
@@ -11936,6 +11936,11 @@ M10 – Privacy Issues
 • Avoids App Store rejection due to insecure practices.
 
 • Guides developers to implement secure coding patterns, encryption, authentication, and secure communication.
+</details>
+
+<details>
+<summary>Answer2</summary>
+
 </details>
 
 </details>
