@@ -568,6 +568,20 @@ Jailbreak detection is not foolproof. Attackers can bypass individual checks, so
 >
 
 
+### 1. Sentence Mnemonic: **"Can Smart Apps Validate Every Private Binary Secret Safely & Cleanly?"**
+
+Take the **first letter** of each word to match the core keyword of M1–M10:
+
+* **M1 – C**redential Usage *(**C**an)*
+* **M2 – S**upply Chain Security *(**S**mart)*
+* **M3 – A**uthentication & Authorization *(**A**pps)*
+* **M4 – V**alidation (Input/Output) *(**V**alidate)*
+* **M5 – E**ncrypted / Insecure Communication *(**E**very)*
+* **M6 – P**rivacy Controls *(**P**rivate)*
+* **M7 – B**inary Protections *(**B**inary)*
+* **M8 – S**ecurity Misconfiguration *(**S**ecret)*
+* **M9 – S**torage (Insecure Data Storage) *(**S**afely &)*
+* **M10 – C**ryptography *(**C**leanly?)*
 
 </details>
 
