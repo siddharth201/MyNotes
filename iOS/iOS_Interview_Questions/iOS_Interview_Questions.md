@@ -11941,30 +11941,6 @@ M10 – Privacy Issues
 <details>
 <summary>Answer2</summary>
 
-Your answer is **clear, well-structured, and interview-friendly**, especially because it ties the concepts directly to iOS (`Keychain`, `UserDefaults`, `IPA`).
-
-However, there are **two main issues** to fix so an interviewer doesn't catch you out on outdated facts:
-
----
-
-### 1. Outdated List Version (2016 vs. 2024)
-
-* **The Issue:** You wrote *"Here’s a simplified version of the **latest** OWASP Mobile Top 10"*, but the items you listed (`M1: Improper Platform Usage`, `M7: Client Code Quality`, `M8: Code Tampering`) are actually from the **2016** edition.
-* **The Fix:** Either change the wording to *"Here are the core mobile security risks highlighted by OWASP"* (so you aren't locked into a specific year's numbering), **or** update the list to the **2024 edition** (where M1 is *Improper Credential Usage*, M2 is *Inadequate Supply Chain Security*, and *Authentication/Authorization* are merged into M3).
-
-### 2. Outdated OWASP Acronym & Minor Cleanup
-
-* **Acronym:** Update *Open **Web** Application Security Project* to *Open **Worldwide** Application Security Project*.
-* **Formatting:** There is an empty bullet point (`- `) right under the first bullet.
-* **Slight Overlap in Your List:** In your M1 (*Improper Platform Usage*), your example is *"Storing sensitive data insecurely"*, which repeats M2 (*Insecure Data Storage*). A better iOS example for Improper Platform Usage is *"Misconfiguring URL schemes/Universal Links or misusing LocalAuthentication (Face ID/Touch ID) without Keychain ACLs."*
-
----
-
-### Polished, Ready-to-Use Version
-
-Here is your answer updated with accurate 2024 OWASP Mobile Top 10 categories, sharp iOS examples, and clean formatting for your study notes:
-
-> **Q13. What is OWASP Mobile Top 10? What are the main security risks for mobile apps?**
 > * **OWASP** stands for **Open Worldwide Application Security Project**.
 > * The **Mobile Top 10** is a standard list of the **most critical security risks** for mobile apps.
 > * It helps developers understand and mitigate vulnerabilities in iOS and Android apps and is updated periodically to reflect emerging threats.
