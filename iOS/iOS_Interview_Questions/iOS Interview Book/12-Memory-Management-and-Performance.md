@@ -115,7 +115,7 @@ When the object dies:
 <details>
 <summary><b>Q5: What's the difference between [weak self] and [unowned self] in closure capture lists?</b></summary>
 
-[**Explanation with example**]()
+[**Explanation with example**](https://github.com/siddharth201/MyNotes/blob/main/iOS/iOS_Interview_Questions/iOS%20Interview%20Book/Misc/weak-self-example.md)
 
 **`[weak self]` in Closures**
 * Captures `self` as a **weak reference**.
