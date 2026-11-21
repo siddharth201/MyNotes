@@ -542,73 +542,32 @@ Jailbreak detection is not foolproof. Attackers can bypass individual checks, so
 <details>
 <summary><b>Q13. What is OWASP Mobile Top 10? What are the main security risks for mobile apps?</b></summary>
 
-- **OWASP** stands for **Open Web Application Security Project**.
+> * **OWASP** stands for **Open Worldwide Application Security Project**.
+> * The **Mobile Top 10** is a standard list of the **most critical security risks** for mobile apps.
+> * It helps developers understand and mitigate vulnerabilities in iOS and Android apps and is updated periodically to reflect emerging threats.
+> 
+> 
+> **Main Security Risks for Mobile Apps (OWASP Mobile Top 10 – 2024)**
+> * **M1 – Improper Credential Usage:** Hardcoding API keys, tokens, or passwords in the codebase, or transmitting credentials insecurely. *(iOS Example: Leaving API secrets in `Info.plist` or source code where they can be extracted from the `.ipa` binary.)*
+> * **M2 – Inadequate Supply Chain Security:** Vulnerabilities introduced via third-party SDKs, ad networks, or compromised dependencies. *(iOS Example: Integrating an unverified CocoaPod or Swift Package that exfiltrates user data.)*
+> * **M3 – Insecure Authentication & Authorization:** Weak login flows, missing MFA, or broken server-side access controls. *(iOS Example: Relying solely on local Face ID/Touch ID checks without validating a session token on the backend.)*
+> * **M4 – Insufficient Input/Output Validation:** Failing to sanitize external inputs, leading to injection or data corruption. *(iOS Example: Trusting unvalidated parameters passed via custom URL Schemes or Universal Links.)*
+> * **M5 – Insecure Communication:** Using HTTP or weak TLS configurations, exposing data in transit to Man-in-the-Middle (MitM) attacks. *(iOS Example: Disabling App Transport Security (ATS) globally or skipping SSL pinning on sensitive endpoints.)*
+> * **M6 – Inadequate Privacy Controls:** Exposing Personally Identifiable Information (PII) through excessive permissions, logs, or system caching. *(iOS Example: Logging sensitive user tokens to the console or leaking data in app-switcher background snapshots.)*
+> * **M7 – Insufficient Binary Protections:** Leaving the app binary unprotected against reverse engineering, tampering, or runtime hooking. *(iOS Example: Lack of jailbreak detection or anti-debugging checks allowing attackers to use Frida to bypass logic.)*
+> * **M8 – Security Misconfiguration:** Leaving debug flags enabled or misconfiguring backend/app permissions. *(iOS Example: Shipping a release build with staging endpoints or overly permissive cloud storage rules.)*
+> * **M9 – Insecure Data Storage:** Storing sensitive info (tokens, passwords, PII) without encryption. *(iOS Example: Saving auth tokens in `UserDefaults` or plaintext files instead of the **iOS Keychain**.)*
+> * **M10 – Insufficient Cryptography:** Using broken algorithms or poor key management. *(iOS Example: Hashing passwords with MD5/SHA-1 or storing encryption keys directly inside the app bundle.)*
+> 
+> 
+> **Why It Matters for iOS Apps**
+> * Prevents data breaches and protects user privacy.
+> * Avoids **App Store rejection** due to insecure practices (such as ATS violations or privacy manifest issues).
+> * Guides developers to implement secure coding patterns, encryption, and safe network communication.
+> 
+>
 
-- The **Mobile Top 10** is a list of the **most critical security risks** for mobile apps.
 
-- Helps developers **understand and mitigate vulnerabilities** in iOS and Android apps.
-
-- Updated periodically to reflect **emerging threats**.
-
-### Main Security Risks for Mobile Apps
-
-Here’s a simplified version of the latest OWASP Mobile Top 10 (common in iOS apps):
-
-**M1 – Improper Platform Usage**
-
-- Misusing platform features like Keychain, Touch ID, or Android intents.
-- Example: Storing sensitive data insecurely.
-
-**M2 – Insecure Data Storage**
-
-- Storing sensitive info (passwords, tokens, personal data) **without encryption**.
-- Example: Plaintext data in UserDefaults or local files.
-
-**M3 – Insecure Communication**
-
-- Using HTTP or weak TLS, exposing data in transit.
-- Example: API requests without HTTPS.
-
-**M4 – Insecure Authentication**
-
-- Weak login methods, poor session management.
-- Example: Hardcoded credentials, predictable tokens.
-
-**M5 – Insufficient Cryptography**
-
-- Using weak encryption or improper key management.
-- Example: Using MD5, SHA1, or storing encryption keys in app bundle.
-
-**M6 – Insecure Authorization**
-
-- Improper access control between app users or roles.
-- Example: A user can access another user’s data without proper checks.
-
-**M7 – Client Code Quality / Reverse Engineering**
-
-- App can be reverse-engineered to expose secrets.
-- Example: Decompiling IPA to read API keys.
-
-**M8 – Code Tampering**
-
-- Modifying app binary or resources to bypass security.
-- Example: Cracked apps, bypassing in-app purchases.
-
-**M9 – Improper Session Handling**
-
-- Session tokens not invalidated or exposed.
-- Example: Token remains valid after logout.
-
-**M10 – Privacy Issues**
-
-- Collecting or exposing personal data without consent.
-- Example: Tracking location without user permission.
-
-### Why It Matters for iOS Apps
-
-- Helps **prevent data breaches** and protect user privacy.
-- Avoids **App Store rejection** due to insecure practices.
-- Guides developers to **implement secure coding patterns**, encryption, authentication, and secure communication.
 
 </details>
 
