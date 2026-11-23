@@ -9,7 +9,7 @@ Let's build our understanding of Gaussian Mixture Models from the ground up.
 
 The learning sequence will be:
 
-Why GMM? → Gaussian Distribution → Mixture Model → Soft Clustering → Mathematical Formulation → EM Algorithm → Covariance Types → K-Means Comparison → Python Implementation → Applications → Limitations.
+**Why GMM? → Gaussian Distribution → Mixture Model → Soft Clustering → Mathematical Formulation → EM Algorithm → Covariance Types → K-Means Comparison → Python Implementation → Applications → Limitations.**
 
 The objective is not just to understand what GMM does, but also why it works and how it learns.
 
