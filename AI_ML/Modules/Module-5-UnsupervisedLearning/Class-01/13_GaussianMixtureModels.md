@@ -30,7 +30,7 @@ For example:
 - Group B: Medium spending, moderate purchases.
 - Group C: High spending, frequent purchases.
 
-This is an unsupervised learning problem, specifically a clustering problem.
+This is an **unsupervised learning problem**, specifically a clustering problem.
 
 One algorithm we can use is K-Means.
 
