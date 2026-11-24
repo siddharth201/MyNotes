@@ -77,3 +77,69 @@ class ProfileViewModel {
 ### Q. The Main Actor is a global actor used for main-actor-isolated code
 
 ### What is mean by main-actor-isolated code
+
+**Main-actor-isolated code** is any Swift code (a class, struct, function, or property) that is **locked to the Main Actor**, meaning Swift guarantees it will **only ever execute on the main thread** and **one piece at a time**.
+
+Think of it as a special version of the regular actor "locked room" analogy, except instead of a private room for one object, the **Main Actor is the single VIP stage for your entire app's UI**:
+
+* **Regular Actor-Isolated Code:** Runs safely inside *that specific actor's* private queue (on a background thread pool).
+* **Main-Actor-Isolated Code:** Runs safely on the **main thread**—the exact thread where UIKit (`UIView`, `UIViewController`) and SwiftUI (`@State`, `View`) live.
+
+---
+
+### How Code Becomes "Main-Actor-Isolated"
+
+Code becomes main-actor-isolated in three ways:
+
+1. **Explicitly marked with `@MainActor`:**
+```swift
+@MainActor
+func updateTitleLabel() {
+    // This function is main-actor-isolated.
+    // It can ONLY run on the main thread.
+}
+
+```
+
+
+2. **Inside a `@MainActor` type:** If you put `@MainActor` on an entire class (like a `ViewModel`), every property and method inside it automatically becomes main-actor-isolated.
+3. **Inherited by subclasses or `Task`:** A `UIViewController` is already `@MainActor` by default in Apple's SDKs, so any subclass you write—and any `Task { ... }` you launch inside it—automatically inherits main-actor isolation.
+
+---
+
+### What Rules Apply to Main-Actor-Isolated Code?
+
+| Where you are calling FROM | How you interact with Main-Actor-Isolated Code |
+| --- | --- |
+| **Already inside `@MainActor**` (e.g., inside a `UIViewController` or another `@MainActor` method) | **Direct access (no `await`).** You are already on the main thread, so you can read and modify properties immediately. |
+| **Outside `@MainActor**` (e.g., from a background `Task.detached` or custom `actor`) | **Must use `await`.** Swift pauses your background code, hops over to the main thread to run the isolated code safely, and then hops back. |
+
+---
+
+### Quick Code Example
+
+```swift
+@MainActor
+class CartViewModel {
+    // 1. Main-actor-isolated property
+    var itemCount = 0
+
+    // 2. Main-actor-isolated method
+    func addItem() {
+        itemCount += 1 // Safe! Guaranteed to be on the main thread.
+    }
+}
+
+// --- Calling from a background thread ---
+func processBackgroundOrder(cart: CartViewModel) async {
+    // ❌ cart.addItem() -> Compiler Error! We are on a background thread.
+    
+    // ✅ Swift hops to the main thread, runs addItem(), and returns
+    await cart.addItem()
+}
+
+```
+
+### In One Sentence
+
+**Main-actor-isolated code** is code that Swift's compiler protects by forcing it to run **strictly on the main thread**, preventing background threads from accidentally touching or corrupting your UI state.
