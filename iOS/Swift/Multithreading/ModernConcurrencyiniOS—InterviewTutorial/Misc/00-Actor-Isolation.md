@@ -46,6 +46,41 @@ await account.deposit(amount: 200)
 
 ```
 
+### Runnable Code
+
+```swift
+
+import Foundation
+import PlaygroundSupport
+
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+actor BankAccount {
+    
+    var balance = 1000
+    
+    func depositeBalance(amount: Int) {
+        balance += amount
+    }
+    
+    func bonusDeposite() {
+        depositeBalance(amount: balance)
+    }
+}
+
+let account = BankAccount()
+
+// Wrap top-level async/await calls in a Task
+Task {
+    await account.depositeBalance(amount: 200)
+    print(await account.balance) // 1200
+    
+    // Tell the Playground you are done
+    PlaygroundPage.current.finishExecution()
+}
+```
+
 ### In One Sentence
 
 **Actor-isolated code** is the code *inside* an actor's "VIP room" that has direct access to its data—and Swift guarantees only **one task at a time** is allowed inside that room.
