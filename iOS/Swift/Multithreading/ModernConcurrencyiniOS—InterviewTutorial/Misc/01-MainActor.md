@@ -74,4 +74,6 @@ class ProfileViewModel {
 
 ---
 
+### Q. The Main Actor is a global actor used for main-actor-isolated code
 
+### What is mean by main-actor-isolated code
