@@ -81,6 +81,45 @@ Task {
 }
 ```
 
+```swift
+
+actor BankAccount {
+    // 🪧 Constant (`let`): Cannot change, so there is zero risk of a data race
+    let accountHolder: String
+    let bankName = "Swift National Bank"
+    
+    // 🔒 Mutable state (`var`): Protected inside the locked room
+    var balance = 1000
+
+    init(accountHolder: String) {
+        self.accountHolder = accountHolder
+    }
+
+    // ✅ ACTOR-ISOLATED (Inside the room):
+    // Touches mutable `balance`, so callers outside MUST `await`
+    func deposit(amount: Int) {
+        balance += amount
+    }
+
+    // 🪧 NON-ISOLATED (Outside on the door):
+    // Opts out of actor isolation because it ONLY reads `let` constants
+    nonisolated func getAccountSummary() -> String {
+        // ❌ balance += 10  <-- COMPILER ERROR! Cannot touch mutable state here
+        return "\(bankName) - Account Holder: \(accountHolder)"
+    }
+}
+
+// --- Calling from Outside ---
+let account = BankAccount(accountHolder: "Siddharth")
+
+// 1. Calling non-isolated method: NO `await` needed! Runs immediately.
+let summary = account.getAccountSummary()
+print(summary) // Prints: Swift National Bank - Account Holder: Siddharth
+
+// 2. Calling actor-isolated method: MUST use `await` to wait in line.
+await account.deposit(amount: 200)
+```
+
 ### In One Sentence
 
 **Actor-isolated code** is the code *inside* an actor's "VIP room" that has direct access to its data—and Swift guarantees only **one task at a time** is allowed inside that room.
