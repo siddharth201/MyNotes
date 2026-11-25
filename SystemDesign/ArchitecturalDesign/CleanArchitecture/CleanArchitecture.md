@@ -177,6 +177,8 @@ protocol FetchProductsUseCase {
 
 Use Case contains business rules.
 
+is UseCases same as Business logic, are these only protocols or implementation also
+
 ---
 
 ## Repository Protocol
