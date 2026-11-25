@@ -12,6 +12,8 @@ One-liner fallback:
 
 > **Repository sits between business logic and data sources.**
 
+
+
 ---
 
 # 🧠 Why Repository Pattern Exists
