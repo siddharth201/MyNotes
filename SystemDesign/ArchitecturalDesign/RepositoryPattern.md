@@ -15,7 +15,7 @@ One-liner fallback:
 
 
 <details>
-<summary><b>What it means - **Abstracts data access**</b></summary>
+<summary><b>What it means - Abstracts data access</b></summary>
 
 **"Abstracts data access"** means **hiding the messy details of *how* and *where* data is stored** behind a simple, clean set of commands.
 
