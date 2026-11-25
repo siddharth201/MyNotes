@@ -259,7 +259,8 @@ final class TransferMoneyUseCase: TransferMoneyUseCaseProtocol {
 | **Repository** | **Domain Layer** | **Data Layer** | The Domain layer defines *what* data it needs (the protocol), while the Data layer handles *how* to get it using `URLSession`, CoreData, or SwiftData (the implementation). |
 
 *(Note: In smaller projects, some teams skip the `UseCaseProtocol` and inject the concrete `TransferMoneyUseCase` directly into the ViewModel, mocking the `AccountRepositoryProtocol` underneath during tests instead.)*
-</details>
+</details>  
+
 ---
 
 ## Repository Protocol
