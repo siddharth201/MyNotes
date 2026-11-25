@@ -31,15 +31,15 @@ Here is that exact textbook definition broken down piece by piece into plain Eng
 ### 4. "...and make them interchangeable."
 
 * **What it means:** Because all those separate classes follow the exact same rules (a Swift `protocol`), the main object using them can swap one out for another on the fly without breaking.
-* **In plain English:** Think of a **gaming console and game cartridges**. The console (`ProductViewModel`) doesn't care which cartridge (`SortStrategy`) you plug in—as long as it fits the slot, you can eject one and snap in another at any time while the app is running.
-
----  
+* **In plain English:** Think of a **gaming console and game cartridges**. The console (`ProductViewModel`) doesn't care which cartridge (`SortStrategy`) you plug in—as long as it fits the slot, you can eject one and snap in another at any time while the app is running.  
 
 
 ### Quick 1-Sentence Translation
 
 > *"Instead of hardcoding multiple ways of doing a task inside one class, you put each method in its own plug-and-play box behind a shared protocol so you can swap them out whenever you want."*
-</details>  
+</details> 
+
+--- 
  
 * Encapsulates different algorithms into separate strategy classes, allowing dynamic selection or switching at runtime.  
   
