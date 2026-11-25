@@ -1,7 +1,7 @@
 
 ## STRATEGY PATTERN
 
-The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allows you to define a `[AEM]` **`family of algorithms`**, **`encapsulate each one in a separate class`**, and **`make them interchangeable`**. 
+The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allows you to define a `[FEM]` **`family of algorithms`**, **`encapsulate each one in a separate class`**, and **`make them interchangeable`**. 
 
 <details>
 <summary><b>Explanation</b></summary>
