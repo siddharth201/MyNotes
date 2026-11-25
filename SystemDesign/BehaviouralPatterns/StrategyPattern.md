@@ -6,6 +6,38 @@ The **`Strategy Design Pattern`** is a **`behavioral design pattern`** that allo
 <details>
 <summary><b>Explanation</b></summary>
 
+Here is that exact textbook definition broken down piece by piece into plain English, using a simple iOS example (sorting a list of products):
+
+### 1. "...is a behavioral design pattern..."
+
+* **What it means:** Design patterns fall into three buckets: how objects are *created* (Creational), how they are *assembled* (Structural), and how they *act and talk to each other* (Behavioral).
+* **In plain English:** This pattern is purely about **how an object does its job** and delegates work to other objects.
+
+### 2. "...that allows you to define a family of algorithms..."
+
+* **What it means:** "Algorithm" just means a way of doing a specific task, and "family" means you have several different ways to accomplish that same goal.
+* **In plain English:** You have multiple ways to solve the exact same problem. For example, in a shopping app, your goal is **Sorting Products**, and your "family" of ways to do it is:
+* Sort by Price (Low to High)
+* Sort by Rating
+* Sort by Newest Arrivals
+
+
+
+### 3. "...encapsulate each one in a separate class..."
+
+* **What it means:** "Encapsulate" means wrapping code up inside its own self-contained box (a `class` or `struct` in Swift) so it doesn't leak or tangle with anything else.
+* **In plain English:** Instead of putting all three sorting rules inside one messy `if-else` block inside your `ProductViewModel`, you put each rule in its own neat, separate file/struct (`PriceSort`, `RatingSort`, `NewestSort`).
+
+### 4. "...and make them interchangeable."
+
+* **What it means:** Because all those separate classes follow the exact same rules (a Swift `protocol`), the main object using them can swap one out for another on the fly without breaking.
+* **In plain English:** Think of a **gaming console and game cartridges**. The console (`ProductViewModel`) doesn't care which cartridge (`SortStrategy`) you plug in—as long as it fits the slot, you can eject one and snap in another at any time while the app is running.
+
+---
+
+### Quick 1-Sentence Translation
+
+> *"Instead of hardcoding multiple ways of doing a task inside one class, you put each method in its own plug-and-play box behind a shared protocol so you can swap them out whenever you want."*
 </details>  
  
 * Encapsulates different algorithms into separate strategy classes, allowing dynamic selection or switching at runtime.  
