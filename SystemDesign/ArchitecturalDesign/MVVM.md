@@ -18,6 +18,11 @@
 
 > “MVVM stands for Model–View–ViewModel. The View is responsible only for rendering UI. The ViewModel holds presentation logic and exposes observable state. The Model represents data and domain entities. The View does not talk directly to the Model; it communicates through the ViewModel, which makes the UI testable and loosely coupled.”
 
+<details>
+<summary><b>Explanation</b></summary>
+
+</details>
+
 ---
 
 # 🧠 What Each Layer Means (Quick)
