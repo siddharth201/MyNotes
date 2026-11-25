@@ -10,7 +10,9 @@ Even simpler:
 
 One-liner fallback:
 
-> **Repository sits between business logic and data sources.**
+> **Repository sits between business logic and data sources.**  
+
+
 
 <details>
 <summary><b>What it means - **Abstracts data access**</b></summary>
