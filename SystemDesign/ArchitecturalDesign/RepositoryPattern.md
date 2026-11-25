@@ -12,7 +12,10 @@ One-liner fallback:
 
 > **Repository sits between business logic and data sources.**
 
+<details>
+<summary><b>Explanation</b></summary>
 
+</details>
 
 ---
 
