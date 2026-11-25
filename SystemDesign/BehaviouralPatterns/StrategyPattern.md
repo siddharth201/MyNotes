@@ -33,7 +33,8 @@ Here is that exact textbook definition broken down piece by piece into plain Eng
 * **What it means:** Because all those separate classes follow the exact same rules (a Swift `protocol`), the main object using them can swap one out for another on the fly without breaking.
 * **In plain English:** Think of a **gaming console and game cartridges**. The console (`ProductViewModel`) doesn't care which cartridge (`SortStrategy`) you plug in—as long as it fits the slot, you can eject one and snap in another at any time while the app is running.
 
----
+---  
+
 
 ### Quick 1-Sentence Translation
 
