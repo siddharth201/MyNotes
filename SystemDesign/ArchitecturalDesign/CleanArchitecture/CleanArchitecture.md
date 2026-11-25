@@ -180,6 +180,85 @@ Use Case contains business rules.
 <details>
 <summary><b>Is UseCases same as Business logic, are these only protocols or implementation also</b></summary>
 
+**Use Cases are not synonymous with *all* business logic; rather, they are the orchestrators of application-specific business logic**, and they typically include **both a protocol (interface) and a concrete implementation** living inside the Domain Layer.
+
+### 1. Are Use Cases the Same as Business Logic?
+
+Business logic in Clean Architecture is split into two distinct levels:
+
+* **Enterprise Business Logic (Entities):** Core rules that belong to a single data model and remain true across your entire company—even if you built a completely different app.
+* *Example:* A `BankAccount` entity knowing how to check `hasSufficientFunds(for: amount)` or calculate simple interest.
+
+
+* **Application Business Logic (Use Cases / Interactors):** Specific user actions or workflows that coordinate entities and repositories to accomplish a single task in your app.
+* *Example:* `TransferMoneyUseCase` fetches both accounts via a repository, checks KYC verification limits, deducts the amount, applies a transfer fee, and saves the updated balances.
+
+
+
+Think of **Entities** as the nouns (the core rules of the objects) and **Use Cases** as the verbs (what the user or system actually *does* with those objects).
+
+---
+
+### 2. Are Use Cases Only Protocols or Implementation Also?
+
+Unlike **Repositories** (where the protocol lives in the Domain Layer and the implementation lives in the Data Layer), **a Use Case has both its protocol and its concrete implementation inside the Domain Layer.**
+
+Because a Use Case contains pure business rules—and no UIKit/SwiftUI, `URLSession`, or CoreData code—it has zero external framework dependencies and belongs completely in the Domain Layer.
+
+#### Example in Swift
+
+```swift
+// MARK: - Domain Layer
+
+// 1. Protocol (Interface)
+// Allows the ViewModel to depend on an abstraction, making the ViewModel easy to unit test with mocks.
+protocol TransferMoneyUseCaseProtocol {
+    func execute(from sourceID: String, to destinationID: String, amount: Double) async throws -> Receipt
+}
+
+// 2. Concrete Implementation (Also in the Domain Layer!)
+// Contains the actual business logic, talking only to Domain Entities and Repository Protocols.
+final class TransferMoneyUseCase: TransferMoneyUseCaseProtocol {
+    private let accountRepository: AccountRepositoryProtocol // Data Layer abstraction
+
+    init(accountRepository: AccountRepositoryProtocol) {
+        self.accountRepository = accountRepository
+    }
+
+    func execute(from sourceID: String, to destinationID: String, amount: Double) async throws -> Receipt {
+        // Application Business Logic
+        guard amount > 0 else {
+            throw TransferError.invalidAmount
+        }
+
+        var sourceAccount = try await accountRepository.fetchAccount(id: sourceID)
+        var destinationAccount = try await accountRepository.fetchAccount(id: destinationID)
+
+        // Delegating Enterprise Business Logic to the Entity
+        guard sourceAccount.canWithdraw(amount: amount) else {
+            throw TransferError.insufficientFunds
+        }
+
+        sourceAccount.withdraw(amount: amount)
+        destinationAccount.deposit(amount: amount)
+
+        try await accountRepository.save(sourceAccount)
+        try await accountRepository.save(destinationAccount)
+
+        return Receipt(amount: amount, date: Date())
+    }
+}
+
+```
+
+### Summary Comparison: Use Case vs. Repository
+
+| Component | Protocol Location | Implementation Location | Why? |
+| --- | --- | --- | --- |
+| **Use Case** | **Domain Layer** | **Domain Layer** | Pure business logic with no external framework dependencies. The protocol exists primarily so you can mock the Use Case when testing your ViewModel. |
+| **Repository** | **Domain Layer** | **Data Layer** | The Domain layer defines *what* data it needs (the protocol), while the Data layer handles *how* to get it using `URLSession`, CoreData, or SwiftData (the implementation). |
+
+*(Note: In smaller projects, some teams skip the `UseCaseProtocol` and inject the concrete `TransferMoneyUseCase` directly into the ViewModel, mocking the `AccountRepositoryProtocol` underneath during tests instead.)*
 </details>
 ---
 
