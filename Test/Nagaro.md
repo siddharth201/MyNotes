@@ -8,6 +8,8 @@
 
 Third-party verification integration (e.g. KERSA) -> 4. Identify customer category -> ETB
 
-Existing customer details retrieved from bank backend -> 
+Existing customer details retrieved from bank backend -> NTB
+
+Customer provides additional details
 
 </details>
