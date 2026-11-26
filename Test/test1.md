@@ -36,3 +36,34 @@ enum TransactionViewState {
     case empty
     case failed(String)
 }
+@MainActor
+final class TransactionViewModel: ObservableObject {
+
+    @Published private(set) var state: TransactionViewState = .loading
+
+    private let repository: TransactionRepository
+
+    init(repository: TransactionRepository) {
+        self.repository = repository
+    }
+
+    func loadTransactions() async {
+
+        state = .loading
+
+        do {
+            let transactions = try await repository.fetchTransactions()
+
+            state = transactions.isEmpty
+                ? .empty
+                : .loaded(transactions)
+
+        } catch {
+            state = .failed(error.localizedDescription)
+        }
+    }
+
+    func retry() async {
+        await loadTransactions()
+    }
+}
