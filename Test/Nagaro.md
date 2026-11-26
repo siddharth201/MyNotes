@@ -4,6 +4,8 @@
 
 ![Credit Card](https://github.com/siddharth201/MyNotes/blob/main/Test/Screenshot%202026-11-26%20at%207.11.31%E2%80%AFAM.png)
 
-1. Customer starts credit card application -> 2. Enter PAN card details -> 
+1. Customer starts credit card application -> 2. Enter PAN card details -> 3. Customer verification
+
+Third-party verification integration (e.g. KERSA) -> 
 
 </details>
