@@ -29,3 +29,10 @@ final class MockTransactionRepository: TransactionRepository {
         return transactions
     }
 }
+enum TransactionViewState {
+
+    case loading
+    case loaded([Transaction])
+    case empty
+    case failed(String)
+}
