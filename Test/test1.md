@@ -160,3 +160,16 @@ struct TransactionListView: View {
         }
     }
 }
+@main
+struct TransactionApp: App {
+
+    var body: some Scene {
+
+        WindowGroup {
+
+            TransactionListView(
+                repository: MockTransactionRepository()
+            )
+        }
+    }
+}
