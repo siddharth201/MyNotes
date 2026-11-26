@@ -6,6 +6,6 @@
 
 1. Customer starts credit card application -> 2. Enter PAN card details -> 3. Customer verification
 
-Third-party verification integration (e.g. KERSA) -> 
+Third-party verification integration (e.g. KERSA) -> 4. Identify customer category ->
 
 </details>
