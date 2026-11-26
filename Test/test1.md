@@ -5,3 +5,7 @@ struct Transaction: Identifiable {
     let amount: Double
     let date: Date
 }
+protocol TransactionRepository {
+
+    func fetchTransactions() async throws -> [Transaction]
+}
