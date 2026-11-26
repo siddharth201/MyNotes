@@ -6,6 +6,8 @@
 
 1. Customer starts credit card application -> 2. Enter PAN card details -> 3. Customer verification
 
-Third-party verification integration (e.g. KERSA) -> 4. Identify customer category ->
+Third-party verification integration (e.g. KERSA) -> 4. Identify customer category -> ETB
+
+Existing customer details retrieved from bank backend -> 
 
 </details>
