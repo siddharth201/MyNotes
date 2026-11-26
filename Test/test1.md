@@ -96,3 +96,67 @@ struct TransactionRowView: View {
         .padding(.vertical, 8)
     }
 }
+struct TransactionListView: View {
+
+    @StateObject private var viewModel: TransactionViewModel
+
+    init(repository: TransactionRepository) {
+
+        _viewModel = StateObject(
+            wrappedValue: TransactionViewModel(
+                repository: repository
+            )
+        )
+    }
+
+    var body: some View {
+
+        NavigationStack {
+
+            contentView
+                .navigationTitle("Transactions")
+        }
+        .task {
+            await viewModel.loadTransactions()
+        }
+    }
+
+    @ViewBuilder
+    private var contentView: some View {
+
+        switch viewModel.state {
+
+        case .loading:
+
+            ProgressView("Loading...")
+
+        case .loaded(let transactions):
+
+            List(transactions) { transaction in
+
+                TransactionRowView(
+                    transaction: transaction
+                )
+            }
+            .frame(maxWidth: 700)
+            .frame(maxWidth: .infinity)
+
+        case .empty:
+
+            Text("No transactions found")
+
+        case .failed(let message):
+
+            VStack(spacing: 12) {
+
+                Text(message)
+
+                Button("Retry") {
+                    Task {
+                        await viewModel.retry()
+                    }
+                }
+            }
+        }
+    }
+}
